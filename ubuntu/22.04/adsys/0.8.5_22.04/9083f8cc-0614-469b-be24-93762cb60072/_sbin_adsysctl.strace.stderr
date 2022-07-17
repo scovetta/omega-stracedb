@@ -1,0 +1,24 @@
+Usage:
+  adsysctl COMMAND [flags]
+  adsysctl [command]
+
+Available Commands:
+  applied     Print last applied GPOs for current or given user/machine
+  completion  Generate the autocompletion script for the specified shell
+  doc         Documentation
+  help        Help about any command
+  policy      Policy management
+  service     Service management
+  update      Updates/Create a policy for current user or given user with its kerberos ticket
+  version     Returns version of client and service
+
+Flags:
+  -c, --config string   use a specific configuration file
+  -h, --help            help for adsysctl
+  -s, --socket string   socket path to use between daemon and client. Can be overridden by systemd socket activation. (default "/run/adsysd.sock")
+  -t, --timeout int     time in seconds before cancelling the client request when the server gives no result. 0 for no timeout. (default 30)
+  -v, --verbose count   issue INFO (-v), DEBUG (-vv) or DEBUG with caller (-vvv) output
+
+Use "adsysctl [command] --help" for more information about a command.
+
+level=error msg="adsysctl requires a valid subcommand"

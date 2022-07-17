@@ -1,0 +1,19 @@
+# To activate this key, place the following in named.conf, and
+# in a separate keyfile on the system or systems from which nsupdate
+# will be run:
+key "ddns-key" {
+	algorithm hmac-sha256;
+	secret "qiYyn5gmTf7oOh2NtDXveYZ2VNtD4qwWku5UeFxQQDE=";
+};
+
+# Then, in the "zone" statement for each zone you wish to dynamically
+# update, place an "update-policy" statement granting update permission
+# to this key.  For example, the following statement grants this key
+# permission to update any name within the zone:
+update-policy {
+	grant ddns-key zonesub ANY;
+};
+
+# After the keyfile has been placed, the following command will
+# execute nsupdate using this key:
+nsupdate -k <keyfile>

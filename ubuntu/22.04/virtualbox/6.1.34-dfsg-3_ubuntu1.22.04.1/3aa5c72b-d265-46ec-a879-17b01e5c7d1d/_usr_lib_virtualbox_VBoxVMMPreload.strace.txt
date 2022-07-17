@@ -1,0 +1,200 @@
+7042  execve("/usr/lib/virtualbox/VBoxVMMPreload", ["/usr/lib/virtualbox/VBoxVMMPreload"], 0x7ffd2973c2f0 /* 12 vars */) = 0
+7042  brk(NULL)                         = 0x5579ecf62000
+7042  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd893472d0) = -1 EINVAL (Invalid argument)
+7042  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62439ad000
+7042  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+7042  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=20213, ...}, AT_EMPTY_PATH) = 0
+7042  mmap(NULL, 20213, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f62439a8000
+7042  close(3)                          = 0
+7042  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+7042  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+7042  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+7042  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+7042  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+7042  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+7042  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+7042  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6243780000
+7042  mmap(0x7f62437a8000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f62437a8000
+7042  mmap(0x7f624393d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f624393d000
+7042  mmap(0x7f6243995000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f6243995000
+7042  mmap(0x7f624399b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f624399b000
+7042  close(3)                          = 0
+7042  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f624377d000
+7042  arch_prctl(ARCH_SET_FS, 0x7f624377d740) = 0
+7042  set_tid_address(0x7f624377da10)   = 7042
+7042  set_robust_list(0x7f624377da20, 24) = 0
+7042  rseq(0x7f624377e0e0, 0x20, 0, 0x53053053) = 0
+7042  mprotect(0x7f6243995000, 16384, PROT_READ) = 0
+7042  mprotect(0x5579ec31b000, 8192, PROT_READ) = 0
+7042  mprotect(0x7f62439e7000, 8192, PROT_READ) = 0
+7042  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+7042  munmap(0x7f62439a8000, 20213)     = 0
+7042  readlink("/proc/self/exe", "/usr/lib/virtualbox/VBoxVMMPreload", 4099) = 34
+7042  getuid()                          = 0
+7042  getuid()                          = 0
+7042  getgid()                          = 0
+7042  geteuid()                         = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox", O_RDONLY) = 3
+7042  newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VMMR0.r0", O_RDONLY) = 4
+7042  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1971536, ...}, AT_EMPTY_PATH) = 0
+7042  close(4)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxDDR0.r0", O_RDONLY) = 4
+7042  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=244464, ...}, AT_EMPTY_PATH) = 0
+7042  close(4)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox", O_RDONLY) = 4
+7042  newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxRT.so", O_RDONLY) = 5
+7042  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=3518696, ...}, AT_EMPTY_PATH) = 0
+7042  close(5)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxVMM.so", O_RDONLY) = 5
+7042  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=4298664, ...}, AT_EMPTY_PATH) = 0
+7042  close(5)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxDD.so", O_RDONLY) = 5
+7042  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2293672, ...}, AT_EMPTY_PATH) = 0
+7042  close(5)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxDD2.so", O_RDONLY) = 5
+7042  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8751160, ...}, AT_EMPTY_PATH) = 0
+7042  close(5)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxDDU.so", O_RDONLY) = 5
+7042  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=451736, ...}, AT_EMPTY_PATH) = 0
+7042  close(5)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox", O_RDONLY) = 5
+7042  newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxVMMPreload", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0755, st_size=166208, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxVMMPreload.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=14872, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxDbg.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=187928, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxDbg3.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxSharedClipboard.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxSharedFolders.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=68504, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxDragAndDropSvc.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=39536, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxGuestPropSvc.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=43792, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxGuestControlSvc.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=35368, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxHostChannel.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=18824, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxSharedCrOpenGL.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxOGLhostcrutil.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxOGLhosterrorspu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxOGLrenderspu.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxManage", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0755, st_size=1444456, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxSVC", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0755, st_size=7883592, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxXPCOMIPCD", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0755, st_size=35296, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxXPCOM.so", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=1155432, ...}, AT_EMPTY_PATH) = 0
+7042  close(6)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/components", O_RDONLY) = 6
+7042  newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/components/VBoxXPCOMIPCC.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=143328, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/components/VBoxC.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=4177800, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/components/VBoxSVCM.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=19128, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/components/VBoxXPCOMBase.xpt", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=25931, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VRDPAuth.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxAuth.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=14808, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxVRDP.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxHeadless", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|S_ISUID|S_ISGID|0755, st_size=166208, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxHeadless.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=122224, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxVideoRecFB.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VirtualBox", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0755, st_size=2623296, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VirtualBoxVM", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|S_ISUID|S_ISGID|0755, st_size=166208, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VirtualBoxVM.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1806720, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/UICommon.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=37149752, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxKeyboard.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=78408, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxSDL", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|S_ISUID|S_ISGID|0755, st_size=166208, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxSDL.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=192376, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/vboxwebsrv", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0755, st_size=29393200, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxTunctl", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0755, st_size=14648, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxNetDHCP", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|S_ISUID|S_ISGID|0755, st_size=166208, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxNetDHCP.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=266008, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxNetNAT", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|S_ISUID|S_ISGID|0755, st_size=166208, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  openat(AT_FDCWD, "/usr/lib/virtualbox/VBoxNetNAT.so", O_RDONLY) = 7
+7042  newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=311928, ...}, AT_EMPTY_PATH) = 0
+7042  close(7)                          = 0
+7042  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62439e6000
+7042  madvise(0x7f62439e6000, 4096, MADV_DONTFORK) = 0
+7042  munmap(0x7f62439e6000, 4096)      = 0
+7042  openat(AT_FDCWD, "/dev/vboxdrv", O_RDWR) = -1 ENOENT (No such file or directory)
+7042  openat(AT_FDCWD, "/dev/vboxdrv", O_RDWR) = -1 ENOENT (No such file or directory)
+7042  write(2, "VBoxVMMPreload", 14)    = 14
+7042  write(2, ": ", 2)                 = 2
+7042  write(2, "Error ", 6)             = 6
+7042  write(2, "-", 1)                  = 1
+7042  write(2, "1908", 4)               = 4
+7042  write(2, " in ", 4)               = 4
+7042  write(2, "suplibOsInit", 12)      = 12
+7042  write(2, "!\n", 2)                = 2
+7042  write(2, "VBoxVMMPreload", 14)    = 14
+7042  write(2, ": ", 2)                 = 2
+7042  write(2, "Kernel driver not installed", 27) = 27
+7042  write(2, "\n", 1)                 = 1
+7042  write(2, "\n", 1)                 = 1
+7042  write(2, "VBoxVMMPreload", 14)    = 14
+7042  write(2, ": ", 2)                 = 2
+7042  write(2, "Tip! Make sure the kernel module is loaded. It may also help to reinstall VirtualBox.\n", 86) = 86
+7042  setresgid(0, 0, 0)                = 0
+7042  setresuid(0, 0, 0)                = 0
+7042  getresuid([0], [0], [0])          = 0
+7042  getresgid([0], [0], [0])          = 0
+7042  exit_group(1)                     = ?
+7042  +++ exited with 1 +++

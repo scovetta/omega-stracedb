@@ -1,0 +1,26 @@
+
+piper-vamp-simple-server: Load & run Vamp plugins in response to Piper messages
+
+    Usage: piper-vamp-simple-server [-d] <format>
+           piper-vamp-simple-server -v
+           piper-vamp-simple-server -h
+
+    where
+       <format>: the format to read and write messages in ("json" or "capnp")
+       -d, --debug: also print debug information to stderr
+       -v, --version: print version number to stdout and exit
+       -h, --help: print this text to stderr and exit
+
+Expects Piper request messages in either Cap'n Proto or JSON format on stdin,
+and writes response messages in the same format to stdout.
+
+This server is intended for simple process separation. It's only suitable for
+use with a single trusted client per server invocation.
+
+The two formats behave differently in case of parser errors. JSON messages are
+expected one per input line; because the JSON support is really intended for
+interactive troubleshooting, any unparseable message is reported and discarded
+and the server waits for another message. In contrast, because of the assumption
+that the client is trusted and coupled to the server instance, a mangled
+Cap'n Proto message causes the server to exit.
+

@@ -1,0 +1,31 @@
+ts=2022-07-17T20:14:39.338Z caller=main.go:403 level=info msg="No time or size retention was set so using the default time retention" duration=15d
+ts=2022-07-17T20:14:39.349Z caller=main.go:435 level=info msg="Starting Prometheus" version="(version=2.31.2+ds1, branch=debian/sid, revision=2.31.2+ds1-1ubuntu1)"
+ts=2022-07-17T20:14:39.355Z caller=main.go:440 level=info build_context="(go=go1.17.3, user=team+pkg-go@tracker.debian.org, date=20220317-16:26:29)"
+ts=2022-07-17T20:14:39.361Z caller=main.go:441 level=info host_details="(Linux 5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022 x86_64 7fc253655573 localdomain)"
+ts=2022-07-17T20:14:39.373Z caller=main.go:442 level=info fd_limits="(soft=1048576, hard=1048576)"
+ts=2022-07-17T20:14:39.376Z caller=main.go:443 level=info vm_limits="(soft=unlimited, hard=unlimited)"
+ts=2022-07-17T20:14:39.398Z caller=web.go:478 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
+ts=2022-07-17T20:14:39.446Z caller=main.go:823 level=info msg="Starting TSDB ..."
+ts=2022-07-17T20:14:39.450Z caller=tls_config.go:195 level=info component=web msg="TLS is disabled." http2=false
+ts=2022-07-17T20:14:39.551Z caller=head.go:481 level=info component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+ts=2022-07-17T20:14:39.552Z caller=head.go:515 level=info component=tsdb msg="On-disk memory mappable chunks replay completed" duration=34.777µs
+ts=2022-07-17T20:14:39.553Z caller=head.go:521 level=info component=tsdb msg="Replaying WAL, this may take a while"
+ts=2022-07-17T20:14:39.576Z caller=head.go:592 level=info component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+ts=2022-07-17T20:14:39.578Z caller=head.go:598 level=info component=tsdb msg="WAL replay completed" checkpoint_replay_duration=13.324552ms wal_replay_duration=10.121152ms total_replay_duration=26.154978ms
+ts=2022-07-17T20:14:39.587Z caller=main.go:850 level=info fs_type=794c7630
+ts=2022-07-17T20:14:39.589Z caller=main.go:853 level=info msg="TSDB started"
+ts=2022-07-17T20:14:39.592Z caller=main.go:980 level=info msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
+ts=2022-07-17T20:14:39.624Z caller=main.go:1017 level=info msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml totalDuration=32.041263ms db_storage=1.379µs remote_storage=1.881µs web_handler=569ns query_engine=1.487µs scrape=22.443424ms scrape_sd=48.897µs notify=38.391µs notify_sd=14.923µs rules=2.372µs
+ts=2022-07-17T20:14:39.625Z caller=main.go:795 level=info msg="Server is ready to receive web requests."
+ts=2022-07-17T20:14:48.714Z caller=main.go:673 level=warn msg="Received SIGTERM, exiting gracefully..."
+ts=2022-07-17T20:14:48.717Z caller=main.go:696 level=info msg="Stopping scrape discovery manager..."
+ts=2022-07-17T20:14:48.727Z caller=main.go:710 level=info msg="Stopping notify discovery manager..."
+ts=2022-07-17T20:14:48.730Z caller=main.go:732 level=info msg="Stopping scrape manager..."
+ts=2022-07-17T20:14:48.732Z caller=main.go:692 level=info msg="Scrape discovery manager stopped"
+ts=2022-07-17T20:14:48.732Z caller=main.go:706 level=info msg="Notify discovery manager stopped"
+ts=2022-07-17T20:14:48.771Z caller=manager.go:946 level=info component="rule manager" msg="Stopping rule manager..."
+ts=2022-07-17T20:14:48.774Z caller=manager.go:956 level=info component="rule manager" msg="Rule manager stopped"
+ts=2022-07-17T20:14:48.772Z caller=main.go:726 level=info msg="Scrape manager stopped"
+ts=2022-07-17T20:14:48.788Z caller=notifier.go:601 level=info component=notifier msg="Stopping notification manager..."
+ts=2022-07-17T20:14:48.789Z caller=main.go:907 level=info msg="Notifier manager stopped"
+ts=2022-07-17T20:14:48.797Z caller=main.go:919 level=info msg="See you next time!"

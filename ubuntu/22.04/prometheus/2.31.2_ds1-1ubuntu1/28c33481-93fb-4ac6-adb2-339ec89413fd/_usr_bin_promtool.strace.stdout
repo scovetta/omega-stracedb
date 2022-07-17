@@ -1,0 +1,80 @@
+usage: promtool [<flags>] <command> [<args> ...]
+
+Tooling for the Prometheus monitoring system.
+
+Flags:
+  -h, --help                 Show context-sensitive help (also try --help-long
+                             and --help-man).
+      --version              Show application version.
+      --enable-feature= ...  Comma separated feature names to enable (only
+                             PromQL related). See
+                             https://prometheus.io/docs/prometheus/latest/feature_flags/
+                             for the options and more details.
+
+Commands:
+help [<command>...]
+    Show help.
+
+check config <config-files>...
+    Check if the config files are valid or not.
+
+check web-config <web-config-files>...
+    Check if the web config files are valid or not.
+
+check rules <rule-files>...
+    Check if the rule files are valid or not.
+
+check metrics
+    Pass Prometheus metrics over stdin to lint them for consistency and
+    correctness.
+
+    examples:
+
+    $ cat metrics.prom | promtool check metrics
+
+    $ curl -s http://localhost:9090/metrics | promtool check metrics
+
+query instant [<flags>] <server> <expr>
+    Run instant query.
+
+query range [<flags>] <server> <expr>
+    Run range query.
+
+query series --match=MATCH [<flags>] <server>
+    Run series query.
+
+query labels [<flags>] <server> <name>
+    Run labels query.
+
+debug pprof <server>
+    Fetch profiling debug information.
+
+debug metrics <server>
+    Fetch metrics debug information.
+
+debug all <server>
+    Fetch all debug information.
+
+test rules <test-rule-file>...
+    Unit tests for rules.
+
+tsdb bench write [<flags>] [<file>]
+    Run a write performance benchmark.
+
+tsdb analyze [<flags>] [<db path>] [<block id>]
+    Analyze churn, label pair cardinality and compaction efficiency.
+
+tsdb list [<flags>] [<db path>]
+    List tsdb blocks.
+
+tsdb dump [<flags>] [<db path>]
+    Dump samples from a TSDB.
+
+tsdb create-blocks-from openmetrics <input file> [<output directory>]
+    Import samples from OpenMetrics input and produce TSDB blocks. Please refer
+    to the storage docs for more details.
+
+tsdb create-blocks-from rules --start=START [<flags>] <rule-files>...
+    Create blocks of data for new recording rules.
+
+

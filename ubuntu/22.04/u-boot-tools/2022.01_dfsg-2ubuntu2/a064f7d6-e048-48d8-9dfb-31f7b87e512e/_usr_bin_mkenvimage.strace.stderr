@@ -1,0 +1,17 @@
+Please specify the size of the environment partition.
+mkenvimage [-h] [-r] [-b] [-p <byte>] -s <environment partition size> -o <output> <input file>
+
+This tool takes a key=value input file (same as would a `printenv' show) and generates the corresponding environment image, ready to be flashed.
+
+	The input file is in format:
+		key1=value1
+		key2=value2
+		...
+	Empty lines are skipped, and lines with a # in the first
+	column are treated as comments (also skipped).
+	-r : the environment has multiple copies in flash
+	-b : the target is big endian (default is little endian)
+	-p <byte> : fill the image with <byte> bytes instead of 0xff bytes
+	-V : print version information and exit
+
+If the input file is "-", data is read from standard input

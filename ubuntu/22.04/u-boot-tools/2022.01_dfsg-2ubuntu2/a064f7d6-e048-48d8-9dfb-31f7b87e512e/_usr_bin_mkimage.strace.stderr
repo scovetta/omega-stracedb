@@ -1,0 +1,31 @@
+Error: Missing output filename
+Usage: /usr/bin/mkimage -l image
+          -l ==> list image header information
+       /usr/bin/mkimage [-x] -A arch -O os -T type -C comp -a addr -e ep -n name -d data_file[:data_file...] image
+          -A ==> set architecture to 'arch'
+          -O ==> set operating system to 'os'
+          -T ==> set image type to 'type'
+          -C ==> set compression type 'comp'
+          -a ==> set load address to 'addr' (hex)
+          -e ==> set entry point to 'ep' (hex)
+          -n ==> set image name to 'name'
+          -d ==> use image data from 'datafile'
+          -x ==> set XIP (execute in place)
+       /usr/bin/mkimage [-D dtc_options] [-f fit-image.its|-f auto|-F] [-b <dtb> [-b <dtb>]] [-E] [-B size] [-i <ramdisk.cpio.gz>] fit-image
+           <dtb> file is used with -f auto, it may occur multiple times.
+          -D => set all options for device tree compiler
+          -f => input filename for FIT source
+          -i => input filename for ramdisk file
+          -E => place data outside of the FIT structure
+          -B => align size in hex for FIT structure and header
+Signing / verified boot options: [-k keydir] [-K dtb] [ -c <comment>] [-p addr] [-r] [-N engine]
+          -k => set directory containing private keys
+          -K => write public keys to this .dtb file
+          -G => use this signing key (in lieu of -k)
+          -c => add comment in signature node
+          -F => re-sign existing FIT image
+          -p => place external data at a static position
+          -r => mark keys used as 'required' in dtb
+          -N => openssl engine to use for signing
+       /usr/bin/mkimage -V ==> print version information and exit
+Use '-T list' to see a list of available image types

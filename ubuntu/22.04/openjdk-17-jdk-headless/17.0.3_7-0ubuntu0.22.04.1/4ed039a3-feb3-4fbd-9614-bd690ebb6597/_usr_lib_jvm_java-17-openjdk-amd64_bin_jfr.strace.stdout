@@ -1,0 +1,35 @@
+Tool for working with Flight Recorder files
+
+Before using this tool, you must have a recording file.
+A file can be created by starting a recording from command line:
+
+ java -XX:StartFlightRecording:filename=recording.jfr,duration=30s ... 
+
+A recording can also be started on already running Java Virtual Machine:
+
+ jcmd (to list available pids)
+ jcmd <pid> JFR.start
+
+Recording data can be dumped to file using the JFR.dump command:
+
+ jcmd <pid> JFR.dump filename=recording.jfr
+
+The contents of the recording can then be printed, for example:
+
+ jfr print recording.jfr
+
+ jfr print --events CPULoad,GarbageCollection recording.jfr
+
+ jfr print --json --events CPULoad recording.jfr
+
+ jfr print --categories 'GC,JVM,Java*' recording.jfr
+
+ jfr print --events 'jdk.*' --stack-depth 64 recording.jfr
+
+ jfr summary recording.jfr
+
+ jfr metadata recording.jfr
+
+ jfr metadata --categories GC,Detailed
+
+For more information about available commands, use 'jfr help'

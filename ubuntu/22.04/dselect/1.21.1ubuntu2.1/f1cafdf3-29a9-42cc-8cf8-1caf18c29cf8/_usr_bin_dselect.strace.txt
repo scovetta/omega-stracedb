@@ -1,0 +1,513 @@
+468   execve("/usr/bin/dselect", ["/usr/bin/dselect"], 0x7ffcabec1290 /* 12 vars */) = 0
+468   brk(NULL)                         = 0x5593fe6af000
+468   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffeb29d47b0) = -1 EINVAL (Invalid argument)
+468   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcac0984000
+468   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+468   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+468   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcac0982000
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncursesw.so.6", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\241\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\177\0\0\0\0\0\0\0\177\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=239696, ...}, AT_EMPTY_PATH) = 0
+468   mmap(NULL, 242112, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcac0946000
+468   mprotect(0x7fcac094e000, 204800, PROT_NONE) = 0
+468   mmap(0x7fcac094e000, 167936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7fcac094e000
+468   mmap(0x7fcac0977000, 32768, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31000) = 0x7fcac0977000
+468   mmap(0x7fcac0980000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x39000) = 0x7fcac0980000
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\6\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\30\325\0\0\0\0\0\0\30\325\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+468   mmap(NULL, 203040, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcac0914000
+468   mmap(0x7fcac0922000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fcac0922000
+468   mmap(0x7fcac0933000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7fcac0933000
+468   mmap(0x7fcac0941000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7fcac0941000
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+468   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcac06ec000
+468   mmap(0x7fcac0714000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fcac0714000
+468   mmap(0x7fcac08a9000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fcac08a9000
+468   mmap(0x7fcac0901000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fcac0901000
+468   mmap(0x7fcac0907000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcac0907000
+468   close(3)                          = 0
+468   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcac06ea000
+468   arch_prctl(ARCH_SET_FS, 0x7fcac06eb000) = 0
+468   set_tid_address(0x7fcac06eb2d0)   = 468
+468   set_robust_list(0x7fcac06eb2e0, 24) = 0
+468   rseq(0x7fcac06eb9a0, 0x20, 0, 0x53053053) = 0
+468   mprotect(0x7fcac0901000, 16384, PROT_READ) = 0
+468   mprotect(0x7fcac0941000, 16384, PROT_READ) = 0
+468   mprotect(0x7fcac0980000, 4096, PROT_READ) = 0
+468   mprotect(0x5593fca39000, 20480, PROT_READ) = 0
+468   mprotect(0x7fcac09be000, 8192, PROT_READ) = 0
+468   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+468   munmap(0x7fcac0982000, 6133)      = 0
+468   getrandom("\x66\x76\x2d\x19\x3f\xd7\x5c\x17", 8, GRND_NONBLOCK) = 8
+468   brk(NULL)                         = 0x5593fe6af000
+468   brk(0x5593fe6d0000)               = 0x5593fe6d0000
+468   openat(AT_FDCWD, "/etc/dpkg/dselect.cfg.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+468   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+468   getdents64(3, 0x5593fe6b0710 /* 2 entries */, 32768) = 48
+468   getdents64(3, 0x5593fe6b0710 /* 0 entries */, 32768) = 0
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/etc/dpkg/dselect.cfg", O_RDONLY) = 3
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=232, ...}, AT_EMPTY_PATH) = 0
+468   read(3, "# dselect configuration file\n#\n# This file can contain default options for dselect.  All command-line\n# options are allowed.  Va"..., 4096) = 232
+468   read(3, "", 4096)                 = 0
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/root/.dselect.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+468   ioctl(1, TCGETS, 0x7ffeb29d4560)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   newfstatat(AT_FDCWD, "/root/.terminfo", 0x5593fe6b1340, 0) = -1 ENOENT (No such file or directory)
+468   newfstatat(AT_FDCWD, "/etc/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+468   newfstatat(AT_FDCWD, "/lib/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+468   newfstatat(AT_FDCWD, "/usr/share/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+468   access("/etc/terminfo/x/xterm", R_OK) = -1 ENOENT (No such file or directory)
+468   access("/lib/terminfo/x/xterm", R_OK) = 0
+468   openat(AT_FDCWD, "/lib/terminfo/x/xterm", O_RDONLY) = 3
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3772, ...}, AT_EMPTY_PATH) = 0
+468   read(3, "\32\1=\0&\0\17\0\235\1\20\6xterm|xterm-debian|xterm terminal emulator (X Window System)\0\0\1\0\0\1\0\0\0\1\0\0\0\0\1\1\0\0\0\0\0\0\0\1\0\0\1\0\0\1\0\0\0\0\0\0\0\0\1\0P\0\10\0\30\0\377\377\377\377\377\377\377\377\377\377"..., 32768) = 3772
+468   read(3, "", 28672)                = 0
+468   close(3)                          = 0
+468   ioctl(2, TCGETS, 0x7ffeb29d4560)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, TCGETS, 0x7ffeb29d4460)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, TCGETS, 0x7ffeb29d44a0)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   brk(0x5593fe6f1000)               = 0x5593fe6f1000
+468   ioctl(2, TCGETS, 0x7ffeb29d45d0)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, TCGETS, 0x7ffeb29d45d0)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(1, TCGETS, 0x7ffeb29d45a0)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, TCGETS, 0x7ffeb29d4560)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+468   rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGINT, {sa_handler=0x7fcac0965700, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGTERM, {sa_handler=0x7fcac0965700, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGWINCH, {sa_handler=0x7fcac095b940, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   ioctl(2, TCGETS, 0x7ffeb29d46d0)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, TCGETS, 0x7ffeb29d4690)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+468   write(1, "\33[?1049h\33[22;0;0t\33[1;24r\33(B\33[m\33[4l\33[?7h\33[?1h\33=", 46) = 46
+468   openat(AT_FDCWD, "/var/lib/dpkg/lock-frontend", O_RDWR|O_CREAT|O_TRUNC, 0660) = 3
+468   openat(AT_FDCWD, "/var/lib/dpkg/lock", O_RDWR|O_CREAT|O_TRUNC, 0660) = 4
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   write(1, "\33[H\33[2J", 7)        = 7
+468   write(1, "\33(B\33[0;1mDebian 'dselect' package handling frontend version 1.21.1 (amd64).\r\33[3d", 80) = 80
+468   write(1, "\33(B\33[0;7m * 0. [A]ccess    Choose the access method to use. \33[28b\33[4;4H", 71) = 71
+468   write(1, "\33(B\33[m1. [U]pdate    Update list of available packages, if possible.\33[5;4H", 74) = 74
+468   write(1, "2. [S]elect    Request which packages you want on your system.\33[6;4H", 68) = 68
+468   write(1, "3. [I]nstall   Install and upgrade wanted packages.\33[7;4H", 57) = 57
+468   write(1, "4. [C]onfig    Configure any packages that are unconfigured.\33[8;4H", 66) = 66
+468   write(1, "5. [R]emove    Remove unwanted software.\33[9;4H", 46) = 46
+468   write(1, "6. [Q]uit\33[19G", 14)  = 14
+468   write(1, "Quit dselect.\r\33[11d", 19) = 19
+468   write(1, "\33(B\33[0;1mMove around with ^P and ^N, cursor keys, initial letters, or digits;\r\33[12d", 83) = 83
+468   write(1, "Press <enter> to confirm selection.   ^L redraws screen.\r\33[14d", 62) = 62
+468   write(1, "\33(B\33[mCopyright (C) 1994-1996 Ian Jackson.\r\33[15d", 48) = 48
+468   write(1, "Copyright (C) 2000,2001 Wichert Akkerman.\r\33[16d", 47) = 47
+468   write(1, "This is free software; see the GNU General Public License version 2 or\r\33[17d", 76) = 76
+468   write(1, "later for copying conditions. There is NO warranty.\33[3;80H", 58) = 58
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "/", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "u", 1)                   = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   write(1, "\r", 1)                 = 1
+468   write(1, "   0. [A]ccess    Choose the access method to use.\33[K\r\33[4d", 58) = 58
+468   write(1, "\33(B\33[0;7m * 1. [U]pdate    Update list of available packages, if possible. \33[13b", 80) = 80
+468   write(1, "\33(B\33[m", 6)         = 6
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "s", 1)                   = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   write(1, "\r", 1)                 = 1
+468   write(1, "   1. [U]pdate    Update list of available packages, if possible.\33[K\r\33[5d", 73) = 73
+468   write(1, "\33(B\33[0;7m * 2. [S]elect    Request which packages you want on your system. \33[13b", 80) = 80
+468   write(1, "\33(B\33[m", 6)         = 6
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "r", 1)                   = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   write(1, "\r", 1)                 = 1
+468   write(1, "   2. [S]elect    Request which packages you want on your system.\33[K\r\33[8d", 73) = 73
+468   write(1, "\33(B\33[0;7m * 5. [R]emove    Remove unwanted software. \33[35b", 58) = 58
+468   write(1, "\33(B\33[m", 6)         = 6
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "/", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "b", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "i", 1)                   = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   write(1, "\r\33[6d", 5)           = 5
+468   write(1, "\33(B\33[0;7m * 3. [I]nstall   Install and upgrade wanted packages. \33[24b\r\33[8d", 74) = 74
+468   write(1, "\33(B\33[m   5. [R]emove    Remove unwanted software.\33[K\33[6;80H", 59) = 59
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "n", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "/", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "d", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "s", 1)                   = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   write(1, "\r\33[A", 4)            = 4
+468   write(1, "\33(B\33[0;7m * 2. [S]elect    Request which packages you want on your system. \33[13b\r\33[6d", 85) = 85
+468   write(1, "\33(B\33[m   3. [I]nstall   Install and upgrade wanted packages.\33[K\33[5;80H", 70) = 70
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "e", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "l", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "e", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "c", 1)                   = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   write(1, "\r", 1)                 = 1
+468   write(1, "   2. [S]elect    Request which packages you want on your system.\33[K\r\33[7d", 73) = 73
+468   write(1, "\33(B\33[0;7m * 4. [C]onfig    Configure any packages that are unconfigured. \33[15b", 78) = 78
+468   write(1, "\33(B\33[m", 6)         = 6
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "t", 1)                   = 1
+468   write(1, "\7", 1)                 = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   poll([{fd=0, events=POLLIN}], 1, 0) = 1 ([{fd=0, revents=POLLIN}])
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "\n", 1)                  = 1
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   write(1, "\33[H\33[2J", 7)        = 7
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   write(1, "\33[H\33[2J", 7)        = 7
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   write(1, "\33[24;1H\33[?1049l\33[23;0;0t\r\33[?1l\33>", 32) = 32
+468   ioctl(2, TCGETS, 0x7ffeb29d46f0)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+468   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=1876, ...}, AT_EMPTY_PATH) = 0
+468   write(1, "running dpkg --pending --configure ...\n", 39) = 39
+468   rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fcac072e520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+468   rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965700, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+473   set_robust_list(0x7fcac06eb2e0, 24 <unfinished ...>
+468   <... clone resumed>, child_tidptr=0x7fcac06eb2d0) = 473
+473   <... set_robust_list resumed>)    = 0
+468   write(2, "\n", 1 <unfinished ...>
+473   rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fcac072e520},  <unfinished ...>
+468   <... write resumed>)              = 1
+473   <... rt_sigaction resumed>NULL, 8) = 0
+468   wait4(473,  <unfinished ...>
+473   rt_sigaction(SIGINT, {sa_handler=0x7fcac0965700, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+473   execve("/usr/local/sbin/dpkg", ["dpkg", "--admindir", "/var/lib/dpkg", "--pending", "--configure"], 0x7ffeb29d4988 /* 12 vars */) = -1 ENOENT (No such file or directory)
+473   execve("/usr/local/bin/dpkg", ["dpkg", "--admindir", "/var/lib/dpkg", "--pending", "--configure"], 0x7ffeb29d4988 /* 12 vars */) = -1 ENOENT (No such file or directory)
+473   execve("/usr/sbin/dpkg", ["dpkg", "--admindir", "/var/lib/dpkg", "--pending", "--configure"], 0x7ffeb29d4988 /* 12 vars */) = -1 ENOENT (No such file or directory)
+473   execve("/usr/bin/dpkg", ["dpkg", "--admindir", "/var/lib/dpkg", "--pending", "--configure"], 0x7ffeb29d4988 /* 12 vars */) = 0
+473   brk(NULL)                         = 0x55d8b99fa000
+473   arch_prctl(0x3001 /* ARCH_??? */, 0x7fffc2e42b50) = -1 EINVAL (Invalid argument)
+473   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5852ceb000
+473   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+473   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5
+473   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+473   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f5852ce9000
+473   close(5)                          = 0
+473   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 5
+473   read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+473   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+473   mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f5852cbd000
+473   mprotect(0x7f5852cc3000, 139264, PROT_NONE) = 0
+473   mmap(0x7f5852cc3000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x6000) = 0x7f5852cc3000
+473   mmap(0x7f5852cdd000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x20000) = 0x7f5852cdd000
+473   mmap(0x7f5852ce5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x27000) = 0x7f5852ce5000
+473   mmap(0x7f5852ce7000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5852ce7000
+473   close(5)                          = 0
+473   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 5
+473   read(5, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+473   pread64(5, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+473   pread64(5, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+473   pread64(5, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+473   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+473   pread64(5, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+473   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f5852a95000
+473   mmap(0x7f5852abd000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x28000) = 0x7f5852abd000
+473   mmap(0x7f5852c52000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x1bd000) = 0x7f5852c52000
+473   mmap(0x7f5852caa000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x214000) = 0x7f5852caa000
+473   mmap(0x7f5852cb0000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5852cb0000
+473   close(5)                          = 0
+473   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 5
+473   read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+473   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+473   mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f58529fe000
+473   mmap(0x7f5852a00000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x2000) = 0x7f5852a00000
+473   mmap(0x7f5852a6b000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x6d000) = 0x7f5852a6b000
+473   mmap(0x7f5852a93000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x94000) = 0x7f5852a93000
+473   close(5)                          = 0
+473   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58529fc000
+473   arch_prctl(ARCH_SET_FS, 0x7f58529fcc40) = 0
+473   set_tid_address(0x7f58529fcf10)   = 473
+473   set_robust_list(0x7f58529fcf20, 24) = 0
+473   rseq(0x7f58529fd5e0, 0x20, 0, 0x53053053) = 0
+473   mprotect(0x7f5852caa000, 16384, PROT_READ) = 0
+473   mprotect(0x7f5852a93000, 4096, PROT_READ) = 0
+473   mprotect(0x7f5852ce5000, 4096, PROT_READ) = 0
+473   mprotect(0x55d8b8f55000, 12288, PROT_READ) = 0
+473   mprotect(0x7f5852d25000, 8192, PROT_READ) = 0
+473   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+473   munmap(0x7f5852ce9000, 6133)      = 0
+473   statfs("/sys/fs/selinux", 0x7fffc2e42b90) = -1 ENOENT (No such file or directory)
+473   statfs("/selinux", 0x7fffc2e42b90) = -1 ENOENT (No such file or directory)
+473   getrandom("\xaa\xe5\x65\x42\x33\xd3\x87\x02", 8, GRND_NONBLOCK) = 8
+473   brk(NULL)                         = 0x55d8b99fa000
+473   brk(0x55d8b9a1b000)               = 0x55d8b9a1b000
+473   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 5
+473   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+473   read(5, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+473   read(5, "", 1024)                 = 0
+473   close(5)                          = 0
+473   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+473   ioctl(1, TCGETS, 0x7fffc2e42b00)  = -1 ENOTTY (Inappropriate ioctl for device)
+473   umask(022)                        = 022
+473   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+473   newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+473   getdents64(5, 0x55d8b99faa60 /* 4 entries */, 32768) = 120
+473   getdents64(5, 0x55d8b99faa60 /* 0 entries */, 32768) = 0
+473   close(5)                          = 0
+473   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d/docker-apt-speedup", O_RDONLY) = 5
+473   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=16, ...}, AT_EMPTY_PATH) = 0
+473   read(5, "force-unsafe-io\n", 4096) = 16
+473   read(5, "", 4096)                 = 0
+473   close(5)                          = 0
+473   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d/excludes", O_RDONLY) = 5
+473   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=364, ...}, AT_EMPTY_PATH) = 0
+473   read(5, "# Drop all man pages\npath-exclude=/usr/share/man/*\n\n# Drop all translations\npath-exclude=/usr/share/locale/*/LC_MESSAGES/*.mo\n\n#"..., 4096) = 364
+473   read(5, "", 4096)                 = 0
+473   close(5)                          = 0
+473   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg", O_RDONLY) = 5
+473   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=446, ...}, AT_EMPTY_PATH) = 0
+473   read(5, "# dpkg configuration file\n#\n# This file can contain default options for dpkg.  All command-line\n# options are allowed.  Values c"..., 4096) = 446
+473   read(5, "", 4096)                 = 0
+473   close(5)                          = 0
+473   openat(AT_FDCWD, "/root/.dpkg.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+473   getuid()                          = 0
+473   setgid(0)                         = 0
+473   getuid()                          = 0
+473   geteuid()                         = 0
+473   access("/var/lib/dpkg", W_OK)     = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/lock-frontend", O_RDWR|O_CREAT|O_TRUNC, 0660) = 5
+473   openat(AT_FDCWD, "/var/lib/dpkg/lock", O_RDWR|O_CREAT|O_TRUNC, 0660) = 6
+473   fcntl(5, F_GETFD)                 = 0
+473   fcntl(5, F_SETFD, FD_CLOEXEC)     = 0
+473   fcntl(5, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+473   fcntl(6, F_GETFD)                 = 0
+473   fcntl(6, F_SETFD, FD_CLOEXEC)     = 0
+473   fcntl(6, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/arch", O_RDONLY) = -1 ENOENT (No such file or directory)
+473   openat(AT_FDCWD, "/var/lib/dpkg/status", O_RDONLY) = 7
+473   newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=120185, ...}, AT_EMPTY_PATH) = 0
+473   brk(0x55d8b9a41000)               = 0x55d8b9a41000
+473   read(7, "Package: adduser\nStatus: install ok installed\nPriority: important\nSection: admin\nInstalled-Size: 608\nMaintainer: Ubuntu Develope"..., 120185) = 120185
+473   brk(0x55d8b9a63000)               = 0x55d8b9a63000
+473   brk(0x55d8b9a85000)               = 0x55d8b9a85000
+473   close(7)                          = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/updates/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+473   newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+473   getdents64(7, 0x55d8b9a02b60 /* 2 entries */, 32768) = 48
+473   getdents64(7, 0x55d8b9a02b60 /* 0 entries */, 32768) = 0
+473   close(7)                          = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/updates/tmp.i", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 7
+473   fcntl(7, F_GETFD)                 = 0
+473   fcntl(7, F_SETFD, FD_CLOEXEC)     = 0
+473   newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+473   write(7, "#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#p"..., 4096) = 4096
+473   write(7, "padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#padding\n#pa"..., 512) = 512
+473   lseek(7, 0, SEEK_SET)             = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/triggers/File", O_RDONLY) = 8
+473   newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=52, ...}, AT_EMPTY_PATH) = 0
+473   read(8, "/usr/share/debianutils/shells.d debianutils/noawait\n", 4096) = 52
+473   read(8, "", 4096)                 = 0
+473   close(8)                          = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/triggers/Lock", O_RDWR|O_CREAT|O_TRUNC, 0600) = 8
+473   fcntl(8, F_GETFD)                 = 0
+473   fcntl(8, F_SETFD, FD_CLOEXEC)     = 0
+473   fcntl(8, F_SETLKW, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/triggers/Unincorp", O_RDONLY) = 9
+473   fcntl(9, F_GETFD)                 = 0
+473   fcntl(9, F_SETFD, FD_CLOEXEC)     = 0
+473   newfstatat(9, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+473   fcntl(8, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+473   newfstatat(AT_FDCWD, "/usr/local/sbin/sh", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/local/bin/sh", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/sbin/sh", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+473   newfstatat(AT_FDCWD, "/usr/local/sbin/rm", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/local/bin/rm", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/sbin/rm", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/bin/rm", {st_mode=S_IFREG|0755, st_size=59904, ...}, 0) = 0
+473   newfstatat(AT_FDCWD, "/usr/local/sbin/tar", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/local/bin/tar", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/sbin/tar", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/bin/tar", {st_mode=S_IFREG|0755, st_size=517952, ...}, 0) = 0
+473   newfstatat(AT_FDCWD, "/usr/local/sbin/diff", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/local/bin/diff", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/sbin/diff", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/bin/diff", {st_mode=S_IFREG|0755, st_size=133680, ...}, 0) = 0
+473   newfstatat(AT_FDCWD, "/usr/local/sbin/dpkg-deb", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/local/bin/dpkg-deb", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/sbin/dpkg-deb", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/bin/dpkg-deb", {st_mode=S_IFREG|0755, st_size=137720, ...}, 0) = 0
+473   newfstatat(AT_FDCWD, "/usr/local/sbin/ldconfig", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/local/bin/ldconfig", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/sbin/ldconfig", {st_mode=S_IFREG|0755, st_size=387, ...}, 0) = 0
+473   newfstatat(AT_FDCWD, "/usr/local/sbin/start-stop-daemon", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/local/bin/start-stop-daemon", 0x7fffc2e42a30, 0) = -1 ENOENT (No such file or directory)
+473   newfstatat(AT_FDCWD, "/usr/sbin/start-stop-daemon", {st_mode=S_IFREG|0755, st_size=48488, ...}, 0) = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/info/format", O_RDONLY) = 10
+473   newfstatat(10, "", {st_mode=S_IFREG|0644, st_size=2, ...}, AT_EMPTY_PATH) = 0
+473   read(10, "1\n", 4096)             = 2
+473   close(10)                         = 0
+473   newfstatat(AT_FDCWD, "/var/lib/dpkg/info/format-new", 0x7fffc2e429a0, 0) = -1 ENOENT (No such file or directory)
+473   openat(AT_FDCWD, "/var/log/dpkg.log", O_WRONLY|O_CREAT|O_APPEND, 0644) = 10
+473   fcntl(10, F_GETFD)                = 0
+473   fcntl(10, F_SETFD, FD_CLOEXEC)    = 0
+473   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+473   write(10, "2022-07-17 21:34:18 startup packages configure\n", 47) = 47
+473   openat(AT_FDCWD, "/var/lib/dpkg/diversions", O_RDONLY) = 11
+473   fcntl(11, F_GETFD)                = 0
+473   fcntl(11, F_SETFD, FD_CLOEXEC)    = 0
+473   newfstatat(11, "", {st_mode=S_IFREG|0644, st_size=169, ...}, AT_EMPTY_PATH) = 0
+473   newfstatat(11, "", {st_mode=S_IFREG|0644, st_size=169, ...}, AT_EMPTY_PATH) = 0
+473   read(11, "/sbin/initctl\n/sbin/initctl.distrib\n:\n/usr/share/man/man1/sh.1.gz\n/usr/share/man/man1/sh.distrib.1.gz\ndash\n/usr/bin/man\n/usr/bin"..., 4096) = 169
+473   read(11, "", 4096)                = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/status-new", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 12
+473   fchmod(12, 0644)                  = 0
+473   sysinfo({uptime=137118, loads=[87200, 84160, 81344], totalram=16562298880, freeram=13745131520, sharedram=23891968, bufferram=1266974720, totalswap=4294967296, freeswap=4294967296, procs=234, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+473   write(12, "Package: adduser\nStatus: install ok installed\nPriority: important\nSection: admin\nInstalled-Size: 608\nMaintainer: Ubuntu Develope"..., 8192) = 8192
+473   write(12, "tem: logger, renice, script, scriptlive, scriptreplay and wall. The\n remaining standard BSD utilities are provided by bsdextraut"..., 8192) = 8192
+473   write(12, "This package provides the low-level infrastructure for handling the\n installation and removal of Debian software packages.\n .\n F"..., 8192) = 8192
+473   write(12, "led-Size: 133\nMaintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>\nArchitecture: all\nMulti-Arch: foreign\nVersio"..., 8192) = 8192
+473   write(12, "Installed-Size: 13592\nMaintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>\nArchitecture: amd64\nMulti-Arch: same"..., 8192) = 8192
+473   write(12, "onal\nSection: libs\nInstalled-Size: 1354\nMaintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>\nArchitecture: amd6"..., 8192) = 8192
+473   write(12, "Architecture: amd64\nMulti-Arch: same\nSource: libidn2\nVersion: 2.3.2-2build1\nDepends: libc6 (>= 2.14), libunistring2 (>= 0.9.7)\nD"..., 8192) = 8192
+473   write(12, "6\nStatus: install ok installed\nPriority: optional\nSection: libs\nInstalled-Size: 329\nMaintainer: Ubuntu Developers <ubuntu-devel-"..., 8192) = 8192
+473   write(12, "ouching\n the applications themselves.\nHomepage: http://www.linux-pam.org/\nOriginal-Maintainer: Steve Langasek <vorlon@debian.org"..., 8192) = 8192
+473   write(12, " management libraries\n This package provides the common files used by the shared libraries\n for SELinux policy management.\n .\n S"..., 8192) = 8192
+473   write(12, " installed\nPriority: optional\nSection: libs\nInstalled-Size: 558\nMaintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu"..., 8192) = 8192
+473   write(12, "u.com>\nArchitecture: amd64\nMulti-Arch: foreign\nSource: e2fsprogs\nVersion: 1.46.5-2ubuntu1.1\nReplaces: e2fsprogs (<< 1.45.3-1)\nDe"..., 8192) = 8192
+473   write(12, ": 717\nMaintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>\nArchitecture: amd64\nMulti-Arch: allowed\nVersion: 5.3"..., 8192) = 8192
+473   write(12, "ketext-perl (<< 1.29), liblocale-maketext-simple-perl (<< 0.21.01), libmath-bigint-perl (<< 1.999818), libmath-complex-perl (<< "..., 8192) = 8192
+473   write(12, "(<< 2018.02.05)\nBreaks: ubuntu-cloudimage-keyring (<< 2018.02.05)\nDescription: GnuPG keys of the Ubuntu archive\n The Ubuntu proj"..., 5497) = 5497
+473   fsync(12)                         = 0
+473   close(12)                         = 0
+473   unlink("/var/lib/dpkg/status-old") = 0
+473   link("/var/lib/dpkg/status", "/var/lib/dpkg/status-old") = 0
+473   rename("/var/lib/dpkg/status-new", "/var/lib/dpkg/status") = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 12
+473   newfstatat(12, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+473   fsync(12)                         = 0
+473   close(12)                         = 0
+473   openat(AT_FDCWD, "/var/lib/dpkg/updates/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 12
+473   newfstatat(12, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+473   fsync(12)                         = 0
+473   close(12)                         = 0
+473   close(7)                          = 0
+473   unlink("/var/lib/dpkg/updates/tmp.i") = 0
+473   fcntl(6, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+473   fcntl(5, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+473   brk(0x55d8b9a83000)               = 0x55d8b9a83000
+473   brk(0x55d8b9a81000)               = 0x55d8b9a81000
+473   brk(0x55d8b9a7f000)               = 0x55d8b9a7f000
+473   brk(0x55d8b9a7d000)               = 0x55d8b9a7d000
+473   brk(0x55d8b9a7b000)               = 0x55d8b9a7b000
+473   brk(0x55d8b9a79000)               = 0x55d8b9a79000
+473   brk(0x55d8b9a77000)               = 0x55d8b9a77000
+473   brk(0x55d8b9a75000)               = 0x55d8b9a75000
+473   brk(0x55d8b9a73000)               = 0x55d8b9a73000
+473   brk(0x55d8b9a71000)               = 0x55d8b9a71000
+473   brk(0x55d8b9a6f000)               = 0x55d8b9a6f000
+473   brk(0x55d8b9a6d000)               = 0x55d8b9a6d000
+473   brk(0x55d8b9a6b000)               = 0x55d8b9a6b000
+473   brk(0x55d8b9a69000)               = 0x55d8b9a69000
+473   brk(0x55d8b9a67000)               = 0x55d8b9a67000
+473   brk(0x55d8b9a65000)               = 0x55d8b9a65000
+473   brk(0x55d8b9a63000)               = 0x55d8b9a63000
+473   brk(0x55d8b9a61000)               = 0x55d8b9a61000
+473   brk(0x55d8b9a5f000)               = 0x55d8b9a5f000
+473   brk(0x55d8b9a5d000)               = 0x55d8b9a5d000
+473   brk(0x55d8b9a5b000)               = 0x55d8b9a5b000
+473   brk(0x55d8b9a59000)               = 0x55d8b9a59000
+473   brk(0x55d8b9a57000)               = 0x55d8b9a57000
+473   brk(0x55d8b9a55000)               = 0x55d8b9a55000
+473   brk(0x55d8b9a53000)               = 0x55d8b9a53000
+473   brk(0x55d8b9a51000)               = 0x55d8b9a51000
+473   brk(0x55d8b9a4f000)               = 0x55d8b9a4f000
+473   brk(0x55d8b9a4d000)               = 0x55d8b9a4d000
+473   brk(0x55d8b9a4b000)               = 0x55d8b9a4b000
+473   brk(0x55d8b9a49000)               = 0x55d8b9a49000
+473   brk(0x55d8b9a47000)               = 0x55d8b9a47000
+473   brk(0x55d8b9a45000)               = 0x55d8b9a45000
+473   brk(0x55d8b9a43000)               = 0x55d8b9a43000
+473   brk(0x55d8b9a27000)               = 0x55d8b9a27000
+473   exit_group(0)                     = ?
+473   +++ exited with 0 +++
+468   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 473
+468   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=473, si_uid=0, si_status=0, si_utime=0, si_stime=4} ---
+468   rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   rt_sigaction(SIGINT, {sa_handler=0x7fcac0965700, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, 0x7ffeb29d4630) = 0
+468   ioctl(2, TCGETS, 0x7ffeb29d4690)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+468   write(1, "\33[?1h\33=", 7)        = 7
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   ioctl(2, TCGETS, 0x7ffeb29d44d0)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, TCGETS, 0x7ffeb29d4620)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+468   write(1, "\33[?1049h\33[22;0;0t\33[1;24r\33(B\33[m\33[4l\33[?7h\33[H\33[2J\33(B\33[0;1mDebian 'dselect' package handling frontend version 1.21.1 (amd64).\33[3;4H\33"..., 921) = 921
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   read(0, "", 1)                    = 0
+468   rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, 8) = 0
+468   write(1, "\33[H\33[2J", 7)        = 7
+468   rt_sigaction(SIGTSTP, {sa_handler=0x7fcac0965500, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fcac072e520}, NULL, 8) = 0
+468   write(1, "\33[24;1H\33[?1049l\33[23;0;0t\r\33[?1l\33>", 32) = 32
+468   ioctl(2, TCGETS, 0x7ffeb29d4610)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(2, SNDCTL_TMR_STOP or TCSETSW, {B0 -opost -isig -icanon -echo ...}) = -1 ENOTTY (Inappropriate ioctl for device)
+468   ioctl(1, TCGETS, 0x7ffeb29d4400)  = -1 ENOTTY (Inappropriate ioctl for device)
+468   write(2, "dselect: error: failed to getch in main menu: Inappropriate ioctl for device\n", 77) = 77
+468   exit_group(2)                     = ?
+468   +++ exited with 2 +++

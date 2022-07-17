@@ -1,0 +1,52 @@
+764   execve("/sbin/mount.smb3", ["/sbin/mount.smb3"], 0x7ffc4f40fb10 /* 12 vars */) = 0
+764   brk(NULL)                         = 0x5631b6a64000
+764   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe6c3adc80) = -1 EINVAL (Invalid argument)
+764   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5fb1648000
+764   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+764   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7301, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 7301, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5fb1646000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200b\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\22\0\0\0\0\0\0H\22\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 28992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5fb163e000
+764   mmap(0x7f5fb1640000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5fb1640000
+764   mmap(0x7f5fb1643000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f5fb1643000
+764   mmap(0x7f5fb1644000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f5fb1644000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+764   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+764   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+764   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+764   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+764   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5fb1416000
+764   mmap(0x7f5fb143e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f5fb143e000
+764   mmap(0x7f5fb15d3000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f5fb15d3000
+764   mmap(0x7f5fb162b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f5fb162b000
+764   mmap(0x7f5fb1631000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5fb1631000
+764   close(3)                          = 0
+764   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5fb1413000
+764   arch_prctl(ARCH_SET_FS, 0x7f5fb1413740) = 0
+764   set_tid_address(0x7f5fb1413a10)   = 764
+764   set_robust_list(0x7f5fb1413a20, 24) = 0
+764   rseq(0x7f5fb14140e0, 0x20, 0, 0x53053053) = 0
+764   mprotect(0x7f5fb162b000, 16384, PROT_READ) = 0
+764   mprotect(0x7f5fb1644000, 4096, PROT_READ) = 0
+764   mprotect(0x5631b626c000, 4096, PROT_READ) = 0
+764   mprotect(0x7f5fb1682000, 8192, PROT_READ) = 0
+764   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+764   munmap(0x7f5fb1646000, 7301)      = 0
+764   geteuid()                         = 0
+764   getpid()                          = 764
+764   capget({version=0 /* _LINUX_CAPABILITY_VERSION_??? */, pid=0}, NULL) = 0
+764   gettid()                          = 764
+764   openat(AT_FDCWD, "/proc/sys/kernel/cap_last_cap", O_RDONLY) = 3
+764   read(3, "40\n", 7)                = 3
+764   close(3)                          = 0
+764   capset({version=_LINUX_CAPABILITY_VERSION_3, pid=764}, {effective=1<<CAP_SYS_ADMIN, permitted=1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_SYS_ADMIN, inheritable=0}) = -1 EPERM (Operation not permitted)
+764   write(2, "Unable to apply new capability set.\n", 36) = 36
+764   exit_group(2)                     = ?
+764   +++ exited with 2 +++

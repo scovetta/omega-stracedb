@@ -1,0 +1,73 @@
+560   execve("/usr/bin/logresolve", ["/usr/bin/logresolve"], 0x7ffc70658310 /* 12 vars */) = 0
+560   brk(NULL)                         = 0x562bd846a000
+560   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe4a3efc30) = -1 EINVAL (Invalid argument)
+560   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd787665000
+560   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+560   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+560   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6377, ...}, AT_EMPTY_PATH) = 0
+560   mmap(NULL, 6377, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd787663000
+560   close(3)                          = 0
+560   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapr-1.so.0", O_RDONLY|O_CLOEXEC) = 3
+560   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`\270\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230\273\0\0\0\0\0\0\230\273\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+560   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=245664, ...}, AT_EMPTY_PATH) = 0
+560   mmap(NULL, 248464, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd787626000
+560   mprotect(0x7fd787632000, 192512, PROT_NONE) = 0
+560   mmap(0x7fd787632000, 143360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7fd787632000
+560   mmap(0x7fd787655000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7fd787655000
+560   mmap(0x7fd787661000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3a000) = 0x7fd787661000
+560   close(3)                          = 0
+560   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+560   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+560   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+560   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+560   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+560   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+560   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+560   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd7873fe000
+560   mmap(0x7fd787426000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fd787426000
+560   mmap(0x7fd7875bb000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fd7875bb000
+560   mmap(0x7fd787613000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fd787613000
+560   mmap(0x7fd787619000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd787619000
+560   close(3)                          = 0
+560   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1", O_RDONLY|O_CLOEXEC) = 3
+560   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0Hq\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P\24\0\0\0\0\0\0P\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+560   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=30920, ...}, AT_EMPTY_PATH) = 0
+560   mmap(NULL, 32808, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd7873f5000
+560   mmap(0x7fd7873f7000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fd7873f7000
+560   mmap(0x7fd7873fb000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fd7873fb000
+560   mmap(0x7fd7873fc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fd7873fc000
+560   close(3)                          = 0
+560   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7873f3000
+560   arch_prctl(ARCH_SET_FS, 0x7fd7873f3bc0) = 0
+560   set_tid_address(0x7fd7873f3e90)   = 560
+560   set_robust_list(0x7fd7873f3ea0, 24) = 0
+560   rseq(0x7fd7873f4560, 0x20, 0, 0x53053053) = 0
+560   mprotect(0x7fd787613000, 16384, PROT_READ) = 0
+560   mprotect(0x7fd7873fc000, 4096, PROT_READ) = 0
+560   mprotect(0x7fd787661000, 4096, PROT_READ) = 0
+560   mprotect(0x562bd734c000, 4096, PROT_READ) = 0
+560   mprotect(0x7fd78769f000, 8192, PROT_READ) = 0
+560   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+560   munmap(0x7fd787663000, 6377)      = 0
+560   getrandom("\xae\x43\x2d\xc4\x9a\xc8\x10\x1e", 8, GRND_NONBLOCK) = 8
+560   brk(NULL)                         = 0x562bd846a000
+560   brk(0x562bd848b000)               = 0x562bd848b000
+560   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd787663000
+560   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7873f1000
+560   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7873ef000
+560   mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7873ce000
+560   mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7873ad000
+560   mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd78738c000
+560   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd78738a000
+560   read(0, "/usr/bin/ab\n/usr/bin/checkgid\n/usr/bin/fcgistarter\n/usr/bin/htcacheclean\n/usr/bin/htdbm\n/usr/bin/htdigest\n/usr/bin/htpasswd\n/usr"..., 131072) = 184
+560   read(0, "", 131072)               = 0
+560   write(1, "/usr/bin/ab\n/usr/bin/checkgid\n/usr/bin/fcgistarter\n/usr/bin/htcacheclean\n/usr/bin/htdbm\n/usr/bin/htdigest\n/usr/bin/htpasswd\n/usr"..., 184) = 184
+560   munmap(0x7fd78738c000, 135168)    = 0
+560   munmap(0x7fd7873ce000, 135168)    = 0
+560   munmap(0x7fd7873ad000, 135168)    = 0
+560   munmap(0x7fd787663000, 8192)      = 0
+560   munmap(0x7fd7873f1000, 8192)      = 0
+560   munmap(0x7fd7873ef000, 8192)      = 0
+560   munmap(0x7fd78738a000, 8192)      = 0
+560   exit_group(0)                     = ?
+560   +++ exited with 0 +++

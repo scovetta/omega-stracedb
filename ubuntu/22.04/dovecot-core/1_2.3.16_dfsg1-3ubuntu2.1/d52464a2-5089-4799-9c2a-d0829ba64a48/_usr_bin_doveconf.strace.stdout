@@ -1,0 +1,1154 @@
+# 2.3.16 (7e2e900c1a): /etc/dovecot/dovecot.conf
+# Pigeonhole version 0.5.16 (09c29328)
+# OS: Linux 5.10.102.1-microsoft-standard-WSL2 x86_64 Ubuntu 22.04 LTS 
+# Hostname: 58d31effaf63
+# NOTE: Send doveconf -n output instead when asking for help.
+auth_anonymous_username = anonymous
+auth_cache_negative_ttl = 1 hours
+auth_cache_size = 0
+auth_cache_ttl = 1 hours
+auth_cache_verify_password_with_worker = no
+auth_debug = no
+auth_debug_passwords = no
+auth_default_realm = 
+auth_failure_delay = 2 secs
+auth_gssapi_hostname = 
+auth_krb5_keytab = 
+auth_master_user_separator = 
+auth_mechanisms = plain
+auth_policy_check_after_auth = yes
+auth_policy_check_before_auth = yes
+auth_policy_hash_mech = sha256
+auth_policy_hash_nonce = 
+auth_policy_hash_truncate = 12
+auth_policy_log_only = no
+auth_policy_reject_on_fail = no
+auth_policy_report_after_auth = yes
+auth_policy_request_attributes = login=%{requested_username} pwhash=%{hashed_password} remote=%{rip} device_id=%{client_id} protocol=%s session_id=%{session}
+auth_policy_server_api_header = 
+auth_policy_server_timeout_msecs = 2000
+auth_policy_server_url = 
+auth_proxy_self = 
+auth_realms = 
+auth_socket_path = auth-userdb
+auth_ssl_require_client_cert = no
+auth_ssl_username_from_cert = no
+auth_stats = no
+auth_use_winbind = no
+auth_username_chars = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890.-_@
+auth_username_format = %Lu
+auth_username_translation = 
+auth_verbose = no
+auth_verbose_passwords = no
+auth_winbind_helper_path = /usr/bin/ntlm_auth
+auth_worker_max_count = 30
+base_dir = /run/dovecot
+config_cache_size = 1 M
+debug_log_path = 
+default_client_limit = 1000
+default_idle_kill = 1 mins
+default_internal_group = dovecot
+default_internal_user = dovecot
+default_login_user = dovenull
+default_process_limit = 100
+default_vsz_limit = 256 M
+deliver_log_format = msgid=%m: %$
+dict_db_config = 
+director_flush_socket = 
+director_mail_servers = 
+director_max_parallel_kicks = 100
+director_max_parallel_moves = 100
+director_output_buffer_size = 10 M
+director_ping_idle_timeout = 30 secs
+director_ping_max_timeout = 1 mins
+director_servers = 
+director_user_expire = 15 mins
+director_user_kick_delay = 2 secs
+director_username_hash = %Lu
+disable_plaintext_auth = yes
+dotlock_use_excl = yes
+doveadm_allowed_commands = 
+doveadm_api_key = 
+doveadm_http_rawlog_dir = 
+doveadm_password = 
+doveadm_port = 0
+doveadm_socket_path = doveadm-server
+doveadm_ssl = no
+doveadm_username = doveadm
+doveadm_worker_count = 0
+dsync_alt_char = _
+dsync_commit_msgs_interval = 100
+dsync_features = 
+dsync_hashed_headers = Date Message-ID
+dsync_remote_cmd = ssh -l%{login} %{host} doveadm dsync-server -u%u -U
+first_valid_gid = 1
+first_valid_uid = 500
+haproxy_timeout = 3 secs
+haproxy_trusted_networks = 
+hostname = 
+imap_capability = 
+imap_client_workarounds = 
+imap_fetch_failure = disconnect-immediately
+imap_hibernate_timeout = 0
+imap_id_log = 
+imap_id_retain = no
+imap_id_send = name *
+imap_idle_notify_interval = 2 mins
+imap_literal_minus = no
+imap_logout_format = in=%i out=%o deleted=%{deleted} expunged=%{expunged} trashed=%{trashed} hdr_count=%{fetch_hdr_count} hdr_bytes=%{fetch_hdr_bytes} body_count=%{fetch_body_count} body_bytes=%{fetch_body_bytes}
+imap_max_line_length = 64 k
+imap_metadata = no
+imap_urlauth_host = 
+imap_urlauth_logout_format = in=%i out=%o
+imap_urlauth_port = 143
+imapc_cmd_timeout = 5 mins
+imapc_connection_retry_count = 1
+imapc_connection_retry_interval = 1 secs
+imapc_features = 
+imapc_host = 
+imapc_list_prefix = 
+imapc_master_user = 
+imapc_max_idle_time = 29 mins
+imapc_max_line_length = 0
+imapc_password = 
+imapc_port = 143
+imapc_rawlog_dir = 
+imapc_sasl_mechanisms = 
+imapc_ssl = no
+imapc_ssl_verify = yes
+imapc_user = 
+import_environment = TZ CORE_OUTOFMEM CORE_ERROR LISTEN_PID LISTEN_FDS NOTIFY_SOCKET
+info_log_path = 
+instance_name = dovecot
+last_valid_gid = 0
+last_valid_uid = 0
+lda_mailbox_autocreate = no
+lda_mailbox_autosubscribe = no
+lda_original_recipient_header = 
+libexec_dir = /usr/lib/dovecot
+listen = *, ::
+lmtp_add_received_header = yes
+lmtp_client_workarounds = 
+lmtp_hdr_delivery_address = final
+lmtp_proxy = no
+lmtp_proxy_rawlog_dir = 
+lmtp_rawlog_dir = 
+lmtp_rcpt_check_quota = no
+lmtp_save_to_detail_mailbox = no
+lmtp_user_concurrency_limit = 0
+lock_method = fcntl
+log_core_filter = 
+log_debug = 
+log_path = syslog
+log_timestamp = "%b %d %H:%M:%S "
+login_access_sockets = 
+login_greeting = Dovecot (Ubuntu) ready.
+login_log_format = %$: %s
+login_log_format_elements = user=<%u> method=%m rip=%r lip=%l mpid=%e %c session=<%{session}>
+login_plugin_dir = /usr/lib/dovecot/modules/login
+login_plugins = 
+login_proxy_max_disconnect_delay = 0
+login_proxy_max_reconnects = 3
+login_proxy_notify_path = proxy-notify
+login_proxy_timeout = 30 secs
+login_source_ips = 
+login_trusted_networks = 
+mail_access_groups = 
+mail_always_cache_fields = 
+mail_attachment_detection_options = 
+mail_attachment_dir = 
+mail_attachment_fs = sis posix
+mail_attachment_hash = %{sha1}
+mail_attachment_min_size = 128 k
+mail_attribute_dict = 
+mail_cache_fields = flags
+mail_cache_min_mail_count = 0
+mail_chroot = 
+mail_debug = no
+mail_fsync = optimized
+mail_full_filesystem_access = no
+mail_gid = 
+mail_home = 
+mail_location = mbox:~/mail:INBOX=/var/mail/%u
+mail_log_prefix = "%s(%u)<%{pid}><%{session}>: "
+mail_max_keyword_length = 50
+mail_max_lock_timeout = 0
+mail_max_userip_connections = 10
+mail_never_cache_fields = imap.envelope
+mail_nfs_index = no
+mail_nfs_storage = no
+mail_plugin_dir = /usr/lib/dovecot/modules
+mail_plugins = 
+mail_prefetch_count = 0
+mail_privileged_group = mail
+mail_save_crlf = no
+mail_server_admin = 
+mail_server_comment = 
+mail_shared_explicit_inbox = no
+mail_sort_max_read_count = 0
+mail_temp_dir = /tmp
+mail_temp_scan_interval = 1 weeks
+mail_uid = 
+mail_vsize_bg_after_count = 0
+mailbox_idle_check_interval = 30 secs
+mailbox_list_index = yes
+mailbox_list_index_include_inbox = no
+mailbox_list_index_very_dirty_syncs = no
+maildir_broken_filename_sizes = no
+maildir_copy_with_hardlinks = yes
+maildir_empty_new = no
+maildir_stat_dirs = no
+maildir_very_dirty_syncs = no
+master_user_separator = 
+mbox_dirty_syncs = yes
+mbox_dotlock_change_timeout = 2 mins
+mbox_lazy_writes = yes
+mbox_lock_timeout = 5 mins
+mbox_md5 = apop3d
+mbox_min_index_size = 0
+mbox_read_locks = fcntl
+mbox_very_dirty_syncs = no
+mbox_write_locks = fcntl dotlock
+mdbox_preallocate_space = no
+mdbox_rotate_interval = 0
+mdbox_rotate_size = 10 M
+mmap_disable = no
+namespace inbox {
+  disabled = no
+  hidden = no
+  ignore_on_failure = no
+  inbox = yes
+  list = yes
+  location = 
+  mailbox Drafts {
+    auto = no
+    autoexpunge = 0
+    autoexpunge_max_mails = 0
+    comment = 
+    driver = 
+    special_use = \Drafts
+  }
+  mailbox Junk {
+    auto = no
+    autoexpunge = 0
+    autoexpunge_max_mails = 0
+    comment = 
+    driver = 
+    special_use = \Junk
+  }
+  mailbox Sent {
+    auto = no
+    autoexpunge = 0
+    autoexpunge_max_mails = 0
+    comment = 
+    driver = 
+    special_use = \Sent
+  }
+  mailbox "Sent Messages" {
+    auto = no
+    autoexpunge = 0
+    autoexpunge_max_mails = 0
+    comment = 
+    driver = 
+    special_use = \Sent
+  }
+  mailbox Trash {
+    auto = no
+    autoexpunge = 0
+    autoexpunge_max_mails = 0
+    comment = 
+    driver = 
+    special_use = \Trash
+  }
+  order = 0
+  prefix = 
+  separator = 
+  subscriptions = yes
+  type = private
+}
+old_stats_carbon_interval = 30 secs
+old_stats_carbon_name = 
+old_stats_carbon_server = 
+old_stats_command_min_time = 1 mins
+old_stats_domain_min_time = 12 hours
+old_stats_ip_min_time = 12 hours
+old_stats_memory_limit = 16 M
+old_stats_session_min_time = 15 mins
+old_stats_user_min_time = 1 hours
+passdb {
+  args = 
+  auth_verbose = default
+  default_fields = 
+  deny = no
+  driver = pam
+  master = no
+  mechanisms = 
+  name = 
+  override_fields = 
+  pass = no
+  result_failure = continue
+  result_internalfail = continue
+  result_success = return-ok
+  skip = never
+  username_filter = 
+}
+pop3_client_workarounds = 
+pop3_delete_type = default
+pop3_deleted_flag = 
+pop3_enable_last = no
+pop3_fast_size_lookups = no
+pop3_lock_session = no
+pop3_logout_format = top=%t/%p, retr=%r/%b, del=%d/%m, size=%s
+pop3_no_flag_updates = no
+pop3_reuse_xuidl = no
+pop3_save_uidl = no
+pop3_uidl_duplicates = allow
+pop3_uidl_format = %08Xu%08Xv
+pop3c_features = 
+pop3c_host = 
+pop3c_master_user = 
+pop3c_password = 
+pop3c_port = 110
+pop3c_quick_received_date = no
+pop3c_rawlog_dir = 
+pop3c_ssl = no
+pop3c_ssl_verify = yes
+pop3c_user = %u
+postmaster_address = postmaster@%{if;%d;ne;;%d;%{hostname}}
+protocols = 
+quota_full_tempfail = no
+rawlog_dir = 
+recipient_delimiter = +
+rejection_reason = Your message to <%t> was automatically rejected:%n%r
+rejection_subject = Rejected: %s
+replication_dsync_parameters = -d -N -l 30 -U
+replication_full_sync_interval = 1 days
+replication_max_conns = 10
+replicator_host = replicator
+replicator_port = 0
+sendmail_path = /usr/sbin/sendmail
+service aggregator {
+  chroot = .
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = aggregator
+  extra_groups = 
+  fifo_listener replication-notify-fifo {
+    group = 
+    mode = 0600
+    user = 
+  }
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener replication-notify {
+    group = 
+    mode = 0600
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service anvil {
+  chroot = empty
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = anvil
+  extra_groups = 
+  group = 
+  idle_kill = 4294967295 secs
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 1
+  protocol = 
+  service_count = 0
+  type = anvil
+  unix_listener anvil-auth-penalty {
+    group = 
+    mode = 0600
+    user = 
+  }
+  unix_listener anvil {
+    group = 
+    mode = 0600
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service auth-worker {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = auth -w
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = worker
+  unix_listener auth-worker {
+    group = 
+    mode = 0600
+    user = $default_internal_user
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service auth {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = auth
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener auth-client {
+    group = 
+    mode = 0600
+    user = $default_internal_user
+  }
+  unix_listener auth-login {
+    group = 
+    mode = 0600
+    user = $default_internal_user
+  }
+  unix_listener auth-master {
+    group = 
+    mode = 0600
+    user = 
+  }
+  unix_listener auth-userdb {
+    group = 
+    mode = 0666
+    user = $default_internal_user
+  }
+  unix_listener login/login {
+    group = 
+    mode = 0666
+    user = 
+  }
+  unix_listener token-login/tokenlogin {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service config {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = config
+  extra_groups = 
+  group = 
+  idle_kill = 4294967295 secs
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = config
+  unix_listener config {
+    group = 
+    mode = 0600
+    user = 
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service dict-async {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = dict
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener dict-async {
+    group = $default_internal_group
+    mode = 0660
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service dict {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = dict
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener dict {
+    group = $default_internal_group
+    mode = 0660
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service director {
+  chroot = .
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = director
+  extra_groups = 
+  fifo_listener login/proxy-notify {
+    group = 
+    mode = 00
+    user = 
+  }
+  group = 
+  idle_kill = 4294967295 secs
+  inet_listener {
+    address = 
+    haproxy = no
+    port = 0
+    reuse_port = no
+    ssl = no
+  }
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener director-admin {
+    group = 
+    mode = 0600
+    user = 
+  }
+  unix_listener director-userdb {
+    group = 
+    mode = 0600
+    user = 
+  }
+  unix_listener login/director {
+    group = 
+    mode = 00
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service dns-client {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = dns-client
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener dns-client {
+    group = 
+    mode = 0666
+    user = 
+  }
+  unix_listener login/dns-client {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service doveadm {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = doveadm-server
+  extra_groups = $default_internal_group
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 1
+  type = 
+  unix_listener doveadm-server {
+    group = 
+    mode = 0600
+    user = 
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service health-check {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = yes
+  executable = script -p health-check.sh
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service imap-hibernate {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = imap-hibernate
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = imap
+  service_count = 0
+  type = 
+  unix_listener imap-hibernate {
+    group = $default_internal_group
+    mode = 0660
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service imap-login {
+  chroot = login
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = imap-login
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  inet_listener imap {
+    address = 
+    haproxy = no
+    port = 143
+    reuse_port = no
+    ssl = no
+  }
+  inet_listener imaps {
+    address = 
+    haproxy = no
+    port = 993
+    reuse_port = no
+    ssl = yes
+  }
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = imap
+  service_count = 1
+  type = login
+  user = $default_login_user
+  vsz_limit = 18446744073709551615 B
+}
+service imap-urlauth-login {
+  chroot = token-login
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = imap-urlauth-login
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = imap
+  service_count = 1
+  type = login
+  unix_listener imap-urlauth {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = $default_login_user
+  vsz_limit = 18446744073709551615 B
+}
+service imap-urlauth-worker {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = imap-urlauth-worker
+  extra_groups = $default_internal_group
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1024
+  process_min_avail = 0
+  protocol = imap
+  service_count = 1
+  type = 
+  unix_listener imap-urlauth-worker {
+    group = 
+    mode = 0600
+    user = $default_internal_user
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service imap-urlauth {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = imap-urlauth
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1024
+  process_min_avail = 0
+  protocol = imap
+  service_count = 1
+  type = 
+  unix_listener token-login/imap-urlauth {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service imap {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = imap
+  extra_groups = $default_internal_group
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1024
+  process_min_avail = 0
+  protocol = imap
+  service_count = 1
+  type = 
+  unix_listener imap-master {
+    group = 
+    mode = 0600
+    user = 
+  }
+  unix_listener login/imap {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service indexer-worker {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = indexer-worker
+  extra_groups = $default_internal_group
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 10
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = worker
+  unix_listener indexer-worker {
+    group = 
+    mode = 0600
+    user = $default_internal_user
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service indexer {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = indexer
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener indexer {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service ipc {
+  chroot = empty
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = ipc
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener ipc {
+    group = 
+    mode = 0600
+    user = $default_internal_user
+  }
+  unix_listener login/ipc-proxy {
+    group = 
+    mode = 0600
+    user = $default_login_user
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service lmtp {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = lmtp
+  extra_groups = $default_internal_group
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = lmtp
+  service_count = 0
+  type = 
+  unix_listener lmtp {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service log {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = log
+  extra_groups = 
+  group = 
+  idle_kill = 4294967295 secs
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = log
+  unix_listener log-errors {
+    group = 
+    mode = 0600
+    user = 
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service old-stats {
+  chroot = empty
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = old-stats
+  extra_groups = 
+  fifo_listener old-stats-mail {
+    group = 
+    mode = 0600
+    user = 
+  }
+  fifo_listener old-stats-user {
+    group = 
+    mode = 0600
+    user = 
+  }
+  group = 
+  idle_kill = 4294967295 secs
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener old-stats {
+    group = 
+    mode = 0600
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service pop3-login {
+  chroot = login
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = pop3-login
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  inet_listener pop3 {
+    address = 
+    haproxy = no
+    port = 110
+    reuse_port = no
+    ssl = no
+  }
+  inet_listener pop3s {
+    address = 
+    haproxy = no
+    port = 995
+    reuse_port = no
+    ssl = yes
+  }
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = pop3
+  service_count = 1
+  type = login
+  user = $default_login_user
+  vsz_limit = 18446744073709551615 B
+}
+service pop3 {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = pop3
+  extra_groups = $default_internal_group
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1024
+  process_min_avail = 0
+  protocol = pop3
+  service_count = 1
+  type = 
+  unix_listener login/pop3 {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service replicator {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = replicator
+  extra_groups = 
+  group = 
+  idle_kill = 4294967295 secs
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener replicator-doveadm {
+    group = 
+    mode = 00
+    user = $default_internal_user
+  }
+  unix_listener replicator {
+    group = 
+    mode = 0600
+    user = $default_internal_user
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service stats {
+  chroot = 
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = stats
+  extra_groups = 
+  group = 
+  idle_kill = 4294967295 secs
+  privileged_group = 
+  process_limit = 1
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  unix_listener stats-reader {
+    group = 
+    mode = 0600
+    user = 
+  }
+  unix_listener stats-writer {
+    group = $default_internal_group
+    mode = 0660
+    user = 
+  }
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+service submission-login {
+  chroot = login
+  client_limit = 0
+  drop_priv_before_exec = no
+  executable = submission-login
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  inet_listener submission {
+    address = 
+    haproxy = no
+    port = 587
+    reuse_port = no
+    ssl = no
+  }
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = submission
+  service_count = 1
+  type = login
+  user = $default_login_user
+  vsz_limit = 18446744073709551615 B
+}
+service submission {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = submission
+  extra_groups = $default_internal_group
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 1024
+  process_min_avail = 0
+  protocol = submission
+  service_count = 1
+  type = 
+  unix_listener login/submission {
+    group = 
+    mode = 0666
+    user = 
+  }
+  user = 
+  vsz_limit = 18446744073709551615 B
+}
+service tcpwrap {
+  chroot = 
+  client_limit = 1
+  drop_priv_before_exec = no
+  executable = tcpwrap
+  extra_groups = 
+  group = 
+  idle_kill = 0
+  privileged_group = 
+  process_limit = 0
+  process_min_avail = 0
+  protocol = 
+  service_count = 0
+  type = 
+  user = $default_internal_user
+  vsz_limit = 18446744073709551615 B
+}
+shutdown_clients = yes
+ssl = yes
+ssl_alt_cert = 
+ssl_alt_key = 
+ssl_ca = 
+ssl_cert = </etc/dovecot/private/dovecot.pem
+ssl_cert_username_field = commonName
+ssl_cipher_list = ALL:!kRSA:!SRP:!kDHd:!DSS:!aNULL:!eNULL:!EXPORT:!DES:!3DES:!MD5:!PSK:!RC4:!ADH:!LOW@STRENGTH
+ssl_cipher_suites = 
+ssl_client_ca_dir = /etc/ssl/certs
+ssl_client_ca_file = 
+ssl_client_cert = 
+ssl_client_key = 
+ssl_client_require_valid_cert = yes
+ssl_crypto_device = 
+ssl_curve_list = 
+ssl_dh = # hidden, use -P to show it
+ssl_key = # hidden, use -P to show it
+ssl_key_password = 
+ssl_min_protocol = TLSv1.2
+ssl_options = 
+ssl_prefer_server_ciphers = no
+ssl_require_crl = yes
+ssl_verify_client_cert = no
+state_dir = /var/lib/dovecot
+stats_http_rawlog_dir = 
+stats_writer_socket_path = stats-writer
+submission_client_workarounds = 
+submission_host = 
+submission_logout_format = in=%i out=%o
+submission_max_mail_size = 0
+submission_max_recipients = 0
+submission_relay_command_timeout = 5 mins
+submission_relay_connect_timeout = 30 secs
+submission_relay_host = 
+submission_relay_master_user = 
+submission_relay_max_idle_time = 29 mins
+submission_relay_password = 
+submission_relay_port = 25
+submission_relay_rawlog_dir = 
+submission_relay_ssl = no
+submission_relay_ssl_verify = yes
+submission_relay_trusted = no
+submission_relay_user = 
+submission_ssl = no
+submission_timeout = 30 secs
+syslog_facility = mail
+userdb {
+  args = 
+  auth_verbose = default
+  default_fields = 
+  driver = passwd
+  name = 
+  override_fields = 
+  result_failure = continue
+  result_internalfail = continue
+  result_success = return-ok
+  skip = never
+}
+valid_chroot_dirs = 
+verbose_proctitle = no
+verbose_ssl = no
+version_ignore = no

@@ -1,0 +1,62 @@
+
+Usage: /usr/bin/esnacc [-h] [-P] [-t] [-v] [-e] [-d] [-p] [-f] [-y] [-M] [-B] 
+            [-c | -C | -T <table output file> | -idl ]
+            [-I <include directory>]
+            [-mm] [-mf <max file name length>]
+            [-l <neg number>]
+            [-VDAexport=DEFINE_NAME] to designate export of SNACC generated classes
+            [-E BER|DER select encoding rules to generate (C only)]
+            [-a <start number>] select starting number for ANYs
+            <ASN.1 file list>
+
+  -c   generate C encoders and decoders (default)
+  -C   generate C++ encoders and decoders
+  -T <filename> write a type table file for the ASN.1 modules to file filename
+  -O <filename> writes the type table file in the original (<1.3b2) format
+  -B   turns off generation of constrained PER classes
+  -idl generate CORBA IDL
+  -h   prints this msg
+  -P   print the parsed ASN.1 modules to stdout from their parse trees
+       (helpful debugging)
+  -t   generate type definitions
+  -v   generate value definitions (limited)
+  -e   generate encode routines
+  -d   generate decode routines
+  -p   generate print routines
+  -f   generate hierarchical free routines (C only)
+    Note: if none of -t -v -e -d -p -f are given, all are generated.
+    These do not affect type tables.
+  -y   enable bison debugging
+  -M   uses the 1990 Syntax, default is the 1997 Syntax
+  -mm  mangle output file name into module name (by default, the output file
+       inherits the input file's name, with only the suffix replaced)
+  -mf <num> num is maximum file name length for the generated source files
+  -mo <directory> store output in the directory specified by <directory>.
+  -l <neg num> where to start error longjmp values decending from (obscure).
+  -L <error log file> print syntax errors to the specified error log file
+                      (default is stderr)
+
+Use `-' as the ASN.1 source file name to parse stdin.
+
+This ASN.1 compiler produces C or C++ BER encoders and decoders or type tables.
+
+Version 1.8.1
+Release Date:  2016-12-01
+Please see http://esnacc.org for new versions and where to send bug reports and comments.
+
+Copyright (C) 1993 Michael Sample and UBC
+Copyright (C) 1994, 1995 by Robert Joop and GMD FOKUS
+
+Copyright (C) 2011-2016 by Aaron Conole
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License

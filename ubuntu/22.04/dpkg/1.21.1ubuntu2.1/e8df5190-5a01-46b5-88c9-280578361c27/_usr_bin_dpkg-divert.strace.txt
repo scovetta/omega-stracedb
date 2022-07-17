@@ -1,0 +1,71 @@
+475   execve("/usr/bin/dpkg-divert", ["/usr/bin/dpkg-divert"], 0x7fff5ad887d0 /* 12 vars */) = 0
+475   brk(NULL)                         = 0x55e294923000
+475   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd4ef5f8c0) = -1 EINVAL (Invalid argument)
+475   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7779f78000
+475   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+475   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+475   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+475   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7779f76000
+475   close(3)                          = 0
+475   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+475   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+475   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+475   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+475   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+475   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+475   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+475   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7779d4e000
+475   mmap(0x7f7779d76000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7779d76000
+475   mmap(0x7f7779f0b000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f7779f0b000
+475   mmap(0x7f7779f63000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f7779f63000
+475   mmap(0x7f7779f69000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7779f69000
+475   close(3)                          = 0
+475   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7779d4b000
+475   arch_prctl(ARCH_SET_FS, 0x7f7779d4b740) = 0
+475   set_tid_address(0x7f7779d4ba10)   = 475
+475   set_robust_list(0x7f7779d4ba20, 24) = 0
+475   rseq(0x7f7779d4c0e0, 0x20, 0, 0x53053053) = 0
+475   mprotect(0x7f7779f63000, 16384, PROT_READ) = 0
+475   mprotect(0x55e292b9c000, 8192, PROT_READ) = 0
+475   mprotect(0x7f7779fb2000, 8192, PROT_READ) = 0
+475   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+475   munmap(0x7f7779f76000, 6133)      = 0
+475   getrandom("\x15\xea\xd1\x9a\x0d\x5a\x5b\xe8", 8, GRND_NONBLOCK) = 8
+475   brk(NULL)                         = 0x55e294923000
+475   brk(0x55e294944000)               = 0x55e294944000
+475   ioctl(1, TCGETS, 0x7ffd4ef5f880)  = -1 ENOTTY (Inappropriate ioctl for device)
+475   umask(022)                        = 022
+475   openat(AT_FDCWD, "/var/lib/dpkg/arch", O_RDONLY) = -1 ENOENT (No such file or directory)
+475   openat(AT_FDCWD, "/var/lib/dpkg/status", O_RDONLY) = 3
+475   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=119397, ...}, AT_EMPTY_PATH) = 0
+475   read(3, "Package: adduser\nStatus: install ok installed\nPriority: important\nSection: admin\nInstalled-Size: 608\nMaintainer: Ubuntu Develope"..., 119397) = 119397
+475   brk(0x55e294965000)               = 0x55e294965000
+475   brk(0x55e294987000)               = 0x55e294987000
+475   brk(0x55e2949a9000)               = 0x55e2949a9000
+475   close(3)                          = 0
+475   openat(AT_FDCWD, "/var/lib/dpkg/updates/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+475   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+475   getdents64(3, 0x55e294923760 /* 2 entries */, 32768) = 48
+475   getdents64(3, 0x55e294923760 /* 0 entries */, 32768) = 0
+475   close(3)                          = 0
+475   openat(AT_FDCWD, "/var/lib/dpkg/triggers/File", O_RDONLY) = 3
+475   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=52, ...}, AT_EMPTY_PATH) = 0
+475   read(3, "/usr/share/debianutils/shells.d debianutils/noawait\n", 4096) = 52
+475   read(3, "", 4096)                 = 0
+475   close(3)                          = 0
+475   openat(AT_FDCWD, "/var/lib/dpkg/triggers/Unincorp", O_RDONLY) = 3
+475   fcntl(3, F_GETFD)                 = 0
+475   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+475   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+475   openat(AT_FDCWD, "/var/lib/dpkg/diversions", O_RDONLY) = 4
+475   fcntl(4, F_GETFD)                 = 0
+475   fcntl(4, F_SETFD, FD_CLOEXEC)     = 0
+475   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=169, ...}, AT_EMPTY_PATH) = 0
+475   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=169, ...}, AT_EMPTY_PATH) = 0
+475   read(4, "/sbin/initctl\n/sbin/initctl.distrib\n:\n/usr/share/man/man1/sh.1.gz\n/usr/share/man/man1/sh.distrib.1.gz\ndash\n/usr/bin/man\n/usr/bin"..., 4096) = 169
+475   read(4, "", 4096)                 = 0
+475   ioctl(1, TCGETS, 0x7ffd4ef5f590)  = -1 ENOTTY (Inappropriate ioctl for device)
+475   write(2, "dpkg-divert: warning: please specify --no-rename explicitly, the default will change to --rename in 1.20.x\n", 107) = 107
+475   write(2, "dpkg-divert: error: --add needs a single argument\n\nUse --help for help about diverting files.\n", 94) = 94
+475   exit_group(2)                     = ?
+475   +++ exited with 2 +++

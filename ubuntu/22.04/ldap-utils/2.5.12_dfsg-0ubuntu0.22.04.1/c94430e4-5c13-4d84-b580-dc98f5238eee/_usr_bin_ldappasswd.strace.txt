@@ -1,0 +1,360 @@
+562   execve("/usr/bin/ldappasswd", ["/usr/bin/ldappasswd"], 0x7fff7aee7190 /* 12 vars */) = 0
+562   brk(NULL)                         = 0x563017ca3000
+562   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff68ae5e10) = -1 EINVAL (Invalid argument)
+562   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2bae402000
+562   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+562   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6317, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 6317, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2bae400000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libldap-2.5.so.0", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200\267\5\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\326\0\0\0\0\0\0000\326\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=376512, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 387936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2bae3a1000
+562   mprotect(0x7f2bae3af000, 311296, PROT_NONE) = 0
+562   mmap(0x7f2bae3af000, 237568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f2bae3af000
+562   mmap(0x7f2bae3e9000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x48000) = 0x7f2bae3e9000
+562   mmap(0x7f2bae3fb000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x59000) = 0x7f2bae3fb000
+562   mmap(0x7f2bae3fe000, 7008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2bae3fe000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblber-2.5.so.0", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\270\362\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\310(\0\0\0\0\0\0\310(\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=63992, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 65960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2bae390000
+562   mprotect(0x7f2bae393000, 49152, PROT_NONE) = 0
+562   mmap(0x7f2bae393000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f2bae393000
+562   mmap(0x7f2bae39b000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f2bae39b000
+562   mmap(0x7f2bae39f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f2bae39f000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsasl2.so.2", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`\224\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20'\0\0\0\0\0\0\20'\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=105376, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 107504, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2bae375000
+562   mmap(0x7f2bae378000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f2bae378000
+562   mmap(0x7f2bae389000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7f2bae389000
+562   mmap(0x7f2bae38e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f2bae38e000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+562   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+562   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+562   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+562   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+562   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2bae14d000
+562   mmap(0x7f2bae175000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f2bae175000
+562   mmap(0x7f2bae30a000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f2bae30a000
+562   mmap(0x7f2bae362000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f2bae362000
+562   mmap(0x7f2bae368000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2bae368000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgnutls.so.30", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@~\36\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\240\10\3\0\0\0\0\0\240\10\3\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2000320, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 2009088, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2badf62000
+562   mmap(0x7f2badf93000, 1216512, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31000) = 0x7f2badf93000
+562   mmap(0x7f2bae0bc000, 512000, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15a000) = 0x7f2bae0bc000
+562   mmap(0x7f2bae139000, 73728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d6000) = 0x7f2bae139000
+562   mmap(0x7f2bae14b000, 6144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2bae14b000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libp11-kit.so.0", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200\227\23\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\204\2\0\0\0\0\0H\204\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1285888, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2badf60000
+562   mmap(NULL, 1289160, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2bade25000
+562   mmap(0x7f2bade4e000, 671744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0x7f2bade4e000
+562   mmap(0x7f2badef2000, 368640, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcd000) = 0x7f2badef2000
+562   mmap(0x7f2badf4c000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x126000) = 0x7f2badf4c000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libidn2.so.0", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\361\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\240\21\0\0\0\0\0\0\240\21\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=129096, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 131088, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2bade04000
+562   mmap(0x7f2bade06000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f2bade06000
+562   mmap(0x7f2bade0a000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f2bade0a000
+562   mmap(0x7f2bade23000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f2bade23000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunistring.so.2", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\250\221\32\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\310\0\1\0\0\0\0\0\310\0\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1743016, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 1743080, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2badc5a000
+562   mmap(0x7f2badc6b000, 221184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7f2badc6b000
+562   mmap(0x7f2badca1000, 1433600, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x47000) = 0x7f2badca1000
+562   mmap(0x7f2baddff000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a5000) = 0x7f2baddff000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtasn1.so.6", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0Xa\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x)\0\0\0\0\0\0x)\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=92312, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 94760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2badc42000
+562   mprotect(0x7f2badc45000, 77824, PROT_NONE) = 0
+562   mmap(0x7f2badc45000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f2badc45000
+562   mmap(0x7f2badc53000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7f2badc53000
+562   mmap(0x7f2badc58000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f2badc58000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnettle.so.8", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0(B\4\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\270\237\0\0\0\0\0\0\270\237\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=281000, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 282840, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2badbfc000
+562   mmap(0x7f2badc06000, 143360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f2badc06000
+562   mmap(0x7f2badc29000, 90112, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7f2badc29000
+562   mmap(0x7f2badc3f000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x42000) = 0x7f2badc3f000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhogweed.so.6", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210d\4\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\30{\0\0\0\0\0\0\30{\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=289800, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 291640, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2badbb4000
+562   mprotect(0x7f2badbbc000, 253952, PROT_NONE) = 0
+562   mmap(0x7f2badbbc000, 77824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f2badbbc000
+562   mmap(0x7f2badbcf000, 172032, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f2badbcf000
+562   mmap(0x7f2badbfa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x45000) = 0x7f2badbfa000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgmp.so.10", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\2\10\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\221\0\0\0\0\0\08\221\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=526896, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2badbb2000
+562   mmap(NULL, 528912, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2badb30000
+562   mmap(0x7f2badb3a000, 389120, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f2badb3a000
+562   mmap(0x7f2badb99000, 94208, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x69000) = 0x7f2badb99000
+562   mmap(0x7f2badbb0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0x7f2badbb0000
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libffi.so.8", O_RDONLY|O_CLOEXEC) = 3
+562   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\262\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\30\0\0\0\0\0\0\200\30\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47688, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 50736, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2badb23000
+562   mprotect(0x7f2badb25000, 36864, PROT_NONE) = 0
+562   mmap(0x7f2badb25000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f2badb25000
+562   mmap(0x7f2badb2c000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f2badb2c000
+562   mmap(0x7f2badb2e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f2badb2e000
+562   close(3)                          = 0
+562   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2badb21000
+562   arch_prctl(ARCH_SET_FS, 0x7f2badb22000) = 0
+562   set_tid_address(0x7f2badb222d0)   = 562
+562   set_robust_list(0x7f2badb222e0, 24) = 0
+562   rseq(0x7f2badb229a0, 0x20, 0, 0x53053053) = 0
+562   mprotect(0x7f2bae362000, 16384, PROT_READ) = 0
+562   mprotect(0x7f2badb2e000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2badbb0000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2badc3f000, 8192, PROT_READ) = 0
+562   mprotect(0x7f2badbfa000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2badc58000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2baddff000, 16384, PROT_READ) = 0
+562   mprotect(0x7f2bade23000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2badf4c000, 40960, PROT_READ) = 0
+562   mprotect(0x7f2bae139000, 65536, PROT_READ) = 0
+562   mprotect(0x7f2bae38e000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2bae39f000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2bae3fb000, 8192, PROT_READ) = 0
+562   mprotect(0x563016b57000, 4096, PROT_READ) = 0
+562   mprotect(0x7f2bae43c000, 8192, PROT_READ) = 0
+562   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+562   munmap(0x7f2bae400000, 6317)      = 0
+562   getrandom("\x52\x7d\xa3\x73\x4d\xd4\x4d\x0d", 8, GRND_NONBLOCK) = 8
+562   brk(NULL)                         = 0x563017ca3000
+562   brk(0x563017cc4000)               = 0x563017cc4000
+562   getrandom("\x89", 1, GRND_NONBLOCK) = 1
+562   newfstatat(AT_FDCWD, "/etc/gnutls/config", 0x7fff68ae5700, 0) = -1 ENOENT (No such file or directory)
+562   uname({sysname="Linux", nodename="715deb94dc77", ...}) = 0
+562   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+562   connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+562   close(3)                          = 0
+562   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+562   connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+562   close(3)                          = 0
+562   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+562   newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+562   openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+562   read(3, "# /etc/nsswitch.conf\n#\n# Example configuration of GNU Name Service Switch functionality.\n# If you have the `glibc-doc-reference'"..., 4096) = 494
+562   read(3, "", 4096)                 = 0
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+562   close(3)                          = 0
+562   newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=19, ...}, 0) = 0
+562   openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_EMPTY_PATH) = 0
+562   read(3, "# The \"order\" line is only used by old versions of the C library.\norder hosts,bind\nmulti on\n", 4096) = 92
+562   read(3, "", 4096)                 = 0
+562   close(3)                          = 0
+562   futex(0x7f2bae36f32c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+562   openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=19, ...}, AT_EMPTY_PATH) = 0
+562   read(3, "nameserver 8.8.8.8\n", 4096) = 19
+562   read(3, "", 4096)                 = 0
+562   uname({sysname="Linux", nodename="715deb94dc77", ...}) = 0
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=19, ...}, AT_EMPTY_PATH) = 0
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=174, ...}, AT_EMPTY_PATH) = 0
+562   lseek(3, 0, SEEK_SET)             = 0
+562   read(3, "127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nff00::0\tip6-mcastprefix\nff02::1\tip6-allnodes\nf"..., 4096) = 174
+562   read(3, "", 4096)                 = 0
+562   close(3)                          = 0
+562   getuid()                          = 0
+562   geteuid()                         = 0
+562   getgid()                          = 0
+562   getegid()                         = 0
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+562   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+562   brk(0x563017ceb000)               = 0x563017ceb000
+562   getdents64(3, 0x563017cc2570 /* 23 entries */, 32768) = 864
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2/libanonymous.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0pB\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\16\0\0\0\0\0\0H\16\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18800, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 20728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2badb1b000
+562   mmap(0x7f2badb1c000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0x7f2badb1c000
+562   mmap(0x7f2badb1e000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0x7f2badb1e000
+562   mmap(0x7f2badb1f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0x7f2badb1f000
+562   close(4)                          = 0
+562   mprotect(0x7f2badb1f000, 4096, PROT_READ) = 0
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2/libplain.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0pR\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \16\0\0\0\0\0\0 \16\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=22896, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 24824, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2badb14000
+562   mmap(0x7f2badb15000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0x7f2badb15000
+562   mmap(0x7f2badb18000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x4000) = 0x7f2badb18000
+562   mmap(0x7f2badb19000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x4000) = 0x7f2badb19000
+562   close(4)                          = 0
+562   mprotect(0x7f2badb19000, 4096, PROT_READ) = 0
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2/libdigestmd5.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\343\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\26\0\0\0\0\0\0(\26\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=60152, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 62096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2badb04000
+562   mmap(0x7f2badb06000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x2000) = 0x7f2badb06000
+562   mmap(0x7f2badb0f000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xb000) = 0x7f2badb0f000
+562   mmap(0x7f2badb12000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xd000) = 0x7f2badb12000
+562   close(4)                          = 0
+562   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=6317, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 6317, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f2bae400000
+562   close(4)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\325C\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\34\v\0\0\0\0\0(\34\v\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 4461760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2bad6c2000
+562   mmap(0x7f2bad774000, 2478080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xb2000) = 0x7f2bad774000
+562   mmap(0x7f2bad9d1000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x30f000) = 0x7f2bad9d1000
+562   mmap(0x7f2badaa3000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3e0000) = 0x7f2badaa3000
+562   mmap(0x7f2badb01000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2badb01000
+562   close(4)                          = 0
+562   mprotect(0x7f2badaa3000, 372736, PROT_READ) = 0
+562   mprotect(0x7f2badb12000, 4096, PROT_READ) = 0
+562   munmap(0x7f2bae400000, 6317)      = 0
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2/liblogin.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0pR\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0\0\0\0\0\16\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=22896, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 24824, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2bad6bb000
+562   mmap(0x7f2bad6bc000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0x7f2bad6bc000
+562   mmap(0x7f2bad6bf000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x4000) = 0x7f2bad6bf000
+562   mmap(0x7f2bad6c0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x4000) = 0x7f2bad6c0000
+562   close(4)                          = 0
+562   mprotect(0x7f2bad6c0000, 4096, PROT_READ) = 0
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2/libntlm.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\222\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\23\0\0\0\0\0\0\340\23\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=39280, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 41208, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2bad6b0000
+562   mmap(0x7f2bad6b2000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x2000) = 0x7f2bad6b2000
+562   mmap(0x7f2bad6b7000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x7000) = 0x7f2bad6b7000
+562   mmap(0x7f2bad6b9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x8000) = 0x7f2bad6b9000
+562   close(4)                          = 0
+562   mprotect(0x7f2bad6b9000, 4096, PROT_READ) = 0
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2/libcrammd5.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0pR\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\270\16\0\0\0\0\0\0\270\16\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=22896, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 24824, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2bad6a9000
+562   mmap(0x7f2bad6aa000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0x7f2bad6aa000
+562   mmap(0x7f2bad6ad000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x4000) = 0x7f2bad6ad000
+562   mmap(0x7f2bad6ae000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x4000) = 0x7f2bad6ae000
+562   close(4)                          = 0
+562   mprotect(0x7f2bad6ae000, 4096, PROT_READ) = 0
+562   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/sasl2/libsasldb.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x\201\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230\20\0\0\0\0\0\0\230\20\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=34872, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 36968, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2bad69f000
+562   mmap(0x7f2bad6a1000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x2000) = 0x7f2bad6a1000
+562   mmap(0x7f2bad6a5000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x6000) = 0x7f2bad6a5000
+562   mmap(0x7f2bad6a7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x7000) = 0x7f2bad6a7000
+562   close(4)                          = 0
+562   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=6317, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 6317, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f2bae400000
+562   close(4)                          = 0
+562   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdb-5.3.so", O_RDONLY|O_CLOEXEC) = 4
+562   read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\326\32\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h\373\1\0\0\0\0\0h\373\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+562   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1760880, ...}, AT_EMPTY_PATH) = 0
+562   mmap(NULL, 1762768, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2bad4f0000
+562   mmap(0x7f2bad510000, 1314816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x20000) = 0x7f2bad510000
+562   mmap(0x7f2bad651000, 286720, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x161000) = 0x7f2bad651000
+562   mmap(0x7f2bad697000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1a6000) = 0x7f2bad697000
+562   close(4)                          = 0
+562   mprotect(0x7f2bad697000, 28672, PROT_READ) = 0
+562   mprotect(0x7f2bad6a7000, 4096, PROT_READ) = 0
+562   munmap(0x7f2bae400000, 6317)      = 0
+562   getdents64(3, 0x563017cc2570 /* 0 entries */, 32768) = 0
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/etc/ldap/ldap.conf", O_RDONLY) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=334, ...}, AT_EMPTY_PATH) = 0
+562   read(3, "#\n# LDAP Defaults\n#\n\n# See ldap.conf(5) for details\n# This file should be world readable but not world writable.\n\n#BASE\tdc=examp"..., 4096) = 334
+562   read(3, "", 4096)                 = 0
+562   close(3)                          = 0
+562   geteuid()                         = 0
+562   getuid()                          = 0
+562   openat(AT_FDCWD, "/root/ldaprc", O_RDONLY) = -1 ENOENT (No such file or directory)
+562   openat(AT_FDCWD, "/root/.ldaprc", O_RDONLY) = -1 ENOENT (No such file or directory)
+562   openat(AT_FDCWD, "ldaprc", O_RDONLY) = -1 ENOENT (No such file or directory)
+562   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f2bae18f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+562   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+562   newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=19, ...}, 0) = 0
+562   openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=174, ...}, AT_EMPTY_PATH) = 0
+562   lseek(3, 0, SEEK_SET)             = 0
+562   read(3, "127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nff00::0\tip6-mcastprefix\nff02::1\tip6-allnodes\nf"..., 4096) = 174
+562   read(3, "", 4096)                 = 0
+562   close(3)                          = 0
+562   openat(AT_FDCWD, "/etc/gai.conf", O_RDONLY|O_CLOEXEC) = 3
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2584, ...}, AT_EMPTY_PATH) = 0
+562   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2584, ...}, AT_EMPTY_PATH) = 0
+562   read(3, "# Configuration for getaddrinfo(3).\n#\n# So far only configuration for the destination address sorting is needed.\n# RFC 3484 gove"..., 4096) = 2584
+562   read(3, "", 4096)                 = 0
+562   close(3)                          = 0
+562   futex(0x7f2bae36e1c4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+562   socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 3
+562   bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+562   getsockname(3, {sa_family=AF_NETLINK, nl_pid=562, nl_groups=00000000}, [12]) = 0
+562   sendto(3, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1658096323, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+562   recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1658096323, nlmsg_pid=562}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=13977304, tstamp=13977304}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1658096323, nlmsg_pid=562}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=13977324, tstamp=13977324}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+562   recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1658096323, nlmsg_pid=562}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+562   close(3)                          = 0
+562   socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 3
+562   connect(3, {sa_family=AF_INET, sin_port=htons(389), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+562   getsockname(3, {sa_family=AF_INET, sin_port=htons(46544), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 0
+562   close(3)                          = 0
+562   socket(AF_INET6, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 3
+562   connect(3, {sa_family=AF_INET6, sin6_port=htons(389), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_scope_id=0}, 28) = -1 EADDRNOTAVAIL (Cannot assign requested address)
+562   close(3)                          = 0
+562   socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+562   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+562   setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+562   setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+562   connect(3, {sa_family=AF_INET, sin_port=htons(389), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 ECONNREFUSED (Connection refused)
+562   shutdown(3, SHUT_RDWR)            = -1 ENOTCONN (Transport endpoint is not connected)
+562   close(3)                          = 0
+562   socket(AF_INET6, SOCK_STREAM, IPPROTO_IP) = 3
+562   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+562   setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+562   setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+562   connect(3, {sa_family=AF_INET6, sin6_port=htons(389), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_scope_id=0}, 28) = -1 EADDRNOTAVAIL (Cannot assign requested address)
+562   shutdown(3, SHUT_RDWR)            = -1 ENOTCONN (Transport endpoint is not connected)
+562   close(3)                          = 0
+562   write(2, "ldap_sasl_interactive_bind: Can't contact LDAP server (-1)\n", 59) = 59
+562   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+562   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3
+562   connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+562   close(3)                          = 0
+562   munmap(0x7f2bad69f000, 36968)     = 0
+562   munmap(0x7f2bad4f0000, 1762768)   = 0
+562   munmap(0x7f2bad6a9000, 24824)     = 0
+562   munmap(0x7f2bad6b0000, 41208)     = 0
+562   munmap(0x7f2bad6bb000, 24824)     = 0
+562   munmap(0x7f2badb04000, 62096)     = 0
+562   munmap(0x7f2badb14000, 24824)     = 0
+562   munmap(0x7f2badb1b000, 20728)     = 0
+562   exit_group(-1)                    = ?
+562   +++ exited with 255 +++

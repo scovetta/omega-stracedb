@@ -1,0 +1,21 @@
+
+piper-convert: Validate and convert Piper request and response messages
+
+    Usage: piper-convert [-i <informat>] [-o <outformat>] request
+           piper-convert [-i <informat>] [-o <outformat>] response
+
+    where
+       <informat>: the format to read from stdin
+           ("json" or "capnp", default is "json")
+       <outformat>: the format to convert to and write to stdout
+           ("json", "json-b64" or "capnp", default is "json")
+       request|response: whether messages are Vamp request or response type
+
+If <informat> and <outformat> differ, convert from <informat> to <outformat>.
+If <informat> and <outformat> are the same, just check validity of incoming
+messages and pass them to output.
+
+Specifying "json-b64" as output format forces base64 encoding for process and
+feature blocks, unlike the "json" output format which uses text encoding.
+The "json" input format accepts either.
+

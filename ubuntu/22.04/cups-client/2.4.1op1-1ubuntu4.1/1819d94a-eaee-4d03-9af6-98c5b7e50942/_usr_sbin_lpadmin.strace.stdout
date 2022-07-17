@@ -1,0 +1,40 @@
+Usage: lpadmin [options] -d destination
+       lpadmin [options] -p destination
+       lpadmin [options] -p destination -c class
+       lpadmin [options] -p destination -r class
+       lpadmin [options] -x destination
+Options:
+-c class                Add the named destination to a class
+-d destination          Set the named destination as the server default
+-D description          Specify the textual description of the printer
+-E                      Encrypt the connection to the server
+-E                      Enable and accept jobs on the printer (after -p)
+-h server[:port]        Connect to the named server and port
+-i ppd-file             Specify a PPD file for the printer
+-L location             Specify the textual location of the printer
+-m model                Specify a standard model/PPD file for the printer
+-m everywhere           Specify the printer is compatible with IPP Everywhere
+-o name-default=value   Specify the default value for the named option
+-o Name=Value           Specify the default value for the named PPD option 
+-o cupsIPPSupplies=false
+                        Disable supply level reporting via IPP
+-o cupsSNMPSupplies=false
+                        Disable supply level reporting via SNMP
+-o job-k-limit=N        Specify the kilobyte limit for per-user quotas
+-o job-page-limit=N     Specify the page limit for per-user quotas
+-o job-quota-period=N   Specify the per-user quota period in seconds
+-o printer-error-policy=name
+                        Specify the printer error policy
+-o printer-is-shared=true
+                        Share the printer
+-o printer-op-policy=name
+                        Specify the printer operation policy
+-p destination          Specify/add the named destination
+-r class                Remove the named destination from a class
+-R name-default         Remove the default value for the named option
+-u allow:all            Allow all users to print
+-u allow:list           Allow the list of users or groups (@name) to print
+-u deny:list            Prevent the list of users or groups (@name) to print
+-U username             Specify the username to use for authentication
+-v device-uri           Specify the device URI for the printer
+-x destination          Remove the named destination

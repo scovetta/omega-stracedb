@@ -1,0 +1,49 @@
+719   execve("/usr/bin/cifscreds", ["/usr/bin/cifscreds"], 0x7ffe062241a0 /* 12 vars */) = 0
+719   brk(NULL)                         = 0x5592fc827000
+719   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcefe97ff0) = -1 EINVAL (Invalid argument)
+719   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f82f3e99000
+719   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+719   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+719   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7301, ...}, AT_EMPTY_PATH) = 0
+719   mmap(NULL, 7301, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f82f3e97000
+719   close(3)                          = 0
+719   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 3
+719   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0HQ\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230\25\0\0\0\0\0\0\230\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+719   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22600, ...}, AT_EMPTY_PATH) = 0
+719   mmap(NULL, 24592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f82f3e90000
+719   mmap(0x7f82f3e92000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f82f3e92000
+719   mmap(0x7f82f3e94000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f82f3e94000
+719   mmap(0x7f82f3e95000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f82f3e95000
+719   close(3)                          = 0
+719   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+719   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+719   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+719   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+719   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+719   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+719   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+719   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f82f3c68000
+719   mmap(0x7f82f3c90000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f82f3c90000
+719   mmap(0x7f82f3e25000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f82f3e25000
+719   mmap(0x7f82f3e7d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f82f3e7d000
+719   mmap(0x7f82f3e83000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f82f3e83000
+719   close(3)                          = 0
+719   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f82f3c65000
+719   arch_prctl(ARCH_SET_FS, 0x7f82f3c65740) = 0
+719   set_tid_address(0x7f82f3c65a10)   = 719
+719   set_robust_list(0x7f82f3c65a20, 24) = 0
+719   rseq(0x7f82f3c660e0, 0x20, 0, 0x53053053) = 0
+719   mprotect(0x7f82f3e7d000, 16384, PROT_READ) = 0
+719   mprotect(0x7f82f3e95000, 4096, PROT_READ) = 0
+719   mprotect(0x5592fc1ea000, 4096, PROT_READ) = 0
+719   mprotect(0x7f82f3ed3000, 8192, PROT_READ) = 0
+719   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+719   munmap(0x7f82f3e97000, 7301)      = 0
+719   write(2, "Usage:\n", 7)           = 7
+719   write(2, "\tcifscreds add [-u username] [-d] <host|domain>\n", 48) = 48
+719   write(2, "\tcifscreds clear [-u username] [-d] <host|domain>\n", 50) = 50
+719   write(2, "\tcifscreds clearall \n", 21) = 21
+719   write(2, "\tcifscreds update [-u username] [-d] <host|domain>\n", 51) = 51
+719   write(2, "\n", 1)                 = 1
+719   exit_group(1)                     = ?
+719   +++ exited with 1 +++

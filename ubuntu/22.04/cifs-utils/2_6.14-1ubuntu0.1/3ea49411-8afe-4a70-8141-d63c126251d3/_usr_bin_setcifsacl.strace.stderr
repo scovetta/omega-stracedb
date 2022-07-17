@@ -1,0 +1,30 @@
+setcifsacl: Alter components of CIFS/NTFS security descriptor of a file object
+Usage: setcifsacl option [<list_of_ACEs>|<SID>] <file_name>
+Valid options:
+	-v	Version of the program
+	-U	Used in combination with -a, -D, -M, -S in order to 
+		apply the actions to SALC (aUdit ACL); if not specified, 
+		the actions apply to DACL
+
+	-a	Add ACE(s), separated by a comma, to an ACL
+	setcifsacl -a "ACL:Administrator:ALLOWED/0x0/FULL" <file_name>
+
+	-A	Add ACE(s) and reorder, separated by a comma, to an ACL
+	setcifsacl -A "ACL:Administrator:ALLOWED/0x0/FULL" <file_name>
+
+	-D	Delete ACE(s), separated by a comma, from an ACL
+	setcifsacl -D "ACL:Administrator:DENIED/0x0/D" <file_name>
+
+	-M	Modify ACE(s), separated by a comma, in an ACL
+	setcifsacl -M "ACL:user1:ALLOWED/0x0/0x1e01ff" <file_name>
+
+	-S	Replace existing ACL with ACE(s), separated by a comma
+	setcifsacl -S "ACL:Administrator:ALLOWED/0x0/D" <file_name>
+
+	-o	Set owner using specified SID (name or raw format)
+	setcifsacl -o "Administrator" <file_name>
+
+	-g	Set group using specified SID (name or raw format)
+	setcifsacl -g "Administrators" <file_name>
+
+Refer to setcifsacl(1) manpage for details

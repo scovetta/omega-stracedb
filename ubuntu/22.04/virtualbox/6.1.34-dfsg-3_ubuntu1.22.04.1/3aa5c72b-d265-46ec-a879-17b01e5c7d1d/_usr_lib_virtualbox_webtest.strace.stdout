@@ -1,0 +1,37 @@
+webtest: VirtualBox webservice testcase.
+
+Usage: webtest [options] [command]...
+
+Supported options:
+ -h: print this help message and exit.
+ -c URL: specify the webservice server URL (default http://localhost:18083/).
+
+Supported commands:
+ - IWebsessionManager:
+   - webtest logon <user> <pass>: IWebsessionManager::logon().
+   - webtest getsession <vboxref>: IWebsessionManager::getSessionObject().
+   - webtest logoff <vboxref>: IWebsessionManager::logoff().
+ - IVirtualBox:
+   - webtest version <vboxref>: IVirtualBox::getVersion().
+   - webtest gethost <vboxref>: IVirtualBox::getHost().
+   - webtest getpc <vboxref>: IVirtualBox::getPerformanceCollector().
+   - webtest getmachines <vboxref>: IVirtualBox::getMachines().
+   - webtest createmachine <vboxref> <settingsPath> <name>: IVirtualBox::createMachine().
+   - webtest registermachine <vboxref> <machineref>: IVirtualBox::registerMachine().
+ - IHost:
+   - webtest getdvddrives <hostref>: IHost::getDVDDrives.
+ - IHostDVDDrive:
+   - webtest getdvdname <dvdref>: IHostDVDDrive::getname.
+ - IMachine:
+   - webtest getname <machineref>: IMachine::getName().
+   - webtest getid <machineref>: IMachine::getId().
+   - webtest getostype <machineref>: IMachine::getGuestOSType().
+   - webtest savesettings <machineref>: IMachine::saveSettings().
+ - IPerformanceCollector:
+   - webtest setupmetrics <pcref>: IPerformanceCollector::setupMetrics()
+   - webtest querymetricsdata <pcref>: IPerformanceCollector::QueryMetricsData()
+ - IVirtualBoxErrorInfo:
+   - webtest errorinfo <eiref>: various IVirtualBoxErrorInfo getters
+ - All managed object references:
+   - webtest getif <ref>: report interface of object.
+   - webtest release <ref>: IUnknown::Release().

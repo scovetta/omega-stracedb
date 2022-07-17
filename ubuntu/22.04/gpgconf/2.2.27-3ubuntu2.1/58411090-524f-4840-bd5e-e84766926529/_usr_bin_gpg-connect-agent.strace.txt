@@ -1,0 +1,124 @@
+499   execve("/usr/bin/gpg-connect-agent", ["/usr/bin/gpg-connect-agent"], 0x7ffefa6ce3f0 /* 12 vars */) = 0
+499   brk(NULL)                         = 0x55c5a668c000
+499   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffca1647ec0) = -1 EINVAL (Invalid argument)
+499   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1665a74000
+499   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+499   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+499   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6317, ...}, AT_EMPTY_PATH) = 0
+499   mmap(NULL, 6317, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1665a72000
+499   close(3)                          = 0
+499   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libassuan.so.0", O_RDONLY|O_CLOEXEC) = 3
+499   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0B\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H0\0\0\0\0\0\0H0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+499   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=84288, ...}, AT_EMPTY_PATH) = 0
+499   mmap(NULL, 86384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1665a5c000
+499   mprotect(0x7f1665a60000, 65536, PROT_NONE) = 0
+499   mmap(0x7f1665a60000, 45056, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f1665a60000
+499   mmap(0x7f1665a6b000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f1665a6b000
+499   mmap(0x7f1665a70000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f1665a70000
+499   close(3)                          = 0
+499   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+499   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\300A\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08>\0\0\0\0\0\08>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+499   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=149760, ...}, AT_EMPTY_PATH) = 0
+499   mmap(NULL, 151992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1665a36000
+499   mmap(0x7f1665a3a000, 90112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f1665a3a000
+499   mmap(0x7f1665a50000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f1665a50000
+499   mmap(0x7f1665a5a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7f1665a5a000
+499   close(3)                          = 0
+499   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+499   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x\300\23\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+499   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1296312, ...}, AT_EMPTY_PATH) = 0
+499   mmap(NULL, 1299576, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f16658f8000
+499   mprotect(0x7f1665907000, 1200128, PROT_NONE) = 0
+499   mmap(0x7f1665907000, 942080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f1665907000
+499   mmap(0x7f16659ed000, 253952, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf5000) = 0x7f16659ed000
+499   mmap(0x7f1665a2c000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x133000) = 0x7f1665a2c000
+499   mmap(0x7f1665a35000, 1144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1665a35000
+499   close(3)                          = 0
+499   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libreadline.so.8", O_RDONLY|O_CLOEXEC) = 3
+499   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\31\5\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h<\1\0\0\0\0\0h<\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+499   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=335936, ...}, AT_EMPTY_PATH) = 0
+499   mmap(NULL, 343488, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f16658a4000
+499   mprotect(0x7f16658b8000, 225280, PROT_NONE) = 0
+499   mmap(0x7f16658b8000, 180224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7f16658b8000
+499   mmap(0x7f16658e4000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x40000) = 0x7f16658e4000
+499   mmap(0x7f16658ef000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4a000) = 0x7f16658ef000
+499   mmap(0x7f16658f7000, 3520, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f16658f7000
+499   close(3)                          = 0
+499   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+499   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+499   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+499   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+499   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+499   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+499   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+499   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f166567c000
+499   mmap(0x7f16656a4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f16656a4000
+499   mmap(0x7f1665839000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f1665839000
+499   mmap(0x7f1665891000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f1665891000
+499   mmap(0x7f1665897000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1665897000
+499   close(3)                          = 0
+499   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+499   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\6\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\30\325\0\0\0\0\0\0\30\325\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+499   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+499   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f166567a000
+499   mmap(NULL, 203040, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1665648000
+499   mmap(0x7f1665656000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f1665656000
+499   mmap(0x7f1665667000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f1665667000
+499   mmap(0x7f1665675000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7f1665675000
+499   close(3)                          = 0
+499   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1665645000
+499   arch_prctl(ARCH_SET_FS, 0x7f1665645740) = 0
+499   set_tid_address(0x7f1665645a10)   = 499
+499   set_robust_list(0x7f1665645a20, 24) = 0
+499   rseq(0x7f16656460e0, 0x20, 0, 0x53053053) = 0
+499   mprotect(0x7f1665891000, 16384, PROT_READ) = 0
+499   mprotect(0x7f1665675000, 16384, PROT_READ) = 0
+499   mprotect(0x7f16658ef000, 8192, PROT_READ) = 0
+499   mprotect(0x7f1665a5a000, 4096, PROT_READ) = 0
+499   mprotect(0x7f1665a2c000, 12288, PROT_READ) = 0
+499   mprotect(0x7f1665a70000, 4096, PROT_READ) = 0
+499   mprotect(0x55c5a4e38000, 4096, PROT_READ) = 0
+499   mprotect(0x7f1665aae000, 8192, PROT_READ) = 0
+499   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+499   munmap(0x7f1665a72000, 6317)      = 0
+499   getrandom("\x9e\xf1\xff\xa5\xec\xcf\xa1\x3e", 8, GRND_NONBLOCK) = 8
+499   brk(NULL)                         = 0x55c5a668c000
+499   brk(0x55c5a66ad000)               = 0x55c5a66ad000
+499   access("/etc/gcrypt/fips_enabled", F_OK) = -1 ENOENT (No such file or directory)
+499   openat(AT_FDCWD, "/etc/gcrypt/hwf.deny", O_RDONLY) = -1 ENOENT (No such file or directory)
+499   rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+499   rt_sigaction(SIGINT, {sa_handler=0x55c5a4e2d940, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f16656be520}, NULL, 8) = 0
+499   rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+499   rt_sigaction(SIGHUP, {sa_handler=0x55c5a4e2d940, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f16656be520}, NULL, 8) = 0
+499   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+499   rt_sigaction(SIGTERM, {sa_handler=0x55c5a4e2d940, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f16656be520}, NULL, 8) = 0
+499   rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+499   rt_sigaction(SIGQUIT, {sa_handler=0x55c5a4e2d940, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f16656be520}, NULL, 8) = 0
+499   rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+499   rt_sigaction(SIGSEGV, {sa_handler=0x55c5a4e2d940, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f16656be520}, NULL, 8) = 0
+499   rt_sigaction(SIGUSR1, {sa_handler=0x55c5a4e2c630, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f16656be520}, NULL, 8) = 0
+499   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f16656be520}, NULL, 8) = 0
+499   ioctl(0, TCGETS, 0x7ffca16479f0)  = -1 ENOTTY (Inappropriate ioctl for device)
+499   getuid()                          = 0
+499   newfstatat(AT_FDCWD, "/run/user/0", 0x7ffca16479c0, 0) = -1 ENOENT (No such file or directory)
+499   getuid()                          = 0
+499   newfstatat(AT_FDCWD, "/var/run/user/0", 0x7ffca16479c0, 0) = -1 ENOENT (No such file or directory)
+499   newfstatat(AT_FDCWD, "/root/.gnupg/S.gpg-agent", 0x7ffca16478b0, 0) = -1 ENOENT (No such file or directory)
+499   socket(AF_UNIX, SOCK_STREAM, 0)   = 3
+499   newfstatat(AT_FDCWD, "/root/.gnupg/S.gpg-agent", 0x7ffca16478b0, 0) = -1 ENOENT (No such file or directory)
+499   connect(3, {sa_family=AF_UNIX, sun_path="/root/.gnupg/S.gpg-agent"}, 26) = -1 ENOENT (No such file or directory)
+499   close(3)                          = 0
+499   write(2, "gpg-connect-agent: no running gpg-agent - starting '/usr/bin/gpg-agent", 70) = 70
+499   write(2, "'\n", 2)                = 2
+499   getpid()                          = 499
+499   uname({sysname="Linux", nodename="1bd1229be395", ...}) = 0
+499   getpid()                          = 499
+499   openat(AT_FDCWD, "/root/.gnupg/.#lk0x000055c5a669a080.1bd1229be395.499", O_WRONLY|O_CREAT|O_EXCL, 0644) = -1 ENOENT (No such file or directory)
+499   write(2, "gpg-connect-agent: failed to create temporary file '/root/.gnupg/.#lk0x000055c5a669a080.1bd1229be395.499': No such file or direc"..., 132) = 132
+499   write(2, "\n", 1)                 = 1
+499   write(2, "gpg-connect-agent: can't connect to the agent: No such file or directory", 72) = 72
+499   write(2, "\n", 1)                 = 1
+499   write(2, "gpg-connect-agent: error sending standard options: No agent running", 67) = 67
+499   write(2, "\n", 1)                 = 1
+499   exit_group(1)                     = ?
+499   +++ exited with 1 +++

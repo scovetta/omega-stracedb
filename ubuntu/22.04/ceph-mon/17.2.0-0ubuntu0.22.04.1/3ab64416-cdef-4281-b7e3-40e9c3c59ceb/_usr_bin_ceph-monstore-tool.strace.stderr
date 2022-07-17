@@ -1,0 +1,41 @@
+usage: /usr/bin/ceph-monstore-tool <store-path> <cmd> [args|options]
+
+Commands:
+  store-copy PATH                 copies store to PATH
+  compact                         compacts the store
+  get monmap [-- options]         get monmap (version VER if specified)
+                                  (default: last committed)
+  get osdmap [-- options]         get osdmap (version VER if specified)
+                                  (default: last committed)
+  get mdsmap [-- options]         get mdsmap (version VER if specified)
+                                  (default: last committed)
+  get mgr [-- options]            get mgr map (version VER if specified)
+                                  (default: last committed)
+  get crushmap [-- options]       get crushmap (version VER if specified)
+                                  (default: last committed)
+  show-versions [-- options]      show the first&last committed version of map
+                                  (show-versions -- --help for more info)
+  dump-keys                       dumps store keys to FILE
+                                  (default: stdout)
+  dump-paxos [-- options]         dump paxos transactions
+                                  (dump-paxos -- --help for more info)
+  dump-trace FILE [-- options]    dump contents of trace file FILE
+                                  (dump-trace -- --help for more info)
+  replay-trace FILE [-- options]  replay trace from FILE
+                                  (replay-trace -- --help for more info)
+  random-gen [-- options]         add randomly generated ops to the store
+                                  (random-gen -- --help for more info)
+  rewrite-crush [-- options]      add a rewrite commit to the store
+                                  (rewrite-crush -- --help for more info)
+  rebuild                         rebuild store
+                                  (rebuild -- --help for more info)
+
+Allowed options:
+  -h [ --help ]         produce help message
+
+
+Please Note:
+* Ceph-specific options should be in the format --option-name=VAL
+  (specifically, do not forget the '='!!)
+* Command-specific options need to be passed after a '--'
+  e.g., 'get monmap -- --version 10 --out /tmp/foo'

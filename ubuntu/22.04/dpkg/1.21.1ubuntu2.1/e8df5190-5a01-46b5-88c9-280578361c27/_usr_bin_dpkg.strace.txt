@@ -1,0 +1,92 @@
+457   execve("/usr/bin/dpkg", ["/usr/bin/dpkg"], 0x7fff48b0e370 /* 12 vars */) = 0
+457   brk(NULL)                         = 0x55a3b067c000
+457   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdaf9151f0) = -1 EINVAL (Invalid argument)
+457   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7b815cc000
+457   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+457   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+457   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7b815ca000
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+457   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+457   mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7b8159e000
+457   mprotect(0x7f7b815a4000, 139264, PROT_NONE) = 0
+457   mmap(0x7f7b815a4000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f7b815a4000
+457   mmap(0x7f7b815be000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f7b815be000
+457   mmap(0x7f7b815c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f7b815c6000
+457   mmap(0x7f7b815c8000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7b815c8000
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+457   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+457   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7b81376000
+457   mmap(0x7f7b8139e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7b8139e000
+457   mmap(0x7f7b81533000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f7b81533000
+457   mmap(0x7f7b8158b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f7b8158b000
+457   mmap(0x7f7b81591000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7b81591000
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+457   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+457   mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7b812df000
+457   mmap(0x7f7b812e1000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7b812e1000
+457   mmap(0x7f7b8134c000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f7b8134c000
+457   mmap(0x7f7b81374000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f7b81374000
+457   close(3)                          = 0
+457   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7b812dd000
+457   arch_prctl(ARCH_SET_FS, 0x7f7b812ddc40) = 0
+457   set_tid_address(0x7f7b812ddf10)   = 457
+457   set_robust_list(0x7f7b812ddf20, 24) = 0
+457   rseq(0x7f7b812de5e0, 0x20, 0, 0x53053053) = 0
+457   mprotect(0x7f7b8158b000, 16384, PROT_READ) = 0
+457   mprotect(0x7f7b81374000, 4096, PROT_READ) = 0
+457   mprotect(0x7f7b815c6000, 4096, PROT_READ) = 0
+457   mprotect(0x55a3af7c3000, 12288, PROT_READ) = 0
+457   mprotect(0x7f7b81606000, 8192, PROT_READ) = 0
+457   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+457   munmap(0x7f7b815ca000, 6133)      = 0
+457   statfs("/sys/fs/selinux", 0x7ffdaf915230) = -1 ENOENT (No such file or directory)
+457   statfs("/selinux", 0x7ffdaf915230) = -1 ENOENT (No such file or directory)
+457   getrandom("\x94\xa7\x31\x6f\x2b\x3e\x76\x28", 8, GRND_NONBLOCK) = 8
+457   brk(NULL)                         = 0x55a3b067c000
+457   brk(0x55a3b069d000)               = 0x55a3b069d000
+457   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+457   read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+457   read(3, "", 1024)                 = 0
+457   close(3)                          = 0
+457   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+457   ioctl(1, TCGETS, 0x7ffdaf9151a0)  = -1 ENOTTY (Inappropriate ioctl for device)
+457   umask(022)                        = 022
+457   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+457   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+457   getdents64(3, 0x55a3b067ca60 /* 4 entries */, 32768) = 120
+457   getdents64(3, 0x55a3b067ca60 /* 0 entries */, 32768) = 0
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d/docker-apt-speedup", O_RDONLY) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=16, ...}, AT_EMPTY_PATH) = 0
+457   read(3, "force-unsafe-io\n", 4096) = 16
+457   read(3, "", 4096)                 = 0
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d/excludes", O_RDONLY) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=364, ...}, AT_EMPTY_PATH) = 0
+457   read(3, "# Drop all man pages\npath-exclude=/usr/share/man/*\n\n# Drop all translations\npath-exclude=/usr/share/locale/*/LC_MESSAGES/*.mo\n\n#"..., 4096) = 364
+457   read(3, "", 4096)                 = 0
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg", O_RDONLY) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=446, ...}, AT_EMPTY_PATH) = 0
+457   read(3, "# dpkg configuration file\n#\n# This file can contain default options for dpkg.  All command-line\n# options are allowed.  Values c"..., 4096) = 446
+457   read(3, "", 4096)                 = 0
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/root/.dpkg.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+457   getuid()                          = 0
+457   setgid(0)                         = 0
+457   ioctl(1, TCGETS, 0x7ffdaf914dd0)  = -1 ENOTTY (Inappropriate ioctl for device)
+457   write(2, "dpkg: error: need an action option\n\nType dpkg --help for help about installing and deinstalling packages [*];\nUse 'apt' or 'apti"..., 424) = 424
+457   exit_group(2)                     = ?
+457   +++ exited with 2 +++

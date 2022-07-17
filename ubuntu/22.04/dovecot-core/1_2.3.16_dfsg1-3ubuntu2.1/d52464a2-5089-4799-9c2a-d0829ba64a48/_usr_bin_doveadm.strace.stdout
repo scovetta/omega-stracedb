@@ -1,0 +1,45 @@
+usage: doveadm [-Dv] [-f <formatter>] <command> [<args>]
+               
+  altmove      [-u <user>|-A] [-S <socket_path>] [-r] <search query>
+  auth         cache|login|lookup|test
+  backup       [-u <user>|-A] [-S <socket_path>] [-fPRU] [-l <secs>] [-r <rawlog path>] [-m <mailbox>] [-g <mailbox_guid>] [-n <namespace> | -N] [-x <exclude>] [-s <state>] [-t <start date>] -d|<dest>
+  batch        [-u <user>|-A] [-S <socket_path>] <sep> <cmd1> [<sep> <cmd2> [..]]
+  config       [doveconf parameters]
+  copy         [-u <user>|-A] [-S <socket_path>] <destination> [user <source user>] <search query>
+  deduplicate  [-u <user>|-A] [-S <socket_path>] [-m] <search query>
+  dict         get|inc|iter|set|unset
+  director     add|down|dump|flush|kick|map|move|remove|ring|status|up|update
+  dump         [-t <type>] <path>
+  exec         <binary> [binary parameters]
+  expunge      [-u <user>|-A] [-S <socket_path>] [-m] <search query>
+  fetch        [-u <user>|-A] [-S <socket_path>] <fields> <search query>
+  flags        add|remove|replace
+  force-resync [-u <user>|-A] [-S <socket_path>] [-f] <mailbox mask>
+  fs           copy|delete|get|iter|iter-dirs|metadata|put|stat
+  help         <cmd>
+  import       [-u <user>|-A] [-S <socket_path>] [-U source-user] [-s] <source mail location> <dest parent mailbox> <search query>
+  index        [-u <user>|-A] [-S <socket_path>] [-q] [-n <max recent>] <mailbox mask>
+  instance     list|remove
+  kick         [-a <anvil socket path>] <user mask>[|]<ip/bits>
+  log          errors|find|reopen|test
+  mailbox      cache|cache|create|delete|list|metadata|mutf7|path|rename|status|subscribe|unsubscribe|update
+  move         [-u <user>|-A] [-S <socket_path>] <destination> [user <source user>] <search query>
+  oldstats     dump|reset|top
+  penalty      [-a <anvil socket path>] [<ip/bits>]
+  process      status
+  proxy        kick|list
+  purge        [-u <user>|-A] [-S <socket_path>] 
+  pw           [-l] [-p plaintext] [-r rounds] [-s scheme] [-t hash] [-u user] [-V]
+  rebuild      attachments
+  reload       
+  replicator   add|dsync-status|remove|replicate|status
+  save         [-u <user>|-A] [-S <socket_path>] [-m mailbox]
+  search       [-u <user>|-A] [-S <socket_path>] <search query>
+  service      status|stop
+  sis          deduplicate|find
+  stats        dump
+  stop         
+  sync         [-u <user>|-A] [-S <socket_path>] [-1fPRU] [-l <secs>] [-r <rawlog path>] [-m <mailbox>] [-g <mailbox_guid>] [-n <namespace> | -N] [-x <exclude>] [-s <state>] [-t <start date>] -d|<dest>
+  user         [-a <userdb socket path>] [-x <auth info>] [-f field] [-e <value>] [-u] <user mask> [...]
+  who          [-a <anvil socket path>] [-1] [<user mask>] [<ip/bits>]
+  zlibconnect  <host> [<port>]

@@ -1,0 +1,202 @@
+Checking configuration files in /etc/clamav
+
+Config file: clamd.conf
+-----------------------
+AlertExceedsMax disabled
+PreludeEnable disabled
+PreludeAnalyzerName = "ClamAV"
+LogFile = "/var/log/clamav/clamav.log"
+LogFileUnlock disabled
+LogFileMaxSize = "4294967295"
+LogTime = "yes"
+LogClean disabled
+LogSyslog disabled
+LogFacility = "LOG_LOCAL6"
+LogVerbose disabled
+LogRotate = "yes"
+ExtendedDetectionInfo = "yes"
+PidFile disabled
+TemporaryDirectory disabled
+DatabaseDirectory = "/var/lib/clamav"
+OfficialDatabaseOnly disabled
+LocalSocket = "/var/run/clamav/clamd.ctl"
+LocalSocketGroup = "clamav"
+LocalSocketMode = "666"
+FixStaleSocket = "yes"
+TCPSocket disabled
+TCPAddr disabled
+MaxConnectionQueueLength = "15"
+StreamMaxLength = "26214400"
+StreamMinPort = "1024"
+StreamMaxPort = "2048"
+MaxThreads = "12"
+ReadTimeout = "180"
+CommandReadTimeout = "30"
+SendBufTimeout = "200"
+MaxQueue = "100"
+IdleTimeout = "30"
+ExcludePath disabled
+MaxDirectoryRecursion = "15"
+FollowDirectorySymlinks disabled
+FollowFileSymlinks disabled
+CrossFilesystems = "yes"
+SelfCheck = "3600"
+ConcurrentDatabaseReload = "yes"
+DisableCache disabled
+VirusEvent disabled
+ExitOnOOM disabled
+AllowAllMatchScan = "yes"
+Foreground disabled
+Debug disabled
+LeaveTemporaryFiles disabled
+User = "clamav"
+Bytecode = "yes"
+BytecodeSecurity = "TrustSigned"
+BytecodeTimeout = "60000"
+BytecodeUnsigned disabled
+BytecodeMode = "Auto"
+DetectPUA disabled
+ExcludePUA disabled
+IncludePUA disabled
+ScanPE = "yes"
+ScanELF = "yes"
+ScanMail = "yes"
+ScanPartialMessages disabled
+PhishingSignatures = "yes"
+PhishingScanURLs = "yes"
+HeuristicAlerts = "yes"
+HeuristicScanPrecedence disabled
+StructuredDataDetection disabled
+StructuredMinCreditCardCount = "3"
+StructuredMinSSNCount = "3"
+StructuredSSNFormatNormal = "yes"
+StructuredSSNFormatStripped disabled
+ScanHTML = "yes"
+ScanOLE2 = "yes"
+AlertBrokenExecutables disabled
+AlertBrokenMedia disabled
+AlertEncrypted disabled
+StructuredCCOnly disabled
+AlertEncryptedArchive disabled
+AlertEncryptedDoc disabled
+AlertOLE2Macros disabled
+AlertPhishingSSLMismatch disabled
+AlertPhishingCloak disabled
+AlertPartitionIntersection disabled
+ScanPDF = "yes"
+ScanSWF = "yes"
+ScanXMLDOCS = "yes"
+ScanHWP3 = "yes"
+ScanArchive = "yes"
+ForceToDisk disabled
+MaxScanTime = "120000"
+MaxScanSize = "104857600"
+MaxFileSize = "26214400"
+MaxRecursion = "16"
+MaxFiles = "10000"
+MaxEmbeddedPE = "10485760"
+MaxHTMLNormalize = "10485760"
+MaxHTMLNoTags = "2097152"
+MaxScriptNormalize = "5242880"
+MaxZipTypeRcg = "1048576"
+MaxPartitions = "50"
+MaxIconsPE = "100"
+MaxRecHWP3 = "16"
+PCREMatchLimit = "10000"
+PCRERecMatchLimit = "5000"
+PCREMaxFileSize = "26214400"
+OnAccessMountPath disabled
+OnAccessIncludePath disabled
+OnAccessExcludePath disabled
+OnAccessExcludeRootUID disabled
+OnAccessExcludeUID disabled
+OnAccessExcludeUname disabled
+OnAccessMaxFileSize = "5242880"
+OnAccessDisableDDD disabled
+OnAccessPrevention disabled
+OnAccessExtraScanning disabled
+OnAccessCurlTimeout = "5000"
+OnAccessMaxThreads = "5"
+OnAccessRetryAttempts disabled
+OnAccessDenyOnError disabled
+DevACOnly disabled
+DevACDepth disabled
+DevPerformance disabled
+DevLiblog disabled
+DisableCertCheck disabled
+AlgorithmicDetection = "yes"
+BlockMax disabled
+PhishingAlwaysBlockSSLMismatch disabled
+PhishingAlwaysBlockCloak disabled
+PartitionIntersection disabled
+OLE2BlockMacros disabled
+ArchiveBlockEncrypted disabled
+
+Config file: freshclam.conf
+---------------------------
+LogFileMaxSize = "4294967295"
+LogTime = "yes"
+LogSyslog disabled
+LogFacility = "LOG_LOCAL6"
+LogVerbose disabled
+LogRotate = "yes"
+PidFile disabled
+DatabaseDirectory = "/var/lib/clamav"
+Foreground disabled
+Debug disabled
+UpdateLogFile = "/var/log/clamav/freshclam.log"
+DatabaseOwner = "clamav"
+Checks = "24"
+DNSDatabaseInfo = "current.cvd.clamav.net"
+DatabaseMirror = "db.local.clamav.net", "database.clamav.net"
+PrivateMirror disabled
+MaxAttempts = "5"
+ScriptedUpdates = "yes"
+TestDatabases = "yes"
+CompressLocalDatabase disabled
+ExtraDatabase disabled
+ExcludeDatabase disabled
+DatabaseCustomURL disabled
+HTTPProxyServer disabled
+HTTPProxyPort disabled
+HTTPProxyUsername disabled
+HTTPProxyPassword disabled
+HTTPUserAgent disabled
+NotifyClamd = "/etc/clamav/clamd.conf"
+OnUpdateExecute disabled
+OnErrorExecute disabled
+OnOutdatedExecute disabled
+LocalIPAddress disabled
+ConnectTimeout = "30"
+ReceiveTimeout disabled
+Bytecode = "yes"
+
+clamav-milter.conf not found
+
+Software settings
+-----------------
+Version: 0.103.6
+Optional features supported: MEMPOOL IPv6 FRESHCLAM_DNS_FIX AUTOIT_EA06 BZIP2 LIBXML2 PCRE2 ICONV JSON 
+
+Database information
+--------------------
+Database directory: /var/lib/clamav
+Total number of signatures: 0
+
+Platform information
+--------------------
+uname: Linux 5.10.102.1-microsoft-standard-WSL2 #1 SMP Wed Mar 2 00:30:59 UTC 2022 x86_64
+OS: linux-gnu, ARCH: x86_64, CPU: x86_64
+zlib version: 1.2.11 (1.2.11), compile flags: a9
+platform id: 0x0a217f7f08000000000b0200
+
+Build information
+-----------------
+GNU C: 11.2.0 (11.2.0)
+CPPFLAGS: -Wdate-time -D_FORTIFY_SOURCE=2
+CFLAGS: -g -O2 -ffile-prefix-map=/build/clamav-69JWKT/clamav-0.103.6+dfsg=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64  -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64
+CXXFLAGS: -g -O2 -ffile-prefix-map=/build/clamav-69JWKT/clamav-0.103.6+dfsg=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64
+LDFLAGS: -Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -flto=auto -Wl,-z,relro -Wl,-z,now -Wl,--as-needed
+Configure: '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=/usr/include' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-option-checking' '--disable-silent-rules' '--libdir=/usr/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' 'CFLAGS=-g -O2 -ffile-prefix-map=/build/clamav-69JWKT/clamav-0.103.6+dfsg=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -ffile-prefix-map=/build/clamav-69JWKT/clamav-0.103.6+dfsg=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64' 'LDFLAGS=-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -flto=auto -Wl,-z,relro -Wl,-z,now -Wl,--as-needed' '--with-dbdir=/var/lib/clamav' '--sysconfdir=/etc/clamav' '--disable-clamav' '--disable-unrar' '--enable-milter' '--enable-dns-fix' '--with-libjson' '--with-system-libmspack' '--with-libcurl=/usr' '--with-gnu-ld' '--with-systemdsystemunitdir=/lib/systemd/system' 'build_alias=x86_64-linux-gnu' 'OBJCFLAGS=-g -O2 -ffile-prefix-map=/build/clamav-69JWKT/clamav-0.103.6+dfsg=. -flto=auto -ffat-lto-objects -flto=auto -ffat-lto-objects -fstack-protector-strong -Wformat -Werror=format-security'
+sizeof(void*) = 8
+Engine flevel: 127, dconf: 127

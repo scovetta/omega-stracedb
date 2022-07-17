@@ -1,0 +1,24 @@
+
+                       Clam AntiVirus: Bytecode Testing Tool 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clambc <file> [function] [param1 ...]
+
+    --help                 -h         Show this help
+    --version              -V         Show version
+    --debug                           Show debug
+    --force-interpreter    -f         Force using the interpreter instead of the JIT
+    --trust-bytecode       -t         Trust loaded bytecode (default yes)
+    --info                 -i         Print information about bytecode
+    --printsrc             -p         Print bytecode source
+    --printbcir            -c         Print IR of bytecode signature
+    --input                -c         Input file to run the bytecode on
+    --trace <level>        -T         Set bytecode trace level 0..7 (default 7)
+    --no-trace-showsource  -s         Don't show source line during tracing
+    --statistics=bytecode             Collect and print bytecode execution statistics
+    file                              File to test
+
+**Caution**: You should NEVER run bytecode signatures from untrusted sources.
+Doing so may result in arbitrary code execution.
+

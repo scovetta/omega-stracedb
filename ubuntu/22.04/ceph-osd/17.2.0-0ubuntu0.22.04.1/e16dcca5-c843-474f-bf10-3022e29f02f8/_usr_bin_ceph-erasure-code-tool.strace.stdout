@@ -1,0 +1,20 @@
+usage: ceph-erasure-code-tool test-plugin-exists <plugin>
+       ceph-erasure-code-tool validate-profile <profile> [<display-param> ...]
+       ceph-erasure-code-tool calc-chunk-size <profile> <object_size>
+       ceph-erasure-code-tool encode <profile> <stripe_unit> <want_to_encode> <fname>
+       ceph-erasure-code-tool decode <profile> <stripe_unit> <want_to_decode> <fname>
+
+  plugin          - plugin name
+  profile         - comma separated list of erasure-code profile settings
+                    example: plugin=jerasure,technique=reed_sol_van,k=3,m=2
+  display-param   - parameter to display (display all if empty)
+                    may be: [chunk_count,data_chunk_count,coding_chunk_count]
+  object_size     - object size
+  stripe_unit     - stripe unit
+  want_to_encode  - comma separated list of shards to encode
+  want_to_decode  - comma separated list of shards to decode
+  fname           - name for input/output files
+                    when encoding input is read form {fname} file,
+                                  result is stored in {fname}.{shard} files
+                    when decoding input is read form {fname}.{shard} files,
+                                  result is stored in {fname} file
