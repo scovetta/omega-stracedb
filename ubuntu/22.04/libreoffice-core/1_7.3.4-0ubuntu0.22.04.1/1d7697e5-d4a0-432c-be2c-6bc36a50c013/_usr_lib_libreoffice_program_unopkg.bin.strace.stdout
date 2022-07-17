@@ -1,0 +1,38 @@
+
+using: unopkg add <options> extension-path...
+       unopkg validate <options> extension-identifier...
+       unopkg remove <options> extension-identifier...
+       unopkg list <options> extension-identifier...
+       unopkg reinstall <options>
+       unopkg gui
+       unopkg -V
+       unopkg -h
+
+sub-commands:
+ add                     add extension
+ validate                checks the prerequisites of an installed extension and
+                         registers it if possible
+ remove                  remove extensions by identifier
+ reinstall               expert feature: reinstall all deployed extensions
+ list                    list information about deployed extensions
+ gui                     raise Extension Manager Graphical User Interface (GUI)
+
+options:
+ -h, --help              this help
+ -V, --version           version information
+ -v, --verbose           verbose output
+ -f, --force             force overwriting existing extensions
+ -s, --suppress-license  prevents showing the license
+ --log-file <file>       custom log file; default: <cache-dir>/log.txt
+ --shared                expert feature: operate on shared installation
+                                         deployment context;
+                                         run only when no concurrent Office
+                                         process(es) are running!
+ --bundled               expert feature: operate on bundled extensions. Only
+                                         works with list, validate, reinstall;
+ --deployment-context    expert feature: explicit deployment context
+     <context>
+
+To learn more about the Extension Manager and extensions, see:
+http://wiki.openoffice.org/wiki/Documentation/DevGuide/Extensions/Extensions
+
