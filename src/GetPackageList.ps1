@@ -1,0 +1,1 @@
+wsl docker run --rm -it --entrypoint /usr/bin/get-package-list.sh openssf/omega-lrda:0.1.0 > package-list
