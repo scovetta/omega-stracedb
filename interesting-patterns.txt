@@ -1,1 +1,8 @@
 This file contains interesting strace patterns.
+
+# OpenSSL Configuration Files
+grep -R --include='*.strace.txt' openat | cut -d\" -f2 | grep openssl.cnf | sort | uniq
+
+# DNS Queries
+grep -R --include='*.strace.txt' connect | grep 'htons(53)' | egrep -o 'inet_addr\([^\)]+\)' | sort | uniq
+

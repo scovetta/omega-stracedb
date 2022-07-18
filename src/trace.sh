@@ -89,7 +89,7 @@ PACKAGE_LOWER="${PACKAGE,,}"
 PACKAGE_LOWER="${PACKAGE//[^A-Za-z0-9-]/}"
 if [ "${#PACKAGE_LOWER}" -eq 1 ]; then
     EXPORT_PREFIX="${PACKAGE_LOWER:0:1}"
-elif [ "${#PACKAGE_LOWER}" -gt 1]; then
+elif [ "${#PACKAGE_LOWER}" -gt 1 ]; then
     EXPORT_PREFIX="${PACKAGE_LOWER:0:1}/${PACKAGE_LOWER:0:1}${PACKAGE_LOWER:1:1}"
 else
     EXPORT_PREFIX="_"

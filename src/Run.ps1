@@ -62,7 +62,6 @@ if (!$ForceAnalyze) {
         Write-Host "Package [$PackageName] already analyzed."
         Exit 0
     }
-    Exit 0
 }
 
 while ($RetryCount -gt 0)
