@@ -100,7 +100,7 @@ echo "  \"entrypoints\": [" >> "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
 
 # Optimizing (don't check non-executable packages)
 printf "${DARKGRAY}Checking for likely executables...${NC}\n"
-if [ -z "$ALWAYS_INSTALL" ]; then
+if [ -z "$ALWAYS_INSTALL" ] && [ -d "/opt/apt-mirror" ]; then
     HAS_EXECUTABLES=0
     PACKAGE_FILENAMES=$(apt-cache show $PACKAGE | grep Filename: | cut -d: -f2 | sed 's/ //g')
     while IFS= read -r PACKAGE_FILENAME; do
@@ -127,10 +127,8 @@ if [ -z "$ALWAYS_INSTALL" ]; then
         echo "}" >> "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
         exit 2
     fi
-
-
 else
-    printf "${DARKGRAY}Always installing package, ignoring optimization.${NC}\n"
+    printf "${DARKGRAY}Installing package, ignoring optimization (or apt mirror not found)${NC}\n"
 fi
 
 function process_entrypoint()
