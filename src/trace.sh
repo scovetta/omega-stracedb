@@ -84,7 +84,18 @@ METADATA_FILENAME="METADATA.json"
 
 printf "${DARKGRAY}Analyzing [ ${YELLOW}${PACKAGE}@${PACKAGE_VERSION}${DARKGRAY} ]...${NC}\n"
 
-EXPORT_DETAIL_PATH="/opt/export/${PACKAGE}/${PACKAGE_VERSION_SAFE}/${ANALYSIS_UUID}"
+# Create a reasonable prefix so we don't have 70k files in the export directory
+PACKAGE_LOWER="${PACKAGE,,}"
+PACKAGE_LOWER="${PACKAGE//[^A-Za-z0-9-]/}"
+if [ "${#PACKAGE_LOWER}" -eq 1 ]; then
+    EXPORT_PREFIX="${PACKAGE_LOWER:0:1}"
+elif [ "${#PACKAGE_LOWER}" -gt 1]; then
+    EXPORT_PREFIX="${PACKAGE_LOWER:0:1}/${PACKAGE_LOWER:0:1}${PACKAGE_LOWER:1:1}"
+else
+    EXPORT_PREFIX="_"
+fi
+
+EXPORT_DETAIL_PATH="/opt/export/${EXPORT_PREFIX}/${PACKAGE}/${PACKAGE_VERSION_SAFE}/${ANALYSIS_UUID}"
 rm -rf "${EXPORT_DETAIL_PATH}"
 mkdir -p "${EXPORT_DETAIL_PATH}"
 
