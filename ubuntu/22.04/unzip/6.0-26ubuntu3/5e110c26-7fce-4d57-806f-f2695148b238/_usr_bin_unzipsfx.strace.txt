@@ -1,0 +1,69 @@
+488   execve("/usr/bin/unzipsfx", ["/usr/bin/unzipsfx"], 0x7ffe62c7a1a0 /* 12 vars */) = 0
+488   brk(NULL)                         = 0x5573e34af000
+488   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcff959600) = -1 EINVAL (Invalid argument)
+488   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f31e7f01000
+488   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+488   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f31e7eff000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+488   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f31e7cd7000
+488   mmap(0x7f31e7cff000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f31e7cff000
+488   mmap(0x7f31e7e94000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f31e7e94000
+488   mmap(0x7f31e7eec000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f31e7eec000
+488   mmap(0x7f31e7ef2000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f31e7ef2000
+488   close(3)                          = 0
+488   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f31e7cd4000
+488   arch_prctl(ARCH_SET_FS, 0x7f31e7cd4740) = 0
+488   set_tid_address(0x7f31e7cd4a10)   = 488
+488   set_robust_list(0x7f31e7cd4a20, 24) = 0
+488   rseq(0x7f31e7cd50e0, 0x20, 0, 0x53053053) = 0
+488   mprotect(0x7f31e7eec000, 16384, PROT_READ) = 0
+488   mprotect(0x5573e2e7d000, 4096, PROT_READ) = 0
+488   mprotect(0x7f31e7f3b000, 8192, PROT_READ) = 0
+488   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+488   munmap(0x7f31e7eff000, 6133)      = 0
+488   rt_sigaction(SIGINT, {sa_handler=0x5573e2e71830, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f31e7d19520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+488   rt_sigaction(SIGTERM, {sa_handler=0x5573e2e71830, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f31e7d19520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+488   rt_sigaction(SIGABRT, {sa_handler=0x5573e2e71830, sa_mask=[ABRT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f31e7d19520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+488   rt_sigaction(SIGBUS, {sa_handler=0x5573e2e71830, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f31e7d19520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+488   rt_sigaction(SIGILL, {sa_handler=0x5573e2e71830, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f31e7d19520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+488   rt_sigaction(SIGSEGV, {sa_handler=0x5573e2e71830, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f31e7d19520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+488   ioctl(1, TIOCGWINSZ, 0x7ffcff959590) = -1 ENOTTY (Inappropriate ioctl for device)
+488   write(1, "UnZipSFX 6.00 of 20 April 2009, by Info-ZIP (http://www.info-zip.org).\n", 71) = 71
+488   getrandom("\x98\xe9\x29\x9c\x55\x44\xde\x68", 8, GRND_NONBLOCK) = 8
+488   brk(NULL)                         = 0x5573e34af000
+488   brk(0x5573e34d0000)               = 0x5573e34d0000
+488   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+488   newfstatat(AT_FDCWD, "/usr/bin/unzipsfx", {st_mode=S_IFREG|0755, st_size=80304, ...}, 0) = 0
+488   openat(AT_FDCWD, "/usr/bin/unzipsfx", O_RDONLY) = 3
+488   lseek(3, 73728, SEEK_SET)         = 73728
+488   read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 6576) = 6576
+488   lseek(3, 65536, SEEK_SET)         = 65536
+488   read(3, "[N]one, [r]ename: \0\0\0\0\0\0\0\0\0\0\0\0\0\0   skipping: %-22s  %svolume label\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0warning:  cannot alloc memory fo"..., 8192) = 8192
+488   lseek(3, 57344, SEEK_SET)         = 57344
+488   read(3, "\r\233&\0\0H\211\3571\300\272\0\200\0\0\276\1\0\0\0H\203D$\20\1L\2135\3574\r\0\350\nI\377\377\271\1\2\0\0H\211\356L\211\357Hc\320A\377\326\203|$$\0\17\205\377\376\377\377\307D$$\1\0\0\0\351\362\376\377\377H\215s\20\350xD\377\377\205\300uoH\213{\10\3515\377\377\377L\211\347\350sD\377\377\213\5\235`\0\0\v\5\223`\0\0\17\2052\367\377\377H"..., 8192) = 8192
+488   lseek(3, 49152, SEEK_SET)         = 49152
+488   read(3, "H\1\312\17\266\214$\315\0\0\0\301\341\10\1\361\17\266\264$\320\0\0\0H\1\312\17\266\214$\322\0\0\0H\211\25fB\r\0\17\266\224$\323\0\0\0H\301\341\20H\301\342\30H\1\312\17\266\214$\321\0\0\0\301\341\10\1\361\17\266\264$\324\0\0\0H\1\312\17\266\214$\326\0\0\0H\211\25\fB\r\0\17\266\224$\327\0\0\0H\301\341\20H\301\342\30H\1\312\17\266\214$\325\0\0\0\301"..., 8192) = 8192
+488   lseek(3, 40960, SEEK_SET)         = 40960
+488   read(3, "\377\377\351A\374\377\377\350\4\205\377\377H\213\35\375t\r\0\2138\350\326\210\377\377H\2155\237\341\f\0L\211\357I\211\303\350\364\304\377\377M\211\331H\215\rJZ\0\0I\211\300\351v\374\377\377H\201=\377a\r\0PK\7\10\17\205\n\375\377\377\351\215\354\377\377A\203\3741\17\217?\370\377\377D\213\r\247\240\0\0H\213\35\244t\r\0E\205\311u\37L\215\5\30\\\0\0L\215-A\241\f\0A"..., 8192) = 8192
+488   lseek(3, 32768, SEEK_SET)         = 32768
+488   read(3, "\211\350L\213l$8\351|\376\377\377H\213=\265\201\r\0\272\0\200\0\0H\2155\241\301\f\0\350\354\323\377\377\213=\346\300\0\0H\211\5\227\201\r\0\205\377u \2135\201\203\r\0\205\366\17\205\367\376\377\377\277\0\200\0\0\350#\346\377\377\205\300\17\205Q\373\377\377\307D$\f\0\0\0\0\351\30\372\377\377ff.\17\37\204\0\0\0\0\0\17\37\0ATUSH\201\354\220\4\0\0H\213=\376\223"..., 8192) = 8192
+488   lseek(3, 24576, SEEK_SET)         = 24576
+488   read(3, "]A\\A]A^\303L\215,6H\301\346\5\351\v\377\377\377\270\377\377\377\377\303\270\376\377\377\377\351\300\376\377\377ff.\17\37\204\0\0\0\0\0AWAVAUATUH\211\365SH\203\354(D\17\266/\211L$\30E\205\355\17\204\311\2\0\0I\211\376A\211\324H\215_\1\351\241\0\0\0\17\37\200\0\0\0\0A\203\375*\17\204\326\2\0\0A\203\375[\17\204\344\0\0\0A\203\375\\"..., 8192) = 8192
+488   lseek(3, 16384, SEEK_SET)         = 16384
+488   read(3, "\271\1\4\0\0L\211\356H\211\357\377\25\377\324\r\0\351\240\366\377\377L\215\5\243\1\r\0\271\20\0\0\0\272?\0\0\0L\211\307H\2155\357\311\0\0\363\245\271\1\4\0\0L\211\306H\211\357\377\25\314\324\r\0\307D$\10\n\0\0\0\351\245\365\377\377\350\272\344\377\377L\215-c\1\r\0H\213\35\254\324\r\0\2138\350\205\350\377\377L\213\5\226\301\r\0L\211\357H\215\rd\313\0\0I\211\301\272"..., 8192) = 8192
+488   lseek(3, 8192, SEEK_SET)          = 8192
+488   read(3, "\363\17\36\372H\203\354\10H\213\5\321\37\1\0H\205\300t\2\377\320H\203\304\10\303\0\0\0\0\0\3775B\35\1\0\362\377%C\35\1\0\17\37\0\363\17\36\372h\0\0\0\0\362\351\341\377\377\377\220\363\17\36\372h\1\0\0\0\362\351\321\377\377\377\220\363\17\36\372h\2\0\0\0\362\351\301\377\377\377\220\363\17\36\372h\3\0\0\0\362\351\261\377\377\377\220\363\17\36\372h\4\0\0\0\362\351\241\377\377\377\220"..., 8192) = 8192
+488   ioctl(1, TIOCGWINSZ, 0x7ffcff959590) = -1 ENOTTY (Inappropriate ioctl for device)
+488   write(2, "  End-of-central-directory signature not found.\n", 48) = 48
+488   close(3)                          = 0
+488   exit_group(2)                     = ?
+488   +++ exited with 2 +++
