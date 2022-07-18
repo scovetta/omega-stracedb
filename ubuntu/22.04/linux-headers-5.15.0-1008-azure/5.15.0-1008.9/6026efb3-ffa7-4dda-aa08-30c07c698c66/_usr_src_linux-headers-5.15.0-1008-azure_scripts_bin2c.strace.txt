@@ -1,0 +1,43 @@
+518   execve("/usr/src/linux-headers-5.15.0-1008-azure/scripts/bin2c", ["/usr/src/linux-headers-5.15.0-1008-azure/scripts/bin2c"], 0x7ffe53c9a430 /* 12 vars */) = 0
+518   brk(NULL)                         = 0x5582944ef000
+518   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffce1b70ed0) = -1 EINVAL (Invalid argument)
+518   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f00c0a05000
+518   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+518   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+518   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6189, ...}, AT_EMPTY_PATH) = 0
+518   mmap(NULL, 6189, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f00c0a03000
+518   close(3)                          = 0
+518   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+518   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+518   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+518   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+518   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+518   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+518   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+518   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f00c07db000
+518   mmap(0x7f00c0803000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f00c0803000
+518   mmap(0x7f00c0998000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f00c0998000
+518   mmap(0x7f00c09f0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f00c09f0000
+518   mmap(0x7f00c09f6000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f00c09f6000
+518   close(3)                          = 0
+518   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f00c07d8000
+518   arch_prctl(ARCH_SET_FS, 0x7f00c07d8740) = 0
+518   set_tid_address(0x7f00c07d8a10)   = 518
+518   set_robust_list(0x7f00c07d8a20, 24) = 0
+518   rseq(0x7f00c07d90e0, 0x20, 0, 0x53053053) = 0
+518   mprotect(0x7f00c09f0000, 16384, PROT_READ) = 0
+518   mprotect(0x558293be3000, 4096, PROT_READ) = 0
+518   mprotect(0x7f00c0a3f000, 8192, PROT_READ) = 0
+518   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+518   munmap(0x7f00c0a03000, 6189)      = 0
+518   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+518   getrandom("\xa5\x24\x70\x1e\xdf\x27\xa1\x9c", 8, GRND_NONBLOCK) = 8
+518   brk(NULL)                         = 0x5582944ef000
+518   brk(0x558294510000)               = 0x558294510000
+518   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=1225, ...}, AT_EMPTY_PATH) = 0
+518   read(0, "/usr/src/linux-headers-5.15.0-1008-azure/arch/x86/tools/relocs\n/usr/src/linux-headers-5.15.0-1008-azure/scripts/asn1_compiler\n/u"..., 4096) = 1225
+518   write(1, "\t\"\\x2f\\x75\\x73\\x72\\x2f\\x73\\x72\\x63\\x2f\\x6c\\x69\\x6e\\x75\\x78\\x2d\\x68\"\n\t\"\\x65\\x61\\x64\\x65\\x72\\x73\\x2d\\x35\\x2e\\x31\\x35\\x2e\\x30\\x2d\\x"..., 4096) = 4096
+518   read(0, "", 4096)                 = 0
+518   write(1, "61\\x64\\x65\\x72\\x73\\x2d\\x35\\x2e\\x31\\x35\\x2e\\x30\\x2d\"\n\t\"\\x31\\x30\\x30\\x38\\x2d\\x61\\x7a\\x75\\x72\\x65\\x2f\\x74\\x6f\\x6f\\x6c\\x73\"\n\t\"\\x2f\\x"..., 1112) = 1112
+518   exit_group(0)                     = ?
+518   +++ exited with 0 +++

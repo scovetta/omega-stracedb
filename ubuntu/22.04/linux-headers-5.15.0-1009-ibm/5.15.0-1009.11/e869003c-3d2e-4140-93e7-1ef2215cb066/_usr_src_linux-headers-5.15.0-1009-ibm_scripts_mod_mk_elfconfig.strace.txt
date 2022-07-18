@@ -1,0 +1,40 @@
+574   execve("/usr/src/linux-headers-5.15.0-1009-ibm/scripts/mod/mk_elfconfig", ["/usr/src/linux-headers-5.15.0-1009-ibm/scripts/mod/mk_elfconfig"], 0x7ffc136fc790 /* 12 vars */) = 0
+574   brk(NULL)                         = 0x55e188a48000
+574   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe1a40d920) = -1 EINVAL (Invalid argument)
+574   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd733e5000
+574   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+574   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+574   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6189, ...}, AT_EMPTY_PATH) = 0
+574   mmap(NULL, 6189, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdd733e3000
+574   close(3)                          = 0
+574   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+574   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+574   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+574   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+574   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+574   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+574   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+574   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd731bb000
+574   mmap(0x7fdd731e3000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fdd731e3000
+574   mmap(0x7fdd73378000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fdd73378000
+574   mmap(0x7fdd733d0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fdd733d0000
+574   mmap(0x7fdd733d6000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdd733d6000
+574   close(3)                          = 0
+574   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd731b8000
+574   arch_prctl(ARCH_SET_FS, 0x7fdd731b8740) = 0
+574   set_tid_address(0x7fdd731b8a10)   = 574
+574   set_robust_list(0x7fdd731b8a20, 24) = 0
+574   rseq(0x7fdd731b90e0, 0x20, 0, 0x53053053) = 0
+574   mprotect(0x7fdd733d0000, 16384, PROT_READ) = 0
+574   mprotect(0x55e18828d000, 4096, PROT_READ) = 0
+574   mprotect(0x7fdd7341f000, 8192, PROT_READ) = 0
+574   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+574   munmap(0x7fdd733e3000, 6189)      = 0
+574   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=1187, ...}, AT_EMPTY_PATH) = 0
+574   getrandom("\xcf\x91\x53\xae\x5e\xca\x35\x4f", 8, GRND_NONBLOCK) = 8
+574   brk(NULL)                         = 0x55e188a48000
+574   brk(0x55e188a69000)               = 0x55e188a69000
+574   read(0, "", 4096)                 = 0
+574   write(2, "Error: input truncated\n", 23) = 23
+574   exit_group(1)                     = ?
+574   +++ exited with 1 +++
