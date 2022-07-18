@@ -3,10 +3,10 @@ FROM mcr.microsoft.com/mirror/docker/library/ubuntu:22.04
 # Copyright Linux Foundation and contributors. Licensed under the MIT license.
 
 LABEL schema-version="1.0"
-LABEL name="linux-runtime-dependency-analyzer"
+LABEL name="omega-tracer"
 LABEL maintainer="Open Source Security Foundation - Omega"
 LABEL vendor="OpenSSF"
-LABEL build-date="2022-07-16T00:00:00.00Z"
+LABEL build-date="2022-07-17T00:00:00.00Z"
 LABEL version="0.1.0"
 
 # Initialize some things
@@ -43,9 +43,6 @@ RUN echo "deb [trusted=yes] file:/opt/apt-mirror/mirror/archive.ubuntu.com/ubunt
 ########################
 ####### Finalize #######
 ########################
-
-# Add --build-arg CACHEBUST=$(date -Format o) to avoid caching
-ARG CACHEBUST=1
 
 ADD trace.sh /usr/bin/
 ADD get-package-list.sh /usr/bin

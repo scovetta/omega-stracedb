@@ -8,25 +8,20 @@ param(
     $use_wsl = $true
 )
 
-if ($use_wsl)
-{
-    $wsl_cmd = "wsl "
-}
-else
-{
-    $wsl_cmd = ""
+if ($use_wsl) {
+    $DOCKER_CMD = "wsl"
+    $DOCKER_ARG = "docker"
+} else {
+    $DOCKER_CMD = "docker"
+    $DOCKER_ARG = ""
 }
 
 try
 {
     $version = (Select-String -Path Dockerfile -Pattern 'LABEL Version="(.*)"').Matches.Groups[1].Value
 
-    if ($force) {
-        $wsl_cmd docker build -t openssf/omega-tracer:$version . -f Dockerfile --build-arg CACHEBUST=$(date -Format o)
-    } else {
-        $wsl_cmd docker build -t openssf/omega-tracer:$version . -f Dockerfile
-    }
-    $wsl_cmd docker tag openssf/omega-tracer:$version openssf/omega-tracer:latest
+    & $DOCKER_CMD $DOCKER_ARG build -t openssf/omega-tracer:$version . -f Dockerfile
+    & $DOCKER_CMD $DOCKER_ARG tag openssf/omega-tracer:$version openssf/omega-tracer:latest
 }
 catch
 {
