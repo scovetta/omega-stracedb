@@ -1,0 +1,32 @@
+need a number
+Usage: hwloc-distrib [options] number
+Distribution options:
+  --ignore <type>  Ignore objects of the given type
+  --from <type>    Distribute starting from objects of the given type
+  --to <type>      Distribute down to objects of the given type
+  --at <type>      Distribute among objects of the given type
+  --reverse        Distribute by starting from last objects
+Input topology options:
+  --restrict [nodeset=]<bitmap>
+                   Restrict the topology to some processors or NUMA nodes.
+  --restrict-flags <n>  Set the flags to be used during restrict
+  --disallowed     Include objects disallowed by administrative limitations
+  --input <XML file>
+  -i <XML file>    Read topology from XML file <path>
+  --input <directory>
+  -i <directory>   Read topology from chroot containing the /proc and /sys
+                   of another system
+  --input <directory>
+  -i <directory>   Read topology from directory containing a CPUID dump
+  --input "node:2 2"
+  -i "node:2 2"    Simulate a fake hierarchy, here with 2 NUMA nodes of 2
+                   processors
+  --input-format <format>
+  --if <format>    Enforce input format among xml, fsroot, cpuid, synthetic
+Formatting options:
+  --single         Singlify each output to a single CPU
+  --taskset        Show taskset-specific cpuset strings
+Miscellaneous options:
+  -v --verbose     Show verbose messages
+  --version        Report version and exit
+  -h --help        Show this usage

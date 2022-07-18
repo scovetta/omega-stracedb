@@ -1,0 +1,24 @@
+Usage:
+    jmap -clstats <pid>
+        to connect to running process and print class loader statistics
+    jmap -finalizerinfo <pid>
+        to connect to running process and print information on objects awaiting finalization
+    jmap -histo[:live] <pid>
+        to connect to running process and print histogram of java object heap
+        if the "live" suboption is specified, only count live objects
+    jmap -dump:<dump-options> <pid>
+        to connect to running process and dump java heap
+    jmap -? -h --help
+        to print this help message
+
+    dump-options:
+      live         dump only live objects; if not specified,
+                   all objects in the heap are dumped.
+      format=b     binary format
+      file=<file>  dump heap to <file>
+      parallel=<number>  parallel threads number for heap iteration:
+                         parallel=0 default behavior, use predefined number of threads
+                         parallel=1 disable parallel heap iteration
+                         parallel=<N> use N threads for parallel heap iteration
+
+    Example: jmap -dump:live,format=b,file=heap.bin <pid>

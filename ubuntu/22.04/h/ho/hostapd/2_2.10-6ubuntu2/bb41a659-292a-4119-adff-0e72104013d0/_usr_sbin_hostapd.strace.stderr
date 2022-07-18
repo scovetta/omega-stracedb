@@ -1,0 +1,26 @@
+hostapd v2.10
+User space daemon for IEEE 802.11 AP management,
+IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator
+Copyright (c) 2002-2022, Jouni Malinen <j@w1.fi> and contributors
+
+usage: hostapd [-hdBKtv] [-P <PID file>] [-e <entropy file>] \
+         [-g <global ctrl_iface>] [-G <group>]\
+         [-i <comma-separated list of interface names>]\
+         <configuration file(s)>
+
+options:
+   -h   show this usage
+   -d   show more debug messages (-dd for even more)
+   -B   run daemon in the background
+   -e   entropy file
+   -g   global control interface path
+   -G   group for control interfaces
+   -P   PID file
+   -K   include key data in debug messages
+   -f   log output to debug file instead of stdout
+   -T   record to Linux tracing in addition to logging
+        (records all messages regardless of debug verbosity)
+   -i   list of interface names to use
+   -S   start all the interfaces synchronously
+   -t   include timestamps in some debug messages
+   -v   show hostapd version

@@ -1,0 +1,72 @@
+761   execve("/usr/bin/hwloc-diff", ["/usr/bin/hwloc-diff"], 0x7fff77508110 /* 12 vars */) = 0
+761   brk(NULL)                         = 0x561bd9235000
+761   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd64f18130) = -1 EINVAL (Invalid argument)
+761   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdb11d96000
+761   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+761   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+761   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8037, ...}, AT_EMPTY_PATH) = 0
+761   mmap(NULL, 8037, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdb11d94000
+761   close(3)                          = 0
+761   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhwloc.so.15", O_RDONLY|O_CLOEXEC) = 3
+761   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0 \246\5\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`S\0\0\0\0\0\0`S\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+761   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=372064, ...}, AT_EMPTY_PATH) = 0
+761   mmap(NULL, 374184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdb11d38000
+761   mmap(0x7fdb11d3e000, 266240, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fdb11d3e000
+761   mmap(0x7fdb11d7f000, 77824, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x47000) = 0x7fdb11d7f000
+761   mmap(0x7fdb11d92000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x59000) = 0x7fdb11d92000
+761   close(3)                          = 0
+761   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+761   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+761   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+761   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+761   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+761   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+761   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+761   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdb11b10000
+761   mmap(0x7fdb11b38000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fdb11b38000
+761   mmap(0x7fdb11ccd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fdb11ccd000
+761   mmap(0x7fdb11d25000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fdb11d25000
+761   mmap(0x7fdb11d2b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdb11d2b000
+761   close(3)                          = 0
+761   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+761   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+761   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+761   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdb11a29000
+761   mmap(0x7fdb11a37000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fdb11a37000
+761   mmap(0x7fdb11ab3000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7fdb11ab3000
+761   mmap(0x7fdb11b0e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7fdb11b0e000
+761   close(3)                          = 0
+761   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+761   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0p>\0\0\0\0\0\0p>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+761   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+761   mmap(NULL, 170272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdb119ff000
+761   mprotect(0x7fdb11a03000, 147456, PROT_NONE) = 0
+761   mmap(0x7fdb11a03000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7fdb11a03000
+761   mmap(0x7fdb11a1d000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7fdb11a1d000
+761   mmap(0x7fdb11a27000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7fdb11a27000
+761   close(3)                          = 0
+761   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdb119fd000
+761   arch_prctl(ARCH_SET_FS, 0x7fdb119fe440) = 0
+761   set_tid_address(0x7fdb119fe710)   = 761
+761   set_robust_list(0x7fdb119fe720, 24) = 0
+761   rseq(0x7fdb119fede0, 0x20, 0, 0x53053053) = 0
+761   mprotect(0x7fdb11d25000, 16384, PROT_READ) = 0
+761   mprotect(0x7fdb11a27000, 4096, PROT_READ) = 0
+761   mprotect(0x7fdb11b0e000, 4096, PROT_READ) = 0
+761   mprotect(0x7fdb11d92000, 4096, PROT_READ) = 0
+761   mprotect(0x561bd79b6000, 4096, PROT_READ) = 0
+761   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdb119fb000
+761   mprotect(0x7fdb11dd0000, 8192, PROT_READ) = 0
+761   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+761   munmap(0x7fdb11d94000, 8037)      = 0
+761   getrandom("\x4c\x02\x02\x44\x23\xf8\xd3\x01", 8, GRND_NONBLOCK) = 8
+761   brk(NULL)                         = 0x561bd9235000
+761   brk(0x561bd9256000)               = 0x561bd9256000
+761   write(2, "Usage: hwloc-diff [options] <old.xml> <new.xml> [<output.diff.xml>]\n", 68) = 68
+761   write(2, "Options:\n", 9)         = 9
+761   write(2, "  --refname <name>  Change the XML reference identifier to <name> in the output\n", 80) = 80
+761   write(2, "                    (default is the filename of the first topology\n", 67) = 67
+761   write(2, "  --version         Report version and exit\n", 44) = 44
+761   write(2, "  -h --help         Show this usage\n", 36) = 36
+761   exit_group(1)                     = ?
+761   +++ exited with 1 +++

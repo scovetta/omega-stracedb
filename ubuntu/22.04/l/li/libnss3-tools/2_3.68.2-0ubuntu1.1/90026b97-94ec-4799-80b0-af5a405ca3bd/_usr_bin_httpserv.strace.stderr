@@ -1,0 +1,19 @@
+Usage: httpserv -p port [-Dbv]
+         [-t threads] [-i pid_file]
+         [-A nickname -C crl-filename]... [-O method]
+         [-d dbdir] [-f password_file] [-w password] [-P dbprefix]
+-D means disable Nagle delays in TCP
+-b means try binding to the port and exit
+-v means verbose output
+-t threads -- specify the number of threads to use for connections.
+-i pid_file file to write the process id of httpserv
+Parameters -A, -C and -O are used to provide an OCSP server at /ocsp?
+-A a nickname of a CA certificate
+-C a CRL filename corresponding to the preceding CA nickname
+-O allowed HTTP methods for OCSP requests: get, post, all, random, get-unknown
+   random means: randomly fail if request method is GET, POST always works
+   get-unknown means: status unknown for GET, correct status for POST
+Multiple pairs of parameters -A and -C are allowed.
+If status for a cert from an unknown CA is requested, the cert from the
+first -A parameter will be used to sign the unknown status response.
+NSS database parameters are used only if OCSP parameters are used.

@@ -1,0 +1,29 @@
+nss-addbuiltin: you must specify exactly one of -t or -D or -C
+nss-addbuiltin -t trust -n nickname [-i certfile] [-c] [-h]
+	Read a der-encoded cert from certfile or stdin, and output
+	it to stdout in a format suitable for the builtin root module.
+	Example: nss-addbuiltin -n MyCA -t "C,C,C" -i myca.der >> certdata.txt
+nss-addbuiltin -D -n label [-i certfile]
+	Read a der-encoded cert from certfile or stdin, and output
+	a distrust record.
+	(-D is equivalent to -t p,p,p -c -h)
+nss-addbuiltin -C -e crl-entry-number -n label [-i crlfile]
+	Read a CRL from crlfile or stdin, and output
+	a distrust record (issuer+serial).
+	(-C implies -c -h)
+-t trust        trust flags (cCTpPuw).
+-n nickname     nickname to assign to builtin cert, or
+                a label for the distrust record.
+-c              exclude the certificate (only add a trust record)
+-h              exclude hash from trust record
+                    (useful to distrust any matching issuer/serial)
+                    (not allowed when adding positive trust)
+-e              a CRL entry number, as shown by "crlutil -S"
+-i file         input file to read (default stdin)
+                    (pipe through atob if the cert is b64-encoded)
+-d timestamp    convert a timestamp to DER, and output.
+                useful to fill server and email distrust fields
+                Example: nss-addbuiltin -d 1561939200
+                NOTE: The informed timestamp are interpreted as seconds
+                since unix epoch.
+                TIP: date -d "2019-07-01 00:00:00 UTC" +%s

@@ -1,0 +1,29 @@
+Usage: basic_ldap_auth -b basedn [options] [ldap_server_name[:port]]...
+
+	-b basedn (REQUIRED)	base dn under which to search
+	-f filter		search filter to locate user DN
+	-u userattr		username DN attribute
+	-s base|one|sub		search scope
+	-D binddn		DN to bind as to perform searches
+	-w bindpasswd		password for binddn
+	-W secretfile		read password for binddn from file secretfile
+	-H URI			LDAPURI (defaults to ldap://localhost)
+	-h server		LDAP server (defaults to localhost)
+	-p port			LDAP server port
+	-P			persistent LDAP connection
+	-c timeout		connect timeout
+	-t timelimit		search time limit
+	-R			do not follow referrals
+	-a never|always|search|find
+				when to dereference aliases
+	-v 2|3			LDAP version
+	-Z			TLS encrypt the LDAP connection, requires LDAP version 3
+	-d			enable debug mode
+
+	If no search filter is specified, then the dn <userattr>=user,basedn
+	will be used (same as specifying a search filter of '<userattr>=',
+	but quicker as as there is no need to search for the user DN)
+
+	If you need to bind as a user to perform searches then use the
+	-D binddn -w bindpasswd or -D binddn -W secretfile options
+

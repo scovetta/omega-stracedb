@@ -1,0 +1,63 @@
+518   execve("/usr/sbin/hostapd_cli", ["/usr/sbin/hostapd_cli"], 0x7fff7a027f80 /* 12 vars */) = 0
+518   brk(NULL)                         = 0x5561fe661000
+518   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe61c1a890) = -1 EINVAL (Invalid argument)
+518   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faf4287c000
+518   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+518   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+518   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6325, ...}, AT_EMPTY_PATH) = 0
+518   mmap(NULL, 6325, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7faf4287a000
+518   close(3)                          = 0
+518   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+518   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+518   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+518   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+518   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+518   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+518   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+518   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7faf42652000
+518   mmap(0x7faf4267a000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7faf4267a000
+518   mmap(0x7faf4280f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7faf4280f000
+518   mmap(0x7faf42867000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7faf42867000
+518   mmap(0x7faf4286d000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7faf4286d000
+518   close(3)                          = 0
+518   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faf4264f000
+518   arch_prctl(ARCH_SET_FS, 0x7faf4264f740) = 0
+518   set_tid_address(0x7faf4264fa10)   = 518
+518   set_robust_list(0x7faf4264fa20, 24) = 0
+518   rseq(0x7faf426500e0, 0x20, 0, 0x53053053) = 0
+518   mprotect(0x7faf42867000, 16384, PROT_READ) = 0
+518   mprotect(0x5561fcdf8000, 4096, PROT_READ) = 0
+518   mprotect(0x7faf428b6000, 8192, PROT_READ) = 0
+518   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+518   munmap(0x7faf4287a000, 6325)      = 0
+518   getrandom("\xe4\xfc\x7a\x91\x51\xe7\xea\xf9", 8, GRND_NONBLOCK) = 8
+518   brk(NULL)                         = 0x5561fe661000
+518   brk(0x5561fe682000)               = 0x5561fe682000
+518   openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 3
+518   newfstatat(3, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x9), ...}, AT_EMPTY_PATH) = 0
+518   ioctl(3, TCGETS, 0x7ffe61c1a690)  = -1 EINVAL (Invalid argument)
+518   read(3, "\3034\202\237\5\25\267U,\267\37\202\271Wi\357\227\321\32\337}<P8v*/\201\360*<\230\242oG\316C\34\241d\264\337u2\225D\240O\26\240C\245'\311\v\266\302\202\331\23pj\261\224\16\310E\332\356\245\257\247M\1\5\312\315\257\260\300\372\250,\r\221\322\225\25\326!t\347\213[(M\332\213\27I4*^\264\361\"\350c\213\37\236_\365Qt\262Fl\24ur\257^\303Z\272\320\306"..., 4096) = 4096
+518   close(3)                          = 0
+518   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = 0
+518   openat(AT_FDCWD, "/var/run/hostapd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+518   clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, NULL) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+518   --- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=517, si_uid=0} ---
+518   +++ killed by SIGTERM +++

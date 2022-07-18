@@ -1,0 +1,26 @@
+Usage: hwloc-annotate [options] <input.xml> <output.xml> -- <location1> <location2> ... -- <annotation>
+Usage: hwloc-annotate [options] <input.xml> <output.xml> <location> <annotation>
+  <location> may be:
+    all, root, <type>:<logicalindex>, <type>:all
+  <annotation> may be:
+    info <name> <value>
+    subtype <subtype>
+    size <memory or cache size>
+    misc <name>
+    distances <filename> [<flags>]
+    memattr <name> <flags>
+    memattr <name> <initiator> <value>
+    cpukind <cpuset> <efficiency> <flags> [<infoname> <infovalue>]
+    distances-transform <name> links
+    distances-transform <name> merge-switch-ports
+    distances-transform <name> transitive-closure
+    distances-transform <name> remove-obj <obj>
+    distances-transform <name> replace-objs <oldtype> <newtype>
+    none
+Options:
+  --ci	Clear existing infos
+  --ri	Replace or remove existing infos with same name (annotation must be info)
+  --cu	Clear existing userdata
+  --cd	Clear existing distances
+  --version	Report version and exit
+  -h --help	Show this usage

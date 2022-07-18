@@ -1,0 +1,51 @@
+Usage:  crlutil -L [-n nickname] [-d keydir] [-P dbprefix] [-t crlType]
+        crlutil -D -n nickname [-d keydir] [-P dbprefix]
+        crlutil -S -i crl
+        crlutil -I -i crl -t crlType [-u url] [-d keydir] [-P dbprefix] [-B] [-p pwd-file] -w [pwd-string]
+        crlutil -E -t crlType [-d keydir] [-P dbprefix]
+        crlutil -T
+        crlutil -G|-M -c crl-init-file -n nickname [-i crl] [-u url] [-d keydir] [-P dbprefix] [-Z alg] ] [-p pwd-file] -w [pwd-string] [-a] [-B]
+-L              List CRL
+-n nickname          Specify the nickname of the CA certificate
+-d keydir            Key database directory (default is ~/.netscape)
+-P dbprefix          Cert & Key database prefix (default is "")
+-D              Delete a CRL from the cert database
+-n nickname          Specify the nickname for the CA certificate
+-t crlType           Specify the crl type.
+-d keydir            Key database directory (default is ~/.netscape)
+-P dbprefix          Cert & Key database prefix (default is "")
+-E              Erase all CRLs of specified type from hte cert database
+-t crlType           Specify the crl type.
+-d keydir            Key database directory (default is ~/.netscape)
+-P dbprefix          Cert & Key database prefix (default is "")
+-S              Show contents of a CRL file (without database)
+-i crl               Specify the file which contains the CRL to show
+-I              Import a CRL to the cert database
+-i crl               Specify the file which contains the CRL to import
+-u url               Specify the url.
+-t crlType           Specify the crl type.
+-d keydir            Key database directory (default is ~/.netscape)
+-P dbprefix          Cert & Key database prefix (default is "")
+                     CRL Types (default is SEC_CRL_TYPE):
+                     	 0 - SEC_KRL_TYPE
+                     	 1 - SEC_CRL_TYPE
+
+-B                   Bypass CA certificate checks.
+
+-p                   Partial decode for faster operation.
+-r <iterations>      Repeat the operation.
+
+-G              Create CRL
+-M              Modify CRL
+-c crl-conf-file     Specify crl initialization file
+-n nickname          Specify the nickname of the CA certificate
+-i crl               Specify the file which contains the CRL to import
+-o crl-output-file   Specify a CRL output file
+-a                   Specify to use base64 encoded CRL output format
+-d keydir            Key database directory (default is ~/.netscape)
+-f pwd-file          Provide path to a default pwd file
+-w pwd-string        Provide db password in command line
+-P dbprefix          Cert & Key database prefix (default is "")
+-u url               Specify the url.
+
+-B                   Bypass CA certificate checks.
