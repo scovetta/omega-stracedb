@@ -1,10 +1,19 @@
 #!/bin/bash
 
-# Copyright Linux Foundation and contributors. Licensed under the MIT license.
-
-###
-# This script is used to trace the dependencies of a package.
-###
+###############################################################################
+# Open Source Security Foundation (OpenSSF)
+# Alpha-Omega
+# Analyzer: trace.sh
+#
+# This script can be used to trace execution of a Linux package.
+#
+# Usage: trace.sh PACKAGE_NAME [INSTALL_COMMAND PACKAGE_VERSION]
+#
+# Output:
+#  Output is writted to /opt/export
+#
+# Copyright (c) Microsoft Corporation. Licensed under the Apache License.
+###############################################################################
 
 VERSION="0.1.0"
 
@@ -60,14 +69,19 @@ printf "${DARKGRAY}Configuring install command...${NC}\n"
 INSTALL_COMMAND=$2
 if [ -z "$INSTALL_COMMAND" ]; then
     INSTALL_COMMAND="apt-get install -y $PACKAGE"
+    PACKAGE_VERSION=$(apt show "${PACKAGE}" 2>/dev/null | grep Version | cut -d: -f2- | sed 's/ //g')
+    PACKAGE_VERSION_SAFE=$(echo "${PACKAGE_VERSION}" | sed 's/[^A-Za-z0-9._-]/_/g')
+else
+    PACKAGE_VERSION="$3"
+    if [ -z "$PACKAGE_VERSION" ]; then
+        PACKAGE_VERSION="Unknown"
+    fi
+    PACKAGE_VERSION_SAFE=$(echo "${PACKAGE_VERSION}" | sed 's/[^A-Za-z0-9._-]/_/g')
 fi
-
 ANALYSIS_DATE=$(date +%Y-%m-%d)
 ANALYSIS_UUID=$(cat /proc/sys/kernel/random/uuid)
 METADATA_FILENAME="METADATA.json"
 
-PACKAGE_VERSION=$(apt show "${PACKAGE}" 2>/dev/null | grep Version | cut -d: -f2- | sed 's/ //g')
-PACKAGE_VERSION_SAFE=$(echo $PACKAGE_VERSION | sed 's/[^A-Za-z0-9._-]/_/g')
 printf "${DARKGRAY}Analyzing [ ${YELLOW}${PACKAGE}@${PACKAGE_VERSION}${DARKGRAY} ]...${NC}\n"
 
 EXPORT_DETAIL_PATH="/opt/export/${PACKAGE}/${PACKAGE_VERSION_SAFE}/${ANALYSIS_UUID}"
@@ -76,6 +90,7 @@ mkdir -p "${EXPORT_DETAIL_PATH}"
 
 # Generate Metadata File
 echo "{" > "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
+echo "  \"schema_version\": \"1.0.0\"," >> "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
 echo "  \"analysis_date\": \"${ANALYSIS_DATE}\"," >> "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
 echo "  \"analysis_uuid\": \"${ANALYSIS_UUID}\"," >> "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
 echo "  \"package\": \"${PACKAGE/\"/\\\"}\"," >> "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
@@ -133,7 +148,9 @@ function process_entrypoint()
 }
 
 printf "${DARKGRAY}Installing package...${NC}\n"
+printf "${DARKGRAY}Running: $INSTALL_COMMAND${NC}\n"
 sh -c "$INSTALL_COMMAND"
+printf "${DARKGRAY}Execution complete.${NC}\n"
 
 printf "${DARKGRAY}Identifying entrypoints...${NC}\n"
 ENTRYPOINTS_TEMP_FILE=/tmp/entrypoints.txt
