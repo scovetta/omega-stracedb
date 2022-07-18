@@ -1,0 +1,62 @@
+488   execve("/usr/lib/linux-tools-5.15.0-37/hv_fcopy_daemon", ["/usr/lib/linux-tools-5.15.0-37/hv_fcopy_daemon"], 0x7ffdda7b82e0 /* 12 vars */) = 0
+488   brk(NULL)                         = 0x556c9207f000
+488   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffed1e92d10) = -1 EINVAL (Invalid argument)
+488   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7082412000
+488   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+488   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7082410000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+488   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f70821e8000
+488   mmap(0x7f7082210000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7082210000
+488   mmap(0x7f70823a5000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f70823a5000
+488   mmap(0x7f70823fd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f70823fd000
+488   mmap(0x7f7082403000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7082403000
+488   close(3)                          = 0
+488   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f70821e5000
+488   arch_prctl(ARCH_SET_FS, 0x7f70821e5740) = 0
+488   set_tid_address(0x7f70821e5a10)   = 488
+488   set_robust_list(0x7f70821e5a20, 24) = 0
+488   rseq(0x7f70821e60e0, 0x20, 0, 0x53053053) = 0
+488   mprotect(0x7f70823fd000, 16384, PROT_READ) = 0
+488   mprotect(0x556c915ce000, 4096, PROT_READ) = 0
+488   mprotect(0x7f708244c000, 8192, PROT_READ) = 0
+488   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+488   munmap(0x7f7082410000, 6133)      = 0
+488   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+493   set_robust_list(0x7f70821e5a20, 24 <unfinished ...>
+488   <... clone resumed>, child_tidptr=0x7f70821e5a10) = 493
+493   <... set_robust_list resumed>)    = 0
+488   exit_group(0 <unfinished ...>
+493   setsid( <unfinished ...>
+488   <... exit_group resumed>)         = ?
+493   <... setsid resumed>)             = 493
+488   +++ exited with 0 +++
+493   openat(AT_FDCWD, "/dev/null", O_RDWR) = 3
+493   newfstatat(3, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
+493   dup2(3, 0)                        = 0
+493   dup2(3, 1)                        = 1
+493   dup2(3, 2)                        = 2
+493   close(3)                          = 0
+493   getpid()                          = 493
+493   getrandom("\xf9\x5a\xf5\x5a\x0f\xfc\x86\xb7", 8, GRND_NONBLOCK) = 8
+493   brk(NULL)                         = 0x556c9207f000
+493   brk(0x556c920a0000)               = 0x556c920a0000
+493   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+493   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3
+493   connect(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+493   close(3)                          = 0
+493   close(0)                          = 0
+493   openat(AT_FDCWD, "/dev/vmbus/hv_fcopy", O_RDWR) = -1 ENOENT (No such file or directory)
+493   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 0
+493   connect(0, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+493   close(0)                          = 0
+493   exit_group(1)                     = ?
+493   +++ exited with 1 +++

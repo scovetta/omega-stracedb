@@ -1,0 +1,43 @@
+517   execve("/usr/src/linux-headers-5.15.0-1007-kvm/scripts/bin2c", ["/usr/src/linux-headers-5.15.0-1007-kvm/scripts/bin2c"], 0x7ffd86bc5e40 /* 12 vars */) = 0
+517   brk(NULL)                         = 0x5591081c5000
+517   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffca0f59160) = -1 EINVAL (Invalid argument)
+517   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff64a67e000
+517   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+517   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+517   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6189, ...}, AT_EMPTY_PATH) = 0
+517   mmap(NULL, 6189, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff64a67c000
+517   close(3)                          = 0
+517   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+517   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+517   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+517   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+517   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+517   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+517   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+517   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff64a454000
+517   mmap(0x7ff64a47c000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ff64a47c000
+517   mmap(0x7ff64a611000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7ff64a611000
+517   mmap(0x7ff64a669000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7ff64a669000
+517   mmap(0x7ff64a66f000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff64a66f000
+517   close(3)                          = 0
+517   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff64a451000
+517   arch_prctl(ARCH_SET_FS, 0x7ff64a451740) = 0
+517   set_tid_address(0x7ff64a451a10)   = 517
+517   set_robust_list(0x7ff64a451a20, 24) = 0
+517   rseq(0x7ff64a4520e0, 0x20, 0, 0x53053053) = 0
+517   mprotect(0x7ff64a669000, 16384, PROT_READ) = 0
+517   mprotect(0x559106891000, 4096, PROT_READ) = 0
+517   mprotect(0x7ff64a6b8000, 8192, PROT_READ) = 0
+517   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+517   munmap(0x7ff64a67c000, 6189)      = 0
+517   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+517   getrandom("\x2b\x19\xc8\x35\xfb\xdf\x66\xc8", 8, GRND_NONBLOCK) = 8
+517   brk(NULL)                         = 0x5591081c5000
+517   brk(0x5591081e6000)               = 0x5591081e6000
+517   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=1131, ...}, AT_EMPTY_PATH) = 0
+517   read(0, "/usr/src/linux-headers-5.15.0-1007-kvm/arch/x86/tools/relocs\n/usr/src/linux-headers-5.15.0-1007-kvm/scripts/asn1_compiler\n/usr/s"..., 4096) = 1131
+517   write(1, "\t\"\\x2f\\x75\\x73\\x72\\x2f\\x73\\x72\\x63\\x2f\\x6c\\x69\\x6e\\x75\\x78\\x2d\\x68\"\n\t\"\\x65\\x61\\x64\\x65\\x72\\x73\\x2d\\x35\\x2e\\x31\\x35\\x2e\\x30\\x2d\\x"..., 4096) = 4096
+517   read(0, "", 4096)                 = 0
+517   write(1, "30\\x37\\x2d\\x6b\\x76\\x6d\\x2f\\x74\\x6f\\x6f\\x6c\\x73\\x2f\"\n\t\"\\x62\\x70\\x66\\x2f\\x72\\x65\\x73\\x6f\\x6c\\x76\\x65\\x5f\\x62\\x74\\x66\\x69\"\n\t\"\\x64\\x"..., 712) = 712
+517   exit_group(0)                     = ?
+517   +++ exited with 0 +++

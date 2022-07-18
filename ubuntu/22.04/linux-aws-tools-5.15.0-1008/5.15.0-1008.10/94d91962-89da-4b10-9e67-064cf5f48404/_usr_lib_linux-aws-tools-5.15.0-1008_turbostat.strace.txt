@@ -1,0 +1,804 @@
+757   execve("/usr/lib/linux-aws-tools-5.15.0-1008/turbostat", ["/usr/lib/linux-aws-tools-5.15.0-1008/turbostat"], 0x7ffe43981fc0 /* 12 vars */) = 0
+757   brk(NULL)                         = 0x55ff4e298000
+757   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcbf542d30) = -1 EINVAL (Invalid argument)
+757   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6adab0f000
+757   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6909, ...}, AT_EMPTY_PATH) = 0
+757   mmap(NULL, 6909, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6adab0d000
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+757   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10!\0\0\0\0\0\0\10!\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+757   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_EMPTY_PATH) = 0
+757   mmap(NULL, 41016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6adab02000
+757   mmap(0x7f6adab05000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6adab05000
+757   mmap(0x7f6adab09000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f6adab09000
+757   mmap(0x7f6adab0b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f6adab0b000
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+757   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+757   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+757   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+757   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+757   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+757   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+757   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6ada8da000
+757   mmap(0x7f6ada902000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6ada902000
+757   mmap(0x7f6adaa97000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f6adaa97000
+757   mmap(0x7f6adaaef000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f6adaaef000
+757   mmap(0x7f6adaaf5000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6adaaf5000
+757   close(3)                          = 0
+757   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ada8d7000
+757   arch_prctl(ARCH_SET_FS, 0x7f6ada8d7740) = 0
+757   set_tid_address(0x7f6ada8d7a10)   = 757
+757   set_robust_list(0x7f6ada8d7a20, 24) = 0
+757   rseq(0x7f6ada8d80e0, 0x20, 0, 0x53053053) = 0
+757   mprotect(0x7f6adaaef000, 16384, PROT_READ) = 0
+757   mprotect(0x7f6adab0b000, 4096, PROT_READ) = 0
+757   mprotect(0x55ff4d1d5000, 4096, PROT_READ) = 0
+757   mprotect(0x7f6adab49000, 8192, PROT_READ) = 0
+757   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+757   munmap(0x7f6adab0d000, 6909)      = 0
+757   prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 0
+757   prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+757   prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+757   prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+757   prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+757   prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+757   write(2, "turbostat version 21.05.04 - Len Brown <lenb@kernel.org>\n", 57) = 57
+757   getrandom("\x0a\x88\xa3\x45\xfb\x42\xd8\xf3", 8, GRND_NONBLOCK) = 8
+757   brk(NULL)                         = 0x55ff4e298000
+757   brk(0x55ff4e2b9000)               = 0x55ff4e2b9000
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state10/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state9/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state8/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state7/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state6/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state5/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state4/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state3/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state2/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state1/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state0/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state10/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state9/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state8/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state7/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state6/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state5/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state4/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state3/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state2/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state1/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/cpuidle/state0/name", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "c0\n", 4096)             = 3
+757   read(3, "", 4096)                 = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "cpu  1203620 286 2289451 120659169 326158 0 2784244 0 0 0\ncpu0 177729 0 357939 14612561 53280 0 450126 0 0 0\ncpu1 133197 0 25957"..., 1024) = 1024
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "cpu  1203620 286 2289451 120659172 326158 0 2784244 0 0 0\ncpu0 177729 0 357939 14612561 53280 0 450126 0 0 0\ncpu1 133197 0 25957"..., 1024) = 1024
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "cpu  1203620 286 2289452 120659175 326158 0 2784245 0 0 0\ncpu0 177729 0 357939 14612562 53280 0 450127 0 0 0\ncpu1 133197 0 25957"..., 1024) = 1024
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "03\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "03\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "1\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0c\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "1\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "1\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "1\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0c\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "1\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "1\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "2\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "30\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "2\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "2\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "2\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "30\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "2\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "2\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "3\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "c0\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "3\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "3\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/physical_package_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/die_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "0\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node0/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node1/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node2/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node3/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node4/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node5/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node6/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node7/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node8/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node9/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node10/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node11/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node12/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node13/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node14/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node15/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node16/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node17/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node18/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node19/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node20/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node21/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node22/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node23/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node24/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node25/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node26/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node27/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node28/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node29/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node30/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/node31/cpulist", O_RDONLY) = -1 ENOENT (No such file or directory)
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/core_id", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "3\n", 4096)              = 2
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/thread_siblings", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "c0\n", 4096)             = 3
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "3\n", 4096)              = 2
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/core_id", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "3\n", 4096)              = 2
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   openat(AT_FDCWD, "/proc/stat", O_RDONLY) = 3
+757   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+757   read(3, "cpu  1203621 286 2289462 120659413 326158 0 2784245 0 0 0\ncpu0 177729 0 357939 14612587 53280 0 450127 0 0 0\ncpu1 133197 0 25957"..., 1024) = 1024
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/core_siblings_list", O_RDONLY) = 4
+757   newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+757   read(4, "0-7\n", 4096)            = 4
+757   close(4)                          = 0
+757   close(3)                          = 0
+757   newfstatat(AT_FDCWD, "/dev/cpu/2/msr", 0x7ffcbf542cf0, 0) = -1 ENOENT (No such file or directory)
+757   rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+757   rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+757   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+757   mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f6ada8ce000
+757   rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+757   clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7f6ada8ce000, stack_size=0x9000}, 88) = -1 ENOSYS (Function not implemented)
+757   clone(child_stack=0x7f6ada8d6ff0, flags=CLONE_VM|CLONE_VFORK|SIGCHLD <unfinished ...>
+762   rt_sigprocmask(SIG_BLOCK, NULL, ~[KILL STOP], 8) = 0
+762   rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGTRAP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGABRT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGUSR1, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGUSR2, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGSTKFLT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGURG, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGXCPU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGXFSZ, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGVTALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGPROF, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGIO, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGPWR, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGSYS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRTMIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_1, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_3, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_4, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_5, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_6, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_7, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_8, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_9, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_10, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_11, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_12, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_13, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_14, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_15, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_16, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_17, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_18, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_19, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_20, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_21, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_22, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_23, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_24, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_25, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_26, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_27, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_28, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_29, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_30, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_31, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGRT_32, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+762   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+762   execve("/bin/sh", ["sh", "-c", "/sbin/modprobe msr > /dev/null 2>&1"], 0x7ffcbf542f08 /* 12 vars */ <unfinished ...>
+757   <... clone resumed>)              = 762
+757   munmap(0x7f6ada8ce000, 36864 <unfinished ...>
+762   <... execve resumed>)             = 0
+757   <... munmap resumed>)             = 0
+762   brk(NULL <unfinished ...>
+757   rt_sigprocmask(SIG_SETMASK, [CHLD],  <unfinished ...>
+762   <... brk resumed>)                = 0x563f5e058000
+757   <... rt_sigprocmask resumed>NULL, 8) = 0
+762   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffde1fcacb0 <unfinished ...>
+757   wait4(762,  <unfinished ...>
+762   <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+762   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f43b6eac000
+762   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+762   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+762   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6909, ...}, AT_EMPTY_PATH) = 0
+762   mmap(NULL, 6909, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f43b6eaa000
+762   close(3)                          = 0
+762   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+762   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+762   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+762   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+762   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+762   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+762   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+762   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f43b6c82000
+762   mmap(0x7f43b6caa000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f43b6caa000
+762   mmap(0x7f43b6e3f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f43b6e3f000
+762   mmap(0x7f43b6e97000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f43b6e97000
+762   mmap(0x7f43b6e9d000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f43b6e9d000
+762   close(3)                          = 0
+762   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f43b6c7f000
+762   arch_prctl(ARCH_SET_FS, 0x7f43b6c7f740) = 0
+762   set_tid_address(0x7f43b6c7fa10)   = 762
+762   set_robust_list(0x7f43b6c7fa20, 24) = 0
+762   rseq(0x7f43b6c800e0, 0x20, 0, 0x53053053) = 0
+762   mprotect(0x7f43b6e97000, 16384, PROT_READ) = 0
+762   mprotect(0x563f5cced000, 8192, PROT_READ) = 0
+762   mprotect(0x7f43b6ee6000, 8192, PROT_READ) = 0
+762   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+762   munmap(0x7f43b6eaa000, 6909)      = 0
+762   getuid()                          = 0
+762   getgid()                          = 0
+762   getpid()                          = 762
+762   rt_sigaction(SIGCHLD, {sa_handler=0x563f5cce3aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f43b6cc4520}, NULL, 8) = 0
+762   geteuid()                         = 0
+762   getrandom("\x7e\xf1\x90\xaf\x31\xf0\x76\xa3", 8, GRND_NONBLOCK) = 8
+762   brk(NULL)                         = 0x563f5e058000
+762   brk(0x563f5e079000)               = 0x563f5e079000
+762   getppid()                         = 757
+762   newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+762   newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+762   geteuid()                         = 0
+762   getegid()                         = 0
+762   rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGINT, {sa_handler=0x563f5cce3aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f43b6cc4520}, NULL, 8) = 0
+762   rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f43b6cc4520}, NULL, 8) = 0
+762   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+762   rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f43b6cc4520}, NULL, 8) = 0
+762   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+762   fcntl(1, F_DUPFD, 10)             = 10
+762   close(1)                          = 0
+762   fcntl(10, F_SETFD, FD_CLOEXEC)    = 0
+762   dup2(3, 1)                        = 1
+762   close(3)                          = 0
+762   fcntl(2, F_DUPFD, 10)             = 11
+762   close(2)                          = 0
+762   fcntl(11, F_SETFD, FD_CLOEXEC)    = 0
+762   dup2(1, 2)                        = 2
+762   rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
+762   vfork( <unfinished ...>
+763   rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+763   execve("/sbin/modprobe", ["/sbin/modprobe", "msr"], 0x563f5e0586c8 /* 12 vars */) = -1 ENOENT (No such file or directory)
+763   write(2, "sh: 1: ", 7)            = 7
+763   write(2, "/sbin/modprobe: not found", 25) = 25
+763   write(2, "\n", 1)                 = 1
+763   exit_group(127)                   = ?
+763   +++ exited with 127 +++
+762   <... vfork resumed>)              = 763
+762   rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+762   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=763, si_uid=0, si_status=127, si_utime=0, si_stime=0} ---
+762   rt_sigreturn({mask=[]})           = 0
+762   wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 127}], 0, NULL) = 763
+762   wait4(-1, 0x7ffde1fca9dc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+762   dup2(10, 1)                       = 1
+762   close(10)                         = 0
+762   dup2(11, 2)                       = 2
+762   close(11)                         = 0
+762   exit_group(127)                   = ?
+762   +++ exited with 127 +++
+757   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 127}], 0, NULL) = 762
+757   rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+757   rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6ada91c520}, NULL, 8) = 0
+757   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+757   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=762, si_uid=0, si_status=127, si_utime=0, si_stime=1} ---
+757   write(2, "turbostat: ", 11)       = 11
+757   write(2, "no /dev/cpu/0/msr, Try \"# modprobe msr\" ", 40) = 40
+757   write(2, ": No such file or directory\n", 28) = 28
+757   exit_group(-5)                    = ?
+757   +++ exited with 251 +++

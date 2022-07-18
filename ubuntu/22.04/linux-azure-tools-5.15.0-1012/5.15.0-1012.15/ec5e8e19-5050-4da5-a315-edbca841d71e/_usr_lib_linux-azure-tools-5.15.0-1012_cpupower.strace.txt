@@ -1,0 +1,94 @@
+739   execve("/usr/lib/linux-azure-tools-5.15.0-1012/cpupower", ["/usr/lib/linux-azure-tools-5.15.0-1012/cpupower"], 0x7ffff8b23b90 /* 12 vars */) = 0
+739   brk(NULL)                         = 0x55e544ff0000
+739   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe58997640) = -1 EINVAL (Invalid argument)
+739   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdde6c54000
+739   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+739   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+739   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6909, ...}, AT_EMPTY_PATH) = 0
+739   mmap(NULL, 6909, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdde6c52000
+739   close(3)                          = 0
+739   openat(AT_FDCWD, "/lib/libcpupower.so.5.15.0-1012", O_RDONLY|O_CLOEXEC) = 3
+739   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\2705\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0'\0&\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\26\0\0\0\0\0\0\360\26\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+739   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=81784, ...}, AT_EMPTY_PATH) = 0
+739   mmap(NULL, 33056, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdde6c49000
+739   mprotect(0x7fdde6c4b000, 20480, PROT_NONE) = 0
+739   mmap(0x7fdde6c4b000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fdde6c4b000
+739   mmap(0x7fdde6c4e000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fdde6c4e000
+739   mmap(0x7fdde6c50000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fdde6c50000
+739   close(3)                          = 0
+739   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpci.so.3", O_RDONLY|O_CLOEXEC) = 3
+739   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\330\343\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20&\0\0\0\0\0\0\20&\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+739   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=60184, ...}, AT_EMPTY_PATH) = 0
+739   mmap(NULL, 62096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdde6c39000
+739   mmap(0x7fdde6c3c000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fdde6c3c000
+739   mmap(0x7fdde6c44000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fdde6c44000
+739   mmap(0x7fdde6c47000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7fdde6c47000
+739   close(3)                          = 0
+739   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+739   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+739   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+739   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+739   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+739   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+739   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+739   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdde6a11000
+739   mmap(0x7fdde6a39000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fdde6a39000
+739   mmap(0x7fdde6bce000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fdde6bce000
+739   mmap(0x7fdde6c26000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fdde6c26000
+739   mmap(0x7fdde6c2c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdde6c2c000
+739   close(3)                          = 0
+739   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+739   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+739   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+739   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdde69f5000
+739   mprotect(0x7fdde69f7000, 98304, PROT_NONE) = 0
+739   mmap(0x7fdde69f7000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fdde69f7000
+739   mmap(0x7fdde6a08000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fdde6a08000
+739   mmap(0x7fdde6a0f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fdde6a0f000
+739   close(3)                          = 0
+739   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+739   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0p>\0\0\0\0\0\0p>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+739   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+739   mmap(NULL, 170272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdde69cb000
+739   mprotect(0x7fdde69cf000, 147456, PROT_NONE) = 0
+739   mmap(0x7fdde69cf000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7fdde69cf000
+739   mmap(0x7fdde69e9000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7fdde69e9000
+739   mmap(0x7fdde69f3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7fdde69f3000
+739   close(3)                          = 0
+739   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdde69c9000
+739   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdde69c6000
+739   arch_prctl(ARCH_SET_FS, 0x7fdde69c6740) = 0
+739   set_tid_address(0x7fdde69c6a10)   = 739
+739   set_robust_list(0x7fdde69c6a20, 24) = 0
+739   rseq(0x7fdde69c70e0, 0x20, 0, 0x53053053) = 0
+739   mprotect(0x7fdde6c26000, 16384, PROT_READ) = 0
+739   mprotect(0x7fdde69f3000, 4096, PROT_READ) = 0
+739   mprotect(0x7fdde6a0f000, 4096, PROT_READ) = 0
+739   mprotect(0x7fdde6c47000, 4096, PROT_READ) = 0
+739   mprotect(0x7fdde6c50000, 4096, PROT_READ) = 0
+739   mprotect(0x55e543438000, 4096, PROT_READ) = 0
+739   mprotect(0x7fdde6c8e000, 8192, PROT_READ) = 0
+739   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+739   munmap(0x7fdde6c52000, 6909)      = 0
+739   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+739   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+739   getrandom("\xc0\xe6\xd8\xf5\x60\x5c\x74\x87", 8, GRND_NONBLOCK) = 8
+739   brk(NULL)                         = 0x55e544ff0000
+739   brk(0x55e545011000)               = 0x55e545011000
+739   getdents64(3, 0x55e544ff02d0 /* 23 entries */, 32768) = 656
+739   getdents64(3, 0x55e544ff02d0 /* 0 entries */, 32768) = 0
+739   close(3)                          = 0
+739   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+739   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+739   getdents64(3, 0x55e544ff0310 /* 23 entries */, 32768) = 656
+739   getdents64(3, 0x55e544ff0310 /* 0 entries */, 32768) = 0
+739   close(3)                          = 0
+739   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+739   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+739   getdents64(3, 0x55e544ff0350 /* 23 entries */, 32768) = 656
+739   getdents64(3, 0x55e544ff0350 /* 0 entries */, 32768) = 0
+739   close(3)                          = 0
+739   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+739   write(1, "Usage:\tcpupower [-d|--debug] [-c|--cpu cpulist ] <command> [<args>]\nSupported commands are:\n\tfrequency-info\n\tfrequency-set\n\tidle"..., 295) = 295
+739   exit_group(1)                     = ?
+739   +++ exited with 1 +++

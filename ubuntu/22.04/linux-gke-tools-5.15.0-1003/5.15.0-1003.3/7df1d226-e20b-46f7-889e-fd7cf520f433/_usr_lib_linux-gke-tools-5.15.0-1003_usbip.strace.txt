@@ -1,0 +1,49 @@
+768   execve("/usr/lib/linux-gke-tools-5.15.0-1003/usbip", ["/usr/lib/linux-gke-tools-5.15.0-1003/usbip"], 0x7ffca7631160 /* 12 vars */) = 0
+768   brk(NULL)                         = 0x55935fa39000
+768   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdf4341fa0) = -1 EINVAL (Invalid argument)
+768   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa707e80000
+768   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+768   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+768   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6909, ...}, AT_EMPTY_PATH) = 0
+768   mmap(NULL, 6909, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa707e7e000
+768   close(3)                          = 0
+768   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+768   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0p>\0\0\0\0\0\0p>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+768   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+768   mmap(NULL, 170272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa707e54000
+768   mprotect(0x7fa707e58000, 147456, PROT_NONE) = 0
+768   mmap(0x7fa707e58000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7fa707e58000
+768   mmap(0x7fa707e72000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7fa707e72000
+768   mmap(0x7fa707e7c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7fa707e7c000
+768   close(3)                          = 0
+768   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+768   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+768   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+768   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+768   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+768   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+768   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+768   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa707c2c000
+768   mmap(0x7fa707c54000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fa707c54000
+768   mmap(0x7fa707de9000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fa707de9000
+768   mmap(0x7fa707e41000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fa707e41000
+768   mmap(0x7fa707e47000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa707e47000
+768   close(3)                          = 0
+768   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa707c29000
+768   arch_prctl(ARCH_SET_FS, 0x7fa707c29740) = 0
+768   set_tid_address(0x7fa707c29a10)   = 768
+768   set_robust_list(0x7fa707c29a20, 24) = 0
+768   rseq(0x7fa707c2a0e0, 0x20, 0, 0x53053053) = 0
+768   mprotect(0x7fa707e41000, 16384, PROT_READ) = 0
+768   mprotect(0x7fa707e7c000, 4096, PROT_READ) = 0
+768   mprotect(0x55935e1e0000, 4096, PROT_READ) = 0
+768   mprotect(0x7fa707eba000, 8192, PROT_READ) = 0
+768   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+768   munmap(0x7fa707e7e000, 6909)      = 0
+768   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+768   getrandom("\x79\x35\xe8\xd2\x27\xaf\x78\x66", 8, GRND_NONBLOCK) = 8
+768   brk(NULL)                         = 0x55935fa39000
+768   brk(0x55935fa5a000)               = 0x55935fa5a000
+768   write(1, "usage: usbip [--debug] [--log] [--tcp-port PORT] [version]\n             [help] <command> <args>\n\n  attach     Attach a remote US"..., 355) = 355
+768   exit_group(1)                     = ?
+768   +++ exited with 1 +++
