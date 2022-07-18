@@ -1,0 +1,50 @@
+2740  execve("/usr/lib/postgresql/14/bin/pg_ctl", ["/usr/lib/postgresql/14/bin/pg_ctl"], 0x7fff76ae6210 /* 12 vars */) = 0
+2740  brk(NULL)                         = 0x55c0d9b51000
+2740  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffeeb1c1b60) = -1 EINVAL (Invalid argument)
+2740  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa78e928000
+2740  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2740  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2740  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7469, ...}, AT_EMPTY_PATH) = 0
+2740  mmap(NULL, 7469, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa78e926000
+2740  close(3)                          = 0
+2740  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2740  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2740  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2740  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2740  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2740  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2740  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2740  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa78e6fe000
+2740  mmap(0x7fa78e726000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fa78e726000
+2740  mmap(0x7fa78e8bb000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fa78e8bb000
+2740  mmap(0x7fa78e913000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fa78e913000
+2740  mmap(0x7fa78e919000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa78e919000
+2740  close(3)                          = 0
+2740  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa78e6fb000
+2740  arch_prctl(ARCH_SET_FS, 0x7fa78e6fb740) = 0
+2740  set_tid_address(0x7fa78e6fba10)   = 2740
+2740  set_robust_list(0x7fa78e6fba20, 24) = 0
+2740  rseq(0x7fa78e6fc0e0, 0x20, 0, 0x53053053) = 0
+2740  mprotect(0x7fa78e913000, 16384, PROT_READ) = 0
+2740  mprotect(0x55c0d7e06000, 4096, PROT_READ) = 0
+2740  mprotect(0x7fa78e962000, 8192, PROT_READ) = 0
+2740  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2740  munmap(0x7fa78e926000, 7469)      = 0
+2740  ioctl(2, TCGETS, 0x7ffeeb1c19d0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2740  getrandom("\x49\xc2\x88\x74\x85\x54\x66\x07", 8, GRND_NONBLOCK) = 8
+2740  brk(NULL)                         = 0x55c0d9b51000
+2740  brk(0x55c0d9b72000)               = 0x55c0d9b72000
+2740  getcwd("/tmp", 1024)              = 5
+2740  newfstatat(AT_FDCWD, "/usr/lib/postgresql/14/bin/pg_ctl", {st_mode=S_IFREG|0755, st_size=68360, ...}, 0) = 0
+2740  access("/usr/lib/postgresql/14/bin/pg_ctl", R_OK) = 0
+2740  access("/usr/lib/postgresql/14/bin/pg_ctl", X_OK) = 0
+2740  getcwd("/tmp", 1024)              = 5
+2740  chdir("/usr/lib/postgresql/14/bin") = 0
+2740  newfstatat(AT_FDCWD, "pg_ctl", {st_mode=S_IFREG|0755, st_size=68360, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2740  getcwd("/usr/lib/postgresql/14/bin", 1024) = 27
+2740  chdir("/tmp")                     = 0
+2740  umask(077)                        = 022
+2740  geteuid()                         = 0
+2740  write(2, "pg_ctl: cannot be run as root\nPlease log in (using, e.g., \"su\") as the (unprivileged) user that will\nown the server process.\n", 125) = 125
+2740  exit_group(1)                     = ?
+2740  +++ exited with 1 +++

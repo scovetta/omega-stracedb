@@ -1,0 +1,10 @@
+(occur-in-time-range? (make-time "20080727T220000Z") (make-time "20080907T220000Z")): 1217196000- 1220824800
+(due-in-time-range? (make-time "20080727T220000Z") (make-time "20080907T220000Z")): 1217196000- 1220824800
+(has-alarms-in-range? (make-time "20080727T220000Z") (make-time "20080907T220000Z")): 1217196000- 1220824800
+(completed-before? (make-time "20080727T220000Z") ): 0- 1217196000
+(and (occur-in-time-range? (make-time "20080727T220000Z") (make-time "20080907T220000Z")) #t): 1217196000- 1220824800
+(or (occur-in-time-range? (make-time "20080727T220000Z")(make-time "20080907T220000Z")) #t): no time prunning possible
+(and (contains? "substring") (has-categories? "blah")): no time prunning possible
+(or (occur-in-time-range? (make-time "20080727T220000Z") (make-time "20080907T220000Z")) (contains? "substring")): no time prunning possible
+(and (and (occur-in-time-range? (make-time "20080727T220000Z") (make-time "20080907T220000Z")) (or (contains? "substring") (has-categories? "blah"))) (has-alarms?)): 1217196000- 1220824800
+(or (and (occur-in-time-range? (make-time "20080727T220000Z") (make-time "20080907T220000Z")) (or (contains? "substring") (has-categories? "blah"))) (has-alarms?)): no time prunning possible

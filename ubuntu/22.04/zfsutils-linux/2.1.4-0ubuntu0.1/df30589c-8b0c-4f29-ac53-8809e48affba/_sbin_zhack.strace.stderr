@@ -1,0 +1,16 @@
+error: no command specified
+Usage: zhack [-c cachefile] [-d dir] <subcommand> <args> ...
+where <subcommand> <args> is one of the following:
+
+    feature stat <pool>
+        print information about enabled features
+    feature enable [-r] [-d desc] <pool> <feature>
+        add a new enabled feature to the pool
+        -d <desc> sets the feature's description
+        -r set read-only compatible flag for feature
+    feature ref [-md] <pool> <feature>
+        change the refcount on the given feature
+        -d decrease instead of increase the refcount
+        -m add the feature to the label if increasing refcount
+
+    <feature> : should be a feature guid

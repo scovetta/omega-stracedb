@@ -1,0 +1,95 @@
+missing command
+usage: zfs command args ...
+where 'command' is one of the following:
+
+	version
+
+	create [-Pnpuv] [-o property=value] ... <filesystem>
+	create [-Pnpsv] [-b blocksize] [-o property=value] ... -V <size> <volume>
+	destroy [-fnpRrv] <filesystem|volume>
+	destroy [-dnpRrv] <filesystem|volume>@<snap>[%<snap>][,...]
+	destroy <filesystem|volume>#<bookmark>
+
+	snapshot [-r] [-o property=value] ... <filesystem|volume>@<snap> ...
+	rollback [-rRf] <snapshot>
+	clone [-p] [-o property=value] ... <snapshot> <filesystem|volume>
+	promote <clone-filesystem>
+	rename [-f] <filesystem|volume|snapshot> <filesystem|volume|snapshot>
+	rename -p [-f] <filesystem|volume> <filesystem|volume>
+	rename -u [-f] <filesystem> <filesystem>
+	rename -r <snapshot> <snapshot>
+	bookmark <snapshot|bookmark> <newbookmark>
+	program [-jn] [-t <instruction limit>] [-m <memory limit (b)>]
+	    <pool> <program file> [lua args...]
+
+	list [-Hp] [-r|-d max] [-o property[,...]] [-s property]...
+	    [-S property]... [-t type[,...]] [filesystem|volume|snapshot] ...
+
+	set <property=value> ... <filesystem|volume|snapshot> ...
+	get [-rHp] [-d max] [-o "all" | field[,...]]
+	    [-t type[,...]] [-s source[,...]]
+	    <"all" | property[,...]> [filesystem|volume|snapshot|bookmark] ...
+	inherit [-rS] <property> <filesystem|volume|snapshot> ...
+	upgrade [-v]
+	upgrade [-r] [-V version] <-a | filesystem ...>
+
+	userspace [-Hinp] [-o field[,...]] [-s field] ...
+	    [-S field] ... [-t type[,...]] <filesystem|snapshot|path>
+	groupspace [-Hinp] [-o field[,...]] [-s field] ...
+	    [-S field] ... [-t type[,...]] <filesystem|snapshot|path>
+	projectspace [-Hp] [-o field[,...]] [-s field] ... 
+	    [-S field] ... <filesystem|snapshot|path>
+
+	project [-d|-r] <directory|file ...>
+	project -c [-0] [-d|-r] [-p id] <directory|file ...>
+	project -C [-k] [-r] <directory ...>
+	project [-p id] [-r] [-s] <directory ...>
+
+	mount
+	mount [-flvO] [-o opts] <-a | filesystem>
+	unmount [-fu] <-a | filesystem|mountpoint>
+	share [-l] <-a [nfs|smb] | filesystem>
+	unshare <-a [nfs|smb] | filesystem|mountpoint>
+
+	send [-DnPpRvLecwhb] [-[i|I] snapshot] <snapshot>
+	send [-DnvPLecw] [-i snapshot|bookmark] <filesystem|volume|snapshot>
+	send [-DnPpvLec] [-i bookmark|snapshot] --redact <bookmark> <snapshot>
+	send [-nvPe] -t <receive_resume_token>
+	send [-Pnv] --saved filesystem
+	receive [-vMnsFhu] [-o <property>=<value>] ... [-x <property>] ...
+	    <filesystem|volume|snapshot>
+	receive [-vMnsFhu] [-o <property>=<value>] ... [-x <property>] ... 
+	    [-d | -e] <filesystem>
+	receive -A <filesystem|volume>
+
+	allow <filesystem|volume>
+	allow [-ldug] <"everyone"|user|group>[,...] <perm|@setname>[,...]
+	    <filesystem|volume>
+	allow [-ld] -e <perm|@setname>[,...] <filesystem|volume>
+	allow -c <perm|@setname>[,...] <filesystem|volume>
+	allow -s @setname <perm|@setname>[,...] <filesystem|volume>
+
+	unallow [-rldug] <"everyone"|user|group>[,...]
+	    [<perm|@setname>[,...]] <filesystem|volume>
+	unallow [-rld] -e [<perm|@setname>[,...]] <filesystem|volume>
+	unallow [-r] -c [<perm|@setname>[,...]] <filesystem|volume>
+	unallow [-r] -s @setname [<perm|@setname>[,...]] <filesystem|volume>
+
+	hold [-r] <tag> <snapshot> ...
+	holds [-rH] <snapshot> ...
+	release [-r] <tag> <snapshot> ...
+	diff [-FHt] <snapshot> [snapshot|filesystem]
+	load-key [-rn] [-L <keylocation>] <-a | filesystem|volume>
+	unload-key [-r] <-a | filesystem|volume>
+	change-key [-l] [-o keyformat=<value>]
+	    [-o keylocation=<value>] [-o pbkdf2iters=<value>]
+	    <filesystem|volume>
+	change-key -i [-l] <filesystem|volume>
+	redact <snapshot> <bookmark> <redaction_snapshot> ...
+	wait [-t <activity>] <filesystem>
+
+Each dataset is of the form: pool/[dataset/]*dataset[@name]
+
+For the property list, run: zfs set|get
+
+For the delegated permission list, run: zfs allow|unallow

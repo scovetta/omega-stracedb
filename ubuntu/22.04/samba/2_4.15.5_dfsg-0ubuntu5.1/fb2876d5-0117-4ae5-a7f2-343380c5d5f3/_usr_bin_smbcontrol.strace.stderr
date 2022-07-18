@@ -1,0 +1,57 @@
+Usage: smbcontrol [OPTION...] <destination> <message-type> <parameters>
+  -t, --timeout=TIMEOUT              Set timeout value in seconds
+
+Help options:
+  -?, --help                         Show this help message
+      --usage                        Display brief usage message
+
+Common Samba options:
+  -d, --debuglevel=DEBUGLEVEL        Set debug level
+      --debug-stdout                 Send debug output to standard output
+  -s, --configfile=CONFIGFILE        Use alternative configuration file
+      --option=name=value            Set smb.conf option from command line
+  -l, --log-basename=LOGFILEBASE     Basename for log/debug files
+      --leak-report                  enable talloc leak reporting on exit
+      --leak-report-full             enable full talloc leak reporting on exit
+
+Version options:
+  -V, --version                      Print version
+
+<destination> is one of "nmbd", "smbd", "winbindd" or a process ID
+
+<message-type> is one of:
+	debug                         Set debuglevel
+	idmap                         Manipulate idmap cache
+	force-election                Force a browse election
+	ping                          Elicit a response
+	profile                       
+	inject                        Inject a fatal signal into a running smbd
+	stacktrace                    Display a stack trace of a daemon
+	profilelevel                  
+	debuglevel                    Display current debuglevels
+	printnotify                   Send a print notify message
+	close-share                   Forcibly disconnect a share
+	close-denied-share            Forcibly disconnect users from shares disallowed now
+	kill-client-ip                Forcibly disconnect a client with a specific IP address
+	ip-dropped                    Tell winbind that an IP got dropped
+	pool-usage                    Display talloc memory usage
+	ringbuf-log                   Display ringbuf log
+	dmalloc-mark                  
+	dmalloc-log-changed           
+	shutdown                      Shut down daemon
+	drvupgrade                    Notify a printer driver has changed
+	reload-config                 Force smbd or winbindd to reload config file
+	reload-printers               Force smbd to reload printers
+	nodestatus                    Ask nmbd to do a node status request
+	online                        Ask winbind to go into online state
+	offline                       Ask winbind to go into offline state
+	onlinestatus                  Request winbind online status
+	validate-cache                Validate winbind's credential cache
+	dump-domain-list              Dump winbind domain list
+	disconnect-dc                 
+	notify-cleanup                
+	num-children                  Print number of smbd child processes
+	msg-cleanup                   
+	noop                          Do nothing
+	sleep                         Cause the target process to sleep
+

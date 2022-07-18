@@ -1,0 +1,14 @@
+CAPB backup align
+VERSION 2
+REGISTER mirror/http/mirror mirror/https/mirror
+REGISTER mirror/http/hostname mirror/https/hostname
+REGISTER mirror/http/directory mirror/https/directory
+REGISTER mirror/http/proxy mirror/https/proxy
+GO
+SUBST mirror/protocol protocols http, https, ftp
+INPUT medium mirror/protocol
+GO
+GET mirror/protocol
+GO
+GET mirror/country
+GET debian-installer/country

@@ -1,0 +1,22 @@
+1826  execve("/usr/lib/snapd/snap-gdbserver-shim", ["/usr/lib/snapd/snap-gdbserver-shim"], 0x7ffdfcb024c0 /* 12 vars */) = 0
+1826  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe05fb6b10) = -1 EINVAL (Invalid argument)
+1826  brk(NULL)                         = 0x909000
+1826  brk(0x909dc0)                     = 0x909dc0
+1826  arch_prctl(ARCH_SET_FS, 0x9093c0) = 0
+1826  set_tid_address(0x909690)         = 1826
+1826  set_robust_list(0x9096a0, 24)     = 0
+1826  rseq(0x909d60, 0x20, 0, 0x53053053) = 0
+1826  uname({sysname="Linux", nodename="7532045ffef6", ...}) = 0
+1826  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1826  readlink("/proc/self/exe", "/usr/lib/snapd/snap-gdbserver-shim", 4096) = 34
+1826  getrandom("\x1d\x58\x2c\x97\xdf\x1d\x9e\x15", 8, GRND_NONBLOCK) = 8
+1826  brk(0x92adc0)                     = 0x92adc0
+1826  brk(0x92b000)                     = 0x92b000
+1826  mprotect(0x4f9000, 16384, PROT_READ) = 0
+1826  write(2, "missing a command to execute", 28) = 28
+1826  rt_sigprocmask(SIG_UNBLOCK, [ABRT], NULL, 8) = 0
+1826  gettid()                          = 1826
+1826  getpid()                          = 1826
+1826  tgkill(1826, 1826, SIGABRT)       = 0
+1826  --- SIGABRT {si_signo=SIGABRT, si_code=SI_TKILL, si_pid=1826, si_uid=0} ---
+1826  +++ killed by SIGABRT +++

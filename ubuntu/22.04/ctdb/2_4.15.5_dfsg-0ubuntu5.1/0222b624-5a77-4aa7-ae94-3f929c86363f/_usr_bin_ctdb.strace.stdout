@@ -1,0 +1,92 @@
+Usage: [OPTION...]
+  -d, --debug=STRING       debug level
+  -t, --timelimit=INT      timelimit (in seconds)
+  -n, --node=INT           node specification - integer
+  -Y                       enable machine readable output
+  -x, --separator=CHAR     specify separator for machine readable output
+  -X                       enable machine parsable output with separator |
+  -v, --verbose            enable verbose output
+  -T, --maxruntime=INT     die if runtime exceeds this limit (in seconds)
+
+Help options:
+  -?, --help               Show this help message
+      --usage              Display brief usage message
+
+Commands:
+  version                                      show version of ctdb
+  status                                       show node status
+  uptime                                       show node uptime
+  ping                                         ping a node
+  runstate        [setup|first_recovery|startup|running]  get/check runstate of a node
+  getvar          <name>                       get a tunable variable
+  setvar          <name> <value>               set a tunable variable
+  listvars                                     list tunable variables
+  statistics                                   show ctdb statistics
+  statisticsreset                              reset ctdb statistics
+  stats           [count]                      show rolling statistics
+  ip              [all]                        show public ips
+  ipinfo          <ip>                         show public ip details
+  ifaces                                       show interfaces
+  setifacelink    <iface> up|down              set interface link status
+  process-exists  <pid> [<srvid>]              check if a process exists on a node
+  getdbmap                                     show attached databases
+  getdbstatus     <dbname|dbid>                show database status
+  catdb           <dbname|dbid>                dump cluster-wide ctdb database
+  cattdb          <dbname|dbid>                dump local ctdb database
+  getcapabilities                              show node capabilities
+  pnn                                          show the pnn of the currnet node
+  lvs             leader|list|status           show lvs configuration
+  setdebug        ERROR|WARNING|NOTICE|INFO|DEBUG  set debug level
+  getdebug                                     get debug level
+  attach          <dbname> [persistent|replicated]  attach a database
+  detach          <dbname|dbid> ...            detach database(s)
+  dumpmemory                                   dump ctdbd memory map
+  rddumpmemory                                 dump recoverd memory map
+  getpid                                       get ctdbd process ID
+  disable                                      disable a node
+  enable                                       enable a node
+  stop                                         stop a node
+  continue                                     continue a stopped node
+  ban             <bantime>                    ban a node
+  unban                                        unban a node
+  shutdown                                     shutdown ctdb daemon
+  recover                                      force recovery
+  sync                                         run ip reallocation (deprecated)
+  ipreallocate                                 run ip reallocation
+  gratarp         <ip> <interface>             send a gratuitous arp
+  tickle          <srcip:port> <dstip:port>    send a tcp tickle ack
+  gettickles      <ip> [<port>]                get the list of tickles
+  addtickle       <ip>:<port> <ip>:<port>      add a tickle
+  deltickle       <ip>:<port> <ip>:<port>      delete a tickle
+  listnodes                                    list nodes in the cluster
+  reloadnodes                                  reload the nodes file all nodes
+  moveip          <ip> <node>                  move an ip address to another node
+  addip           <ip/mask> <iface>            add an ip address to a node
+  delip           <ip>                         delete an ip address from a node
+  backupdb        <dbname|dbid> <file>         backup a database into a file
+  restoredb       <file> [dbname]              restore a database from a file
+  dumpdbbackup    <file>                       dump database from a backup file
+  wipedb          <dbname|dbid>                wipe the contents of a database.
+  recmaster                                    show the pnn for the recovery master
+  event                                        event and event script commands
+  scriptstatus    [init|setup|startup|monitor|takeip|releaseip|ipreallocated]  show event script status
+  natgw           leader|list|status           show natgw configuration
+  getreclock                                   get recovery lock file
+  setlmasterrole  on|off                       set LMASTER role
+  setrecmasterrole on|off                       set RECMASTER role
+  setdbreadonly   <dbname|dbid>                enable readonly records
+  setdbsticky     <dbname|dbid>                enable sticky records
+  pfetch          <dbname|dbid> <key>          fetch record from persistent database
+  pstore          <dbname|dbid> <key> <value>  write record to persistent database
+  pdelete         <dbname|dbid> <key>          delete record from persistent database
+  ptrans          <dbname|dbid> [<file>]       update a persistent database (from file or stdin)
+  tfetch          <tdb-file> <key> [<file>]    fetch a record
+  tstore          <tdb-file> <key> <data> [<rsn> <dmaster> <flags>]  store a record
+  readkey         <dbname|dbid> <key> [readonly]  read value of a database key
+  writekey        <dbname|dbid> <key> <value>  write value for a database key
+  deletekey       <dbname|dbid> <key>          delete a database key
+  checktcpport    <port>                       check if a service is bound to a specific tcp port or not
+  getdbseqnum     <dbname|dbid>                get database sequence number
+  nodestatus      [all|<pnn-list>]             show and return node status
+  dbstatistics    <dbname|dbid>                show database statistics
+  reloadips       [all|<pnn-list>]             reload the public addresses file
