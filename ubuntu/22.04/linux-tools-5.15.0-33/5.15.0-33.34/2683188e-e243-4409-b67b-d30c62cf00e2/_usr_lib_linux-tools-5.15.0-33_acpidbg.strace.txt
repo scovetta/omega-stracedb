@@ -1,0 +1,22 @@
+730   execve("/usr/lib/linux-tools-5.15.0-33/acpidbg", ["/usr/lib/linux-tools-5.15.0-33/acpidbg"], 0x7fffb74ceb20 /* 12 vars */) = 0
+730   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcd7b098c0) = -1 EINVAL (Invalid argument)
+730   brk(NULL)                         = 0xad6000
+730   brk(0xad6dc0)                     = 0xad6dc0
+730   arch_prctl(ARCH_SET_FS, 0xad63c0) = 0
+730   set_tid_address(0xad6690)         = 730
+730   set_robust_list(0xad66a0, 24)     = 0
+730   rseq(0xad6d60, 0x20, 0, 0x53053053) = 0
+730   uname({sysname="Linux", nodename="cd5af0bf8b26", ...}) = 0
+730   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+730   readlink("/proc/self/exe", "/usr/lib/linux-tools-5.15.0-33/acpidbg", 4096) = 38
+730   getrandom("\xc7\x75\x17\x16\x9d\x11\x80\x5f", 8, GRND_NONBLOCK) = 8
+730   brk(0xaf7dc0)                     = 0xaf7dc0
+730   brk(0xaf8000)                     = 0xaf8000
+730   mprotect(0x4c4000, 16384, PROT_READ) = 0
+730   openat(AT_FDCWD, "/sys/kernel/debug/acpi/acpidbg", O_RDWR|O_NONBLOCK) = -1 ENOENT (No such file or directory)
+730   dup(2)                            = 3
+730   fcntl(3, F_GETFL)                 = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+730   close(3)                          = 0
+730   write(2, "open: No such file or directory\n", 32) = 32
+730   exit_group(1)                     = ?
+730   +++ exited with 1 +++

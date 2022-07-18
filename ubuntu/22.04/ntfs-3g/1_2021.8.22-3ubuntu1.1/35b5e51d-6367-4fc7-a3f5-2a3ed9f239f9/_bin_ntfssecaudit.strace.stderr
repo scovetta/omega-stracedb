@@ -1,0 +1,29 @@
+Usage:
+   ntfssecaudit -t
+	run self-tests
+   ntfssecaudit -h [file]
+	display security descriptors within file
+   ntfssecaudit -a[rv] volume
+	audit the volume
+   ntfssecaudit [-v] volume file
+	display the security parameters of file
+   ntfssecaudit -r[v] volume directory
+	display the security parameters of files in directory
+   ntfssecaudit -b[v] volume directory
+        backup the security parameters of files in directory
+   ntfssecaudit -s[ev] volume [backupfile]
+        set the security parameters as indicated in backup file
+        with -e also set extra parameters (Windows attrib)
+   ntfssecaudit volume perms file
+	set the security parameters of file to perms
+   ntfssecaudit -r[v] volume perms directory
+	set the security parameters of files in directory to perms
+ special cases, do not require being root :
+   ntfssecaudit -u mounted-file
+	get a user mapping proposal applicable to mounted file
+   ntfssecaudit [-v] mounted-file
+	display the security parameters of a mounted file
+   Notes: perms can be an octal mode or a Posix ACL description
+          volume is a partition designator (eg. /dev/sdb2)
+          -v is for verbose, -vv for very verbose
+No errors were found

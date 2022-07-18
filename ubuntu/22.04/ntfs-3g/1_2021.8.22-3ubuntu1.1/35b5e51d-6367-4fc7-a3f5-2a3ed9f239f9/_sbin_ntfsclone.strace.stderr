@@ -1,0 +1,28 @@
+ntfsclone v2021.8.22 (libntfs-3g)
+ERROR: You must specify an output file.
+
+Usage: ntfsclone [OPTIONS] SOURCE
+    Efficiently clone NTFS to a sparse file, image, device or standard output.
+
+    -o, --output FILE      Clone NTFS to the non-existent FILE
+    -O, --overwrite FILE   Clone NTFS to FILE, overwriting if exists
+    -s, --save-image       Save to the special image format
+    -r, --restore-image    Restore from the special image format
+        --rescue           Continue after disk read errors
+    -m, --metadata         Clone *only* metadata (for NTFS experts)
+    -n, --no-action        Test restoring, without outputting anything
+        --ignore-fs-check  Ignore the filesystem check result
+        --new-serial       Set a new serial number
+        --new-half-serial  Set a partial new serial number
+    -t, --preserve-timestamps Do not clear the timestamps
+    -q, --quiet            Do not display any progress bars
+    -f, --force            Force to progress (DANGEROUS)
+        --full-logfile     Include the full logfile in metadata output
+    -h, --help             Display this help
+    -V, --version          Display version information
+
+    If FILE is '-' then send the image to the standard output. If SOURCE is '-'
+    and --restore-image is used then read the image from the standard input.
+
+Developers' email address: ntfs-3g-devel@lists.sf.net
+News, support and information:  https://github.com/tuxera/ntfs-3g/

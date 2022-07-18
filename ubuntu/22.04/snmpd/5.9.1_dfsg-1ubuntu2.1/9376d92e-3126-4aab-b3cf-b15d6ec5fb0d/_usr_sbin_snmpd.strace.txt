@@ -1,0 +1,853 @@
+573   execve("/usr/sbin/snmpd", ["/usr/sbin/snmpd"], 0x7ffd50719840 /* 12 vars */) = 0
+573   brk(NULL)                         = 0x564426bfa000
+573   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcbbe64e30) = -1 EINVAL (Invalid argument)
+573   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579ad5c000
+573   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6641, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 6641, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f579ad5a000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnetsnmpagent.so.40", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\22\7\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\377\0\0\0\0\0\0\360\377\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=465288, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 472184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579ace6000
+573   mprotect(0x7f579acf6000, 397312, PROT_NONE) = 0
+573   mmap(0x7f579acf6000, 299008, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f579acf6000
+573   mmap(0x7f579ad3f000, 94208, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x59000) = 0x7f579ad3f000
+573   mmap(0x7f579ad57000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x70000) = 0x7f579ad57000
+573   mmap(0x7f579ad59000, 1144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f579ad59000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnetsnmpmibs.so.40", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\300B\26\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230}\2\0\0\0\0\0\230}\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1460672, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 2685904, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579aa56000
+573   mprotect(0x7f579aa7e000, 1269760, PROT_NONE) = 0
+573   mmap(0x7f579aa7e000, 864256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f579aa7e000
+573   mmap(0x7f579ab51000, 401408, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xfb000) = 0x7f579ab51000
+573   mmap(0x7f579abb4000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15d000) = 0x7f579abb4000
+573   mmap(0x7f579abbc000, 1219536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f579abbc000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnetsnmp.so.40", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000s\r\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260o\1\0\0\0\0\0\260o\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=883312, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 908640, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579a978000
+573   mmap(0x7f579a98f000, 577536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f579a98f000
+573   mmap(0x7f579aa1c000, 196608, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa4000) = 0x7f579aa1c000
+573   mmap(0x7f579aa4c000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd3000) = 0x7f579aa4c000
+573   mmap(0x7f579aa51000, 19808, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f579aa51000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+573   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+573   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+573   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+573   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+573   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579a750000
+573   mmap(0x7f579a778000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f579a778000
+573   mmap(0x7f579a90d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f579a90d000
+573   mmap(0x7f579a965000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f579a965000
+573   mmap(0x7f579a96b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f579a96b000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libwrap.so.0", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\250\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\330'\0\0\0\0\0\0\330'\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=44872, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 48192, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579a744000
+573   mmap(0x7f579a747000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f579a747000
+573   mmap(0x7f579a74c000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f579a74c000
+573   mmap(0x7f579a74e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f579a74e000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libperl.so.5.34", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0h\48\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\200\4\0\0\0\0\0@\200\4\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3673128, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f579a742000
+573   mmap(NULL, 3696312, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579a3bb000
+573   mmap(0x7f579a404000, 1581056, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x49000) = 0x7f579a404000
+573   mmap(0x7f579a586000, 1720320, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cb000) = 0x7f579a586000
+573   mmap(0x7f579a72a000, 73728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x36f000) = 0x7f579a72a000
+573   mmap(0x7f579a73c000, 22200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f579a73c000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsensors.so.5", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\350\342\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\330\37\0\0\0\0\0\0\330\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=59944, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 62520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579a3ab000
+573   mprotect(0x7f579a3ad000, 49152, PROT_NONE) = 0
+573   mmap(0x7f579a3ad000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f579a3ad000
+573   mmap(0x7f579a3b4000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f579a3b4000
+573   mmap(0x7f579a3b9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f579a3b9000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpci.so.3", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\330\343\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20&\0\0\0\0\0\0\20&\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=60184, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 62096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579a39b000
+573   mmap(0x7f579a39e000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f579a39e000
+573   mmap(0x7f579a3a6000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f579a3a6000
+573   mmap(0x7f579a3a9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f579a3a9000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X)\n\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\30\324\1\0\0\0\0\0\30\324\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=667864, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 669680, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f579a2f7000
+573   mmap(0x7f579a315000, 372736, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f579a315000
+573   mmap(0x7f579a370000, 118784, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x79000) = 0x7f579a370000
+573   mmap(0x7f579a38d000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x95000) = 0x7f579a38d000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\325C\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\34\v\0\0\0\0\0(\34\v\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 4461760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799eb5000
+573   mmap(0x7f5799f67000, 2478080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7f5799f67000
+573   mmap(0x7f579a1c4000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30f000) = 0x7f579a1c4000
+573   mmap(0x7f579a296000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e0000) = 0x7f579a296000
+573   mmap(0x7f579a2f4000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f579a2f4000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.2", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240d\1\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h<\0\0\0\0\0\0h<\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=93280, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 105032, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799e9b000
+573   mmap(0x7f5799e9f000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f5799e9f000
+573   mmap(0x7f5799ead000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7f5799ead000
+573   mmap(0x7f5799eb1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f5799eb1000
+573   mmap(0x7f5799eb3000, 6728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5799eb3000
+573   close(3)                          = 0
+573   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5799e99000
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799db2000
+573   mmap(0x7f5799dc0000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f5799dc0000
+573   mmap(0x7f5799e3c000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f5799e3c000
+573   mmap(0x7f5799e97000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f5799e97000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799d78000
+573   mprotect(0x7f5799d7a000, 188416, PROT_NONE) = 0
+573   mmap(0x7f5799d7a000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5799d7a000
+573   mmap(0x7f5799d8e000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f5799d8e000
+573   mmap(0x7f5799da8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7f5799da8000
+573   mmap(0x7f5799daa000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5799daa000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799d5c000
+573   mprotect(0x7f5799d5e000, 98304, PROT_NONE) = 0
+573   mmap(0x7f5799d5e000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5799d5e000
+573   mmap(0x7f5799d6f000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f5799d6f000
+573   mmap(0x7f5799d76000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f5799d76000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0p>\0\0\0\0\0\0p>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 170272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799d32000
+573   mprotect(0x7f5799d36000, 147456, PROT_NONE) = 0
+573   mmap(0x7f5799d36000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f5799d36000
+573   mmap(0x7f5799d50000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f5799d50000
+573   mmap(0x7f5799d5a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f5799d5a000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtirpc.so.3", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\263\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\320j\0\0\0\0\0\0\320j\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=178816, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 183160, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799d05000
+573   mmap(0x7f5799d0c000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f5799d0c000
+573   mmap(0x7f5799d27000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f5799d27000
+573   mmap(0x7f5799d30000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a000) = 0x7f5799d30000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X#\5\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\257\0\0\0\0\0\0\200\257\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=338712, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5799d03000
+573   mmap(NULL, 340960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799caf000
+573   mprotect(0x7f5799cba000, 282624, PROT_NONE) = 0
+573   mmap(0x7f5799cba000, 229376, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f5799cba000
+573   mmap(0x7f5799cf2000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x43000) = 0x7f5799cf2000
+573   mmap(0x7f5799cff000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4f000) = 0x7f5799cff000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240\232\f\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h\0\2\0\0\0\0\0h\0\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=828000, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 830576, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799be4000
+573   mprotect(0x7f5799c05000, 634880, PROT_NONE) = 0
+573   mmap(0x7f5799c05000, 380928, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7f5799c05000
+573   mmap(0x7f5799c62000, 249856, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7e000) = 0x7f5799c62000
+573   mmap(0x7f5799ca0000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbb000) = 0x7f5799ca0000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\320\302\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`:\0\0\0\0\0\0`:\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=182928, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 188472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799bb5000
+573   mprotect(0x7f5799bb9000, 163840, PROT_NONE) = 0
+573   mmap(0x7f5799bb9000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f5799bb9000
+573   mmap(0x7f5799bd4000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f5799bd4000
+573   mmap(0x7f5799be1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7f5799be1000
+573   mmap(0x7f5799be3000, 56, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5799be3000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0HA\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x\20\0\0\0\0\0\0x\20\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18504, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 20552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799baf000
+573   mmap(0x7f5799bb1000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5799bb1000
+573   mmap(0x7f5799bb2000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f5799bb2000
+573   mmap(0x7f5799bb3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f5799bb3000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\260\303\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0 *\0\0\0\0\0\0 *\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=52080, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 54224, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799ba1000
+573   mprotect(0x7f5799ba4000, 36864, PROT_NONE) = 0
+573   mmap(0x7f5799ba4000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f5799ba4000
+573   mmap(0x7f5799baa000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f5799baa000
+573   mmap(0x7f5799bad000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f5799bad000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0HQ\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230\25\0\0\0\0\0\0\230\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22600, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 24592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799b9a000
+573   mmap(0x7f5799b9c000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5799b9c000
+573   mmap(0x7f5799b9e000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f5799b9e000
+573   mmap(0x7f5799b9f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f5799b9f000
+573   close(3)                          = 0
+573   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+573   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\3\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0 \0\37\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\350/\0\0\0\0\0\0\350/\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+573   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
+573   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5799b98000
+573   mmap(NULL, 80456, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5799b84000
+573   mmap(0x7f5799b87000, 40960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f5799b87000
+573   mmap(0x7f5799b91000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f5799b91000
+573   mmap(0x7f5799b94000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f5799b94000
+573   mmap(0x7f5799b96000, 6728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5799b96000
+573   close(3)                          = 0
+573   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5799b82000
+573   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5799b7f000
+573   arch_prctl(ARCH_SET_FS, 0x7f5799b7f780) = 0
+573   set_tid_address(0x7f5799b7fa50)   = 573
+573   set_robust_list(0x7f5799b7fa60, 24) = 0
+573   rseq(0x7f5799b80120, 0x20, 0, 0x53053053) = 0
+573   mprotect(0x7f579a965000, 16384, PROT_READ) = 0
+573   mprotect(0x7f5799b94000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799b9f000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799bad000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799bb3000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799be1000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799ca0000, 53248, PROT_READ) = 0
+573   mprotect(0x7f5799cff000, 8192, PROT_READ) = 0
+573   mprotect(0x7f5799d30000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799d5a000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799d76000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799da8000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799e97000, 4096, PROT_READ) = 0
+573   mprotect(0x7f5799eb1000, 4096, PROT_READ) = 0
+573   mprotect(0x7f579a296000, 372736, PROT_READ) = 0
+573   mprotect(0x7f579a38d000, 40960, PROT_READ) = 0
+573   mprotect(0x7f579a3a9000, 4096, PROT_READ) = 0
+573   mprotect(0x7f579a3b9000, 4096, PROT_READ) = 0
+573   mprotect(0x7f579a72a000, 61440, PROT_READ) = 0
+573   mprotect(0x7f579a74e000, 4096, PROT_READ) = 0
+573   mprotect(0x7f579aa4c000, 8192, PROT_READ) = 0
+573   mprotect(0x7f579ad57000, 4096, PROT_READ) = 0
+573   mprotect(0x7f579abb4000, 8192, PROT_READ) = 0
+573   mprotect(0x564424f1d000, 4096, PROT_READ) = 0
+573   mprotect(0x7f579ad96000, 8192, PROT_READ) = 0
+573   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+573   munmap(0x7f579ad5a000, 6641)      = 0
+573   openat(AT_FDCWD, "/proc/self/fd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+573   newfstatat(3, "", {st_mode=S_IFDIR|0500, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   getrandom("\x4c\xeb\x25\x31\x4d\x64\x07\x23", 8, GRND_NONBLOCK) = 8
+573   brk(NULL)                         = 0x564426bfa000
+573   brk(0x564426c1b000)               = 0x564426c1b000
+573   getdents64(3, 0x564426bfa2d0 /* 6 entries */, 32768) = 144
+573   getdents64(3, 0x564426bfa2d0 /* 0 entries */, 32768) = 0
+573   close(3)                          = 0
+573   close(3)                          = -1 EBADF (Bad file descriptor)
+573   rt_sigaction(SIGTERM, {sa_handler=0x564424f1a4e0, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f579a792520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+573   rt_sigaction(SIGINT, {sa_handler=0x564424f1a4e0, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f579a792520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+573   rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f579a792520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+573   rt_sigaction(SIGUSR1, {sa_handler=0x564424f1a5f0, sa_mask=[USR1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f579a792520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+573   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f579a792520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+573   rt_sigaction(SIGXFSZ, {sa_handler=0x564424f1a620, sa_mask=[XFSZ], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f579a792520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+573   pipe2([3, 4], 0)                  = 0
+573   futex(0x7f579a2f3ba4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3748, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3ba0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3b9c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3ef0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3b94, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3b90, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f34d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   openat(AT_FDCWD, "/etc/mail/sendmail.cf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/sendmail.cf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/mail/statistics", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/mail/sendmail.st", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/proc/diskstats", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "   1       0 ram0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   1       1 ram1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   1       2 ram2 0 0 0 "..., 1024) = 1024
+573   read(5, "0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "..., 1024) = 527
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   brk(0x564426c3c000)               = 0x564426c3c000
+573   openat(AT_FDCWD, "/etc/sensors.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   statfs("/sys", {f_type=SYSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+573   openat(AT_FDCWD, "/sys/class/i2c-adapter", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/sys/bus/i2c/devices", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/sys/class/hwmon", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/sys/bus/i2c/devices", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/sensors3.conf", O_RDONLY) = 5
+573   ioctl(5, TCGETS, 0x7ffcbbe64ba0)  = -1 ENOTTY (Inappropriate ioctl for device)
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=10593, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "# libsensors configuration file\n# -----------------------------\n#\n# This default configuration file only includes statements whi"..., 8192) = 8192
+573   read(5, "bel in2 \"+3.3V\"\n    label in3 \"+5V\"\n    label in4 \"+12V\"\n    label in5 \"3VSB\"\n    label in6 \"Vbat\"\n\n    label temp2 \"SIO Temp\"\n\n"..., 8192) = 2401
+573   read(5, "", 4096)                 = 0
+573   read(5, "", 8192)                 = 0
+573   ioctl(5, TCGETS, 0x7ffcbbe636f0)  = -1 ENOTTY (Inappropriate ioctl for device)
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/etc/sensors.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+573   newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+573   brk(0x564426c5f000)               = 0x564426c5f000
+573   getdents64(5, 0x564426c36750 /* 3 entries */, 32768) = 80
+573   getdents64(5, 0x564426c36750 /* 0 entries */, 32768) = 0
+573   brk(0x564426c57000)               = 0x564426c57000
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/dev/mapper/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   uname({sysname="Linux", nodename="cda6ed529fb6", ...}) = 0
+573   uname({sysname="Linux", nodename="cda6ed529fb6", ...}) = 0
+573   brk(0x564426c78000)               = 0x564426c78000
+573   brk(0x564426c99000)               = 0x564426c99000
+573   brk(0x564426cba000)               = 0x564426cba000
+573   brk(0x564426cdb000)               = 0x564426cdb000
+573   brk(0x564426cfc000)               = 0x564426cfc000
+573   brk(0x564426d1d000)               = 0x564426d1d000
+573   openat(AT_FDCWD, "/proc/cpuinfo", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "processor\t: 0\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 126\nmodel name\t: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz\nsteppi"..., 1024) = 1024
+573   read(5, " avx512_bitalg avx512_vpopcntdq rdpid fsrm flush_l1d arch_capabilities\nvmx flags\t: vnmi invvpid ept_x_only ept_ad ept_1gb tsc_of"..., 1024) = 1024
+573   read(5, "deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced "..., 1024) = 1024
+573   read(5, "\t: 1\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de "..., 1024) = 1024
+573   read(5, "re_bypass swapgs itlb_multihit\nbogomips\t: 2995.20\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bi"..., 1024) = 1024
+573   read(5, " adx smap avx512ifma clflushopt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gf"..., 1024) = 1024
+573   brk(0x564426d3f000)               = 0x564426d3f000
+573   read(5, "1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 s"..., 1024) = 1024
+573   read(5, ": Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz\nstepping\t: 5\nmicrocode\t: 0xffffffff\ncpu MHz\t\t: 1497.603\ncache size\t: 8192 KB\nphysica"..., 1024) = 1024
+573   read(5, "gs\t: vnmi invvpid ept_x_only ept_ad ept_1gb tsc_offset vtpr ept vpid unrestricted_guest ept_mode_based_exec tsc_scaling\nbugs\t\t: "..., 1024) = 1024
+573   read(5, "invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms i"..., 1024) = 1024
+573   read(5, "es\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr "..., 1024) = 1024
+573   read(5, "nment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\n", 1024) = 80
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/snmp", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "Ip: Forwarding DefaultTTL InReceives InHdrErrors InAddrErrors ForwDatagrams InUnknownProtos InDiscards InDelivers OutRequests Ou"..., 1024) = 1024
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/netstat", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "TcpExt: SyncookiesSent SyncookiesRecv SyncookiesFailed EmbryonicRsts PruneCalled RcvPruned OfoPruned OutOfWindowIcmps LockDroppe"..., 1024) = 1024
+573   read(5, "lback TCPBacklogDrop PFMemallocDrop TCPMinTTLDrop TCPDeferAcceptDrop IPReversePathFilter TCPTimeWaitOverflow TCPReqQFullDoCookie"..., 1024) = 1024
+573   read(5, "0 0 0 0 0 0 0 0 0 0 0 135 3 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "..., 1024) = 514
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/snmp6", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "Ip6InReceives                   \t9\nIp6InHdrErrors                  \t0\nIp6InTooBigErrors               \t0\nIp6InNoRoutes          "..., 1024) = 1024
+573   read(5, "T1Pkts                   \t0\nIp6InECT0Pkts                   \t0\nIp6InCEPkts                     \t0\nIcmp6InMsgs                   "..., 1024) = 1024
+573   read(5, "bQueries        \t0\nIcmp6OutGroupMembResponses      \t0\nIcmp6OutGroupMembReductions     \t0\nIcmp6OutRouterSolicits          \t0\nIcmp"..., 1024) = 824
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/snmp", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "Ip: Forwarding DefaultTTL InReceives InHdrErrors InAddrErrors ForwDatagrams InUnknownProtos InDiscards InDelivers OutRequests Ou"..., 1024) = 1024
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/netstat", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "TcpExt: SyncookiesSent SyncookiesRecv SyncookiesFailed EmbryonicRsts PruneCalled RcvPruned OfoPruned OutOfWindowIcmps LockDroppe"..., 1024) = 1024
+573   read(5, "lback TCPBacklogDrop PFMemallocDrop TCPMinTTLDrop TCPDeferAcceptDrop IPReversePathFilter TCPTimeWaitOverflow TCPReqQFullDoCookie"..., 1024) = 1024
+573   read(5, "0 0 0 0 0 0 0 0 0 0 0 135 3 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "..., 1024) = 514
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/snmp6", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "Ip6InReceives                   \t9\nIp6InHdrErrors                  \t0\nIp6InTooBigErrors               \t0\nIp6InNoRoutes          "..., 1024) = 1024
+573   read(5, "T1Pkts                   \t0\nIp6InECT0Pkts                   \t0\nIp6InCEPkts                     \t0\nIcmp6InMsgs                   "..., 1024) = 1024
+573   read(5, "bQueries        \t0\nIcmp6OutGroupMembResponses      \t0\nIcmp6OutGroupMembReductions     \t0\nIcmp6OutRouterSolicits          \t0\nIcmp"..., 1024) = 824
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/snmp", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "Ip: Forwarding DefaultTTL InReceives InHdrErrors InAddrErrors ForwDatagrams InUnknownProtos InDiscards InDelivers OutRequests Ou"..., 1024) = 1024
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/netstat", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "TcpExt: SyncookiesSent SyncookiesRecv SyncookiesFailed EmbryonicRsts PruneCalled RcvPruned OfoPruned OutOfWindowIcmps LockDroppe"..., 1024) = 1024
+573   read(5, "lback TCPBacklogDrop PFMemallocDrop TCPMinTTLDrop TCPDeferAcceptDrop IPReversePathFilter TCPTimeWaitOverflow TCPReqQFullDoCookie"..., 1024) = 1024
+573   read(5, "0 0 0 0 0 0 0 0 0 0 0 135 3 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "..., 1024) = 514
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/snmp6", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "Ip6InReceives                   \t9\nIp6InHdrErrors                  \t0\nIp6InTooBigErrors               \t0\nIp6InNoRoutes          "..., 1024) = 1024
+573   read(5, "T1Pkts                   \t0\nIp6InECT0Pkts                   \t0\nIp6InCEPkts                     \t0\nIcmp6InMsgs                   "..., 1024) = 1024
+573   read(5, "bQueries        \t0\nIcmp6OutGroupMembResponses      \t0\nIcmp6OutGroupMembReductions     \t0\nIcmp6OutRouterSolicits          \t0\nIcmp"..., 1024) = 824
+573   read(5, "", 1024)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/proc/net/dev_snmp6", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+573   newfstatat(5, "", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   getdents64(5, 0x564426d30380 /* 5 entries */, 32768) = 120
+573   openat(AT_FDCWD, "/proc/net/dev_snmp6/lo", O_RDONLY) = 6
+573   newfstatat(6, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "ifIndex                         \t1\nIp6InReceives                   \t0\nIp6InHdrErrors                  \t0\nIp6InTooBigErrors      "..., 1024) = 1024
+573   read(6, "TPkts                  \t0\nIp6InECT1Pkts                   \t0\nIp6InECT0Pkts                   \t0\nIp6InCEPkts                     "..., 1024) = 1024
+573   read(6, "s             \t0\nIcmp6OutGroupMembQueries        \t0\nIcmp6OutGroupMembResponses      \t0\nIcmp6OutGroupMembReductions     \t0\nIcmp6O"..., 1024) = 332
+573   read(6, "", 1024)                 = 0
+573   close(6)                          = 0
+573   openat(AT_FDCWD, "/proc/net/dev_snmp6/eth0", O_RDONLY) = 6
+573   newfstatat(6, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "ifIndex                         \t4486\nIp6InReceives                   \t9\nIp6InHdrErrors                  \t0\nIp6InTooBigErrors   "..., 1024) = 1024
+573   read(6, "nNoECTPkts                  \t0\nIp6InECT1Pkts                   \t0\nIp6InECT0Pkts                   \t0\nIp6InCEPkts                "..., 1024) = 1024
+573   read(6, "eplies             \t0\nIcmp6OutGroupMembQueries        \t0\nIcmp6OutGroupMembResponses      \t0\nIcmp6OutGroupMembReductions     \t0\nI"..., 1024) = 337
+573   read(6, "", 1024)                 = 0
+573   close(6)                          = 0
+573   openat(AT_FDCWD, "/proc/net/dev_snmp6/sit0", O_RDONLY) = 6
+573   newfstatat(6, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "ifIndex                         \t3\nIp6InReceives                   \t0\nIp6InHdrErrors                  \t0\nIp6InTooBigErrors      "..., 1024) = 1024
+573   read(6, "TPkts                  \t0\nIp6InECT1Pkts                   \t0\nIp6InECT0Pkts                   \t0\nIp6InCEPkts                     "..., 1024) = 1024
+573   read(6, "s             \t0\nIcmp6OutGroupMembQueries        \t0\nIcmp6OutGroupMembResponses      \t0\nIcmp6OutGroupMembReductions     \t0\nIcmp6O"..., 1024) = 332
+573   read(6, "", 1024)                 = 0
+573   close(6)                          = 0
+573   getdents64(5, 0x564426d30380 /* 0 entries */, 32768) = 0
+573   close(5)                          = 0
+573   brk(0x564426d60000)               = 0x564426d60000
+573   newfstatat(AT_FDCWD, "/etc/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmpd.conf", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0600, st_size=3108, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "###########################################################################\n#\n# snmpd.conf\n# An example configuration file for c"..., 4096) = 3108
+573   openat(AT_FDCWD, "/etc/snmp/snmpd.conf.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+573   newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+573   getdents64(6, 0x564426d48cf0 /* 2 entries */, 32768) = 48
+573   getdents64(6, 0x564426d48cf0 /* 0 entries */, 32768) = 0
+573   close(6)                          = 0
+573   read(5, "", 4096)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmpd.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/snmpd.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/snmpd.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/snmpd.0.conf", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmpd.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmpd.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/etc/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmp.conf", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "# As the snmp packages come without MIB files due to license reasons, loading\n# of MIBs is disabled by default. If you added the"..., 4096) = 510
+573   read(5, "", 4096)                 = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmp.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/snmp.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/snmp.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/snmp.0.conf", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmp.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmp.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/etc/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/etc/snmp/agentx.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/snmp/agentx.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/agentx.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/agentx.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/agentx.0.conf", 0x7ffcbbe64ba0, 0) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/agentx.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/agentx.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/cert_indexes", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/cert_indexes", 0x7ffcbbe62550, 0) = -1 ENOENT (No such file or directory)
+573   mkdir("/var/lib/snmp/cert_indexes", 0700) = 0
+573   newfstatat(2, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   write(2, "Created directory: /var/lib/snmp/cert_indexes\n", 46) = 46
+573   newfstatat(AT_FDCWD, "/etc/snmp/tls/ca-certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/etc/snmp/tls/certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/etc/snmp/tls/private", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp/tls/ca-certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp/tls/certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp/tls/private", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp/tls/ca-certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp/tls/certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp/tls/private", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp/tls/ca-certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp/tls/certs", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp/tls/private", 0x7ffcbbe62740, 0) = -1 ENOENT (No such file or directory)
+573   futex(0x7f579a2f3f20, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3778, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3a00, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3b98, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   openat(AT_FDCWD, "/usr/lib/ssl/openssl.cnf", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=12419, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "#\n# OpenSSL example configuration file.\n# See doc/man5/config.pod for more info.\n#\n# This is mostly being used for generation of"..., 4096) = 4096
+573   read(5, "r type CA, the listed attributes must be the same, and the optional\n# and supplied fields are just that :-)\npolicy\t\t= policy_mat"..., 4096) = 4096
+573   read(5, "r:copy\n\n# DER hex encoding of an extension: beware experts only!\n# obj=DER:02:03\n# Where 'obj' is a standard or added object\n# Y"..., 4096) = 4096
+573   read(5, "ertout # insta.cert.pem\n\n[ssl_sect]\nsystem_default = system_default_sect\n\n[system_default_sect]\nCipherString = DEFAULT:@SECLEVEL"..., 4096) = 131
+573   read(5, "", 4096)                 = 0
+573   close(5)                          = 0
+573   futex(0x7f579a2f3920, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3b80, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3b7c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f370c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   futex(0x7f579a2f3b8c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+573   brk(0x564426d87000)               = 0x564426d87000
+573   getpid()                          = 573
+573   brk(0x564426da9000)               = 0x564426da9000
+573   brk(0x564426dce000)               = 0x564426dce000
+573   brk(0x564426def000)               = 0x564426def000
+573   getrandom("\x7a\xde\xa4\xde\x64\x3d\x80\x78\x5d\xee\x56\xc5\xb1\x6e\xc3\x36\x2d\xe7\xda\x66\x04\x45\xdf\xc6\x8f\x50\x1d\x33\x95\xec\xea\x42\x8c\x93\xe4\xb8\x63\xa3\xc6\x0a\x4a\x39\x0d\x7d\xda\x9e\xc7\x0d", 48, 0) = 48
+573   getpid()                          = 573
+573   getpid()                          = 573
+573   getpid()                          = 573
+573   getpid()                          = 573
+573   getpid()                          = 573
+573   getpid()                          = 573
+573   openat(AT_FDCWD, "/root/.snmp/mibs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+573   newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+573   getdents64(5, 0x564426dd5680 /* 15 entries */, 32768) = 608
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-TC.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-AGENT-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/LM-SENSORS-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-DLMOD-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-EXAMPLES-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-IPFWACC-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-SNMP-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-DISKIO-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-EXTEND-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-VACM-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-DEMO-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-PASS-MIB.txt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOTDIR (Not a directory)
+573   getdents64(5, 0x564426dd5680 /* 0 entries */, 32768) = 0
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/LM-SENSORS-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=5931, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "LM-SENSORS-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Derived from the original VEST-INTERNETT-MIB. Open issues:\n--\n-- (a) where to regist"..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-AGENT-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=15901, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "NET-SNMP-AGENT-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Defines control and monitoring structures for the Net-SNMP agent.\n--\n\nIMPORTS\n  "..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-EXAMPLES-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=9160, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "NET-SNMP-EXAMPLES-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Example MIB objects for agent module example implementations\n--\n\nIMPORTS\n    "..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-EXTEND-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=9326, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "NET-SNMP-EXTEND-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Defines a framework for scripted extensions\n--\n\nIMPORTS\n    nsExtensions FROM N"..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2036, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "NET-SNMP-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Top-level infrastructure of the Net-SNMP project enterprise MIB tree\n--\n\nIMPORTS\n    M"..., 4096) = 2036
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-PASS-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=3730, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "NET-SNMP-PASS-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Example MIB objects for \"pass\" and \"pass-persist\" extension script\n--\n\nIMPORTS\n  "..., 4096) = 3730
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-TC.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=4814, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "NET-SNMP-TC DEFINITIONS ::= BEGIN\n\n--\n-- Textual conventions and enumerations for the Net-SNMP project\n--\n\nIMPORTS\n    netSnmpMo"..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/NET-SNMP-VACM-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=5039, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "NET-SNMP-VACM-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Defines Net-SNMP extensions to the standard VACM view table.\n--\n\nIMPORTS\n    Snmp"..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-DEMO-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2163, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "UCD-DEMO-MIB DEFINITIONS ::= BEGIN\n\nIMPORTS\n    MODULE-IDENTITY, OBJECT-TYPE, Integer32\tFROM SNMPv2-SMI\n    ucdavis\t\t\t\t\tFROM UCD"..., 4096) = 2163
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-DISKIO-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=4965, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "UCD-DISKIO-MIB DEFINITIONS ::= BEGIN\n\n--\n-- Derived from the original VEST-INTERNETT-MIB. Open issues:\n--\n-- (a) where to regist"..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-DLMOD-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=3087, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "UCD-DLMOD-MIB DEFINITIONS ::= BEGIN\n\n-- Why do we have dlmodNextIndex if the dlmodTable is read-write?\n-- What exactly is the dl"..., 4096) = 3087
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-IPFWACC-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8118, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "UCD-IPFWACC-MIB DEFINITIONS ::= BEGIN\n\nIMPORTS\n    OBJECT-TYPE, MODULE-IDENTITY, IpAddress, Integer32, Counter32\n\tFROM SNMPv2-SM"..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/UCD-SNMP-MIB.txt", O_RDONLY) = 5
+573   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=53338, ...}, AT_EMPTY_PATH) = 0
+573   read(5, "UCD-SNMP-MIB DEFINITIONS ::= BEGIN\n\n-- Design notes:\n--\n-- The design of this mib may seem unusual in parts, as it was\n-- design"..., 4096) = 4096
+573   close(5)                          = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/iana", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/mibs/ietf", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/proc/sys/net/ipv6/neigh/default/retrans_time_ms", 0x7ffcbbe64ce0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/proc/sys/net/ipv4/neigh/default/retrans_time_ms", 0x7ffcbbe64ce0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/proc/sys/net/ipv6/neigh/default/base_reachable_time_ms", 0x7ffcbbe64ce0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/proc/sys/net/ipv4/neigh/default/base_reachable_time", 0x7ffcbbe64ce0, 0) = -1 ENOENT (No such file or directory)
+573   socket(AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE) = 5
+573   bind(5, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=0x020100}, 12) = 0
+573   sendto(5, [{nlmsg_len=17, nlmsg_type=RTM_GETLINK, nlmsg_flags=NLM_F_REQUEST|NLM_F_ROOT, nlmsg_seq=0, nlmsg_pid=0}, {ifi_family=AF_INET6, ...}], 17, 0, NULL, 0) = 17
+573   newfstatat(AT_FDCWD, "/proc/bus/pci", {st_mode=S_IFDIR|0555, st_size=0, ...}, 0) = 0
+573   openat(AT_FDCWD, "/proc/net/dev", O_RDONLY) = 6
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 7
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFCONF, {ifc_len=320 /* 8 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(8, SIOCGIFCONF, {ifc_len=640 /* 16 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="lo", ifr_ifindex=1}) = 0
+573   socket(AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE) = 9
+573   sendto(9, [{nlmsg_len=24, nlmsg_type=0x16 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x100, nlmsg_seq=0, nlmsg_pid=0}, "\x02\x00\x00\x00\x00\x00\x00\x00"], 24, 0, NULL, 0) = 24
+573   recvfrom(9, [[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-270367829}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968126, tstamp=17968126}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-270367829}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968156, tstamp=17968156}]]]], 16384, 0, NULL, NULL) = 164
+573   close(9)                          = 0
+573   ioctl(8, SIOCGIFNETMASK, {ifr_name="lo", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.0.0.0")}}) = 0
+573   ioctl(8, SIOCGIFFLAGS, {ifr_name="lo", ifr_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING}) = 0
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="eth0", ifr_ifindex=4486}) = 0
+573   socket(AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE) = 9
+573   sendto(9, [{nlmsg_len=24, nlmsg_type=0x16 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x100, nlmsg_seq=0, nlmsg_pid=0}, "\x02\x00\x00\x00\x00\x00\x00\x00"], 24, 0, NULL, 0) = 24
+573   recvfrom(9, [[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-1338195573}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968126, tstamp=17968126}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-1338195573}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968156, tstamp=17968156}]]]], 16384, 0, NULL, NULL) = 164
+573   close(9)                          = 0
+573   ioctl(8, SIOCGIFNETMASK, {ifr_name="eth0", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.0.0")}}) = 0
+573   ioctl(8, SIOCGIFFLAGS, {ifr_name="eth0", ifr_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST}) = 0
+573   close(8)                          = 0
+573   openat(AT_FDCWD, "/proc/net/if_inet6", O_RDONLY) = 8
+573   newfstatat(8, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(8, "", 1024)                 = 0
+573   close(8)                          = 0
+573   newfstatat(6, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compre"..., 1024) = 692
+573   ioctl(7, SIOCGIFCONF, {ifc_len=320 /* 8 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(7, SIOCGIFCONF, {ifc_len=640 /* 16 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="lo", ifr_ifindex=1}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="lo", ifr_ifindex=1}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="lo", ifr_hwaddr={sa_family=ARPHRD_LOOPBACK, sa_data=00:00:00:00:00:00}}) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="lo", ifr_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="lo", ifr_mtu=65536}) = 0
+573   openat(AT_FDCWD, "/proc/sys/net/ipv4/neigh/lo/retrans_time", O_RDONLY) = 8
+573   newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(8, "100\n", 1024)            = 4
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="tunl0", ifr_ifindex=2}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="tunl0", ifr_ifindex=2}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="tunl0", ifr_hwaddr={sa_family=ARPHRD_TUNNEL, sa_data=00:00:00:00}}) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="tunl0", ifr_flags=IFF_NOARP}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="tunl0", ifr_mtu=1480}) = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="sit0", ifr_ifindex=3}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="sit0", ifr_ifindex=3}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="sit0", ifr_hwaddr={sa_family=ARPHRD_SIT, sa_data=00:00:00:00}}) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="sit0", ifr_flags=IFF_NOARP}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="sit0", ifr_mtu=1480}) = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="eth0", ifr_ifindex=4486}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="eth0", ifr_ifindex=4486}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="eth0", ifr_hwaddr={sa_family=ARPHRD_ETHER, sa_data=02:42:ac:11:00:02}}) = 0
+573   ioctl(7, SIOCETHTOOL, 0x7ffcbbe64960) = 0
+573   ioctl(7, SIOCETHTOOL, 0x7ffcbbe64960) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="eth0", ifr_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="eth0", ifr_mtu=1500}) = 0
+573   openat(AT_FDCWD, "/proc/sys/net/ipv4/neigh/eth0/retrans_time", O_RDONLY) = 8
+573   newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(8, "100\n", 1024)            = 4
+573   close(8)                          = 0
+573   read(6, "", 1024)                 = 0
+573   close(6)                          = 0
+573   close(7)                          = 0
+573   openat(AT_FDCWD, "/proc/net/dev", O_RDONLY) = 6
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 7
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFCONF, {ifc_len=320 /* 8 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(8, SIOCGIFCONF, {ifc_len=640 /* 16 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="lo", ifr_ifindex=1}) = 0
+573   socket(AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE) = 9
+573   sendto(9, [{nlmsg_len=24, nlmsg_type=0x16 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x100, nlmsg_seq=0, nlmsg_pid=0}, "\x02\x00\x00\x00\x00\x00\x00\x00"], 24, 0, NULL, 0) = 24
+573   recvfrom(9, [[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-681800618}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968126, tstamp=17968126}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-681800618}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968156, tstamp=17968156}]]]], 16384, 0, NULL, NULL) = 164
+573   close(9)                          = 0
+573   ioctl(8, SIOCGIFNETMASK, {ifr_name="lo", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.0.0.0")}}) = 0
+573   ioctl(8, SIOCGIFFLAGS, {ifr_name="lo", ifr_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING}) = 0
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="eth0", ifr_ifindex=4486}) = 0
+573   socket(AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE) = 9
+573   sendto(9, [{nlmsg_len=24, nlmsg_type=0x16 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x100, nlmsg_seq=0, nlmsg_pid=0}, "\x02\x00\x00\x00\x00\x00\x00\x00"], 24, 0, NULL, 0) = 24
+573   recvfrom(9, [[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-624550887}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968126, tstamp=17968126}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-624550887}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968156, tstamp=17968156}]]]], 16384, 0, NULL, NULL) = 164
+573   close(9)                          = 0
+573   ioctl(8, SIOCGIFNETMASK, {ifr_name="eth0", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.0.0")}}) = 0
+573   ioctl(8, SIOCGIFFLAGS, {ifr_name="eth0", ifr_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST}) = 0
+573   close(8)                          = 0
+573   openat(AT_FDCWD, "/proc/net/if_inet6", O_RDONLY) = 8
+573   newfstatat(8, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(8, "", 1024)                 = 0
+573   close(8)                          = 0
+573   newfstatat(6, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compre"..., 1024) = 692
+573   ioctl(7, SIOCGIFCONF, {ifc_len=320 /* 8 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(7, SIOCGIFCONF, {ifc_len=640 /* 16 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="lo", ifr_ifindex=1}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="lo", ifr_ifindex=1}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="lo", ifr_hwaddr={sa_family=ARPHRD_LOOPBACK, sa_data=00:00:00:00:00:00}}) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="lo", ifr_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="lo", ifr_mtu=65536}) = 0
+573   openat(AT_FDCWD, "/proc/sys/net/ipv4/neigh/lo/retrans_time", O_RDONLY) = 8
+573   newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(8, "100\n", 1024)            = 4
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="tunl0", ifr_ifindex=2}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="tunl0", ifr_ifindex=2}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="tunl0", ifr_hwaddr={sa_family=ARPHRD_TUNNEL, sa_data=00:00:00:00}}) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="tunl0", ifr_flags=IFF_NOARP}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="tunl0", ifr_mtu=1480}) = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="sit0", ifr_ifindex=3}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="sit0", ifr_ifindex=3}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="sit0", ifr_hwaddr={sa_family=ARPHRD_SIT, sa_data=00:00:00:00}}) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="sit0", ifr_flags=IFF_NOARP}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="sit0", ifr_mtu=1480}) = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="eth0", ifr_ifindex=4486}) = 0
+573   close(8)                          = 0
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 8
+573   ioctl(8, SIOCGIFINDEX, {ifr_name="eth0", ifr_ifindex=4486}) = 0
+573   close(8)                          = 0
+573   ioctl(7, SIOCGIFHWADDR, {ifr_name="eth0", ifr_hwaddr={sa_family=ARPHRD_ETHER, sa_data=02:42:ac:11:00:02}}) = 0
+573   ioctl(7, SIOCETHTOOL, 0x7ffcbbe647d0) = 0
+573   ioctl(7, SIOCETHTOOL, 0x7ffcbbe647d0) = 0
+573   ioctl(7, SIOCGIFFLAGS, {ifr_name="eth0", ifr_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST}) = 0
+573   ioctl(7, SIOCGIFMTU, {ifr_name="eth0", ifr_mtu=1500}) = 0
+573   openat(AT_FDCWD, "/proc/sys/net/ipv4/neigh/eth0/retrans_time", O_RDONLY) = 8
+573   newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(8, "100\n", 1024)            = 4
+573   close(8)                          = 0
+573   read(6, "", 1024)                 = 0
+573   close(6)                          = 0
+573   close(7)                          = 0
+573   newfstatat(AT_FDCWD, "/etc/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmpd.conf", O_RDONLY) = 6
+573   newfstatat(6, "", {st_mode=S_IFREG|0600, st_size=3108, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "###########################################################################\n#\n# snmpd.conf\n# An example configuration file for c"..., 4096) = 3108
+573   write(2, "Turning on AgentX master support.\n", 34) = 34
+573   openat(AT_FDCWD, "/etc/snmp/snmpd.conf.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+573   newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+573   getdents64(7, 0x564426de0060 /* 2 entries */, 32768) = 48
+573   getdents64(7, 0x564426de0060 /* 0 entries */, 32768) = 0
+573   close(7)                          = 0
+573   read(6, "", 4096)                 = 0
+573   close(6)                          = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmpd.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/snmpd.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/snmpd.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/snmpd.0.conf", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmpd.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmpd.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/etc/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmp.conf", O_RDONLY) = 6
+573   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "# As the snmp packages come without MIB files due to license reasons, loading\n# of MIBs is disabled by default. If you added the"..., 4096) = 510
+573   read(6, "", 4096)                 = 0
+573   close(6)                          = 0
+573   openat(AT_FDCWD, "/etc/snmp/snmp.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/snmp.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/snmp.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/snmp.0.conf", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmp.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/snmp.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/etc/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/etc/snmp/agentx.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/snmp/agentx.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/agentx.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/agentx.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/agentx.0.conf", 0x7ffcbbe64bc0, 0) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/agentx.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/agentx.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   brk(0x564426e10000)               = 0x564426e10000
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 6
+573   ioctl(6, SIOCGIFCONF, {ifc_len=320 /* 8 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(6, SIOCGIFCONF, {ifc_len=640 /* 16 * sizeof(struct ifreq) */ => 80 /* 2 * sizeof(struct ifreq) */, ifc_buf=[{ifr_name="lo", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("127.0.0.1")}}, {ifr_name="eth0", ifr_addr={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("172.17.0.2")}}]}) = 0
+573   ioctl(6, SIOCGIFINDEX, {ifr_name="lo", ifr_ifindex=1}) = 0
+573   socket(AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE) = 7
+573   sendto(7, [{nlmsg_len=24, nlmsg_type=0x16 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x100, nlmsg_seq=0, nlmsg_pid=0}, "\x02\x00\x00\x00\x00\x00\x00\x00"], 24, 0, NULL, 0) = 24
+573   recvfrom(7, [[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-2002066641}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968126, tstamp=17968126}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-2002066641}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968156, tstamp=17968156}]]]], 16384, 0, NULL, NULL) = 164
+573   close(7)                          = 0
+573   ioctl(6, SIOCGIFNETMASK, {ifr_name="lo", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.0.0.0")}}) = 0
+573   ioctl(6, SIOCGIFFLAGS, {ifr_name="lo", ifr_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING}) = 0
+573   ioctl(6, SIOCGIFINDEX, {ifr_name="eth0", ifr_ifindex=4486}) = 0
+573   socket(AF_NETLINK, SOCK_DGRAM, NETLINK_ROUTE) = 7
+573   sendto(7, [{nlmsg_len=24, nlmsg_type=0x16 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x100, nlmsg_seq=0, nlmsg_pid=0}, "\x02\x00\x00\x00\x00\x00\x00\x00"], 24, 0, NULL, 0) = 24
+573   recvfrom(7, [[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-1030793914}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968126, tstamp=17968126}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=0, nlmsg_pid=-1030793914}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.2")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=17968156, tstamp=17968156}]]]], 16384, 0, NULL, NULL) = 164
+573   close(7)                          = 0
+573   ioctl(6, SIOCGIFNETMASK, {ifr_name="eth0", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.0.0")}}) = 0
+573   ioctl(6, SIOCGIFFLAGS, {ifr_name="eth0", ifr_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST}) = 0
+573   close(6)                          = 0
+573   openat(AT_FDCWD, "/proc/net/if_inet6", O_RDONLY) = 6
+573   newfstatat(6, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+573   read(6, "", 1024)                 = 0
+573   close(6)                          = 0
+573   newfstatat(AT_FDCWD, "/etc/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/etc/snmp/hosts/127.0.0.1.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/etc/snmp/hosts/127.0.0.1.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/share/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   openat(AT_FDCWD, "/usr/share/snmp/hosts/127.0.0.1.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/usr/share/snmp/hosts/127.0.0.1.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/snmp", 0x7ffcbbe64670, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/root/.snmp", 0x7ffcbbe64670, 0) = -1 ENOENT (No such file or directory)
+573   newfstatat(AT_FDCWD, "/var/lib/snmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+573   newfstatat(AT_FDCWD, "/var/lib/snmp/hosts/127.0.0.1.0.conf", 0x7ffcbbe64670, 0) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/hosts/127.0.0.1.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   openat(AT_FDCWD, "/var/lib/snmp/hosts/127.0.0.1.local.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+573   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 6
+573   uname({sysname="Linux", nodename="cda6ed529fb6", ...}) = 0
+573   getsockopt(6, SOL_SOCKET, SO_SNDBUF, [212992], [4]) = 0
+573   getsockopt(6, SOL_SOCKET, SO_RCVBUF, [212992], [4]) = 0
+573   setsockopt(6, SOL_IP, IP_PKTINFO, [1], 4) = 0
+573   bind(6, {sa_family=AF_INET, sin_port=htons(161), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+573   socket(AF_INET6, SOCK_DGRAM, IPPROTO_IP) = 7
+573   uname({sysname="Linux", nodename="cda6ed529fb6", ...}) = 0
+573   getsockopt(7, SOL_SOCKET, SO_SNDBUF, [212992], [4]) = 0
+573   getsockopt(7, SOL_SOCKET, SO_RCVBUF, [212992], [4]) = 0
+573   setsockopt(7, SOL_IPV6, IPV6_V6ONLY, [1], 4) = 0
+573   bind(7, {sa_family=AF_INET6, sin6_port=htons(161), sin6_flowinfo=htonl(0), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_scope_id=0}, 28) = -1 EADDRNOTAVAIL (Cannot assign requested address)
+573   close(7)                          = 0
+573   write(2, "Error opening specified endpoint \"[::1]\"\n", 41) = 41
+573   write(2, "Server Exiting with code 1\n", 27) = 27
+573   exit_group(1)                     = ?
+573   +++ exited with 1 +++

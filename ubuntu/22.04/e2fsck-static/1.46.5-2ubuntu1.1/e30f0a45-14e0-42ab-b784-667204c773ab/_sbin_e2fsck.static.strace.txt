@@ -1,0 +1,39 @@
+490   execve("/sbin/e2fsck.static", ["/sbin/e2fsck.static"], 0x7ffef9b86ea0 /* 12 vars */) = 0
+490   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc5f26eae0) = -1 EINVAL (Invalid argument)
+490   brk(NULL)                         = 0x1ea8000
+490   brk(0x1ea8e40)                    = 0x1ea8e40
+490   arch_prctl(ARCH_SET_FS, 0x1ea8440) = 0
+490   set_tid_address(0x1ea8710)        = 490
+490   set_robust_list(0x1ea8720, 24)    = 0
+490   rseq(0x1ea8de0, 0x20, 0, 0x53053053) = 0
+490   uname({sysname="Linux", nodename="e7c916ec2723", ...}) = 0
+490   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+490   readlink("/proc/self/exe", "/usr/sbin/e2fsck.static", 4096) = 23
+490   getrandom("\x28\xd4\x1b\xf0\x66\xfa\x08\xf7", 8, GRND_NONBLOCK) = 8
+490   brk(0x1ec9e40)                    = 0x1ec9e40
+490   brk(0x1eca000)                    = 0x1eca000
+490   mprotect(0x5d4000, 36864, PROT_READ) = 0
+490   rt_sigaction(SIGFPE, {sa_handler=0x42dab0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x48d1b0}, NULL, 8) = 0
+490   rt_sigaction(SIGILL, {sa_handler=0x42dab0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x48d1b0}, NULL, 8) = 0
+490   rt_sigaction(SIGBUS, {sa_handler=0x42dab0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x48d1b0}, NULL, 8) = 0
+490   rt_sigaction(SIGSEGV, {sa_handler=0x42dab0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x48d1b0}, NULL, 8) = 0
+490   rt_sigaction(SIGABRT, {sa_handler=0x42dab0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x48d1b0}, NULL, 8) = 0
+490   ioctl(0, TCGETS, 0x7ffc5f26e100)  = -1 ENOTTY (Inappropriate ioctl for device)
+490   getuid()                          = 0
+490   geteuid()                         = 0
+490   getgid()                          = 0
+490   getegid()                         = 0
+490   prctl(PR_GET_DUMPABLE)            = 1 (SUID_DUMP_USER)
+490   getuid()                          = 0
+490   geteuid()                         = 0
+490   getgid()                          = 0
+490   getegid()                         = 0
+490   prctl(PR_GET_DUMPABLE)            = 1 (SUID_DUMP_USER)
+490   openat(AT_FDCWD, "/etc/blkid.conf", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+490   openat(AT_FDCWD, "/run/blkid/blkid.tab", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+490   sysinfo({uptime=197886, loads=[58176, 64256, 64608], totalram=16562298880, freeram=13045338112, sharedram=23891968, bufferram=1482944512, totalswap=4294967296, freeswap=4294967296, procs=235, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+490   write(2, "Usage: /sbin/e2fsck.static [-panyrcdfktvDFV] [-b superblock] [-B blocksize]\n\t\t[-l|-L bad_blocks_file] [-C fd] [-j external_journ"..., 178) = 178
+490   write(2, "\nEmergency help:\n -p                   Automatic repair (no questions)\n -n                   Make no changes to the filesystem\n "..., 328) = 328
+490   write(2, " -v                   Be verbose\n -b superblock        Use alternative superblock\n -B blocksize         Force blocksize when loo"..., 334) = 334
+490   exit_group(16)                    = ?
+490   +++ exited with 16 +++

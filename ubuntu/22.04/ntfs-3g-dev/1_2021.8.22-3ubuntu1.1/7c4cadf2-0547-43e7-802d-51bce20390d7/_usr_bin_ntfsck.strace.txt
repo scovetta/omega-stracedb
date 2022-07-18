@@ -1,0 +1,43 @@
+513   execve("/usr/bin/ntfsck", ["/usr/bin/ntfsck"], 0x7ffd87dcb930 /* 12 vars */) = 0
+513   brk(NULL)                         = 0x55a7a2dfa000
+513   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff3d6fc7e0) = -1 EINVAL (Invalid argument)
+513   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7a5d700000
+513   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+513   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+513   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6317, ...}, AT_EMPTY_PATH) = 0
+513   mmap(NULL, 6317, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7a5d6fe000
+513   close(3)                          = 0
+513   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libntfs-3g.so.89", O_RDONLY|O_CLOEXEC) = 3
+513   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\3003\5\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260d\0\0\0\0\0\0\260d\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+513   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=342656, ...}, AT_EMPTY_PATH) = 0
+513   mmap(NULL, 344728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7a5d6a9000
+513   mmap(0x7f7a5d6b0000, 233472, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f7a5d6b0000
+513   mmap(0x7f7a5d6e9000, 77824, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x40000) = 0x7f7a5d6e9000
+513   mmap(0x7f7a5d6fc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x52000) = 0x7f7a5d6fc000
+513   close(3)                          = 0
+513   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+513   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+513   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+513   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+513   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+513   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+513   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+513   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7a5d481000
+513   mmap(0x7f7a5d4a9000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7a5d4a9000
+513   mmap(0x7f7a5d63e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f7a5d63e000
+513   mmap(0x7f7a5d696000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f7a5d696000
+513   mmap(0x7f7a5d69c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7a5d69c000
+513   close(3)                          = 0
+513   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7a5d47e000
+513   arch_prctl(ARCH_SET_FS, 0x7f7a5d47e740) = 0
+513   set_tid_address(0x7f7a5d47ea10)   = 513
+513   set_robust_list(0x7f7a5d47ea20, 24) = 0
+513   rseq(0x7f7a5d47f0e0, 0x20, 0, 0x53053053) = 0
+513   mprotect(0x7f7a5d696000, 16384, PROT_READ) = 0
+513   mprotect(0x7f7a5d6fc000, 4096, PROT_READ) = 0
+513   mprotect(0x55a7a2242000, 4096, PROT_READ) = 0
+513   mprotect(0x7f7a5d73a000, 8192, PROT_READ) = 0
+513   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+513   munmap(0x7f7a5d6fe000, 6317)      = 0
+513   exit_group(16)                    = ?
+513   +++ exited with 16 +++

@@ -1,0 +1,33 @@
+Usage:
+      /usr/bin/doxygen2man [OPTIONS] <XML file>
+
+ This is a tool to generate API manpages from a doxygen-annotated header file.
+ First run doxygen on the file and then run this program against the main XML file
+ it created and the directory containing the ancilliary files. It will then
+ output a lot of *.3 man page files which you can then ship with your library.
+
+ You will need to invoke this program once for each .h file in your library,
+ using the name of the generated .xml file. This file will usually be called
+ something like <include-file>_8h.xml, eg qbipcs_8h.xml
+
+ If you want HTML output then simply use nroff on the generated files as you
+ would do with any other man page.
+
+       -a            Print ASCII dump of man pages to stdout
+       -m            Write man page files to <output dir>
+       -P            Print PARAMS section
+       -g            Print general man page for the whole header file
+       -c            Use the Copyright date from the header file (if one can be found)
+       -O <dir>      Directory for the original header file. Often needed by -c above
+       -s <s>        Write man pages into section <s> (default: 3)
+       -p <package>  Use <package> name (default: Package)
+       -H <header>   Set header (default: "Programmer's Manual"
+       -I <include>  Set include filename (default taken from xml)
+       -i <prefix>   Prefix for include files. eg qb/ (nothing by default)
+       -C <company>  Company name in copyright (default: "Red Hat")
+       -D <date>     Date to print at top of man pages (format not checked, default: today)
+       -S <year>     Start year to print at end of copyright line (default: 2010)
+       -Y <year>     Year to print at end of copyright line (default: today's year)
+       -o <dir>      Write all man pages to <dir> (default: .)
+       -d <dir>      Directory for XML files (default: ./xml/)
+       -h            Print this usage text

@@ -1,0 +1,1459 @@
+1726  execve("/usr/bin/snap", ["/usr/bin/snap"], 0x7ffd40e0df30 /* 12 vars */) = 0
+1726  brk(NULL)                         = 0x5582ea8f5000
+1726  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe90bd2f00) = -1 EINVAL (Invalid argument)
+1726  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d73f66000
+1726  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1726  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1726  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=9085, ...}, AT_EMPTY_PATH) = 0
+1726  mmap(NULL, 9085, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4d73f63000
+1726  close(3)                          = 0
+1726  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1726  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1726  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1726  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1726  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1726  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1726  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1726  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4d73d3b000
+1726  mmap(0x7f4d73d63000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f4d73d63000
+1726  mmap(0x7f4d73ef8000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f4d73ef8000
+1726  mmap(0x7f4d73f50000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f4d73f50000
+1726  mmap(0x7f4d73f56000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d73f56000
+1726  close(3)                          = 0
+1726  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d73d38000
+1726  arch_prctl(ARCH_SET_FS, 0x7f4d73d38740) = 0
+1726  set_tid_address(0x7f4d73d38a10)   = 1726
+1726  set_robust_list(0x7f4d73d38a20, 24) = 0
+1726  rseq(0x7f4d73d390e0, 0x20, 0, 0x53053053) = 0
+1726  mprotect(0x7f4d73f50000, 16384, PROT_READ) = 0
+1726  mprotect(0x5582e98ab000, 5529600, PROT_READ) = 0
+1726  mprotect(0x7f4d73fa0000, 8192, PROT_READ) = 0
+1726  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1726  munmap(0x7f4d73f63000, 9085)      = 0
+1726  getrandom("\x06\x46\x6f\x5f\x97\xc8\xbb\x2b", 8, GRND_NONBLOCK) = 8
+1726  brk(NULL)                         = 0x5582ea8f5000
+1726  brk(0x5582ea916000)               = 0x5582ea916000
+1726  sched_getaffinity(0, 8192, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+1726  openat(AT_FDCWD, "/sys/kernel/mm/transparent_hugepage/hpage_pmd_size", O_RDONLY) = 3
+1726  read(3, "2097152\n", 20)          = 8
+1726  close(3)                          = 0
+1726  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d73cf8000
+1726  mmap(NULL, 131072, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d73cd8000
+1726  mmap(NULL, 1048576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d73bd8000
+1726  mmap(NULL, 8388608, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d733d8000
+1726  mmap(NULL, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d6f3d8000
+1726  mmap(NULL, 536870912, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d4f3d8000
+1726  mmap(0xc000000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+1726  mmap(NULL, 33554432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d4d3d8000
+1726  mmap(NULL, 2165776, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d4d1c7000
+1726  mmap(0xc000000000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+1726  mmap(0x7f4d73cd8000, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d73cd8000
+1726  mmap(0x7f4d73c58000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d73c58000
+1726  mmap(0x7f4d737de000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d737de000
+1726  mmap(0x7f4d71408000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d71408000
+1726  mmap(0x7f4d5f558000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d5f558000
+1726  mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d4d0c7000
+1726  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d4d0b7000
+1726  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d4d0a7000
+1726  rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+1726  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1726  sigaltstack({ss_sp=0xc000004000, ss_flags=0, ss_size=32768}, NULL) = 0
+1726  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+1726  gettid()                          = 1726
+1726  rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGHUP, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGINT, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGQUIT, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGILL, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGTRAP, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGABRT, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGBUS, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGFPE, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGUSR1, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGSEGV, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGUSR2, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGPIPE, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGALRM, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGTERM, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGSTKFLT, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGCHLD, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGURG, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGXCPU, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGXFSZ, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGVTALRM, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGPROF, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGWINCH, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGIO, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGPWR, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGSYS, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRTMIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_3, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_4, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_5, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_6, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_7, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_8, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_9, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_10, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_11, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_12, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_13, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_14, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_15, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_16, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_17, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_18, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_19, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_20, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_21, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_22, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_23, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_24, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_25, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_26, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_27, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_28, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_29, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_30, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_31, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1726  rt_sigaction(SIGRT_32, {sa_handler=0x5582e8f90d20, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+1726  rt_sigaction(SIGRT_1, {sa_handler=0x7f4d73dcc8f0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f4d73d7d520}, NULL, 8) = 0
+1726  rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+1726  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f4d4c8a6000
+1726  mprotect(0x7f4d4c8a7000, 8388608, PROT_READ|PROT_WRITE) = 0
+1726  rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP RTMIN RT_1], 8) = 0
+1726  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f4d4d0a6910, parent_tid=0x7f4d4d0a6910, exit_signal=0, stack=0x7f4d4c8a6000, stack_size=0x7fff00, tls=0x7f4d4d0a6640}, 88) = -1 ENOSYS (Function not implemented)
+1726  clone(child_stack=0x7f4d4d0a5ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+1731  rseq(0x7f4d4d0a6fe0, 0x20, 0, 0x53053053 <unfinished ...>
+1726  <... clone resumed>, parent_tid=[1731], tls=0x7f4d4d0a6640, child_tidptr=0x7f4d4d0a6910) = 1731
+1731  <... rseq resumed>)               = 0
+1726  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1731  set_robust_list(0x7f4d4d0a6920, 24 <unfinished ...>
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1731  <... set_robust_list resumed>)    = 0
+1726  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1731  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1731  <... rt_sigprocmask resumed>NULL, 8) = 0
+1726  rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+1731  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+1726  <... rt_sigprocmask resumed>[], 8) = 0
+1731  <... mmap resumed>)               = 0x7f4d448a6000
+1726  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+1731  munmap(0x7f4d448a6000, 58040320 <unfinished ...>
+1726  <... mmap resumed>)               = 0x7f4d440a5000
+1731  <... munmap resumed>)             = 0
+1726  mprotect(0x7f4d440a6000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+1731  munmap(0x7f4d4c000000, 9068544 <unfinished ...>
+1726  <... mprotect resumed>)           = 0
+1731  <... munmap resumed>)             = 0
+1726  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+1731  mprotect(0x7f4d48000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+1726  <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+1731  <... mprotect resumed>)           = 0
+1726  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f4d448a5910, parent_tid=0x7f4d448a5910, exit_signal=0, stack=0x7f4d440a5000, stack_size=0x7fff00, tls=0x7f4d448a5640} <unfinished ...>
+1731  sigaltstack(NULL,  <unfinished ...>
+1726  <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+1731  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1726  clone(child_stack=0x7f4d448a4ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+1731  sigaltstack({ss_sp=0xc000076000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1732  rseq(0x7f4d448a5fe0, 0x20, 0, 0x53053053 <unfinished ...>
+1731  <... sigaltstack resumed>NULL)    = 0
+1732  <... rseq resumed>)               = 0
+1726  <... clone resumed>, parent_tid=[1732], tls=0x7f4d448a5640, child_tidptr=0x7f4d448a5910) = 1732
+1732  set_robust_list(0x7f4d448a5920, 24 <unfinished ...>
+1731  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1732  <... set_robust_list resumed>)    = 0
+1726  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1732  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1731  <... rt_sigprocmask resumed>NULL, 8) = 0
+1732  <... rt_sigprocmask resumed>NULL, 8) = 0
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1732  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+1731  gettid( <unfinished ...>
+1732  <... mmap resumed>)               = 0x7f4d3c0a5000
+1726  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1732  munmap(0x7f4d3c0a5000, 66433024 <unfinished ...>
+1731  <... gettid resumed>)             = 1731
+1732  <... munmap resumed>)             = 0
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1732  munmap(0x7f4d44000000, 675840 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... munmap resumed>)             = 0
+1726  rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+1732  mprotect(0x7f4d40000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... mprotect resumed>)           = 0
+1726  <... rt_sigprocmask resumed>[], 8) = 0
+1732  sigaltstack(NULL,  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1726  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+1732  sigaltstack({ss_sp=0xc000080000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... sigaltstack resumed>NULL)    = 0
+1726  <... mmap resumed>)               = 0x7f4d4c0a5000
+1732  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... rt_sigprocmask resumed>NULL, 8) = 0
+1726  mprotect(0x7f4d4c0a6000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+1732  gettid( <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... gettid resumed>)             = 1732
+1726  <... mprotect resumed>)           = 0
+1732  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... mmap resumed>)               = 0x7f4d4c065000
+1726  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+1732  rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... rt_sigprocmask resumed>[], 8) = 0
+1726  <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+1732  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... mmap resumed>)               = 0x7f4d477ff000
+1726  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f4d4c8a5910, parent_tid=0x7f4d4c8a5910, exit_signal=0, stack=0x7f4d4c0a5000, stack_size=0x7fff00, tls=0x7f4d4c8a5640} <unfinished ...>
+1732  mprotect(0x7f4d47800000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... mprotect resumed>)           = 0
+1726  <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+1732  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+1726  clone(child_stack=0x7f4d4c8a4ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+1732  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f4d47fff910, parent_tid=0x7f4d47fff910, exit_signal=0, stack=0x7f4d477ff000, stack_size=0x7fff00, tls=0x7f4d47fff640} <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+1733  rseq(0x7f4d4c8a5fe0, 0x20, 0, 0x53053053 <unfinished ...>
+1732  clone(child_stack=0x7f4d47ffeef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1733  <... rseq resumed>)               = 0
+1726  <... clone resumed>, parent_tid=[1733], tls=0x7f4d4c8a5640, child_tidptr=0x7f4d4c8a5910) = 1733
+1734  rseq(0x7f4d47ffffe0, 0x20, 0, 0x53053053 <unfinished ...>
+1733  set_robust_list(0x7f4d4c8a5920, 24 <unfinished ...>
+1732  <... clone resumed>, parent_tid=[1734], tls=0x7f4d47fff640, child_tidptr=0x7f4d47fff910) = 1734
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... rseq resumed>)               = 0
+1733  <... set_robust_list resumed>)    = 0
+1732  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1726  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1734  set_robust_list(0x7f4d47fff920, 24 <unfinished ...>
+1733  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1732  <... rt_sigprocmask resumed>NULL, 8) = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1734  <... set_robust_list resumed>)    = 0
+1733  <... rt_sigprocmask resumed>NULL, 8) = 0
+1732  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1734  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1733  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+1732  <... rt_sigprocmask resumed>NULL, 8) = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... rt_sigprocmask resumed>NULL, 8) = 0
+1733  <... mmap resumed>)               = 0x7f4d38000000
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1734  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+1733  munmap(0x7f4d3c000000, 67108864 <unfinished ...>
+1732  <... futex resumed>)              = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1734  <... mmap resumed>)               = 0x7f4d30000000
+1733  <... munmap resumed>)             = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1734  munmap(0x7f4d34000000, 67108864 <unfinished ...>
+1733  mprotect(0x7f4d38000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... munmap resumed>)             = 0
+1733  <... mprotect resumed>)           = 0
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  mprotect(0x7f4d30000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+1733  sigaltstack(NULL,  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1734  <... mprotect resumed>)           = 0
+1733  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1734  sigaltstack(NULL,  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1733  sigaltstack({ss_sp=0xc00008c000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1734  sigaltstack({ss_sp=0xc000104000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1734  <... sigaltstack resumed>NULL)    = 0
+1733  <... sigaltstack resumed>NULL)    = 0
+1734  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... rt_sigprocmask resumed>NULL, 8) = 0
+1733  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1734  gettid( <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1734  <... gettid resumed>)             = 1734
+1733  <... rt_sigprocmask resumed>NULL, 8) = 0
+1734  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... futex resumed>)              = 1
+1733  gettid( <unfinished ...>
+1732  <... futex resumed>)              = 0
+1734  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... gettid resumed>)             = 1733
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1734  <... futex resumed>)              = 1
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... rt_sigprocmask resumed>[], 8) = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1726  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... mmap resumed>)               = 0x7f4d46ffe000
+1731  <... nanosleep resumed>NULL)      = 0
+1726  mprotect(0x7f4d46fff000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... mprotect resumed>)           = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1726  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1726  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f4d477fe910, parent_tid=0x7f4d477fe910, exit_signal=0, stack=0x7f4d46ffe000, stack_size=0x7fff00, tls=0x7f4d477fe640} <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  clone(child_stack=0x7f4d477fdef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1735  rseq(0x7f4d477fefe0, 0x20, 0, 0x53053053 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... clone resumed>, parent_tid=[1735], tls=0x7f4d477fe640, child_tidptr=0x7f4d477fe910) = 1735
+1735  <... rseq resumed>)               = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1735  set_robust_list(0x7f4d477fe920, 24 <unfinished ...>
+1726  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1735  <... set_robust_list resumed>)    = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1735  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1735  <... rt_sigprocmask resumed>NULL, 8) = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1735  mmap(0x7f4d34000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+1726  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1735  <... mmap resumed>)               = 0x7f4d34000000
+1731  <... nanosleep resumed>NULL)      = 0
+1735  mprotect(0x7f4d34000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+1726  <... rt_sigprocmask resumed>NULL, 8) = 0
+1735  <... mprotect resumed>)           = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1735  sigaltstack(NULL,  <unfinished ...>
+1726  fcntl(0, F_GETFL <unfinished ...>
+1735  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1735  sigaltstack({ss_sp=0xc000188000, ss_flags=0, ss_size=32768},  <unfinished ...>
+1726  <... fcntl resumed>)              = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1735  <... sigaltstack resumed>NULL)    = 0
+1731  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1735  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1735  <... rt_sigprocmask resumed>NULL, 8) = 0
+1734  <... futex resumed>)              = 0
+1731  <... futex resumed>)              = 1
+1735  gettid( <unfinished ...>
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1735  <... gettid resumed>)             = 1735
+1734  <... nanosleep resumed>NULL)      = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1735  futex(0x5582e9e78598, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1726  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... mmap resumed>)               = 0x7f4d4c025000
+1731  getpid( <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... getpid resumed>)             = 1726
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  tgkill(1726, 1726, SIGURG <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  fcntl(1, F_GETFL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... tgkill resumed>)             = 0
+1726  <... fcntl resumed>)              = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1726, si_uid=0} ---
+1731  <... nanosleep resumed>NULL)      = 0
+1726  rt_sigreturn({mask=[]} <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... rt_sigreturn resumed>)       = 32769
+1731  <... nanosleep resumed>NULL)      = 0
+1726  fcntl(2, F_GETFL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... fcntl resumed>)              = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+1731  <... nanosleep resumed>NULL)      = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  openat(AT_FDCWD, "/etc/os-release", O_RDONLY|O_CLOEXEC <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... openat resumed>)             = 3
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... epoll_create1 resumed>)      = 4
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  pipe2( <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... pipe2 resumed>[5, 6], O_NONBLOCK|O_CLOEXEC) = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  epoll_ctl(4, EPOLL_CTL_ADD, 5, {events=EPOLLIN, data={u32=3924262488, u64=94020758371928}} <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... epoll_ctl resumed>)          = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1275246424, u64=139969964455768}} <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... epoll_ctl resumed>)          = -1 EPERM (Operation not permitted)
+1731  epoll_pwait(4,  <unfinished ...>
+1726  read(3,  <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1726  <... read resumed>"PRETTY_NAME=\"Ubuntu 22.04 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID="..., 4096) = 382
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  read(3,  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... read resumed>"", 3714)       = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  openat(AT_FDCWD, "/proc/version", O_RDONLY|O_CLOEXEC <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... openat resumed>)             = 7
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  epoll_ctl(4, EPOLL_CTL_ADD, 7, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1275246424, u64=139969964455768}} <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... epoll_ctl resumed>)          = 0
+1731  getpid( <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... getpid resumed>)             = 1726
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  tgkill(1726, 1726, SIGURG <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  fcntl(7, F_GETFL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... tgkill resumed>)             = 0
+1726  <... fcntl resumed>)              = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1726, si_uid=0} ---
+1731  <... nanosleep resumed>NULL)      = 0
+1726  rt_sigreturn({mask=[]} <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... rt_sigreturn resumed>)       = 32768
+1731  <... nanosleep resumed>NULL)      = 0
+1726  fcntl(7, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... fcntl resumed>)              = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1726  fstat(7,  <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1726  <... fstat resumed>{st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+1731  <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1275246424, u64=139969964455768}}], 128, 0, NULL, 140731326808208) = 1
+1726  read(7,  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... read resumed>"Linux version 5.10.102.1-microsoft-standard-WSL2 (oe-user@oe-host) (x86_64-msft-linux-gcc (GCC) 9.3.0, GNU ld (GNU Binutils) 2.3"..., 512) = 177
+1731  <... nanosleep resumed>NULL)      = 0
+1726  read(7,  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... read resumed>"", 335)        = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1726  epoll_ctl(4, EPOLL_CTL_DEL, 7, 0xc0000c97fc <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... epoll_ctl resumed>)          = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1726  close(7 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... close resumed>)              = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/meta/snap.yaml",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d42a8, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  getpid( <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... getpid resumed>)             = 1726
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/snap/core/current/usr/share/locale-langpack/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d4858, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/snap/core/current/usr/share/locale/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d4928, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/usr/share/locale-langpack/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d49f8, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/usr/share/locale/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d4ac8, 0) = -1 ENOENT (No such file or directory)
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1726  newfstatat(AT_FDCWD, "/snap/core/current/usr/share/locale-langpack/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d4b98, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/snap/core/current/usr/share/locale/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d4c68, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/usr/share/locale-langpack/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d4d38, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  newfstatat(AT_FDCWD, "/usr/share/locale/LC_MESSAGES/snappy.mo",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d4e08, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... openat resumed>)             = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1731  getpid( <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... getpid resumed>)             = 1726
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  tgkill(1726, 1726, SIGURG <unfinished ...>
+1733  <... futex resumed>)              = 0
+1731  <... tgkill resumed>)             = 0
+1726  newfstatat(AT_FDCWD, "/etc/apparmor.d/cache",  <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... newfstatat resumed>0xc0000d5488, 0) = -1 ENOENT (No such file or directory)
+1731  <... nanosleep resumed>NULL)      = 0
+1726  --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=1726, si_uid=0} ---
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  rt_sigreturn({mask=[]} <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... rt_sigreturn resumed>)       = -1 ENOENT (No such file or directory)
+1731  epoll_pwait(4, [], 128, 0, NULL, 140731326808208) = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  statfs("/sys/firmware/efi/efivars",  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... statfs resumed>0xc0000dc280) = -1 ENOENT (No such file or directory)
+1731  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1726  statfs("/sys/fs/cgroup",  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... statfs resumed>{f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2021765, f_bfree=2021765, f_bavail=2021765, f_files=2021765, f_ffree=2021751, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+1731  <... nanosleep resumed>NULL)      = 0
+1731  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=40000},  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=80000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=160000},  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=320000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=640000},  <unfinished ...>
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1731  <... nanosleep resumed>NULL)      = 0
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  <... futex resumed>)              = 0
+1732  <... nanosleep resumed>NULL)      = 0
+1731  nanosleep({tv_sec=0, tv_nsec=1280000},  <unfinished ...>
+1732  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1732  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = 0
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=2560000},  <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=5120000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  <... futex resumed>)              = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1732  <... nanosleep resumed>NULL)      = 0
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... nanosleep resumed>NULL)      = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1731  epoll_pwait(4,  <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  <... futex resumed>)              = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1731  epoll_pwait(4,  <unfinished ...>
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  <... futex resumed>)              = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 0
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  <... futex resumed>)              = 1
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1733  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1731  epoll_pwait(4,  <unfinished ...>
+1733  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  <... futex resumed>)              = 0
+1733  <... nanosleep resumed>NULL)      = 0
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1733  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1734  <... futex resumed>)              = 0
+1733  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1733  <... futex resumed>)              = 0
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 1
+1733  <... futex resumed>)              = 0
+1734  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1726  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1733  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1734  <... nanosleep resumed>NULL)      = 0
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1731  epoll_pwait(4,  <unfinished ...>
+1734  <... futex resumed>)              = 1
+1733  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 0
+1726  <... futex resumed>)              = 1
+1734  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1733  futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1734  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1726  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1732  <... nanosleep resumed>NULL)      = 0
+1726  <... futex resumed>)              = 0
+1732  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  futex(0x5582e9e485e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1734  <... futex resumed>)              = 0
+1732  <... futex resumed>)              = 1
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+1732  <... futex resumed>)              = 0
+1734  nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+1732  futex(0x5582e9e485e8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1734  <... nanosleep resumed>NULL)      = 0
+1732  <... futex resumed>)              = 1
+1726  <... futex resumed>)              = 0
+1734  futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d46fbe000
+1726  mmap(0xc000400000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc000400000
+1726  ioctl(1, TCGETS, 0xc00047fc2c)    = -1 ENOTTY (Inappropriate ioctl for device)
+1726  ioctl(0, TCGETS, 0xc00047fc2c)    = -1 ENOTTY (Inappropriate ioctl for device)
+1726  uname({sysname="Linux", nodename="7532045ffef6", ...}) = 0
+1726  openat(AT_FDCWD, "/proc/cmdline", O_RDONLY|O_CLOEXEC) = 7
+1726  epoll_ctl(4, EPOLL_CTL_ADD, 7, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1275246424, u64=139969964455768}}) = 0
+1726  fcntl(7, F_GETFL <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... fcntl resumed>)              = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+1731  epoll_pwait(4,  <unfinished ...>
+1726  fcntl(7, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE <unfinished ...>
+1731  <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1275246424, u64=139969964455768}}], 128, 0, NULL, 140731326808208) = 1
+1726  <... fcntl resumed>)              = 0
+1731  nanosleep({tv_sec=0, tv_nsec=10000000},  <unfinished ...>
+1726  fstat(7, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+1726  read(7, "initrd=\\initrd.img panic=-1 nr_cpus=8 swiotlb=force pty.legacy_count=0\n", 512) = 71
+1726  read(7, "", 441)                  = 0
+1726  epoll_ctl(4, EPOLL_CTL_DEL, 7, 0xc00047fa5c) = 0
+1726  close(7)                          = 0
+1726  readlinkat(AT_FDCWD, "/proc/self/exe", "/usr/bin/snap", 128) = 13
+1726  newfstatat(AT_FDCWD, "/snap/snapd/current/usr/bin/snap", 0xc000197218, 0) = -1 ENOENT (No such file or directory)
+1726  newfstatat(AT_FDCWD, "/snap/core/current/usr/bin/snap", 0xc0001972e8, 0) = -1 ENOENT (No such file or directory)
+1726  newfstatat(AT_FDCWD, "/snap/bin/snap", 0xc0001973b8, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+1726  write(1, "The snap command lets you install, configure, refresh and remove snaps.\nSnaps are packages that work across many different Linux"..., 217) = 217
+1726  write(1, "\n", 1)                 = 1
+1726  write(1, "Usage: snap <command> [<options>...]\n", 37 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 37
+1731  epoll_pwait(4,  <unfinished ...>
+1726  write(1, "\n", 1 <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1731  futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1726  <... write resumed>)              = 1
+1732  <... futex resumed>)              = 0
+1731  <... futex resumed>)              = 1
+1732  futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1726  write(1, "Commonly used commands can be classified as follows:\n", 53 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... write resumed>)              = 53
+1731  <... nanosleep resumed>NULL)      = 0
+1726  write(1, "\n", 1 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... write resumed>)              = 1
+1731  <... nanosleep resumed>NULL)      = 0
+1726  write(1, "         Basics: find, info, install, remove, list\n", 51 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... write resumed>)              = 51
+1731  <... nanosleep resumed>NULL)      = 0
+1726  write(1, "        ...more: refresh, revert, switch, disable, enable, create-cohort\n", 73 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... write resumed>)              = 73
+1731  <... nanosleep resumed>NULL)      = 0
+1726  write(1, "        History: changes, tasks, abort, watch\n", 46 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... write resumed>)              = 46
+1731  <... nanosleep resumed>NULL)      = 0
+1726  write(1, "        Daemons: services, start, stop, restart, logs\n", 54 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  <... write resumed>)              = 54
+1731  <... nanosleep resumed>NULL)      = 0
+1726  write(1, "    Permissions: connections, interface, connect, disconnect\n", 61 <unfinished ...>
+1731  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+1726  <... write resumed>)              = 61
+1731  epoll_pwait(4,  <unfinished ...>
+1726  write(1, "  Configuration: get, set, unset, wait\n", 39 <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1726  <... write resumed>)              = 39
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "    App Aliases: alias, aliases, unalias, prefer\n", 49 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 49
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "        Account: login, logout, whoami\n", 39 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 39
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "      Snapshots: saved, save, check-snapshot, restore, forget\n", 62 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 62
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "         Device: model, reboot, recovery\n", 41 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 41
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "      ... Other: warnings, okay, known, ack, version\n", 53 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 53
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "    Development: download, pack, run, try\n", 42 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 42
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "\n", 1 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 1
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "For more information about a command, run 'snap help <command>'.\n", 65 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 65
+1731  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+1726  write(1, "For a short summary of all commands, run 'snap help --all'.\n", 60 <unfinished ...>
+1731  <... nanosleep resumed>NULL)      = 0
+1726  <... write resumed>)              = 60
+1731  epoll_pwait(4,  <unfinished ...>
+1726  exit_group(0 <unfinished ...>
+1731  <... epoll_pwait resumed>[], 128, 0, NULL, 140731326808208) = 0
+1735  <... futex resumed>)              = ?
+1734  <... futex resumed>)              = ?
+1733  <... futex resumed>)              = ?
+1732  <... futex resumed>)              = ?
+1726  <... exit_group resumed>)         = ?
+1735  +++ exited with 0 +++
+1734  +++ exited with 0 +++
+1733  +++ exited with 0 +++
+1732  +++ exited with 0 +++
+1731  +++ exited with 0 +++
+1726  +++ exited with 0 +++

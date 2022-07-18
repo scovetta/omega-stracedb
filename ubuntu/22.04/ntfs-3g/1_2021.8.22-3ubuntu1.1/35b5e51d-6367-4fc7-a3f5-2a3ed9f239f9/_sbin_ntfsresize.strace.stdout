@@ -1,0 +1,28 @@
+ntfsresize v2021.8.22 (libntfs-3g)
+
+Usage: ntfsresize [OPTIONS] DEVICE
+    Resize an NTFS volume non-destructively, safely move any data if needed.
+
+    -c, --check            Check to ensure that the device is ready for resize
+    -i, --info             Estimate the smallest shrunken size or the smallest
+                                expansion size
+    -m, --info-mb-only     Estimate the smallest shrunken size possible,
+                                output size in MB only
+    -s, --size SIZE        Resize volume to SIZE[k|M|G] bytes
+    -x, --expand           Expand to full partition
+
+    -n, --no-action        Do not write to disk
+    -b, --bad-sectors      Support disks having bad sectors
+    -f, --force            Force to progress
+    -P, --no-progress-bar  Don't show progress bar
+    -v, --verbose          More output
+    -V, --version          Display version information
+    -h, --help             Display this help
+
+    The options -i and -x are exclusive of option -s, and -m is exclusive
+    of option -x. If options -i, -m, -s and -x are are all omitted
+    then the NTFS volume will be enlarged to the DEVICE size.
+
+Developers' email address: ntfs-3g-devel@lists.sf.net
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+Ntfsresize FAQ: http://linux-ntfs.sourceforge.net/info/ntfsresize.html

@@ -1,0 +1,54 @@
+username must be specified!
+
+Usage: [OPTION...]
+      --helper-protocol=helper protocol to use     operate as a stdio-based
+                                                   helper
+      --username=STRING                            username
+      --domain=STRING                              domain name
+      --workstation=STRING                         workstation
+      --challenge=STRING                           challenge (HEX encoded)
+      --lm-response=STRING                         LM Response to the
+                                                   challenge (HEX encoded)
+      --nt-response=STRING                         NT or NTLMv2 Response to
+                                                   the challenge (HEX encoded)
+      --password=STRING                            User's plaintext password
+      --request-lm-key                             Retrieve LM session key
+      --request-nt-key                             Retrieve User (NT) session
+                                                   key
+      --use-cached-creds                           Use cached credentials if
+                                                   no password is given
+      --allow-mschapv2                             Explicitly allow MSCHAPv2
+      --offline-logon                              Use cached passwords when
+                                                   DC is offline
+      --diagnostics                                Perform diagnostics on the
+                                                   authentication chain
+      --require-membership-of=STRING               Require that a user be a
+                                                   member of this group
+                                                   (either name or SID) for
+                                                   authentication to succeed
+      --pam-winbind-conf=STRING                    Require that request must
+                                                   set
+                                                   WBFLAG_PAM_CONTACT_TRUSTDOM
+                                                   when krb5 auth is required
+      --target-service=STRING                      Target service (eg http)
+      --target-hostname=STRING                     Target hostname
+
+Help options:
+  -?, --help                                       Show this help message
+      --usage                                      Display brief usage message
+
+Common debug options:
+  -d, --debuglevel=DEBUGLEVEL                      Set debug level
+      --debug-stdout                               Send debug output to
+                                                   standard output
+
+Config file:
+      --configfile=CONFIGFILE                      Use alternative
+                                                   configuration file
+
+Options:
+      --option=name=value                          Set smb.conf option from
+                                                   command line
+
+Version options:
+  -V, --version                                    Print version

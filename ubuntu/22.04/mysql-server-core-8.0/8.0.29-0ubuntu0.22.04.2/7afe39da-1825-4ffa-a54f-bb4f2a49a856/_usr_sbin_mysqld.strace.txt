@@ -1,0 +1,776 @@
+659   execve("/usr/sbin/mysqld", ["/usr/sbin/mysqld"], 0x7ffedceac970 /* 12 vars */) = 0
+659   brk(NULL)                         = 0x55cf163c4000
+659   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe4d2d3aa0) = -1 EINVAL (Invalid argument)
+659   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be3871000
+659   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+659   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6893, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 6893, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4be386f000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicuuc.so.70", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310q\37\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0xU\6\0\0\0\0\0xU\6\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2062664, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 2073312, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be3674000
+659   mmap(0x7f4be36da000, 995328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x66000) = 0x7f4be36da000
+659   mmap(0x7f4be37cd000, 573440, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x159000) = 0x7f4be37cd000
+659   mmap(0x7f4be3859000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e4000) = 0x7f4be3859000
+659   mmap(0x7f4be386d000, 4832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4be386d000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicui18n.so.70", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\3022\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\240j\16\0\0\0\0\0\240j\16\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3328472, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 3334864, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be3345000
+659   mmap(0x7f4be342c000, 1716224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x7f4be342c000
+659   mmap(0x7f4be35cf000, 598016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28a000) = 0x7f4be35cf000
+659   mmap(0x7f4be3661000, 73728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31b000) = 0x7f4be3661000
+659   mmap(0x7f4be3673000, 720, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4be3673000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libevent_core-2.1.so.7", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\3001\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260\177\0\0\0\0\0\0\260\177\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=211136, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 214952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be3310000
+659   mprotect(0x7f4be3318000, 176128, PROT_NONE) = 0
+659   mmap(0x7f4be3318000, 122880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f4be3318000
+659   mmap(0x7f4be3336000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f4be3336000
+659   mmap(0x7f4be3343000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x32000) = 0x7f4be3343000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\00001\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\32\0\31\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P\v\0\0\0\0\0\0P\v\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14256, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be330b000
+659   mmap(0x7f4be330c000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f4be330c000
+659   mmap(0x7f4be330d000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4be330d000
+659   mmap(0x7f4be330e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4be330e000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X)\n\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\30\324\1\0\0\0\0\0\30\324\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=667864, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 669680, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be3267000
+659   mmap(0x7f4be3285000, 372736, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f4be3285000
+659   mmap(0x7f4be32e0000, 118784, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x79000) = 0x7f4be32e0000
+659   mmap(0x7f4be32fd000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x95000) = 0x7f4be32fd000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\325C\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\34\v\0\0\0\0\0(\34\v\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be3265000
+659   mmap(NULL, 4461760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2e23000
+659   mmap(0x7f4be2ed5000, 2478080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7f4be2ed5000
+659   mmap(0x7f4be3132000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30f000) = 0x7f4be3132000
+659   mmap(0x7f4be3204000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e0000) = 0x7f4be3204000
+659   mmap(0x7f4be3262000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4be3262000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\321\f\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X\220\0\0\0\0\0\0X\220\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 843832, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2d54000
+659   mmap(0x7f4be2d5e000, 729088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f4be2d5e000
+659   mmap(0x7f4be2e10000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbc000) = 0x7f4be2e10000
+659   mmap(0x7f4be2e21000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcc000) = 0x7f4be2e21000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libprotobuf-lite.so.23", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210\344\n\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(f\2\0\0\0\0\0(f\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=715848, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 718168, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2ca4000
+659   mmap(0x7f4be2ccb000, 401408, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f4be2ccb000
+659   mmap(0x7f4be2d2d000, 147456, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x89000) = 0x7f4be2d2d000
+659   mmap(0x7f4be2d51000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xac000) = 0x7f4be2d51000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaio.so.1", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x1\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\300\10\0\0\0\0\0\0\300\10\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14456, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 16480, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2c9f000
+659   mmap(0x7f4be2ca0000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f4be2ca0000
+659   mmap(0x7f4be2ca1000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4be2ca1000
+659   mmap(0x7f4be2ca2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4be2ca2000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2c83000
+659   mprotect(0x7f4be2c85000, 98304, PROT_NONE) = 0
+659   mmap(0x7f4be2c85000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4be2c85000
+659   mmap(0x7f4be2c96000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f4be2c96000
+659   mmap(0x7f4be2c9d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f4be2c9d000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240\341\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\36\0\0\0\0\0\0\200\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125152, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 127072, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2c63000
+659   mprotect(0x7f4be2c65000, 114688, PROT_NONE) = 0
+659   mmap(0x7f4be2c65000, 102400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4be2c65000
+659   mmap(0x7f4be2c7e000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f4be2c7e000
+659   mmap(0x7f4be2c81000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f4be2c81000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnuma.so.1", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\264\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\210+\0\0\0\0\0\0\210+\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48152, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be2c61000
+659   mmap(NULL, 51136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2c54000
+659   mmap(0x7f4be2c57000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f4be2c57000
+659   mmap(0x7f4be2c5d000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f4be2c5d000
+659   mmap(0x7f4be2c5f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f4be2c5f000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340t\"\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\"\0!\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\350\220\t\0\0\0\0\0\350\220\t\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2260320, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 2275520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2a28000
+659   mmap(0x7f4be2ac2000, 1118208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000) = 0x7f4be2ac2000
+659   mmap(0x7f4be2bd3000, 458752, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ab000) = 0x7f4be2bd3000
+659   mmap(0x7f4be2c43000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21a000) = 0x7f4be2c43000
+659   mmap(0x7f4be2c51000, 10432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4be2c51000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2941000
+659   mmap(0x7f4be294f000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f4be294f000
+659   mmap(0x7f4be29cb000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f4be29cb000
+659   mmap(0x7f4be2a26000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f4be2a26000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10-\0\0\0\0\0\0\10-\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be2921000
+659   mmap(0x7f4be2924000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f4be2924000
+659   mmap(0x7f4be293b000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f4be293b000
+659   mmap(0x7f4be293f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f4be293f000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+659   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+659   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+659   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+659   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+659   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be26f9000
+659   mmap(0x7f4be2721000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f4be2721000
+659   mmap(0x7f4be28b6000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f4be28b6000
+659   mmap(0x7f4be290e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f4be290e000
+659   mmap(0x7f4be2914000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4be2914000
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libicudata.so.70", O_RDONLY|O_CLOEXEC) = 3
+659   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\300\301\1\0\0\0\0\0\0\0\0@\08\0\n\0@\0\26\0\25\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\4\0\0\0\0\0\0`\4\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29476472, ...}, AT_EMPTY_PATH) = 0
+659   mmap(NULL, 29478936, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4be0adb000
+659   mmap(0x7f4be0adc000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f4be0adc000
+659   mmap(0x7f4be0add000, 29466624, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4be0add000
+659   mmap(0x7f4be26f7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c1b000) = 0x7f4be26f7000
+659   close(3)                          = 0
+659   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be0ad9000
+659   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be0ad7000
+659   arch_prctl(ARCH_SET_FS, 0x7f4be0ad8300) = 0
+659   set_tid_address(0x7f4be0ad85d0)   = 659
+659   set_robust_list(0x7f4be0ad85e0, 24) = 0
+659   rseq(0x7f4be0ad8ca0, 0x20, 0, 0x53053053) = 0
+659   mprotect(0x7f4be26f7000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be290e000, 16384, PROT_READ) = 0
+659   mprotect(0x7f4be293f000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be2a26000, 4096, PROT_READ) = 0
+659   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be0ad5000
+659   mprotect(0x7f4be2c43000, 45056, PROT_READ) = 0
+659   mprotect(0x7f4be2c5f000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be2c81000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be2c9d000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be2ca2000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be2d51000, 8192, PROT_READ) = 0
+659   mprotect(0x7f4be2e21000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be3204000, 372736, PROT_READ) = 0
+659   mprotect(0x7f4be32fd000, 40960, PROT_READ) = 0
+659   mprotect(0x7f4be3343000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be330e000, 4096, PROT_READ) = 0
+659   mprotect(0x7f4be3859000, 77824, PROT_READ) = 0
+659   mprotect(0x7f4be3661000, 69632, PROT_READ) = 0
+659   mprotect(0x55cf15768000, 1437696, PROT_READ) = 0
+659   mprotect(0x7f4be38ab000, 8192, PROT_READ) = 0
+659   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+659   munmap(0x7f4be386f000, 6893)      = 0
+659   getrandom("\x9e\x3d\x01\xe4\xf1\xd3\x1b\xcc", 8, GRND_NONBLOCK) = 8
+659   brk(NULL)                         = 0x55cf163c4000
+659   brk(0x55cf163e5000)               = 0x55cf163e5000
+659   openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 3
+659   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+659   read(3, "Name:\tmysqld\nUmask:\t0022\nState:\tR (running)\nTgid:\t659\nNgid:\t0\nPid:\t659\nPPid:\t658\nTracerPid:\t663\nUid:\t0\t0\t0\t0\nGid:\t0\t0\t0\t0\nFDSize"..., 1024) = 1024
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/sys/devices/system/node", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+659   sched_getaffinity(0, 512, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+659   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+659   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+659   getdents64(3, 0x55cf163d6800 /* 23 entries */, 32768) = 656
+659   getdents64(3, 0x55cf163d6800 /* 0 entries */, 32768) = 0
+659   close(3)                          = 0
+659   openat(AT_FDCWD, "/proc/self/status", O_RDONLY) = 3
+659   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+659   read(3, "Name:\tmysqld\nUmask:\t0022\nState:\tR (running)\nTgid:\t659\nNgid:\t0\nPid:\t659\nPPid:\t658\nTracerPid:\t663\nUid:\t0\t0\t0\t0\nGid:\t0\t0\t0\t0\nFDSize"..., 1024) = 1024
+659   read(3, "y_ctxt_switches:\t0\n", 1024) = 19
+659   read(3, "", 1024)                 = 0
+659   close(3)                          = 0
+659   futex(0x7f4be2c5177c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   get_mempolicy(NULL, NULL, 0, NULL, 0) = -1 EPERM (Operation not permitted)
+659   brk(0x55cf16406000)               = 0x55cf16406000
+659   openat(AT_FDCWD, "/proc/meminfo", O_RDONLY) = 3
+659   read(3, "MemTotal:       16174120 kB\nMemFree:        12870136 kB\nMemAvailable:   15344636 kB\nBuffers:         1343236 kB\nCached:         "..., 8191) = 1391
+659   close(3)                          = 0
+659   newfstatat(AT_FDCWD, "/etc/my.cnf", 0x7ffe4d2cf470, 0) = -1 ENOENT (No such file or directory)
+659   newfstatat(AT_FDCWD, "/etc/mysql/my.cnf", 0x7ffe4d2cf470, 0) = -1 ENOENT (No such file or directory)
+659   newfstatat(AT_FDCWD, "/root/.my.cnf", 0x7ffe4d2cf470, 0) = -1 ENOENT (No such file or directory)
+659   brk(0x55cf16427000)               = 0x55cf16427000
+659   readlink("/var", 0x7ffe4d2d22a0, 1023) = -1 EINVAL (Invalid argument)
+659   readlink("/var/lib", 0x7ffe4d2d22a0, 1023) = -1 EINVAL (Invalid argument)
+659   readlink("/var/lib/mysql", 0x7ffe4d2d22a0, 1023) = -1 ENOENT (No such file or directory)
+659   faccessat2(AT_FDCWD, "/var/lib/mysql/", F_OK, AT_EACCESS) = -1 ENOENT (No such file or directory)
+659   newfstatat(AT_FDCWD, "/var/lib/mysql/mysqld-auto.cnf", 0x7ffe4d2d3090, 0) = -1 ENOENT (No such file or directory)
+659   brk(0x55cf16449000)               = 0x55cf16449000
+659   prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=54704800}) = 0
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355283
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   times({tms_utime=1 /* 0.01 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355284
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=57391900}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=57513800}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=57604000}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=57729800}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=57850700}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=57971000}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=58091400}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=58211500}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=58349000}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=58490000}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=58620800}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=58757800}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=58891800}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59035600}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59178600}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59326700}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59447700}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59571300}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59691700}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59812000}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=59961500}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=60093500}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=60226800}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=60354700}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=60475300}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=60595400}) = 0
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355287
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355287
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355287
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355287
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355288
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355289
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355290
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=3 /* 0.03 s */, tms_stime=3 /* 0.03 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355291
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355292
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355293
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355294
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355295
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=4 /* 0.04 s */, tms_cutime=0, tms_cstime=0}) = 4312355296
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355297
+659   times({tms_utime=4 /* 0.04 s */, tms_stime=5 /* 0.05 s */, tms_cutime=0, tms_cstime=0}) = 4312355298
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=92241700}) = 0
+659   clock_gettime(CLOCK_THREAD_CPUTIME_ID, {tv_sec=0, tv_nsec=92381500}) = 0
+659   brk(0x55cf1646c000)               = 0x55cf1646c000
+659   brk(0x55cf1648e000)               = 0x55cf1648e000
+659   mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be0a94000
+659   brk(0x55cf164b0000)               = 0x55cf164b0000
+659   mmap(NULL, 1761280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be08e6000
+659   mmap(NULL, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4be07e8000
+659   mmap(NULL, 14880768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bdf9b7000
+659   mmap(NULL, 10244096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bdeff2000
+659   mmap(NULL, 10244096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bde62d000
+659   mmap(NULL, 3440640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bde2e5000
+659   mmap(NULL, 42242048, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bdba9c000
+659   mmap(NULL, 10244096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bdb0d7000
+659   mmap(NULL, 10244096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bda712000
+659   mmap(NULL, 163840, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bda6ea000
+659   mmap(NULL, 1101824, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bda5dd000
+659   mmap(NULL, 5361664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bda0c0000
+659   mmap(NULL, 1437696, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd9f61000
+659   mmap(NULL, 11214848, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd94af000
+659   brk(0x55cf164d7000)               = 0x55cf164d7000
+659   brk(0x55cf164fc000)               = 0x55cf164fc000
+659   brk(0x55cf16522000)               = 0x55cf16522000
+659   brk(0x55cf16547000)               = 0x55cf16547000
+659   brk(0x55cf1656b000)               = 0x55cf1656b000
+659   brk(0x55cf16590000)               = 0x55cf16590000
+659   brk(0x55cf165b5000)               = 0x55cf165b5000
+659   brk(0x55cf165da000)               = 0x55cf165da000
+659   brk(0x55cf165ff000)               = 0x55cf165ff000
+659   brk(0x55cf16624000)               = 0x55cf16624000
+659   brk(0x55cf16649000)               = 0x55cf16649000
+659   brk(0x55cf1666e000)               = 0x55cf1666e000
+659   brk(0x55cf16693000)               = 0x55cf16693000
+659   brk(0x55cf166b8000)               = 0x55cf166b8000
+659   brk(0x55cf166dd000)               = 0x55cf166dd000
+659   brk(0x55cf16702000)               = 0x55cf16702000
+659   brk(0x55cf16727000)               = 0x55cf16727000
+659   brk(0x55cf1674c000)               = 0x55cf1674c000
+659   brk(0x55cf16771000)               = 0x55cf16771000
+659   brk(0x55cf16796000)               = 0x55cf16796000
+659   brk(0x55cf167bb000)               = 0x55cf167bb000
+659   brk(0x55cf167e0000)               = 0x55cf167e0000
+659   brk(0x55cf16805000)               = 0x55cf16805000
+659   brk(0x55cf1682a000)               = 0x55cf1682a000
+659   brk(0x55cf1684f000)               = 0x55cf1684f000
+659   brk(0x55cf16874000)               = 0x55cf16874000
+659   brk(0x55cf16899000)               = 0x55cf16899000
+659   brk(0x55cf168be000)               = 0x55cf168be000
+659   brk(0x55cf168e3000)               = 0x55cf168e3000
+659   brk(0x55cf16908000)               = 0x55cf16908000
+659   brk(0x55cf1692d000)               = 0x55cf1692d000
+659   brk(0x55cf16952000)               = 0x55cf16952000
+659   brk(0x55cf16977000)               = 0x55cf16977000
+659   brk(0x55cf1699c000)               = 0x55cf1699c000
+659   brk(0x55cf169c1000)               = 0x55cf169c1000
+659   brk(0x55cf169e6000)               = 0x55cf169e6000
+659   brk(0x55cf16a0b000)               = 0x55cf16a0b000
+659   brk(0x55cf16a30000)               = 0x55cf16a30000
+659   brk(0x55cf16a55000)               = 0x55cf16a55000
+659   brk(0x55cf16a7a000)               = 0x55cf16a7a000
+659   brk(0x55cf16a9f000)               = 0x55cf16a9f000
+659   brk(0x55cf16ac4000)               = 0x55cf16ac4000
+659   brk(0x55cf16ae9000)               = 0x55cf16ae9000
+659   brk(0x55cf16b0e000)               = 0x55cf16b0e000
+659   brk(0x55cf16b33000)               = 0x55cf16b33000
+659   brk(0x55cf16b58000)               = 0x55cf16b58000
+659   brk(0x55cf16b7d000)               = 0x55cf16b7d000
+659   brk(0x55cf16ba2000)               = 0x55cf16ba2000
+659   brk(0x55cf16bc7000)               = 0x55cf16bc7000
+659   brk(0x55cf16bec000)               = 0x55cf16bec000
+659   brk(0x55cf16c11000)               = 0x55cf16c11000
+659   brk(0x55cf16c36000)               = 0x55cf16c36000
+659   brk(0x55cf16c5b000)               = 0x55cf16c5b000
+659   brk(0x55cf16c80000)               = 0x55cf16c80000
+659   brk(0x55cf16ca5000)               = 0x55cf16ca5000
+659   brk(0x55cf16cca000)               = 0x55cf16cca000
+659   brk(0x55cf16cef000)               = 0x55cf16cef000
+659   brk(0x55cf16d14000)               = 0x55cf16d14000
+659   brk(0x55cf16d39000)               = 0x55cf16d39000
+659   brk(0x55cf16d5e000)               = 0x55cf16d5e000
+659   brk(0x55cf16d83000)               = 0x55cf16d83000
+659   brk(0x55cf16da8000)               = 0x55cf16da8000
+659   brk(0x55cf16dcd000)               = 0x55cf16dcd000
+659   brk(0x55cf16df2000)               = 0x55cf16df2000
+659   brk(0x55cf16e17000)               = 0x55cf16e17000
+659   brk(0x55cf16e3c000)               = 0x55cf16e3c000
+659   brk(0x55cf16e61000)               = 0x55cf16e61000
+659   brk(0x55cf16e86000)               = 0x55cf16e86000
+659   brk(0x55cf16eaa000)               = 0x55cf16eaa000
+659   brk(0x55cf16ecf000)               = 0x55cf16ecf000
+659   brk(0x55cf16ef4000)               = 0x55cf16ef4000
+659   brk(0x55cf16f19000)               = 0x55cf16f19000
+659   brk(0x55cf16f3e000)               = 0x55cf16f3e000
+659   brk(0x55cf16f63000)               = 0x55cf16f63000
+659   brk(0x55cf16f88000)               = 0x55cf16f88000
+659   brk(0x55cf16fad000)               = 0x55cf16fad000
+659   brk(0x55cf16fd2000)               = 0x55cf16fd2000
+659   brk(0x55cf16ff7000)               = 0x55cf16ff7000
+659   brk(0x55cf1701c000)               = 0x55cf1701c000
+659   brk(0x55cf17041000)               = 0x55cf17041000
+659   brk(0x55cf17066000)               = 0x55cf17066000
+659   brk(0x55cf1708b000)               = 0x55cf1708b000
+659   brk(0x55cf170b0000)               = 0x55cf170b0000
+659   brk(0x55cf170d5000)               = 0x55cf170d5000
+659   brk(0x55cf170fa000)               = 0x55cf170fa000
+659   mmap(NULL, 8298496, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd8cc5000
+659   mmap(NULL, 454656, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd8c56000
+659   mmap(NULL, 270336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd8c14000
+659   mmap(NULL, 3813376, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd8871000
+659   mmap(NULL, 3813376, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd84ce000
+659   mmap(NULL, 884736, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd83f6000
+659   mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd83d5000
+659   mmap(NULL, 2625536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd8154000
+659   mmap(NULL, 2625536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd7ed3000
+659   mmap(NULL, 2625536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd7c52000
+659   mmap(NULL, 2625536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd79d1000
+659   brk(0x55cf17134000)               = 0x55cf17134000
+659   mmap(NULL, 2682880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd7742000
+659   mmap(NULL, 720896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd7692000
+659   mmap(NULL, 5607424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd7139000
+659   brk(0x55cf1715c000)               = 0x55cf1715c000
+659   brk(0x55cf17181000)               = 0x55cf17181000
+659   brk(0x55cf171a6000)               = 0x55cf171a6000
+659   brk(0x55cf171cb000)               = 0x55cf171cb000
+659   brk(0x55cf171f0000)               = 0x55cf171f0000
+659   brk(0x55cf17215000)               = 0x55cf17215000
+659   brk(0x55cf1723a000)               = 0x55cf1723a000
+659   brk(0x55cf1725f000)               = 0x55cf1725f000
+659   brk(0x55cf17284000)               = 0x55cf17284000
+659   brk(0x55cf172a9000)               = 0x55cf172a9000
+659   brk(0x55cf172ce000)               = 0x55cf172ce000
+659   brk(0x55cf172f3000)               = 0x55cf172f3000
+659   brk(0x55cf17318000)               = 0x55cf17318000
+659   brk(0x55cf1733d000)               = 0x55cf1733d000
+659   brk(0x55cf17362000)               = 0x55cf17362000
+659   brk(0x55cf17387000)               = 0x55cf17387000
+659   brk(0x55cf173ac000)               = 0x55cf173ac000
+659   brk(0x55cf173d0000)               = 0x55cf173d0000
+659   brk(0x55cf173f5000)               = 0x55cf173f5000
+659   brk(0x55cf1741a000)               = 0x55cf1741a000
+659   brk(0x55cf1743f000)               = 0x55cf1743f000
+659   brk(0x55cf17464000)               = 0x55cf17464000
+659   brk(0x55cf17489000)               = 0x55cf17489000
+659   brk(0x55cf174ae000)               = 0x55cf174ae000
+659   brk(0x55cf174d3000)               = 0x55cf174d3000
+659   brk(0x55cf174f8000)               = 0x55cf174f8000
+659   brk(0x55cf1751d000)               = 0x55cf1751d000
+659   brk(0x55cf17542000)               = 0x55cf17542000
+659   brk(0x55cf17567000)               = 0x55cf17567000
+659   brk(0x55cf1758c000)               = 0x55cf1758c000
+659   brk(0x55cf175b1000)               = 0x55cf175b1000
+659   brk(0x55cf175d6000)               = 0x55cf175d6000
+659   brk(0x55cf175fb000)               = 0x55cf175fb000
+659   brk(0x55cf17620000)               = 0x55cf17620000
+659   brk(0x55cf17645000)               = 0x55cf17645000
+659   brk(0x55cf1766a000)               = 0x55cf1766a000
+659   brk(0x55cf1768f000)               = 0x55cf1768f000
+659   brk(0x55cf176b4000)               = 0x55cf176b4000
+659   brk(0x55cf176d9000)               = 0x55cf176d9000
+659   brk(0x55cf176fe000)               = 0x55cf176fe000
+659   brk(0x55cf17723000)               = 0x55cf17723000
+659   brk(0x55cf17748000)               = 0x55cf17748000
+659   mmap(NULL, 4149248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd6d44000
+659   brk(0x55cf17779000)               = 0x55cf17779000
+659   mmap(NULL, 2682880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd6ab5000
+659   mmap(NULL, 720896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd6a05000
+659   mmap(NULL, 5607424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd64ac000
+659   brk(0x55cf177a2000)               = 0x55cf177a2000
+659   brk(0x55cf177c7000)               = 0x55cf177c7000
+659   brk(0x55cf177ec000)               = 0x55cf177ec000
+659   brk(0x55cf17811000)               = 0x55cf17811000
+659   brk(0x55cf17836000)               = 0x55cf17836000
+659   brk(0x55cf1785b000)               = 0x55cf1785b000
+659   brk(0x55cf17880000)               = 0x55cf17880000
+659   brk(0x55cf178a5000)               = 0x55cf178a5000
+659   brk(0x55cf178ca000)               = 0x55cf178ca000
+659   brk(0x55cf178ee000)               = 0x55cf178ee000
+659   brk(0x55cf17913000)               = 0x55cf17913000
+659   brk(0x55cf17938000)               = 0x55cf17938000
+659   brk(0x55cf1795d000)               = 0x55cf1795d000
+659   brk(0x55cf17982000)               = 0x55cf17982000
+659   brk(0x55cf179a7000)               = 0x55cf179a7000
+659   brk(0x55cf179cc000)               = 0x55cf179cc000
+659   brk(0x55cf179f1000)               = 0x55cf179f1000
+659   brk(0x55cf17a16000)               = 0x55cf17a16000
+659   brk(0x55cf17a3b000)               = 0x55cf17a3b000
+659   brk(0x55cf17a60000)               = 0x55cf17a60000
+659   brk(0x55cf17a85000)               = 0x55cf17a85000
+659   brk(0x55cf17aaa000)               = 0x55cf17aaa000
+659   brk(0x55cf17acf000)               = 0x55cf17acf000
+659   brk(0x55cf17af4000)               = 0x55cf17af4000
+659   brk(0x55cf17b19000)               = 0x55cf17b19000
+659   brk(0x55cf17b3e000)               = 0x55cf17b3e000
+659   brk(0x55cf17b63000)               = 0x55cf17b63000
+659   brk(0x55cf17b88000)               = 0x55cf17b88000
+659   brk(0x55cf17bad000)               = 0x55cf17bad000
+659   brk(0x55cf17bd2000)               = 0x55cf17bd2000
+659   brk(0x55cf17bf7000)               = 0x55cf17bf7000
+659   brk(0x55cf17c1c000)               = 0x55cf17c1c000
+659   brk(0x55cf17c41000)               = 0x55cf17c41000
+659   brk(0x55cf17c66000)               = 0x55cf17c66000
+659   brk(0x55cf17c8b000)               = 0x55cf17c8b000
+659   brk(0x55cf17cb0000)               = 0x55cf17cb0000
+659   brk(0x55cf17cd5000)               = 0x55cf17cd5000
+659   brk(0x55cf17cfa000)               = 0x55cf17cfa000
+659   brk(0x55cf17d1f000)               = 0x55cf17d1f000
+659   brk(0x55cf17d44000)               = 0x55cf17d44000
+659   brk(0x55cf17d69000)               = 0x55cf17d69000
+659   brk(0x55cf17d8e000)               = 0x55cf17d8e000
+659   mmap(NULL, 4149248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd60b7000
+659   brk(0x55cf17dc3000)               = 0x55cf17dc3000
+659   mmap(NULL, 2682880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd5e28000
+659   mmap(NULL, 720896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd5d78000
+659   mmap(NULL, 5607424, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd581f000
+659   brk(0x55cf17dec000)               = 0x55cf17dec000
+659   brk(0x55cf17e10000)               = 0x55cf17e10000
+659   brk(0x55cf17e35000)               = 0x55cf17e35000
+659   brk(0x55cf17e5a000)               = 0x55cf17e5a000
+659   brk(0x55cf17e7f000)               = 0x55cf17e7f000
+659   brk(0x55cf17ea4000)               = 0x55cf17ea4000
+659   brk(0x55cf17ec9000)               = 0x55cf17ec9000
+659   brk(0x55cf17eee000)               = 0x55cf17eee000
+659   brk(0x55cf17f13000)               = 0x55cf17f13000
+659   brk(0x55cf17f38000)               = 0x55cf17f38000
+659   brk(0x55cf17f5d000)               = 0x55cf17f5d000
+659   brk(0x55cf17f82000)               = 0x55cf17f82000
+659   brk(0x55cf17fa7000)               = 0x55cf17fa7000
+659   brk(0x55cf17fcc000)               = 0x55cf17fcc000
+659   brk(0x55cf17ff1000)               = 0x55cf17ff1000
+659   brk(0x55cf18016000)               = 0x55cf18016000
+659   brk(0x55cf1803b000)               = 0x55cf1803b000
+659   brk(0x55cf18060000)               = 0x55cf18060000
+659   brk(0x55cf18085000)               = 0x55cf18085000
+659   brk(0x55cf180aa000)               = 0x55cf180aa000
+659   brk(0x55cf180cf000)               = 0x55cf180cf000
+659   brk(0x55cf180f4000)               = 0x55cf180f4000
+659   brk(0x55cf18119000)               = 0x55cf18119000
+659   brk(0x55cf1813e000)               = 0x55cf1813e000
+659   brk(0x55cf18163000)               = 0x55cf18163000
+659   brk(0x55cf18188000)               = 0x55cf18188000
+659   brk(0x55cf181ad000)               = 0x55cf181ad000
+659   brk(0x55cf181d2000)               = 0x55cf181d2000
+659   brk(0x55cf181f7000)               = 0x55cf181f7000
+659   brk(0x55cf1821c000)               = 0x55cf1821c000
+659   brk(0x55cf18241000)               = 0x55cf18241000
+659   brk(0x55cf18266000)               = 0x55cf18266000
+659   brk(0x55cf1828b000)               = 0x55cf1828b000
+659   brk(0x55cf182b0000)               = 0x55cf182b0000
+659   brk(0x55cf182d5000)               = 0x55cf182d5000
+659   brk(0x55cf182fa000)               = 0x55cf182fa000
+659   brk(0x55cf1831f000)               = 0x55cf1831f000
+659   brk(0x55cf18344000)               = 0x55cf18344000
+659   brk(0x55cf18369000)               = 0x55cf18369000
+659   brk(0x55cf1838e000)               = 0x55cf1838e000
+659   brk(0x55cf183b3000)               = 0x55cf183b3000
+659   brk(0x55cf183d8000)               = 0x55cf183d8000
+659   mmap(NULL, 4149248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4bd542a000
+659   brk(0x55cf18405000)               = 0x55cf18405000
+659   brk(0x55cf1842c000)               = 0x55cf1842c000
+659   futex(0x7f4be3261ba4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261ba0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261b9c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261ef0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261b94, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261b90, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261778, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261a00, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261748, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   brk(0x55cf1844d000)               = 0x55cf1844d000
+659   futex(0x7f4be3261b98, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   openat(AT_FDCWD, "/usr/lib/ssl/openssl.cnf", O_RDONLY) = 3
+659   futex(0x7f4be32614d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=12419, ...}, AT_EMPTY_PATH) = 0
+659   read(3, "#\n# OpenSSL example configuration file.\n# See doc/man5/config.pod for more info.\n#\n# This is mostly being used for generation of"..., 4096) = 4096
+659   read(3, "r type CA, the listed attributes must be the same, and the optional\n# and supplied fields are just that :-)\npolicy\t\t= policy_mat"..., 4096) = 4096
+659   read(3, "r:copy\n\n# DER hex encoding of an extension: beware experts only!\n# obj=DER:02:03\n# Where 'obj' is a standard or added object\n# Y"..., 4096) = 4096
+659   read(3, "ertout # insta.cert.pem\n\n[ssl_sect]\nsystem_default = system_default_sect\n\n[system_default_sect]\nCipherString = DEFAULT:@SECLEVEL"..., 4096) = 131
+659   read(3, "", 4096)                 = 0
+659   close(3)                          = 0
+659   futex(0x7f4be3261920, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261b80, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261b7c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be326170c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be3261b8c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be330a7c0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   sysinfo({uptime=174181, loads=[67616, 70336, 67072], totalram=16562298880, freeram=12953075712, sharedram=23891968, bufferram=1375473664, totalswap=4294967296, freeswap=4294967296, procs=221, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+659   futex(0x7f4be330a7d4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   futex(0x7f4be330a7d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   umask(026)                        = 022
+659   brk(0x55cf1846e000)               = 0x55cf1846e000
+659   openat(AT_FDCWD, "/usr/sbin/mysqld.my", O_RDONLY) = -1 ENOENT (No such file or directory)
+659   geteuid()                         = 0
+659   sched_getaffinity(659, 128, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+659   gettid()                          = 659
+659   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+659   uname({sysname="Linux", nodename="a9a660df1e91", ...}) = 0
+659   brk(0x55cf18497000)               = 0x55cf18497000
+659   brk(0x55cf1847c000)               = 0x55cf1847c000
+659   readlink("/usr", 0x7ffe4d2d2650, 1023) = -1 EINVAL (Invalid argument)
+659   faccessat2(AT_FDCWD, "/usr/", F_OK, AT_EACCESS) = 0
+659   readlink("/var", 0x7ffe4d2d2650, 1023) = -1 EINVAL (Invalid argument)
+659   readlink("/var/lib", 0x7ffe4d2d2650, 1023) = -1 EINVAL (Invalid argument)
+659   readlink("/var/lib/mysql", 0x7ffe4d2d2650, 1023) = -1 ENOENT (No such file or directory)
+659   faccessat2(AT_FDCWD, "/var/lib/mysql/", F_OK, AT_EACCESS) = -1 ENOENT (No such file or directory)
+659   newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+659   readlink("/var", 0x7ffe4d2d2650, 1023) = -1 EINVAL (Invalid argument)
+659   readlink("/var/lib", 0x7ffe4d2d2650, 1023) = -1 EINVAL (Invalid argument)
+659   readlink("/var/lib/mysql-files", 0x7ffe4d2d2650, 1023) = -1 ENOENT (No such file or directory)
+659   write(2, "mysqld: ", 8)           = 8
+659   write(2, "Error on realpath() on '/var/lib/mysql-files' (Error 2 - No such file or directory)", 83) = 83
+659   write(2, "\n", 1)                 = 1
+659   write(2, "2022-07-18T07:52:00.904056Z 0 [ERROR] [MY-010095] [Server] Failed to access directory for --secure-file-priv. Please make sure t"..., 222) = 222
+659   write(2, "2022-07-18T07:52:00.905000Z 0 [ERROR] [MY-010119] [Server] Aborting\n", 68) = 68
+659   futex(0x7f4be386e090, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+659   munmap(0x7f4be08e6000, 1761280)   = 0
+659   munmap(0x7f4be07e8000, 1040384)   = 0
+659   munmap(0x7f4bdf9b7000, 14880768)  = 0
+659   munmap(0x7f4bdeff2000, 10244096)  = 0
+659   munmap(0x7f4bde62d000, 10244096)  = 0
+659   munmap(0x7f4bde2e5000, 3440640)   = 0
+659   munmap(0x7f4bdba9c000, 42242048)  = 0
+659   munmap(0x7f4bdb0d7000, 10244096)  = 0
+659   munmap(0x7f4bda712000, 10244096)  = 0
+659   munmap(0x7f4bd7742000, 2682880)   = 0
+659   munmap(0x7f4bd7692000, 720896)    = 0
+659   munmap(0x7f4bd7139000, 5607424)   = 0
+659   munmap(0x7f4bd6d44000, 4149248)   = 0
+659   munmap(0x7f4bd5e28000, 2682880)   = 0
+659   munmap(0x7f4bd5d78000, 720896)    = 0
+659   munmap(0x7f4bd581f000, 5607424)   = 0
+659   munmap(0x7f4bd542a000, 4149248)   = 0
+659   munmap(0x7f4bd6ab5000, 2682880)   = 0
+659   munmap(0x7f4bd6a05000, 720896)    = 0
+659   munmap(0x7f4bd64ac000, 5607424)   = 0
+659   munmap(0x7f4bd60b7000, 4149248)   = 0
+659   munmap(0x7f4bda6ea000, 163840)    = 0
+659   munmap(0x7f4be0a94000, 266240)    = 0
+659   munmap(0x7f4bda5dd000, 1101824)   = 0
+659   munmap(0x7f4bda0c0000, 5361664)   = 0
+659   munmap(0x7f4bd9f61000, 1437696)   = 0
+659   munmap(0x7f4bd94af000, 11214848)  = 0
+659   munmap(0x7f4bd8cc5000, 8298496)   = 0
+659   munmap(0x7f4bd8c56000, 454656)    = 0
+659   munmap(0x7f4bd8c14000, 270336)    = 0
+659   munmap(0x7f4bd8871000, 3813376)   = 0
+659   munmap(0x7f4bd84ce000, 3813376)   = 0
+659   munmap(0x7f4bd83f6000, 884736)    = 0
+659   munmap(0x7f4bd83d5000, 135168)    = 0
+659   munmap(0x7f4bd8154000, 2625536)   = 0
+659   munmap(0x7f4bd7ed3000, 2625536)   = 0
+659   munmap(0x7f4bd7c52000, 2625536)   = 0
+659   munmap(0x7f4bd79d1000, 2625536)   = 0
+659   exit_group(1)                     = ?
+659   +++ exited with 1 +++

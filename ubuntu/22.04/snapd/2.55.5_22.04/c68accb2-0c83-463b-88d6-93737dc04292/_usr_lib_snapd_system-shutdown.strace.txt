@@ -1,0 +1,19 @@
+1969  execve("/usr/lib/snapd/system-shutdown", ["/usr/lib/snapd/system-shutdown"], 0x7ffd35f6c490 /* 12 vars */) = 0
+1969  arch_prctl(0x3001 /* ARCH_??? */, 0x7fff721fb120) = -1 EINVAL (Invalid argument)
+1969  brk(NULL)                         = 0x13dd000
+1969  brk(0x13dddc0)                    = 0x13dddc0
+1969  arch_prctl(ARCH_SET_FS, 0x13dd3c0) = 0
+1969  set_tid_address(0x13dd690)        = 1969
+1969  set_robust_list(0x13dd6a0, 24)    = 0
+1969  rseq(0x13ddd60, 0x20, 0, 0x53053053) = 0
+1969  uname({sysname="Linux", nodename="7532045ffef6", ...}) = 0
+1969  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1969  readlink("/proc/self/exe", "/usr/lib/snapd/system-shutdown", 4096) = 30
+1969  getrandom("\x3d\xea\x0e\x28\x6a\x8f\x31\x33", 8, GRND_NONBLOCK) = 8
+1969  brk(0x13fedc0)                    = 0x13fedc0
+1969  brk(0x13ff000)                    = 0x13ff000
+1969  mprotect(0x4fa000, 16384, PROT_READ) = 0
+1969  getpid()                          = 1969
+1969  write(2, "This is a shutdown helper program; don't call it directly.\n", 59) = 59
+1969  exit_group(1)                     = ?
+1969  +++ exited with 1 +++

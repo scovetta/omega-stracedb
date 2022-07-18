@@ -1,0 +1,7 @@
+5 seconds per test
+O_DIRECT supported on this platform for open_datasync and open_sync.
+
+Compare file sync methods using one 8kB write:
+(in wal_sync_method preference order, except fdatasync is Linux's default)
+        open_datasync                       332.754 ops/sec    3005 usecs/op
+        fdatasync                     

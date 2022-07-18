@@ -1,0 +1,268 @@
+531   execve("/usr/bin/nvidia-persistenced", ["/usr/bin/nvidia-persistenced"], 0x7ffc02d16df0 /* 12 vars */) = 0
+531   brk(NULL)                         = 0x255f000
+531   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcf796b480) = -1 EINVAL (Invalid argument)
+531   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fde85da5000
+531   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+531   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+531   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6801, ...}, AT_EMPTY_PATH) = 0
+531   mmap(NULL, 6801, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fde85da3000
+531   close(3)                          = 0
+531   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+531   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`1\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x\6\0\0\0\0\0\0x\6\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+531   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+531   mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fde85d9e000
+531   mmap(0x7fde85d9f000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fde85d9f000
+531   mmap(0x7fde85da0000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fde85da0000
+531   mmap(0x7fde85da1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fde85da1000
+531   close(3)                          = 0
+531   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+531   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210J\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0%\0$\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250\n\0\0\0\0\0\0\250\n\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+531   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21448, ...}, AT_EMPTY_PATH) = 0
+531   mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fde85d99000
+531   mmap(0x7fde85d9a000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fde85d9a000
+531   mmap(0x7fde85d9b000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fde85d9b000
+531   mmap(0x7fde85d9c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fde85d9c000
+531   close(3)                          = 0
+531   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+531   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+531   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+531   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+531   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+531   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+531   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+531   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fde85b71000
+531   mmap(0x7fde85b99000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fde85b99000
+531   mmap(0x7fde85d2e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fde85d2e000
+531   mmap(0x7fde85d86000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fde85d86000
+531   mmap(0x7fde85d8c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fde85d8c000
+531   close(3)                          = 0
+531   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fde85b6f000
+531   arch_prctl(ARCH_SET_FS, 0x7fde85b6fb80) = 0
+531   set_tid_address(0x7fde85b6fe50)   = 531
+531   set_robust_list(0x7fde85b6fe60, 24) = 0
+531   rseq(0x7fde85b70520, 0x20, 0, 0x53053053) = 0
+531   mprotect(0x7fde85d86000, 16384, PROT_READ) = 0
+531   mprotect(0x7fde85d9c000, 4096, PROT_READ) = 0
+531   mprotect(0x7fde85da1000, 4096, PROT_READ) = 0
+531   mprotect(0x62a000, 28672, PROT_READ) = 0
+531   mprotect(0x7fde85ddf000, 8192, PROT_READ) = 0
+531   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+531   munmap(0x7fde85da3000, 6801)      = 0
+531   getuid()                          = 0
+531   getgid()                          = 0
+531   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], NULL, 8) = 0
+531   rt_sigaction(SIGINT, {sa_handler=0x404ce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fde85bb3520}, NULL, 8) = 0
+531   rt_sigaction(SIGTERM, {sa_handler=0x404ce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fde85bb3520}, NULL, 8) = 0
+531   pipe2([3, 4], 0)                  = 0
+531   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+536   set_robust_list(0x7fde85b6fe60, 24 <unfinished ...>
+531   <... clone resumed>, child_tidptr=0x7fde85b6fe50) = 536
+536   <... set_robust_list resumed>)    = 0
+531   close(4 <unfinished ...>
+536   umask(000 <unfinished ...>
+531   <... close resumed>)              = 0
+536   <... umask resumed>)              = 022
+531   read(3,  <unfinished ...>
+536   setsid()                          = 536
+536   getpid()                          = 536
+536   close(0)                          = 0
+536   close(1)                          = 0
+536   close(2)                          = 0
+536   close(3)                          = 0
+536   chdir("/")                        = 0
+536   mkdir("/var/run/nvidia-persistenced", 0755) = 0
+536   getuid()                          = 0
+536   getgid()                          = 0
+536   access("/var/run/nvidia-persistenced", R_OK|W_OK) = 0
+536   openat(AT_FDCWD, "/var/run/nvidia-persistenced/nvidia-persistenced.pid", O_RDWR|O_CREAT, 0644) = 0
+536   fcntl(0, F_SETLK, {l_type=F_WRLCK, l_whence=SEEK_CUR, l_start=0, l_len=0}) = 0
+536   write(0, "536\n", 4)              = 4
+536   getrandom("\xe1\xdf\xd1\xea\x7c\x2e\xee\xd2", 8, GRND_NONBLOCK) = 8
+536   brk(NULL)                         = 0x255f000
+536   brk(0x2580000)                    = 0x2580000
+536   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 1
+536   connect(1, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+536   close(1)                          = 0
+536   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 1
+536   newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=6801, ...}, AT_EMPTY_PATH) = 0
+536   mmap(NULL, 6801, PROT_READ, MAP_PRIVATE, 1, 0) = 0x7fde85da3000
+536   close(1)                          = 0
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+536   openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v4/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v4", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/tls/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/tls", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/lib/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+536   openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v4/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v4", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/tls/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/tls", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/haswell/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/haswell/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/haswell/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/haswell/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/haswell/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/haswell/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/haswell/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/haswell", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/avx512_1/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/avx512_1/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/avx512_1/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/avx512_1", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/x86_64/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib/x86_64", 0x7ffcf796a8e0, 0) = -1 ENOENT (No such file or directory)
+536   openat(AT_FDCWD, "/usr/lib/libnvidia-cfg.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+536   newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+536   munmap(0x7fde85da3000, 6801)      = 0
+536   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 1
+536   connect(1, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+536   close(1)                          = 0
+536   close(4)                          = 0
+531   <... read resumed>"", 1)          = 0
+536   fcntl(0, F_SETLK, {l_type=F_UNLCK, l_whence=SEEK_CUR, l_start=0, l_len=0} <unfinished ...>
+531   close(3 <unfinished ...>
+536   <... fcntl resumed>)              = 0
+531   <... close resumed>)              = 0
+536   close(0 <unfinished ...>
+531   write(2, "nvidia-persistenced failed to initialize. Check syslog for more details.\n", 73 <unfinished ...>
+536   <... close resumed>)              = 0
+536   unlink("/var/run/nvidia-persistenced/nvidia-persistenced.pid" <unfinished ...>
+531   <... write resumed>)              = 73
+536   <... unlink resumed>)             = 0
+531   exit_group(1 <unfinished ...>
+536   rmdir("/var/run/nvidia-persistenced" <unfinished ...>
+531   <... exit_group resumed>)         = ?
+536   <... rmdir resumed>)              = 0
+531   +++ exited with 1 +++
+536   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 0
+536   connect(0, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+536   close(0)                          = 0
+536   exit_group(1)                     = ?
+536   +++ exited with 1 +++

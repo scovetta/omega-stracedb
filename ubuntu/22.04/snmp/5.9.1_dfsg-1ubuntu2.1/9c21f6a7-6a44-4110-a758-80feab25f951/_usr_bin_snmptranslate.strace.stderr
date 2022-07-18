@@ -1,0 +1,72 @@
+USAGE: snmptranslate [OPTIONS] OID [OID]...
+
+  Version:  5.9.1
+  Web:      http://www.net-snmp.org/
+  Email:    net-snmp-coders@lists.sourceforge.net
+
+OPTIONS:
+  -h			display this help message
+  -V			display package version number
+  -m MIB[:...]		load given list of MIBs (ALL loads everything)
+  -M DIR[:...]		look in given list of directories for MIBs
+  -D[TOKEN[,...]]	turn on debugging output for the specified TOKENs
+			   (ALL gives extremely verbose debugging output)
+  -w WIDTH		set width of tree and detail output
+  -T TRANSOPTS		Set various options controlling report produced:
+			  B:  print all matching objects for a regex search
+			  d:  print full details of the given OID
+			  p:  print tree format symbol table
+			  a:  print ASCII format symbol table
+			  l:  enable labeled OID report
+			  o:  enable OID report
+			  s:  enable dotted symbolic report
+			  z:  enable MIB child OID report
+			  t:  enable alternate format symbolic suffix report
+  -P MIBOPTS		Toggle various defaults controlling mib parsing:
+			  u:  allow the use of underlines in MIB symbols
+			  c:  disallow the use of "--" to terminate comments
+			  d:  save the DESCRIPTIONs of the MIB objects
+			  e:  disable errors when MIB symbols conflict
+			  w:  enable warnings when MIB symbols conflict
+			  W:  enable detailed warnings when MIB symbols conflict
+			  R:  replace MIB symbols from latest module
+  -O OUTOPTS		Toggle various defaults controlling output display:
+			  0:  print leading 0 for single-digit hex characters
+			  a:  print all strings in ascii format
+			  b:  do not break OID indexes down
+			  e:  print enums numerically
+			  E:  escape quotes in string indices
+			  f:  print full OIDs on output
+			  n:  print OIDs numerically
+			  p PRECISION:  display floating point values with specified PRECISION (printf format string)
+			  q:  quick print for easier parsing
+			  Q:  quick print with equal-signs
+			  s:  print only last symbolic element of OID
+			  S:  print MIB module-id plus last element
+			  t:  print timeticks unparsed as numeric integers
+			  T:  print human-readable text along with hex strings
+			  u:  print OIDs using UCD-style prefix suppression
+			  U:  don't print units
+			  v:  print values only (not OID = value)
+			  x:  print all strings in hex format
+			  X:  extended index format
+  -I INOPTS		Toggle various defaults controlling input parsing:
+			  b:  do best/regex matching to find a MIB node
+			  h:  don't apply DISPLAY-HINTs
+			  r:  do not check values for range/type legality
+			  R:  do random access to OID labels
+			  u:  top-level OIDs must have '.' prefix (UCD-style)
+			  s SUFFIX:  Append all textual OIDs with SUFFIX before parsing
+			  S PREFIX:  Prepend all textual OIDs with PREFIX before parsing
+  -L LOGOPTS		Toggle various defaults controlling logging:
+			  e:           log to standard error
+			  o:           log to standard output
+			  n:           don't log at all
+			  f file:      log to the specified file
+			  s facility:  log to syslog (via the specified facility)
+
+			  (variants)
+			  [EON] pri:   log to standard error, output or /dev/null for level 'pri' and above
+			  [EON] p1-p2: log to standard error, output or /dev/null for levels 'p1' to 'p2'
+			  [FS] pri token:    log to file/syslog for level 'pri' and above
+			  [FS] p1-p2 token:  log to file/syslog for levels 'p1' to 'p2'
