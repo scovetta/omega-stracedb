@@ -1,0 +1,41 @@
+Usage: /usr/i686-linux-gnu/bin/objdump <option(s)> <file(s)>
+ Display information from object <file(s)>.
+ At least one of the following switches must be given:
+  -a, --archive-headers    Display archive header information
+  -f, --file-headers       Display the contents of the overall file header
+  -p, --private-headers    Display object format specific file header contents
+  -P, --private=OPT,OPT... Display object format specific contents
+  -h, --[section-]headers  Display the contents of the section headers
+  -x, --all-headers        Display the contents of all headers
+  -d, --disassemble        Display assembler contents of executable sections
+  -D, --disassemble-all    Display assembler contents of all sections
+      --disassemble=<sym>  Display assembler contents from <sym>
+  -S, --source             Intermix source code with disassembly
+      --source-comment[=<txt>] Prefix lines of source code with <txt>
+  -s, --full-contents      Display the full contents of all sections requested
+  -g, --debugging          Display debug information in object file
+  -e, --debugging-tags     Display debug information using ctags style
+  -G, --stabs              Display (in raw form) any STABS info in the file
+  -W, --dwarf[a/=abbrev, A/=addr, r/=aranges, c/=cu_index, L/=decodedline,
+              f/=frames, F/=frames-interp, g/=gdb_index, i/=info, o/=loc,
+              m/=macro, p/=pubnames, t/=pubtypes, R/=Ranges, l/=rawline,
+              s/=str, O/=str-offsets, u/=trace_abbrev, T/=trace_aranges,
+              U/=trace_info]
+                           Display the contents of DWARF debug sections
+  -Wk,--dwarf=links        Display the contents of sections that link to
+                            separate debuginfo files
+  -WK,--dwarf=follow-links
+                           Follow links to separate debug info files (default)
+  -WN,--dwarf=no-follow-links
+                           Do not follow links to separate debug info files
+  -L, --process-links      Display the contents of non-debug sections in
+                            separate debuginfo files.  (Implies -WK)
+      --ctf[=SECTION]      Display CTF info from SECTION, (default `.ctf')
+  -t, --syms               Display the contents of the symbol table(s)
+  -T, --dynamic-syms       Display the contents of the dynamic symbol table
+  -r, --reloc              Display the relocation entries in the file
+  -R, --dynamic-reloc      Display the dynamic relocation entries in the file
+  @<file>                  Read options from <file>
+  -v, --version            Display this program's version number
+  -i, --info               List object formats and architectures supported
+  -H, --help               Display this information

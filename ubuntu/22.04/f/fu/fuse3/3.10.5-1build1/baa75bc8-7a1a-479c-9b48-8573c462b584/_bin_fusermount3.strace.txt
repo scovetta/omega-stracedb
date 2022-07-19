@@ -1,0 +1,38 @@
+483   execve("/bin/fusermount3", ["/bin/fusermount3"], 0x7ffc59464170 /* 12 vars */) = 0
+483   brk(NULL)                         = 0x556132b54000
+483   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd7a94c5a0) = -1 EINVAL (Invalid argument)
+483   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae64f12000
+483   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+483   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+483   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6193, ...}, AT_EMPTY_PATH) = 0
+483   mmap(NULL, 6193, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fae64f10000
+483   close(3)                          = 0
+483   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+483   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+483   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+483   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+483   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+483   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+483   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+483   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae64ce8000
+483   mmap(0x7fae64d10000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fae64d10000
+483   mmap(0x7fae64ea5000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fae64ea5000
+483   mmap(0x7fae64efd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fae64efd000
+483   mmap(0x7fae64f03000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fae64f03000
+483   close(3)                          = 0
+483   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae64ce5000
+483   arch_prctl(ARCH_SET_FS, 0x7fae64ce5740) = 0
+483   set_tid_address(0x7fae64ce5a10)   = 483
+483   set_robust_list(0x7fae64ce5a20, 24) = 0
+483   rseq(0x7fae64ce60e0, 0x20, 0, 0x53053053) = 0
+483   mprotect(0x7fae64efd000, 16384, PROT_READ) = 0
+483   mprotect(0x556131920000, 4096, PROT_READ) = 0
+483   mprotect(0x7fae64f4c000, 8192, PROT_READ) = 0
+483   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+483   munmap(0x7fae64f10000, 6193)      = 0
+483   getrandom("\xe2\xd0\x45\x6a\xcd\x09\xe2\xf7", 8, GRND_NONBLOCK) = 8
+483   brk(NULL)                         = 0x556132b54000
+483   brk(0x556132b75000)               = 0x556132b75000
+483   write(2, "/bin/fusermount3: missing mountpoint argument\n", 46) = 46
+483   exit_group(1)                     = ?
+483   +++ exited with 1 +++

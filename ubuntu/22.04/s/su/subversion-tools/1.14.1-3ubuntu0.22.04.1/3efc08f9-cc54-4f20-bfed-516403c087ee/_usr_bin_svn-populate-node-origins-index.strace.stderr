@@ -1,0 +1,20 @@
+Usage: /usr/bin/svn-populate-node-origins-index REPOS-PATH
+
+Crawl the Subversion repository located at REPOS-PATH in an attempt to
+populate that repository's index of node origins.  
+
+The node origins index is new as of Subversion 1.5, and behaves as a
+cache to vastly speed up certain history-querying operations.  For
+compatibility with repositories created with pre-1.5 versions of
+Subversion, Subversion will gracefully handle cache misses by doing a
+brute-force calculation of the query answer and lazily populating the
+index with answers it calculates.  Unfortunately, calculating that
+information using the brute-force method (instead of having the
+information appear in the index organically) can be very costly.
+
+This tool triggers the lazy index population logic built into
+Subversion in a fashion far more efficient than is likely to happen
+during typical repository usage.  It can be run while the repository
+is online, too, without interrupting normal Subversion activities.
+
+ERROR: Not enough arguments.

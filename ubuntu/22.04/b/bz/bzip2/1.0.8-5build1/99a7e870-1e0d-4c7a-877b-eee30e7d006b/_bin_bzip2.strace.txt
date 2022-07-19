@@ -1,0 +1,60 @@
+486   execve("/bin/bzip2", ["/bin/bzip2"], 0x7ffe43783b40 /* 12 vars */) = 0
+486   brk(NULL)                         = 0x564cbb1e0000
+486   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe2d64cc40) = -1 EINVAL (Invalid argument)
+486   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdf3b425000
+486   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+486   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+486   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+486   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdf3b423000
+486   close(3)                          = 0
+486   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+486   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`\35\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\22\0\0\0\0\0\0H\22\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+486   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=74848, ...}, AT_EMPTY_PATH) = 0
+486   mmap(NULL, 76840, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdf3b410000
+486   mmap(0x7fdf3b412000, 53248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fdf3b412000
+486   mmap(0x7fdf3b41f000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7fdf3b41f000
+486   mmap(0x7fdf3b421000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7fdf3b421000
+486   close(3)                          = 0
+486   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+486   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+486   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+486   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+486   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+486   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+486   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+486   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdf3b1e8000
+486   mmap(0x7fdf3b210000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fdf3b210000
+486   mmap(0x7fdf3b3a5000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fdf3b3a5000
+486   mmap(0x7fdf3b3fd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fdf3b3fd000
+486   mmap(0x7fdf3b403000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdf3b403000
+486   close(3)                          = 0
+486   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdf3b1e5000
+486   arch_prctl(ARCH_SET_FS, 0x7fdf3b1e5740) = 0
+486   set_tid_address(0x7fdf3b1e5a10)   = 486
+486   set_robust_list(0x7fdf3b1e5a20, 24) = 0
+486   rseq(0x7fdf3b1e60e0, 0x20, 0, 0x53053053) = 0
+486   mprotect(0x7fdf3b3fd000, 16384, PROT_READ) = 0
+486   mprotect(0x7fdf3b421000, 4096, PROT_READ) = 0
+486   mprotect(0x564cbac83000, 4096, PROT_READ) = 0
+486   mprotect(0x7fdf3b45f000, 8192, PROT_READ) = 0
+486   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+486   munmap(0x7fdf3b423000, 6133)      = 0
+486   rt_sigaction(SIGSEGV, {sa_handler=0x564cbac7d900, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fdf3b22a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+486   rt_sigaction(SIGBUS, {sa_handler=0x564cbac7d900, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fdf3b22a520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+486   ioctl(1, TCGETS, 0x7ffe2d64ca80)  = -1 ENOTTY (Inappropriate ioctl for device)
+486   getrandom("\x91\xee\x26\xc5\xe0\xad\x5f\xf4", 8, GRND_NONBLOCK) = 8
+486   brk(NULL)                         = 0x564cbb1e0000
+486   brk(0x564cbb201000)               = 0x564cbb201000
+486   mmap(NULL, 3600384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdf3ae76000
+486   mmap(NULL, 3600384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdf3ab07000
+486   mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdf3aac6000
+486   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_EMPTY_PATH) = 0
+486   read(0, "", 4096)                 = 0
+486   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+486   write(1, "BZh9\27rE8P\220\0\0\0\0", 14) = 14
+486   munmap(0x7fdf3ae76000, 3600384)   = 0
+486   munmap(0x7fdf3ab07000, 3600384)   = 0
+486   munmap(0x7fdf3aac6000, 266240)    = 0
+486   close(0)                          = 0
+486   exit_group(0)                     = ?
+486   +++ exited with 0 +++

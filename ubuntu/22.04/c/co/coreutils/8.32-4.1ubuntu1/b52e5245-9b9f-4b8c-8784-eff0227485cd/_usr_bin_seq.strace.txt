@@ -1,0 +1,43 @@
+1114  execve("/usr/bin/seq", ["/usr/bin/seq"], 0x7ffda1934ed0 /* 12 vars */) = 0
+1114  brk(NULL)                         = 0x55af47b24000
+1114  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdf9ff63f0) = -1 EINVAL (Invalid argument)
+1114  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f950224a000
+1114  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1114  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1114  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+1114  mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9502248000
+1114  close(3)                          = 0
+1114  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1114  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1114  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1114  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1114  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1114  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1114  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1114  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9502020000
+1114  mmap(0x7f9502048000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f9502048000
+1114  mmap(0x7f95021dd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f95021dd000
+1114  mmap(0x7f9502235000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f9502235000
+1114  mmap(0x7f950223b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f950223b000
+1114  close(3)                          = 0
+1114  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f950201d000
+1114  arch_prctl(ARCH_SET_FS, 0x7f950201d740) = 0
+1114  set_tid_address(0x7f950201da10)   = 1114
+1114  set_robust_list(0x7f950201da20, 24) = 0
+1114  rseq(0x7f950201e0e0, 0x20, 0, 0x53053053) = 0
+1114  mprotect(0x7f9502235000, 16384, PROT_READ) = 0
+1114  mprotect(0x55af476dd000, 4096, PROT_READ) = 0
+1114  mprotect(0x7f9502284000, 8192, PROT_READ) = 0
+1114  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1114  munmap(0x7f9502248000, 6133)      = 0
+1114  getrandom("\xc6\x76\xcd\xc7\x44\xb3\x4f\x70", 8, GRND_NONBLOCK) = 8
+1114  brk(NULL)                         = 0x55af47b24000
+1114  brk(0x55af47b45000)               = 0x55af47b45000
+1114  write(2, "/usr/bin/seq: ", 14)    = 14
+1114  write(2, "missing operand", 15)   = 15
+1114  write(2, "\n", 1)                 = 1
+1114  write(2, "Try '/usr/bin/seq --help' for more information.\n", 48) = 48
+1114  close(1)                          = 0
+1114  close(2)                          = 0
+1114  exit_group(1)                     = ?
+1114  +++ exited with 1 +++

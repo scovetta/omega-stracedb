@@ -1,0 +1,11 @@
+fsfs-access-map <file>
+
+Reads strace of some FSFS-based tool from <file>, prints some stats
+and writes a cluster access map to 'access.bmp' the current folder.
+Each pixel corresponds to one 64kB cluster and every line to a rev
+or packed rev file in the repository.  Turquoise and green indicate
+1 and 2 hits, yellow to read-ish colors for up to 20, shares of
+for up to 100 and black for > 200 hits.
+
+A typical strace invocation looks like this:
+strace -e trace=open,close,read,lseek -o strace.txt svn log ...

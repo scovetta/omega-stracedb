@@ -1,0 +1,108 @@
+497   execve("/usr/bin/arm-linux-gnueabihf-as", ["/usr/bin/arm-linux-gnueabihf-as"], 0x7ffd1e1d9b60 /* 12 vars */) = 0
+497   brk(NULL)                         = 0x55a8329ae000
+497   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe548f1360) = -1 EINVAL (Invalid argument)
+497   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f50af802000
+497   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+497   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6533, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 6533, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f50af800000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbfd-2.38-armhf.so", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\270;\20\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\270\3\3\0\0\0\0\0\270\3\3\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1065720, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 1068208, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f50af6fb000
+497   mprotect(0x7f50af72c000, 798720, PROT_NONE) = 0
+497   mmap(0x7f50af72c000, 589824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31000) = 0x7f50af72c000
+497   mmap(0x7f50af7bc000, 204800, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc1000) = 0x7f50af7bc000
+497   mmap(0x7f50af7ef000, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf3000) = 0x7f50af7ef000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f50af6df000
+497   mprotect(0x7f50af6e1000, 98304, PROT_NONE) = 0
+497   mmap(0x7f50af6e1000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f50af6e1000
+497   mmap(0x7f50af6f2000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f50af6f2000
+497   mmap(0x7f50af6f9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f50af6f9000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+497   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f50af4b7000
+497   mmap(0x7f50af4df000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f50af4df000
+497   mmap(0x7f50af674000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f50af674000
+497   mmap(0x7f50af6cc000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f50af6cc000
+497   mmap(0x7f50af6d2000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f50af6d2000
+497   close(3)                          = 0
+497   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f50af4b5000
+497   arch_prctl(ARCH_SET_FS, 0x7f50af4b5b80) = 0
+497   set_tid_address(0x7f50af4b5e50)   = 497
+497   set_robust_list(0x7f50af4b5e60, 24) = 0
+497   rseq(0x7f50af4b6520, 0x20, 0, 0x53053053) = 0
+497   mprotect(0x7f50af6cc000, 16384, PROT_READ) = 0
+497   mprotect(0x7f50af6f9000, 4096, PROT_READ) = 0
+497   mprotect(0x7f50af7ef000, 61440, PROT_READ) = 0
+497   mprotect(0x55a831151000, 241664, PROT_READ) = 0
+497   mprotect(0x7f50af83c000, 8192, PROT_READ) = 0
+497   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+497   munmap(0x7f50af800000, 6533)      = 0
+497   getrusage(RUSAGE_SELF, {ru_utime={tv_sec=0, tv_usec=9458}, ru_stime={tv_sec=0, tv_usec=0}, ...}) = 0
+497   rt_sigaction(SIGSEGV, {sa_handler=0x55a8310d4620, sa_mask=[SEGV], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f50af4f9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+497   rt_sigaction(SIGILL, {sa_handler=0x55a8310d4620, sa_mask=[ILL], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f50af4f9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+497   rt_sigaction(SIGBUS, {sa_handler=0x55a8310d4620, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f50af4f9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+497   rt_sigaction(SIGABRT, {sa_handler=0x55a8310d4620, sa_mask=[ABRT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f50af4f9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+497   rt_sigaction(SIGFPE, {sa_handler=0x55a8310d4620, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f50af4f9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+497   getrandom("\x44\xab\xd9\x6a\xfa\xc2\x6e\x1e", 8, GRND_NONBLOCK) = 8
+497   brk(NULL)                         = 0x55a8329ae000
+497   brk(0x55a8329cf000)               = 0x55a8329cf000
+497   prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+497   newfstatat(AT_FDCWD, "a.out", 0x7ffe548f1110, 0) = -1 ENOENT (No such file or directory)
+497   openat(AT_FDCWD, "a.out", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+497   fcntl(3, F_GETFD)                 = 0
+497   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+497   brk(0x55a8329f0000)               = 0x55a8329f0000
+497   brk(0x55a832a11000)               = 0x55a832a11000
+497   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=1018, ...}, AT_EMPTY_PATH) = 0
+497   read(0, "/usr/bin/arm-linux-gnueabihf-addr2line\n/usr/bin/arm-linux-gnueabihf-ar\n/usr/bin/arm-linux-gnueabihf-as\n/usr/bin/arm-linux-gnueab"..., 4096) = 1018
+497   read(0, "", 28672)                = 0
+497   write(2, "{standard input}: ", 18) = 18
+497   write(2, "Assembler messages:\n", 20) = 20
+497   write(2, "{standard input}:1: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:2: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:3: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:4: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:5: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:6: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:7: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:8: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:9: Error: junk at end of line, first unrecognized character is `/'\n", 84) = 84
+497   write(2, "{standard input}:10: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:11: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:12: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:13: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:14: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:15: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:16: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:17: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:18: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:19: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:20: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:21: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:22: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:23: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:24: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:25: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:26: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:27: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:28: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   write(2, "{standard input}:29: Error: junk at end of line, first unrecognized character is `/'\n", 85) = 85
+497   close(0)                          = 0
+497   close(3)                          = 0
+497   newfstatat(AT_FDCWD, "a.out", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+497   unlink("a.out")                   = 0
+497   exit_group(1)                     = ?
+497   +++ exited with 1 +++

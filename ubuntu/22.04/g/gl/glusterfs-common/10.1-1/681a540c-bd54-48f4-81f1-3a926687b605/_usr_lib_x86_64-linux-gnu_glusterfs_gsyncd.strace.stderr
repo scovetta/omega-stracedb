@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/usr/lib/x86_64-linux-gnu/glusterfs/python/syncdaemon/gsyncd.py", line 325, in <module>
+    main()
+  File "/usr/lib/x86_64-linux-gnu/glusterfs/python/syncdaemon/gsyncd.py", line 41, in main
+    argsupgrade.upgrade()
+  File "/usr/lib/x86_64-linux-gnu/glusterfs/python/syncdaemon/argsupgrade.py", line 85, in upgrade
+    init_gsyncd_template_conf()
+  File "/usr/lib/x86_64-linux-gnu/glusterfs/python/syncdaemon/argsupgrade.py", line 50, in init_gsyncd_template_conf
+    fd = os.open(path, os.O_CREAT | os.O_RDWR)
+FileNotFoundError: [Errno 2] No such file or directory: '/var/lib/glusterd/geo-replication/gsyncd_template.conf'

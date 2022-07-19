@@ -1,0 +1,63 @@
+1292  execve("/usr/bin/myisamlog", ["/usr/bin/myisamlog"], 0x7fff0e268780 /* 12 vars */) = 0
+1292  brk(NULL)                         = 0x560d84290000
+1292  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc7a4d3180) = -1 EINVAL (Invalid argument)
+1292  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a0509f000
+1292  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1292  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1292  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7681, ...}, AT_EMPTY_PATH) = 0
+1292  mmap(NULL, 7681, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3a0509d000
+1292  close(3)                          = 0
+1292  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+1292  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1292  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+1292  mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a05081000
+1292  mprotect(0x7f3a05083000, 98304, PROT_NONE) = 0
+1292  mmap(0x7f3a05083000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f3a05083000
+1292  mmap(0x7f3a05094000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f3a05094000
+1292  mmap(0x7f3a0509b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f3a0509b000
+1292  close(3)                          = 0
+1292  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+1292  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1292  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+1292  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a04f9a000
+1292  mmap(0x7f3a04fa8000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f3a04fa8000
+1292  mmap(0x7f3a05024000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f3a05024000
+1292  mmap(0x7f3a0507f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f3a0507f000
+1292  close(3)                          = 0
+1292  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1292  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1292  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1292  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1292  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1292  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1292  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1292  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3a04d72000
+1292  mmap(0x7f3a04d9a000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f3a04d9a000
+1292  mmap(0x7f3a04f2f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f3a04f2f000
+1292  mmap(0x7f3a04f87000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f3a04f87000
+1292  mmap(0x7f3a04f8d000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3a04f8d000
+1292  close(3)                          = 0
+1292  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3a04d70000
+1292  arch_prctl(ARCH_SET_FS, 0x7f3a04d70b80) = 0
+1292  set_tid_address(0x7f3a04d70e50)   = 1292
+1292  set_robust_list(0x7f3a04d70e60, 24) = 0
+1292  rseq(0x7f3a04d71520, 0x20, 0, 0x53053053) = 0
+1292  mprotect(0x7f3a04f87000, 16384, PROT_READ) = 0
+1292  mprotect(0x7f3a0507f000, 4096, PROT_READ) = 0
+1292  mprotect(0x7f3a0509b000, 4096, PROT_READ) = 0
+1292  mprotect(0x560d828c3000, 40960, PROT_READ) = 0
+1292  mprotect(0x7f3a050d9000, 8192, PROT_READ) = 0
+1292  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1292  munmap(0x7f3a0509d000, 7681)      = 0
+1292  getrandom("\xa2\x80\xd8\xd5\x33\x11\x01\x95", 8, GRND_NONBLOCK) = 8
+1292  brk(NULL)                         = 0x560d84290000
+1292  brk(0x560d842b1000)               = 0x560d842b1000
+1292  prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+1292  openat(AT_FDCWD, "myisam.log", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1292  write(2, "\7", 1)                 = 1
+1292  write(2, "/usr/bin/myisamlog", 18) = 18
+1292  write(2, ": ", 2)                 = 2
+1292  write(2, "File 'myisam.log' not found (Errcode: 2 \"No such file or directory\")", 68) = 68
+1292  write(2, "\n", 1)                 = 1
+1292  exit_group(1)                     = ?
+1292  +++ exited with 1 +++

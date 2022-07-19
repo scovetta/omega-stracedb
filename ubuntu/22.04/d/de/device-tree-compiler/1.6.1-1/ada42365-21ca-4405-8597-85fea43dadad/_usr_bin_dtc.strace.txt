@@ -1,0 +1,55 @@
+497   execve("/usr/bin/dtc", ["/usr/bin/dtc"], 0x7ffc88c7c2c0 /* 12 vars */) = 0
+497   brk(NULL)                         = 0x55c15022e000
+497   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe167eaf90) = -1 EINVAL (Invalid argument)
+497   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f536672d000
+497   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+497   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6253, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 6253, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f536672b000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libyaml-0.so.2", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\330\361\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\300\25\0\0\0\0\0\0\300\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=129240, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 131240, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f536670a000
+497   mmap(0x7f536670c000, 102400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f536670c000
+497   mmap(0x7f5366725000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f5366725000
+497   mmap(0x7f5366729000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f5366729000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+497   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53664e2000
+497   mmap(0x7f536650a000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f536650a000
+497   mmap(0x7f536669f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f536669f000
+497   mmap(0x7f53666f7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f53666f7000
+497   mmap(0x7f53666fd000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53666fd000
+497   close(3)                          = 0
+497   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f53664df000
+497   arch_prctl(ARCH_SET_FS, 0x7f53664df740) = 0
+497   set_tid_address(0x7f53664dfa10)   = 497
+497   set_robust_list(0x7f53664dfa20, 24) = 0
+497   rseq(0x7f53664e00e0, 0x20, 0, 0x53053053) = 0
+497   mprotect(0x7f53666f7000, 16384, PROT_READ) = 0
+497   mprotect(0x7f5366729000, 4096, PROT_READ) = 0
+497   mprotect(0x55c1500fe000, 4096, PROT_READ) = 0
+497   mprotect(0x7f5366767000, 8192, PROT_READ) = 0
+497   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+497   munmap(0x7f536672b000, 6253)      = 0
+497   newfstatat(AT_FDCWD, "-", 0x7ffe167eaf70, 0) = -1 ENOENT (No such file or directory)
+497   getrandom("\x49\x71\x07\xea\x59\x4b\xe7\xe7", 8, GRND_NONBLOCK) = 8
+497   brk(NULL)                         = 0x55c15022e000
+497   brk(0x55c15024f000)               = 0x55c15024f000
+497   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=105, ...}, AT_EMPTY_PATH) = 0
+497   read(0, "/usr/bin/convert-dtsv0\n/usr/bin/dtc\n/usr/bin/fdtdump\n/usr/bin/fdtget\n/usr/bin/fdtoverlay\n/usr/bin/fdtput\n", 8192) = 105
+497   read(0, "", 4096)                 = 0
+497   write(2, "Error: <stdin>:1.1-2 ", 21) = 21
+497   write(2, "syntax error", 12)      = 12
+497   write(2, "\n", 1)                 = 1
+497   write(2, "FATAL ERROR: ", 13)     = 13
+497   write(2, "Unable to parse input tree\n", 27) = 27
+497   exit_group(1)                     = ?
+497   +++ exited with 1 +++

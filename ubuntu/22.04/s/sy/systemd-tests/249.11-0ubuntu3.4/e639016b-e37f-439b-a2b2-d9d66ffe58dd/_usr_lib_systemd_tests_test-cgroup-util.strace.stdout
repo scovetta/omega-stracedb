@@ -1,0 +1,42 @@
+check_p_d_u: getty@tty2.service → getty@tty2.service 0 expected getty@tty2.service 0
+check_p_d_u: getty@tty2.service/ → getty@tty2.service 0 expected getty@tty2.service 0
+check_p_d_u: getty@tty2.service/xxx → getty@tty2.service 0 expected getty@tty2.service 0
+check_p_d_u: getty@.service/ → (null) -6 expected (null) -6
+check_p_d_u: getty@.service → (null) -6 expected (null) -6
+check_p_d_u: getty.service → getty.service 0 expected getty.service 0
+check_p_d_u: getty → (null) -6 expected (null) -6
+check_p_d_u: getty/waldo → (null) -6 expected (null) -6
+check_p_d_u: _cpu.service → cpu.service 0 expected cpu.service 0
+check_p_g_u: /system.slice/foobar.service/sdfdsaf → foobar.service 0 expected foobar.service 0
+check_p_g_u: /system.slice/getty@tty5.service → getty@tty5.service 0 expected getty@tty5.service 0
+check_p_g_u: /system.slice/getty@tty5.service/aaa/bbb → getty@tty5.service 0 expected getty@tty5.service 0
+check_p_g_u: /system.slice/getty@tty5.service/ → getty@tty5.service 0 expected getty@tty5.service 0
+check_p_g_u: /system.slice/getty@tty6.service/tty5 → getty@tty6.service 0 expected getty@tty6.service 0
+check_p_g_u: sadfdsafsda → (null) -6 expected (null) -6
+check_p_g_u: /system.slice/getty####@tty6.service/xxx → (null) -6 expected (null) -6
+check_p_g_u: /system.slice/system-waldo.slice/foobar.service/sdfdsaf → foobar.service 0 expected foobar.service 0
+check_p_g_u: /system.slice/system-waldo.slice/_cpu.service/sdfdsaf → cpu.service 0 expected cpu.service 0
+check_p_g_u: /user.slice/user-1000.slice/user@1000.service/server.service → user@1000.service 0 expected user@1000.service 0
+check_p_g_u: /user.slice/user-1000.slice/user@.service/server.service → (null) -6 expected (null) -6
+check_p_g_u_u: /user.slice/user-1000.slice/session-2.scope/foobar.service → foobar.service 0 expected foobar.service 0
+check_p_g_u_u: /user.slice/user-1000.slice/session-2.scope/waldo.slice/foobar.service → foobar.service 0 expected foobar.service 0
+check_p_g_u_u: /user.slice/user-1002.slice/session-2.scope/foobar.service/waldo → foobar.service 0 expected foobar.service 0
+check_p_g_u_u: /user.slice/user-1000.slice/session-2.scope/foobar.service/waldo/uuuux → foobar.service 0 expected foobar.service 0
+check_p_g_u_u: /user.slice/user-1000.slice/session-2.scope/waldo/waldo/uuuux → (null) -6 expected (null) -6
+check_p_g_u_u: /user.slice/user-1000.slice/session-2.scope/foobar@pie.service/pa/po → foobar@pie.service 0 expected foobar@pie.service 0
+check_p_g_u_u: /session-2.scope/foobar@pie.service/pa/po → foobar@pie.service 0 expected foobar@pie.service 0
+check_p_g_u_u: /xyz.slice/xyz-waldo.slice/session-77.scope/foobar@pie.service/pa/po → foobar@pie.service 0 expected foobar@pie.service 0
+check_p_g_u_u: /meh.service → (null) -6 expected (null) -6
+check_p_g_u_u: /session-3.scope/_cpu.service → cpu.service 0 expected cpu.service 0
+check_p_g_u_u: /user.slice/user-1000.slice/user@1000.service/server.service → server.service 0 expected server.service 0
+check_p_g_u_u: /user.slice/user-1000.slice/user@1000.service/foobar.slice/foobar@pie.service → foobar@pie.service 0 expected foobar@pie.service 0
+check_p_g_u_u: /user.slice/user-1000.slice/user@.service/server.service → (null) -6 expected (null) -6
+systemd not booted skipping 'test_get_paths()'
+1	(null)	(null)	4294967295	(null)	(null)	(null)	(null)	(null)
+1641	(null)	(null)	4294967295	(null)	(null)	(null)	(null)	(null)
+1642	(null)	(null)	4294967295	(null)	(null)	(null)	(null)	(null)
+1646	(null)	(null)	4294967295	(null)	(null)	(null)	(null)	(null)
+systemd not booted skipping 'test_escape()'
+systemd not booted skipping 'test_mask_supported()'
+systemd not booted skipping 'test_is_cgroup_fs()'
+systemd not booted skipping 'test_fd_is_cgroup_fs()'

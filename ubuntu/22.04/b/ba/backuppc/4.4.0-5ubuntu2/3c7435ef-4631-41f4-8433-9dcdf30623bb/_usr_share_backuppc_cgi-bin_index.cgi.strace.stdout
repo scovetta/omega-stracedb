@@ -1,0 +1,57 @@
+Content-Type: text/html; charset=utf-8
+
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<title>BackupPC: Error</title>
+<link rel=stylesheet type="text/css" href="/backuppc/image/BackupPC_stnd.css?version=2" title="CSSFile">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/backuppc/image/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/backuppc/image/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/backuppc/image/favicon-16x16.png?v=2">
+<link rel="mask-icon" href="/backuppc/image/safari-pinned-tab.svg?v=2" color="#5bbad5">
+<link rel="shortcut icon" href="/backuppc/image/favicon.ico?v=2">
+
+<meta http-equiv="pragma" content="no-cache">
+<script src="/backuppc/image/sorttable.js"></script>
+</head><body onLoad="document.getElementById('NavMenu').style.height=document.body.scrollHeight">
+
+<div id="navigation-container">
+	<div id="logo-container">
+		<a href="https://backuppc.github.io/backuppc/"><img src="/backuppc/image/logo320.png"></a>
+	</div>
+<div class="NavMenu" id="NavMenu">
+<h2 class="NavTitle">Hosts</h2>
+<form action="" method="get">
+    <input type="text" name="host" size="14" maxlength="64">
+    <input type="hidden" name="action" value="hostInfo"><input type="submit" value="Go" name="ignore">
+    </form>
+<h2 class="NavTitle">Server</h2>
+<a href="?action=status">Status</a>
+<a href="?action=summary">Host Summary</a>
+<a href="?action=editConfig">Edit Config</a>
+<a href="?action=editConfig&newMenu=hosts">Edit Hosts</a>
+<a href="?action=adminOpts">Admin Options</a>
+<a href="?action=view&type=LOG">LOG file</a>
+<a href="?action=LOGlist">Old LOGs</a>
+<a href="?action=emailSummary">Email summary</a>
+<a href="?action=queue">Current queues</a>
+<a href="?action=view&type=docs">Documentation</a>
+<a href="https://github.com/backuppc/backuppc/wiki">Wiki</a>
+<a href="https://backuppc.github.io/backuppc">Homepage</a>
+</div>
+</div> <!-- end #navigation-container -->
+<div id="Content">
+    <h1>Error: Wrong user: my userid is 0, instead of 104(backuppc)
+</h1>
+
+<p>This script needs to run as the user specified in $Conf{BackupPCUser},
+which is set to backuppc.
+<p>
+This is an installation problem.  If you are using mod_perl then
+it appears that Apache is not running as user backuppc.
+If you are not using mod_perl, then most like setuid is not working
+properly on BackupPC_Admin.  Check the permissions on
+/usr/share/backuppc/cgi-bin/BackupPC_Admin and look at the documentation.
+</p>
+
+</body></html>

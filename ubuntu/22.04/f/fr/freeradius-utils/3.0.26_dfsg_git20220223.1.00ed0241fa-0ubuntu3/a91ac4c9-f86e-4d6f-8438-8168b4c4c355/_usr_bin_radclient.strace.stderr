@@ -1,0 +1,22 @@
+radclient: Insufficient arguments
+Usage: radclient [options] server[:port] <command> [<secret>]
+  <command>              One of auth, acct, status, coa, disconnect or auto.
+  -4                     Use IPv4 address of server
+  -6                     Use IPv6 address of server.
+  -c <count>             Send each packet 'count' times.
+  -d <raddb>             Set user dictionary directory (defaults to /etc/freeradius/3.0).
+  -D <dictdir>           Set main dictionary directory (defaults to /usr/share/freeradius).
+  -f <file>[:<file>]     Read packets from file, not stdin.
+                         If a second file is provided, it will be used to verify responses
+  -F                     Print the file name, packet number and reply code.
+  -h                     Print usage help information.
+  -n <num>               Send N requests/s
+  -p <num>               Send 'num' packets from a file in parallel.
+  -q                     Do not print anything out.
+  -r <retries>           If timeout, retry sending the packet 'retries' times.
+  -s                     Print out summary information of auth results.
+  -S <file>              read secret from file, not command line.
+  -t <timeout>           Wait 'timeout' seconds before retrying (may be a floating point number).
+  -v                     Show program version information.
+  -x                     Debugging mode.
+  -P <proto>             Use proto (tcp or udp) for transport.

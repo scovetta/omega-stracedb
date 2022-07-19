@@ -1,0 +1,16 @@
+Inaccessible directory: '/home/lennart/projects'
+Not chrooted
+SELinux enabled state cached to: disabled
+/run/systemd/unit-root/dev (bind-dev) is duplicate.
+/run/systemd/unit-root/lib (exec) is duplicate.
+/run/systemd/unit-root/lib64 (exec) is duplicate.
+/run/systemd/unit-root/sys (read-only) is duplicate.
+/run/systemd/unit-root/sys/fs/cgroup (rw-implicit) is duplicate.
+/run/systemd/unit-root/usr/lib64 (exec) is duplicate.
+/run/systemd/unit-root/var (tmpfs) is duplicate.
+/run/systemd/unit-root/home/lennart/projects/foobar is masked by /run/systemd/unit-root/home/lennart/projects.
+Failed to unshare the mount namespace: Operation not permitted
+Failed to set up namespace: No anode
+Usage:
+  sudo TEST_NS_PROJECTS=/home/lennart/projects ./test-ns
+  sudo TEST_NS_CHROOT=/home/alban/debian-tree TEST_NS_PROJECTS=/home/alban/debian-tree/home/alban/Documents ./test-ns

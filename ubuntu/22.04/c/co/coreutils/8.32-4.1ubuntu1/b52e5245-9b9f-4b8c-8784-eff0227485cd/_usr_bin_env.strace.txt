@@ -1,0 +1,41 @@
+835   execve("/usr/bin/env", ["/usr/bin/env"], 0x7ffd50746f30 /* 12 vars */) = 0
+835   brk(NULL)                         = 0x564cc7f51000
+835   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffee44993e0) = -1 EINVAL (Invalid argument)
+835   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5ec8bf5000
+835   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+835   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+835   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+835   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5ec8bf3000
+835   close(3)                          = 0
+835   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+835   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+835   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+835   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+835   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+835   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+835   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+835   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5ec89cb000
+835   mmap(0x7f5ec89f3000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f5ec89f3000
+835   mmap(0x7f5ec8b88000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f5ec8b88000
+835   mmap(0x7f5ec8be0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f5ec8be0000
+835   mmap(0x7f5ec8be6000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5ec8be6000
+835   close(3)                          = 0
+835   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5ec89c8000
+835   arch_prctl(ARCH_SET_FS, 0x7f5ec89c8740) = 0
+835   set_tid_address(0x7f5ec89c8a10)   = 835
+835   set_robust_list(0x7f5ec89c8a20, 24) = 0
+835   rseq(0x7f5ec89c90e0, 0x20, 0, 0x53053053) = 0
+835   mprotect(0x7f5ec8be0000, 16384, PROT_READ) = 0
+835   mprotect(0x564cc631d000, 4096, PROT_READ) = 0
+835   mprotect(0x7f5ec8c2f000, 8192, PROT_READ) = 0
+835   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+835   munmap(0x7f5ec8bf3000, 6133)      = 0
+835   getrandom("\xe8\x6c\xa6\x3d\x09\xc6\xc6\x86", 8, GRND_NONBLOCK) = 8
+835   brk(NULL)                         = 0x564cc7f51000
+835   brk(0x564cc7f72000)               = 0x564cc7f72000
+835   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+835   write(1, "PYTHONUNBUFFERED=1\nHOSTNAME=2844c2ae5dc3\nPWD=/tmp\nTZ=America/Los_Angeles\nHOME=/root\nTERM=xterm\nDEBCONF_NONINTERACTIVE_SEEN=true\n"..., 278) = 278
+835   close(1)                          = 0
+835   close(2)                          = 0
+835   exit_group(0)                     = ?
+835   +++ exited with 0 +++

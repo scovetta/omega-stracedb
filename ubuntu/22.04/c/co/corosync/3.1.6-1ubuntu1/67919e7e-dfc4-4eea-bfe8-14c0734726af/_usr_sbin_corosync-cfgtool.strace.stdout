@@ -1,0 +1,15 @@
+corosync-cfgtool [[-i <interface ip>] [-b] -s] [-R] [-L] [-k nodeid] [-a nodeid] [-h] [-H]
+
+A tool for displaying and configuring active parameters within corosync.
+options:
+	-i	Finds only information about the specified interface IP address or link id when used with -s..
+	-s	Displays the status of the current links on this node.
+	-n	Displays the status of the connected nodes and their links.
+	-b	Displays the brief status of the current links on this node when used with -s.
+	-R	Tell all instances of corosync in this cluster to reload corosync.conf.
+	-L	Tell corosync to reopen all logging files.
+	-k	Kill a node identified by node id.
+	-a	Display the IP address(es) of a node
+	-h	Print basic usage.
+	-H	Shutdown corosync cleanly on this node.
+		--force will shut down corosync regardless of daemon vetos

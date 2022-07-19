@@ -1,0 +1,43 @@
+515   execve("/usr/bin/riscv64-linux-gnu-elfedit", ["/usr/bin/riscv64-linux-gnu-elfedit"], 0x7ffe9f414cf0 /* 12 vars */) = 0
+515   brk(NULL)                         = 0x55e5ceb86000
+515   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc59e41590) = -1 EINVAL (Invalid argument)
+515   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f75e2ca7000
+515   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+515   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+515   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6545, ...}, AT_EMPTY_PATH) = 0
+515   mmap(NULL, 6545, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f75e2ca5000
+515   close(3)                          = 0
+515   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+515   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+515   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+515   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+515   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+515   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+515   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+515   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f75e2a7d000
+515   mmap(0x7f75e2aa5000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f75e2aa5000
+515   mmap(0x7f75e2c3a000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f75e2c3a000
+515   mmap(0x7f75e2c92000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f75e2c92000
+515   mmap(0x7f75e2c98000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f75e2c98000
+515   close(3)                          = 0
+515   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f75e2a7a000
+515   arch_prctl(ARCH_SET_FS, 0x7f75e2a7a740) = 0
+515   set_tid_address(0x7f75e2a7aa10)   = 515
+515   set_robust_list(0x7f75e2a7aa20, 24) = 0
+515   rseq(0x7f75e2a7b0e0, 0x20, 0, 0x53053053) = 0
+515   mprotect(0x7f75e2c92000, 16384, PROT_READ) = 0
+515   mprotect(0x55e5cd0a3000, 4096, PROT_READ) = 0
+515   mprotect(0x7f75e2ce1000, 8192, PROT_READ) = 0
+515   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+515   munmap(0x7f75e2ca5000, 6545)      = 0
+515   getrandom("\x49\x04\x0d\xc5\xc3\xb1\x29\x2d", 8, GRND_NONBLOCK) = 8
+515   brk(NULL)                         = 0x55e5ceb86000
+515   brk(0x55e5ceba7000)               = 0x55e5ceba7000
+515   write(2, "Usage: elfedit <option(s)> elffile(s)\n", 38) = 38
+515   write(2, " Update the ELF header of ELF files\n", 36) = 36
+515   write(2, " The options are:\n", 18) = 18
+515   write(2, "  --input-mach [none|i386|iamcu|l1om|k1om|x86_64]\n                              Set input machine type\n  --output-mach [none|i38"..., 811) = 811
+515   write(2, "  --enable-x86-feature [ibt|shstk|lam_u48|lam_u57]\n                              Enable x86 feature\n  --disable-x86-feature [ibt"..., 202) = 202
+515   write(2, "  -h --help                   Display this information\n  -v --version                Display the version number of elfedit\n", 123) = 123
+515   exit_group(1)                     = ?
+515   +++ exited with 1 +++

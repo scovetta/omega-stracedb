@@ -1,0 +1,54 @@
+470   execve("/usr/bin/col", ["/usr/bin/col"], 0x7fff6aebee60 /* 12 vars */) = 0
+470   brk(NULL)                         = 0x55dc10277000
+470   arch_prctl(0x3001 /* ARCH_??? */, 0x7fffc9673230) = -1 EINVAL (Invalid argument)
+470   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc80d514000
+470   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+470   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+470   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+470   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc80d512000
+470   close(3)                          = 0
+470   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+470   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+470   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+470   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+470   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+470   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+470   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+470   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc80d2ea000
+470   mmap(0x7fc80d312000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fc80d312000
+470   mmap(0x7fc80d4a7000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fc80d4a7000
+470   mmap(0x7fc80d4ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fc80d4ff000
+470   mmap(0x7fc80d505000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc80d505000
+470   close(3)                          = 0
+470   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc80d2e7000
+470   arch_prctl(ARCH_SET_FS, 0x7fc80d2e7740) = 0
+470   set_tid_address(0x7fc80d2e7a10)   = 470
+470   set_robust_list(0x7fc80d2e7a20, 24) = 0
+470   rseq(0x7fc80d2e80e0, 0x20, 0, 0x53053053) = 0
+470   mprotect(0x7fc80d4ff000, 16384, PROT_READ) = 0
+470   mprotect(0x55dc0f911000, 4096, PROT_READ) = 0
+470   mprotect(0x7fc80d54e000, 8192, PROT_READ) = 0
+470   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+470   munmap(0x7fc80d512000, 6133)      = 0
+470   getrandom("\xd9\xd1\x8b\xca\x89\x18\xc3\xe8", 8, GRND_NONBLOCK) = 8
+470   brk(NULL)                         = 0x55dc10277000
+470   brk(0x55dc10298000)               = 0x55dc10298000
+470   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=133, ...}, AT_EMPTY_PATH) = 0
+470   read(0, "/usr/bin/col\n/usr/bin/colcrt\n/usr/bin/colrm\n/usr/bin/column\n/usr/bin/hexdump\n/usr/bin/look\n/usr/bin/ul\n/usr/bin/write.ul\n/usr/bi"..., 4096) = 133
+470   read(0, "", 4096)                 = 0
+470   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+470   write(1, "/usr/bin/col\n/us", 16) = 16
+470   write(1, "r/bin/colcrt\n/us", 16) = 16
+470   write(1, "r/bin/colrm\n/usr", 16) = 16
+470   write(1, "/bin/column\n/usr", 16) = 16
+470   write(1, "/bin/hexdump\n/us", 16) = 16
+470   write(1, "r/bin/look\n/usr/", 16) = 16
+470   write(1, "bin/ul\n/usr/bin/", 16) = 16
+470   write(1, "write.ul\n/usr/bi", 16) = 16
+470   write(1, "n/hd\n", 5)             = 5
+470   dup(1)                            = 3
+470   close(3)                          = 0
+470   dup(2)                            = 3
+470   close(3)                          = 0
+470   exit_group(0)                     = ?
+470   +++ exited with 0 +++

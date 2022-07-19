@@ -1,0 +1,37 @@
+/* test_uid_to_name_one(0, "root") */
+/* test_uid_to_name_one(65534, "nobody") */
+/* test_uid_to_name_one(65535, "65535") */
+/* test_uid_to_name_one(4294967295, "4294967295") */
+/* test_gid_to_name_one(0, "root") */
+/* test_gid_to_name_one(65534, "nogroup") */
+/* test_gid_to_name_one(5, "tty") */
+/* test_gid_to_name_one(65535, "65535") */
+/* test_gid_to_name_one(4294967295, "4294967295") */
+/* test_get_user_creds_one("root", "root", 0, 0, "/root", "/bin/sh") */
+got "root", 0, 0, "/root", "/bin/sh": Success
+/* test_get_user_creds_one("0", "root", 0, 0, "/root", "/bin/sh") */
+got "root", 0, 0, "/root", "/bin/sh": Success
+/* test_get_user_creds_one("nobody", "nobody", 65534, 65534, "/", "/usr/sbin/nologin") */
+got "nobody", 65534, 65534, "/", "/usr/sbin/nologin": Success
+/* test_get_user_creds_one("65534", "nobody", 65534, 65534, "/", "/usr/sbin/nologin") */
+got "nobody", 65534, 65534, "/", "/usr/sbin/nologin": Success
+/* test_get_group_creds_one("root", "root", 0) */
+got "root", 0: Success
+/* test_get_group_creds_one("0", "root", 0) */
+got "root", 0: Success
+/* test_get_group_creds_one("nogroup", "nogroup", 65534) */
+got "nogroup", 65534: Success
+/* test_get_group_creds_one("65534", "nogroup", 65534) */
+got "nogroup", 65534: Success
+/* test_parse_uid */
+/* test_uid_ptr */
+/* test_valid_user_group_name_relaxed */
+/* test_valid_user_group_name */
+/* test_valid_user_group_name_or_numeric_relaxed */
+/* test_valid_user_group_name_or_numeric */
+/* test_valid_gecos */
+/* test_valid_home */
+/* test_make_salt */
+got $y$j9T$IC96gSXqq4jOyfmupEMHL1
+got $y$j9T$LY8q8iLj/6C6eBCQ7K33M0
+/* test_parse_uid_range */

@@ -1,0 +1,16 @@
+/* test_udev_replace_whitespace */
+/* test_udev_resolve_subsys_kernel */
+"hoge" → expect: "(null)", -22, actual: "", -22
+"[hoge" → expect: "(null)", -22, actual: "", -22
+"[hoge/foo" → expect: "(null)", -22, actual: "", -22
+"[hoge/]" → expect: "(null)", -22, actual: "", -22
+"[net/lo]" → expect: "/sys/devices/virtual/net/lo", 0, actual: "/sys/devices/virtual/net/lo", 0
+"[net/lo]/" → expect: "/sys/devices/virtual/net/lo", 0, actual: "/sys/devices/virtual/net/lo", 0
+"[net/lo]hoge" → expect: "/sys/devices/virtual/net/lo/hoge", 0, actual: "/sys/devices/virtual/net/lo/hoge", 0
+"[net/lo]/hoge" → expect: "/sys/devices/virtual/net/lo/hoge", 0, actual: "/sys/devices/virtual/net/lo/hoge", 0
+"[net/lo]" → expect: "(null)", -22, actual: "", -22
+"[net/lo]/" → expect: "(null)", -22, actual: "", -22
+"[net/lo]hoge" → expect: "", 0, actual: "", 0
+"[net/lo]/hoge" → expect: "", 0, actual: "", 0
+"[net/lo]address" → expect: "00:00:00:00:00:00", 0, actual: "00:00:00:00:00:00", 0
+"[net/lo]/address" → expect: "00:00:00:00:00:00", 0, actual: "00:00:00:00:00:00", 0

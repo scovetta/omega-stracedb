@@ -1,0 +1,23 @@
+/usr/bin/resolve_stack_dump  Ver 1.4 Distrib 10.6.7-MariaDB, for debian-linux-gnu (x86_64)
+MariaDB Corporation, originally created by Sasha Pachev
+This software comes with ABSOLUTELY NO WARRANTY
+
+Resolve numeric stack strace dump into symbols.
+
+Usage: /usr/bin/resolve_stack_dump [OPTIONS] symbols-file [numeric-dump-file]
+  -h, --help          Display this help and exit.
+  -V, --version       Output version information and exit.
+  -s, --symbols-file=name 
+                      Use specified symbols file
+  -n, --numeric-dump-file=name 
+                      Read the dump from specified file.
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}  Value (after reading options)
+--------------------------------- ----------------------------------------
+symbols-file                      (No default value)
+numeric-dump-file                 (No default value)
+
+The symbols-file should include the output from:  'nm --numeric-sort mysqld'.
+The numeric-dump-file should contain a numeric stack trace from mysqld.
+If the numeric-dump-file is not given, the stack trace is read from stdin.

@@ -1,0 +1,75 @@
+569   execve("/usr/bin/i686-gnu-objcopy", ["/usr/bin/i686-gnu-objcopy"], 0x7fff38e49f70 /* 12 vars */) = 0
+569   brk(NULL)                         = 0x5562de1d3000
+569   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd8f314390) = -1 EINVAL (Invalid argument)
+569   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb0040bf000
+569   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+569   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+569   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6557, ...}, AT_EMPTY_PATH) = 0
+569   mmap(NULL, 6557, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb0040bd000
+569   close(3)                          = 0
+569   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbfd-2.38-hurd-i386.so", O_RDONLY|O_CLOEXEC) = 3
+569   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\233\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \271\2\0\0\0\0\0 \271\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+569   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=959088, ...}, AT_EMPTY_PATH) = 0
+569   mmap(NULL, 961592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb003fd2000
+569   mmap(0x7fb003ffe000, 532480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7fb003ffe000
+569   mmap(0x7fb004080000, 188416, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xae000) = 0x7fb004080000
+569   mmap(0x7fb0040ae000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xdb000) = 0x7fb0040ae000
+569   close(3)                          = 0
+569   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+569   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+569   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+569   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+569   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+569   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+569   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+569   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb003daa000
+569   mmap(0x7fb003dd2000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb003dd2000
+569   mmap(0x7fb003f67000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb003f67000
+569   mmap(0x7fb003fbf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fb003fbf000
+569   mmap(0x7fb003fc5000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb003fc5000
+569   close(3)                          = 0
+569   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+569   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+569   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+569   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb003d8e000
+569   mprotect(0x7fb003d90000, 98304, PROT_NONE) = 0
+569   mmap(0x7fb003d90000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fb003d90000
+569   mmap(0x7fb003da1000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fb003da1000
+569   mmap(0x7fb003da8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fb003da8000
+569   close(3)                          = 0
+569   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb003d8c000
+569   arch_prctl(ARCH_SET_FS, 0x7fb003d8cb80) = 0
+569   set_tid_address(0x7fb003d8ce50)   = 569
+569   set_robust_list(0x7fb003d8ce60, 24) = 0
+569   rseq(0x7fb003d8d520, 0x20, 0, 0x53053053) = 0
+569   mprotect(0x7fb003fbf000, 16384, PROT_READ) = 0
+569   mprotect(0x7fb003da8000, 4096, PROT_READ) = 0
+569   mprotect(0x7fb0040ae000, 53248, PROT_READ) = 0
+569   mprotect(0x5562dd6b6000, 4096, PROT_READ) = 0
+569   mprotect(0x7fb0040f9000, 8192, PROT_READ) = 0
+569   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+569   munmap(0x7fb0040bd000, 6557)      = 0
+569   getrandom("\xe1\x8a\x87\xc7\x6b\xea\x57\xbd", 8, GRND_NONBLOCK) = 8
+569   brk(NULL)                         = 0x5562de1d3000
+569   brk(0x5562de1f4000)               = 0x5562de1f4000
+569   write(2, "Usage: /usr/bin/i686-gnu-objcopy [option(s)] in-file [out-file]\n", 64) = 64
+569   write(2, " Copies a binary file, possibly transforming it in the process\n", 63) = 63
+569   write(2, " The options are:\n", 18) = 18
+569   write(2, "  -I --input-target <bfdname>      Assume input file is in format <bfdname>\n  -O --output-target <bfdname>     Create an output "..., 469) = 469
+569   write(2, "  -D --enable-deterministic-archives\n                                   Produce deterministic output when stripping archives (de"..., 228) = 228
+569   write(2, "  -j --only-section <name>         Only copy section <name> into the output\n     --add-gnu-debuglink=<file>    Add section .gnu_"..., 7358) = 7358
+569   write(2, "/usr/bin/i686-gnu-objcopy: supported targets:", 45) = 45
+569   write(2, " elf32-i386", 11)       = 11
+569   write(2, " elf32-iamcu", 12)      = 12
+569   write(2, " elf32-little", 13)     = 13
+569   write(2, " elf32-big", 10)        = 10
+569   write(2, " srec", 5)              = 5
+569   write(2, " symbolsrec", 11)       = 11
+569   write(2, " verilog", 8)           = 8
+569   write(2, " tekhex", 7)            = 7
+569   write(2, " binary", 7)            = 7
+569   write(2, " ihex", 5)              = 5
+569   write(2, " plugin", 7)            = 7
+569   write(2, "\n", 1)                 = 1
+569   exit_group(1)                     = ?
+569   +++ exited with 1 +++

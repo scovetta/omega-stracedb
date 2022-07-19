@@ -1,0 +1,31 @@
+btrfs-progs v5.16.2
+See http://btrfs.wiki.kernel.org for more information.
+
+Usage: mkfs.btrfs [options] dev [ dev ... ]
+Options:
+  allocation profiles:
+	-d|--data PROFILE           data profile, raid0, raid1, raid1c3, raid1c4, raid5, raid6, raid10, dup or single
+	-m|--metadata PROFILE       metadata profile, values like for data profile
+	-M|--mixed                  mix metadata and data together
+  features:
+	--csum TYPE
+	--checksum TYPE             checksum algorithm to use, crc32c (default), xxhash, sha256, blake2
+	-n|--nodesize SIZE          size of btree nodes
+	-s|--sectorsize SIZE        data block size (may not be mountable by current kernel)
+	-O|--features LIST          comma separated list of filesystem features (use '-O list-all' to list features)
+	-R|--runtime-features LIST  comma separated list of runtime features (use '-R list-all' to list runtime features)
+	-L|--label LABEL            set the filesystem label
+	-U|--uuid UUID              specify the filesystem UUID (must be unique)
+  creation:
+	-b|--byte-count SIZE        set filesystem size to SIZE (on the first device)
+	-r|--rootdir DIR            copy files from DIR to the image root directory
+	--shrink                    (with --rootdir) shrink the filled filesystem to minimal size
+	-K|--nodiscard              do not perform whole device TRIM
+	-f|--force                  force overwrite of existing filesystem
+  general:
+	-q|--quiet                  no messages except errors
+	-v|--verbose                increase verbosity level, default is 1
+	-V|--version                print the mkfs.btrfs version and exit
+	--help                      print this help and exit
+  deprecated:
+	-l|--leafsize SIZE          deprecated, alias for nodesize

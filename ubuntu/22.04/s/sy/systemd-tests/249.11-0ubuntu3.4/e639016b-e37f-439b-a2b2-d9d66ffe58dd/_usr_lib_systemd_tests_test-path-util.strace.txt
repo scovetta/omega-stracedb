@@ -1,0 +1,980 @@
+2731  execve("/usr/lib/systemd/tests/test-path-util", ["/usr/lib/systemd/tests/test-path-util"], 0x7fff880c1e70 /* 12 vars */) = 0
+2731  brk(NULL)                         = 0x56322e91d000
+2731  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffca0600ba0) = -1 EINVAL (Invalid argument)
+2731  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f76451b4000
+2731  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/tls/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/tls", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/haswell/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/haswell", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/lib/systemd/x86_64", 0x7ffca05ffdc0, 0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/lib/systemd/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230N+\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0!\0 \0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\7\5\0\0\0\0\0`\7\5\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2840280, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 2850192, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644efc000
+2731  mmap(0x7f7644f4d000, 1740800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x51000) = 0x7f7644f4d000
+2731  mmap(0x7f76450f6000, 688128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fa000) = 0x7f76450f6000
+2731  mmap(0x7f764519e000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a1000) = 0x7f764519e000
+2731  mmap(0x7f76451b2000, 7568, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f76451b2000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/systemd/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7644efa000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2731  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2731  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2731  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2731  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2731  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644cd2000
+2731  mmap(0x7f7644cfa000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7644cfa000
+2731  mmap(0x7f7644e8f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f7644e8f000
+2731  mmap(0x7f7644ee7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f7644ee7000
+2731  mmap(0x7f7644eed000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7644eed000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\201\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\24\0\0\0\0\0\0000\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34888, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 36896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644cc8000
+2731  mprotect(0x7f7644cca000, 24576, PROT_NONE) = 0
+2731  mmap(0x7f7644cca000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7644cca000
+2731  mmap(0x7f7644cce000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f7644cce000
+2731  mmap(0x7f7644cd0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f7644cd0000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340T\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360i\0\0\0\0\0\0\360i\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=220192, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 222136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644c91000
+2731  mprotect(0x7f7644c98000, 172032, PROT_NONE) = 0
+2731  mmap(0x7f7644c98000, 131072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f7644c98000
+2731  mmap(0x7f7644cb8000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f7644cb8000
+2731  mmap(0x7f7644cc2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7f7644cc2000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10!\0\0\0\0\0\0\10!\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 41016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644c86000
+2731  mmap(0x7f7644c89000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f7644c89000
+2731  mmap(0x7f7644c8d000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f7644c8d000
+2731  mmap(0x7f7644c8f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f7644c8f000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7644c84000
+2731  mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644c4a000
+2731  mprotect(0x7f7644c4c000, 188416, PROT_NONE) = 0
+2731  mmap(0x7f7644c4c000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7644c4c000
+2731  mmap(0x7f7644c60000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f7644c60000
+2731  mmap(0x7f7644c7a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7f7644c7a000
+2731  mmap(0x7f7644c7c000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7644c7c000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x\300\23\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1296312, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 1299576, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644b0c000
+2731  mprotect(0x7f7644b1b000, 1200128, PROT_NONE) = 0
+2731  mmap(0x7f7644b1b000, 942080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f7644b1b000
+2731  mmap(0x7f7644c01000, 253952, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf5000) = 0x7f7644c01000
+2731  mmap(0x7f7644c40000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x133000) = 0x7f7644c40000
+2731  mmap(0x7f7644c49000, 1144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7644c49000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libip4tc.so.2", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\203\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\25\0\0\0\0\0\0\20\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=35440, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 37440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644b02000
+2731  mmap(0x7f7644b04000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7644b04000
+2731  mmap(0x7f7644b08000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f7644b08000
+2731  mmap(0x7f7644b0a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f7644b0a000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkmod.so.2", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230\241\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X2\0\0\0\0\0\0X2\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108760, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 110672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644ae6000
+2731  mmap(0x7f7644aea000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f7644aea000
+2731  mmap(0x7f7644afb000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f7644afb000
+2731  mmap(0x7f7644b00000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f7644b00000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240\341\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\36\0\0\0\0\0\0\200\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125152, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 127072, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644ac6000
+2731  mprotect(0x7f7644ac8000, 114688, PROT_NONE) = 0
+2731  mmap(0x7f7644ac8000, 102400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7644ac8000
+2731  mmap(0x7f7644ae1000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f7644ae1000
+2731  mmap(0x7f7644ae4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f7644ae4000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`#\4\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\370~\0\0\0\0\0\0\370~\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=273056, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 275000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644a82000
+2731  mprotect(0x7f7644a8a000, 237568, PROT_NONE) = 0
+2731  mmap(0x7f7644a8a000, 180224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f7644a8a000
+2731  mmap(0x7f7644ab6000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x34000) = 0x7f7644ab6000
+2731  mmap(0x7f7644ac4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x41000) = 0x7f7644ac4000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\325C\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\34\v\0\0\0\0\0(\34\v\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7644a80000
+2731  mmap(NULL, 4461760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f764463e000
+2731  mmap(0x7f76446f0000, 2478080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7f76446f0000
+2731  mmap(0x7f764494d000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30f000) = 0x7f764494d000
+2731  mmap(0x7f7644a1f000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e0000) = 0x7f7644a1f000
+2731  mmap(0x7f7644a7d000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7644a7d000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\1\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x&\0\0\0\0\0\0x&\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=67736, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 69648, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f764462c000
+2731  mmap(0x7f764462f000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f764462f000
+2731  mmap(0x7f7644638000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f7644638000
+2731  mmap(0x7f764463c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f764463c000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\330\30\0\0\0\0\0\0\330\30\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125360, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 127296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f764460c000
+2731  mprotect(0x7f764460e000, 114688, PROT_NONE) = 0
+2731  mmap(0x7f764460e000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f764460e000
+2731  mmap(0x7f764461c000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f764461c000
+2731  mmap(0x7f764462a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f764462a000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f76445e0000
+2731  mprotect(0x7f76445e6000, 139264, PROT_NONE) = 0
+2731  mmap(0x7f76445e6000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f76445e6000
+2731  mmap(0x7f7644600000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f7644600000
+2731  mmap(0x7f7644608000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f7644608000
+2731  mmap(0x7f764460a000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f764460a000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\321\f\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X\220\0\0\0\0\0\0X\220\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 843832, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644511000
+2731  mmap(0x7f764451b000, 729088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f764451b000
+2731  mmap(0x7f76445cd000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbc000) = 0x7f76445cd000
+2731  mmap(0x7f76445de000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcc000) = 0x7f76445de000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\222\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260'\0\0\0\0\0\0\260'\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=170456, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 172296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f76444e6000
+2731  mmap(0x7f76444e9000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f76444e9000
+2731  mmap(0x7f7644504000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f7644504000
+2731  mmap(0x7f764450f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f764450f000
+2731  close(3)                          = 0
+2731  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f76444e4000
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\300A\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08>\0\0\0\0\0\08>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=149760, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 151992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f76444be000
+2731  mmap(0x7f76444c2000, 90112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f76444c2000
+2731  mmap(0x7f76444d8000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f76444d8000
+2731  mmap(0x7f76444e2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7f76444e2000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\1\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250*\0\0\0\0\0\0\250*\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=133200, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 184496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7644490000
+2731  mmap(0x7f7644493000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f7644493000
+2731  mmap(0x7f764449b000, 86016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f764449b000
+2731  mmap(0x7f76444b0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f76444b0000
+2731  mmap(0x7f76444b2000, 45232, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f76444b2000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f76443f9000
+2731  mmap(0x7f76443fb000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f76443fb000
+2731  mmap(0x7f7644466000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f7644466000
+2731  mmap(0x7f764448e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f764448e000
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3
+2731  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200b\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\22\0\0\0\0\0\0H\22\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2731  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_EMPTY_PATH) = 0
+2731  mmap(NULL, 28992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f76443f1000
+2731  mmap(0x7f76443f3000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f76443f3000
+2731  mmap(0x7f76443f6000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f76443f6000
+2731  mmap(0x7f76443f7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f76443f7000
+2731  close(3)                          = 0
+2731  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f76443ef000
+2731  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f76443ec000
+2731  arch_prctl(ARCH_SET_FS, 0x7f76443ec900) = 0
+2731  set_tid_address(0x7f76443ecbd0)   = 2731
+2731  set_robust_list(0x7f76443ecbe0, 24) = 0
+2731  rseq(0x7f76443ed2a0, 0x20, 0, 0x53053053) = 0
+2731  mprotect(0x7f7644ee7000, 16384, PROT_READ) = 0
+2731  mprotect(0x7f76443f7000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f764448e000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f76444b0000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f76444e2000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f764450f000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f76445de000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644608000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f764462a000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f764463c000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644a1f000, 372736, PROT_READ) = 0
+2731  mprotect(0x7f7644cc2000, 20480, PROT_READ) = 0
+2731  mprotect(0x7f7644ac4000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644ae4000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644b00000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644b0a000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644c40000, 12288, PROT_READ) = 0
+2731  mprotect(0x7f7644c7a000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644c8f000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f7644cd0000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f764519e000, 77824, PROT_READ) = 0
+2731  mprotect(0x56322d21c000, 4096, PROT_READ) = 0
+2731  mprotect(0x7f76451ee000, 8192, PROT_READ) = 0
+2731  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2731  munmap(0x7f7644efa000, 7889)      = 0
+2731  getrandom("\x20\xb4\x6a\x78\xfb\xe3\xab\x09", 8, GRND_NONBLOCK) = 8
+2731  brk(NULL)                         = 0x56322e91d000
+2731  brk(0x56322e93e000)               = 0x56322e93e000
+2731  statfs("/sys/fs/selinux", 0x7ffca0600be0) = -1 ENOENT (No such file or directory)
+2731  statfs("/selinux", 0x7ffca0600be0) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2731  read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+2731  read(3, "", 1024)                 = 0
+2731  close(3)                          = 0
+2731  access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+2731  prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 0
+2731  prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2731  prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+2731  prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2731  prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2731  prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2731  getpid()                          = 2731
+2731  writev(2, [{iov_base="PATH_MAX=4096", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2731  writev(2, [{iov_base="FILENAME_MAX=4096", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2731  writev(2, [{iov_base="NAME_MAX=255", iov_len=12}, {iov_base="\n", iov_len=1}], 2) = 13
+2731  writev(2, [{iov_base="DEFAULT_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", iov_len=73}, {iov_base="\n", iov_len=1}], 2) = 74
+2731  writev(2, [{iov_base="DEFAULT_USER_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", iov_len=78}, {iov_base="\n", iov_len=1}], 2) = 79
+2731  writev(2, [{iov_base="/* test_path */", iov_len=15}, {iov_base="\n", iov_len=1}], 2) = 16
+2731  writev(2, [{iov_base="/* test_path_simplify */", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2731  writev(2, [{iov_base="/* test_path_simplify() \342\206\222  (expected: ) */", iov_len=44}, {iov_base="\n", iov_len=1}], 2) = 45
+2731  writev(2, [{iov_base="/* test_path_simplify(aaa/bbb////ccc) \342\206\222 aaa/bbb/ccc (expected: aaa/bbb/ccc) */", iov_len=80}, {iov_base="\n", iov_len=1}], 2) = 81
+2731  writev(2, [{iov_base="/* test_path_simplify(//aaa/.////ccc) \342\206\222 /aaa/ccc (expected: /aaa/ccc) */", iov_len=74}, {iov_base="\n", iov_len=1}], 2) = 75
+2731  writev(2, [{iov_base="/* test_path_simplify(///) \342\206\222 / (expected: /) */", iov_len=49}, {iov_base="\n", iov_len=1}], 2) = 50
+2731  writev(2, [{iov_base="/* test_path_simplify(///.//) \342\206\222 / (expected: /) */", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2731  writev(2, [{iov_base="/* test_path_simplify(///.//.///) \342\206\222 / (expected: /) */", iov_len=56}, {iov_base="\n", iov_len=1}], 2) = 57
+2731  writev(2, [{iov_base="/* test_path_simplify(////.././///../.) \342\206\222 /../.. (expected: /../..) */", iov_len=72}, {iov_base="\n", iov_len=1}], 2) = 73
+2731  writev(2, [{iov_base="/* test_path_simplify(.) \342\206\222 . (expected: .) */", iov_len=47}, {iov_base="\n", iov_len=1}], 2) = 48
+2731  writev(2, [{iov_base="/* test_path_simplify(./) \342\206\222 . (expected: .) */", iov_len=48}, {iov_base="\n", iov_len=1}], 2) = 49
+2731  writev(2, [{iov_base="/* test_path_simplify(.///.//./.) \342\206\222 . (expected: .) */", iov_len=56}, {iov_base="\n", iov_len=1}], 2) = 57
+2731  writev(2, [{iov_base="/* test_path_simplify(.///.//././/) \342\206\222 . (expected: .) */", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2731  writev(2, [{iov_base="/* test_path_simplify(//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.) \342\206\222 /aaa/.bbb/../c./d.dd/..eeee (expected: /aaa/.bbb/../c./d"..., iov_len=142}, {iov_base="\n", iov_len=1}], 2) = 143
+2731  writev(2, [{iov_base="/* test_path_simplify(//./aaa///.//./.bbb/..///c.//d.dd///..eeee/..) \342\206\222 /aaa/.bbb/../c./d.dd/..eeee/.. (expected: /aaa/.bbb/../"..., iov_len=149}, {iov_base="\n", iov_len=1}], 2) = 150
+2731  writev(2, [{iov_base="/* test_path_simplify(.//./aaa///.//./.bbb/..///c.//d.dd///..eeee/..) \342\206\222 aaa/.bbb/../c./d.dd/..eeee/.. (expected: aaa/.bbb/../c"..., iov_len=148}, {iov_base="\n", iov_len=1}], 2) = 149
+2731  writev(2, [{iov_base="/* test_path_simplify(..//./aaa///.//./.bbb/..///c.//d.dd///..eeee/..) \342\206\222 ../aaa/.bbb/../c./d.dd/..eeee/.. (expected: ../aaa/.b"..., iov_len=155}, {iov_base="\n", iov_len=1}], 2) = 156
+2731  writev(2, [{iov_base="/* test_path_simplify(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=1571}, {iov_base="\n", iov_len=1}], 2) = 1572
+2731  writev(2, [{iov_base="/* test_path_simplify(/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=1574}, {iov_base="\n", iov_len=1}], 2) = 1575
+2731  writev(2, [{iov_base="/* test_path_simplify(a////.//././//./b///././/./c/////././//./aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=1678}, {iov_base="\n", iov_len=1}], 2) = 1679
+2731  writev(2, [{iov_base="/* test_path_compare */", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2731  writev(2, [{iov_base="/* test_path_equal_root */", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "//", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "//", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/./", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/./", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/../", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/../", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/.../", 0x7ffca0600a40, 0) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/.../", 0x7ffca0600a40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/../", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/../", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+2731  newfstatat(AT_FDCWD, "/.../", 0x7ffca0600a20, 0) = -1 ENOENT (No such file or directory)
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/.../", 0x7ffca0600a20, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+2731  writev(2, [{iov_base="/* test_find_executable_full */", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  openat(AT_FDCWD, "/usr/local/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=125688, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2731  openat(AT_FDCWD, "/usr/local/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=125688, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/usr/local/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=125688, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/usr/local/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=125688, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  writev(2, [{iov_base="/* test_find_executable */", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2731  openat(AT_FDCWD, "/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=125688, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/usr/lib/systemd/tests/test-path-util", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=67968, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/usr/local/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/sh", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=125688, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/bin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=92672, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/usr/local/sbin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=92672, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/usr/local/sbin/xxxx-xxxx", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/xxxx-xxxx", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/xxxx-xxxx", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/xxxx-xxxx", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/sbin/xxxx-xxxx", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/bin/xxxx-xxxx", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/some/dir/xxxx-xxxx", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = -1 EACCES (Permission denied)
+2731  close(3)                          = 0
+2731  writev(2, [{iov_base="/* test_find_executable_exec */", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  openat(AT_FDCWD, "/usr/local/sbin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=92672, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  writev(2, [{iov_base="test_find_executable_exec_one: touch \342\206\222 /usr/bin/touch: 3/Success", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+2736  set_robust_list(0x7f76443ecbe0, 24 <unfinished ...>
+2731  <... clone resumed>, child_tidptr=0x7f76443ecbd0) = 2736
+2736  <... set_robust_list resumed>)    = 0
+2731  waitid(P_PID, 2736,  <unfinished ...>
+2736  execve("/usr/bin/touch", ["/usr/bin/touch", "--version"], 0x7ffca0600b70 /* 0 vars */) = 0
+2736  brk(NULL)                         = 0x562f410b2000
+2736  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe15955e80) = -1 EINVAL (Invalid argument)
+2736  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd4e142000
+2736  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2736  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2736  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+2736  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdd4e140000
+2736  close(3)                          = 0
+2736  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2736  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2736  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2736  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2736  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2736  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2736  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2736  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdd4df18000
+2736  mmap(0x7fdd4df40000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fdd4df40000
+2736  mmap(0x7fdd4e0d5000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fdd4e0d5000
+2736  mmap(0x7fdd4e12d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fdd4e12d000
+2736  mmap(0x7fdd4e133000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdd4e133000
+2736  close(3)                          = 0
+2736  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdd4df15000
+2736  arch_prctl(ARCH_SET_FS, 0x7fdd4df15740) = 0
+2736  set_tid_address(0x7fdd4df15a10)   = 2736
+2736  set_robust_list(0x7fdd4df15a20, 24) = 0
+2736  rseq(0x7fdd4df160e0, 0x20, 0, 0x53053053) = 0
+2736  mprotect(0x7fdd4e12d000, 16384, PROT_READ) = 0
+2736  mprotect(0x562f40589000, 4096, PROT_READ) = 0
+2736  mprotect(0x7fdd4e17c000, 8192, PROT_READ) = 0
+2736  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2736  munmap(0x7fdd4e140000, 7889)      = 0
+2736  getrandom("\xfa\x21\x7d\x58\x44\x60\x85\x69", 8, GRND_NONBLOCK) = 8
+2736  brk(NULL)                         = 0x562f410b2000
+2736  brk(0x562f410d3000)               = 0x562f410d3000
+2736  newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2736  write(1, "touch (GNU coreutils) 8.32\nCopyright (C) 2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https:/"..., 365) = 365
+2736  close(1)                          = 0
+2736  close(2)                          = 0
+2736  exit_group(0)                     = ?
+2736  +++ exited with 0 +++
+2731  <... waitid resumed>{si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2736, si_uid=0, si_status=0, si_utime=0, si_stime=0}, WEXITED, NULL) = 0
+2731  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2736, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+2731  writev(2, [{iov_base="/usr/bin/touch succeeded.", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2731  close(3)                          = 0
+2731  openat(AT_FDCWD, "/bin/touch", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=92672, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  writev(2, [{iov_base="test_find_executable_exec_one: /bin/touch \342\206\222 /bin/touch: 3/Success", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f76443ecbd0) = 2737
+2737  set_robust_list(0x7f76443ecbe0, 24 <unfinished ...>
+2731  waitid(P_PID, 2737,  <unfinished ...>
+2737  <... set_robust_list resumed>)    = 0
+2737  execve("/bin/touch", ["/bin/touch", "--version"], 0x7ffca0600b70 /* 0 vars */) = 0
+2737  brk(NULL)                         = 0x55777f3e7000
+2737  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe426c7b40) = -1 EINVAL (Invalid argument)
+2737  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f475a7ff000
+2737  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2737  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2737  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+2737  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f475a7fd000
+2737  close(3)                          = 0
+2737  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2737  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2737  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2737  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2737  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2737  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2737  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2737  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f475a5d5000
+2737  mmap(0x7f475a5fd000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f475a5fd000
+2737  mmap(0x7f475a792000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f475a792000
+2737  mmap(0x7f475a7ea000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f475a7ea000
+2737  mmap(0x7f475a7f0000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f475a7f0000
+2737  close(3)                          = 0
+2737  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f475a5d2000
+2737  arch_prctl(ARCH_SET_FS, 0x7f475a5d2740) = 0
+2737  set_tid_address(0x7f475a5d2a10)   = 2737
+2737  set_robust_list(0x7f475a5d2a20, 24) = 0
+2737  rseq(0x7f475a5d30e0, 0x20, 0, 0x53053053) = 0
+2737  mprotect(0x7f475a7ea000, 16384, PROT_READ) = 0
+2737  mprotect(0x55777da00000, 4096, PROT_READ) = 0
+2737  mprotect(0x7f475a839000, 8192, PROT_READ) = 0
+2737  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2737  munmap(0x7f475a7fd000, 7889)      = 0
+2737  getrandom("\xda\x62\x07\x53\x9a\x50\x05\x09", 8, GRND_NONBLOCK) = 8
+2737  brk(NULL)                         = 0x55777f3e7000
+2737  brk(0x55777f408000)               = 0x55777f408000
+2737  newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=365, ...}, AT_EMPTY_PATH) = 0
+2737  write(1, "touch (GNU coreutils) 8.32\nCopyright (C) 2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https:/"..., 365) = 365
+2737  close(1)                          = 0
+2737  close(2)                          = 0
+2737  exit_group(0)                     = ?
+2737  +++ exited with 0 +++
+2731  <... waitid resumed>{si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2737, si_uid=0, si_status=0, si_utime=0, si_stime=0}, WEXITED, NULL) = 0
+2731  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2737, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+2731  writev(2, [{iov_base="/bin/touch succeeded.", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2731  close(3)                          = 0
+2731  readlinkat(AT_FDCWD, "/proc/self/exe", "/usr/lib/systemd/tests/test-path-util", 4096) = 37
+2731  openat(AT_FDCWD, "/usr/lib/systemd/tests/systemd-runtest.env", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2731  access("/usr/lib/systemd/tests/testdata", F_OK) = 0
+2731  openat(AT_FDCWD, "/usr/lib/systemd/tests/testdata/test-path-util/script.sh", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=124, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  writev(2, [{iov_base="test_find_executable_exec_one: /usr/lib/systemd/tests/testdata/test-path-util/script.sh \342\206\222 /usr/lib/systemd/tests/testdata/test"..., iov_len=159}, {iov_base="\n", iov_len=1}], 2) = 160
+2731  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f76443ecbd0) = 2738
+2738  set_robust_list(0x7f76443ecbe0, 24 <unfinished ...>
+2731  waitid(P_PID, 2738,  <unfinished ...>
+2738  <... set_robust_list resumed>)    = 0
+2738  execve("/usr/lib/systemd/tests/testdata/test-path-util/script.sh", ["/usr/lib/systemd/tests/testdata/test-path-util/script.sh", "--version"], 0x7ffca0600b70 /* 0 vars */) = 0
+2738  brk(NULL)                         = 0x560fdb865000
+2738  arch_prctl(0x3001 /* ARCH_??? */, 0x7fffa28d81e0) = -1 EINVAL (Invalid argument)
+2738  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9fdf96f000
+2738  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2738  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2738  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+2738  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9fdf96d000
+2738  close(3)                          = 0
+2738  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2738  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2738  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2738  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2738  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2738  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2738  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2738  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9fdf745000
+2738  mmap(0x7f9fdf76d000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f9fdf76d000
+2738  mmap(0x7f9fdf902000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f9fdf902000
+2738  mmap(0x7f9fdf95a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f9fdf95a000
+2738  mmap(0x7f9fdf960000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9fdf960000
+2738  close(3)                          = 0
+2738  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9fdf742000
+2738  arch_prctl(ARCH_SET_FS, 0x7f9fdf742740) = 0
+2738  set_tid_address(0x7f9fdf742a10)   = 2738
+2738  set_robust_list(0x7f9fdf742a20, 24) = 0
+2738  rseq(0x7f9fdf7430e0, 0x20, 0, 0x53053053) = 0
+2738  mprotect(0x7f9fdf95a000, 16384, PROT_READ) = 0
+2738  mprotect(0x560fda1ae000, 8192, PROT_READ) = 0
+2738  mprotect(0x7f9fdf9a9000, 8192, PROT_READ) = 0
+2738  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2738  munmap(0x7f9fdf96d000, 7889)      = 0
+2738  getuid()                          = 0
+2738  getgid()                          = 0
+2738  getpid()                          = 2738
+2738  rt_sigaction(SIGCHLD, {sa_handler=0x560fda1a4aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f9fdf787520}, NULL, 8) = 0
+2738  geteuid()                         = 0
+2738  getppid()                         = 2731
+2738  getrandom("\x45\xfe\x30\x10\x6a\x44\xd0\x6a", 8, GRND_NONBLOCK) = 8
+2738  brk(NULL)                         = 0x560fdb865000
+2738  brk(0x560fdb886000)               = 0x560fdb886000
+2738  getcwd("/tmp", 4096)              = 5
+2738  openat(AT_FDCWD, "/usr/lib/systemd/tests/testdata/test-path-util/script.sh", O_RDONLY) = 3
+2738  fcntl(3, F_DUPFD, 10)             = 10
+2738  close(3)                          = 0
+2738  fcntl(10, F_SETFD, FD_CLOEXEC)    = 0
+2738  geteuid()                         = 0
+2738  getegid()                         = 0
+2738  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2738  rt_sigaction(SIGINT, {sa_handler=0x560fda1a4aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f9fdf787520}, NULL, 8) = 0
+2738  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2738  rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f9fdf787520}, NULL, 8) = 0
+2738  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+2738  rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f9fdf787520}, NULL, 8) = 0
+2738  read(10, "#!/bin/sh\n\necho \"$0 $@\"\ntest \"$(basename $0)\" = \"script.sh\" || exit 1\ntest \"$1\" = \"--version\" || exit 2\necho \"Life is good\"\n", 8192) = 124
+2738  write(1, "/usr/lib/systemd/tests/testdata/test-path-util/script.sh --version\n", 67) = 67
+2738  pipe2([3, 4], 0)                  = 0
+2738  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+2739  set_robust_list(0x7f9fdf742a20, 24 <unfinished ...>
+2738  <... clone resumed>, child_tidptr=0x7f9fdf742a10) = 2739
+2739  <... set_robust_list resumed>)    = 0
+2738  close(4 <unfinished ...>
+2739  close(10 <unfinished ...>
+2738  <... close resumed>)              = 0
+2739  <... close resumed>)              = 0
+2738  read(3,  <unfinished ...>
+2739  close(3)                          = 0
+2739  dup2(4, 1)                        = 1
+2739  close(4)                          = 0
+2739  newfstatat(AT_FDCWD, "/usr/local/sbin/basename", 0x7fffa28d7bc0, 0) = -1 ENOENT (No such file or directory)
+2739  newfstatat(AT_FDCWD, "/usr/local/bin/basename", 0x7fffa28d7bc0, 0) = -1 ENOENT (No such file or directory)
+2739  newfstatat(AT_FDCWD, "/usr/sbin/basename", 0x7fffa28d7bc0, 0) = -1 ENOENT (No such file or directory)
+2739  newfstatat(AT_FDCWD, "/usr/bin/basename", {st_mode=S_IFREG|0755, st_size=35328, ...}, 0) = 0
+2739  execve("/usr/bin/basename", ["basename", "/usr/lib/systemd/tests/testdata/test-path-util/script.sh"], 0x560fdb8675a8 /* 1 var */) = 0
+2739  brk(NULL)                         = 0x560251390000
+2739  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe32867c50) = -1 EINVAL (Invalid argument)
+2739  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcec102f000
+2739  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2739  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2739  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+2739  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcec102d000
+2739  close(3)                          = 0
+2739  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2739  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2739  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2739  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2739  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2739  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2739  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2739  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcec0e05000
+2739  mmap(0x7fcec0e2d000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fcec0e2d000
+2739  mmap(0x7fcec0fc2000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fcec0fc2000
+2739  mmap(0x7fcec101a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fcec101a000
+2739  mmap(0x7fcec1020000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcec1020000
+2739  close(3)                          = 0
+2739  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcec0e02000
+2739  arch_prctl(ARCH_SET_FS, 0x7fcec0e02740) = 0
+2739  set_tid_address(0x7fcec0e02a10)   = 2739
+2739  set_robust_list(0x7fcec0e02a20, 24) = 0
+2739  rseq(0x7fcec0e030e0, 0x20, 0, 0x53053053) = 0
+2739  mprotect(0x7fcec101a000, 16384, PROT_READ) = 0
+2739  mprotect(0x560250d92000, 4096, PROT_READ) = 0
+2739  mprotect(0x7fcec1069000, 8192, PROT_READ) = 0
+2739  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2739  munmap(0x7fcec102d000, 7889)      = 0
+2739  getrandom("\xfb\xe3\x9d\x3d\xd1\xef\x53\xd4", 8, GRND_NONBLOCK) = 8
+2739  brk(NULL)                         = 0x560251390000
+2739  brk(0x5602513b1000)               = 0x5602513b1000
+2739  newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2739  write(1, "script.sh\n", 10)       = 10
+2738  <... read resumed>"script.sh\n", 128) = 10
+2739  close(1 <unfinished ...>
+2738  read(3,  <unfinished ...>
+2739  <... close resumed>)              = 0
+2738  <... read resumed>"", 128)        = 0
+2739  close(2 <unfinished ...>
+2738  close(3 <unfinished ...>
+2739  <... close resumed>)              = 0
+2738  <... close resumed>)              = 0
+2739  exit_group(0 <unfinished ...>
+2738  wait4(-1,  <unfinished ...>
+2739  <... exit_group resumed>)         = ?
+2739  +++ exited with 0 +++
+2738  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 2739
+2738  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2739, si_uid=0, si_status=0, si_utime=0, si_stime=2} ---
+2738  rt_sigreturn({mask=[]})           = 2739
+2738  wait4(-1, 0x7fffa28d7c6c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+2738  write(1, "Life is good\n", 13)    = 13
+2738  read(10, "", 8192)                = 0
+2738  exit_group(0)                     = ?
+2738  +++ exited with 0 +++
+2731  <... waitid resumed>{si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2738, si_uid=0, si_status=0, si_utime=0, si_stime=0}, WEXITED, NULL) = 0
+2731  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2738, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+2731  writev(2, [{iov_base="/usr/lib/systemd/tests/testdata/test-path-util/script.sh succeeded.", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  close(3)                          = 0
+2731  writev(2, [{iov_base="/* test_prefixes */", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2731  writev(2, [{iov_base="---/a/b/c/d---", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2731  writev(2, [{iov_base="---/a/b/c---", iov_len=12}, {iov_base="\n", iov_len=1}], 2) = 13
+2731  writev(2, [{iov_base="---/a/b---", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2731  writev(2, [{iov_base="---/a---", iov_len=8}, {iov_base="\n", iov_len=1}], 2) = 9
+2731  writev(2, [{iov_base="------", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2731  writev(2, [{iov_base="---/a/b/c---", iov_len=12}, {iov_base="\n", iov_len=1}], 2) = 13
+2731  writev(2, [{iov_base="---/a/b---", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2731  writev(2, [{iov_base="---/a---", iov_len=8}, {iov_base="\n", iov_len=1}], 2) = 9
+2731  writev(2, [{iov_base="------", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2731  writev(2, [{iov_base="/* test_path_join */", iov_len=20}, {iov_base="\n", iov_len=1}], 2) = 21
+2731  writev(2, [{iov_base="got \"/root/a/b/c\", expected \"/root/a/b/c\"", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2731  writev(2, [{iov_base="got \"/root/a/b/c\", expected \"/root/a/b/c\"", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2731  writev(2, [{iov_base="got \"/root/a/b/c\", expected \"/root/a/b/c\"", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2731  writev(2, [{iov_base="got \"/root/c\", expected \"/root/c\"", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="got \"/root/\", expected \"/root/\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  writev(2, [{iov_base="got \"/a/b/c\", expected \"/a/b/c\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  writev(2, [{iov_base="got \"a/b/c\", expected \"a/b/c\"", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2731  writev(2, [{iov_base="got \"/a/b/c\", expected \"/a/b/c\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  writev(2, [{iov_base="got \"/c\", expected \"/c\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2731  writev(2, [{iov_base="got \"/\", expected \"/\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2731  writev(2, [{iov_base="got \"/a/b/c\", expected \"/a/b/c\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  writev(2, [{iov_base="got \"a/b/c\", expected \"a/b/c\"", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2731  writev(2, [{iov_base="got \"/a/b/c\", expected \"/a/b/c\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  writev(2, [{iov_base="got \"/c\", expected \"/c\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2731  writev(2, [{iov_base="got \"/\", expected \"/\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2731  writev(2, [{iov_base="got \"\", expected \"\"", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2731  writev(2, [{iov_base="got \"\", expected \"\"", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2731  writev(2, [{iov_base="got \"\", expected \"\"", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2731  writev(2, [{iov_base="got \"foo/bar\", expected \"foo/bar\"", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="got \"foo/bar\", expected \"foo/bar\"", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="got \"foo/bar\", expected \"foo/bar\"", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="got \"foo/bar\", expected \"foo/bar\"", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="got \"foo/bar\", expected \"foo/bar\"", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="got \"//foo///bar//\", expected \"//foo///bar//\"", iov_len=45}, {iov_base="\n", iov_len=1}], 2) = 46
+2731  writev(2, [{iov_base="got \"/foo/bar/\", expected \"/foo/bar/\"", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2731  writev(2, [{iov_base="got \"foo/bar/baz\", expected \"foo/bar/baz\"", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2731  writev(2, [{iov_base="got \"foo/bar/baz\", expected \"foo/bar/baz\"", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2731  writev(2, [{iov_base="got \"foo//bar//baz\", expected \"foo//bar//baz\"", iov_len=45}, {iov_base="\n", iov_len=1}], 2) = 46
+2731  writev(2, [{iov_base="got \"//foo////bar////baz//\", expected \"//foo////bar////baz//\"", iov_len=61}, {iov_base="\n", iov_len=1}], 2) = 62
+2731  writev(2, [{iov_base="/* test_path_extend */", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2731  writev(2, [{iov_base="/* test_fsck_exists */", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2731  openat(AT_FDCWD, "/usr/local/sbin/fsck.minix", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/fsck.minix", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/fsck.minix", O_RDONLY|O_CLOEXEC|O_PATH) = 3
+2731  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=55704, ...}, AT_EMPTY_PATH) = 0
+2731  access("/proc/self/fd/3", X_OK)   = 0
+2731  close(3)                          = 0
+2731  readlinkat(AT_FDCWD, "/usr/sbin/fsck.minix", 0x56322e91f620, 4096) = -1 EINVAL (Invalid argument)
+2731  openat(AT_FDCWD, "/usr/local/sbin/fsck.AbCdE", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/local/bin/fsck.AbCdE", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/sbin/fsck.AbCdE", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/usr/bin/fsck.AbCdE", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/sbin/fsck.AbCdE", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "/bin/fsck.AbCdE", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "fsck./../bin/", O_RDONLY|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2731  writev(2, [{iov_base="/* test_make_relative */", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(some/relative/path, /some/path) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/some/path, some/relative/path) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/some/dotdot/../path, /some/path) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/, /) */", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/, /some/path) */", iov_len=48}, {iov_base="\n", iov_len=1}], 2) = 49
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/some/path, /some/path) */", iov_len=57}, {iov_base="\n", iov_len=1}], 2) = 58
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/some/path, /some/path/in/subdir) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/some/path, /) */", iov_len=48}, {iov_base="\n", iov_len=1}], 2) = 49
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/some/path, /some/other/path) */", iov_len=63}, {iov_base="\n", iov_len=1}], 2) = 64
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(/some/path/./dot, /some/further/path) */", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2731  writev(2, [{iov_base="/* test_path_make_relative_one(//extra.//.//./.slashes//./won't////fo.ol///anybody//, /././/extra././/.slashes////ar.e/.just/./."..., iov_len=141}, {iov_base="\n", iov_len=1}], 2) = 142
+2731  mkdir("/tmp/test-path-util-4bfdzx", 0700) = 0
+2731  mkdir("/tmp/test-path-util-4bfdzx/dir1", 0700) = 0
+2731  mkdir("/tmp/test-path-util-4bfdzx/dir2", 0700) = 0
+2731  symlink("dir2", "/tmp/test-path-util-4bfdzx/dir3") = 0
+2731  openat(AT_FDCWD, "/tmp/test-path-util-4bfdzx", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+2731  openat(3, "dir1", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+2731  newfstatat(4, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2731  close(3)                          = 0
+2731  close(4)                          = 0
+2731  openat(AT_FDCWD, "/tmp/test-path-util-4bfdzx", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+2731  openat(3, "dir2", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+2731  newfstatat(4, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2731  close(3)                          = 0
+2731  close(4)                          = 0
+2731  openat(AT_FDCWD, "/tmp/test-path-util-4bfdzx", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 3
+2731  openat(3, "dir3", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+2731  newfstatat(4, "", {st_mode=S_IFLNK|0777, st_size=4, ...}, AT_EMPTY_PATH) = 0
+2731  readlinkat(3, "dir3", "dir2", 4096) = 4
+2731  close(4)                          = 0
+2731  openat(3, "dir2", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 4
+2731  newfstatat(4, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2731  close(3)                          = 0
+2731  close(4)                          = 0
+2731  newfstatat(AT_FDCWD, "/tmp/test-path-util-4bfdzx", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2731  openat(AT_FDCWD, "/tmp/test-path-util-4bfdzx", O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_NOATIME|O_CLOEXEC|O_DIRECTORY) = 3
+2731  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2731  fcntl(3, F_GETFL)                 = 0x78800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_NOATIME|O_DIRECTORY)
+2731  fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+2731  getdents64(3, 0x56322e91f710 /* 5 entries */, 32768) = 120
+2731  unlinkat(3, "dir3", 0)            = 0
+2731  statx(3, "dir2", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW|AT_NO_AUTOMOUNT, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=4096, ...}) = 0
+2731  openat(3, "dir2", O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_NOATIME|O_CLOEXEC|O_DIRECTORY) = 4
+2731  newfstatat(4, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2731  fcntl(4, F_GETFL)                 = 0x78800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_NOATIME|O_DIRECTORY)
+2731  fcntl(4, F_SETFD, FD_CLOEXEC)     = 0
+2731  getdents64(4, 0x56322e927750 /* 2 entries */, 32768) = 48
+2731  getdents64(4, 0x56322e927750 /* 0 entries */, 32768) = 0
+2731  close(4)                          = 0
+2731  unlinkat(3, "dir2", AT_REMOVEDIR) = 0
+2731  statx(3, "dir1", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW|AT_NO_AUTOMOUNT, STATX_TYPE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=4096, ...}) = 0
+2731  openat(3, "dir1", O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_NOATIME|O_CLOEXEC|O_DIRECTORY) = 4
+2731  newfstatat(4, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2731  fcntl(4, F_GETFL)                 = 0x78800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_NOATIME|O_DIRECTORY)
+2731  fcntl(4, F_SETFD, FD_CLOEXEC)     = 0
+2731  getdents64(4, 0x56322e927750 /* 2 entries */, 32768) = 48
+2731  getdents64(4, 0x56322e927750 /* 0 entries */, 32768) = 0
+2731  close(4)                          = 0
+2731  unlinkat(3, "dir1", AT_REMOVEDIR) = 0
+2731  getdents64(3, 0x56322e91f710 /* 0 entries */, 32768) = 0
+2731  close(3)                          = 0
+2731  rmdir("/tmp/test-path-util-4bfdzx") = 0
+2731  writev(2, [{iov_base="/* test_path_startswith */", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo) */", iov_len=54}, {iov_base="\n", iov_len=1}], 2) = 55
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/) */", iov_len=55}, {iov_base="\n", iov_len=1}], 2) = 56
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /) */", iov_len=51}, {iov_base="\n", iov_len=1}], 2) = 52
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, ////) */", iov_len=54}, {iov_base="\n", iov_len=1}], 2) = 55
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo//bar/////barfoo///) */", iov_len=73}, {iov_base="\n", iov_len=1}], 2) = 74
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfoo////) */", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar///barfoo/) */", iov_len=68}, {iov_base="\n", iov_len=1}], 2) = 69
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo////bar/barfoo/) */", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, ////foo/bar/barfoo/) */", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfoo) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfooa/) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfooa) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, ) */", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /bar/foo) */", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /f/b/b/) */", iov_len=57}, {iov_base="\n", iov_len=1}], 2) = 58
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfo) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/bar) */", iov_len=62}, {iov_base="\n", iov_len=1}], 2) = 63
+2731  writev(2, [{iov_base="/* test_path_startswith_one(/foo/bar/barfoo/, /fo) */", iov_len=53}, {iov_base="\n", iov_len=1}], 2) = 54
+2731  writev(2, [{iov_base="/* test_prefix_root */", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2731  writev(2, [{iov_base="/* test_file_in_same_dir */", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2731  writev(2, [{iov_base="/* test_path_find_first_component */", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"(null)\", accept_dot_dot=no) */", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"\", accept_dot_dot=no) */", iov_len=63}, {iov_base="\n", iov_len=1}], 2) = 64
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"/\", accept_dot_dot=no) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\".\", accept_dot_dot=no) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"./\", accept_dot_dot=no) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"./.\", accept_dot_dot=no) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"..\", accept_dot_dot=no) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"/..\", accept_dot_dot=no) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"./..\", accept_dot_dot=no) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"////./././//.\", accept_dot_dot=no) */", iov_len=76}, {iov_base="\n", iov_len=1}], 2) = 77
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"a/b/c\", accept_dot_dot=no) */", iov_len=68}, {iov_base="\n", iov_len=1}], 2) = 69
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"././//.///aa/bbb//./ccc\", accept_dot_dot=no) */", iov_len=86}, {iov_base="\n", iov_len=1}], 2) = 87
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"././//.///aa/.../../bbb//./ccc/.\", accept_dot_dot=no) */", iov_len=95}, {iov_base="\n", iov_len=1}], 2) = 96
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.\", accept_dot_dot=no) */", iov_len=107}, {iov_base="\n", iov_len=1}], 2) = 108
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"a/foo./b\", accept_dot_dot=no) */", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"(null)\", accept_dot_dot=yes) */", iov_len=70}, {iov_base="\n", iov_len=1}], 2) = 71
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"\", accept_dot_dot=yes) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"/\", accept_dot_dot=yes) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\".\", accept_dot_dot=yes) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"./\", accept_dot_dot=yes) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"./.\", accept_dot_dot=yes) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"..\", accept_dot_dot=yes) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"/..\", accept_dot_dot=yes) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"./..\", accept_dot_dot=yes) */", iov_len=68}, {iov_base="\n", iov_len=1}], 2) = 69
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"////./././//.\", accept_dot_dot=yes) */", iov_len=77}, {iov_base="\n", iov_len=1}], 2) = 78
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"a/b/c\", accept_dot_dot=yes) */", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"././//.///aa/bbb//./ccc\", accept_dot_dot=yes) */", iov_len=87}, {iov_base="\n", iov_len=1}], 2) = 88
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"././//.///aa/.../../bbb//./ccc/.\", accept_dot_dot=yes) */", iov_len=96}, {iov_base="\n", iov_len=1}], 2) = 97
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.\", accept_dot_dot=yes) */", iov_len=108}, {iov_base="\n", iov_len=1}], 2) = 109
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"a/foo./b\", accept_dot_dot=yes) */", iov_len=72}, {iov_base="\n", iov_len=1}], 2) = 73
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=572}, {iov_base="\n", iov_len=1}], 2) = 573
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=573}, {iov_base="\n", iov_len=1}], 2) = 574
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"a/b/c/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=589}, {iov_base="\n", iov_len=1}], 2) = 590
+2731  writev(2, [{iov_base="/* test_path_find_first_component_one(\"a/b/c/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=590}, {iov_base="\n", iov_len=1}], 2) = 591
+2731  writev(2, [{iov_base="/* test_path_find_last_component */", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"(null)\", accept_dot_dot=no) */", iov_len=68}, {iov_base="\n", iov_len=1}], 2) = 69
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"\", accept_dot_dot=no) */", iov_len=62}, {iov_base="\n", iov_len=1}], 2) = 63
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"/\", accept_dot_dot=no) */", iov_len=63}, {iov_base="\n", iov_len=1}], 2) = 64
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\".\", accept_dot_dot=no) */", iov_len=63}, {iov_base="\n", iov_len=1}], 2) = 64
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"./\", accept_dot_dot=no) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"./.\", accept_dot_dot=no) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"..\", accept_dot_dot=no) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"/..\", accept_dot_dot=no) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"./..\", accept_dot_dot=no) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"////./././//.\", accept_dot_dot=no) */", iov_len=75}, {iov_base="\n", iov_len=1}], 2) = 76
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"a/b/c\", accept_dot_dot=no) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"././//.///aa./.bbb//./ccc/././/\", accept_dot_dot=no) */", iov_len=93}, {iov_base="\n", iov_len=1}], 2) = 94
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"././//.///aa/../.../bbb//./ccc/.\", accept_dot_dot=no) */", iov_len=94}, {iov_base="\n", iov_len=1}], 2) = 95
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.\", accept_dot_dot=no) */", iov_len=106}, {iov_base="\n", iov_len=1}], 2) = 107
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"(null)\", accept_dot_dot=yes) */", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"\", accept_dot_dot=yes) */", iov_len=63}, {iov_base="\n", iov_len=1}], 2) = 64
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"/\", accept_dot_dot=yes) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\".\", accept_dot_dot=yes) */", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"./\", accept_dot_dot=yes) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"./.\", accept_dot_dot=yes) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"..\", accept_dot_dot=yes) */", iov_len=65}, {iov_base="\n", iov_len=1}], 2) = 66
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"/..\", accept_dot_dot=yes) */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"./..\", accept_dot_dot=yes) */", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"////./././//.\", accept_dot_dot=yes) */", iov_len=76}, {iov_base="\n", iov_len=1}], 2) = 77
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"a/b/c\", accept_dot_dot=yes) */", iov_len=68}, {iov_base="\n", iov_len=1}], 2) = 69
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"././//.///aa./.bbb//./ccc/././/\", accept_dot_dot=yes) */", iov_len=94}, {iov_base="\n", iov_len=1}], 2) = 95
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"././//.///aa/../.../bbb//./ccc/.\", accept_dot_dot=yes) */", iov_len=95}, {iov_base="\n", iov_len=1}], 2) = 96
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.\", accept_dot_dot=yes) */", iov_len=107}, {iov_base="\n", iov_len=1}], 2) = 108
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=571}, {iov_base="\n", iov_len=1}], 2) = 572
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=572}, {iov_base="\n", iov_len=1}], 2) = 573
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=578}, {iov_base="\n", iov_len=1}], 2) = 579
+2731  writev(2, [{iov_base="/* test_path_find_last_component_one(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=579}, {iov_base="\n", iov_len=1}], 2) = 580
+2731  writev(2, [{iov_base="/* test_path_extract_filename */", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2731  writev(2, [{iov_base="(null) \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=70}, {iov_base="\n", iov_len=1}], 2) = 71
+2731  writev(2, [{iov_base="a/b/c \342\206\222 c/Success [expected: c/-]", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2731  writev(2, [{iov_base="a/b/c/ \342\206\222 c/Unknown error 65536 [expected: c/-]", iov_len=48}, {iov_base="\n", iov_len=1}], 2) = 49
+2731  writev(2, [{iov_base="/ \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=95}, {iov_base="\n", iov_len=1}], 2) = 96
+2731  writev(2, [{iov_base="// \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=96}, {iov_base="\n", iov_len=1}], 2) = 97
+2731  writev(2, [{iov_base="/// \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=97}, {iov_base="\n", iov_len=1}], 2) = 98
+2731  writev(2, [{iov_base="/. \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=96}, {iov_base="\n", iov_len=1}], 2) = 97
+2731  writev(2, [{iov_base=". \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=95}, {iov_base="\n", iov_len=1}], 2) = 96
+2731  writev(2, [{iov_base="./ \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=96}, {iov_base="\n", iov_len=1}], 2) = 97
+2731  writev(2, [{iov_base="./. \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=97}, {iov_base="\n", iov_len=1}], 2) = 98
+2731  writev(2, [{iov_base="././ \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=98}, {iov_base="\n", iov_len=1}], 2) = 99
+2731  writev(2, [{iov_base="./.// \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=99}, {iov_base="\n", iov_len=1}], 2) = 100
+2731  writev(2, [{iov_base="/foo/a \342\206\222 a/Success [expected: a/-]", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2731  writev(2, [{iov_base="/foo/a/ \342\206\222 a/Unknown error 65536 [expected: a/-]", iov_len=49}, {iov_base="\n", iov_len=1}], 2) = 50
+2731  writev(2, [{iov_base=" \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="a \342\206\222 a/Success [expected: a/-]", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  writev(2, [{iov_base="a/ \342\206\222 a/Unknown error 65536 [expected: a/-]", iov_len=44}, {iov_base="\n", iov_len=1}], 2) = 45
+2731  writev(2, [{iov_base="a/././//. \342\206\222 a/Unknown error 65536 [expected: a/-]", iov_len=51}, {iov_base="\n", iov_len=1}], 2) = 52
+2731  writev(2, [{iov_base="/a \342\206\222 a/Success [expected: a/-]", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2731  writev(2, [{iov_base="/a/ \342\206\222 a/Unknown error 65536 [expected: a/-]", iov_len=45}, {iov_base="\n", iov_len=1}], 2) = 46
+2731  writev(2, [{iov_base="/a//./. \342\206\222 a/Unknown error 65536 [expected: a/-]", iov_len=49}, {iov_base="\n", iov_len=1}], 2) = 50
+2731  writev(2, [{iov_base="/////////////a///////////// \342\206\222 a/Unknown error 65536 [expected: a/-]", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="//./a/.///b./././.c//./d//. \342\206\222 d/Unknown error 65536 [expected: d/-]", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base="xx/. \342\206\222 xx/Unknown error 65536 [expected: xx/-]", iov_len=48}, {iov_base="\n", iov_len=1}], 2) = 49
+2731  writev(2, [{iov_base="xx/.. \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base=".. \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/.. \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="../ \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_path_extract_directory */", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="(null) \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=70}, {iov_base="\n", iov_len=1}], 2) = 71
+2731  writev(2, [{iov_base="a/b/c \342\206\222 a/b/Success [expected: a/b/Success]", iov_len=45}, {iov_base="\n", iov_len=1}], 2) = 46
+2731  writev(2, [{iov_base="a/b/c/ \342\206\222 a/b/Success [expected: a/b/Success]", iov_len=46}, {iov_base="\n", iov_len=1}], 2) = 47
+2731  writev(2, [{iov_base="/ \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=95}, {iov_base="\n", iov_len=1}], 2) = 96
+2731  writev(2, [{iov_base="// \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=96}, {iov_base="\n", iov_len=1}], 2) = 97
+2731  writev(2, [{iov_base="/// \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=97}, {iov_base="\n", iov_len=1}], 2) = 98
+2731  writev(2, [{iov_base="/. \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=96}, {iov_base="\n", iov_len=1}], 2) = 97
+2731  writev(2, [{iov_base=". \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=95}, {iov_base="\n", iov_len=1}], 2) = 96
+2731  writev(2, [{iov_base="./ \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=96}, {iov_base="\n", iov_len=1}], 2) = 97
+2731  writev(2, [{iov_base="./. \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=97}, {iov_base="\n", iov_len=1}], 2) = 98
+2731  writev(2, [{iov_base="././ \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=98}, {iov_base="\n", iov_len=1}], 2) = 99
+2731  writev(2, [{iov_base="./.// \342\206\222 (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]", iov_len=99}, {iov_base="\n", iov_len=1}], 2) = 100
+2731  writev(2, [{iov_base="/foo/a \342\206\222 /foo/Success [expected: /foo/Success]", iov_len=48}, {iov_base="\n", iov_len=1}], 2) = 49
+2731  writev(2, [{iov_base="/foo/a/ \342\206\222 /foo/Success [expected: /foo/Success]", iov_len=49}, {iov_base="\n", iov_len=1}], 2) = 50
+2731  writev(2, [{iov_base=" \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=64}, {iov_base="\n", iov_len=1}], 2) = 65
+2731  writev(2, [{iov_base="a \342\206\222 (null)/Destination address required [expected: (null)/Destination address required]", iov_len=89}, {iov_base="\n", iov_len=1}], 2) = 90
+2731  writev(2, [{iov_base="a/ \342\206\222 (null)/Destination address required [expected: (null)/Destination address required]", iov_len=90}, {iov_base="\n", iov_len=1}], 2) = 91
+2731  writev(2, [{iov_base="a/././//. \342\206\222 (null)/Destination address required [expected: (null)/Destination address required]", iov_len=97}, {iov_base="\n", iov_len=1}], 2) = 98
+2731  writev(2, [{iov_base="/a \342\206\222 //Success [expected: //Success]", iov_len=38}, {iov_base="\n", iov_len=1}], 2) = 39
+2731  writev(2, [{iov_base="/a/ \342\206\222 //Success [expected: //Success]", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2731  writev(2, [{iov_base="/a//./. \342\206\222 //Success [expected: //Success]", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2731  writev(2, [{iov_base="/////////////a///////////// \342\206\222 //Success [expected: //Success]", iov_len=63}, {iov_base="\n", iov_len=1}], 2) = 64
+2731  writev(2, [{iov_base="//./a/.///b./././.c//./d//. \342\206\222 /a/b./.c/Success [expected: /a/b./.c/Success]", iov_len=77}, {iov_base="\n", iov_len=1}], 2) = 78
+2731  writev(2, [{iov_base="xx/. \342\206\222 (null)/Destination address required [expected: (null)/Destination address required]", iov_len=92}, {iov_base="\n", iov_len=1}], 2) = 93
+2731  writev(2, [{iov_base="xx/.. \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=69}, {iov_base="\n", iov_len=1}], 2) = 70
+2731  writev(2, [{iov_base=".. \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/.. \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="../ \342\206\222 (null)/Invalid argument [expected: (null)/Invalid argument]", iov_len=67}, {iov_base="\n", iov_len=1}], 2) = 68
+2731  writev(2, [{iov_base="/* test_filename_is_valid */", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe */", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"\") */", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"/bar/foo\") */", iov_len=49}, {iov_base="\n", iov_len=1}], 2) = 50
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"/bar/foo/\") */", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"/bar/foo/\") */", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"//bar//foo//\") */", iov_len=53}, {iov_base="\n", iov_len=1}], 2) = 54
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"/\") */", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"/////\") */", iov_len=46}, {iov_base="\n", iov_len=1}], 2) = 47
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"/////.///.////...///..//.\") */", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\".\") */", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"..\") */", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"bar/foo\") */", iov_len=48}, {iov_base="\n", iov_len=1}], 2) = 49
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"bar/foo/\") */", iov_len=49}, {iov_base="\n", iov_len=1}], 2) = 50
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"bar//\") */", iov_len=46}, {iov_base="\n", iov_len=1}], 2) = 47
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=2047}, {iov_base="\n", iov_len=1}], 2) = 2048
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"/xxx/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"..., iov_len=2047}, {iov_base="\n", iov_len=1}], 2) = 2048
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"foo_bar-333\") */", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2731  writev(2, [{iov_base="/* test_path_is_valid_and_safe_one(\"o.o\") */", iov_len=44}, {iov_base="\n", iov_len=1}], 2) = 45
+2731  writev(2, [{iov_base="/* test_hidden_or_backup_file */", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2731  writev(2, [{iov_base="/* test_skip_dev_prefix */", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2731  writev(2, [{iov_base="/* test_empty_or_root */", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2731  writev(2, [{iov_base="/* test_path_startswith_set */", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2731  writev(2, [{iov_base="/* test_path_startswith_strv */", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2731  writev(2, [{iov_base="/* test_systemd_installation_has_version */", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2731  openat(AT_FDCWD, "lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  writev(2, [{iov_base="Current installation has systemd >= 0: no", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2731  openat(AT_FDCWD, "lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  writev(2, [{iov_base="Current installation has systemd >= 231: no", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2731  openat(AT_FDCWD, "lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  writev(2, [{iov_base="Current installation has systemd >= 249: no", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2731  openat(AT_FDCWD, "lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  openat(AT_FDCWD, "usr/lib64/systemd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+2731  writev(2, [{iov_base="Current installation has systemd >= 999: no", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2731  write(1, "/usr/bin/sh\n/usr/bin/sh\n/usr/bin/sh\n/usr/bin/sh\n/bin/sh\n/usr/lib/systemd/tests/test-path-util\n/usr/bin/sh\n", 106) = 106
+2731  exit_group(0)                     = ?
+2731  +++ exited with 0 +++

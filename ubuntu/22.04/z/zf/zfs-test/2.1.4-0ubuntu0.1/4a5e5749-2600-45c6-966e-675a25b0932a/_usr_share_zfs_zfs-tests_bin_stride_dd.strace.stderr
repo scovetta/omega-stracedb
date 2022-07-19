@@ -1,0 +1,16 @@
+Required parameter(s) missing or invalid.
+usage: /usr/share/zfs/zfs-tests/bin/stride_dd -i inputfile -o outputfile -b blocksize -c count 
+           -s stride [ -k seekblocks]
+
+Simplified version of dd that supports the stride option.
+A stride of n means that for each block written, n - 1 blocks
+are skipped in both the input and output file. A stride of 1
+means that blocks are read and written consecutively.
+All numeric parameters must be integers.
+
+    inputfile:  File to read from
+    outputfile: File to write to
+    blocksize:  Size of each block to read/write
+    count:      Number of blocks to read/write
+    stride:     Read/write a block then skip (stride - 1) blocks
+    seekblocks: Number of blocks to skip at start of output

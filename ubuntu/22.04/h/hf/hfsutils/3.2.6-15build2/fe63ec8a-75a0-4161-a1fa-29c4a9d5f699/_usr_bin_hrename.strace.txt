@@ -1,0 +1,48 @@
+558   execve("/usr/bin/hrename", ["/usr/bin/hrename"], 0x7ffcec964020 /* 12 vars */) = 0
+558   brk(NULL)                         = 0x5562ee974000
+558   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffda65ded30) = -1 EINVAL (Invalid argument)
+558   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3815830000
+558   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+558   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+558   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+558   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f381582e000
+558   close(3)                          = 0
+558   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+558   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+558   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+558   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+558   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+558   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+558   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+558   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3815606000
+558   mmap(0x7f381562e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f381562e000
+558   mmap(0x7f38157c3000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f38157c3000
+558   mmap(0x7f381581b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f381581b000
+558   mmap(0x7f3815821000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3815821000
+558   close(3)                          = 0
+558   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3815603000
+558   arch_prctl(ARCH_SET_FS, 0x7f3815603740) = 0
+558   set_tid_address(0x7f3815603a10)   = 558
+558   set_robust_list(0x7f3815603a20, 24) = 0
+558   rseq(0x7f38156040e0, 0x20, 0, 0x53053053) = 0
+558   mprotect(0x7f381581b000, 16384, PROT_READ) = 0
+558   mprotect(0x5562ed3df000, 4096, PROT_READ) = 0
+558   mprotect(0x7f381586a000, 8192, PROT_READ) = 0
+558   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+558   munmap(0x7f381582e000, 6133)      = 0
+558   getuid()                          = 0
+558   getgid()                          = 0
+558   geteuid()                         = 0
+558   getegid()                         = 0
+558   setreuid(-1, 0)                   = 0
+558   setregid(-1, 0)                   = 0
+558   getrandom("\x4f\x75\x83\xa0\x0f\xae\xb6\xdb", 8, GRND_NONBLOCK) = 8
+558   brk(NULL)                         = 0x5562ee974000
+558   brk(0x5562ee995000)               = 0x5562ee995000
+558   openat(AT_FDCWD, "/root/.hcwd", O_RDWR) = 3
+558   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+558   read(3, "", 4096)                 = 0
+558   write(2, "Usage: /usr/bin/hrename hfs-src-path [...] hfs-target-path\n", 59) = 59
+558   close(3)                          = 0
+558   exit_group(1)                     = ?
+558   +++ exited with 1 +++

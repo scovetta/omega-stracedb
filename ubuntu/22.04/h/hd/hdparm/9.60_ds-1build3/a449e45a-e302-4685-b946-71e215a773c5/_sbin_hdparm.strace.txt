@@ -1,0 +1,38 @@
+498   execve("/sbin/hdparm", ["/sbin/hdparm"], 0x7ffdd7c3b660 /* 12 vars */) = 0
+498   brk(NULL)                         = 0x560b63595000
+498   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd6f71b8e0) = -1 EINVAL (Invalid argument)
+498   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3d4d96000
+498   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+498   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+498   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+498   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff3d4d94000
+498   close(3)                          = 0
+498   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+498   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+498   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+498   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+498   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+498   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+498   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+498   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff3d4b6c000
+498   mmap(0x7ff3d4b94000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ff3d4b94000
+498   mmap(0x7ff3d4d29000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7ff3d4d29000
+498   mmap(0x7ff3d4d81000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7ff3d4d81000
+498   mmap(0x7ff3d4d87000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff3d4d87000
+498   close(3)                          = 0
+498   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3d4b69000
+498   arch_prctl(ARCH_SET_FS, 0x7ff3d4b69740) = 0
+498   set_tid_address(0x7ff3d4b69a10)   = 498
+498   set_robust_list(0x7ff3d4b69a20, 24) = 0
+498   rseq(0x7ff3d4b6a0e0, 0x20, 0, 0x53053053) = 0
+498   mprotect(0x7ff3d4d81000, 16384, PROT_READ) = 0
+498   mprotect(0x560b6283e000, 4096, PROT_READ) = 0
+498   mprotect(0x7ff3d4dd0000, 8192, PROT_READ) = 0
+498   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+498   munmap(0x7ff3d4d94000, 6133)      = 0
+498   write(2, "\nhdparm - get/set hard disk parameters - version v9.60, by Mark Lord.\n\n", 71) = 71
+498   write(2, "clue=6\n", 7)           = 7
+498   write(2, "Usage:  hdparm  [options] [device ...]\n\n", 40) = 40
+498   write(2, "Options:\n -a   Get/set fs readahead\n -A   Get/set the drive look-ahead flag (0/1)\n -b   Get/set bus state (0 == off, 1 == on, 2 "..., 4691) = 4691
+498   exit_group(22)                    = ?
+498   +++ exited with 22 +++

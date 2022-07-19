@@ -1,0 +1,26 @@
+Usage: /sbin/fsck.msdos [OPTIONS] DEVICE
+Check FAT filesystem on DEVICE for errors.
+
+Options:
+  -a              automatically repair the filesystem
+  -A              toggle Atari variant of the FAT filesystem
+  -b              make read-only boot sector check
+  -c N            use DOS codepage N to decode short file names (default: 850)
+  -d PATH         drop file with name PATH (can be given multiple times)
+  -f              salvage unused chains to files
+  -F NUM          specify FAT table NUM used for filesystem access
+  -l              list path names
+  -n              no-op, check non-interactively without changing
+  -p              same as -a, for compat with other *fsck
+  -r              interactively repair the filesystem (default)
+  -S              disallow spaces in the middle of short file names
+  -t              test for bad clusters
+  -u PATH         try to undelete (non-directory) file that was named PATH (can be
+                    given multiple times)
+  -U              allow only uppercase characters in volume and boot label
+  -v              verbose mode
+  -V              perform a verification pass
+  --variant=TYPE  handle variant TYPE of the filesystem
+  -w              write changes to disk immediately
+  -y              same as -a, for compat with other *fsck
+  --help          print this message

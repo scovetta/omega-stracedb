@@ -1,0 +1,52 @@
+448   execve("/usr/bin/ischroot", ["/usr/bin/ischroot"], 0x7ffd20940be0 /* 12 vars */) = 0
+448   brk(NULL)                         = 0x55a0f20f5000
+448   arch_prctl(0x3001 /* ARCH_??? */, 0x7fffad65ca70) = -1 EINVAL (Invalid argument)
+448   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe07f1b000
+448   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+448   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+448   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe07f19000
+448   close(3)                          = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+448   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+448   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+448   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+448   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+448   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+448   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+448   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe07cf1000
+448   mmap(0x7efe07d19000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7efe07d19000
+448   mmap(0x7efe07eae000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7efe07eae000
+448   mmap(0x7efe07f06000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7efe07f06000
+448   mmap(0x7efe07f0c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efe07f0c000
+448   close(3)                          = 0
+448   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe07cee000
+448   arch_prctl(ARCH_SET_FS, 0x7efe07cee740) = 0
+448   set_tid_address(0x7efe07ceea10)   = 448
+448   set_robust_list(0x7efe07ceea20, 24) = 0
+448   rseq(0x7efe07cef0e0, 0x20, 0, 0x53053053) = 0
+448   mprotect(0x7efe07f06000, 16384, PROT_READ) = 0
+448   mprotect(0x55a0f1b05000, 4096, PROT_READ) = 0
+448   mprotect(0x7efe07f55000, 8192, PROT_READ) = 0
+448   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+448   munmap(0x7efe07f19000, 6133)      = 0
+448   openat(AT_FDCWD, "/proc/1/mountinfo", O_RDONLY) = 3
+448   openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY) = 4
+448   read(3, "274 227 0:65 / / rw,relatime master:6 - overlay overlay rw,lowerdir=/var/lib/docker/overlay2/l/IWRPUKJ3IO6O6HAVX4WWOTCW6U:/var/l"..., 1024) = 1024
+448   read(4, "274 227 0:65 / / rw,relatime master:6 - overlay overlay rw,lowerdir=/var/lib/docker/overlay2/l/IWRPUKJ3IO6O6HAVX4WWOTCW6U:/var/l"..., 1024) = 1024
+448   read(3, "nodev,noexec,relatime - sysfs sysfs ro\n279 278 0:72 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,mode=755\n2"..., 1024) = 1024
+448   read(4, "nodev,noexec,relatime - sysfs sysfs ro\n279 278 0:72 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,mode=755\n2"..., 1024) = 1024
+448   read(3, "c0df1a983967 /sys/fs/cgroup/devices ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,devices\n286 279 0:51 /docker/e0cb8cf215e8"..., 1024) = 1024
+448   read(4, "c0df1a983967 /sys/fs/cgroup/devices ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,devices\n286 279 0:51 /docker/e0cb8cf215e8"..., 1024) = 1024
+448   read(3, "3967 /sys/fs/cgroup/pids ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,pids\n292 279 0:57 /docker/e0cb8cf215e8a8b77f2db4eb5d"..., 1024) = 1024
+448   read(4, "3967 /sys/fs/cgroup/pids ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,pids\n292 279 0:57 /docker/e0cb8cf215e8a8b77f2db4eb5d"..., 1024) = 1024
+448   read(3, "8:32 /var/lib/docker/containers/e0cb8cf215e8a8b77f2db4eb5d79b1d34989287ae9cf626d8badc0df1a983967/hostname /etc/hostname rw,relat"..., 1024) = 1024
+448   read(4, "8:32 /var/lib/docker/containers/e0cb8cf215e8a8b77f2db4eb5d79b1d34989287ae9cf626d8badc0df1a983967/hostname /etc/hostname rw,relat"..., 1024) = 1024
+448   read(3, "_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n247 275 0:69 /null /proc/sched_debug rw,nosuid - tmpfs tmpfs rw,size=65536"..., 1024) = 197
+448   read(4, "_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n247 275 0:69 /null /proc/sched_debug rw,nosuid - tmpfs tmpfs rw,size=65536"..., 1024) = 197
+448   read(3, "", 1024)                 = 0
+448   read(4, "", 1024)                 = 0
+448   close(3)                          = 0
+448   close(4)                          = 0
+448   exit_group(1)                     = ?
+448   +++ exited with 1 +++

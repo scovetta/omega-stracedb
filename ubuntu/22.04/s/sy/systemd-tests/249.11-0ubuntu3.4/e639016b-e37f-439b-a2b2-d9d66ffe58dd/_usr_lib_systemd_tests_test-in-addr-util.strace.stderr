@@ -1,0 +1,64 @@
+/* test_in_addr_prefix_from_string */
+/* test_in_addr_random_prefix */
+/* test_in_addr_prefix_to_string */
+test_in_addr_prefix_to_string_valid: 0.0.0.0/32
+test_in_addr_prefix_to_string_valid: 1.2.3.4/0
+test_in_addr_prefix_to_string_valid: 1.2.3.4/24
+test_in_addr_prefix_to_string_valid: 1.2.3.4/32
+test_in_addr_prefix_to_string_valid: 255.255.255.255/32
+test_in_addr_prefix_to_string_valid: ::1/128
+test_in_addr_prefix_to_string_valid: fd00:abcd::1/64
+test_in_addr_prefix_to_string_valid: fd00:abcd::1234:1/64
+test_in_addr_prefix_to_string_valid: 1111:2222:3333:4444:5555:6666:7777:8888/128
+test_in_addr_prefix_to_string_unoptimized: 0.0.0.0
+test_in_addr_prefix_to_string_unoptimized: 192.168.0.1
+test_in_addr_prefix_to_string_unoptimized: fd00:0000:0000:0000:0000:0000:0000:0001/64
+test_in_addr_prefix_to_string_unoptimized: fd00:1111::0000:2222:3333:4444:0001/64
+/* test_in_addr_is_null */
+/* test_in_addr_prefix_intersect */
+/* test_in_addr_prefix_next_one(192.168.0.0, prefixlen=24) */
+/* test_in_addr_prefix_next_one(192.168.0.0, prefixlen=16) */
+/* test_in_addr_prefix_next_one(192.168.0.0, prefixlen=20) */
+/* test_in_addr_prefix_next_one(0.0.0.0, prefixlen=32) */
+/* test_in_addr_prefix_next_one(255.255.255.254, prefixlen=32) */
+/* test_in_addr_prefix_next_one(255.255.255.255, prefixlen=32) */
+/* test_in_addr_prefix_next_one(255.255.255.0, prefixlen=24) */
+/* test_in_addr_prefix_next_one(4400::, prefixlen=128) */
+/* test_in_addr_prefix_next_one(4400::, prefixlen=120) */
+/* test_in_addr_prefix_next_one(4400::, prefixlen=127) */
+/* test_in_addr_prefix_next_one(4400::, prefixlen=8) */
+/* test_in_addr_prefix_next_one(4400::, prefixlen=7) */
+/* test_in_addr_prefix_next_one(::, prefixlen=128) */
+/* test_in_addr_prefix_next_one(ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff, prefixlen=128) */
+/* test_in_addr_prefix_next_one(ffff:ffff:ffff:ffff:ffff:ffff:ffff:ff00, prefixlen=120) */
+/* test_in_addr_prefix_nth_one(192.168.0.0, prefixlen=24, nth=0) */
+/* test_in_addr_prefix_nth_one(192.168.0.123, prefixlen=24, nth=0) */
+/* test_in_addr_prefix_nth_one(192.168.0.123, prefixlen=24, nth=1) */
+/* test_in_addr_prefix_nth_one(192.168.0.0, prefixlen=24, nth=4) */
+/* test_in_addr_prefix_nth_one(192.168.0.0, prefixlen=25, nth=1) */
+/* test_in_addr_prefix_nth_one(192.168.255.0, prefixlen=25, nth=1) */
+/* test_in_addr_prefix_nth_one(192.168.255.0, prefixlen=24, nth=0) */
+/* test_in_addr_prefix_nth_one(255.255.255.255, prefixlen=32, nth=1) */
+/* test_in_addr_prefix_nth_one(255.255.255.255, prefixlen=0, nth=1) */
+/* test_in_addr_prefix_nth_one(4400::, prefixlen=8, nth=1) */
+/* test_in_addr_prefix_nth_one(4400::, prefixlen=7, nth=1) */
+/* test_in_addr_prefix_nth_one(4400::, prefixlen=64, nth=1) */
+/* test_in_addr_prefix_nth_one(4400::, prefixlen=64, nth=2) */
+/* test_in_addr_prefix_nth_one(4400::, prefixlen=64, nth=2989) */
+/* test_in_addr_prefix_nth_one(4400:0:0:ffff::, prefixlen=64, nth=1) */
+/* test_in_addr_prefix_nth_one(4400::, prefixlen=56, nth=281474976710655) */
+/* test_in_addr_prefix_nth_one(0000::, prefixlen=8, nth=255) */
+/* test_in_addr_prefix_nth_one(0000::, prefixlen=8, nth=256) */
+/* test_in_addr_prefix_nth_one(ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff, prefixlen=128, nth=1) */
+/* test_in_addr_prefix_nth_one(ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff, prefixlen=0, nth=1) */
+/* test_in_addr_prefix_nth_one(1234:5678:90ab:cdef:1234:5678:90ab:cdef, prefixlen=12, nth=1) */
+/* test_in_addr_prefix_range_one(192.168.123.123, prefixlen=24) */
+/* test_in_addr_prefix_range_one(192.168.123.123, prefixlen=16) */
+/* test_in_addr_prefix_range_one(dead:beef::, prefixlen=64) */
+/* test_in_addr_prefix_range_one(dead:0:0:beef::, prefixlen=64) */
+/* test_in_addr_prefix_range_one(2001::, prefixlen=48) */
+/* test_in_addr_prefix_range_one(2001::, prefixlen=56) */
+/* test_in_addr_prefix_range_one(2001::, prefixlen=65) */
+/* test_in_addr_prefix_range_one(2001::, prefixlen=66) */
+/* test_in_addr_prefix_range_one(2001::, prefixlen=127) */
+/* test_in_addr_to_string */

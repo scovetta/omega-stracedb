@@ -1,0 +1,38 @@
+usage: auditctl [options]
+    -a <l,a>                          Append rule to end of <l>ist with <a>ction
+    -A <l,a>                          Add rule at beginning of <l>ist with <a>ction
+    -b <backlog>                      Set max number of outstanding audit buffers
+                                      allowed Default=64
+    -c                                Continue through errors in rules
+    -C f=f                            Compare collected fields if available:
+                                      Field name, operator(=,!=), field name
+    -d <l,a>                          Delete rule from <l>ist with <a>ction
+                                      l=task,exit,user,exclude,filesystem
+                                      a=never,always
+    -D                                Delete all rules and watches
+    -e [0..2]                         Set enabled flag
+    -f [0..2]                         Set failure flag
+                                      0=silent 1=printk 2=panic
+    -F f=v                            Build rule: field name, operator(=,!=,<,>,<=,
+                                      >=,&,&=) value
+    -h                                Help
+    -i                                Ignore errors when reading rules from file
+    -k <key>                          Set filter key on audit rule
+    -l                                List rules
+    -m text                           Send a user-space message
+    -p [r|w|x|a]                      Set permissions filter on watch
+                                      r=read, w=write, x=execute, a=attribute
+    -q <mount,subtree>                make subtree part of mount point's dir watches
+    -r <rate>                         Set limit in messages/sec (0=none)
+    -R <file>                         read rules from file
+    -s                                Report status
+    -S syscall                        Build rule: syscall name or number
+    --signal <signal>                 Send the specified signal to the daemon
+    -t                                Trim directory watches
+    -v                                Version
+    -w <path>                         Insert watch at <path>
+    -W <path>                         Remove watch at <path>
+    --loginuid-immutable              Make loginuids unchangeable once set
+    --backlog_wait_time               Set the kernel backlog_wait_time
+    --reset-lost                      Reset the lost record counter
+    --reset_backlog_wait_time_actual  Reset the actual backlog wait time counter

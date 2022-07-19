@@ -1,0 +1,823 @@
+2307  execve("/usr/lib/systemd/tests/test-journal-interleaving", ["/usr/lib/systemd/tests/test-journal-interleaving"], 0x7ffd226b5520 /* 12 vars */) = 0
+2307  brk(NULL)                         = 0x55d3ca91e000
+2307  arch_prctl(0x3001 /* ARCH_??? */, 0x7fffd50f2950) = -1 EINVAL (Invalid argument)
+2307  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f87f76bd000
+2307  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/tls/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/tls", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/haswell/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/haswell", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  newfstatat(AT_FDCWD, "/lib/systemd/x86_64", 0x7fffd50f1b70, 0) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/lib/systemd/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230N+\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0!\0 \0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\7\5\0\0\0\0\0`\7\5\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2840280, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 2850192, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f7405000
+2307  mmap(0x7f87f7456000, 1740800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x51000) = 0x7f87f7456000
+2307  mmap(0x7f87f75ff000, 688128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fa000) = 0x7f87f75ff000
+2307  mmap(0x7f87f76a7000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a1000) = 0x7f87f76a7000
+2307  mmap(0x7f87f76bb000, 7568, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f87f76bb000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/systemd/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f87f7403000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2307  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2307  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2307  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2307  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2307  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f71db000
+2307  mmap(0x7f87f7203000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f87f7203000
+2307  mmap(0x7f87f7398000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f87f7398000
+2307  mmap(0x7f87f73f0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f87f73f0000
+2307  mmap(0x7f87f73f6000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f87f73f6000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\201\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\24\0\0\0\0\0\0000\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34888, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 36896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f71d1000
+2307  mprotect(0x7f87f71d3000, 24576, PROT_NONE) = 0
+2307  mmap(0x7f87f71d3000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f87f71d3000
+2307  mmap(0x7f87f71d7000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f87f71d7000
+2307  mmap(0x7f87f71d9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f87f71d9000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340T\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360i\0\0\0\0\0\0\360i\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=220192, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 222136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f719a000
+2307  mprotect(0x7f87f71a1000, 172032, PROT_NONE) = 0
+2307  mmap(0x7f87f71a1000, 131072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f87f71a1000
+2307  mmap(0x7f87f71c1000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f87f71c1000
+2307  mmap(0x7f87f71cb000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7f87f71cb000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10!\0\0\0\0\0\0\10!\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 41016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f718f000
+2307  mmap(0x7f87f7192000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f87f7192000
+2307  mmap(0x7f87f7196000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f87f7196000
+2307  mmap(0x7f87f7198000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f87f7198000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f87f718d000
+2307  mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f7153000
+2307  mprotect(0x7f87f7155000, 188416, PROT_NONE) = 0
+2307  mmap(0x7f87f7155000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f87f7155000
+2307  mmap(0x7f87f7169000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f87f7169000
+2307  mmap(0x7f87f7183000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7f87f7183000
+2307  mmap(0x7f87f7185000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f87f7185000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x\300\23\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1296312, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 1299576, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f7015000
+2307  mprotect(0x7f87f7024000, 1200128, PROT_NONE) = 0
+2307  mmap(0x7f87f7024000, 942080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f87f7024000
+2307  mmap(0x7f87f710a000, 253952, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf5000) = 0x7f87f710a000
+2307  mmap(0x7f87f7149000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x133000) = 0x7f87f7149000
+2307  mmap(0x7f87f7152000, 1144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f87f7152000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libip4tc.so.2", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\203\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\25\0\0\0\0\0\0\20\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=35440, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 37440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f700b000
+2307  mmap(0x7f87f700d000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f87f700d000
+2307  mmap(0x7f87f7011000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f87f7011000
+2307  mmap(0x7f87f7013000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f87f7013000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkmod.so.2", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230\241\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X2\0\0\0\0\0\0X2\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108760, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 110672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6fef000
+2307  mmap(0x7f87f6ff3000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f87f6ff3000
+2307  mmap(0x7f87f7004000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f87f7004000
+2307  mmap(0x7f87f7009000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f87f7009000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240\341\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\36\0\0\0\0\0\0\200\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125152, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 127072, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6fcf000
+2307  mprotect(0x7f87f6fd1000, 114688, PROT_NONE) = 0
+2307  mmap(0x7f87f6fd1000, 102400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f87f6fd1000
+2307  mmap(0x7f87f6fea000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f87f6fea000
+2307  mmap(0x7f87f6fed000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f87f6fed000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`#\4\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\370~\0\0\0\0\0\0\370~\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=273056, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 275000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6f8b000
+2307  mprotect(0x7f87f6f93000, 237568, PROT_NONE) = 0
+2307  mmap(0x7f87f6f93000, 180224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f87f6f93000
+2307  mmap(0x7f87f6fbf000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x34000) = 0x7f87f6fbf000
+2307  mmap(0x7f87f6fcd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x41000) = 0x7f87f6fcd000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\325C\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\34\v\0\0\0\0\0(\34\v\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f87f6f89000
+2307  mmap(NULL, 4461760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6b47000
+2307  mmap(0x7f87f6bf9000, 2478080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7f87f6bf9000
+2307  mmap(0x7f87f6e56000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30f000) = 0x7f87f6e56000
+2307  mmap(0x7f87f6f28000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e0000) = 0x7f87f6f28000
+2307  mmap(0x7f87f6f86000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f87f6f86000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\1\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x&\0\0\0\0\0\0x&\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=67736, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 69648, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6b35000
+2307  mmap(0x7f87f6b38000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f87f6b38000
+2307  mmap(0x7f87f6b41000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f87f6b41000
+2307  mmap(0x7f87f6b45000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f87f6b45000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\330\30\0\0\0\0\0\0\330\30\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125360, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 127296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6b15000
+2307  mprotect(0x7f87f6b17000, 114688, PROT_NONE) = 0
+2307  mmap(0x7f87f6b17000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f87f6b17000
+2307  mmap(0x7f87f6b25000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f87f6b25000
+2307  mmap(0x7f87f6b33000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f87f6b33000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6ae9000
+2307  mprotect(0x7f87f6aef000, 139264, PROT_NONE) = 0
+2307  mmap(0x7f87f6aef000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f87f6aef000
+2307  mmap(0x7f87f6b09000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f87f6b09000
+2307  mmap(0x7f87f6b11000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f87f6b11000
+2307  mmap(0x7f87f6b13000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f87f6b13000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\321\f\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X\220\0\0\0\0\0\0X\220\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 843832, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6a1a000
+2307  mmap(0x7f87f6a24000, 729088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f87f6a24000
+2307  mmap(0x7f87f6ad6000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbc000) = 0x7f87f6ad6000
+2307  mmap(0x7f87f6ae7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcc000) = 0x7f87f6ae7000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\222\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260'\0\0\0\0\0\0\260'\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=170456, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 172296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f69ef000
+2307  mmap(0x7f87f69f2000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f87f69f2000
+2307  mmap(0x7f87f6a0d000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f87f6a0d000
+2307  mmap(0x7f87f6a18000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f87f6a18000
+2307  close(3)                          = 0
+2307  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f87f69ed000
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\300A\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08>\0\0\0\0\0\08>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=149760, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 151992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f69c7000
+2307  mmap(0x7f87f69cb000, 90112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f87f69cb000
+2307  mmap(0x7f87f69e1000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f87f69e1000
+2307  mmap(0x7f87f69eb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7f87f69eb000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\1\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250*\0\0\0\0\0\0\250*\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=133200, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 184496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6999000
+2307  mmap(0x7f87f699c000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f87f699c000
+2307  mmap(0x7f87f69a4000, 86016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f87f69a4000
+2307  mmap(0x7f87f69b9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f87f69b9000
+2307  mmap(0x7f87f69bb000, 45232, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f87f69bb000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f6902000
+2307  mmap(0x7f87f6904000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f87f6904000
+2307  mmap(0x7f87f696f000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f87f696f000
+2307  mmap(0x7f87f6997000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f87f6997000
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3
+2307  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200b\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\22\0\0\0\0\0\0H\22\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 28992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f87f68fa000
+2307  mmap(0x7f87f68fc000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f87f68fc000
+2307  mmap(0x7f87f68ff000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f87f68ff000
+2307  mmap(0x7f87f6900000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f87f6900000
+2307  close(3)                          = 0
+2307  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f87f68f8000
+2307  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f87f68f5000
+2307  arch_prctl(ARCH_SET_FS, 0x7f87f68f5900) = 0
+2307  set_tid_address(0x7f87f68f5bd0)   = 2307
+2307  set_robust_list(0x7f87f68f5be0, 24) = 0
+2307  rseq(0x7f87f68f62a0, 0x20, 0, 0x53053053) = 0
+2307  mprotect(0x7f87f73f0000, 16384, PROT_READ) = 0
+2307  mprotect(0x7f87f6900000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6997000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f69b9000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f69eb000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6a18000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6ae7000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6b11000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6b33000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6b45000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6f28000, 372736, PROT_READ) = 0
+2307  mprotect(0x7f87f71cb000, 20480, PROT_READ) = 0
+2307  mprotect(0x7f87f6fcd000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f6fed000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f7009000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f7013000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f7149000, 12288, PROT_READ) = 0
+2307  mprotect(0x7f87f7183000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f7198000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f71d9000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f76a7000, 77824, PROT_READ) = 0
+2307  mprotect(0x55d3ca48c000, 4096, PROT_READ) = 0
+2307  mprotect(0x7f87f76f7000, 8192, PROT_READ) = 0
+2307  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2307  munmap(0x7f87f7403000, 7889)      = 0
+2307  getrandom("\x53\xdf\x5b\xa3\xac\xb5\x4f\xcd", 8, GRND_NONBLOCK) = 8
+2307  brk(NULL)                         = 0x55d3ca91e000
+2307  brk(0x55d3ca93f000)               = 0x55d3ca93f000
+2307  statfs("/sys/fs/selinux", 0x7fffd50f2990) = -1 ENOENT (No such file or directory)
+2307  statfs("/selinux", 0x7fffd50f2990) = -1 ENOENT (No such file or directory)
+2307  openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+2307  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+2307  read(3, "", 1024)                 = 0
+2307  close(3)                          = 0
+2307  access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+2307  prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 0
+2307  prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2307  prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+2307  prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2307  prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2307  prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2307  getpid()                          = 2307
+2307  access("/etc/machine-id", F_OK)   = 0
+2307  mkdir("/var/tmp/journal-skip-G0ppmO", 0700) = 0
+2307  chdir("/var/tmp/journal-skip-G0ppmO") = 0
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NOCTTY|O_NOFOLLOW|O_CLOEXEC) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  ioctl(3, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0
+2307  ioctl(3, FS_IOC_SETFLAGS, [FS_EXTENT_FL|FS_NOCOW_FL]) = -1 EOPNOTSUPP (Operation not supported)
+2307  close(3)                          = 0
+2307  writev(2, [{iov_base="Journal effective settings seal=no keyed_hash=yes compress=yes compress_threshold_bytes=512B", iov_len=92}, {iov_base="\n", iov_len=1}], 2) = 93
+2307  gettid()                          = 2307
+2307  futex(0x7f87f76bb1d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+2307  openat(AT_FDCWD, "one.journal", O_RDWR|O_CREAT|O_NONBLOCK|O_CLOEXEC, 0644) = 3
+2307  fcntl(3, F_GETFL)                 = 0x8802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(3, F_SETFL, O_RDWR|O_LARGEFILE) = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63374682, f_bavail=60015143, f_files=16777216, f_ffree=16527614, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  fsetxattr(3, "user.crtime_usec", ">\325\247\215 \344\5", 8, 0) = 0
+2307  pwrite64(3, "LPKSHHRH\0\0\0\0\f\0\0\0\0\0\0\0\0\0\0\0\250#S$\204\372O\304\251\252\232\274\4\352c\351\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250#S$\204\372O\304\251\252\232\274\4\352c\351\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 256, 0) = 256
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f87f76f6000
+2307  openat(AT_FDCWD, "/etc/machine-id", O_RDONLY|O_NOCTTY|O_CLOEXEC) = 4
+2307  read(4, "2bf25442c4c8bbb24bf3148262d62c60\n", 38) = 33
+2307  read(4, "", 5)                    = 0
+2307  close(4)                          = 0
+2307  openat(AT_FDCWD, "/proc/sys/kernel/random/boot_id", O_RDONLY|O_NOCTTY|O_CLOEXEC) = 4
+2307  read(4, "8ba904ba-ecfb-4a9b-a6d7-64851a3ddd05\n", 38) = 37
+2307  read(4, "", 1)                    = 0
+2307  close(4)                          = 0
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  readlinkat(AT_FDCWD, "/proc/self/fd/3", "/var/tmp/journal-skip-G0ppmO/one.journal", 4096) = 40
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+2307  fsync(4)                          = 0
+2307  close(4)                          = 0
+2307  writev(2, [{iov_base="Reserving 333 entries in field hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  fallocate(3, 0, 256, 8388352)     = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f87f60f5000
+2307  writev(2, [{iov_base="Reserving 2047 entries in data hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  openat(AT_FDCWD, "two.journal", O_RDWR|O_CREAT|O_NONBLOCK|O_CLOEXEC, 0644) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDWR|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63372634, f_bavail=60013095, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  fsetxattr(4, "user.crtime_usec", "3$\250\215 \344\5", 8, 0) = 0
+2307  pwrite64(4, "LPKSHHRH\0\0\0\0\f\0\0\0\0\0\0\0\0\0\0\0i\"\336\177U\377B;\233]\347\361Y\300\333[\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0i\"\336\177U\377B;\233]\347\361Y\300\333[\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 256, 0) = 256
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0x7f87f7404000
+2307  fsync(4)                          = 0
+2307  fsync(4)                          = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  readlinkat(AT_FDCWD, "/proc/self/fd/4", "/var/tmp/journal-skip-G0ppmO/two.journal", 4096) = 40
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 5
+2307  fsync(5)                          = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Reserving 333 entries in field hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  fallocate(4, 0, 256, 8388352)     = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0x7f87f58f5000
+2307  writev(2, [{iov_base="Reserving 2047 entries in data hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  ftruncate(3, 8388608)             = 0
+2307  ftruncate(3, 8388608)             = 0
+2307  ftruncate(4, 8388608)             = 0
+2307  ftruncate(4, 8388608)             = 0
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  munmap(0x7f87f76f6000, 4096)      = 0
+2307  close(3)                          = 0
+2307  fsync(4)                          = 0
+2307  fsync(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  munmap(0x7f87f7404000, 4096)      = 0
+2307  close(4)                          = 0
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-G0ppmO'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca921d20 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Journal effective settings seal=no keyed_hash=yes compress=no compress_threshold_bytes=8B", iov_len=89}, {iov_base="\n", iov_len=1}], 2) = 90
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca921d20 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 46 context cache hit, 10 window list hit, 2 miss", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-G0ppmO'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca922d30 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca922d30 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 48 context cache hit, 8 window list hit, 2 miss", iov_len=70}, {iov_base="\n", iov_len=1}], 2) = 71
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-G0ppmO'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca922d30 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca922d30 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 84 context cache hit, 15 window list hit, 2 miss", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-G0ppmO'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca922d30 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-G0ppmO/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca922d30 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-G0ppmO removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 78 context cache hit, 17 window list hit, 2 miss", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2307  writev(2, [{iov_base="Done...", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2307  openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  getdents64(3, 0x55d3ca922d30 /* 4 entries */, 32768) = 112
+2307  newfstatat(3, "one.journal", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, "two.journal", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, "..", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, ".", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  getdents64(3, 0x55d3ca922d30 /* 0 entries */, 32768) = 0
+2307  writev(2, [{iov_base="Vacuuming done, freed 0B of archived journals from ..", iov_len=53}, {iov_base="\n", iov_len=1}], 2) = 54
+2307  close(3)                          = 0
+2307  newfstatat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-G0ppmO", O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_NOATIME|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  fcntl(3, F_GETFL)                 = 0x78800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_NOATIME|O_DIRECTORY)
+2307  fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+2307  getdents64(3, 0x55d3ca922d30 /* 4 entries */, 32768) = 112
+2307  unlinkat(3, "one.journal", 0)     = 0
+2307  unlinkat(3, "two.journal", 0)     = 0
+2307  getdents64(3, 0x55d3ca922d30 /* 0 entries */, 32768) = 0
+2307  close(3)                          = 0
+2307  rmdir("/var/tmp/journal-skip-G0ppmO") = 0
+2307  mkdir("/var/tmp/journal-skip-yisx3w", 0700) = 0
+2307  chdir("/var/tmp/journal-skip-yisx3w") = 0
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NOCTTY|O_NOFOLLOW|O_CLOEXEC) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  ioctl(3, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0
+2307  ioctl(3, FS_IOC_SETFLAGS, [FS_EXTENT_FL|FS_NOCOW_FL]) = -1 EOPNOTSUPP (Operation not supported)
+2307  close(3)                          = 0
+2307  writev(2, [{iov_base="Journal effective settings seal=no keyed_hash=yes compress=yes compress_threshold_bytes=512B", iov_len=92}, {iov_base="\n", iov_len=1}], 2) = 93
+2307  openat(AT_FDCWD, "one.journal", O_RDWR|O_CREAT|O_NONBLOCK|O_CLOEXEC, 0644) = 3
+2307  fcntl(3, F_GETFL)                 = 0x8802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(3, F_SETFL, O_RDWR|O_LARGEFILE) = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63374682, f_bavail=60015143, f_files=16777216, f_ffree=16527614, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  fsetxattr(3, "user.crtime_usec", "c\354\251\215 \344\5", 8, 0) = 0
+2307  pwrite64(3, "LPKSHHRH\0\0\0\0\f\0\0\0\0\0\0\0\0\0\0\0r -\353\234\326Ge\264\7\201\2411\22}\265\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0r -\353\234\326Ge\264\7\201\2411\22}\265\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 256, 0) = 256
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f87f76f6000
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  readlinkat(AT_FDCWD, "/proc/self/fd/3", "/var/tmp/journal-skip-yisx3w/one.journal", 4096) = 40
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+2307  fsync(4)                          = 0
+2307  close(4)                          = 0
+2307  writev(2, [{iov_base="Reserving 333 entries in field hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  fallocate(3, 0, 256, 8388352)     = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f87f60f5000
+2307  writev(2, [{iov_base="Reserving 2047 entries in data hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  openat(AT_FDCWD, "two.journal", O_RDWR|O_CREAT|O_NONBLOCK|O_CLOEXEC, 0644) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDWR|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63372634, f_bavail=60013095, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  fsetxattr(4, "user.crtime_usec", "X.\252\215 \344\5", 8, 0) = 0
+2307  pwrite64(4, "LPKSHHRH\0\0\0\0\f\0\0\0\0\0\0\0\0\0\0\0\324\271\334\246\3148L\374\262\226[\300\2653\340\330\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\324\271\334\246\3148L\374\262\226[\300\2653\340\330\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 256, 0) = 256
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0x7f87f7404000
+2307  fsync(4)                          = 0
+2307  fsync(4)                          = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  readlinkat(AT_FDCWD, "/proc/self/fd/4", "/var/tmp/journal-skip-yisx3w/two.journal", 4096) = 40
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 5
+2307  fsync(5)                          = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Reserving 333 entries in field hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  fallocate(4, 0, 256, 8388352)     = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0x7f87f58f5000
+2307  writev(2, [{iov_base="Reserving 2047 entries in data hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  ftruncate(3, 8388608)             = 0
+2307  ftruncate(4, 8388608)             = 0
+2307  ftruncate(3, 8388608)             = 0
+2307  ftruncate(4, 8388608)             = 0
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  munmap(0x7f87f76f6000, 4096)      = 0
+2307  close(3)                          = 0
+2307  fsync(4)                          = 0
+2307  fsync(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  munmap(0x7f87f7404000, 4096)      = 0
+2307  close(4)                          = 0
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-yisx3w'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca923160 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Journal effective settings seal=no keyed_hash=yes compress=no compress_threshold_bytes=8B", iov_len=89}, {iov_base="\n", iov_len=1}], 2) = 90
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca923160 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 40 context cache hit, 16 window list hit, 2 miss", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-yisx3w'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca923160 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca923160 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 42 context cache hit, 14 window list hit, 2 miss", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-yisx3w'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca923290 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca923290 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 78 context cache hit, 21 window list hit, 2 miss", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2307  writev(2, [{iov_base="Considering root directory '/var/tmp/journal-skip-yisx3w'.", iov_len=58}, {iov_base="\n", iov_len=1}], 2) = 59
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w added.", iov_len=50}, {iov_base="\n", iov_len=1}], 2) = 51
+2307  getdents64(3, 0x55d3ca9233c0 /* 4 entries */, 32768) = 112
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/one.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 4, 0) = 0x7f87f60f5000
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/one.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w/two.journal", O_RDONLY|O_NONBLOCK|O_CLOEXEC) = 5
+2307  fcntl(5, F_GETFL)                 = 0x8800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(5, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ, MAP_SHARED, 5, 0) = 0x7f87f58f5000
+2307  fstatfs(5, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  writev(2, [{iov_base="File /var/tmp/journal-skip-yisx3w/two.journal added.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  getdents64(3, 0x55d3ca9233c0 /* 0 entries */, 32768) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63370586, f_bavail=60011047, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  close(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Root directory /var/tmp/journal-skip-yisx3w removed.", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2307  writev(2, [{iov_base="mmap cache statistics: 70 context cache hit, 25 window list hit, 2 miss", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2307  writev(2, [{iov_base="Done...", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2307  openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  getdents64(3, 0x55d3ca923290 /* 4 entries */, 32768) = 112
+2307  newfstatat(3, "one.journal", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, "two.journal", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, "..", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, ".", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  getdents64(3, 0x55d3ca923290 /* 0 entries */, 32768) = 0
+2307  writev(2, [{iov_base="Vacuuming done, freed 0B of archived journals from ..", iov_len=53}, {iov_base="\n", iov_len=1}], 2) = 54
+2307  close(3)                          = 0
+2307  newfstatat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  openat(AT_FDCWD, "/var/tmp/journal-skip-yisx3w", O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_NOATIME|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  fcntl(3, F_GETFL)                 = 0x78800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_NOATIME|O_DIRECTORY)
+2307  fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+2307  getdents64(3, 0x55d3ca923290 /* 4 entries */, 32768) = 112
+2307  unlinkat(3, "one.journal", 0)     = 0
+2307  unlinkat(3, "two.journal", 0)     = 0
+2307  getdents64(3, 0x55d3ca923290 /* 0 entries */, 32768) = 0
+2307  close(3)                          = 0
+2307  rmdir("/var/tmp/journal-skip-yisx3w") = 0
+2307  getrandom("\xf2\x10\x19\x04\x10\x0f\x8b\xbc", 8, GRND_NONBLOCK) = 8
+2307  mkdir("/var/tmp/journal-seq-KninbN", 0700) = 0
+2307  chdir("/var/tmp/journal-seq-KninbN") = 0
+2307  openat(AT_FDCWD, "/var/tmp/journal-seq-KninbN", O_RDONLY|O_NOCTTY|O_NOFOLLOW|O_CLOEXEC) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  ioctl(3, FS_IOC_GETFLAGS, [FS_EXTENT_FL]) = 0
+2307  ioctl(3, FS_IOC_SETFLAGS, [FS_EXTENT_FL|FS_NOCOW_FL]) = -1 EOPNOTSUPP (Operation not supported)
+2307  close(3)                          = 0
+2307  writev(2, [{iov_base="Journal effective settings seal=no keyed_hash=yes compress=yes compress_threshold_bytes=512B", iov_len=92}, {iov_base="\n", iov_len=1}], 2) = 93
+2307  openat(AT_FDCWD, "one.journal", O_RDWR|O_CREAT|O_NONBLOCK|O_CLOEXEC, 0644) = 3
+2307  fcntl(3, F_GETFL)                 = 0x8802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(3, F_SETFL, O_RDWR|O_LARGEFILE) = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63374682, f_bavail=60015143, f_files=16777216, f_ffree=16527614, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  fsetxattr(3, "user.crtime_usec", "\363\322\253\215 \344\5", 8, 0) = 0
+2307  pwrite64(3, "LPKSHHRH\0\0\0\0\f\0\0\0\0\0\0\0\0\0\0\0001\376\10\220rNE\1\214FQ\331\362\216g\361\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0001\376\10\220rNE\1\214FQ\331\362\216g\361\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 256, 0) = 256
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f87f76f6000
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  readlinkat(AT_FDCWD, "/proc/self/fd/3", "/var/tmp/journal-seq-KninbN/one.journal", 4096) = 39
+2307  openat(AT_FDCWD, "/var/tmp/journal-seq-KninbN", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+2307  fsync(4)                          = 0
+2307  close(4)                          = 0
+2307  writev(2, [{iov_base="Reserving 333 entries in field hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  fallocate(3, 0, 256, 8388352)     = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f87f60f5000
+2307  writev(2, [{iov_base="Reserving 2047 entries in data hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  ftruncate(3, 8388608)             = 0
+2307  ftruncate(3, 8388608)             = 0
+2307  openat(AT_FDCWD, "two.journal", O_RDWR|O_CREAT|O_NONBLOCK|O_CLOEXEC, 0644) = 4
+2307  fcntl(4, F_GETFL)                 = 0x8802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(4, F_SETFL, O_RDWR|O_LARGEFILE) = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2307  fstatfs(4, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63372634, f_bavail=60013095, f_files=16777216, f_ffree=16527613, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+2307  fsetxattr(4, "user.crtime_usec", "\321\25\254\215 \344\5", 8, 0) = 0
+2307  pwrite64(4, "LPKSHHRH\0\0\0\0\f\0\0\0\0\0\0\0\0\0\0\0q<\200\332H\216G\26\256\250\21\363\351.o\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0001\376\10\220rNE\1\214FQ\331\362\216g\361\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 256, 0) = 256
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0x7f87f7404000
+2307  fsync(4)                          = 0
+2307  fsync(4)                          = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=256, ...}, AT_EMPTY_PATH) = 0
+2307  readlinkat(AT_FDCWD, "/proc/self/fd/4", "/var/tmp/journal-seq-KninbN/two.journal", 4096) = 39
+2307  openat(AT_FDCWD, "/var/tmp/journal-seq-KninbN", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 5
+2307  fsync(5)                          = 0
+2307  close(5)                          = 0
+2307  writev(2, [{iov_base="Reserving 333 entries in field hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  fallocate(4, 0, 256, 8388352)     = 0
+2307  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0x7f87f58f5000
+2307  writev(2, [{iov_base="Reserving 2047 entries in data hash table.", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2307  ftruncate(4, 8388608)             = 0
+2307  ftruncate(4, 8388608)             = 0
+2307  fsync(4)                          = 0
+2307  fsync(4)                          = 0
+2307  munmap(0x7f87f58f5000, 8388608)   = 0
+2307  munmap(0x7f87f7404000, 4096)      = 0
+2307  close(4)                          = 0
+2307  ftruncate(3, 8388608)             = 0
+2307  ftruncate(3, 8388608)             = 0
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  munmap(0x7f87f76f6000, 4096)      = 0
+2307  close(3)                          = 0
+2307  openat(AT_FDCWD, "two.journal", O_RDWR|O_NONBLOCK|O_CLOEXEC) = 3
+2307  fcntl(3, F_GETFL)                 = 0x8802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+2307  fcntl(3, F_SETFL, O_RDWR|O_LARGEFILE) = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f87f60f5000
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_EMPTY_PATH) = 0
+2307  readlinkat(AT_FDCWD, "/proc/self/fd/3", "/var/tmp/journal-seq-KninbN/two.journal", 4096) = 39
+2307  openat(AT_FDCWD, "/var/tmp/journal-seq-KninbN", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+2307  fsync(4)                          = 0
+2307  close(4)                          = 0
+2307  ftruncate(3, 8388608)             = 0
+2307  fsync(3)                          = 0
+2307  fsync(3)                          = 0
+2307  munmap(0x7f87f60f5000, 8388608)   = 0
+2307  close(3)                          = 0
+2307  writev(2, [{iov_base="Done...", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2307  openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  getdents64(3, 0x55d3ca923290 /* 4 entries */, 32768) = 112
+2307  newfstatat(3, "one.journal", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, "two.journal", {st_mode=S_IFREG|0644, st_size=8388608, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, "..", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(3, ".", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  getdents64(3, 0x55d3ca923290 /* 0 entries */, 32768) = 0
+2307  writev(2, [{iov_base="Vacuuming done, freed 0B of archived journals from ..", iov_len=53}, {iov_base="\n", iov_len=1}], 2) = 54
+2307  close(3)                          = 0
+2307  newfstatat(AT_FDCWD, "/var/tmp/journal-seq-KninbN", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+2307  openat(AT_FDCWD, "/var/tmp/journal-seq-KninbN", O_RDONLY|O_NONBLOCK|O_NOFOLLOW|O_NOATIME|O_CLOEXEC|O_DIRECTORY) = 3
+2307  newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2307  fcntl(3, F_GETFL)                 = 0x78800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_NOATIME|O_DIRECTORY)
+2307  fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+2307  getdents64(3, 0x55d3ca923290 /* 4 entries */, 32768) = 112
+2307  unlinkat(3, "one.journal", 0)     = 0
+2307  unlinkat(3, "two.journal", 0)     = 0
+2307  getdents64(3, 0x55d3ca923290 /* 0 entries */, 32768) = 0
+2307  close(3)                          = 0
+2307  rmdir("/var/tmp/journal-seq-KninbN") = 0
+2307  write(1, "NUMBER=1\nNUMBER=2\nNUMBER=3\nNUMBER=4\nNUMBER=4\nNUMBER=3\nNUMBER=2\nNUMBER=1\nNUMBER=1\nNUMBER=2\nNUMBER=3\nNUMBER=4\nNUMBER=4\nNUMBER=3\nNU"..., 473) = 473
+2307  exit_group(0)                     = ?
+2307  +++ exited with 0 +++

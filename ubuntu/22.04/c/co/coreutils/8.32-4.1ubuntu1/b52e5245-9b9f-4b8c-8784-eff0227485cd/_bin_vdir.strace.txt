@@ -1,0 +1,113 @@
+691   execve("/bin/vdir", ["/bin/vdir"], 0x7ffced0ddfb0 /* 12 vars */) = 0
+691   brk(NULL)                         = 0x55d2920b6000
+691   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd1c4c3e40) = -1 EINVAL (Invalid argument)
+691   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21d86f2000
+691   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+691   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+691   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+691   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f21d86f0000
+691   close(3)                          = 0
+691   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+691   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+691   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+691   mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f21d86c4000
+691   mprotect(0x7f21d86ca000, 139264, PROT_NONE) = 0
+691   mmap(0x7f21d86ca000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f21d86ca000
+691   mmap(0x7f21d86e4000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f21d86e4000
+691   mmap(0x7f21d86ec000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f21d86ec000
+691   mmap(0x7f21d86ee000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f21d86ee000
+691   close(3)                          = 0
+691   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+691   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+691   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+691   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+691   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+691   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+691   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+691   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f21d849c000
+691   mmap(0x7f21d84c4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f21d84c4000
+691   mmap(0x7f21d8659000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f21d8659000
+691   mmap(0x7f21d86b1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f21d86b1000
+691   mmap(0x7f21d86b7000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f21d86b7000
+691   close(3)                          = 0
+691   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+691   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+691   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+691   mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f21d8405000
+691   mmap(0x7f21d8407000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f21d8407000
+691   mmap(0x7f21d8472000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f21d8472000
+691   mmap(0x7f21d849a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f21d849a000
+691   close(3)                          = 0
+691   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21d8403000
+691   arch_prctl(ARCH_SET_FS, 0x7f21d8403c40) = 0
+691   set_tid_address(0x7f21d8403f10)   = 691
+691   set_robust_list(0x7f21d8403f20, 24) = 0
+691   rseq(0x7f21d84045e0, 0x20, 0, 0x53053053) = 0
+691   mprotect(0x7f21d86b1000, 16384, PROT_READ) = 0
+691   mprotect(0x7f21d849a000, 4096, PROT_READ) = 0
+691   mprotect(0x7f21d86ec000, 4096, PROT_READ) = 0
+691   mprotect(0x55d290bac000, 4096, PROT_READ) = 0
+691   mprotect(0x7f21d872c000, 8192, PROT_READ) = 0
+691   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+691   munmap(0x7f21d86f0000, 6133)      = 0
+691   statfs("/sys/fs/selinux", 0x7ffd1c4c3e80) = -1 ENOENT (No such file or directory)
+691   statfs("/selinux", 0x7ffd1c4c3e80) = -1 ENOENT (No such file or directory)
+691   getrandom("\x2b\x34\xbc\x4e\x76\xcc\x07\x6f", 8, GRND_NONBLOCK) = 8
+691   brk(NULL)                         = 0x55d2920b6000
+691   brk(0x55d2920d7000)               = 0x55d2920d7000
+691   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+691   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+691   read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+691   read(3, "", 1024)                 = 0
+691   close(3)                          = 0
+691   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+691   ioctl(1, TIOCGWINSZ, 0x7ffd1c4c3ea0) = -1 ENOTTY (Inappropriate ioctl for device)
+691   openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+691   newfstatat(3, "", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+691   getdents64(3, 0x55d2920bb920 /* 4 entries */, 32768) = 128
+691   statx(AT_FDCWD, "tmp.wktANvM3P6", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME|STATX_SIZE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0600, stx_size=0, ...}) = 0
+691   lgetxattr("tmp.wktANvM3P6", "security.selinux", 0x55d2920c3930, 255) = -1 ENODATA (No data available)
+691   getxattr("tmp.wktANvM3P6", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+691   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+691   connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+691   close(4)                          = 0
+691   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+691   connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+691   close(4)                          = 0
+691   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+691   newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+691   openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+691   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+691   read(4, "# /etc/nsswitch.conf\n#\n# Example configuration of GNU Name Service Switch functionality.\n# If you have the `glibc-doc-reference'"..., 4096) = 494
+691   read(4, "", 4096)                 = 0
+691   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+691   close(4)                          = 0
+691   openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+691   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=974, ...}, AT_EMPTY_PATH) = 0
+691   lseek(4, 0, SEEK_SET)             = 0
+691   read(4, "root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:s"..., 4096) = 974
+691   close(4)                          = 0
+691   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+691   connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+691   close(4)                          = 0
+691   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+691   connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+691   close(4)                          = 0
+691   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+691   openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 4
+691   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=464, ...}, AT_EMPTY_PATH) = 0
+691   lseek(4, 0, SEEK_SET)             = 0
+691   read(4, "root:x:0:\ndaemon:x:1:\nbin:x:2:\nsys:x:3:\nadm:x:4:\ntty:x:5:\ndisk:x:6:\nlp:x:7:\nmail:x:8:\nnews:x:9:\nuucp:x:10:\nman:x:12:\nproxy:x:13:"..., 4096) = 464
+691   close(4)                          = 0
+691   statx(AT_FDCWD, "entrypoints.txt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_MODE|STATX_NLINK|STATX_UID|STATX_GID|STATX_MTIME|STATX_SIZE, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1185, ...}) = 0
+691   lgetxattr("entrypoints.txt", "security.selinux", 0x55d2920c3f90, 255) = -1 ENODATA (No data available)
+691   getxattr("entrypoints.txt", "system.posix_acl_access", NULL, 0) = -1 ENODATA (No data available)
+691   getdents64(3, 0x55d2920bb920 /* 0 entries */, 32768) = 0
+691   close(3)                          = 0
+691   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+691   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+691   write(1, "total 4\n-rw-r--r-- 1 root root 1185 Jul 19 05:55 entrypoints.txt\n-rw------- 1 root root    0 Jul 19 05:55 tmp.wktANvM3P6\n", 121) = 121
+691   close(1)                          = 0
+691   close(2)                          = 0
+691   exit_group(0)                     = ?
+691   +++ exited with 0 +++

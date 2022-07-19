@@ -1,0 +1,113 @@
+usage: compile [options] file.go...
+  -% int
+    	debug non-static initializers
+  -+	compiling runtime
+  -B	disable bounds checking
+  -C	disable printing of columns in error messages
+  -D path
+    	set relative path for local imports
+  -E	debug symbol export
+  -G	accept generic code (default 3)
+  -I directory
+    	add directory to import search path
+  -K	debug missing line numbers
+  -L	show full file names in error messages
+  -N	disable optimizations
+  -S	print assembly listing
+  -V	print version and exit
+  -W	debug parse tree after type checking
+  -asan
+    	build code compatible with C/C++ address sanitizer
+  -asmhdr file
+    	write assembly header to file
+  -bench file
+    	append benchmark times to file
+  -blockprofile file
+    	write block profile to file
+  -buildid id
+    	record id as the build id in the export metadata
+  -c int
+    	concurrency during compilation (1 means no concurrency) (default 1)
+  -clobberdead
+    	clobber dead stack slots (for debugging)
+  -clobberdeadreg
+    	clobber dead registers (for debugging)
+  -complete
+    	compiling complete package (no C or assembly)
+  -cpuprofile file
+    	write cpu profile to file
+  -d value
+    	enable debugging settings; try -d help
+  -dwarf
+    	generate DWARF symbols (default true)
+  -dwarfbasentries
+    	use base address selection entries in DWARF (default true)
+  -dwarflocationlists
+    	add location lists to DWARF in optimized mode (default true)
+  -dynlink
+    	support references to Go symbols defined in other shared libraries
+  -e	no limit on number of errors reported
+  -embedcfg file
+    	read go:embed configuration from file
+  -gendwarfinl int
+    	generate DWARF inline info records (default 2)
+  -goversion string
+    	required version of the runtime
+  -h	halt on error
+  -importcfg file
+    	read import configuration from file
+  -importmap definition
+    	add definition of the form source=actual to import map
+  -installsuffix suffix
+    	set pkg directory suffix
+  -j	debug runtime-initialized variables
+  -json string
+    	version,file for JSON compiler/optimizer detail output
+  -l	disable inlining
+  -lang string
+    	Go language version source code expects
+  -linkobj file
+    	write linker-specific object to file
+  -linkshared
+    	generate code that will be linked against Go shared libraries
+  -live
+    	debug liveness analysis
+  -m	print optimization decisions
+  -memprofile file
+    	write memory profile to file
+  -memprofilerate rate
+    	set runtime.MemProfileRate to rate
+  -msan
+    	build code compatible with C/C++ memory sanitizer
+  -mutexprofile file
+    	write mutex profile to file
+  -nolocalimports
+    	reject local (relative) imports
+  -o file
+    	write output to file
+  -p path
+    	set expected package import path
+  -pack
+    	write to file.a instead of file.o
+  -r	debug generated wrappers
+  -race
+    	enable race detector
+  -shared
+    	generate code that can be linked into a shared library
+  -smallframes
+    	reduce the size limit for stack allocated objects
+  -spectre list
+    	enable spectre mitigations in list (all, index, ret)
+  -std
+    	compiling standard library
+  -symabis file
+    	read symbol ABIs from file
+  -t	enable tracing for debugging the compiler
+  -traceprofile file
+    	write an execution trace to file
+  -trimpath prefix
+    	remove prefix from recorded source file paths
+  -v	increase debug verbosity
+  -w	debug type checking
+  -wb
+    	enable write barrier (default true)

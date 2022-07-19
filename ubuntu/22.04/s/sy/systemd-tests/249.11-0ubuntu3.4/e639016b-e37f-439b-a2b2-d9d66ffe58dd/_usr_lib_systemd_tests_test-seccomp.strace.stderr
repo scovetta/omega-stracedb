@@ -1,0 +1,62 @@
+/* test_seccomp_arch_to_string */
+/* test_architecture_table */
+seccomp-arch: native → 0x0 → native
+seccomp-arch: x86 → 0x40000003 → x86
+seccomp-arch: x86-64 → 0xc000003e → x86-64
+seccomp-arch: x32 → 0x4000003e → x32
+seccomp-arch: arm → 0x40000028 → arm
+seccomp-arch: arm64 → 0xc00000b7 → arm64
+seccomp-arch: mips → 0x8 → mips
+seccomp-arch: mips64 → 0x80000008 → mips64
+seccomp-arch: mips64-n32 → 0xa0000008 → mips64-n32
+seccomp-arch: mips-le → 0x40000008 → mips-le
+seccomp-arch: mips64-le → 0xc0000008 → mips64-le
+seccomp-arch: mips64-le-n32 → 0xe0000008 → mips64-le-n32
+seccomp-arch: ppc → 0x14 → ppc
+seccomp-arch: ppc64 → 0x80000015 → ppc64
+seccomp-arch: ppc64-le → 0xc0000015 → ppc64-le
+seccomp-arch: riscv64 → 0xc00000f3 → riscv64
+seccomp-arch: s390 → 0x16 → s390
+seccomp-arch: s390x → 0x80000016 → s390x
+/* test_syscall_filter_set_find */
+/* test_filter_sets */
+Not privileged, skipping test_filter_sets
+/* test_filter_sets_ordered */
+Testing without namespaces, skipping test_restrict_namespace
+/* test_protect_sysctl */
+Not privileged, skipping test_protect_sysctl
+/* test_protect_syslog */
+Not privileged, skipping test_protect_syslog
+/* test_restrict_address_families */
+Not privileged, skipping test_restrict_address_families
+/* test_restrict_realtime */
+Not privileged, skipping test_restrict_realtime
+/* test_memory_deny_write_execute_mmap */
+Not privileged, skipping test_memory_deny_write_execute_mmap
+/* test_memory_deny_write_execute_shmat */
+arch x86: SCMP_SYS(mmap) = 9
+arch x86: SCMP_SYS(mmap2) = -10029
+arch x86: SCMP_SYS(shmget) = 29
+arch x86: SCMP_SYS(shmat) = 30
+arch x86: SCMP_SYS(shmdt) = 67
+arch x32: SCMP_SYS(mmap) = 9
+arch x32: SCMP_SYS(mmap2) = -10029
+arch x32: SCMP_SYS(shmget) = 29
+arch x32: SCMP_SYS(shmat) = 30
+arch x32: SCMP_SYS(shmdt) = 67
+arch x86-64: SCMP_SYS(mmap) = 9
+arch x86-64: SCMP_SYS(mmap2) = -10029
+arch x86-64: SCMP_SYS(shmget) = 29
+arch x86-64: SCMP_SYS(shmat) = 30
+arch x86-64: SCMP_SYS(shmdt) = 67
+Not privileged, skipping test_memory_deny_write_execute_shmat
+/* test_restrict_archs */
+Not privileged, skipping test_restrict_archs
+/* test_load_syscall_filter_set_raw */
+Not privileged, skipping test_load_syscall_filter_set_raw
+/* test_native_syscalls_filtered */
+Not privileged, skipping test_native_syscalls_filtered
+/* test_lock_personality */
+Not privileged, skipping test_lock_personality
+/* test_restrict_suid_sgid */
+Not privileged, skipping test_restrict_suid_sgid

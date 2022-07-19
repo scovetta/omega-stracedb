@@ -1,0 +1,42 @@
+808   execve("/usr/bin/dircolors", ["/usr/bin/dircolors"], 0x7ffdae86d980 /* 12 vars */) = 0
+808   brk(NULL)                         = 0x560dd598d000
+808   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcead12eb0) = -1 EINVAL (Invalid argument)
+808   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfb0113000
+808   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+808   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+808   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+808   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbfb0111000
+808   close(3)                          = 0
+808   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+808   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+808   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+808   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+808   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+808   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+808   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+808   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfafee9000
+808   mmap(0x7fbfaff11000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fbfaff11000
+808   mmap(0x7fbfb00a6000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fbfb00a6000
+808   mmap(0x7fbfb00fe000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fbfb00fe000
+808   mmap(0x7fbfb0104000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbfb0104000
+808   close(3)                          = 0
+808   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfafee6000
+808   arch_prctl(ARCH_SET_FS, 0x7fbfafee6740) = 0
+808   set_tid_address(0x7fbfafee6a10)   = 808
+808   set_robust_list(0x7fbfafee6a20, 24) = 0
+808   rseq(0x7fbfafee70e0, 0x20, 0, 0x53053053) = 0
+808   mprotect(0x7fbfb00fe000, 16384, PROT_READ) = 0
+808   mprotect(0x560dd416e000, 4096, PROT_READ) = 0
+808   mprotect(0x7fbfb014d000, 8192, PROT_READ) = 0
+808   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+808   munmap(0x7fbfb0111000, 6133)      = 0
+808   getrandom("\xfc\x8c\x18\x71\x69\x5c\x34\x6d", 8, GRND_NONBLOCK) = 8
+808   brk(NULL)                         = 0x560dd598d000
+808   brk(0x560dd59ae000)               = 0x560dd59ae000
+808   write(2, "/usr/bin/dircolors: ", 20) = 20
+808   write(2, "no SHELL environment variable, and no shell type option given", 61) = 61
+808   write(2, "\n", 1)                 = 1
+808   close(1)                          = 0
+808   close(2)                          = 0
+808   exit_group(1)                     = ?
+808   +++ exited with 1 +++

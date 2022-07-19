@@ -1,0 +1,296 @@
+482   execve("/usr/bin/faked-sysv", ["/usr/bin/faked-sysv"], 0x7fffb41146a0 /* 12 vars */) = 0
+482   brk(NULL)                         = 0x5648cc473000
+482   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd2686f750) = -1 EINVAL (Invalid argument)
+482   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5131bbb000
+482   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+482   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+482   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6213, ...}, AT_EMPTY_PATH) = 0
+482   mmap(NULL, 6213, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5131bb9000
+482   close(3)                          = 0
+482   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+482   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+482   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+482   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+482   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+482   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+482   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+482   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5131991000
+482   mmap(0x7f51319b9000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f51319b9000
+482   mmap(0x7f5131b4e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f5131b4e000
+482   mmap(0x7f5131ba6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f5131ba6000
+482   mmap(0x7f5131bac000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5131bac000
+482   close(3)                          = 0
+482   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f513198e000
+482   arch_prctl(ARCH_SET_FS, 0x7f513198e740) = 0
+482   set_tid_address(0x7f513198ea10)   = 482
+482   set_robust_list(0x7f513198ea20, 24) = 0
+482   rseq(0x7f513198f0e0, 0x20, 0, 0x53053053) = 0
+482   mprotect(0x7f5131ba6000, 16384, PROT_READ) = 0
+482   mprotect(0x5648cbdb0000, 4096, PROT_READ) = 0
+482   mprotect(0x7f5131bf5000, 8192, PROT_READ) = 0
+482   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+482   munmap(0x7f5131bb9000, 6213)      = 0
+482   getpid()                          = 482
+482   msgget(0x8906c14, IPC_CREAT|IPC_EXCL|0600) = 0
+482   msgget(0x8906c15, IPC_CREAT|IPC_EXCL|0600) = 1
+482   semget(0x8906c16, 1, IPC_CREAT|IPC_EXCL|0600) = 0
+482   semctl(0, 0, SETVAL, 0x1)         = 0
+482   rt_sigaction(SIGHUP, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGINT, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGQUIT, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGILL, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGTRAP, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGABRT, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGBUS, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGFPE, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGUSR1, {sa_handler=0x5648cbdacab0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGSEGV, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGUSR2, {sa_handler=0x5648cbdac9c0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGPIPE, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGALRM, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGTERM, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGSTKFLT, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGCHLD, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGSTOP, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = -1 EINVAL (Invalid argument)
+482   rt_sigaction(SIGTTIN, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGTTOU, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGURG, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGXCPU, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGXFSZ, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGVTALRM, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGPROF, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGWINCH, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGIO, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGPWR, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGSYS, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_2, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_3, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_4, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_5, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_6, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_7, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_8, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_9, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_10, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_11, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_12, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_13, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_14, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_15, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_16, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_17, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_18, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_19, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_20, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_21, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_22, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_23, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_24, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_25, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_26, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_27, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_28, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_29, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_30, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_31, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   rt_sigaction(SIGRT_32, {sa_handler=0x5648cbdacce0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f51319d3520}, NULL, 8) = 0
+482   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+487   set_robust_list(0x7f513198ea20, 24 <unfinished ...>
+482   <... clone resumed>, child_tidptr=0x7f513198ea10) = 487
+487   <... set_robust_list resumed>)    = 0
+482   newfstatat(1, "",  <unfinished ...>
+487   prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+482   <... newfstatat resumed>{st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+487   close(0 <unfinished ...>
+482   getrandom( <unfinished ...>
+487   <... close resumed>)              = 0
+482   <... getrandom resumed>"\x16\x12\xaf\xf7\xb6\xe2\xf7\xf4", 8, GRND_NONBLOCK) = 8
+487   close(1 <unfinished ...>
+482   brk(NULL <unfinished ...>
+487   <... close resumed>)              = 0
+482   <... brk resumed>)                = 0x5648cc473000
+487   close(2 <unfinished ...>
+482   brk(0x5648cc494000 <unfinished ...>
+487   <... close resumed>)              = 0
+482   <... brk resumed>)                = 0x5648cc494000
+487   close(3 <unfinished ...>
+482   write(1, "143682580:487\n", 14 <unfinished ...>
+487   <... close resumed>)              = -1 EBADF (Bad file descriptor)
+487   close(4 <unfinished ...>
+482   <... write resumed>)              = 14
+487   <... close resumed>)              = -1 EBADF (Bad file descriptor)
+482   exit_group(0 <unfinished ...>
+487   close(5 <unfinished ...>
+482   <... exit_group resumed>)         = ?
+487   <... close resumed>)              = -1 EBADF (Bad file descriptor)
+482   +++ exited with 0 +++
+487   close(6)                          = -1 EBADF (Bad file descriptor)
+487   close(7)                          = -1 EBADF (Bad file descriptor)
+487   close(8)                          = -1 EBADF (Bad file descriptor)
+487   close(9)                          = -1 EBADF (Bad file descriptor)
+487   close(10)                         = -1 EBADF (Bad file descriptor)
+487   close(11)                         = -1 EBADF (Bad file descriptor)
+487   close(12)                         = -1 EBADF (Bad file descriptor)
+487   close(13)                         = -1 EBADF (Bad file descriptor)
+487   close(14)                         = -1 EBADF (Bad file descriptor)
+487   close(15)                         = -1 EBADF (Bad file descriptor)
+487   close(16)                         = -1 EBADF (Bad file descriptor)
+487   close(17)                         = -1 EBADF (Bad file descriptor)
+487   close(18)                         = -1 EBADF (Bad file descriptor)
+487   close(19)                         = -1 EBADF (Bad file descriptor)
+487   close(20)                         = -1 EBADF (Bad file descriptor)
+487   close(21)                         = -1 EBADF (Bad file descriptor)
+487   close(22)                         = -1 EBADF (Bad file descriptor)
+487   close(23)                         = -1 EBADF (Bad file descriptor)
+487   close(24)                         = -1 EBADF (Bad file descriptor)
+487   close(25)                         = -1 EBADF (Bad file descriptor)
+487   close(26)                         = -1 EBADF (Bad file descriptor)
+487   close(27)                         = -1 EBADF (Bad file descriptor)
+487   close(28)                         = -1 EBADF (Bad file descriptor)
+487   close(29)                         = -1 EBADF (Bad file descriptor)
+487   close(30)                         = -1 EBADF (Bad file descriptor)
+487   close(31)                         = -1 EBADF (Bad file descriptor)
+487   close(32)                         = -1 EBADF (Bad file descriptor)
+487   close(33)                         = -1 EBADF (Bad file descriptor)
+487   close(34)                         = -1 EBADF (Bad file descriptor)
+487   close(35)                         = -1 EBADF (Bad file descriptor)
+487   close(36)                         = -1 EBADF (Bad file descriptor)
+487   close(37)                         = -1 EBADF (Bad file descriptor)
+487   close(38)                         = -1 EBADF (Bad file descriptor)
+487   close(39)                         = -1 EBADF (Bad file descriptor)
+487   close(40)                         = -1 EBADF (Bad file descriptor)
+487   close(41)                         = -1 EBADF (Bad file descriptor)
+487   close(42)                         = -1 EBADF (Bad file descriptor)
+487   close(43)                         = -1 EBADF (Bad file descriptor)
+487   close(44)                         = -1 EBADF (Bad file descriptor)
+487   close(45)                         = -1 EBADF (Bad file descriptor)
+487   close(46)                         = -1 EBADF (Bad file descriptor)
+487   close(47)                         = -1 EBADF (Bad file descriptor)
+487   close(48)                         = -1 EBADF (Bad file descriptor)
+487   close(49)                         = -1 EBADF (Bad file descriptor)
+487   close(50)                         = -1 EBADF (Bad file descriptor)
+487   close(51)                         = -1 EBADF (Bad file descriptor)
+487   close(52)                         = -1 EBADF (Bad file descriptor)
+487   close(53)                         = -1 EBADF (Bad file descriptor)
+487   close(54)                         = -1 EBADF (Bad file descriptor)
+487   close(55)                         = -1 EBADF (Bad file descriptor)
+487   close(56)                         = -1 EBADF (Bad file descriptor)
+487   close(57)                         = -1 EBADF (Bad file descriptor)
+487   close(58)                         = -1 EBADF (Bad file descriptor)
+487   close(59)                         = -1 EBADF (Bad file descriptor)
+487   close(60)                         = -1 EBADF (Bad file descriptor)
+487   close(61)                         = -1 EBADF (Bad file descriptor)
+487   close(62)                         = -1 EBADF (Bad file descriptor)
+487   close(63)                         = -1 EBADF (Bad file descriptor)
+487   close(64)                         = -1 EBADF (Bad file descriptor)
+487   close(65)                         = -1 EBADF (Bad file descriptor)
+487   close(66)                         = -1 EBADF (Bad file descriptor)
+487   close(67)                         = -1 EBADF (Bad file descriptor)
+487   close(68)                         = -1 EBADF (Bad file descriptor)
+487   close(69)                         = -1 EBADF (Bad file descriptor)
+487   close(70)                         = -1 EBADF (Bad file descriptor)
+487   close(71)                         = -1 EBADF (Bad file descriptor)
+487   close(72)                         = -1 EBADF (Bad file descriptor)
+487   close(73)                         = -1 EBADF (Bad file descriptor)
+487   close(74)                         = -1 EBADF (Bad file descriptor)
+487   close(75)                         = -1 EBADF (Bad file descriptor)
+487   close(76)                         = -1 EBADF (Bad file descriptor)
+487   close(77)                         = -1 EBADF (Bad file descriptor)
+487   close(78)                         = -1 EBADF (Bad file descriptor)
+487   close(79)                         = -1 EBADF (Bad file descriptor)
+487   close(80)                         = -1 EBADF (Bad file descriptor)
+487   close(81)                         = -1 EBADF (Bad file descriptor)
+487   close(82)                         = -1 EBADF (Bad file descriptor)
+487   close(83)                         = -1 EBADF (Bad file descriptor)
+487   close(84)                         = -1 EBADF (Bad file descriptor)
+487   close(85)                         = -1 EBADF (Bad file descriptor)
+487   close(86)                         = -1 EBADF (Bad file descriptor)
+487   close(87)                         = -1 EBADF (Bad file descriptor)
+487   close(88)                         = -1 EBADF (Bad file descriptor)
+487   close(89)                         = -1 EBADF (Bad file descriptor)
+487   close(90)                         = -1 EBADF (Bad file descriptor)
+487   close(91)                         = -1 EBADF (Bad file descriptor)
+487   close(92)                         = -1 EBADF (Bad file descriptor)
+487   close(93)                         = -1 EBADF (Bad file descriptor)
+487   close(94)                         = -1 EBADF (Bad file descriptor)
+487   close(95)                         = -1 EBADF (Bad file descriptor)
+487   close(96)                         = -1 EBADF (Bad file descriptor)
+487   close(97)                         = -1 EBADF (Bad file descriptor)
+487   close(98)                         = -1 EBADF (Bad file descriptor)
+487   close(99)                         = -1 EBADF (Bad file descriptor)
+487   close(100)                        = -1 EBADF (Bad file descriptor)
+487   close(101)                        = -1 EBADF (Bad file descriptor)
+487   close(102)                        = -1 EBADF (Bad file descriptor)
+487   close(103)                        = -1 EBADF (Bad file descriptor)
+487   close(104)                        = -1 EBADF (Bad file descriptor)
+487   close(105)                        = -1 EBADF (Bad file descriptor)
+487   close(106)                        = -1 EBADF (Bad file descriptor)
+487   close(107)                        = -1 EBADF (Bad file descriptor)
+487   close(108)                        = -1 EBADF (Bad file descriptor)
+487   close(109)                        = -1 EBADF (Bad file descriptor)
+487   close(110)                        = -1 EBADF (Bad file descriptor)
+487   close(111)                        = -1 EBADF (Bad file descriptor)
+487   close(112)                        = -1 EBADF (Bad file descriptor)
+487   close(113)                        = -1 EBADF (Bad file descriptor)
+487   close(114)                        = -1 EBADF (Bad file descriptor)
+487   close(115)                        = -1 EBADF (Bad file descriptor)
+487   close(116)                        = -1 EBADF (Bad file descriptor)
+487   close(117)                        = -1 EBADF (Bad file descriptor)
+487   close(118)                        = -1 EBADF (Bad file descriptor)
+487   close(119)                        = -1 EBADF (Bad file descriptor)
+487   close(120)                        = -1 EBADF (Bad file descriptor)
+487   close(121)                        = -1 EBADF (Bad file descriptor)
+487   close(122)                        = -1 EBADF (Bad file descriptor)
+487   close(123)                        = -1 EBADF (Bad file descriptor)
+487   close(124)                        = -1 EBADF (Bad file descriptor)
+487   close(125)                        = -1 EBADF (Bad file descriptor)
+487   close(126)                        = -1 EBADF (Bad file descriptor)
+487   close(127)                        = -1 EBADF (Bad file descriptor)
+487   close(128)                        = -1 EBADF (Bad file descriptor)
+487   close(129)                        = -1 EBADF (Bad file descriptor)
+487   close(130)                        = -1 EBADF (Bad file descriptor)
+487   close(131)                        = -1 EBADF (Bad file descriptor)
+487   close(132)                        = -1 EBADF (Bad file descriptor)
+487   close(133)                        = -1 EBADF (Bad file descriptor)
+487   close(134)                        = -1 EBADF (Bad file descriptor)
+487   close(135)                        = -1 EBADF (Bad file descriptor)
+487   close(136)                        = -1 EBADF (Bad file descriptor)
+487   close(137)                        = -1 EBADF (Bad file descriptor)
+487   close(138)                        = -1 EBADF (Bad file descriptor)
+487   close(139)                        = -1 EBADF (Bad file descriptor)
+487   close(140)                        = -1 EBADF (Bad file descriptor)
+487   close(141)                        = -1 EBADF (Bad file descriptor)
+487   close(142)                        = -1 EBADF (Bad file descriptor)
+487   close(143)                        = -1 EBADF (Bad file descriptor)
+487   close(144)                        = -1 EBADF (Bad file descriptor)
+487   close(145)                        = -1 EBADF (Bad file descriptor)
+487   close(146)                        = -1 EBADF (Bad file descriptor)
+487   close(147)                        = -1 EBADF (Bad file descriptor)
+487   close(148)                        = -1 EBADF (Bad file descriptor)
+487   close(149)                        = -1 EBADF (Bad file descriptor)
+487   close(150)                        = -1 EBADF (Bad file descriptor)
+487   close(151)                        = -1 EBADF (Bad file descriptor)
+487   close(152)                        = -1 EBADF (Bad file descriptor)
+487   close(153)                        = -1 EBADF (Bad file descriptor)
+487   close(154)                        = -1 EBADF (Bad file descriptor)
+487   close(155)                        = -1 EBADF (Bad file descriptor)
+487   close(156)                        = -1 EBADF (Bad file descriptor)
+487   close(157)                        = -1 EBADF (Bad file descriptor)
+487   close(158)                        = -1 EBADF (Bad file descriptor)
+487   close(159)                        = -1 EBADF (Bad file descriptor)
+487   close(160)                        = -1 EBADF (Bad file descriptor)
+487   close(161)                        = -1 EBADF (Bad file descriptor)
+487   close(162)                        = -1 EBADF (Bad file descriptor)
+487   close(163)                        = -1 EBADF (Bad file descriptor)
+487   close(164)                        = -1 EBADF (Bad file descriptor)
+487   close(165)                        = -1 EBADF (Bad file descriptor)
+487   close(166)                        = -1 EBADF (Bad file descriptor)
+487   close(167)                        = -1 EBADF (Bad file descriptor)
+487   close(168)                        = -1 EBADF (Bad file descriptor)
+487   close(169)                        = -1 EBADF (Bad file descriptor)
+487   close(170)                        = -1 EBADF (Bad file descriptor)
+487   close(171)                        = -1 EBADF (Bad file descriptor)
+487   close(172)                        = -1 EBADF (Bad file descriptor)
+487   close(173)                        = -1 EBADF (Bad file descriptor)
+487   close(174)                        = -1 EBADF (Bad file descriptor)
+487   close(175

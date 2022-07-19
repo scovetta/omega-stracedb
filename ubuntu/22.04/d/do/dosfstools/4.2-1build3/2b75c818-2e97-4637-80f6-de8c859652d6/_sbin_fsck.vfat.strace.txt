@@ -1,0 +1,78 @@
+522   execve("/sbin/fsck.vfat", ["/sbin/fsck.vfat"], 0x7ffd649701f0 /* 12 vars */) = 0
+522   brk(NULL)                         = 0x55ef3100f000
+522   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcfce10250) = -1 EINVAL (Invalid argument)
+522   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb4c9f2c000
+522   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+522   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+522   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+522   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb4c9f2a000
+522   close(3)                          = 0
+522   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+522   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+522   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+522   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+522   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+522   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+522   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+522   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb4c9d02000
+522   mmap(0x7fb4c9d2a000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb4c9d2a000
+522   mmap(0x7fb4c9ebf000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb4c9ebf000
+522   mmap(0x7fb4c9f17000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fb4c9f17000
+522   mmap(0x7fb4c9f1d000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb4c9f1d000
+522   close(3)                          = 0
+522   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb4c9cff000
+522   arch_prctl(ARCH_SET_FS, 0x7fb4c9cff740) = 0
+522   set_tid_address(0x7fb4c9cffa10)   = 522
+522   set_robust_list(0x7fb4c9cffa20, 24) = 0
+522   rseq(0x7fb4c9d000e0, 0x20, 0, 0x53053053) = 0
+522   mprotect(0x7fb4c9f17000, 16384, PROT_READ) = 0
+522   mprotect(0x55ef301f0000, 4096, PROT_READ) = 0
+522   mprotect(0x7fb4c9f66000, 8192, PROT_READ) = 0
+522   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+522   munmap(0x7fb4c9f2a000, 6133)      = 0
+522   ioctl(0, TCGETS, 0x7ffcfce0fce0)  = -1 ENOTTY (Inappropriate ioctl for device)
+522   getrandom("\x31\x75\x6d\x61\x12\x5a\xce\x85", 8, GRND_NONBLOCK) = 8
+522   brk(NULL)                         = 0x55ef3100f000
+522   brk(0x55ef31030000)               = 0x55ef31030000
+522   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+522   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+522   mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7fb4c9cf8000
+522   close(3)                          = 0
+522   futex(0x7fb4c9f1ca6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+522   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/IBM850.so", O_RDONLY|O_CLOEXEC) = 3
+522   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\220A\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\320\6\0\0\0\0\0\0\320\6\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+522   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18704, ...}, AT_EMPTY_PATH) = 0
+522   mmap(NULL, 20560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb4c9cf2000
+522   mmap(0x7fb4c9cf3000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fb4c9cf3000
+522   mmap(0x7fb4c9cf5000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fb4c9cf5000
+522   mmap(0x7fb4c9cf6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fb4c9cf6000
+522   close(3)                          = 0
+522   mprotect(0x7fb4c9cf6000, 4096, PROT_READ) = 0
+522   write(2, "Usage: /sbin/fsck.vfat [OPTIONS] DEVICE\n", 40) = 40
+522   write(2, "Check FAT filesystem on DEVICE for errors.\n", 43) = 43
+522   write(2, "\n", 1)                 = 1
+522   write(2, "Options:\n", 9)         = 9
+522   write(2, "  -a              automatically repair the filesystem\n", 54) = 54
+522   write(2, "  -A              toggle Atari variant of the FAT filesystem\n", 61) = 61
+522   write(2, "  -b              make read-only boot sector check\n", 51) = 51
+522   write(2, "  -c N            use DOS codepage N to decode short file names (default: 850)\n", 79) = 79
+522   write(2, "  -d PATH         drop file with name PATH (can be given multiple times)\n", 73) = 73
+522   write(2, "  -f              salvage unused chains to files\n", 49) = 49
+522   write(2, "  -F NUM          specify FAT table NUM used for filesystem access\n", 67) = 67
+522   write(2, "  -l              list path names\n", 34) = 34
+522   write(2, "  -n              no-op, check non-interactively without changing\n", 66) = 66
+522   write(2, "  -p              same as -a, for compat with other *fsck\n", 58) = 58
+522   write(2, "  -r              interactively repair the filesystem (default)\n", 64) = 64
+522   write(2, "  -S              disallow spaces in the middle of short file names\n", 68) = 68
+522   write(2, "  -t              test for bad clusters\n", 40) = 40
+522   write(2, "  -u PATH         try to undelete (non-directory) file that was named PATH (can be\n", 83) = 83
+522   write(2, "                    given multiple times)\n", 42) = 42
+522   write(2, "  -U              allow only uppercase characters in volume and boot label\n", 75) = 75
+522   write(2, "  -v              verbose mode\n", 31) = 31
+522   write(2, "  -V              perform a verification pass\n", 46) = 46
+522   write(2, "  --variant=TYPE  handle variant TYPE of the filesystem\n", 56) = 56
+522   write(2, "  -w              write changes to disk immediately\n", 52) = 52
+522   write(2, "  -y              same as -a, for compat with other *fsck\n", 58) = 58
+522   write(2, "  --help          print this message\n", 37) = 37
+522   exit_group(2)                     = ?
+522   +++ exited with 2 +++

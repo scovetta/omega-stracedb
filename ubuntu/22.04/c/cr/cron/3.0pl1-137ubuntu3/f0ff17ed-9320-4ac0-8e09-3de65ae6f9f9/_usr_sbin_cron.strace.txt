@@ -1,0 +1,152 @@
+501   execve("/usr/sbin/cron", ["/usr/sbin/cron"], 0x7fffc9bfdb40 /* 12 vars */) = 0
+501   brk(NULL)                         = 0x55f0f14db000
+501   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc87896500) = -1 EINVAL (Invalid argument)
+501   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd682333000
+501   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+501   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+501   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd682331000
+501   close(3)                          = 0
+501   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0", O_RDONLY|O_CLOEXEC) = 3
+501   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\1\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x&\0\0\0\0\0\0x&\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=67736, ...}, AT_EMPTY_PATH) = 0
+501   mmap(NULL, 69648, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd68231f000
+501   mmap(0x7fd682322000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fd682322000
+501   mmap(0x7fd68232b000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7fd68232b000
+501   mmap(0x7fd68232f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7fd68232f000
+501   close(3)                          = 0
+501   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+501   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+501   mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd6822f3000
+501   mprotect(0x7fd6822f9000, 139264, PROT_NONE) = 0
+501   mmap(0x7fd6822f9000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fd6822f9000
+501   mmap(0x7fd682313000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7fd682313000
+501   mmap(0x7fd68231b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7fd68231b000
+501   mmap(0x7fd68231d000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd68231d000
+501   close(3)                          = 0
+501   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+501   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+501   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+501   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+501   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+501   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+501   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd6820cb000
+501   mmap(0x7fd6820f3000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fd6820f3000
+501   mmap(0x7fd682288000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fd682288000
+501   mmap(0x7fd6822e0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fd6822e0000
+501   mmap(0x7fd6822e6000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd6822e6000
+501   close(3)                          = 0
+501   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", O_RDONLY|O_CLOEXEC) = 3
+501   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\1\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250*\0\0\0\0\0\0\250*\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=133200, ...}, AT_EMPTY_PATH) = 0
+501   mmap(NULL, 184496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd68209d000
+501   mmap(0x7fd6820a0000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fd6820a0000
+501   mmap(0x7fd6820a8000, 86016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fd6820a8000
+501   mmap(0x7fd6820bd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7fd6820bd000
+501   mmap(0x7fd6820bf000, 45232, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd6820bf000
+501   close(3)                          = 0
+501   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+501   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+501   mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd682006000
+501   mmap(0x7fd682008000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fd682008000
+501   mmap(0x7fd682073000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7fd682073000
+501   mmap(0x7fd68209b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7fd68209b000
+501   close(3)                          = 0
+501   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3
+501   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200b\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\22\0\0\0\0\0\0H\22\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_EMPTY_PATH) = 0
+501   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd682004000
+501   mmap(NULL, 28992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd681ffc000
+501   mmap(0x7fd681ffe000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fd681ffe000
+501   mmap(0x7fd682001000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fd682001000
+501   mmap(0x7fd682002000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fd682002000
+501   close(3)                          = 0
+501   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd681ff9000
+501   arch_prctl(ARCH_SET_FS, 0x7fd681ff9840) = 0
+501   set_tid_address(0x7fd681ff9b10)   = 501
+501   set_robust_list(0x7fd681ff9b20, 24) = 0
+501   rseq(0x7fd681ffa1e0, 0x20, 0, 0x53053053) = 0
+501   mprotect(0x7fd6822e0000, 16384, PROT_READ) = 0
+501   mprotect(0x7fd682002000, 4096, PROT_READ) = 0
+501   mprotect(0x7fd68209b000, 4096, PROT_READ) = 0
+501   mprotect(0x7fd6820bd000, 4096, PROT_READ) = 0
+501   mprotect(0x7fd68231b000, 4096, PROT_READ) = 0
+501   mprotect(0x7fd68232f000, 4096, PROT_READ) = 0
+501   mprotect(0x55f0f0da7000, 4096, PROT_READ) = 0
+501   mprotect(0x7fd68236d000, 8192, PROT_READ) = 0
+501   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+501   munmap(0x7fd682331000, 6133)      = 0
+501   statfs("/sys/fs/selinux", 0x7ffc87896540) = -1 ENOENT (No such file or directory)
+501   statfs("/selinux", 0x7ffc87896540) = -1 ENOENT (No such file or directory)
+501   getrandom("\xc3\x37\x54\xfe\x2e\x0c\xdc\xd6", 8, GRND_NONBLOCK) = 8
+501   brk(NULL)                         = 0x55f0f14db000
+501   brk(0x55f0f14fc000)               = 0x55f0f14fc000
+501   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+501   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+501   read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+501   read(3, "", 1024)                 = 0
+501   close(3)                          = 0
+501   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+501   rt_sigaction(SIGCHLD, {sa_handler=0x55f0f0d9f950, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd68210d520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+501   rt_sigaction(SIGHUP, {sa_handler=0x55f0f0d9fac0, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd68210d520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+501   fcntl(0, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+501   openat(AT_FDCWD, "/var/run/crond.pid", O_RDWR|O_CREAT, 0644) = 3
+501   fcntl(3, F_GETFL)                 = 0x8002 (flags O_RDWR|O_LARGEFILE)
+501   flock(3, LOCK_EX|LOCK_NB)         = 0
+501   getpid()                          = 501
+501   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+501   getpid()                          = 501
+501   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 4
+501   connect(4, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+501   close(4)                          = 0
+501   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+501   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+501   lseek(3, 0, SEEK_SET)             = 0
+501   getpid()                          = 501
+501   write(3, "501\n", 4)              = 4
+501   lseek(3, 0, SEEK_CUR)             = 4
+501   ftruncate(3, 4)                   = 0
+501   setresuid(-1, 0, -1)              = 0
+501   newfstatat(AT_FDCWD, "/var/spool/cron", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+501   chdir("/var/spool/cron")          = 0
+501   newfstatat(AT_FDCWD, "crontabs", {st_mode=S_IFDIR|S_ISVTX|0730, st_size=4096, ...}, 0) = 0
+501   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+506   set_robust_list(0x7fd681ff9b20, 24 <unfinished ...>
+501   <... clone resumed>, child_tidptr=0x7fd681ff9b10) = 506
+506   <... set_robust_list resumed>)    = 0
+501   exit_group(0 <unfinished ...>
+506   getpid( <unfinished ...>
+501   <... exit_group resumed>)         = ?
+506   <... getpid resumed>)             = 506
+501   +++ exited with 0 +++
+506   getpid()                          = 506
+506   socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 4
+506   connect(4, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = -1 ENOENT (No such file or directory)
+506   close(4)                          = 0
+506   setsid()                          = 506
+506   openat(AT_FDCWD, "/dev/null", O_RDONLY) = 4
+506   dup3(4, 0, 0)                     = 0
+506   close(4)                          = 0
+506   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4
+506   dup3(4, 1, 0)                     = 1
+506   close(4)                          = 0
+506   openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4
+506   dup3(4, 2, 0)                     = 2
+506   close(4)                          = 0
+506   lseek(3, 0, SEEK_SET)             = 0
+506   getpid()                          = 506
+506   write(3, "506\n", 4)              = 4
+506   lseek(3, 0, SEEK_CUR)             = 4
+506   ftruncate(3, 4)                   = 0
+506   newfstatat(AT_FDCWD, "crontabs", {st_mode=S_IFDIR|S_ISVTX|0730, st_size=4096, ...}, 0) = 0
+506   newfstatat(AT_FDCWD, "/etc/crontab", {st_mode=S_IFREG|0644, st_size=1136, ...}, 0) = 0
+506   newfstatat(AT_FDCWD, "/etc/cron.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+506   newfstatat(AT_FDCWD, "/etc/crontab", {st_mode=S_IFREG|0644, st_size=1136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+506   openat(AT_FDCWD, "/etc/crontab", O_RDONLY) = 4
+506   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1136, ...}, AT_EMPTY_PATH) = 0
+506   fcntl(4, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+506   lseek(4, 0, SEEK_CUR)             = 0
+506   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1136, ...}, AT_EMPTY_PATH) = 0

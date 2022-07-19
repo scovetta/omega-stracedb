@@ -1,0 +1,28 @@
+advancecomp vnone by Andrea Mazzoleni, http://www.advancemame.it
+Usage: advmng [options] [FILES...]
+
+Modes:
+  -l, --list              List the content of the files
+  -z, --recompress        Recompress the specified files
+  -x, --extract           Extract all the .PNG frames
+  -a, --add F MNG PNG...  Create a .MNG file at F frame/s from .PNG files
+Options:
+  -0, --shrink-store      Don't compress
+  -1, --shrink-fast       Compress fast (zlib)
+  -2, --shrink-normal     Compress normal (libdeflate)
+  -3, --shrink-extra      Compress extra (7z)
+  -4, --shrink-insane     Compress extreme (zopfli)
+  -i N, --iter=N          Compress iterations
+  -s, --scroll NxM        Enable the scroll optimization with a NxM pattern
+                          search. from -Nx-M to NxM. Example: -s 4x6
+  -S, --scroll-square N   Enable the square scroll optimization with a NxN pattern
+  -r, --reduce            Convert the output to palette 8 bit (if possible)
+  -e, --expand            Convert the output to rgb 24 bit
+  -n, --noalpha           Remove the alpha channel
+  -c, --lc                Use the MNG LC (Low Complexity) format
+  -C, --vlc               Use the MNG VLC (Very Low Complexity) format
+  -f, --force             Force the new file also if it's bigger
+  -q, --quiet             Don't print on the console
+  -v, --verbose           Print on the console more information
+  -h, --help              Help of the program
+  -V, --version           Version of the program

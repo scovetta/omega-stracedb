@@ -1,0 +1,49 @@
+506   execve("/usr/bin/fdtdump", ["/usr/bin/fdtdump"], 0x7ffe67fba000 /* 12 vars */) = 0
+506   brk(NULL)                         = 0x56030fc34000
+506   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe064e1cf0) = -1 EINVAL (Invalid argument)
+506   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8f557fb000
+506   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+506   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+506   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6253, ...}, AT_EMPTY_PATH) = 0
+506   mmap(NULL, 6253, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8f557f9000
+506   close(3)                          = 0
+506   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+506   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+506   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+506   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+506   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+506   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+506   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+506   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8f555d1000
+506   mmap(0x7f8f555f9000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f8f555f9000
+506   mmap(0x7f8f5578e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f8f5578e000
+506   mmap(0x7f8f557e6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f8f557e6000
+506   mmap(0x7f8f557ec000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8f557ec000
+506   close(3)                          = 0
+506   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8f555ce000
+506   arch_prctl(ARCH_SET_FS, 0x7f8f555ce740) = 0
+506   set_tid_address(0x7f8f555cea10)   = 506
+506   set_robust_list(0x7f8f555cea20, 24) = 0
+506   rseq(0x7f8f555cf0e0, 0x20, 0, 0x53053053) = 0
+506   mprotect(0x7f8f557e6000, 16384, PROT_READ) = 0
+506   mprotect(0x56030e1c1000, 4096, PROT_READ) = 0
+506   mprotect(0x7f8f55835000, 8192, PROT_READ) = 0
+506   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+506   munmap(0x7f8f557f9000, 6253)      = 0
+506   write(2, "\n**** fdtdump is a low-level debugging tool, not meant for general use.\n**** If you want to decompile a dtb, you probably want\n*"..., 166) = 166
+506   write(2, "Usage: fdtdump [options] <file>\n\nOptions: -[dshV]\n", 50) = 50
+506   write(2, "  -d, ", 6)             = 6
+506   write(2, "--debug   ", 10)        = 10
+506   write(2, "Dump debug information while decoding the file\n", 47) = 47
+506   write(2, "  -s, ", 6)             = 6
+506   write(2, "--scan    ", 10)        = 10
+506   write(2, "Scan for an embedded fdt in file\n", 33) = 33
+506   write(2, "  -h, ", 6)             = 6
+506   write(2, "--help    ", 10)        = 10
+506   write(2, "Print this help and exit\n", 25) = 25
+506   write(2, "  -V, ", 6)             = 6
+506   write(2, "--version ", 10)        = 10
+506   write(2, "Print version and exit\n", 23) = 23
+506   write(2, "\nError: missing input filename\n", 31) = 31
+506   exit_group(1)                     = ?
+506   +++ exited with 1 +++

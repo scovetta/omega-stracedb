@@ -1,0 +1,56 @@
+469   execve("/bin/chacl", ["/bin/chacl"], 0x7ffca53509a0 /* 12 vars */) = 0
+469   brk(NULL)                         = 0x55fa9671d000
+469   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd34992a90) = -1 EINVAL (Invalid argument)
+469   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0f063ad000
+469   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+469   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+469   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+469   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0f063ab000
+469   close(3)                          = 0
+469   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+469   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\201\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\24\0\0\0\0\0\0000\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+469   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34888, ...}, AT_EMPTY_PATH) = 0
+469   mmap(NULL, 36896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0f063a1000
+469   mprotect(0x7f0f063a3000, 24576, PROT_NONE) = 0
+469   mmap(0x7f0f063a3000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f0f063a3000
+469   mmap(0x7f0f063a7000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f0f063a7000
+469   mmap(0x7f0f063a9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f0f063a9000
+469   close(3)                          = 0
+469   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+469   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+469   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+469   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+469   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+469   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+469   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+469   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0f06179000
+469   mmap(0x7f0f061a1000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f0f061a1000
+469   mmap(0x7f0f06336000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f0f06336000
+469   mmap(0x7f0f0638e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f0f0638e000
+469   mmap(0x7f0f06394000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0f06394000
+469   close(3)                          = 0
+469   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0f06176000
+469   arch_prctl(ARCH_SET_FS, 0x7f0f06176740) = 0
+469   set_tid_address(0x7f0f06176a10)   = 469
+469   set_robust_list(0x7f0f06176a20, 24) = 0
+469   rseq(0x7f0f061770e0, 0x20, 0, 0x53053053) = 0
+469   mprotect(0x7f0f0638e000, 16384, PROT_READ) = 0
+469   mprotect(0x7f0f063a9000, 4096, PROT_READ) = 0
+469   mprotect(0x55fa94dcc000, 4096, PROT_READ) = 0
+469   mprotect(0x7f0f063e7000, 8192, PROT_READ) = 0
+469   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+469   munmap(0x7f0f063ab000, 6133)      = 0
+469   getrandom("\x97\x45\x30\xa0\x2e\x74\x9d\x38", 8, GRND_NONBLOCK) = 8
+469   brk(NULL)                         = 0x55fa9671d000
+469   brk(0x55fa9673e000)               = 0x55fa9673e000
+469   write(2, "Usage:\n", 7)           = 7
+469   write(2, "\tchacl acl pathname...\n", 23) = 23
+469   write(2, "\tchacl -b acl dacl pathname...\n", 31) = 31
+469   write(2, "\tchacl -d dacl pathname...\n", 27) = 27
+469   write(2, "\tchacl -R pathname...\n", 22) = 22
+469   write(2, "\tchacl -D pathname...\n", 22) = 22
+469   write(2, "\tchacl -B pathname...\n", 22) = 22
+469   write(2, "\tchacl -l pathname...\t[not IRIX compatible]\n", 44) = 44
+469   write(2, "\tchacl -r pathname...\t[not IRIX compatible]\n", 44) = 44
+469   exit_group(1)                     = ?
+469   +++ exited with 1 +++

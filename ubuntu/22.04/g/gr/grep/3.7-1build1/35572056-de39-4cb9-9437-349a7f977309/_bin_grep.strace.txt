@@ -1,0 +1,60 @@
+448   execve("/bin/grep", ["/bin/grep"], 0x7ffdc5cd66a0 /* 12 vars */) = 0
+448   brk(NULL)                         = 0x55ebdc470000
+448   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffecc1580b0) = -1 EINVAL (Invalid argument)
+448   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd4bbaf8000
+448   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+448   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+448   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd4bbaf6000
+448   close(3)                          = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+448   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0pA\7\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P\23\0\0\0\0\0\0P\23\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+448   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=477296, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 479504, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd4bba80000
+448   mmap(0x7fd4bba82000, 348160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fd4bba82000
+448   mmap(0x7fd4bbad7000, 118784, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x57000) = 0x7fd4bbad7000
+448   mmap(0x7fd4bbaf4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x73000) = 0x7fd4bbaf4000
+448   close(3)                          = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+448   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+448   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+448   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+448   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+448   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+448   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+448   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd4bb858000
+448   mmap(0x7fd4bb880000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fd4bb880000
+448   mmap(0x7fd4bba15000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fd4bba15000
+448   mmap(0x7fd4bba6d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fd4bba6d000
+448   mmap(0x7fd4bba73000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd4bba73000
+448   close(3)                          = 0
+448   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd4bb855000
+448   arch_prctl(ARCH_SET_FS, 0x7fd4bb855740) = 0
+448   set_tid_address(0x7fd4bb855a10)   = 448
+448   set_robust_list(0x7fd4bb855a20, 24) = 0
+448   rseq(0x7fd4bb8560e0, 0x20, 0, 0x53053053) = 0
+448   mprotect(0x7fd4bba6d000, 16384, PROT_READ) = 0
+448   mprotect(0x7fd4bbaf4000, 4096, PROT_READ) = 0
+448   mprotect(0x55ebdc1eb000, 4096, PROT_READ) = 0
+448   mprotect(0x7fd4bbb32000, 8192, PROT_READ) = 0
+448   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+448   munmap(0x7fd4bbaf6000, 6133)      = 0
+448   getrandom("\x59\xad\xd0\x97\xdb\xb5\x39\x9d", 8, GRND_NONBLOCK) = 8
+448   brk(NULL)                         = 0x55ebdc470000
+448   brk(0x55ebdc491000)               = 0x55ebdc491000
+448   openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+448   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd4bbaf6000
+448   lseek(3, 0, SEEK_SET)             = 0
+448   read(3, "55ebdc1bf000-55ebdc1c3000 r--p 00000000 08:20 45576                      /usr/bin/grep\n55ebdc1c3000-55ebdc1e4000 r-xp 00004000 0"..., 8192) = 2682
+448   read(3, "", 5510)                 = 0
+448   close(3)                          = 0
+448   munmap(0x7fd4bbaf6000, 8192)      = 0
+448   sigaltstack({ss_sp=0x55ebdc1ec7c0, ss_flags=0, ss_size=65536}, NULL) = 0
+448   rt_sigaction(SIGSEGV, {sa_handler=0x55ebdc1de310, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fd4bb89a520}, NULL, 8) = 0
+448   rt_sigaction(SIGSEGV, {sa_handler=0x55ebdc1de310, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fd4bb89a520}, NULL, 8) = 0
+448   write(2, "Usage: grep [OPTION]... PATTERNS [FILE]...\n", 43) = 43
+448   write(2, "Try 'grep --help' for more information.\n", 40) = 40
+448   close(1)                          = 0
+448   close(2)                          = 0
+448   exit_group(2)                     = ?
+448   +++ exited with 2 +++

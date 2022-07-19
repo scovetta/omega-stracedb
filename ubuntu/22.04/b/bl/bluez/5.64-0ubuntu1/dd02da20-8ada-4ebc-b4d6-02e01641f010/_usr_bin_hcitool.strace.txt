@@ -1,0 +1,49 @@
+904   execve("/usr/bin/hcitool", ["/usr/bin/hcitool"], 0x7ffe60160c60 /* 12 vars */) = 0
+904   brk(NULL)                         = 0x56440939f000
+904   arch_prctl(0x3001 /* ARCH_??? */, 0x7fffedafedc0) = -1 EINVAL (Invalid argument)
+904   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9f85134000
+904   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+904   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+904   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7317, ...}, AT_EMPTY_PATH) = 0
+904   mmap(NULL, 7317, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9f85132000
+904   close(3)                          = 0
+904   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+904   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0p>\0\0\0\0\0\0p>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+904   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+904   mmap(NULL, 170272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9f85108000
+904   mprotect(0x7f9f8510c000, 147456, PROT_NONE) = 0
+904   mmap(0x7f9f8510c000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f9f8510c000
+904   mmap(0x7f9f85126000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f9f85126000
+904   mmap(0x7f9f85130000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f9f85130000
+904   close(3)                          = 0
+904   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+904   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+904   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+904   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+904   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+904   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+904   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+904   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9f84ee0000
+904   mmap(0x7f9f84f08000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f9f84f08000
+904   mmap(0x7f9f8509d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f9f8509d000
+904   mmap(0x7f9f850f5000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f9f850f5000
+904   mmap(0x7f9f850fb000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9f850fb000
+904   close(3)                          = 0
+904   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9f84edd000
+904   arch_prctl(ARCH_SET_FS, 0x7f9f84edd740) = 0
+904   set_tid_address(0x7f9f84edda10)   = 904
+904   set_robust_list(0x7f9f84edda20, 24) = 0
+904   rseq(0x7f9f84ede0e0, 0x20, 0, 0x53053053) = 0
+904   mprotect(0x7f9f850f5000, 16384, PROT_READ) = 0
+904   mprotect(0x7f9f85130000, 4096, PROT_READ) = 0
+904   mprotect(0x5644075e4000, 4096, PROT_READ) = 0
+904   mprotect(0x7f9f8516e000, 8192, PROT_READ) = 0
+904   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+904   munmap(0x7f9f85132000, 7317)      = 0
+904   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+904   getrandom("\x88\x03\xa6\x51\xfc\x1c\xf7\xfe", 8, GRND_NONBLOCK) = 8
+904   brk(NULL)                         = 0x56440939f000
+904   brk(0x5644093c0000)               = 0x5644093c0000
+904   write(1, "hcitool - HCI Tool ver 5.64\nUsage:\n\thcitool [options] <command> [command parameters]\nOptions:\n\t--help\tDisplay help\n\t-i dev\tHCI d"..., 1714) = 1714
+904   exit_group(0)                     = ?
+904   +++ exited with 0 +++

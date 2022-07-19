@@ -1,0 +1,39 @@
+805   execve("/bin/hciconfig", ["/bin/hciconfig"], 0x7ffe9dfe5720 /* 12 vars */) = 0
+805   brk(NULL)                         = 0x556c96fcb000
+805   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff3cb7beb0) = -1 EINVAL (Invalid argument)
+805   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a342d0000
+805   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+805   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+805   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7317, ...}, AT_EMPTY_PATH) = 0
+805   mmap(NULL, 7317, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1a342ce000
+805   close(3)                          = 0
+805   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+805   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+805   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+805   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+805   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+805   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+805   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+805   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1a340a6000
+805   mmap(0x7f1a340ce000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f1a340ce000
+805   mmap(0x7f1a34263000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f1a34263000
+805   mmap(0x7f1a342bb000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f1a342bb000
+805   mmap(0x7f1a342c1000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1a342c1000
+805   close(3)                          = 0
+805   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1a340a3000
+805   arch_prctl(ARCH_SET_FS, 0x7f1a340a3740) = 0
+805   set_tid_address(0x7f1a340a3a10)   = 805
+805   set_robust_list(0x7f1a340a3a20, 24) = 0
+805   rseq(0x7f1a340a40e0, 0x20, 0, 0x53053053) = 0
+805   mprotect(0x7f1a342bb000, 16384, PROT_READ) = 0
+805   mprotect(0x556c95ef9000, 4096, PROT_READ) = 0
+805   mprotect(0x7f1a3430a000, 8192, PROT_READ) = 0
+805   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+805   munmap(0x7f1a342ce000, 7317)      = 0
+805   socket(AF_BLUETOOTH, SOCK_RAW, BTPROTO_HCI) = -1 EAFNOSUPPORT (Address family not supported by protocol)
+805   dup(2)                            = 3
+805   fcntl(3, F_GETFL)                 = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+805   close(3)                          = 0
+805   write(2, "Can't open HCI socket.: Address family not supported by protocol\n", 65) = 65
+805   exit_group(1)                     = ?
+805   +++ exited with 1 +++

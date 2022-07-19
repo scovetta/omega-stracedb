@@ -1,0 +1,68 @@
+680   execve("/usr/bin/s390x-linux-gnu-g++-11", ["/usr/bin/s390x-linux-gnu-g++-11"], 0x7ffe629ec650 /* 12 vars */) = 0
+680   brk(NULL)                         = 0x1c9f000
+680   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff372abca0) = -1 EINVAL (Invalid argument)
+680   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f823beab000
+680   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+680   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+680   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6769, ...}, AT_EMPTY_PATH) = 0
+680   mmap(NULL, 6769, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f823bea9000
+680   close(3)                          = 0
+680   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+680   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+680   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+680   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+680   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+680   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+680   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+680   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f823bc81000
+680   mmap(0x7f823bca9000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f823bca9000
+680   mmap(0x7f823be3e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f823be3e000
+680   mmap(0x7f823be96000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f823be96000
+680   mmap(0x7f823be9c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f823be9c000
+680   close(3)                          = 0
+680   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f823bc7e000
+680   arch_prctl(ARCH_SET_FS, 0x7f823bc7e740) = 0
+680   set_tid_address(0x7f823bc7ea10)   = 680
+680   set_robust_list(0x7f823bc7ea20, 24) = 0
+680   rseq(0x7f823bc7f0e0, 0x20, 0, 0x53053053) = 0
+680   mprotect(0x7f823be96000, 16384, PROT_READ) = 0
+680   mprotect(0x527000, 12288, PROT_READ) = 0
+680   mprotect(0x7f823bee5000, 8192, PROT_READ) = 0
+680   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+680   munmap(0x7f823bea9000, 6769)      = 0
+680   getrandom("\xb6\xe7\x55\x86\x8c\x2a\x8e\x3a", 8, GRND_NONBLOCK) = 8
+680   brk(NULL)                         = 0x1c9f000
+680   brk(0x1cc0000)                    = 0x1cc0000
+680   brk(0x1ce2000)                    = 0x1ce2000
+680   ioctl(2, TCGETS, 0x7fff372abbf0)  = -1 ENOTTY (Inappropriate ioctl for device)
+680   ioctl(2, TCGETS, 0x7fff372abc00)  = -1 ENOTTY (Inappropriate ioctl for device)
+680   ioctl(2, TCGETS, 0x7fff372abbf0)  = -1 ENOTTY (Inappropriate ioctl for device)
+680   rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+680   rt_sigaction(SIGINT, {sa_handler=0x408b40, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, 8) = 0
+680   rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+680   rt_sigaction(SIGHUP, {sa_handler=0x408b40, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, 8) = 0
+680   rt_sigaction(SIGTERM, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+680   rt_sigaction(SIGTERM, {sa_handler=0x408b40, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, 8) = 0
+680   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+680   rt_sigaction(SIGPIPE, {sa_handler=0x408b40, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, 8) = 0
+680   rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f823bcc3520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+680   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+680   prlimit64(0, RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+680   readlink("/usr", 0x7fff372aa1c0, 1023) = -1 EINVAL (Invalid argument)
+680   readlink("/usr/bin", 0x7fff372aa1c0, 1023) = -1 EINVAL (Invalid argument)
+680   readlink("/usr/bin/s390x-linux-gnu-g++-11", 0x7fff372aa1c0, 1023) = -1 EINVAL (Invalid argument)
+680   readlink("/usr", 0x7fff372aa1c0, 1023) = -1 EINVAL (Invalid argument)
+680   readlink("/usr/bin", 0x7fff372aa1c0, 1023) = -1 EINVAL (Invalid argument)
+680   readlink("/usr/bin/s390x-linux-gnu-g++-11", 0x7fff372aa1c0, 1023) = -1 EINVAL (Invalid argument)
+680   access("/usr/lib/gcc-cross/s390x-linux-gnu/11/", X_OK) = 0
+680   access("/usr/lib/gcc-cross/s390x-linux-gnu/11/", X_OK) = 0
+680   access("/usr/lib/gcc-cross/s390x-linux-gnu/11/specs", R_OK) = -1 ENOENT (No such file or directory)
+680   access("/usr/lib/gcc-cross/s390x-linux-gnu/11/../../../../s390x-linux-gnu/lib/s390x-linux-gnu/11/specs", R_OK) = -1 ENOENT (No such file or directory)
+680   access("/usr/lib/gcc-cross/s390x-linux-gnu/11/../../../../s390x-linux-gnu/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+680   access("/usr/lib/gcc-cross/s390x-linux-gnu/specs", R_OK) = -1 ENOENT (No such file or directory)
+680   newfstatat(AT_FDCWD, "/usr/lib/gcc-cross/s390x-linux-gnu/11/lto-wrapper", {st_mode=S_IFREG|0755, st_size=1110536, ...}, 0) = 0
+680   access("/usr/lib/gcc-cross/s390x-linux-gnu/11/lto-wrapper", X_OK) = 0
+680   write(2, "s390x-linux-gnu-g++-11: fatal error: no input files\n", 52) = 52
+680   write(2, "compilation terminated.\n", 24) = 24
+680   exit_group(1)                     = ?
+680   +++ exited with 1 +++

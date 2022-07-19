@@ -1,0 +1,12 @@
+Usage: /usr/bin/rlm_ippool_tool [-a] [-c] [-o] [-v] <filename> <index-db> [ipaddress]
+  -a: print all active entries
+  -c: report number of active entries
+  -r: remove active entries
+  -v: verbose report of all entries
+  -o: Assume old database format (nas/port pair, not md5 output)
+  If an ipaddress is specified then that address is used to
+  limit the actions or output.
+  Usage: /usr/bin/rlm_ippool_tool -n  <filename> <index-db> <ipaddress> <nasIP> <nasPort>
+  -n: Mark the entry nasIP/nasPort as having ipaddress
+  Usage: /usr/bin/rlm_ippool_tool -u <filename> <new-filename>
+  -u: Update old format database to new.

@@ -1,0 +1,180 @@
+1: "opt=0" → 1, "opt", "0", "", expected 1, "opt", "0", ""
+2: "opt=0" → 1, "opt", "0", expected 1, "opt", "0"
+3: "opt=0" → 1, "opt", expected 1, "opt"
+-
+1: "opt=0" → 1, "opt", "0", "", expected 1, "opt", "0", ""
+2: "opt=0" → 1, "opt", "0", expected 1, "opt", "0"
+3: "opt=0" → 1, "opt", expected 1, "opt"
+-
+1: "opt" → 1, "opt", "(null)", "", expected 1, "opt", "(null)", ""
+2: "opt" → 0, "(null)", "", expected 0, "opt", ""
+3: "opt" → 1, "opt", expected 1, "opt"
+-
+1: "opt" → 1, "opt", "(null)", "", expected 1, "opt", "(null)", ""
+2: "opt" → 0, "(null)", "", expected 0, "opt", ""
+3: "opt" → 1, "opt", expected 1, "opt"
+-
+1: "x-opt" → 1, "x-opt", "(null)", "", expected 1, "x-opt", "(null)", ""
+2: "x-opt" → 0, "(null)", "", expected 0, "x-opt", ""
+3: "x-opt" → 1, "x-opt", expected 1, "x-opt"
+-
+1: "opt=0,other" → 1, "opt", "0", "other", expected 1, "opt", "0", "other"
+2: "opt=0,other" → 1, "opt", "0", expected 1, "opt", "0"
+3: "opt=0,other" → 1, "opt", expected 1, "opt"
+-
+1: "opt=0,other" → 1, "opt", "0", "other", expected 1, "opt", "0", "other"
+2: "opt=0,other" → 1, "opt", "0", expected 1, "opt", "0"
+3: "opt=0,other" → 1, "opt", expected 1, "opt"
+-
+1: "opt,other" → 1, "opt", "(null)", "other", expected 1, "opt", "(null)", "other"
+2: "opt,other" → 0, "(null)", "", expected 0, "opt", ""
+3: "opt,other" → 1, "opt", expected 1, "opt"
+-
+1: "opt,other" → 1, "opt", "(null)", "other", expected 1, "opt", "(null)", "other"
+2: "opt,other" → 0, "(null)", "", expected 0, "opt", ""
+3: "opt,other" → 1, "opt", expected 1, "opt"
+-
+1: "x-opt,other" → 1, "x-opt", "(null)", "other", expected 1, "x-opt", "(null)", "other"
+2: "x-opt,other" → 0, "(null)", "", expected 0, "x-opt", ""
+3: "x-opt,other" → 1, "x-opt", expected 1, "x-opt"
+-
+1: "opt=0\,1,other" → 1, "opt", "0,1", "other", expected 1, "opt", "0,1", "other"
+2: "opt=0\,1,other" → 1, "opt", "0,1", expected 1, "opt", "0,1"
+3: "opt=0\,1,other" → 1, "opt", expected 1, "opt"
+-
+1: "opt=0,other,x-opt\,foobar" → 1, "opt", "0", "other,x-opt\,foobar", expected 1, "opt", "0", "other,x-opt\,foobar"
+2: "opt=0,other,x-opt\,foobar" → 1, "opt", "0", expected 1, "opt", "0"
+3: "opt=0,other,x-opt\,foobar" → 1, "opt", expected 1, "opt"
+-
+1: "opt,other,x-opt\,part" → 1, "opt", "(null)", "other,x-opt\,part", expected 1, "opt", "(null)", "other,x-opt\,part"
+2: "opt,other,x-opt\,part" → 0, "(null)", "", expected 0, "opt", ""
+3: "opt,other,x-opt\,part" → 1, "opt", expected 1, "opt"
+-
+1: "opt,other,part\,x-opt" → 1, "opt", "(null)", "other,part\,x-opt", expected 1, "opt", "(null)", "other,part\,x-opt"
+2: "opt,other,part\,x-opt" → 0, "(null)", "", expected 0, "opt", ""
+3: "opt,other,part\,x-opt" → 1, "opt", expected 1, "opt"
+-
+1: "opt,other\,\,\,opt,x-part" → 1, "opt", "(null)", "other\,\,\,opt,x-part", expected 1, "opt", "(null)", "other\,\,\,opt,x-part"
+2: "opt,other\,\,\,opt,x-part" → 0, "(null)", "", expected 0, "opt", ""
+3: "opt,other\,\,\,opt,x-part" → 1, "opt", expected 1, "opt"
+-
+1: "opto=0,other" → 0, "(null)", "(null)", "opto=0,other", expected 0, "(null)", "(null)", "opto=0,other"
+2: "opto=0,other" → 0, "(null)", "", expected 0, "(null)", ""
+3: "opto=0,other" → 0, "(null)", expected 0, "(null)"
+-
+1: "opto,other" → 0, "(null)", "(null)", "opto,other", expected 0, "(null)", "(null)", "opto,other"
+2: "opto,other" → 0, "(null)", "", expected 0, "(null)", ""
+3: "opto,other" → 0, "(null)", expected 0, "(null)"
+-
+1: "x-opto,other" → 0, "(null)", "(null)", "x-opto,other", expected 0, "(null)", "(null)", "x-opto,other"
+2: "x-opto,other" → 0, "(null)", "", expected 0, "(null)", ""
+3: "x-opto,other" → 0, "(null)", expected 0, "(null)"
+-
+1: "first,opt=0" → 1, "opt", "0", "first", expected 1, "opt", "0", "first"
+2: "first,opt=0" → 1, "opt", "0", expected 1, "opt", "0"
+3: "first,opt=0" → 1, "opt", expected 1, "opt"
+-
+1: "first=1,opt=0" → 1, "opt", "0", "first=1", expected 1, "opt", "0", "first=1"
+2: "first=1,opt=0" → 1, "opt", "0", expected 1, "opt", "0"
+3: "first=1,opt=0" → 1, "opt", expected 1, "opt"
+-
+1: "first,opt=" → 1, "opt", "", "first", expected 1, "opt", "", "first"
+2: "first,opt=" → 1, "opt", "", expected 1, "opt", ""
+3: "first,opt=" → 1, "opt", expected 1, "opt"
+-
+1: "first=1,opt" → 1, "opt", "(null)", "first=1", expected 1, "opt", "(null)", "first=1"
+2: "first=1,opt" → 0, "(null)", "", expected 0, "opt", ""
+3: "first=1,opt" → 1, "opt", expected 1, "opt"
+-
+1: "first=1,x-opt" → 1, "x-opt", "(null)", "first=1", expected 1, "x-opt", "(null)", "first=1"
+2: "first=1,x-opt" → 0, "(null)", "", expected 0, "x-opt", ""
+3: "first=1,x-opt" → 1, "x-opt", expected 1, "x-opt"
+-
+1: "first,opt=0,last=1" → 1, "opt", "0", "first,last=1", expected 1, "opt", "0", "first,last=1"
+2: "first,opt=0,last=1" → 1, "opt", "0", expected 1, "opt", "0"
+3: "first,opt=0,last=1" → 1, "opt", expected 1, "opt"
+-
+1: "first=1,opt=0,last=2" → 1, "opt", "0", "first=1,last=2", expected 1, "opt", "0", "first=1,last=2"
+2: "first=1,opt=0,last=2" → 1, "opt", "0", expected 1, "opt", "0"
+3: "first=1,opt=0,last=2" → 1, "opt", expected 1, "opt"
+-
+1: "first,opt,last" → 1, "opt", "(null)", "first,last", expected 1, "opt", "(null)", "first,last"
+2: "first,opt,last" → 0, "(null)", "", expected 0, "opt", ""
+3: "first,opt,last" → 1, "opt", expected 1, "opt"
+-
+1: "first=1,opt,last" → 1, "opt", "(null)", "first=1,last", expected 1, "opt", "(null)", "first=1,last"
+2: "first=1,opt,last" → 0, "(null)", "", expected 0, "opt", ""
+3: "first=1,opt,last" → 1, "opt", expected 1, "opt"
+-
+1: "first=,opt,last" → 1, "opt", "(null)", "first=,last", expected 1, "opt", "(null)", "first=,last"
+2: "first=,opt,last" → 0, "(null)", "", expected 0, "opt", ""
+3: "first=,opt,last" → 1, "opt", expected 1, "opt"
+-
+1: "first,opt=0,noopt=1,last=1" → 1, "noopt", "1", "first,last=1", expected 1, "noopt", "1", "first,last=1"
+2: "first,opt=0,noopt=1,last=1" → 1, "noopt", "0:1", expected 1, "noopt", "0:1"
+3: "first,opt=0,noopt=1,last=1" → 1, "noopt", expected 1, "noopt"
+-
+1: "first=1,opt=0,last=2,opt=1" → 1, "opt", "1", "first=1,last=2", expected 1, "opt", "1", "first=1,last=2"
+2: "first=1,opt=0,last=2,opt=1" → 1, "opt", "0:1", expected 1, "opt", "0:1"
+3: "first=1,opt=0,last=2,opt=1" → 1, "opt", expected 1, "opt"
+-
+1: "x-opt=0,x-opt=1" → 1, "x-opt", "1", "", expected 1, "x-opt", "1", ""
+2: "x-opt=0,x-opt=1" → 1, "x-opt", "0:1", expected 1, "x-opt", "0:1"
+3: "x-opt=0,x-opt=1" → 1, "x-opt", expected 1, "x-opt"
+-
+1: "opt=0,x-opt=1" → 1, "x-opt", "1", "", expected 1, "x-opt", "1", ""
+2: "opt=0,x-opt=1" → 1, "x-opt", "0:1", expected 1, "x-opt", "0:1"
+3: "opt=0,x-opt=1" → 1, "x-opt", expected 1, "x-opt"
+-
+1: "opt=0,opt=1,opt=,opt=,opt=2" → 1, "opt", "2", "", expected 1, "opt", "2", ""
+2: "opt=0,opt=1,opt=,opt=,opt=2" → 1, "opt", "0:1:::2", expected 1, "opt", "0:1:::2"
+3: "opt=0,opt=1,opt=,opt=,opt=2" → 1, "opt", expected 1, "opt"
+-
+1: "opt=0;" → 1, "opt", "0;", "", expected 1, "opt", "0;", ""
+2: "opt=0;" → 1, "opt", "0;", expected 1, "opt", "0;"
+3: "opt=0;" → 1, "opt", expected 1, "opt"
+-
+1: "opt;=0" → 0, "(null)", "(null)", "opt;=0", expected 0, "(null)", "(null)", "opt;=0"
+2: "opt;=0" → 0, "(null)", "", expected 0, "(null)", ""
+3: "opt;=0" → 0, "(null)", expected 0, "(null)"
+-
+1: "opt;" → 0, "(null)", "(null)", "opt;", expected 0, "(null)", "(null)", "opt;"
+2: "opt;" → 0, "(null)", "", expected 0, "(null)", ""
+3: "opt;" → 0, "(null)", expected 0, "(null)"
+-
+1: "opt=0 " → 1, "opt", "0 ", "", expected 1, "opt", "0 ", ""
+2: "opt=0 " → 1, "opt", "0 ", expected 1, "opt", "0 "
+3: "opt=0 " → 1, "opt", expected 1, "opt"
+-
+1: "opt =0" → 0, "(null)", "(null)", "opt =0", expected 0, "(null)", "(null)", "opt =0"
+2: "opt =0" → 0, "(null)", "", expected 0, "(null)", ""
+3: "opt =0" → 0, "(null)", expected 0, "(null)"
+-
+1: " opt " → 0, "(null)", "(null)", " opt ", expected 0, "(null)", "(null)", " opt "
+2: " opt " → 0, "(null)", "", expected 0, "(null)", ""
+3: " opt " → 0, "(null)", expected 0, "(null)"
+-
+1: "(null)" → 0, "(null)", "(null)", "", expected 0, "(null)", "(null)", ""
+2: "(null)" → 0, "(null)", "", expected 0, "(null)", ""
+3: "(null)" → 0, "(null)", expected 0, "(null)"
+-
+1: "" → 0, "(null)", "(null)", "", expected 0, "(null)", "(null)", ""
+2: "" → 0, "(null)", "", expected 0, "(null)", ""
+3: "" → 0, "(null)", expected 0, "(null)"
+-
+1: "opt=x,,,," → 1, "opt", "x", "", expected 1, "opt", "x", ""
+2: "opt=x,,,," → 1, "opt", "x", expected 1, "opt", "x"
+3: "opt=x,,,," → 1, "opt", expected 1, "opt"
+-
+1: ",,,opt=x,,,," → 1, "opt", "x", "", expected 1, "opt", "x", ""
+2: ",,,opt=x,,,," → 1, "opt", "x", expected 1, "opt", "x"
+3: ",,,opt=x,,,," → 1, "opt", expected 1, "opt"
+-
+1: "opt1=\\,opt2=\xff" → 1, "opt1", "\", "opt2=\xff", expected 1, "opt1", "\", "opt2=\xff"
+2: "opt1=\\,opt2=\xff" → 1, "opt1", "\", expected 1, "opt1", "\"
+3: "opt1=\\,opt2=\xff" → 1, "opt1", expected 1, "opt1"
+-
+1: "opt1=\\,opt2=\xff" → 1, "opt2", "\xff", "opt1=\", expected 1, "opt2", "\xff", "opt1=\"
+2: "opt1=\\,opt2=\xff" → 1, "opt2", "\xff", expected 1, "opt2", "\xff"
+3: "opt1=\\,opt2=\xff" → 1, "opt2", expected 1, "opt2"
+-

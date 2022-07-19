@@ -1,0 +1,49 @@
+468   execve("/usr/bin/hattrib", ["/usr/bin/hattrib"], 0x7fff8822e2e0 /* 12 vars */) = 0
+468   brk(NULL)                         = 0x55f1f4b83000
+468   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdacd53ff0) = -1 EINVAL (Invalid argument)
+468   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f089a272000
+468   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+468   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+468   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f089a270000
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+468   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f089a048000
+468   mmap(0x7f089a070000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f089a070000
+468   mmap(0x7f089a205000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f089a205000
+468   mmap(0x7f089a25d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f089a25d000
+468   mmap(0x7f089a263000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f089a263000
+468   close(3)                          = 0
+468   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f089a045000
+468   arch_prctl(ARCH_SET_FS, 0x7f089a045740) = 0
+468   set_tid_address(0x7f089a045a10)   = 468
+468   set_robust_list(0x7f089a045a20, 24) = 0
+468   rseq(0x7f089a0460e0, 0x20, 0, 0x53053053) = 0
+468   mprotect(0x7f089a25d000, 16384, PROT_READ) = 0
+468   mprotect(0x55f1f3fb6000, 4096, PROT_READ) = 0
+468   mprotect(0x7f089a2ac000, 8192, PROT_READ) = 0
+468   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+468   munmap(0x7f089a270000, 6133)      = 0
+468   getuid()                          = 0
+468   getgid()                          = 0
+468   geteuid()                         = 0
+468   getegid()                         = 0
+468   setreuid(-1, 0)                   = 0
+468   setregid(-1, 0)                   = 0
+468   getrandom("\x52\xac\xfa\x7c\xab\xa4\x96\x01", 8, GRND_NONBLOCK) = 8
+468   brk(NULL)                         = 0x55f1f4b83000
+468   brk(0x55f1f4ba4000)               = 0x55f1f4ba4000
+468   openat(AT_FDCWD, "/root/.hcwd", O_RDWR) = -1 ENOENT (No such file or directory)
+468   openat(AT_FDCWD, "/root/.hcwd", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+468   read(3, "", 4096)                 = 0
+468   write(2, "Usage: /usr/bin/hattrib [-t TYPE] [-c CREA] [-|+i] [-|+l] hfs-path [...]\n       /usr/bin/hattrib -b hfs-path\n", 109) = 109
+468   close(3)                          = 0
+468   exit_group(1)                     = ?
+468   +++ exited with 1 +++

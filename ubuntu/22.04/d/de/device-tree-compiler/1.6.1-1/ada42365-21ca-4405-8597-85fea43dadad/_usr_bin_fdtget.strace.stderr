@@ -1,0 +1,18 @@
+Usage: read values from device tree
+	fdtget <options> <dt file> [<node> <property>]...
+	fdtget -p <options> <dt file> [<node> ]...
+
+Each value is printed on a new line.
+<type>	s=string, i=int, u=unsigned, x=hex
+	Optional modifier prefix:
+		hh or b=byte, h=2 byte, l=4 byte (default)
+
+Options: -[t:pld:hV]
+  -t, --type <arg>    Type of data
+  -p, --properties    List properties for each node
+  -l, --list          List subnodes for each node
+  -d, --default <arg> Default value to display when the property is missing
+  -h, --help          Print this help and exit
+  -V, --version       Print version and exit
+
+Error: missing filename

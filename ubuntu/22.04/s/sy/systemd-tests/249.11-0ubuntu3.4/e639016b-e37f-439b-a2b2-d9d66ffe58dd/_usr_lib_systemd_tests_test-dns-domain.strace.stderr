@@ -1,0 +1,218 @@
+/* test_dns_label_unescape */
+hallo, hallo, 6, →5/5
+hallo, hallo, 4, →-105/-105
+, , 10, →0/0
+hallo\.foobar, hallo.foobar, 20, →12/-22
+hallo.foobar, hallo, 10, →5/5
+hallo
+.foobar, hallo, 20, →-22/-22
+hallo\, hallo, 20, →-22/-22
+hallo\032 , hallo  , 20, →7/-22
+., , 20, →0/0
+.., , 20, →-22/-22
+.foobar, , 20, →-22/-22
+foobar., foobar, 20, →6/6
+foobar.., foobar, 20, →-22/-22
+foo-bar, foo-bar, 20, →7/7
+foo-, foo-, 20, →4/-22
+-foo, -foo, 20, →4/-22
+-foo-, -foo-, 20, →5/-22
+foo-., foo-, 20, →4/-22
+foo.-, foo, 20, →3/3
+foo\032, foo , 20, →4/-22
+foo\045, foo-, 20, →4/-22
+głąb, głąb, 20, →6/-22
+/* test_dns_label_unescape_suffix */
+hallo, hallo, , 6, 5, 0
+hallo, hallo, , 4, -105, -105
+, , , 10, 0, 0
+hallo\.foobar, hallo.foobar, , 20, 12, 0
+hallo.foobar, foobar, hallo, 10, 6, 5
+hallo.foobar
+, foobar, foobar, 20, -22, -22
+hallo\, hallo, hallo, 20, -22, -22
+hallo\032 , hallo  , , 20, 7, 0
+., , , 20, 0, 0
+.., , , 20, 0, -22
+.foobar, foobar, , 20, 6, -22
+foobar., foobar, , 20, 6, 0
+foo\\bar, foo\bar, , 20, 7, 0
+foo.bar, bar, foo, 20, 3, 3
+foo..bar, bar, , 20, 3, -22
+foo...bar, bar, , 20, 3, -22
+foo\.bar, foo.bar, , 20, 7, 0
+foo\\.bar, bar, foo\, 20, 3, 4
+foo\\\.bar, foo\.bar, , 20, 8, 0
+/* test_dns_label_escape */
+, 0, (null), →-22
+hallo, 5, hallo, →5
+hallo, 6, hallo\000, →9
+hallo hallo.foobar,waldi, 24, hallo\032hallo\.foobar\044waldi, →31
+/* test_dns_name_is_valid */
+foo, →1
+foo., →1
+foo.., →0
+Foo, →1
+foo.bar, →1
+foo.bar.baz, →1
+, →1
+foo..bar, →0
+.foo.bar, →0
+foo.bar., →1
+foo.bar.., →0
+\zbar, →0
+ä, →1
+, →0
+dash-, →1
+-dash, →1
+dash-dash, →1
+foo.dash-, →1
+foo.-dash, →1
+foo.dash-dash, →1
+foo.dash-.bar, →1
+foo.-dash.bar, →1
+foo.dash-dash.bar, →1
+dash-.bar, →1
+-dash.bar, →1
+dash-dash.bar, →1
+-.bar, →1
+foo.-, →1
+a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345, →0
+a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a1234, →0
+a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a123, →0
+a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12, →1
+a123456789a123456789a123456789a123456789a123456789a123456789a123, →0
+a123456789a123456789a123456789a123456789a123456789a123456789a12, →1
+/* test_dns_name_to_wire_format */
+, , 1, →1
+foo, foo, 5, →5
+foo, foo, 6, →5
+foo, foo, 4, →-105
+hallo.foo.bar, hallofoobar, 15, →15
+hallo.foo..bar, (null), 32, →-22
+\032foo.bar,  foobar, 10, →10
+a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a123, (null), 500, →-22
+a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12345678.a12, 	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678	a12345678a12, 255, →255
+/* test_dns_service_name_is_valid */
+/* test_dns_srv_type_is_valid */
+/* test_dnssd_srv_type_is_valid */
+/* test_dns_service_join */
+, , , →-22, (null)
+, _http._tcp, , →-22, (null)
+, _http._tcp, foo, →-22, (null)
+foo, , foo, →-22, (null)
+foo, foo, foo, →-22, (null)
+foo, _http._tcp, , →0, foo._http._tcp
+(null), _http._tcp, , →0, _http._tcp
+foo, _http._tcp, foo, →0, foo._http._tcp.foo
+(null), _http._tcp, foo, →0, _http._tcp.foo
+Lennart's PC, _pc._tcp, foo.bar.com, →0, Lennart\039s\032PC._pc._tcp.foo.bar.com
+(null), _pc._tcp, foo.bar.com, →0, _pc._tcp.foo.bar.com
+/* test_dns_service_split */
+, (null), (null), ., →0
+foo, (null), (null), foo, →0
+foo.bar, (null), (null), foo.bar, →0
+_foo.bar, (null), (null), _foo.bar, →0
+_foo._bar, (null), _foo._bar, ., →0
+_meh._foo._bar, _meh, _foo._bar, ., →0
+Wuff\032Wuff._foo._bar.waldo.com, Wuff Wuff, _foo._bar, waldo.com, →0
+/* test_dns_name_change_suffix */
+foo.bar, bar, waldo, →foo.waldo
+foo.bar.waldi.quux, foo.bar.waldi.quux, piff.paff, →piff.paff
+foo.bar.waldi.quux, bar.waldi.quux, piff.paff, →foo.piff.paff
+foo.bar.waldi.quux, waldi.quux, piff.paff, →foo.bar.piff.paff
+foo.bar.waldi.quux, quux, piff.paff, →foo.bar.waldi.piff.paff
+foo.bar.waldi.quux, , piff.paff, →foo.bar.waldi.quux.piff.paff
+, , piff.paff, →piff.paff
+, , , →.
+a, b, c, →(null)
+/* test_dns_name_suffix */
+foo.bar, 2, →foo.bar, 0
+foo.bar, 1, →bar, 1
+foo.bar, 0, →, 2
+foo.bar, 3, →(null), -22
+foo.bar, 4, →(null), -22
+bar, 1, →bar, 0
+bar, 0, →, 1
+bar, 2, →(null), -22
+bar, 3, →(null), -22
+, 0, →, 0
+, 1, →(null), -22
+, 2, →(null), -22
+/* test_dns_name_count_labels */
+foo.bar.quux., →3
+foo.bar.quux, →3
+foo.bar., →2
+foo.bar, →2
+foo., →1
+foo, →1
+, →0
+., →0
+.., →-22
+/* test_dns_name_equal_skip */
+foo, 0, bar, →0
+foo, 0, foo, →1
+foo, 1, foo, →0
+foo, 2, foo, →0
+foo.bar, 0, foo.bar, →1
+foo.bar, 1, foo.bar, →0
+foo.bar, 2, foo.bar, →0
+foo.bar, 3, foo.bar, →0
+foo.bar, 0, bar, →0
+foo.bar, 1, bar, →1
+foo.bar, 2, bar, →0
+foo.bar, 3, bar, →0
+foo.bar, 0, , →0
+foo.bar, 1, , →0
+foo.bar, 2, , →1
+foo.bar, 3, , →0
+, 0, , →1
+, 1, , →0
+, 1, foo, →0
+, 2, foo, →0
+/* test_dns_name_compare_func */
+/* test_dns_name_common_suffix */
+, , →
+foo, , →
+, foo, →
+foo, bar, →
+bar, foo, →
+foo, foo, →foo
+quux.foo, foo, →foo
+foo, quux.foo, →foo
+this.is.a.short.sentence, this.is.another.short.sentence, →short.sentence
+FOO.BAR, tEST.bAR, →BAR
+/* test_dns_name_apply_idna */
+idn2_lookup_u8:  → 
+dns_name_apply_idna: "" → 1/"" (expected 1/"")
+idn2_lookup_u8: foo → foo
+dns_name_apply_idna: "foo" → 1/"foo" (expected 1/"foo")
+idn2_lookup_u8: foo. → foo.
+dns_name_apply_idna: "foo." → 1/"foo." (expected 1/"foo")
+idn2_lookup_u8: foo.bar → foo.bar
+dns_name_apply_idna: "foo.bar" → 1/"foo.bar" (expected 1/"foo.bar")
+idn2_lookup_u8: foo.bar. → foo.bar.
+dns_name_apply_idna: "foo.bar." → 1/"foo.bar." (expected 1/"foo.bar")
+idn2_lookup_u8: föö → xn--f-1gaa
+dns_name_apply_idna: "föö" → 1/"xn--f-1gaa" (expected 1/"xn--f-1gaa")
+idn2_lookup_u8: föö. → xn--f-1gaa.
+dns_name_apply_idna: "föö." → 1/"xn--f-1gaa." (expected 1/"xn--f-1gaa")
+idn2_lookup_u8: föö.bär → xn--f-1gaa.xn--br-via
+dns_name_apply_idna: "föö.bär" → 1/"xn--f-1gaa.xn--br-via" (expected 1/"xn--f-1gaa.xn--br-via")
+idn2_lookup_u8: föö.bär. → xn--f-1gaa.xn--br-via.
+dns_name_apply_idna: "föö.bär." → 1/"xn--f-1gaa.xn--br-via." (expected 1/"xn--f-1gaa.xn--br-via")
+idn2_lookup_u8: xn--f-1gaa.xn--br-via → xn--f-1gaa.xn--br-via
+dns_name_apply_idna: "xn--f-1gaa.xn--br-via" → 1/"xn--f-1gaa.xn--br-via" (expected 1/"xn--f-1gaa.xn--br-via")
+idn2_lookup_u8: _443._tcp.fedoraproject.org → _443._tcp.fedoraproject.org
+dns_name_apply_idna: "_443._tcp.fedoraproject.org" → 1/"_443._tcp.fedoraproject.org" (expected 0/"_443._tcp.fedoraproject.org")
+idn2_lookup_u8: _443 → _443
+dns_name_apply_idna: "_443" → 1/"_443" (expected 0/"_443")
+idn2_lookup_u8: gateway → gateway
+dns_name_apply_idna: "gateway" → 1/"gateway" (expected 1/"gateway")
+idn2_lookup_u8: _gateway → _gateway
+dns_name_apply_idna: "_gateway" → 1/"_gateway" (expected 0/"_gateway")
+idn2_lookup_u8: r3---sn-ab5l6ne7.googlevideo.com → (null)
+idn2_lookup_u8("r3---sn-ab5l6ne7.googlevideo.com") failed: -301/string contains forbidden two hyphens pattern
+dns_name_apply_idna: "r3---sn-ab5l6ne7.googlevideo.com" → 0/"(null)" (expected 0/"")
+/* test_dns_name_is_valid_or_address */
+/* test_dns_name_dot_suffixed */

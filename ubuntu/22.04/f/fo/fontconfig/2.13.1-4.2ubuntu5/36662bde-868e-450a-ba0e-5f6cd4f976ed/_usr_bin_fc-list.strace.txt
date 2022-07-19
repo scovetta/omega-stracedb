@@ -1,0 +1,777 @@
+584   execve("/usr/bin/fc-list", ["/usr/bin/fc-list"], 0x7ffc255e0550 /* 12 vars */) = 0
+584   brk(NULL)                         = 0x55b84a012000
+584   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe00b40150) = -1 EINVAL (Invalid argument)
+584   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6a3b55f000
+584   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+584   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6637, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 6637, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6a3b55d000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libfontconfig.so.1", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\205\4\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250l\0\0\0\0\0\0\250l\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=298120, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 300640, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b513000
+584   mprotect(0x7f6a3b51a000, 262144, PROT_NONE) = 0
+584   mmap(0x7f6a3b51a000, 167936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f6a3b51a000
+584   mmap(0x7f6a3b543000, 90112, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7f6a3b543000
+584   mmap(0x7f6a3b55a000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x46000) = 0x7f6a3b55a000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+584   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+584   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+584   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+584   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+584   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b2eb000
+584   mmap(0x7f6a3b313000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6a3b313000
+584   mmap(0x7f6a3b4a8000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f6a3b4a8000
+584   mmap(0x7f6a3b500000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f6a3b500000
+584   mmap(0x7f6a3b506000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6a3b506000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libfreetype.so.6", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0Ha\f\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\300\0\0\0\0\0\0(\300\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=813128, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 815120, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b223000
+584   mprotect(0x7f6a3b230000, 733184, PROT_NONE) = 0
+584   mmap(0x7f6a3b230000, 561152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f6a3b230000
+584   mmap(0x7f6a3b2b9000, 167936, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x96000) = 0x7f6a3b2b9000
+584   mmap(0x7f6a3b2e3000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbf000) = 0x7f6a3b2e3000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\361\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\2102\0\0\0\0\0\0\2102\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=194872, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 196792, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b1f2000
+584   mprotect(0x7f6a3b1f6000, 172032, PROT_NONE) = 0
+584   mmap(0x7f6a3b1f6000, 126976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f6a3b1f6000
+584   mmap(0x7f6a3b215000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7f6a3b215000
+584   mmap(0x7f6a3b220000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7f6a3b220000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0Hq\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P\24\0\0\0\0\0\0P\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=30920, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 32808, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b1e9000
+584   mmap(0x7f6a3b1eb000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6a3b1eb000
+584   mmap(0x7f6a3b1ef000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f6a3b1ef000
+584   mmap(0x7f6a3b1f0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f6a3b1f0000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpng16.so.16", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\221\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340H\0\0\0\0\0\0\340H\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=235592, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6a3b1e7000
+584   mmap(NULL, 237584, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b1ac000
+584   mmap(0x7f6a3b1b1000, 167936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f6a3b1b1000
+584   mmap(0x7f6a3b1da000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2e000) = 0x7f6a3b1da000
+584   mmap(0x7f6a3b1e5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x38000) = 0x7f6a3b1e5000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b190000
+584   mprotect(0x7f6a3b192000, 98304, PROT_NONE) = 0
+584   mmap(0x7f6a3b192000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6a3b192000
+584   mmap(0x7f6a3b1a3000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f6a3b1a3000
+584   mmap(0x7f6a3b1aa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f6a3b1aa000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbrotlidec.so.1", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\301\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\v\0\0\0\0\0\0000\v\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=51512, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 53352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b182000
+584   mmap(0x7f6a3b183000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f6a3b183000
+584   mmap(0x7f6a3b18b000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f6a3b18b000
+584   mmap(0x7f6a3b18e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f6a3b18e000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b09b000
+584   mmap(0x7f6a3b0a9000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f6a3b0a9000
+584   mmap(0x7f6a3b125000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f6a3b125000
+584   mmap(0x7f6a3b180000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f6a3b180000
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbrotlicommon.so.1", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\330\21\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h\7\0\0\0\0\0\0h\7\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=137560, ...}, AT_EMPTY_PATH) = 0
+584   mmap(NULL, 139320, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6a3b078000
+584   mmap(0x7f6a3b079000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f6a3b079000
+584   mmap(0x7f6a3b07a000, 126976, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6a3b07a000
+584   mmap(0x7f6a3b099000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f6a3b099000
+584   close(3)                          = 0
+584   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6a3b076000
+584   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6a3b073000
+584   arch_prctl(ARCH_SET_FS, 0x7f6a3b073780) = 0
+584   set_tid_address(0x7f6a3b073a50)   = 584
+584   set_robust_list(0x7f6a3b073a60, 24) = 0
+584   rseq(0x7f6a3b074120, 0x20, 0, 0x53053053) = 0
+584   mprotect(0x7f6a3b500000, 16384, PROT_READ) = 0
+584   mprotect(0x7f6a3b099000, 4096, PROT_READ) = 0
+584   mprotect(0x7f6a3b180000, 4096, PROT_READ) = 0
+584   mprotect(0x7f6a3b18e000, 4096, PROT_READ) = 0
+584   mprotect(0x7f6a3b1aa000, 4096, PROT_READ) = 0
+584   mprotect(0x7f6a3b1e5000, 4096, PROT_READ) = 0
+584   mprotect(0x7f6a3b1f0000, 4096, PROT_READ) = 0
+584   mprotect(0x7f6a3b220000, 8192, PROT_READ) = 0
+584   mprotect(0x7f6a3b2e3000, 28672, PROT_READ) = 0
+584   mprotect(0x7f6a3b55a000, 8192, PROT_READ) = 0
+584   mprotect(0x55b848db5000, 4096, PROT_READ) = 0
+584   mprotect(0x7f6a3b599000, 8192, PROT_READ) = 0
+584   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+584   munmap(0x7f6a3b55d000, 6637)      = 0
+584   getrandom("\xfe\x90\x0c\x40\xd6\xbe\xc7\x95", 8, GRND_NONBLOCK) = 8
+584   brk(NULL)                         = 0x55b84a012000
+584   brk(0x55b84a033000)               = 0x55b84a033000
+584   access("/etc/fonts/fonts.conf", R_OK) = 0
+584   access("/etc/fonts/fonts.conf", R_OK) = 0
+584   readlink("/etc/fonts/fonts.conf", 0x7ffe00b3f0e0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/fonts.conf", {st_mode=S_IFREG|0644, st_size=2808, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/fonts.conf", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<!-- /etc/fonts/fonts.conf file to configure system font access -"..., 8192) = 2808
+584   read(3, "", 8192)                 = 0
+584   close(3)                          = 0
+584   getrandom("\x17\xd6\xb2\xaa\xc9\xd6\xc1\xb0", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d", R_OK) = 0
+584   access("/etc/fonts/conf.d", R_OK) = 0
+584   readlink("/etc/fonts/conf.d", 0x7ffe00b389e0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+584   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+584   getdents64(3, 0x55b84a01a170 /* 35 entries */, 32768) = 1552
+584   getdents64(3, 0x55b84a01a170 /* 0 entries */, 32768) = 0
+584   access("/etc/fonts/conf.d/10-antialias.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/10-antialias.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/10-antialias.conf", "../conf.avail/10-antialias.conf", 4095) = 31
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-antialias.conf", {st_mode=S_IFREG|0644, st_size=225, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-antialias.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n<!--  Use the Antialiasing -->\n  <match target=\"patt"..., 8192) = 225
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x33\x09\x03\x25\x25\xd9\xe7\x2c", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/10-hinting-slight.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/10-hinting-slight.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/10-hinting-slight.conf", "../conf.avail/10-hinting-slight.conf", 4095) = 36
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-slight.conf", {st_mode=S_IFREG|0644, st_size=696, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-slight.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 696
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xbf\xd2\x05\x00\x53\xac\xd4\xa5", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/10-scale-bitmap-fonts.conf", "../conf.avail/10-scale-bitmap-fonts.conf", 4095) = 40
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", {st_mode=S_IFREG|0644, st_size=2228, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 2228
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x5f\xde\x57\x27\xf2\x25\xf5\x12", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/11-lcdfilter-default.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/11-lcdfilter-default.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/11-lcdfilter-default.conf", "../conf.avail/11-lcdfilter-default.conf", 4095) = 39
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-default.conf", {st_mode=S_IFREG|0644, st_size=771, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-default.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 771
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x67\xfc\x6c\x02\x48\xa1\x93\x40", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf", "../conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", 4095) = 55
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", {st_mode=S_IFREG|0644, st_size=874, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<fontconfig>\n  <!--  /etc/fonts/conf.d/20-unh"..., 8192) = 874
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x2b\x09\xb2\x36\xd7\x2a\x75\x50", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf", "../conf.avail/20-unhint-small-dejavu-lgc-sans.conf", 4095) = 50
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", {st_mode=S_IFREG|0644, st_size=864, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<fontconfig>\n  <!--  /etc/fonts/conf.d/20-unh"..., 8192) = 864
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x58\xb0\xc1\x51\x79\x9b\xea\x4e", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf", "../conf.avail/20-unhint-small-dejavu-lgc-serif.conf", 4095) = 51
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", {st_mode=S_IFREG|0644, st_size=866, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<fontconfig>\n  <!--  /etc/fonts/conf.d/20-unh"..., 8192) = 866
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xe9\x26\xae\x9e\xa7\xe8\x75\xfa", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf", "../conf.avail/20-unhint-small-dejavu-sans-mono.conf", 4095) = 51
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", {st_mode=S_IFREG|0644, st_size=866, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<fontconfig>\n  <!--  /etc/fonts/conf.d/20-unh"..., 8192) = 866
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x2f\xfb\x0f\xdb\xaf\xf1\xe9\x35", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf", "../conf.avail/20-unhint-small-dejavu-sans.conf", 4095) = 46
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", {st_mode=S_IFREG|0644, st_size=856, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<fontconfig>\n  <!--  /etc/fonts/conf.d/20-unh"..., 8192) = 856
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xd0\xb3\xa8\xf2\x2d\x6e\xb2\x30", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf", "../conf.avail/20-unhint-small-dejavu-serif.conf", 4095) = 47
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", {st_mode=S_IFREG|0644, st_size=858, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<fontconfig>\n  <!--  /etc/fonts/conf.d/20-unh"..., 8192) = 858
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xee\x1e\x12\xa2\x91\x9a\xa3\x43", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/20-unhint-small-vera.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/20-unhint-small-vera.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/20-unhint-small-vera.conf", "../conf.avail/20-unhint-small-vera.conf", 4095) = 39
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-vera.conf", {st_mode=S_IFREG|0644, st_size=1537, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/20-unhint-small-vera.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 1537
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x22\xd1\x98\x6a\x5d\x61\xf2\xfb", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/30-metric-aliases.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/30-metric-aliases.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/30-metric-aliases.conf", "../conf.avail/30-metric-aliases.conf", 4095) = 36
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/30-metric-aliases.conf", {st_mode=S_IFREG|0644, st_size=13393, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/30-metric-aliases.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 8192
+584   read(4, "ly>\n\t  <default>\n\t    <family>Times New Roman</family>\n\t  </default>\n\t</alias>\n\n\t<alias binding=\"same\">\n\t  <family>Liberation Se"..., 8192) = 5201
+584   brk(0x55b84a058000)               = 0x55b84a058000
+584   brk(0x55b84a055000)               = 0x55b84a055000
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xe4\xe1\xee\xf7\x54\xd8\xa1\x33", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/40-nonlatin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/40-nonlatin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/40-nonlatin.conf", "../conf.avail/40-nonlatin.conf", 4095) = 30
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/40-nonlatin.conf", {st_mode=S_IFREG|0644, st_size=5630, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/40-nonlatin.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 5630
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xa5\x00\xa7\x84\x97\x16\x33\x43", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/45-generic.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/45-generic.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/45-generic.conf", "../conf.avail/45-generic.conf", 4095) = 29
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/45-generic.conf", {st_mode=S_IFREG|0644, st_size=3543, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/45-generic.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 3543
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xec\x47\xc4\xf1\x04\x5c\x8a\xe8", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/45-latin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/45-latin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/45-latin.conf", "../conf.avail/45-latin.conf", 4095) = 27
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/45-latin.conf", {st_mode=S_IFREG|0644, st_size=6697, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/45-latin.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 6697
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xdb\x0d\xe3\xf6\xa2\xb5\xb6\xbd", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/49-sansserif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/49-sansserif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/49-sansserif.conf", "../conf.avail/49-sansserif.conf", 4095) = 31
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/49-sansserif.conf", {st_mode=S_IFREG|0644, st_size=799, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/49-sansserif.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 799
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xd6\x36\x19\x76\x58\x9a\x27\x0b", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/50-user.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/50-user.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/50-user.conf", "../conf.avail/50-user.conf", 4095) = 26
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/50-user.conf", {st_mode=S_IFREG|0644, st_size=911, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/50-user.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 911
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xca\x8a\xca\x07\xb6\xfb\x4b\x32", 8, GRND_NONBLOCK) = 8
+584   newfstatat(AT_FDCWD, "/root/.config/fontconfig/conf.d", 0x7ffe00b2e250, 0) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.config/fontconfig/conf.d", 0x7ffe00b2e250, 0) = -1 ENOENT (No such file or directory)
+584   access("/root/.config/fontconfig/conf.d", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/root/.config/fontconfig/conf.d", R_OK) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.config/fontconfig/fonts.conf", 0x7ffe00b2e250, 0) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.config/fontconfig/fonts.conf", 0x7ffe00b2e250, 0) = -1 ENOENT (No such file or directory)
+584   access("/root/.config/fontconfig/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/root/.config/fontconfig/fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/root/.fonts.conf.d", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/etc/fonts/~/.fonts.conf.d", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/root/.fonts.conf.d", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/etc/fonts/~/.fonts.conf.d", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/root/.fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/etc/fonts/~/.fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/root/.fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/etc/fonts/~/.fonts.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/etc/fonts/conf.d/51-local.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/51-local.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/51-local.conf", "../conf.avail/51-local.conf", 4095) = 27
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/51-local.conf", {st_mode=S_IFREG|0644, st_size=423, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/51-local.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 423
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xd3\x4a\xfe\x86\x62\x10\x4a\x29", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/local.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/etc/fonts/local.conf", R_OK) = -1 ENOENT (No such file or directory)
+584   access("/etc/fonts/conf.d/57-dejavu-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/57-dejavu-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/57-dejavu-sans-mono.conf", "../conf.avail/57-dejavu-sans-mono.conf", 4095) = 38
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", {st_mode=S_IFREG|0644, st_size=1201, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<!-- /etc/fonts/conf.d/57-dejavu-sans-mono.co"..., 8192) = 1201
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x77\xfb\x78\x85\xfd\xab\x79\x2d", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/57-dejavu-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/57-dejavu-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/57-dejavu-sans.conf", "../conf.avail/57-dejavu-sans.conf", 4095) = 33
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/57-dejavu-sans.conf", {st_mode=S_IFREG|0644, st_size=1711, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/57-dejavu-sans.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<!-- /etc/fonts/conf.d/57-dejavu-sans.conf\n\n "..., 8192) = 1711
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x9d\xae\x08\x4a\xb9\x99\x4e\x85", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/57-dejavu-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/57-dejavu-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/57-dejavu-serif.conf", "../conf.avail/57-dejavu-serif.conf", 4095) = 34
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/57-dejavu-serif.conf", {st_mode=S_IFREG|0644, st_size=1357, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/57-dejavu-serif.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<!-- /etc/fonts/conf.d/57-dejavu-serif.conf\n\n"..., 8192) = 1357
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xe3\xfb\x75\x1b\x0f\x25\x88\xc9", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf", "../conf.avail/58-dejavu-lgc-sans-mono.conf", 4095) = 42
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", {st_mode=S_IFREG|0644, st_size=1545, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<!-- /etc/fonts/conf.d/58-dejavu-lgc-sans-mon"..., 8192) = 1545
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x4d\xa6\x2d\x46\x53\x88\x3a\x96", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/58-dejavu-lgc-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/58-dejavu-lgc-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/58-dejavu-lgc-sans.conf", "../conf.avail/58-dejavu-lgc-sans.conf", 4095) = 37
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", {st_mode=S_IFREG|0644, st_size=2063, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<!-- /etc/fonts/conf.d/58-dejavu-lgc-sans.con"..., 8192) = 2063
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x3f\xb9\xaa\x26\x06\x7c\x77\x05", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/58-dejavu-lgc-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/58-dejavu-lgc-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/58-dejavu-lgc-serif.conf", "../conf.avail/58-dejavu-lgc-serif.conf", 4095) = 38
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", {st_mode=S_IFREG|0644, st_size=1689, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE fontconfig SYSTEM \"../fonts.dtd\">\n<!-- /etc/fonts/conf.d/58-dejavu-lgc-serif.co"..., 8192) = 1689
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x68\xb6\xa8\x41\x62\xce\x4d\xdf", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/60-generic.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/60-generic.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/60-generic.conf", "../conf.avail/60-generic.conf", 4095) = 29
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/60-generic.conf", {st_mode=S_IFREG|0644, st_size=2041, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/60-generic.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 2041
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xfa\x5a\x83\x72\x43\x3e\x2a\x44", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/60-latin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/60-latin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/60-latin.conf", "../conf.avail/60-latin.conf", 4095) = 27
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/60-latin.conf", {st_mode=S_IFREG|0644, st_size=2068, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/60-latin.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 2068
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x31\x13\xe6\x8a\x05\xb7\xdc\xe2", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/65-fonts-persian.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/65-fonts-persian.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/65-fonts-persian.conf", "../conf.avail/65-fonts-persian.conf", 4095) = 35
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/65-fonts-persian.conf", {st_mode=S_IFREG|0644, st_size=10293, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/65-fonts-persian.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<!--\n  fonts-persian.conf\n  To configure Persian fonts from The F"..., 8192) = 8192
+584   read(4, ">Badr</family>\n\t\t\t<family>Zar</family>\n\t\t</accept>\n\t</alias>\n\n\t<!-- Persian sans-serif fonts -->\n\t<alias>\n\t\t<family>sans-serif</"..., 8192) = 2101
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x3e\xe8\x25\x35\x6d\x12\x56\xcb", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/65-nonlatin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/65-nonlatin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/65-nonlatin.conf", "../conf.avail/65-nonlatin.conf", 4095) = 30
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/65-nonlatin.conf", {st_mode=S_IFREG|0644, st_size=8008, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/65-nonlatin.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 8008
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x11\x8a\x20\x9a\x8f\x02\x1c\x26", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/69-unifont.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/69-unifont.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/69-unifont.conf", "../conf.avail/69-unifont.conf", 4095) = 29
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/69-unifont.conf", {st_mode=S_IFREG|0644, st_size=847, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/69-unifont.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 847
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x93\xe7\x71\xcf\xdf\xf6\x55\xaa", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/70-no-bitmaps.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/70-no-bitmaps.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/70-no-bitmaps.conf", "../conf.avail/70-no-bitmaps.conf", 4095) = 32
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/70-no-bitmaps.conf", {st_mode=S_IFREG|0644, st_size=487, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/70-no-bitmaps.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 487
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xff\xff\x41\xb0\xe5\xee\x40\x6f", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/80-delicious.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/80-delicious.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/80-delicious.conf", "../conf.avail/80-delicious.conf", 4095) = 31
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/80-delicious.conf", {st_mode=S_IFREG|0644, st_size=597, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/80-delicious.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 597
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x8f\xc0\x1d\xfa\xb1\xc7\xdd\x01", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.d/90-synthetic.conf", R_OK) = 0
+584   access("/etc/fonts/conf.d/90-synthetic.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.d/90-synthetic.conf", "../conf.avail/90-synthetic.conf", 4095) = 31
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/90-synthetic.conf", {st_mode=S_IFREG|0644, st_size=1917, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/90-synthetic.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 1917
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x58\xc0\xc9\x1d\x98\x1a\xbd\x81", 8, GRND_NONBLOCK) = 8
+584   close(3)                          = 0
+584   access("/etc/fonts/conf.d", R_OK) = 0
+584   access("/etc/fonts/conf.avail", R_OK) = 0
+584   access("/etc/fonts/conf.avail", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail", 0x7ffe00b3f0e0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+584   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+584   getdents64(3, 0x55b84a01a170 /* 51 entries */, 32768) = 2280
+584   getdents64(3, 0x55b84a01a170 /* 0 entries */, 32768) = 0
+584   access("/etc/fonts/conf.avail/10-antialias.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-antialias.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-antialias.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/10-autohint.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-autohint.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-autohint.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-autohint.conf", {st_mode=S_IFREG|0644, st_size=706, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-autohint.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 706
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xb6\x47\xa2\x62\xa9\x58\xab\x0f", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-hinting-full.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-hinting-full.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-hinting-full.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-full.conf", {st_mode=S_IFREG|0644, st_size=692, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-full.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 692
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xe6\x5e\x77\x77\x56\xe4\x78\x0d", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-hinting-medium.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-hinting-medium.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-hinting-medium.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-medium.conf", {st_mode=S_IFREG|0644, st_size=696, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-medium.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 696
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xd6\x7a\xf3\xd2\x3e\xfd\x0c\x18", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-hinting-none.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-hinting-none.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-hinting-none.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-none.conf", {st_mode=S_IFREG|0644, st_size=692, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-hinting-none.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 692
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x23\x3d\x25\xdf\x9c\xe9\x31\x09", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-hinting-slight.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-hinting-slight.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-hinting-slight.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/10-no-sub-pixel.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-no-sub-pixel.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-no-sub-pixel.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-no-sub-pixel.conf", {st_mode=S_IFREG|0644, st_size=723, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-no-sub-pixel.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 723
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xb1\xff\x19\x67\x13\xb6\x8e\xa3", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-scale-bitmap-fonts.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", {st_mode=S_IFREG|0644, st_size=748, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-bgr.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 748
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xe3\x0d\x45\xa9\x08\x3f\xe7\x59", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", {st_mode=S_IFREG|0644, st_size=748, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-rgb.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 748
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xbc\xe1\xe9\xae\x42\x40\xdd\xd8", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", {st_mode=S_IFREG|0644, st_size=758, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vbgr.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 758
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x04\x22\xe5\x20\x51\x87\x8a\x90", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", {st_mode=S_IFREG|0644, st_size=758, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-sub-pixel-vrgb.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 758
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x97\xf4\x19\xd5\xe0\x27\x0a\x1c", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/10-unhinted.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/10-unhinted.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/10-unhinted.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/10-unhinted.conf", {st_mode=S_IFREG|0644, st_size=701, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/10-unhinted.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 701
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x96\xcd\xc4\xca\x8e\x1c\x9d\xa6", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/11-lcdfilter-default.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/11-lcdfilter-default.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/11-lcdfilter-default.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", {st_mode=S_IFREG|0644, st_size=768, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-legacy.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 768
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x8f\xe6\x09\x08\x68\x5d\x65\xc7", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/11-lcdfilter-light.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/11-lcdfilter-light.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/11-lcdfilter-light.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-light.conf", {st_mode=S_IFREG|0644, st_size=765, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/11-lcdfilter-light.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 765
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xd7\x66\x41\x98\x88\x8c\xee\x75", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/20-unhint-small-vera.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/20-unhint-small-vera.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/20-unhint-small-vera.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/25-unhint-nonlatin.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/25-unhint-nonlatin.conf", {st_mode=S_IFREG|0644, st_size=3489, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/25-unhint-nonlatin.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 3489
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x3c\x46\x61\xa9\xf5\x55\xbc\x16", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/30-metric-aliases.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/30-metric-aliases.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/30-metric-aliases.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/40-nonlatin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/40-nonlatin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/40-nonlatin.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/45-generic.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/45-generic.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/45-generic.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/45-latin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/45-latin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/45-latin.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/49-sansserif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/49-sansserif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/49-sansserif.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/50-user.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/50-user.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/50-user.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/51-local.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/51-local.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/51-local.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", {st_mode=S_IFREG|0644, st_size=943, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<!-- conf.d/monospace-lcd-filter.conf -->\n<fontconfig>\n<!--  Use "..., 8192) = 943
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xfe\x2c\xed\x21\x76\xfe\x37\x71", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/57-dejavu-sans-mono.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/57-dejavu-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/57-dejavu-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/57-dejavu-sans.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/57-dejavu-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/57-dejavu-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/57-dejavu-serif.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/60-generic.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/60-generic.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/60-generic.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/60-latin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/60-latin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/60-latin.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/65-fonts-persian.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/65-fonts-persian.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/65-fonts-persian.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/65-khmer.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/65-khmer.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/65-khmer.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/65-khmer.conf", {st_mode=S_IFREG|0644, st_size=464, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/65-khmer.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 464
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x58\xc9\x88\xd6\xca\x52\x50\x31", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/65-nonlatin.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/65-nonlatin.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/65-nonlatin.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/69-unifont.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/69-unifont.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/69-unifont.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/70-force-bitmaps.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/70-force-bitmaps.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/70-force-bitmaps.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/70-force-bitmaps.conf", {st_mode=S_IFREG|0644, st_size=487, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/70-force-bitmaps.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig>\n  <its:rules xmlns:its=\"http://www.w3.org/2005/11/it"..., 8192) = 487
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\x70\xda\xac\x12\xdc\x14\x1e\xc4", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/70-no-bitmaps.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/70-no-bitmaps.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/70-no-bitmaps.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/70-yes-bitmaps.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/70-yes-bitmaps.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/70-yes-bitmaps.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   newfstatat(AT_FDCWD, "/etc/fonts/conf.avail/70-yes-bitmaps.conf", {st_mode=S_IFREG|0644, st_size=77, ...}, 0) = 0
+584   openat(AT_FDCWD, "/etc/fonts/conf.avail/70-yes-bitmaps.conf", O_RDONLY|O_CLOEXEC) = 4
+584   read(4, "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n<fontconfig/>\n", 8192) = 77
+584   read(4, "", 8192)                 = 0
+584   close(4)                          = 0
+584   getrandom("\xb9\x5b\x3a\x04\xfd\x15\x3c\xb5", 8, GRND_NONBLOCK) = 8
+584   access("/etc/fonts/conf.avail/80-delicious.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/80-delicious.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/80-delicious.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   access("/etc/fonts/conf.avail/90-synthetic.conf", R_OK) = 0
+584   access("/etc/fonts/conf.avail/90-synthetic.conf", R_OK) = 0
+584   readlink("/etc/fonts/conf.avail/90-synthetic.conf", 0x7ffe00b39fa0, 4095) = -1 EINVAL (Invalid argument)
+584   close(3)                          = 0
+584   access("/usr/share/fonts/.uuid", F_OK) = 0
+584   openat(AT_FDCWD, "/usr/share/fonts/.uuid", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "747f06e1-b4d0-4b88-b4ef-af26a5580841", 36) = 36
+584   close(3)                          = 0
+584   newfstatat(AT_FDCWD, "/usr/share/fonts", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+584   openat(AT_FDCWD, "/usr/share/fonts", O_RDONLY|O_CLOEXEC) = 3
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/var/cache/fontconfig/747f06e1-b4d0-4b88-b4ef-af26a5580841-le64.cache-7", O_RDONLY|O_CLOEXEC) = 3
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=144, ...}, AT_EMPTY_PATH) = 0
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   read(3, "\4\374\2\374\7\0\0\0\220\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0\200\0\0\0\0\0\0\0SX\326b\0\0\0\0X\340\341\27\0\0\0\0/usr/share/fonts\0\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0/usr/share/fonts/truetype\0\0\0\0\0\0\0"..., 144) = 144
+584   close(3)                          = 0
+584   access("/usr/local/share/fonts/.uuid", F_OK) = 0
+584   openat(AT_FDCWD, "/usr/local/share/fonts/.uuid", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "9d937e4f-666c-43bf-87f4-b9334e9e6f08", 36) = 36
+584   close(3)                          = 0
+584   newfstatat(AT_FDCWD, "/usr/local/share/fonts", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}, 0) = 0
+584   openat(AT_FDCWD, "/usr/local/share/fonts", O_RDONLY|O_CLOEXEC) = 3
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/var/cache/fontconfig/9d937e4f-666c-43bf-87f4-b9334e9e6f08-le64.cache-7", O_RDONLY|O_CLOEXEC) = 3
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=104, ...}, AT_EMPTY_PATH) = 0
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   read(3, "\4\374\2\374\7\0\0\0h\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X\0\0\0\0\0\0\0TX\326b\0\0\0\0\330e\227%\0\0\0\0/usr/local/share/fonts\0\0\0\0\0\0\0\0\0\0\21\0\0\0\0\0\0\0", 104) = 104
+584   close(3)                          = 0
+584   access("/root/.local/share/fonts/.uuid", F_OK) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.local/share/fonts", 0x7ffe00b3ff70, 0) = -1 ENOENT (No such file or directory)
+584   openat(AT_FDCWD, "/root/.local/share/fonts/.uuid", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.local/share/fonts", 0x7ffe00b3fec0, 0) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.local/share/fonts", 0x7ffe00b3ff80, 0) = -1 ENOENT (No such file or directory)
+584   access("/root/.fonts/.uuid", F_OK) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.fonts", 0x7ffe00b3ff70, 0) = -1 ENOENT (No such file or directory)
+584   openat(AT_FDCWD, "/root/.fonts/.uuid", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.fonts", 0x7ffe00b3fec0, 0) = -1 ENOENT (No such file or directory)
+584   newfstatat(AT_FDCWD, "/root/.fonts", 0x7ffe00b3ff80, 0) = -1 ENOENT (No such file or directory)
+584   access("/usr/share/fonts/truetype/.uuid", F_OK) = 0
+584   openat(AT_FDCWD, "/usr/share/fonts/truetype/.uuid", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "3491b45c-e35a-49b4-87a9-0691cccee7c8", 36) = 36
+584   close(3)                          = 0
+584   newfstatat(AT_FDCWD, "/usr/share/fonts/truetype", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+584   openat(AT_FDCWD, "/usr/share/fonts/truetype", O_RDONLY|O_CLOEXEC) = 3
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/var/cache/fontconfig/3491b45c-e35a-49b4-87a9-0691cccee7c8-le64.cache-7", O_RDONLY|O_CLOEXEC) = 3
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=160, ...}, AT_EMPTY_PATH) = 0
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   read(3, "\4\374\2\374\7\0\0\0\240\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`\0\0\0\0\0\0\0\1\0\0\0\0\0\0\0\220\0\0\0\0\0\0\0SX\326b\0\0\0\0X\340\341\27\0\0\0\0/usr/share/fonts/truetype\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0/usr/share/fonts/truetyp"..., 160) = 160
+584   close(3)                          = 0
+584   access("/usr/share/fonts/truetype/dejavu/.uuid", F_OK) = 0
+584   openat(AT_FDCWD, "/usr/share/fonts/truetype/dejavu/.uuid", O_RDONLY|O_CLOEXEC) = 3
+584   read(3, "d7ac8cdb-5475-429f-816a-ba46463afa5f", 36) = 36
+584   close(3)                          = 0
+584   newfstatat(AT_FDCWD, "/usr/share/fonts/truetype/dejavu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+584   openat(AT_FDCWD, "/usr/share/fonts/truetype/dejavu", O_RDONLY|O_CLOEXEC) = 3
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   close(3)                          = 0
+584   openat(AT_FDCWD, "/var/cache/fontconfig/d7ac8cdb-5475-429f-816a-ba46463afa5f-le64.cache-7", O_RDONLY|O_CLOEXEC) = 3
+584   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=15560, ...}, AT_EMPTY_PATH) = 0
+584   fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63408483, f_bavail=60048944, f_files=16777216, f_ffree=16535023, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+584   mmap(NULL, 15560, PROT_READ, MAP_SHARED, 3, 0) = 0x7f6a3b06f000
+584   fadvise64(3, 0, 15560, POSIX_FADV_WILLNEED) = 0
+584   close(3)                          = 0
+584   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+584   munmap(0x7f6a3b06f000, 15560)     = 0
+584   write(1, "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf: DejaVu Serif:style=Bold\n/usr/share/fonts/truetype/dejavu/DejaVuSansMono.t"..., 469) = 469
+584   exit_group(0)                     = ?
+584   +++ exited with 0 +++

@@ -1,0 +1,48 @@
+/* test_parse_sleep_config */
+  allow_suspend: 1
+  allow_hibernate: 1
+  allow_s2h: 1
+  allow_hybrid_sleep: 1
+  suspend modes: 
+         states: mem, standby, freeze
+  hibernate modes: platform, shutdown
+           states: disk
+  hybrid modes: suspend, platform, shutdown
+        states: disk
+/* test_sleep */
+Found container virtualization wsl.
+/= individual sleep modes =/
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Standby configured: no
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Suspend configured: no
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Hibernate configured: no
+/sys/power/disk is not writable: No such file or directory
+Hibernate+Suspend (Hybrid-Sleep) configured: no
+/sys/power/disk is not writable: No such file or directory
+Hibernate+Reboot configured: no
+/sys/power/disk is not writable: No such file or directory
+Hibernate+Platform configured: no
+/sys/power/disk is not writable: No such file or directory
+Hibernate+Shutdown configured: no
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Freeze configured: no
+/= high-level sleep verbs =/
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Suspend configured and possible: no
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Hibernation configured and possible: no
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Hybrid-sleep configured and possible: no
+/sys/power/state is not writable, cannot sleep: No such file or directory
+Unable to suspend system.
+Suspend-then-Hibernate configured and possible: no
+/* test_fiemap */
+extent map information for /usr/lib/systemd/tests/test-sleep:
+	 start: 0
+	 length: 18736
+	 flags: 1
+	 number of mapped extents: 1
+	 extent count: 1
+	 first extent location: 1143197

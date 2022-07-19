@@ -1,0 +1,40 @@
+3647  execve("/usr/share/zfs/zfs-tests/tests/functional/tmpfile/tmpfile_003_pos", ["/usr/share/zfs/zfs-tests/tests/functional/tmpfile/tmpfile_003_pos"], 0x7ffc0c5ea610 /* 12 vars */) = 0
+3647  brk(NULL)                         = 0x563d77b63000
+3647  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffed880cb60) = -1 EINVAL (Invalid argument)
+3647  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffbf420a000
+3647  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3647  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3647  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10109, ...}, AT_EMPTY_PATH) = 0
+3647  mmap(NULL, 10109, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffbf4207000
+3647  close(3)                          = 0
+3647  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3647  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+3647  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+3647  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+3647  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+3647  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+3647  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+3647  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffbf3fdf000
+3647  mmap(0x7ffbf4007000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ffbf4007000
+3647  mmap(0x7ffbf419c000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7ffbf419c000
+3647  mmap(0x7ffbf41f4000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7ffbf41f4000
+3647  mmap(0x7ffbf41fa000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffbf41fa000
+3647  close(3)                          = 0
+3647  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffbf3fdc000
+3647  arch_prctl(ARCH_SET_FS, 0x7ffbf3fdc740) = 0
+3647  set_tid_address(0x7ffbf3fdca10)   = 3647
+3647  set_robust_list(0x7ffbf3fdca20, 24) = 0
+3647  rseq(0x7ffbf3fdd0e0, 0x20, 0, 0x53053053) = 0
+3647  mprotect(0x7ffbf41f4000, 16384, PROT_READ) = 0
+3647  mprotect(0x563d75bd0000, 4096, PROT_READ) = 0
+3647  mprotect(0x7ffbf4244000, 8192, PROT_READ) = 0
+3647  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3647  munmap(0x7ffbf4207000, 10109)     = 0
+3647  newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+3647  getrandom("\x30\xe7\xcd\xa3\xa0\x47\x20\xe2", 8, GRND_NONBLOCK) = 8
+3647  brk(NULL)                         = 0x563d77b63000
+3647  brk(0x563d77b84000)               = 0x563d77b84000
+3647  write(2, "getenv(penv[0])\n", 16) = 16
+3647  write(1, "Verify O_EXCL tmpfile cannot be linked.\n", 40) = 40
+3647  exit_group(1)                     = ?
+3647  +++ exited with 1 +++

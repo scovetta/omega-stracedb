@@ -1,0 +1,968 @@
+488   execve("/usr/bin/groff", ["/usr/bin/groff"], 0x7ffd323fb100 /* 12 vars */) = 0
+488   brk(NULL)                         = 0x562074da4000
+488   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe47088610) = -1 EINVAL (Invalid argument)
+488   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6bf287000
+488   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+488   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6197, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 6197, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd6bf285000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340t\"\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\"\0!\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\350\220\t\0\0\0\0\0\350\220\t\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2260320, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 2275520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd6bf059000
+488   mmap(0x7fd6bf0f3000, 1118208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000) = 0x7fd6bf0f3000
+488   mmap(0x7fd6bf204000, 458752, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ab000) = 0x7fd6bf204000
+488   mmap(0x7fd6bf274000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21a000) = 0x7fd6bf274000
+488   mmap(0x7fd6bf282000, 10432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd6bf282000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10-\0\0\0\0\0\0\10-\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd6bf039000
+488   mmap(0x7fd6bf03c000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fd6bf03c000
+488   mmap(0x7fd6bf053000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7fd6bf053000
+488   mmap(0x7fd6bf057000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7fd6bf057000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+488   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd6bee11000
+488   mmap(0x7fd6bee39000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fd6bee39000
+488   mmap(0x7fd6befce000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fd6befce000
+488   mmap(0x7fd6bf026000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fd6bf026000
+488   mmap(0x7fd6bf02c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd6bf02c000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd6bed2a000
+488   mmap(0x7fd6bed38000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fd6bed38000
+488   mmap(0x7fd6bedb4000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7fd6bedb4000
+488   mmap(0x7fd6bee0f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7fd6bee0f000
+488   close(3)                          = 0
+488   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6bed28000
+488   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6bed25000
+488   arch_prctl(ARCH_SET_FS, 0x7fd6bed25740) = 0
+488   set_tid_address(0x7fd6bed25a10)   = 488
+488   set_robust_list(0x7fd6bed25a20, 24) = 0
+488   rseq(0x7fd6bed260e0, 0x20, 0, 0x53053053) = 0
+488   mprotect(0x7fd6bf026000, 16384, PROT_READ) = 0
+488   mprotect(0x7fd6bee0f000, 4096, PROT_READ) = 0
+488   mprotect(0x7fd6bf057000, 4096, PROT_READ) = 0
+488   mprotect(0x7fd6bf274000, 45056, PROT_READ) = 0
+488   mprotect(0x562073568000, 12288, PROT_READ) = 0
+488   mprotect(0x7fd6bf2c1000, 8192, PROT_READ) = 0
+488   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+488   munmap(0x7fd6bf285000, 6197)      = 0
+488   getrandom("\x0c\x76\xbd\xa8\xd6\x42\x26\xea", 8, GRND_NONBLOCK) = 8
+488   brk(NULL)                         = 0x562074da4000
+488   brk(0x562074dc5000)               = 0x562074dc5000
+488   brk(0x562074de7000)               = 0x562074de7000
+488   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/DESC", O_RDONLY) = -1 ENOENT (No such file or directory)
+488   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/DESC", O_RDONLY) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200, ...}, AT_EMPTY_PATH) = 0
+488   read(3, "res 72000\nhor 1\nvert 1\nsizescale 1000\nunitwidth 1000\nsizes 1000-10000000 0\nstyles R I B BI\nfamily T\nfonts 9 0 0 0 0 0 SS S ZD ZD"..., 4096) = 200
+488   openat(AT_FDCWD, "/etc/papersize", O_RDONLY) = -1 ENOENT (No such file or directory)
+488   read(3, "", 4096)                 = 0
+488   close(3)                          = 0
+488   access("/usr/bin/groff", F_OK)    = 0
+488   readlink("/usr", 0x7ffe47087c60, 1023) = -1 EINVAL (Invalid argument)
+488   readlink("/usr/bin", 0x7ffe47087c60, 1023) = -1 EINVAL (Invalid argument)
+488   readlink("/usr/bin/groff", 0x7ffe47087c60, 1023) = -1 EINVAL (Invalid argument)
+488   pipe2([3, 4], 0)                  = 0
+488   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+493   set_robust_list(0x7fd6bed25a20, 24 <unfinished ...>
+488   <... clone resumed>, child_tidptr=0x7fd6bed25a10) = 493
+493   <... set_robust_list resumed>)    = 0
+488   close(4 <unfinished ...>
+493   close(1 <unfinished ...>
+488   <... close resumed>)              = 0
+493   <... close resumed>)              = 0
+488   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+493   dup(4 <unfinished ...>
+494   set_robust_list(0x7fd6bed25a20, 24 <unfinished ...>
+493   <... dup resumed>)                = 1
+494   <... set_robust_list resumed>)    = 0
+488   <... clone resumed>, child_tidptr=0x7fd6bed25a10) = 494
+494   close(0 <unfinished ...>
+493   close(4 <unfinished ...>
+494   <... close resumed>)              = 0
+488   close(3 <unfinished ...>
+494   dup(3 <unfinished ...>
+493   <... close resumed>)              = 0
+494   <... dup resumed>)                = 0
+488   <... close resumed>)              = 0
+494   close(3 <unfinished ...>
+493   close(3 <unfinished ...>
+494   <... close resumed>)              = 0
+488   wait4(-1,  <unfinished ...>
+494   execve("/usr/bin/grops", ["grops"], 0x562074dbdc60 /* 13 vars */ <unfinished ...>
+493   <... close resumed>)              = 0
+494   <... execve resumed>)             = 0
+493   execve("/usr/bin/troff", ["troff", "-Tps"], 0x562074dbdc60 /* 13 vars */ <unfinished ...>
+494   brk(NULL)                         = 0x55e59f9c7000
+493   <... execve resumed>)             = 0
+494   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffda5a81df0 <unfinished ...>
+493   brk(NULL <unfinished ...>
+494   <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+493   <... brk resumed>)                = 0x55721727c000
+494   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+493   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc055ef9c0 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f199278b000
+493   <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+494   access("/etc/ld.so.preload", R_OK <unfinished ...>
+493   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+494   <... access resumed>)             = -1 ENOENT (No such file or directory)
+493   <... mmap resumed>)               = 0x7f27ec0ff000
+494   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+493   access("/etc/ld.so.preload", R_OK <unfinished ...>
+494   <... openat resumed>)             = 3
+493   <... access resumed>)             = -1 ENOENT (No such file or directory)
+494   newfstatat(3, "",  <unfinished ...>
+493   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+494   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=6197, ...}, AT_EMPTY_PATH) = 0
+493   <... openat resumed>)             = 3
+494   mmap(NULL, 6197, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+493   newfstatat(3, "",  <unfinished ...>
+494   <... mmap resumed>)               = 0x7f1992789000
+493   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=6197, ...}, AT_EMPTY_PATH) = 0
+494   close(3 <unfinished ...>
+493   mmap(NULL, 6197, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+494   <... close resumed>)              = 0
+493   <... mmap resumed>)               = 0x7f27ec0fd000
+494   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+493   close(3 <unfinished ...>
+494   <... openat resumed>)             = 3
+493   <... close resumed>)              = 0
+494   read(3,  <unfinished ...>
+493   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+494   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340t\"\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\"\0!\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\350\220\t\0\0\0\0\0\350\220\t\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+493   <... openat resumed>)             = 3
+494   newfstatat(3, "",  <unfinished ...>
+493   read(3,  <unfinished ...>
+494   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=2260320, ...}, AT_EMPTY_PATH) = 0
+493   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340t\"\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\"\0!\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\350\220\t\0\0\0\0\0\350\220\t\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+494   mmap(NULL, 2275520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+493   newfstatat(3, "",  <unfinished ...>
+494   <... mmap resumed>)               = 0x7f199255d000
+493   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=2260320, ...}, AT_EMPTY_PATH) = 0
+494   mmap(0x7f19925f7000, 1118208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000 <unfinished ...>
+493   mmap(NULL, 2275520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f19925f7000
+493   <... mmap resumed>)               = 0x7f27ebed1000
+494   mmap(0x7f1992708000, 458752, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ab000 <unfinished ...>
+493   mmap(0x7f27ebf6b000, 1118208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f1992708000
+493   <... mmap resumed>)               = 0x7f27ebf6b000
+494   mmap(0x7f1992778000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21a000 <unfinished ...>
+493   mmap(0x7f27ec07c000, 458752, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ab000 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f1992778000
+493   <... mmap resumed>)               = 0x7f27ec07c000
+494   mmap(0x7f1992786000, 10432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+493   mmap(0x7f27ec0ec000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21a000 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f1992786000
+493   <... mmap resumed>)               = 0x7f27ec0ec000
+494   close(3 <unfinished ...>
+493   mmap(0x7f27ec0fa000, 10432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+494   <... close resumed>)              = 0
+493   <... mmap resumed>)               = 0x7f27ec0fa000
+494   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+493   close(3 <unfinished ...>
+494   <... openat resumed>)             = 3
+493   <... close resumed>)              = 0
+494   read(3,  <unfinished ...>
+493   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+494   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+493   <... openat resumed>)             = 3
+494   newfstatat(3, "",  <unfinished ...>
+493   read(3,  <unfinished ...>
+494   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+493   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+494   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+493   newfstatat(3, "",  <unfinished ...>
+494   <... mmap resumed>)               = 0x7f1992476000
+493   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+494   mmap(0x7f1992484000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000 <unfinished ...>
+493   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f1992484000
+493   <... mmap resumed>)               = 0x7f27ebdea000
+494   mmap(0x7f1992500000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000 <unfinished ...>
+493   mmap(0x7f27ebdf8000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f1992500000
+493   <... mmap resumed>)               = 0x7f27ebdf8000
+494   mmap(0x7f199255b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000 <unfinished ...>
+493   mmap(0x7f27ebe74000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000 <unfinished ...>
+494   <... mmap resumed>)               = 0x7f199255b000
+493   <... mmap resumed>)               = 0x7f27ebe74000
+494   close(3 <unfinished ...>
+493   mmap(0x7f27ebecf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000 <unfinished ...>
+494   <... close resumed>)              = 0
+493   <... mmap resumed>)               = 0x7f27ebecf000
+494   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC <unfinished ...>
+493   close(3 <unfinished ...>
+494   <... openat resumed>)             = 3
+494   read(3,  <unfinished ...>
+493   <... close resumed>)              = 0
+494   <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10-\0\0\0\0\0\0\10-\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+493   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC <unfinished ...>
+494   newfstatat(3, "",  <unfinished ...>
+493   <... openat resumed>)             = 3
+494   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+493   read(3,  <unfinished ...>
+494   mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+493   <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10-\0\0\0\0\0\0\10-\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+494   <... mmap resumed>)               = 0x7f1992456000
+493   newfstatat(3, "",  <unfinished ...>
+494   mmap(0x7f1992459000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000 <unfinished ...>
+493   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+494   <... mmap resumed>)               = 0x7f1992459000
+493   mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+494   mmap(0x7f1992470000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebdca000
+494   <... mmap resumed>)               = 0x7f1992470000
+493   mmap(0x7f27ebdcd000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000 <unfinished ...>
+494   mmap(0x7f1992474000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebdcd000
+494   <... mmap resumed>)               = 0x7f1992474000
+493   mmap(0x7f27ebde4000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000 <unfinished ...>
+494   close(3 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebde4000
+494   <... close resumed>)              = 0
+493   mmap(0x7f27ebde8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000 <unfinished ...>
+494   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebde8000
+494   <... openat resumed>)             = 3
+493   close(3 <unfinished ...>
+494   read(3,  <unfinished ...>
+493   <... close resumed>)              = 0
+494   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+493   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+494   pread64(3,  <unfinished ...>
+493   <... openat resumed>)             = 3
+494   <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+493   read(3,  <unfinished ...>
+494   pread64(3,  <unfinished ...>
+493   <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+494   <... pread64 resumed>"\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+493   pread64(3,  <unfinished ...>
+494   pread64(3,  <unfinished ...>
+493   <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+494   <... pread64 resumed>"\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+493   pread64(3,  <unfinished ...>
+494   newfstatat(3, "",  <unfinished ...>
+493   <... pread64 resumed>"\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+494   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+493   pread64(3,  <unfinished ...>
+494   pread64(3,  <unfinished ...>
+493   <... pread64 resumed>"\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+494   <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+493   newfstatat(3, "",  <unfinished ...>
+494   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+493   <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+494   <... mmap resumed>)               = 0x7f199222e000
+493   pread64(3,  <unfinished ...>
+494   mmap(0x7f1992256000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000 <unfinished ...>
+493   <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+494   <... mmap resumed>)               = 0x7f1992256000
+493   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+494   mmap(0x7f19923eb000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebba2000
+494   <... mmap resumed>)               = 0x7f19923eb000
+493   mmap(0x7f27ebbca000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000 <unfinished ...>
+494   mmap(0x7f1992443000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebbca000
+494   <... mmap resumed>)               = 0x7f1992443000
+493   mmap(0x7f27ebd5f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000 <unfinished ...>
+494   mmap(0x7f1992449000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebd5f000
+494   <... mmap resumed>)               = 0x7f1992449000
+493   mmap(0x7f27ebdb7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000 <unfinished ...>
+494   close(3 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebdb7000
+494   <... close resumed>)              = 0
+493   mmap(0x7f27ebdbd000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+494   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebdbd000
+494   <... mmap resumed>)               = 0x7f199222c000
+493   close(3 <unfinished ...>
+494   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+493   <... close resumed>)              = 0
+494   <... mmap resumed>)               = 0x7f1992229000
+493   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+494   arch_prctl(ARCH_SET_FS, 0x7f1992229740 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebba0000
+494   <... arch_prctl resumed>)         = 0
+493   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+494   set_tid_address(0x7f1992229a10 <unfinished ...>
+493   <... mmap resumed>)               = 0x7f27ebb9d000
+494   <... set_tid_address resumed>)    = 494
+493   arch_prctl(ARCH_SET_FS, 0x7f27ebb9d740 <unfinished ...>
+494   set_robust_list(0x7f1992229a20, 24 <unfinished ...>
+493   <... arch_prctl resumed>)         = 0
+494   <... set_robust_list resumed>)    = 0
+493   set_tid_address(0x7f27ebb9da10 <unfinished ...>
+494   rseq(0x7f199222a0e0, 0x20, 0, 0x53053053 <unfinished ...>
+493   <... set_tid_address resumed>)    = 493
+494   <... rseq resumed>)               = 0
+493   set_robust_list(0x7f27ebb9da20, 24 <unfinished ...>
+494   mprotect(0x7f1992443000, 16384, PROT_READ <unfinished ...>
+493   <... set_robust_list resumed>)    = 0
+494   <... mprotect resumed>)           = 0
+493   rseq(0x7f27ebb9e0e0, 0x20, 0, 0x53053053 <unfinished ...>
+494   mprotect(0x7f1992474000, 4096, PROT_READ <unfinished ...>
+493   <... rseq resumed>)               = 0
+494   <... mprotect resumed>)           = 0
+493   mprotect(0x7f27ebdb7000, 16384, PROT_READ <unfinished ...>
+494   mprotect(0x7f199255b000, 4096, PROT_READ <unfinished ...>
+493   <... mprotect resumed>)           = 0
+494   <... mprotect resumed>)           = 0
+493   mprotect(0x7f27ebde8000, 4096, PROT_READ) = 0
+494   mprotect(0x7f1992778000, 45056, PROT_READ <unfinished ...>
+493   mprotect(0x7f27ebecf000, 4096, PROT_READ <unfinished ...>
+494   <... mprotect resumed>)           = 0
+493   <... mprotect resumed>)           = 0
+494   mprotect(0x55e59da87000, 12288, PROT_READ) = 0
+493   mprotect(0x7f27ec0ec000, 45056, PROT_READ <unfinished ...>
+494   mprotect(0x7f19927c5000, 8192, PROT_READ <unfinished ...>
+493   <... mprotect resumed>)           = 0
+494   <... mprotect resumed>)           = 0
+493   mprotect(0x5572171fe000, 73728, PROT_READ <unfinished ...>
+494   prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+493   <... mprotect resumed>)           = 0
+494   <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+493   mprotect(0x7f27ec139000, 8192, PROT_READ <unfinished ...>
+494   munmap(0x7f1992789000, 6197 <unfinished ...>
+493   <... mprotect resumed>)           = 0
+494   <... munmap resumed>)             = 0
+493   prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+494   getrandom( <unfinished ...>
+493   <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+494   <... getrandom resumed>"\xb0\xda\xea\x36\x1a\x7e\x11\xf8", 8, GRND_NONBLOCK) = 8
+493   munmap(0x7f27ec0fd000, 6197 <unfinished ...>
+494   brk(NULL <unfinished ...>
+493   <... munmap resumed>)             = 0
+494   <... brk resumed>)                = 0x55e59f9c7000
+493   getrandom( <unfinished ...>
+494   brk(0x55e59f9e8000 <unfinished ...>
+493   <... getrandom resumed>"\x92\xb2\x7c\x86\xfe\xc5\x81\x29", 8, GRND_NONBLOCK) = 8
+494   <... brk resumed>)                = 0x55e59f9e8000
+493   brk(NULL <unfinished ...>
+494   statfs("/tmp/",  <unfinished ...>
+493   <... brk resumed>)                = 0x55721727c000
+494   <... statfs resumed>{f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63366663, f_bavail=60007124, f_files=16777216, f_ffree=16531066, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+493   brk(0x55721729d000 <unfinished ...>
+494   brk(0x55e59fa0a000 <unfinished ...>
+493   <... brk resumed>)                = 0x55721729d000
+494   <... brk resumed>)                = 0x55e59fa0a000
+493   brk(0x5572172be000 <unfinished ...>
+494   newfstatat(0, "",  <unfinished ...>
+493   <... brk resumed>)                = 0x5572172be000
+494   <... newfstatat resumed>{st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+493   brk(0x5572172ed000 <unfinished ...>
+494   read(0,  <unfinished ...>
+493   <... brk resumed>)                = 0x5572172ed000
+493   mmap(NULL, 163840, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f27ebb75000
+493   brk(0x5572172c2000)               = 0x5572172c2000
+493   brk(0x5572172e5000)               = 0x5572172e5000
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/DESC", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/DESC", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200, ...}, AT_EMPTY_PATH) = 0
+493   read(3, "res 72000\nhor 1\nvert 1\nsizescale 1000\nunitwidth 1000\nsizes 1000-10000000 0\nstyles R I B BI\nfamily T\nfonts 9 0 0 0 0 0 SS S ZD ZD"..., 4096) = 200
+493   openat(AT_FDCWD, "/etc/papersize", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/SS", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/SS", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8014, ...}, AT_EMPTY_PATH) = 0
+493   read(3, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Symbol Slanted\n#   Version 001.008\n#   Fa"..., 4096) = 4096
+493   brk(0x557217306000)               = 0x557217306000
+493   read(3, "---\t552,610,0,208,-84,99\t3\t161\tUpsilon1\n---\t220,654,0,223,-106,99\t3\t162\tminute\n---\t489,569,0,206,24,99\t3\t163\tlessequal\n---\t149,6"..., 4096) = 3918
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/S", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/S", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6315, ...}, AT_EMPTY_PATH) = 0
+493   read(3, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Symbol\n#   Version 001.008\n#   FamilyName"..., 4096) = 4096
+493   read(3, "11\t3\t195\tweierstrass\nc*\t768,673,17\t3\t196\tcirclemultiply\nc+\t768,675,15\t3\t197\tcircleplus\nes\t823,719,24\t3\t198\temptyset\nca\t768,509\t3"..., 4096) = 2219
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/ZD", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/ZD", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5474, ...}, AT_EMPTY_PATH) = 0
+493   read(3, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Zapf Dingbats\n#   Version 002.000\n#  "..., 4096) = 4096
+493   read(3, "96\ta144\n---\t788,705,14\t3\t197\ta145\n---\t788,705,14\t3\t198\ta146\n---\t788,705,14\t3\t199\ta147\n---\t788,705,14\t3\t200\ta148\n---\t788,705,14\t3"..., 4096) = 1378
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/ZDR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/ZDR", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5492, ...}, AT_EMPTY_PATH) = 0
+493   read(3, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Zapf Dingbats Reverse\n#   Version 002"..., 4096) = 4096
+493   read(3, "---\t788,705,14\t3\t196\ta144\n---\t788,705,14\t3\t197\ta145\n---\t788,705,14\t3\t198\ta146\n---\t788,705,14\t3\t199\ta147\n---\t788,705,14\t3\t200\ta14"..., 4096) = 1396
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   brk(0x55721732b000)               = 0x55721732b000
+493   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+493   getpid()                          = 493
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/TR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/TR", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8933, ...}, AT_EMPTY_PATH) = 0
+493   read(3, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Times Roman\n#   Version 003.001\n#   Famil"..., 4096) = 4096
+493   read(3, "@\t921,676,14\t2\t64\tat\nat\t\"\nA\t722,674\t2\t65\tA\nB\t667,662\t2\t66\tB\nC\t667,676,14\t2\t67\tC\nD\t722,662\t2\t68\tD\nE\t611,662\t2\t69\tE\nF\t556,662\t2\t70"..., 4096) = 4096
+493   read(3, "231\tccedilla\n`e\t444,678,10\t2\t232\tegrave\n'e\t444,678,10\t2\t233\teacute\n^e\t444,674,10\t2\t234\tecircumflex\n:e\t444,623,10\t2\t235\tedieresis"..., 4096) = 741
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/troffrc", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/troffrc", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/troffrc", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1642, ...}, AT_EMPTY_PATH) = 0
+493   read(3, ".\\\" Startup file for troff.\n.\n.\\\" This is tested by pic.\n.nr 0p 0\n.\n.\\\" Load composite mappings.\n.do mso composite.tmac\n.\n.\\\" Lo"..., 4096) = 1642
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/composite.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/composite.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/composite.tmac", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=805, ...}, AT_EMPTY_PATH) = 0
+493   read(4, ".\\\" composite.tmac\n.\n.do composite ga u0300\n.do composite `  u0300\n.do composite aa u0301\n.do composite '  u0301\n.do composite a"..., 4096) = 805
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/fallbacks.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/fallbacks.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/fallbacks.tmac", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1416, ...}, AT_EMPTY_PATH) = 0
+493   read(4, ".\\\" -*- nroff -*-\n.\\\"\n.\\\" fallbacks.tmac\n.\\\"\n.\\\" This file contains generic fallback characters.\n.\n.nr _C \\n(.C\n.cp 0\n.\n.\\\" fall"..., 4096) = 1416
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/ps.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/ps.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/ps.tmac", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=20577, ...}, AT_EMPTY_PATH) = 0
+493   read(4, ".\\\" -*- nroff -*-\n.\\\"\n.\\\" ps.tmac\n.\\\"\n.nr _C \\n(.C\n.cp 0\n.\n.ftr AX ABI\n.ftr KR BMR\n.ftr KI BMI\n.ftr KB BMB\n.ftr KX BMBI\n.ftr CW "..., 4096) = 4096
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/CR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/CR", O_RDONLY) = 5
+493   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=6447, ...}, AT_EMPTY_PATH) = 0
+493   read(5, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Courier\n#   Version 004.000\n#   FamilyNam"..., 4096) = 4096
+493   read(5, "44\t0\t173\tminus\nrg\t600,745\t2\t174\tregistered\na-\t600,597\t2\t175\tmacron\nde\t600,584\t2\t176\tdegree\nt+-\t600,433,107\t0\t177\tplusminus\nS2\t60"..., 4096) = 2351
+493   read(5, "", 4096)                 = 0
+493   brk(0x55721734d000)               = 0x55721734d000
+493   close(5)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/CI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/CI", O_RDONLY) = 5
+493   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8763, ...}, AT_EMPTY_PATH) = 0
+493   read(5, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Courier Oblique\n#   Version 004.000\n#   F"..., 4096) = 4096
+493   read(5, "0,127,123,0,-111\t0\t128\tquotesinglbase\nFo\t600,414,0,38,-78,38\t0\t129\tguillemotleft\nFc\t600,414,0,9,-49,9\t0\t130\tguillemotright\nbu\t60"..., 4096) = 4096
+493   read(5, "667,12,51,-39,51\t2\t242\tograve\n'o\t600,666,12,51,-39,51\t2\t243\toacute\n^o\t600,667,12,51,-39,51\t2\t244\tocircumflex\n~o\t600,639,12,71,-3"..., 4096) = 571
+493   read(5, "", 4096)                 = 0
+493   close(5)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/CB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/CB", O_RDONLY) = 5
+493   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=6457, ...}, AT_EMPTY_PATH) = 0
+493   read(5, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Courier Bold\n#   Version 004.000\n#   Fami"..., 4096) = 4096
+493   read(5, "no\t600,358\t0\t172\tlogicalnot\n\\-\t600,266\t0\t173\tminus\nrg\t600,744\t2\t174\tregistered\na-\t600,591\t2\t175\tmacron\nde\t600,612\t2\t176\tdegree\nt"..., 4096) = 2361
+493   read(5, "", 4096)                 = 0
+493   close(5)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/CBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/CBI", O_RDONLY) = 5
+493   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8790, ...}, AT_EMPTY_PATH) = 0
+493   read(5, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Courier Bold Oblique\n#   Version 004.000\n"..., 4096) = 4096
+493   read(5, "\na~\t\"\nbq\t600,163,100,0,-83\t0\t128\tquotesinglbase\nFo\t600,423,0,80,-34,67\t0\t129\tguillemotleft\nFc\t600,423,0,53,-7,53\t0\t130\tguillemot"..., 4096) = 4096
+493   read(5, ",25,67\t2\t241\tntilde\n`o\t600,678,12,52,-31,52\t2\t242\tograve\n'o\t600,678,12,64,-31,64\t2\t243\toacute\n^o\t600,679,12,60,-31,60\t2\t244\tocir"..., 4096) = 598
+493   read(5, "", 4096)                 = 0
+493   close(5)                          = 0
+493   read(4, "1 rgb #363636\n.defcolor grey22 rgb #383838\n.defcolor grey23 rgb #3b3b3b\n.defcolor grey24 rgb #3d3d3d\n.defcolor grey25 rgb #40404"..., 4096) = 4096
+493   read(4, "urquoise4 rgb #668b8b\n.defcolor powderblue rgb #b0e0e6\n.defcolor royalblue rgb #4169e1\n.defcolor royalblue1 rgb #4876ff\n.defcolo"..., 4096) = 4096
+493   brk(0x55721737b000)               = 0x55721737b000
+493   read(4, "0\n.defcolor chartreuse4 rgb #458b00\n.defcolor green rgb #00ff00\n.defcolor green1 rgb #00ff00\n.defcolor green2 rgb #00ee00\n.defco"..., 4096) = 4096
+493   read(4, "lavenderblush4 rgb #8b8386\n.defcolor mediumorchid rgb #ba55d3\n.defcolor mediumorchid1 rgb #e066ff\n.defcolor mediumorchid2 rgb #d"..., 4096) = 4096
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/latin1.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/latin1.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/latin1.tmac", O_RDONLY) = 5
+493   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2272, ...}, AT_EMPTY_PATH) = 0
+493   read(5, ".\\\" -*- nroff -*-\n.\\\"\n.\\\" latin1.tmac\n.\\\"\n.nr _C \\n(.C\n.cp 0\n.\\\" 0xA1\n.trin \\[char161]\\[r!]\n.trin \\[char162]\\[ct]\n.trin \\[char16"..., 4096) = 2272
+493   read(5, "", 4096)                 = 0
+493   close(5)                          = 0
+493   read(4, "tmac\n.\n.do mso europs.tmac\n.\n.\\\" make sure that no blank lines creep in at the end of this file.\n", 4096) = 97
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/europs.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/europs.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/europs.tmac", O_RDONLY) = 5
+493   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=1689, ...}, AT_EMPTY_PATH) = 0
+493   read(5, ".\\\" -*- nroff -*-\n.\\\"\n.\\\" europs.tmac\n.\n.do char \\[eu] \\f[EURO]\\N'0'\n.\n.do if F AB   .do fschar AB   \\[Eu] \\f[EURO]\\N'1'\n.do if "..., 4096) = 1689
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/AB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/AB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10529, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Demi\n#   Version 0"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/AB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/AB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10529, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Demi\n#   Version 0"..., 4096) = 4096
+493   read(6, "00\n:Y `a -100\n:Y oa -100\n:Y ~a -100\n:Y : -8\n:Y , -8\n:Y e -100\n:Y 'e -100\n:Y ^e -100\n:Y :e -100\n:Y `e -100\n:Y - -60\n:Y hy -60\n:Y "..., 4096) = 4096
+493   read(6, "\t420,759\t2\t175\tmacron\nde\t400,712\t0\t176\tdegree\nt+-\t600,556,62\t0\t177\tplusminus\nS2\t336,749\t2\t178\ttwosuperior\nS3\t336,749\t2\t179\tthree"..., 4096) = 2337
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/ABI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/ABI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12978, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Demi Oblique\n#   V"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/ABI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/ABI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12978, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Demi Oblique\n#   V"..., 4096) = 4096
+493   read(6, "a -100\n:Y ^a -100\n:Y :a -100\n:Y `a -100\n:Y oa -100\n:Y ~a -100\n:Y : -8\n:Y , -8\n:Y e -100\n:Y 'e -100\n:Y ^e -100\n:Y :e -100\n:Y `e -"..., 4096) = 4096
+493   read(6, "0,133,141,0,4\t0\t128\tquotesinglbase\nFo\t460,469,0,77,-55,77\t0\t129\tguillemotleft\nFc\t460,469,0,54,-31,54\t0\t130\tguillemotright\nbu\t600"..., 4096) = 4096
+493   read(6, "x\n:i\t240,769,0,245,-3,82\t2\t239\tidieresis\nSd\t640,754,18,109,-23,82\t2\t240\teth\n~n\t600,767,0,74,-4,74\t2\t241\tntilde\n`o\t640,851,18,82,"..., 4096) = 690
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/AI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/AI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12789, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Book Oblique\n#   V"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/AI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/AI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12789, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Book Oblique\n#   V"..., 4096) = 4096
+493   read(6, "89\n:Y i 13\n:Y 'i 13\n:Y ^i 23\n:Y :i 23\n:Y `i 23\n:Y o -89\n:Y 'o -89\n:Y ^o -89\n:Y :o -89\n:Y `o -89\n:Y /o -89\n:Y ~o -89\n:Y p -67\n:Y "..., 4096) = 4096
+493   read(6, "153,166,90,81\t2\t132\tflorin\nf/\t166,740,0,302,163,81\t2\t133\tfraction\n%0\t1174,751,13,58,-78,58\t2\t134\tperthousand\ndg\t553,740,133,90,-"..., 4096) = 4096
+493   read(6, "55,764,13,65,-37,65\t2\t244\tocircumflex\n~o\t655,754,13,65,-37,65\t2\t245\totilde\n:o\t655,765,13,65,-37,65\t2\t246\todieresis\ntdi\t606,519,1"..., 4096) = 501
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/AR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/AR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10307, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Book\n#   Version 0"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/AR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/AR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10307, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Avant Garde Gothic Book\n#   Version 0"..., 4096) = 4096
+493   read(6, " 23\n:Y :i 23\n:Y `i 23\n:Y o -89\n:Y 'o -89\n:Y ^o -89\n:Y :o -89\n:Y `o -89\n:Y /o -89\n:Y ~o -89\n:Y p -67\n:Y . -65\n:Y q -93\n:Y ; -23\n:"..., 4096) = 4096
+493   brk(0x55721739c000)               = 0x55721739c000
+493   read(6, "4,740,110\t2\t182\tparagraph\npc\t277,316\t0\t183\tperiodcentered\nac\t324,3,222\t1\t184\tcedilla\nS1\t332,740\t2\t185\tonesuperior\nOm\t369,753\t2\t1"..., 4096) = 2115
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10388, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Demi\n#   Version 003.001\n#   "..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10388, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Demi\n#   Version 003.001\n#   "..., 4096) = 4096
+493   read(6, "\n:Y . -105\n:Y q -66\n:Y ; -34\n:Y u -13\n:Y 'u -13\n:Y ^u -13\n:Y :u -13\n:Y `u -13\n:Y v 24\nf f 21\nr c -9\nr ,c -9\nr , -101\nr d -10\nr e"..., 4096) = 4096
+493   read(6, "731\t2\t180\tacute\n*m\t679,502,205,3\t0\t181\tmu\nmc\t\"\nps\t800,681\t2\t182\tparagraph\npc\t340,355\t0\t183\tperiodcentered\nac\t360,0,213\t1\t184\tced"..., 4096) = 2196
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12607, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Demi Italic\n#   Version 003.0"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12607, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Demi Italic\n#   Version 003.0"..., 4096) = 4096
+493   read(6, "3\n:Y q -43\n:Y ; -4\n:Y u -1\n:Y 'u -1\n:Y ^u -1\n:Y :u -1\n:Y `u -1\n:Y v 26\nf f 10\nr c -5\nr ,c -5\nr , -113\nr d -3\nr e -6\nr 'e -6\nr ^e"..., 4096) = 4096
+493   read(6, "er\ndd\t420,698,137,116,-29,73\t2\t136\tdaggerdbl\nen\t500,311,0,123,10,73\t0\t137\tendash\nem\t1000,311,0,123,10,73\t0\t138\temdash\nfi\t820,741"..., 4096) = 4096
+493   read(6, "73\t0\t248\toslash\n`u\t680,771,8,90,-33,73\t2\t249\tugrave\n'u\t680,771,8,90,-33,73\t2\t250\tuacute\n^u\t680,749,8,90,-33,73\t2\t251\tucircumflex"..., 4096) = 319
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12206, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Light Italic\n#   Version 003."..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12206, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Light Italic\n#   Version 003."..., 4096) = 4096
+493   read(6, "5,42,70\t2\t3\tZcaron\nvs\t540,684,8,61,-15,61\t2\t4\tscaron\nvz\t520,684,8,91,12,70\t2\t5\tzcaron\n:Y\t660,865,0,199,-37,70\t2\t6\tYdieresis\ntm\t9"..., 4096) = 4096
+493   read(6, "300,706,0,84,-128,70\t2\t151\tring\nho\t260,0,153,72,-21,70\t0\t152\togonek\nlq\t440,698,0,103,-141,70\t2\t153\tquotedblleft\nrq\t440,698,0,61,"..., 4096) = 4014
+493   brk(0x5572173bf000)               = 0x5572173bf000
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10071, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Light\n#   Version 003.001\n#  "..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/BMR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/BMR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10071, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName ITC Bookman Light\n#   Version 003.001\n#  "..., 4096) = 4096
+493   read(6, "\t600,352\t0\t1\tasciitilde\nvS\t660,849,17\t2\t2\tScaron\nvZ\t640,849,0,16\t2\t3\tZcaron\nvs\t520,672,8\t2\t4\tscaron\nvz\t480,672\t2\t5\tzcaron\n:Y\t640"..., 4096) = 4096
+493   read(6, "quarters\nr?\t540,494,217\t0\t191\tquestiondown\n`A\t680,866,0,34,37\t2\t192\tAgrave\n'A\t680,866,0,34,37\t2\t193\tAacute\n^A\t680,862,0,34,37\t2\t"..., 4096) = 1879
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=17817, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Bold\n#   Version 003.001\n#   Fa"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=17817, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Bold\n#   Version 003.001\n#   Fa"..., 4096) = 4096
+493   read(6, "O . -40\n^O A -50\n^O 'A -50\n^O ^A -50\n^O :A -50\n^O `A -50\n^O oA -50\n^O ~A -50\n^O T -40\n^O V -50\n^O W -50\n^O X -50\n^O Y -70\n^O 'Y "..., 4096) = 4096
+493   read(6, "Y u -100\n:Y 'u -100\n:Y ^u -100\n:Y :u -100\n:Y `u -100\na g -10\na v -15\na w -15\na y -20\na 'y -20\na :y -20\n'a g -10\n'a v -15\n'a w -1"..., 4096) = 4096
+493   read(6, "8\tampersand\n'\t278,718\t2\t39\tquoteright\ncq\t\"\n(\t333,734,208\t3\t40\tparenleft\n)\t333,734,208\t3\t41\tparenright\n*\t389,718\t2\t42\tasterisk\n+\t"..., 4096) = 4096
+493   read(6, "cumflex\n:I\t278,915,0,22,21\t2\t207\tIdieresis\n-D\t722,718,0,0,5\t2\t208\tEth\n~N\t722,923\t2\t209\tNtilde\n`O\t778,936,19\t2\t210\tOgrave\n'O\t778,"..., 4096) = 1433
+493   read(6, "", 4096)                 = 0
+493   brk(0x5572173e0000)               = 0x5572173e0000
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=20225, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Bold Oblique\n#   Version 003.00"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=20225, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Bold Oblique\n#   Version 003.00"..., 4096) = 4096
+493   read(6, " -70\n'O :Y -70\n'O , -40\n'O . -40\n^O A -50\n^O 'A -50\n^O ^A -50\n^O :A -50\n^O `A -50\n^O oA -50\n^O ~A -50\n^O T -40\n^O V -50\n^O W -50"..., 4096) = 4096
+493   read(6, "-100\n:Y . -100\n:Y ; -50\n:Y u -100\n:Y 'u -100\n:Y ^u -100\n:Y :u -100\n:Y `u -100\na g -10\na v -15\na w -15\na y -20\na 'y -20\na :y -20\n"..., 4096) = 4096
+493   read(6, "0,114,-44,90\t2\t33\texclam\n\"\t474,718,0,105,-143,90\t2\t34\tquotedbl\ndq\t\"\n#\t556,698,0,139,-10,90\t2\t35\tnumbersign\nsh\t\"\n$\t556,775,115,11"..., 4096) = 4096
+493   read(6, ",180,10,90\t2\t156\tlslash\nBq\t500,127,146,13,15,13\t0\t157\tquotedblbase\nOE\t1000,737,19,164,-48,90\t2\t158\tOE\n/L\t611,718,0,50,16,50\t2\t15"..., 4096) = 3841
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=21362, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Oblique\n#   Version 003.001\n#  "..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=21362, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Oblique\n#   Version 003.001\n#  "..., 4096) = 4096
+493   read(6, "0\nO Y -70\nO 'Y -70\nO :Y -70\nO , -40\nO . -40\n'O A -20\n'O 'A -20\n'O ^A -20\n'O :A -20\n'O `A -20\n'O oA -20\n'O ~A -20\n'O T -40\n'O V -"..., 4096) = 4096
+493   read(6, "\n:Y oA -110\n:Y ~A -110\n:Y O -85\n:Y 'O -85\n:Y ^O -85\n:Y :O -85\n:Y `O -85\n:Y /O -85\n:Y ~O -85\n:Y a -140\n:Y 'a -140\n:Y ^a -140\n:Y :"..., 4096) = 4096
+493   read(6, "^e -20\ny :e -20\ny `e -20\ny o -20\ny 'o -20\ny ^o -20\ny :o -20\ny `o -20\ny /o -20\ny ~o -20\ny . -100\n'y a -20\n'y 'a -20\n'y ^a -20\n'y "..., 4096) = 4096
+493   brk(0x557217401000)               = 0x557217401000
+493   read(6, ",523,0,122,19,89\t0\t122\tz\n{\t334,722,196,162,-41,89\t2\t123\tbraceleft\nlC\t\"\n|\t260,775,225,122,4,89\t3\t124\tbar\nba\t\"\n}\t334,722,196,71,50"..., 4096) = 4096
+493   read(6, "\t556,734,15,73,-34,73\t2\t234\tecircumflex\n:e\t556,706,15,73,-34,73\t2\t235\tedieresis\n`i\t278,734,0,83,-45,83\t2\t236\tigrave\n'i\t278,734,0"..., 4096) = 882
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=18880, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica\n#   Version 003.001\n#   FamilyN"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=18880, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica\n#   Version 003.001\n#   FamilyN"..., 4096) = 4096
+493   read(6, "70\nO , -40\nO . -40\n'O A -20\n'O 'A -20\n'O ^A -20\n'O :A -20\n'O `A -20\n'O oA -20\n'O ~A -20\n'O T -40\n'O V -50\n'O W -30\n'O X -60\n'O Y"..., 4096) = 4096
+493   read(6, " O -85\n:Y 'O -85\n:Y ^O -85\n:Y :O -85\n:Y `O -85\n:Y /O -85\n:Y ~O -85\n:Y a -140\n:Y 'a -140\n:Y ^a -140\n:Y :a -140\n:Y `a -140\n:Y oa -"..., 4096) = 4096
+493   read(6, "y o -20\ny 'o -20\ny ^o -20\ny :o -20\ny `o -20\ny /o -20\ny ~o -20\ny . -100\n'y a -20\n'y 'a -20\n'y ^a -20\n'y :a -20\n'y `a -20\n'y oa -2"..., 4096) = 4096
+493   read(6, "168\tdieresis\nco\t737,737,19,15,14\t2\t169\tcopyright\nOf\t370,737\t2\t170\tordfeminine\nfo\t333,446\t0\t171\tguilsinglleft\ntno\t584,390\t0\t172\tl"..., 4096) = 2496
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=17829, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow Bold\n#   Version 003.001"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=17829, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow Bold\n#   Version 003.001"..., 4096) = 4096
+493   read(6, " -70\n'O , -40\n'O . -40\n^O A -50\n^O 'A -50\n^O ^A -50\n^O :A -50\n^O `A -50\n^O oA -50\n^O ~A -50\n^O T -40\n^O V -50\n^O W -50\n^O X -50\n"..., 4096) = 4096
+493   brk(0x557217422000)               = 0x557217422000
+493   read(6, "-100\n:Y ; -50\n:Y u -100\n:Y 'u -100\n:Y ^u -100\n:Y :u -100\n:Y `u -100\na g -10\na v -15\na w -15\na y -20\na 'y -20\na :y -20\n'a g -10\n'"..., 4096) = 4096
+493   read(6, "592,718,19\t2\t38\tampersand\n'\t228,718\t2\t39\tquoteright\ncq\t\"\n(\t273,734,208\t3\t40\tparenleft\n)\t273,734,208\t3\t41\tparenright\n*\t319,718\t2\t"..., 4096) = 4096
+493   read(6, "31\t2\t206\tIcircumflex\n:I\t228,915,0,19,18\t2\t207\tIdieresis\n-D\t592,718,0,0,5\t2\t208\tEth\n~N\t592,923\t2\t209\tNtilde\n`O\t638,936,19\t2\t210\tO"..., 4096) = 1445
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=20146, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow Bold Oblique\n#   Version"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=20146, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow Bold Oblique\n#   Version"..., 4096) = 4096
+493   read(6, "\n'O Y -70\n'O 'Y -70\n'O :Y -70\n'O , -40\n'O . -40\n^O A -50\n^O 'A -50\n^O ^A -50\n^O :A -50\n^O `A -50\n^O oA -50\n^O ~A -50\n^O T -40\n^O"..., 4096) = 4096
+493   read(6, " /o -100\n:Y ~o -100\n:Y . -100\n:Y ; -50\n:Y u -100\n:Y 'u -100\n:Y ^u -100\n:Y :u -100\n:Y `u -100\na g -10\na v -15\na w -15\na y -20\na '"..., 4096) = 4096
+493   read(6, "73,718,0,103,-27,90\t2\t33\texclam\n\"\t389,718,0,95,-108,90\t2\t34\tquotedbl\ndq\t\"\n#\t456,698,0,123,1,90\t2\t35\tnumbersign\nsh\t\"\n$\t456,775,11"..., 4096) = 4096
+493   brk(0x557217443000)               = 0x557217443000
+493   read(6, ",21,20\t0\t157\tquotedblbase\nOE\t820,737,19,144,-30,90\t2\t158\tOE\n/L\t501,718,0,50,22,50\t2\t159\tLslash\nr!\t273,532,186,67,9,67\t0\t161\texcl"..., 4096) = 3762
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=21304, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow Oblique\n#   Version 003."..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=21304, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow Oblique\n#   Version 003."..., 4096) = 4096
+493   read(6, "\nO W -30\nO X -60\nO Y -70\nO 'Y -70\nO :Y -70\nO , -40\nO . -40\n'O A -20\n'O 'A -20\n'O ^A -20\n'O :A -20\n'O `A -20\n'O oA -20\n'O ~A -20\n"..., 4096) = 4096
+493   read(6, "-110\n:Y `A -110\n:Y oA -110\n:Y ~A -110\n:Y O -85\n:Y 'O -85\n:Y ^O -85\n:Y :O -85\n:Y `O -85\n:Y /O -85\n:Y ~O -85\n:Y a -140\n:Y 'a -140\n"..., 4096) = 4096
+493   read(6, "-20\ny 'e -20\ny ^e -20\ny :e -20\ny `e -20\ny o -20\ny 'o -20\ny ^o -20\ny :o -20\ny `o -20\ny /o -20\ny ~o -20\ny . -100\n'y a -20\n'y 'a -2"..., 4096) = 4096
+493   read(6, "\n{\t274,722,196,142,-25,89\t2\t123\tbraceleft\nlC\t\"\n|\t213,775,225,110,13,89\t3\t124\tbar\nba\t\"\n}\t274,722,196,67,50,67\t2\t125\tbraceright\nrC"..., 4096) = 4096
+493   read(6, ",-19,69\t2\t235\tedieresis\n`i\t228,734,0,77,-27,77\t2\t236\tigrave\n'i\t228,734,0,190,-27,89\t2\t237\tiacute\n^i\t228,734,0,160,-27,89\t2\t238\ti"..., 4096) = 824
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=18892, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow\n#   Version 003.001\n#   "..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/HNR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/HNR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=18892, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Helvetica Narrow\n#   Version 003.001\n#   "..., 4096) = 4096
+493   read(6, "O 'Y -70\nO :Y -70\nO , -40\nO . -40\n'O A -20\n'O 'A -20\n'O ^A -20\n'O :A -20\n'O `A -20\n'O oA -20\n'O ~A -20\n'O T -40\n'O V -50\n'O W -3"..., 4096) = 4096
+493   brk(0x557217464000)               = 0x557217464000
+493   read(6, "0\n:Y ~A -110\n:Y O -85\n:Y 'O -85\n:Y ^O -85\n:Y :O -85\n:Y `O -85\n:Y /O -85\n:Y ~O -85\n:Y a -140\n:Y 'a -140\n:Y ^a -140\n:Y :a -140\n:Y "..., 4096) = 4096
+493   read(6, "e -20\ny `e -20\ny o -20\ny 'o -20\ny ^o -20\ny :o -20\ny `o -20\ny /o -20\ny ~o -20\ny . -100\n'y a -20\n'y 'a -20\n'y ^a -20\n'y :a -20\n'y "..., 4096) = 4096
+493   read(6, "\nad\t273,706\t2\t168\tdieresis\nco\t604,737,19,13,12\t2\t169\tcopyright\nOf\t303,737\t2\t170\tordfeminine\nfo\t273,446\t0\t171\tguilsinglleft\ntno\t4"..., 4096) = 2508
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12835, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Bold\n#   Version 0"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12835, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Bold\n#   Version 0"..., 4096) = 4096
+493   read(6, "18\n`U :A -18\n`U `A -18\n`U oA -18\n`U ~A -18\n`U , -25\n`U . -25\nV A -74\nV 'A -74\nV ^A -74\nV :A -74\nV `A -74\nV oA -74\nV ~A -74\nV a -"..., 4096) = 4096
+493   read(6, "\nP\t759,722\t2\t80\tP\nQ\t833,737,189\t2\t81\tQ\nR\t815,722,15\t2\t82\tR\nS\t667,737,15\t2\t83\tS\nT\t722,722\t2\t84\tT\nU\t833,722,15\t2\t85\tU\nV\t759,722,10"..., 4096) = 4096
+493   read(6, "7\tiacute\n^i\t370,725\t2\t238\ticircumflex\n:i\t370,694\t2\t239\tidieresis\nSd\t611,737,15\t2\t240\teth\n~n\t685,705\t2\t241\tntilde\n`o\t611,737,15\t2"..., 4096) = 547
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=19915, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Bold Italic\n#   Ve"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=19915, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Bold Italic\n#   Ve"..., 4096) = 4096
+493   read(6, "00\n/L y -30\n/L 'y -30\n/L :y -30\nN , -49\nN . -49\n~N , -49\n~N . -49\nO A -5\nO 'A -5\nO ^A -5\nO :A -5\nO `A -5\nO oA -5\nO ~A -5\nO V -24"..., 4096) = 4096
+493   brk(0x557217485000)               = 0x557217485000
+493   read(6, "8\n:a 'y -8\n:a :y -8\n`a v 6\n`a w -8\n`a y -8\n`a 'y -8\n`a :y -8\noa v 6\noa w -8\noa y -8\noa 'y -8\noa :y -8\n~a v 6\n~a w -8\n~a y -8\n~a "..., 4096) = 4096
+493   read(6, "7\ttrademark\naq\t287,737,0,13,-62,13\t2\t8\tquotesingle\nEu\t574,705,15,117,68,109\t2\t9\tEuro\nspace\t287\t0\t32\tspace\n!\t333,737,15,50,50,50\t"..., 4096) = 4096
+493   read(6, "\t159\tLslash\nr!\t333,547,205,6,94,6\t1\t161\texclamdown\nct\t574,578,144,0,20\t0\t162\tcent\nPo\t574,705,15,42,68,42\t2\t163\tsterling\nCs\t574,6"..., 4096) = 3531
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=16784, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Italic\n#   Version"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=16784, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Italic\n#   Version"..., 4096) = 4096
+493   read(6, "'O T 18\n'O V -18\n'O X -18\n'O Y -18\n'O 'Y -18\n'O :Y -18\n'O , -50\n'O . -50\n^O T 18\n^O V -18\n^O X -18\n^O Y -18\n^O 'Y -18\n^O :Y -18\n"..., 4096) = 4096
+493   read(6, " -50\np . -50\n. rq -37\n. ' -37\n. cq -37\n. u0020 -37\nlq A -75\nlq 'A -75\nlq ^A -75\nlq :A -75\nlq `A -75\nlq oA -75\nlq ~A -75\nrq u0020"..., 4096) = 4096
+493   read(6, "2\t126\ttilde\na~\t\"\nbq\t204,109,165,0,128\t0\t128\tquotesinglbase\nFo\t426,402,0,26,65,26\t0\t129\tguillemotleft\nFc\t426,402,0,26,65,26\t0\t130"..., 4096) = 4096
+493   read(6, ",649,15,17,48,17\t2\t245\totilde\n:o\t500,646,15,0,48\t2\t246\todieresis\ntdi\t606,528,22\t0\t247\tdivide\n/o\t500,549,121,0,48\t0\t248\toslash\n`u"..., 4096) = 400
+493   read(6, "", 4096)                 = 0
+493   brk(0x5572174a6000)               = 0x5572174a6000
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=14449, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Roman\n#   Version "..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/NR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/NR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=14449, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName New Century Schoolbook Roman\n#   Version "..., 4096) = 4096
+493   read(6, "^a -55\nT :a -55\nT `a -55\nT oa -55\nT ~a -55\nT : -37\nT , -125\nT e -55\nT 'e -55\nT ^e -55\nT :e -55\nT `e -55\nT - -100\nT hy -100\nT o -"..., 4096) = 4096
+493   read(6, "0020 `A -37\nu0020 oA -37\nu0020 ~A -37\nu0020 T -37\nu0020 V -37\nu0020 W -37\nu0020 Y -37\nu0020 'Y -37\nu0020 :Y -37\nu0020 lq -37\nu00"..., 4096) = 4096
+493   read(6, "0\tacute\n*m\t611,464,205\t1\t181\tmu\nmc\t\"\nps\t606,722,132\t2\t182\tparagraph\npc\t278,374\t0\t183\tperiodcentered\nac\t333,0,215\t1\t184\tcedilla\nS"..., 4096) = 2161
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10843, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Bold\n#   Version 003.001\n#   Fam"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10843, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Bold\n#   Version 003.001\n#   Fam"..., 4096) = 4096
+493   read(6, "-74\n'Y :u -74\n'Y `u -74\n'Y v -74\n:Y A -55\n:Y 'A -55\n:Y ^A -55\n:Y :A -55\n:Y `A -55\n:Y oA -55\n:Y ~A -55\n:Y a -74\n:Y 'a -74\n:Y ^a -"..., 4096) = 4096
+493   read(6, "9,1,2\t2\t163\tsterling\nCs\t500,533\t0\t164\tcurrency\nYe\t500,695,3\t2\t165\tyen\nbb\t606,675,175\t2\t166\tbrokenbar\nsc\t500,695,217\t2\t167\tsectio"..., 4096) = 2651
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=13044, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Bold Italic\n#   Version 003.001\n"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=13044, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Bold Italic\n#   Version 003.001\n"..., 4096) = 4096
+493   read(6, "111\n'Y /o -111\n'Y ~o -111\n'Y p -74\n'Y . -55\n'Y q -92\n'Y ; -55\n'Y u -50\n'Y 'u -50\n'Y ^u -50\n'Y :u -50\n'Y `u -50\n'Y v -30\n:Y A -55"..., 4096) = 4096
+493   brk(0x5572174c7000)               = 0x5572174c7000
+493   read(6, "33,469,17,19,23,19\t0\t119\tw\nx\t500,469,17,50,58,50\t0\t120\tx\ny\t556,469,271,35,37,35\t1\t121\ty\nz\t500,469,17,20,19,20\t0\t122\tz\n{\t333,720,"..., 4096) = 4096
+493   read(6, "9,17,39,24,39\t2\t236\tigrave\n'i\t333,719,17,109,24,66\t2\t237\tiacute\n^i\t333,712,17,120,24,66\t2\t238\ticircumflex\n:i\t333,668,17,143,24,6"..., 4096) = 756
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12961, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Italic\n#   Version 003.001\n#   F"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=12961, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Italic\n#   Version 003.001\n#   F"..., 4096) = 4096
+493   read(6, " /o -111\n'Y ~o -111\n'Y p -74\n'Y . -92\n'Y q -92\n'Y ; -74\n'Y u -92\n'Y 'u -92\n'Y ^u -92\n'Y :u -92\n'Y `u -92\n'Y v -74\n:Y A -92\n:Y 'A"..., 4096) = 4096
+493   read(6, ",58,40\t1\t121\ty\nz\t444,482,11,22,51,22\t0\t122\tz\n{\t333,733,100,36,35,36\t2\t123\tbraceleft\nlC\t\"\n|\t606,750,250,0,-225\t2\t124\tbar\nba\t\"\n}\t3"..., 4096) = 4096
+493   read(6, "\t2\t238\ticircumflex\n:i\t278,657,9,127,16,68\t2\t239\tidieresis\nSd\t444,733,11,84,33,68\t2\t240\teth\n~n\t556,658,9,8,26,8\t2\t241\tntilde\n`o\t4"..., 4096) = 673
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=11185, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Roman\n#   Version 003.001\n#   Fa"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/PR", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/PR", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=11185, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Palatino Roman\n#   Version 003.001\n#   Fa"..., 4096) = 4096
+493   read(6, "o -92\n'Y /o -92\n'Y ~o -92\n'Y p -111\n'Y . -111\n'Y q -90\n'Y ; -74\n'Y u0020 -18\n'Y u -90\n'Y 'u -90\n'Y ^u -90\n'Y :u -90\n'Y `u -90\n'Y"..., 4096) = 4096
+493   read(6, "\t333,677\t2\t150\tcaron\nao\t333,696\t2\t151\tring\nho\t313,0,225\t0\t152\togonek\nlq\t500,709\t2\t153\tquotedblleft\nrq\t500,709\t2\t154\tquotedblrigh"..., 4096) = 2993
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/TB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/TB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=9065, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Times Bold\n#   Version 003.001\n#   Family"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/TB", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/TB", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=9065, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Times Bold\n#   Version 003.001\n#   Family"..., 4096) = 4096
+493   brk(0x5572174e8000)               = 0x5572174e8000
+493   read(6, "\n<\t570,514,8\t0\t60\tless\n=\t570,399\t0\t61\tequal\n>\t570,514,8\t0\t62\tgreater\n?\t500,689,13\t2\t63\tquestion\n@\t930,691,19\t2\t64\tat\nat\t\"\nA\t722,"..., 4096) = 4096
+493   read(6, "cumflex\n~a\t500,674,14\t2\t227\tatilde\n:a\t500,667,14\t2\t228\tadieresis\noa\t500,740,14\t2\t229\taring\nae\t722,473,14\t0\t230\tae\n,c\t444,473,218"..., 4096) = 873
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/TBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/TBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10851, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Times Bold Italic\n#   Version 003.001\n#  "..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/TBI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/TBI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10851, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Times Bold Italic\n#   Version 003.001\n#  "..., 4096) = 4096
+493   read(6, "0,75,-2,75\t2\t55\tseven\n8\t500,683,13,26,47,26\t2\t56\teight\n9\t500,683,10,25,62,25\t2\t57\tnine\n:\t333,459,13,0,27\t0\t58\tcolon\n;\t333,459,18"..., 4096) = 4096
+493   read(6, "ered\nac\t333,5,218,0,130\t1\t184\tcedilla\nS1\t300,683,0,51,20,51\t2\t185\tonesuperior\nOm\t300,685,0,97,-6,97\t2\t186\tordmasculine\nfc\t333,41"..., 4096) = 2659
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/TI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/TI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=11042, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Times Italic\n#   Version 003.001\n#   Fami"..., 4096) = 4096
+493   close(6)                          = 0
+493   openat(AT_FDCWD, "/usr/share/groff/site-font/devps/TI", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/font/devps/TI", O_RDONLY) = 6
+493   newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=11042, ...}, AT_EMPTY_PATH) = 0
+493   read(6, "# This file has been generated with GNU afmtodit (groff) version 1.20.1\n#\n#   FullName Times Italic\n#   Version 003.001\n#   Fami"..., 4096) = 4096
+493   read(6, "49,29\t2\t52\tfour\n5\t500,666,7,41,35,41\t2\t53\tfive\n6\t500,686,7,71,20,43\t2\t54\tsix\n7\t500,666,8,87,-25,43\t2\t55\tseven\n8\t500,676,7,43,20,"..., 4096) = 4096
+493   read(6, "2\t180\tacute\n*m\t514,428,208,15,93,15\t1\t181\tmu\nmc\t\"\nps\t523,653,123,143,-5,43\t2\t182\tparagraph\npc\t250,310,0,0,-20\t0\t183\tperiodcenter"..., 4096) = 2850
+493   read(6, "", 4096)                 = 0
+493   close(6)                          = 0
+493   read(5, "", 4096)                 = 0
+493   close(5)                          = 0
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/hyphen.us", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/hyphen.us", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/hyphen.us", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=28121, ...}, AT_EMPTY_PATH) = 0
+493   read(4, "% The Plain TeX hyphenation tables [NOT TO BE CHANGED IN ANY WAY!]\n% Unlimited copying and redistribution of this file are permi"..., 4096) = 4096
+493   brk(0x557217509000)               = 0x557217509000
+493   read(4, "\n4b1ora\nbor5d\n5bore\n5bori\n5bos4\nb5ota\nboth5\nbo4to\nbound3\n4bp\n4brit\nbroth3\n2b5s2\nbsor4\n2bt\nbt4l\nb4to\nb3tr\nbuf4fer\nbu4ga\nbu3li\nbum"..., 4096) = 4096
+493   read(4, "rati.\n2erb\ner4bl\ner3ch\ner4che\n2ere.\ne3real\nere5co\nere3in\ner5el.\ner3emo\ner5ena\ner5ence\n4erene\ner3ent\nere4q\ner5ess\ner3est\neret4\ner"..., 4096) = 4096
+493   brk(0x55721752a000)               = 0x55721752a000
+493   read(4, "v\nincel4\nin3cer\n4ind\nin5dling\n2ine\ni3nee\niner4ar\ni5ness\n4inga\n4inge\nin5gen\n4ingi\nin5gling\n4ingo\n4ingu\n2ini\ni5ni.\ni4nia\nin3io\nin1"..., 4096) = 4096
+493   read(4, "l5iz\nne5mi\nne4mo\n1nen\n4nene\n3neo\nne4po\nne2q\nn1er\nnera5b\nn4erar\nn2ere\nn4er5i\nner4r\n1nes\n2nes.\n4nesp\n2nest\n4nesw\n3netic\nne4v\nn5eve"..., 4096) = 4096
+493   brk(0x55721754b000)               = 0x55721754b000
+493   read(4, "bine\nrb5ing.\nrb4o\nr1c\nr2ce\nrcen4\nr3cha\nrch4er\nr4ci4b\nrc4it\nrcum3\nr4dal\nrd2i\nrdi4a\nrdi4er\nrdin4\nrd3ing\n2re.\nre1al\nre3an\nre5arr\n5r"..., 4096) = 4096
+493   read(4, "\nto3b\nto5crat\n4todo\n2tof\nto2gr\nto5ic\nto2ma\ntom4b\nto3my\nton4ali\nto3nat\n4tono\n4tony\nto2ra\nto3rie\ntor5iz\ntos2\n5tour\n4tout\nto3war\n4t"..., 4096) = 3545
+493   brk(0x55721756c000)               = 0x55721756c000
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/hyphenex.us", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/hyphenex.us", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/hyphenex.us", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=21756, ...}, AT_EMPTY_PATH) = 0
+493   read(4, "% Hyphenation exceptions for US English,\n% based on hyphenation exception log articles in TUGboat.\n%\n% Copyright 2008 TeX Users "..., 4096) = 4096
+493   read(4, "s-over\n  cryp-to-gram\n  cryp-to-grams\n  cuff-link\n  cuff-links\n  cu-nei-form\n  cus-tom-iz-a-ble\n  cus-tom-ize\n  cus-tom-izes\n  c"..., 4096) = 4096
+493   read(4, "w-ees\n  in-utile\n  in-util-i-ty\n  ir-ra-tio-nal\n  ir-re-duc-ible\n  ir-re-duc-ibly\n  ir-rev-o-ca-ble\n  iso-geo-met-ric\n  iso-geo-"..., 4096) = 4096
+493   read(4, "-to-off-set\n  phtha-lam-ic\n  phthal-ate\n  phthi-sis\n  pic-a-dor\n  pic-a-dors\n  pipe-line\n  pipe-lines\n  pipe-lin-ing\n  pi-ra-nha"..., 4096) = 4096
+493   brk(0x557217590000)               = 0x557217590000
+493   mmap(NULL, 163840, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f27ebb4d000
+493   read(4, "noid\n  so-le-noids\n  solute\n  solutes\n  sov-er-eign\n  sov-er-eigns\n  spa-ces\n  spe-cious\n  spell-er\n  spell-ers\n  spell-ing\n  sp"..., 4096) = 4096
+493   brk(0x557217581000)               = 0x557217581000
+493   read(4, "i-cro-soft\n  Min-kow-ski\n  Min-ne-ap-o-lis\n  Min-ne-sota\n  Mont-real\n  Mos-cow\n  Nach-rich-ten\n  Nash-ville\n  Net-BSD\n  Net-scap"..., 4096) = 1276
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/papersize.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/papersize.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/papersize.tmac", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=4332, ...}, AT_EMPTY_PATH) = 0
+493   read(4, ".\\\" papersize.tmac\n.\\\"\n.\\\" Set up groff for various paper sizes.\n.\\\"\n.\\\" Usage:\n.\\\"\n.\\\"   groff ... -dpaper=<format> ...\n.\\\"\n.\\\""..., 4096) = 4096
+493   read(4, "================================\n.\\\" Editor settings\n.\\\" ====================================================================\n.\n"..., 4096) = 236
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/pspic.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/pspic.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/pspic.tmac", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=4998, ...}, AT_EMPTY_PATH) = 0
+493   read(4, ".\\\" pspic.tmac\n.\\\"\n.\\\" Define the PSPIC macro.\n.\\\"\n.\\\" When used other than with -Tps, -Tdvi, -Thtml, or -Txhtml it draws a\n.\\\" "..., 4096) = 4096
+493   read(4, "   ds ps-desht \\\" empty\n.\n\\h'\\\\n[ps-offset]u'\\\n\\\\*[ps-invis]\\\n\\# horizontally, the rectangle is slightly smaller than the image\n"..., 4096) = 902
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/pdfpic.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/pdfpic.tmac", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/pdfpic.tmac", O_RDONLY) = 4
+493   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=3758, ...}, AT_EMPTY_PATH) = 0
+493   read(4, ".\\\" pdfpic.tmac\n.\\\"\n.\\\" Define the PDFPIC macro.\n.\\\"\n.\\\" When used other than with gropdf, the image is converted to .eps\n.\\\" an"..., 4096) = 3758
+493   read(4, "", 4096)                 = 0
+493   close(4)                          = 0
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   openat(AT_FDCWD, "/usr/lib/groff/site-tmac/troffrc-end", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/site-tmac/troffrc-end", O_RDONLY) = -1 ENOENT (No such file or directory)
+493   openat(AT_FDCWD, "/usr/share/groff/1.22.4/tmac/troffrc-end", O_RDONLY) = 3
+493   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1167, ...}, AT_EMPTY_PATH) = 0
+493   read(3, ".\\\" -*- nroff -*-\n.\\\"\n.\\\" final startup file for troff\n.\n.\\\" this file is parsed after all macro sets have been read\n.\n.do if '\\"..., 4096) = 1167
+493   read(3, "", 4096)                 = 0
+493   close(3)                          = 0
+493   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=175, ...}, AT_EMPTY_PATH) = 0
+493   read(0, "", 4096)                 = 0
+493   munmap(0x7f27ebb75000, 163840)    = 0
+493   exit_group(0)                     = ?
+494   <... read resumed>"", 4096)       = 0
+493   +++ exited with 0 +++
+494   brk(0x55e59fa02000 <unfinished ...>
+488   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 493
+494   <... brk resumed>)                = 0x55e59fa02000
+488   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=493, si_uid=0, si_status=0, si_utime=1, si_stime=5} ---
+494   exit_group(0 <unfinished ...>
+488   wait4(-1,  <unfinished ...>
+494   <... exit_group resumed>)         = ?
+494   +++ exited with 0 +++
+488   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 494
+488   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=494, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+488   exit_group(0)                     = ?
+488   +++ exited with 0 +++

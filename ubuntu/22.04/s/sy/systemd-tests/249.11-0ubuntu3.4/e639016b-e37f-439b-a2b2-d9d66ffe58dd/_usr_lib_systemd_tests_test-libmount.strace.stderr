@@ -1,0 +1,46 @@
+/* test_libmount_unescaping_one escaped space + utf8 */
+from '729 38 0:59 / /tmp/\342\200\236zupa\\040z\304\231bowa\342\200\235 rw,relatime shared:395 - tmpfs die\\040Br\303\274he rw,seclabel'
+source: 'die Brühe'
+source: 'die Br\303\274he'
+source: 'die Brühe'
+expected: 'die Brühe'
+target: '/tmp/„zupa zębowa”'
+target: '/tmp/\342\200\236zupa z\304\231bowa\342\200\235'
+target: '/tmp/„zupa zębowa”'
+expected: '/tmp/„zupa zębowa”'
+/* test_libmount_unescaping_one escaped newline */
+from '729 38 0:59 / /tmp/x\\012y rw,relatime shared:395 - tmpfs newline rw,seclabel'
+source: 'newline'
+source: 'newline'
+source: 'newline'
+expected: 'newline'
+target: '/tmp/x
+y'
+target: '/tmp/x\ny'
+target: '/tmp/x
+y'
+expected: '/tmp/x
+y'
+/* test_libmount_unescaping_one empty source */
+from '760 38 0:60 / /tmp/emptysource rw,relatime shared:410 - tmpfs  rw,seclabel'
+source: ''
+source: ''
+source: ''
+expected: ''
+target: '/tmp/emptysource'
+target: '/tmp/emptysource'
+target: '/tmp/emptysource'
+expected: '/tmp/emptysource'
+/* test_libmount_unescaping_one foo\rbar */
+from '790 38 0:61 / /tmp/foo\rbar rw,relatime shared:425 - tmpfs tmpfs rw,seclabel'
+source: 'tmpfs'
+source: 'tmpfs'
+source: 'tmpfs'
+expected: 'tmpfs'
+target: '/tmp/foo
+bar'
+target: '/tmp/foo\rbar'
+target: '/tmp/foo
+bar'
+expected: '/tmp/foo
+bar'

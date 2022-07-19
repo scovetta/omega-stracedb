@@ -1,0 +1,355 @@
+/* test_string_erase */
+/* test_free_and_strndup */
+test_free_and_strndup_one: "(null)", "abc", 0 (expect "", yes)
+test_free_and_strndup_one: "", "abc", 0 (expect "", no)
+test_free_and_strndup_one: "", "abc", 1 (expect "a", yes)
+test_free_and_strndup_one: "a", "abc", 2 (expect "ab", yes)
+test_free_and_strndup_one: "ab", "abc", 3 (expect "abc", yes)
+test_free_and_strndup_one: "abc", "abc", 4 (expect "abc", no)
+test_free_and_strndup_one: "abc", "abc", 5 (expect "abc", no)
+test_free_and_strndup_one: "abc", "abc", 5 (expect "abc", no)
+test_free_and_strndup_one: "abc", "abc", 4 (expect "abc", no)
+test_free_and_strndup_one: "abc", "abc", 3 (expect "abc", no)
+test_free_and_strndup_one: "abc", "abc", 2 (expect "ab", yes)
+test_free_and_strndup_one: "ab", "abc", 1 (expect "a", yes)
+test_free_and_strndup_one: "a", "abc", 0 (expect "", yes)
+test_free_and_strndup_one: "", "", 0 (expect "", no)
+test_free_and_strndup_one: "", "", 1 (expect "", no)
+test_free_and_strndup_one: "", "", 2 (expect "", no)
+test_free_and_strndup_one: "", "", 0 (expect "", no)
+test_free_and_strndup_one: "", "", 1 (expect "", no)
+test_free_and_strndup_one: "", "", 2 (expect "", no)
+test_free_and_strndup_one: "", "", 2 (expect "", no)
+test_free_and_strndup_one: "", "", 1 (expect "", no)
+test_free_and_strndup_one: "", "", 0 (expect "", no)
+test_free_and_strndup_one: "", "(null)", 0 (expect "(null)", yes)
+test_free_and_strndup_one: "(null)", "foo", 3 (expect "foo", yes)
+test_free_and_strndup_one: "foo", "foobar", 6 (expect "foobar", yes)
+/* test_ascii_strcasecmp_n */
+/* test_ascii_strcasecmp_nn */
+/* test_cellescape */
+/* test_streq_ptr */
+/* test_strstrip */
+/* test_strextend */
+/* test_strextend_with_separator */
+/* test_strrep */
+/* test_ascii_strlower */
+/* test_strshorten */
+/* test_strjoina */
+/* test_strcmp_ptr */
+/* test_foreach_word */
+/* test_foreach_word_quoted */
+/* test_endswith */
+/* test_endswith_no_case */
+/* test_delete_chars */
+/* test_delete_trailing_chars */
+/* test_delete_trailing_slashes */
+/* test_skip_leading_chars */
+/* test_in_charset */
+/* test_split_pair */
+/* test_first_word */
+/* test_strlen_ptr */
+/* test_memory_startswith */
+/* test_memory_startswith_no_case */
+/* test_string_truncate_lines */
+/* test_string_extract_line */
+/* test_string_contains_word_strv */
+/* test_string_contains_word */
+/* test_strverscmp_improved_one(~1, ) */
+/* test_strverscmp_improved_one(ab, ) */
+/* test_strverscmp_improved_one(abb, ) */
+/* test_strverscmp_improved_one(abc, ) */
+/* test_strverscmp_improved_one(0001, ) */
+/* test_strverscmp_improved_one(002, ) */
+/* test_strverscmp_improved_one(12, ) */
+/* test_strverscmp_improved_one(122, ) */
+/* test_strverscmp_improved_one(122.9, ) */
+/* test_strverscmp_improved_one(123~rc1, ) */
+/* test_strverscmp_improved_one(123, ) */
+/* test_strverscmp_improved_one(123-a, ) */
+/* test_strverscmp_improved_one(123-a.1, ) */
+/* test_strverscmp_improved_one(123-a1, ) */
+/* test_strverscmp_improved_one(123-a1.1, ) */
+/* test_strverscmp_improved_one(123-3, ) */
+/* test_strverscmp_improved_one(123-3.1, ) */
+/* test_strverscmp_improved_one(123^patch1, ) */
+/* test_strverscmp_improved_one(123^1, ) */
+/* test_strverscmp_improved_one(123.a-1, ) */
+/* test_strverscmp_improved_one(123.1-1, ) */
+/* test_strverscmp_improved_one(123a-1, ) */
+/* test_strverscmp_improved_one(124, ) */
+/* test_strverscmp_improved_one(ab, ~1) */
+/* test_strverscmp_improved_one(abb, ~1) */
+/* test_strverscmp_improved_one(abc, ~1) */
+/* test_strverscmp_improved_one(0001, ~1) */
+/* test_strverscmp_improved_one(002, ~1) */
+/* test_strverscmp_improved_one(12, ~1) */
+/* test_strverscmp_improved_one(122, ~1) */
+/* test_strverscmp_improved_one(122.9, ~1) */
+/* test_strverscmp_improved_one(123~rc1, ~1) */
+/* test_strverscmp_improved_one(123, ~1) */
+/* test_strverscmp_improved_one(123-a, ~1) */
+/* test_strverscmp_improved_one(123-a.1, ~1) */
+/* test_strverscmp_improved_one(123-a1, ~1) */
+/* test_strverscmp_improved_one(123-a1.1, ~1) */
+/* test_strverscmp_improved_one(123-3, ~1) */
+/* test_strverscmp_improved_one(123-3.1, ~1) */
+/* test_strverscmp_improved_one(123^patch1, ~1) */
+/* test_strverscmp_improved_one(123^1, ~1) */
+/* test_strverscmp_improved_one(123.a-1, ~1) */
+/* test_strverscmp_improved_one(123.1-1, ~1) */
+/* test_strverscmp_improved_one(123a-1, ~1) */
+/* test_strverscmp_improved_one(124, ~1) */
+/* test_strverscmp_improved_one(abb, ab) */
+/* test_strverscmp_improved_one(abc, ab) */
+/* test_strverscmp_improved_one(0001, ab) */
+/* test_strverscmp_improved_one(002, ab) */
+/* test_strverscmp_improved_one(12, ab) */
+/* test_strverscmp_improved_one(122, ab) */
+/* test_strverscmp_improved_one(122.9, ab) */
+/* test_strverscmp_improved_one(123~rc1, ab) */
+/* test_strverscmp_improved_one(123, ab) */
+/* test_strverscmp_improved_one(123-a, ab) */
+/* test_strverscmp_improved_one(123-a.1, ab) */
+/* test_strverscmp_improved_one(123-a1, ab) */
+/* test_strverscmp_improved_one(123-a1.1, ab) */
+/* test_strverscmp_improved_one(123-3, ab) */
+/* test_strverscmp_improved_one(123-3.1, ab) */
+/* test_strverscmp_improved_one(123^patch1, ab) */
+/* test_strverscmp_improved_one(123^1, ab) */
+/* test_strverscmp_improved_one(123.a-1, ab) */
+/* test_strverscmp_improved_one(123.1-1, ab) */
+/* test_strverscmp_improved_one(123a-1, ab) */
+/* test_strverscmp_improved_one(124, ab) */
+/* test_strverscmp_improved_one(abc, abb) */
+/* test_strverscmp_improved_one(0001, abb) */
+/* test_strverscmp_improved_one(002, abb) */
+/* test_strverscmp_improved_one(12, abb) */
+/* test_strverscmp_improved_one(122, abb) */
+/* test_strverscmp_improved_one(122.9, abb) */
+/* test_strverscmp_improved_one(123~rc1, abb) */
+/* test_strverscmp_improved_one(123, abb) */
+/* test_strverscmp_improved_one(123-a, abb) */
+/* test_strverscmp_improved_one(123-a.1, abb) */
+/* test_strverscmp_improved_one(123-a1, abb) */
+/* test_strverscmp_improved_one(123-a1.1, abb) */
+/* test_strverscmp_improved_one(123-3, abb) */
+/* test_strverscmp_improved_one(123-3.1, abb) */
+/* test_strverscmp_improved_one(123^patch1, abb) */
+/* test_strverscmp_improved_one(123^1, abb) */
+/* test_strverscmp_improved_one(123.a-1, abb) */
+/* test_strverscmp_improved_one(123.1-1, abb) */
+/* test_strverscmp_improved_one(123a-1, abb) */
+/* test_strverscmp_improved_one(124, abb) */
+/* test_strverscmp_improved_one(0001, abc) */
+/* test_strverscmp_improved_one(002, abc) */
+/* test_strverscmp_improved_one(12, abc) */
+/* test_strverscmp_improved_one(122, abc) */
+/* test_strverscmp_improved_one(122.9, abc) */
+/* test_strverscmp_improved_one(123~rc1, abc) */
+/* test_strverscmp_improved_one(123, abc) */
+/* test_strverscmp_improved_one(123-a, abc) */
+/* test_strverscmp_improved_one(123-a.1, abc) */
+/* test_strverscmp_improved_one(123-a1, abc) */
+/* test_strverscmp_improved_one(123-a1.1, abc) */
+/* test_strverscmp_improved_one(123-3, abc) */
+/* test_strverscmp_improved_one(123-3.1, abc) */
+/* test_strverscmp_improved_one(123^patch1, abc) */
+/* test_strverscmp_improved_one(123^1, abc) */
+/* test_strverscmp_improved_one(123.a-1, abc) */
+/* test_strverscmp_improved_one(123.1-1, abc) */
+/* test_strverscmp_improved_one(123a-1, abc) */
+/* test_strverscmp_improved_one(124, abc) */
+/* test_strverscmp_improved_one(002, 0001) */
+/* test_strverscmp_improved_one(12, 0001) */
+/* test_strverscmp_improved_one(122, 0001) */
+/* test_strverscmp_improved_one(122.9, 0001) */
+/* test_strverscmp_improved_one(123~rc1, 0001) */
+/* test_strverscmp_improved_one(123, 0001) */
+/* test_strverscmp_improved_one(123-a, 0001) */
+/* test_strverscmp_improved_one(123-a.1, 0001) */
+/* test_strverscmp_improved_one(123-a1, 0001) */
+/* test_strverscmp_improved_one(123-a1.1, 0001) */
+/* test_strverscmp_improved_one(123-3, 0001) */
+/* test_strverscmp_improved_one(123-3.1, 0001) */
+/* test_strverscmp_improved_one(123^patch1, 0001) */
+/* test_strverscmp_improved_one(123^1, 0001) */
+/* test_strverscmp_improved_one(123.a-1, 0001) */
+/* test_strverscmp_improved_one(123.1-1, 0001) */
+/* test_strverscmp_improved_one(123a-1, 0001) */
+/* test_strverscmp_improved_one(124, 0001) */
+/* test_strverscmp_improved_one(12, 002) */
+/* test_strverscmp_improved_one(122, 002) */
+/* test_strverscmp_improved_one(122.9, 002) */
+/* test_strverscmp_improved_one(123~rc1, 002) */
+/* test_strverscmp_improved_one(123, 002) */
+/* test_strverscmp_improved_one(123-a, 002) */
+/* test_strverscmp_improved_one(123-a.1, 002) */
+/* test_strverscmp_improved_one(123-a1, 002) */
+/* test_strverscmp_improved_one(123-a1.1, 002) */
+/* test_strverscmp_improved_one(123-3, 002) */
+/* test_strverscmp_improved_one(123-3.1, 002) */
+/* test_strverscmp_improved_one(123^patch1, 002) */
+/* test_strverscmp_improved_one(123^1, 002) */
+/* test_strverscmp_improved_one(123.a-1, 002) */
+/* test_strverscmp_improved_one(123.1-1, 002) */
+/* test_strverscmp_improved_one(123a-1, 002) */
+/* test_strverscmp_improved_one(124, 002) */
+/* test_strverscmp_improved_one(122, 12) */
+/* test_strverscmp_improved_one(122.9, 12) */
+/* test_strverscmp_improved_one(123~rc1, 12) */
+/* test_strverscmp_improved_one(123, 12) */
+/* test_strverscmp_improved_one(123-a, 12) */
+/* test_strverscmp_improved_one(123-a.1, 12) */
+/* test_strverscmp_improved_one(123-a1, 12) */
+/* test_strverscmp_improved_one(123-a1.1, 12) */
+/* test_strverscmp_improved_one(123-3, 12) */
+/* test_strverscmp_improved_one(123-3.1, 12) */
+/* test_strverscmp_improved_one(123^patch1, 12) */
+/* test_strverscmp_improved_one(123^1, 12) */
+/* test_strverscmp_improved_one(123.a-1, 12) */
+/* test_strverscmp_improved_one(123.1-1, 12) */
+/* test_strverscmp_improved_one(123a-1, 12) */
+/* test_strverscmp_improved_one(124, 12) */
+/* test_strverscmp_improved_one(122.9, 122) */
+/* test_strverscmp_improved_one(123~rc1, 122) */
+/* test_strverscmp_improved_one(123, 122) */
+/* test_strverscmp_improved_one(123-a, 122) */
+/* test_strverscmp_improved_one(123-a.1, 122) */
+/* test_strverscmp_improved_one(123-a1, 122) */
+/* test_strverscmp_improved_one(123-a1.1, 122) */
+/* test_strverscmp_improved_one(123-3, 122) */
+/* test_strverscmp_improved_one(123-3.1, 122) */
+/* test_strverscmp_improved_one(123^patch1, 122) */
+/* test_strverscmp_improved_one(123^1, 122) */
+/* test_strverscmp_improved_one(123.a-1, 122) */
+/* test_strverscmp_improved_one(123.1-1, 122) */
+/* test_strverscmp_improved_one(123a-1, 122) */
+/* test_strverscmp_improved_one(124, 122) */
+/* test_strverscmp_improved_one(123~rc1, 122.9) */
+/* test_strverscmp_improved_one(123, 122.9) */
+/* test_strverscmp_improved_one(123-a, 122.9) */
+/* test_strverscmp_improved_one(123-a.1, 122.9) */
+/* test_strverscmp_improved_one(123-a1, 122.9) */
+/* test_strverscmp_improved_one(123-a1.1, 122.9) */
+/* test_strverscmp_improved_one(123-3, 122.9) */
+/* test_strverscmp_improved_one(123-3.1, 122.9) */
+/* test_strverscmp_improved_one(123^patch1, 122.9) */
+/* test_strverscmp_improved_one(123^1, 122.9) */
+/* test_strverscmp_improved_one(123.a-1, 122.9) */
+/* test_strverscmp_improved_one(123.1-1, 122.9) */
+/* test_strverscmp_improved_one(123a-1, 122.9) */
+/* test_strverscmp_improved_one(124, 122.9) */
+/* test_strverscmp_improved_one(123, 123~rc1) */
+/* test_strverscmp_improved_one(123-a, 123~rc1) */
+/* test_strverscmp_improved_one(123-a.1, 123~rc1) */
+/* test_strverscmp_improved_one(123-a1, 123~rc1) */
+/* test_strverscmp_improved_one(123-a1.1, 123~rc1) */
+/* test_strverscmp_improved_one(123-3, 123~rc1) */
+/* test_strverscmp_improved_one(123-3.1, 123~rc1) */
+/* test_strverscmp_improved_one(123^patch1, 123~rc1) */
+/* test_strverscmp_improved_one(123^1, 123~rc1) */
+/* test_strverscmp_improved_one(123.a-1, 123~rc1) */
+/* test_strverscmp_improved_one(123.1-1, 123~rc1) */
+/* test_strverscmp_improved_one(123a-1, 123~rc1) */
+/* test_strverscmp_improved_one(124, 123~rc1) */
+/* test_strverscmp_improved_one(123-a, 123) */
+/* test_strverscmp_improved_one(123-a.1, 123) */
+/* test_strverscmp_improved_one(123-a1, 123) */
+/* test_strverscmp_improved_one(123-a1.1, 123) */
+/* test_strverscmp_improved_one(123-3, 123) */
+/* test_strverscmp_improved_one(123-3.1, 123) */
+/* test_strverscmp_improved_one(123^patch1, 123) */
+/* test_strverscmp_improved_one(123^1, 123) */
+/* test_strverscmp_improved_one(123.a-1, 123) */
+/* test_strverscmp_improved_one(123.1-1, 123) */
+/* test_strverscmp_improved_one(123a-1, 123) */
+/* test_strverscmp_improved_one(124, 123) */
+/* test_strverscmp_improved_one(123-a.1, 123-a) */
+/* test_strverscmp_improved_one(123-a1, 123-a) */
+/* test_strverscmp_improved_one(123-a1.1, 123-a) */
+/* test_strverscmp_improved_one(123-3, 123-a) */
+/* test_strverscmp_improved_one(123-3.1, 123-a) */
+/* test_strverscmp_improved_one(123^patch1, 123-a) */
+/* test_strverscmp_improved_one(123^1, 123-a) */
+/* test_strverscmp_improved_one(123.a-1, 123-a) */
+/* test_strverscmp_improved_one(123.1-1, 123-a) */
+/* test_strverscmp_improved_one(123a-1, 123-a) */
+/* test_strverscmp_improved_one(124, 123-a) */
+/* test_strverscmp_improved_one(123-a1, 123-a.1) */
+/* test_strverscmp_improved_one(123-a1.1, 123-a.1) */
+/* test_strverscmp_improved_one(123-3, 123-a.1) */
+/* test_strverscmp_improved_one(123-3.1, 123-a.1) */
+/* test_strverscmp_improved_one(123^patch1, 123-a.1) */
+/* test_strverscmp_improved_one(123^1, 123-a.1) */
+/* test_strverscmp_improved_one(123.a-1, 123-a.1) */
+/* test_strverscmp_improved_one(123.1-1, 123-a.1) */
+/* test_strverscmp_improved_one(123a-1, 123-a.1) */
+/* test_strverscmp_improved_one(124, 123-a.1) */
+/* test_strverscmp_improved_one(123-a1.1, 123-a1) */
+/* test_strverscmp_improved_one(123-3, 123-a1) */
+/* test_strverscmp_improved_one(123-3.1, 123-a1) */
+/* test_strverscmp_improved_one(123^patch1, 123-a1) */
+/* test_strverscmp_improved_one(123^1, 123-a1) */
+/* test_strverscmp_improved_one(123.a-1, 123-a1) */
+/* test_strverscmp_improved_one(123.1-1, 123-a1) */
+/* test_strverscmp_improved_one(123a-1, 123-a1) */
+/* test_strverscmp_improved_one(124, 123-a1) */
+/* test_strverscmp_improved_one(123-3, 123-a1.1) */
+/* test_strverscmp_improved_one(123-3.1, 123-a1.1) */
+/* test_strverscmp_improved_one(123^patch1, 123-a1.1) */
+/* test_strverscmp_improved_one(123^1, 123-a1.1) */
+/* test_strverscmp_improved_one(123.a-1, 123-a1.1) */
+/* test_strverscmp_improved_one(123.1-1, 123-a1.1) */
+/* test_strverscmp_improved_one(123a-1, 123-a1.1) */
+/* test_strverscmp_improved_one(124, 123-a1.1) */
+/* test_strverscmp_improved_one(123-3.1, 123-3) */
+/* test_strverscmp_improved_one(123^patch1, 123-3) */
+/* test_strverscmp_improved_one(123^1, 123-3) */
+/* test_strverscmp_improved_one(123.a-1, 123-3) */
+/* test_strverscmp_improved_one(123.1-1, 123-3) */
+/* test_strverscmp_improved_one(123a-1, 123-3) */
+/* test_strverscmp_improved_one(124, 123-3) */
+/* test_strverscmp_improved_one(123^patch1, 123-3.1) */
+/* test_strverscmp_improved_one(123^1, 123-3.1) */
+/* test_strverscmp_improved_one(123.a-1, 123-3.1) */
+/* test_strverscmp_improved_one(123.1-1, 123-3.1) */
+/* test_strverscmp_improved_one(123a-1, 123-3.1) */
+/* test_strverscmp_improved_one(124, 123-3.1) */
+/* test_strverscmp_improved_one(123^1, 123^patch1) */
+/* test_strverscmp_improved_one(123.a-1, 123^patch1) */
+/* test_strverscmp_improved_one(123.1-1, 123^patch1) */
+/* test_strverscmp_improved_one(123a-1, 123^patch1) */
+/* test_strverscmp_improved_one(124, 123^patch1) */
+/* test_strverscmp_improved_one(123.a-1, 123^1) */
+/* test_strverscmp_improved_one(123.1-1, 123^1) */
+/* test_strverscmp_improved_one(123a-1, 123^1) */
+/* test_strverscmp_improved_one(124, 123^1) */
+/* test_strverscmp_improved_one(123.1-1, 123.a-1) */
+/* test_strverscmp_improved_one(123a-1, 123.a-1) */
+/* test_strverscmp_improved_one(124, 123.a-1) */
+/* test_strverscmp_improved_one(123a-1, 123.1-1) */
+/* test_strverscmp_improved_one(124, 123.1-1) */
+/* test_strverscmp_improved_one(124, 123a-1) */
+/* test_strverscmp_improved_one(123.45-67.89, 123.45-67.88) */
+/* test_strverscmp_improved_one(123.45-67.89a, 123.45-67.89) */
+/* test_strverscmp_improved_one(123.45-67.89, 123.45-67.ab) */
+/* test_strverscmp_improved_one(123.45-67.89, 123.45-67.9) */
+/* test_strverscmp_improved_one(123.45-67.89, 123.45-67) */
+/* test_strverscmp_improved_one(123.45-67.89, 123.45-66.89) */
+/* test_strverscmp_improved_one(123.45-67.89, 123.45-9.99) */
+/* test_strverscmp_improved_one(123.45-67.89, 123.42-99.99) */
+/* test_strverscmp_improved_one(123.45-67.89, 123-99.99) */
+/* test_strverscmp_improved_one(123.45-67.89, 123~rc1-99.99) */
+/* test_strverscmp_improved_one(123-45.67.89, 123~rc1-99.99) */
+/* test_strverscmp_improved_one(123~rc2-67.89, 123~rc1-99.99) */
+/* test_strverscmp_improved_one(123^aa2-67.89, 123~rc1-99.99) */
+/* test_strverscmp_improved_one(123aa2-67.89, 123~rc1-99.99) */
+/* test_strverscmp_improved_one(123.45-67.89, 123-99.99) */
+/* test_strverscmp_improved_one(123^aa2-67.89, 123-99.99) */
+/* test_strverscmp_improved_one(123aa2-67.89, 123-99.99) */
+/* test_strverscmp_improved_one(123.45-67.89, 123^45-67.89) */
+/* test_strverscmp_improved_one(123^aa2-67.89, 123^aa1-99.99) */
+/* test_strverscmp_improved_one(123aa2-67.89, 123^aa2-67.89) */
+/* test_strverscmp_improved_one(123aa2-67.89, 123.aa2-67.89) */
+/* test_strverscmp_improved_one(123.ab2-67.89, 123.aa2-67.89) */

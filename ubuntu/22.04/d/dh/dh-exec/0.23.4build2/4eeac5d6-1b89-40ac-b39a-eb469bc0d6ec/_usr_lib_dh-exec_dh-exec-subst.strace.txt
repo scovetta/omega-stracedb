@@ -1,0 +1,631 @@
+1804  execve("/usr/lib/dh-exec/dh-exec-subst", ["/usr/lib/dh-exec/dh-exec-subst"], 0x7ffe71ea6220 /* 12 vars */) = 0
+1804  brk(NULL)                         = 0x5566c7f6b000
+1804  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe45968a90) = -1 EINVAL (Invalid argument)
+1804  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbb4efda000
+1804  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1804  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1804  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10653, ...}, AT_EMPTY_PATH) = 0
+1804  mmap(NULL, 10653, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbb4efd7000
+1804  close(3)                          = 0
+1804  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpipeline.so.1", O_RDONLY|O_CLOEXEC) = 3
+1804  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0'\0\0\0\0\0\0@\0\0\0\0\0\0\0@\261\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h\37\0\0\0\0\0\0h\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1804  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47104, ...}, AT_EMPTY_PATH) = 0
+1804  mmap(NULL, 49608, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbb4efca000
+1804  mmap(0x7fbb4efcc000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fbb4efcc000
+1804  mmap(0x7fbb4efd3000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7fbb4efd3000
+1804  mmap(0x7fbb4efd5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7fbb4efd5000
+1804  close(3)                          = 0
+1804  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1804  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1804  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1804  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1804  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1804  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1804  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1804  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbb4eda2000
+1804  mmap(0x7fbb4edca000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fbb4edca000
+1804  mmap(0x7fbb4ef5f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fbb4ef5f000
+1804  mmap(0x7fbb4efb7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fbb4efb7000
+1804  mmap(0x7fbb4efbd000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbb4efbd000
+1804  close(3)                          = 0
+1804  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbb4ed9f000
+1804  arch_prctl(ARCH_SET_FS, 0x7fbb4ed9f740) = 0
+1804  set_tid_address(0x7fbb4ed9fa10)   = 1804
+1804  set_robust_list(0x7fbb4ed9fa20, 24) = 0
+1804  rseq(0x7fbb4eda00e0, 0x20, 0, 0x53053053) = 0
+1804  mprotect(0x7fbb4efb7000, 16384, PROT_READ) = 0
+1804  mprotect(0x7fbb4efd5000, 4096, PROT_READ) = 0
+1804  mprotect(0x5566c7e48000, 4096, PROT_READ) = 0
+1804  mprotect(0x7fbb4f014000, 8192, PROT_READ) = 0
+1804  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1804  munmap(0x7fbb4efd7000, 10653)     = 0
+1804  openat(AT_FDCWD, "/usr/share/dh-exec", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+1804  newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+1804  getrandom("\x33\x88\x08\xce\xe9\xc8\x4a\x79", 8, GRND_NONBLOCK) = 8
+1804  brk(NULL)                         = 0x5566c7f6b000
+1804  brk(0x5566c7f8c000)               = 0x5566c7f8c000
+1804  getdents64(3, 0x5566c7f6b2d0 /* 10 entries */, 32768) = 416
+1804  access("/usr/share/dh-exec/dh-exec-subst-multiarch", X_OK) = 0
+1804  access("/usr/share/dh-exec/dh-exec-subst-env", X_OK) = 0
+1804  getdents64(3, 0x5566c7f6b2d0 /* 0 entries */, 32768) = 0
+1804  close(3)                          = 0
+1804  rt_sigaction(SIGCHLD, {sa_handler=0x7fbb4efcca80, sa_mask=[HUP INT TERM CHLD], sa_flags=SA_RESTORER|SA_RESTART|SA_NOCLDSTOP, sa_restorer=0x7fbb4ede4520}, NULL, 8) = 0
+1804  rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+1804  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+1804  pipe2([3, 4], 0)                  = 0
+1804  rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+1804  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1809  set_robust_list(0x7fbb4ed9fa20, 24 <unfinished ...>
+1804  <... clone resumed>, child_tidptr=0x7fbb4ed9fa10) = 1809
+1809  <... set_robust_list resumed>)    = 0
+1804  close(4 <unfinished ...>
+1809  dup2(4, 1 <unfinished ...>
+1804  <... close resumed>)              = 0
+1809  <... dup2 resumed>)               = 1
+1804  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1809  close(4 <unfinished ...>
+1804  <... rt_sigprocmask resumed>NULL, 8) = 0
+1809  <... close resumed>)              = 0
+1804  rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+1809  close(3 <unfinished ...>
+1804  <... rt_sigprocmask resumed>[], 8) = 0
+1809  <... close resumed>)              = 0
+1804  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1809  execve("/usr/share/dh-exec/dh-exec-subst-multiarch", ["dh-exec-subst-multiarch"], 0x7ffe45968c68 /* 12 vars */ <unfinished ...>
+1810  set_robust_list(0x7fbb4ed9fa20, 24 <unfinished ...>
+1804  <... clone resumed>, child_tidptr=0x7fbb4ed9fa10) = 1810
+1810  <... set_robust_list resumed>)    = 0
+1809  <... execve resumed>)             = 0
+1810  dup2(3, 0 <unfinished ...>
+1804  close(3 <unfinished ...>
+1810  <... dup2 resumed>)               = 0
+1809  brk(NULL <unfinished ...>
+1810  close(3 <unfinished ...>
+1804  <... close resumed>)              = 0
+1810  <... close resumed>)              = 0
+1809  <... brk resumed>)                = 0x5635506d6000
+1810  execve("/usr/share/dh-exec/dh-exec-subst-env", ["dh-exec-subst-env"], 0x7ffe45968c68 /* 12 vars */ <unfinished ...>
+1804  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1809  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc236e8f40 <unfinished ...>
+1810  <... execve resumed>)             = 0
+1804  <... rt_sigprocmask resumed>NULL, 8) = 0
+1810  brk(NULL <unfinished ...>
+1809  <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+1810  <... brk resumed>)                = 0x55b2b64a2000
+1804  wait4(-1,  <unfinished ...>
+1810  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd75bba690 <unfinished ...>
+1809  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1810  <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+1809  <... mmap resumed>)               = 0x7f59c516d000
+1810  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1809  access("/etc/ld.so.preload", R_OK <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4ad27000
+1809  <... access resumed>)             = -1 ENOENT (No such file or directory)
+1810  access("/etc/ld.so.preload", R_OK <unfinished ...>
+1809  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+1810  <... access resumed>)             = -1 ENOENT (No such file or directory)
+1809  <... openat resumed>)             = 3
+1810  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+1809  newfstatat(3, "",  <unfinished ...>
+1810  <... openat resumed>)             = 3
+1809  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=10653, ...}, AT_EMPTY_PATH) = 0
+1810  newfstatat(3, "",  <unfinished ...>
+1809  mmap(NULL, 10653, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+1810  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=10653, ...}, AT_EMPTY_PATH) = 0
+1809  <... mmap resumed>)               = 0x7f59c516a000
+1810  mmap(NULL, 10653, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+1809  close(3 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4ad24000
+1809  <... close resumed>)              = 0
+1810  close(3 <unfinished ...>
+1809  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+1810  <... close resumed>)              = 0
+1809  <... openat resumed>)             = 3
+1810  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+1809  read(3,  <unfinished ...>
+1810  <... openat resumed>)             = 3
+1809  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1810  read(3,  <unfinished ...>
+1809  newfstatat(3, "",  <unfinished ...>
+1810  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1809  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+1810  newfstatat(3, "",  <unfinished ...>
+1809  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+1810  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+1809  <... mmap resumed>)               = 0x7f59c5083000
+1810  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+1809  mmap(0x7f59c5091000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4ac3d000
+1809  <... mmap resumed>)               = 0x7f59c5091000
+1810  mmap(0x7f6e4ac4b000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000 <unfinished ...>
+1809  mmap(0x7f59c510d000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4ac4b000
+1809  <... mmap resumed>)               = 0x7f59c510d000
+1810  mmap(0x7f6e4acc7000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000 <unfinished ...>
+1809  mmap(0x7f59c5168000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4acc7000
+1809  <... mmap resumed>)               = 0x7f59c5168000
+1810  mmap(0x7f6e4ad22000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000 <unfinished ...>
+1809  close(3 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4ad22000
+1809  <... close resumed>)              = 0
+1810  close(3 <unfinished ...>
+1809  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+1810  <... close resumed>)              = 0
+1809  <... openat resumed>)             = 3
+1810  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+1809  read(3,  <unfinished ...>
+1810  <... openat resumed>)             = 3
+1809  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1810  read(3,  <unfinished ...>
+1809  pread64(3,  <unfinished ...>
+1810  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1809  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1810  pread64(3,  <unfinished ...>
+1809  pread64(3,  <unfinished ...>
+1810  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1809  <... pread64 resumed>"\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1810  pread64(3,  <unfinished ...>
+1809  pread64(3,  <unfinished ...>
+1810  <... pread64 resumed>"\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1809  <... pread64 resumed>"\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1810  pread64(3,  <unfinished ...>
+1809  newfstatat(3, "",  <unfinished ...>
+1810  <... pread64 resumed>"\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1809  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1810  newfstatat(3, "",  <unfinished ...>
+1809  pread64(3,  <unfinished ...>
+1810  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1809  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1810  pread64(3,  <unfinished ...>
+1809  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+1810  <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1809  <... mmap resumed>)               = 0x7f59c4e5b000
+1810  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+1809  mmap(0x7f59c4e83000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4aa15000
+1809  <... mmap resumed>)               = 0x7f59c4e83000
+1810  mmap(0x7f6e4aa3d000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000 <unfinished ...>
+1809  mmap(0x7f59c5018000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4aa3d000
+1809  <... mmap resumed>)               = 0x7f59c5018000
+1810  mmap(0x7f6e4abd2000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000 <unfinished ...>
+1809  mmap(0x7f59c5070000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4abd2000
+1809  <... mmap resumed>)               = 0x7f59c5070000
+1810  mmap(0x7f6e4ac2a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000 <unfinished ...>
+1809  mmap(0x7f59c5076000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4ac2a000
+1809  <... mmap resumed>)               = 0x7f59c5076000
+1810  mmap(0x7f6e4ac30000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1809  close(3 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4ac30000
+1809  <... close resumed>)              = 0
+1810  close(3 <unfinished ...>
+1809  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC <unfinished ...>
+1810  <... close resumed>)              = 0
+1809  <... openat resumed>)             = 3
+1810  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC <unfinished ...>
+1809  read(3,  <unfinished ...>
+1810  <... openat resumed>)             = 3
+1809  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1810  read(3,  <unfinished ...>
+1809  newfstatat(3, "",  <unfinished ...>
+1810  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1809  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+1810  newfstatat(3, "",  <unfinished ...>
+1809  mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+1810  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+1809  <... mmap resumed>)               = 0x7f59c4e21000
+1810  mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+1809  mprotect(0x7f59c4e23000, 188416, PROT_NONE <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4a9db000
+1809  <... mprotect resumed>)           = 0
+1810  mprotect(0x7f6e4a9dd000, 188416, PROT_NONE <unfinished ...>
+1809  mmap(0x7f59c4e23000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000 <unfinished ...>
+1810  <... mprotect resumed>)           = 0
+1809  <... mmap resumed>)               = 0x7f59c4e23000
+1810  mmap(0x7f6e4a9dd000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000 <unfinished ...>
+1809  mmap(0x7f59c4e37000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4a9dd000
+1809  <... mmap resumed>)               = 0x7f59c4e37000
+1810  mmap(0x7f6e4a9f1000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000 <unfinished ...>
+1809  mmap(0x7f59c4e51000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4a9f1000
+1809  <... mmap resumed>)               = 0x7f59c4e51000
+1810  mmap(0x7f6e4aa0b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000 <unfinished ...>
+1809  mmap(0x7f59c4e53000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4aa0b000
+1809  <... mmap resumed>)               = 0x7f59c4e53000
+1810  mmap(0x7f6e4aa0d000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1809  close(3 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4aa0d000
+1809  <... close resumed>)              = 0
+1810  close(3 <unfinished ...>
+1809  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1810  <... close resumed>)              = 0
+1809  <... mmap resumed>)               = 0x7f59c4e1f000
+1810  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1809  arch_prctl(ARCH_SET_FS, 0x7f59c4e1fb80 <unfinished ...>
+1810  <... mmap resumed>)               = 0x7f6e4a9d9000
+1809  <... arch_prctl resumed>)         = 0
+1810  arch_prctl(ARCH_SET_FS, 0x7f6e4a9d9b80 <unfinished ...>
+1809  set_tid_address(0x7f59c4e1fe50 <unfinished ...>
+1810  <... arch_prctl resumed>)         = 0
+1809  <... set_tid_address resumed>)    = 1809
+1810  set_tid_address(0x7f6e4a9d9e50 <unfinished ...>
+1809  set_robust_list(0x7f59c4e1fe60, 24 <unfinished ...>
+1810  <... set_tid_address resumed>)    = 1810
+1809  <... set_robust_list resumed>)    = 0
+1810  set_robust_list(0x7f6e4a9d9e60, 24 <unfinished ...>
+1809  rseq(0x7f59c4e20520, 0x20, 0, 0x53053053 <unfinished ...>
+1810  <... set_robust_list resumed>)    = 0
+1809  <... rseq resumed>)               = 0
+1810  rseq(0x7f6e4a9da520, 0x20, 0, 0x53053053 <unfinished ...>
+1809  mprotect(0x7f59c5070000, 16384, PROT_READ <unfinished ...>
+1810  <... rseq resumed>)               = 0
+1809  <... mprotect resumed>)           = 0
+1810  mprotect(0x7f6e4ac2a000, 16384, PROT_READ <unfinished ...>
+1809  mprotect(0x7f59c4e51000, 4096, PROT_READ <unfinished ...>
+1810  <... mprotect resumed>)           = 0
+1809  <... mprotect resumed>)           = 0
+1810  mprotect(0x7f6e4aa0b000, 4096, PROT_READ <unfinished ...>
+1809  mprotect(0x7f59c5168000, 4096, PROT_READ <unfinished ...>
+1810  <... mprotect resumed>)           = 0
+1809  <... mprotect resumed>)           = 0
+1810  mprotect(0x7f6e4ad22000, 4096, PROT_READ <unfinished ...>
+1809  mprotect(0x5635500cc000, 65536, PROT_READ <unfinished ...>
+1810  <... mprotect resumed>)           = 0
+1809  <... mprotect resumed>)           = 0
+1810  mprotect(0x55b2b61a4000, 65536, PROT_READ <unfinished ...>
+1809  mprotect(0x7f59c51a7000, 8192, PROT_READ <unfinished ...>
+1810  <... mprotect resumed>)           = 0
+1809  <... mprotect resumed>)           = 0
+1810  mprotect(0x7f6e4ad61000, 8192, PROT_READ <unfinished ...>
+1809  prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+1810  <... mprotect resumed>)           = 0
+1809  <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1810  prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+1809  munmap(0x7f59c516a000, 10653 <unfinished ...>
+1810  <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1809  <... munmap resumed>)             = 0
+1810  munmap(0x7f6e4ad24000, 10653 <unfinished ...>
+1809  rt_sigaction(SIGFPE, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f59c4e9d520},  <unfinished ...>
+1810  <... munmap resumed>)             = 0
+1809  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGFPE, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6e4aa57520},  <unfinished ...>
+1809  getrandom( <unfinished ...>
+1810  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  <... getrandom resumed>"\x64\x9a\x0c\x96\x89\x18\xab\x5b", 8, GRND_NONBLOCK) = 8
+1810  getrandom( <unfinished ...>
+1809  brk(NULL <unfinished ...>
+1810  <... getrandom resumed>"\x4e\x7c\xab\x19\x04\x52\x25\x3e", 8, GRND_NONBLOCK) = 8
+1809  <... brk resumed>)                = 0x5635506d6000
+1810  brk(NULL <unfinished ...>
+1809  brk(0x5635506f7000 <unfinished ...>
+1810  <... brk resumed>)                = 0x55b2b64a2000
+1809  <... brk resumed>)                = 0x5635506f7000
+1810  brk(0x55b2b64c3000 <unfinished ...>
+1809  getuid( <unfinished ...>
+1810  <... brk resumed>)                = 0x55b2b64c3000
+1809  <... getuid resumed>)             = 0
+1810  getuid( <unfinished ...>
+1809  geteuid( <unfinished ...>
+1810  <... getuid resumed>)             = 0
+1809  <... geteuid resumed>)            = 0
+1810  geteuid( <unfinished ...>
+1809  getgid( <unfinished ...>
+1810  <... geteuid resumed>)            = 0
+1809  <... getgid resumed>)             = 0
+1810  getgid( <unfinished ...>
+1809  getegid( <unfinished ...>
+1810  <... getgid resumed>)             = 0
+1809  <... getegid resumed>)            = 0
+1810  getegid( <unfinished ...>
+1809  openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC <unfinished ...>
+1810  <... getegid resumed>)            = 0
+1809  <... openat resumed>)             = 3
+1810  openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC <unfinished ...>
+1809  fcntl(3, F_GETFD <unfinished ...>
+1810  <... openat resumed>)             = 3
+1810  fcntl(3, F_GETFD <unfinished ...>
+1809  <... fcntl resumed>)              = 0x1 (flags FD_CLOEXEC)
+1810  <... fcntl resumed>)              = 0x1 (flags FD_CLOEXEC)
+1809  read(3,  <unfinished ...>
+1810  read(3,  <unfinished ...>
+1809  <... read resumed>"\362\236W\215", 4) = 4
+1810  <... read resumed>"5\226\27\224", 4) = 4
+1809  close(3 <unfinished ...>
+1810  close(3 <unfinished ...>
+1809  <... close resumed>)              = 0
+1810  <... close resumed>)              = 0
+1809  getuid( <unfinished ...>
+1810  getuid( <unfinished ...>
+1809  <... getuid resumed>)             = 0
+1810  <... getuid resumed>)             = 0
+1809  geteuid( <unfinished ...>
+1810  geteuid( <unfinished ...>
+1809  <... geteuid resumed>)            = 0
+1810  <... geteuid resumed>)            = 0
+1809  getgid( <unfinished ...>
+1810  getgid( <unfinished ...>
+1809  <... getgid resumed>)             = 0
+1810  <... getgid resumed>)             = 0
+1809  getegid( <unfinished ...>
+1810  getegid( <unfinished ...>
+1809  <... getegid resumed>)            = 0
+1810  <... getegid resumed>)            = 0
+1809  readlink("/proc/self/exe",  <unfinished ...>
+1810  readlink("/proc/self/exe",  <unfinished ...>
+1809  <... readlink resumed>"/usr/bin/perl", 4095) = 13
+1810  <... readlink resumed>"/usr/bin/perl", 4095) = 13
+1809  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/5.34.0/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1810  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/5.34.0/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1809  <... newfstatat resumed>0x7ffc236e8a90, 0) = -1 ENOENT (No such file or directory)
+1810  <... newfstatat resumed>0x7ffd75bba1e0, 0) = -1 ENOENT (No such file or directory)
+1809  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/5.34.0",  <unfinished ...>
+1810  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/5.34.0",  <unfinished ...>
+1809  <... newfstatat resumed>0x7ffc236e8a90, 0) = -1 ENOENT (No such file or directory)
+1810  <... newfstatat resumed>0x7ffd75bba1e0, 0) = -1 ENOENT (No such file or directory)
+1809  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1810  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1809  <... newfstatat resumed>0x7ffc236e8a90, 0) = -1 ENOENT (No such file or directory)
+1810  <... newfstatat resumed>0x7ffd75bba1e0, 0) = -1 ENOENT (No such file or directory)
+1809  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1810  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1809  <... newfstatat resumed>0x7ffc236e8a90, 0) = -1 ENOENT (No such file or directory)
+1810  <... newfstatat resumed>0x7ffd75bba1e0, 0) = -1 ENOENT (No such file or directory)
+1809  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0",  <unfinished ...>
+1810  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0",  <unfinished ...>
+1809  <... newfstatat resumed>0x7ffc236e8a90, 0) = -1 ENOENT (No such file or directory)
+1810  <... newfstatat resumed>0x7ffd75bba1e0, 0) = -1 ENOENT (No such file or directory)
+1809  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1810  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/x86_64-linux-gnu-thread-multi",  <unfinished ...>
+1809  <... newfstatat resumed>0x7ffc236e8a90, 0) = -1 ENOENT (No such file or directory)
+1810  <... newfstatat resumed>0x7ffd75bba1e0, 0) = -1 ENOENT (No such file or directory)
+1809  fcntl(0, F_SETFD, 0 <unfinished ...>
+1810  fcntl(0, F_SETFD, 0 <unfinished ...>
+1809  <... fcntl resumed>)              = 0
+1810  <... fcntl resumed>)              = 0
+1809  ioctl(0, TCGETS <unfinished ...>
+1810  ioctl(0, TCGETS <unfinished ...>
+1809  <... ioctl resumed>, 0x7ffc236e8880) = -1 ENOTTY (Inappropriate ioctl for device)
+1810  <... ioctl resumed>, 0x7ffd75bb9fd0) = -1 ENOTTY (Inappropriate ioctl for device)
+1809  lseek(0, 0, SEEK_CUR <unfinished ...>
+1810  lseek(0, 0, SEEK_CUR <unfinished ...>
+1809  <... lseek resumed>)              = 180
+1810  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1809  fcntl(1, F_SETFD, 0 <unfinished ...>
+1810  fcntl(1, F_SETFD, 0 <unfinished ...>
+1809  <... fcntl resumed>)              = 0
+1810  <... fcntl resumed>)              = 0
+1809  ioctl(1, TCGETS <unfinished ...>
+1810  ioctl(1, TCGETS <unfinished ...>
+1809  <... ioctl resumed>, 0x7ffc236e8880) = -1 ENOTTY (Inappropriate ioctl for device)
+1810  <... ioctl resumed>, 0x7ffd75bb9fd0) = -1 ENOTTY (Inappropriate ioctl for device)
+1809  lseek(1, 0, SEEK_CUR <unfinished ...>
+1810  lseek(1, 0, SEEK_CUR <unfinished ...>
+1809  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1810  <... lseek resumed>)              = 0
+1809  fcntl(2, F_SETFD, 0 <unfinished ...>
+1810  fcntl(2, F_SETFD, 0 <unfinished ...>
+1809  <... fcntl resumed>)              = 0
+1810  <... fcntl resumed>)              = 0
+1809  ioctl(2, TCGETS <unfinished ...>
+1810  ioctl(2, TCGETS <unfinished ...>
+1809  <... ioctl resumed>, 0x7ffc236e8880) = -1 ENOTTY (Inappropriate ioctl for device)
+1810  <... ioctl resumed>, 0x7ffd75bb9fd0) = -1 ENOTTY (Inappropriate ioctl for device)
+1809  lseek(2, 0, SEEK_CUR <unfinished ...>
+1810  lseek(2, 0, SEEK_CUR <unfinished ...>
+1809  <... lseek resumed>)              = 0
+1810  <... lseek resumed>)              = 0
+1809  openat(AT_FDCWD, "/usr/share/dh-exec/dh-exec-subst-multiarch", O_RDONLY|O_CLOEXEC <unfinished ...>
+1810  openat(AT_FDCWD, "/usr/share/dh-exec/dh-exec-subst-env", O_RDONLY|O_CLOEXEC <unfinished ...>
+1809  <... openat resumed>)             = 3
+1810  <... openat resumed>)             = 3
+1809  fcntl(3, F_GETFD <unfinished ...>
+1810  fcntl(3, F_GETFD <unfinished ...>
+1809  <... fcntl resumed>)              = 0x1 (flags FD_CLOEXEC)
+1810  <... fcntl resumed>)              = 0x1 (flags FD_CLOEXEC)
+1809  ioctl(3, TCGETS <unfinished ...>
+1810  ioctl(3, TCGETS <unfinished ...>
+1809  <... ioctl resumed>, 0x7ffc236e8980) = -1 ENOTTY (Inappropriate ioctl for device)
+1810  <... ioctl resumed>, 0x7ffd75bba0d0) = -1 ENOTTY (Inappropriate ioctl for device)
+1809  lseek(3, 0, SEEK_CUR <unfinished ...>
+1810  lseek(3, 0, SEEK_CUR <unfinished ...>
+1809  <... lseek resumed>)              = 0
+1810  <... lseek resumed>)              = 0
+1809  newfstatat(3, "",  <unfinished ...>
+1810  newfstatat(3, "",  <unfinished ...>
+1809  <... newfstatat resumed>{st_mode=S_IFREG|0755, st_size=444, ...}, AT_EMPTY_PATH) = 0
+1810  <... newfstatat resumed>{st_mode=S_IFREG|0755, st_size=235, ...}, AT_EMPTY_PATH) = 0
+1809  getuid( <unfinished ...>
+1810  getuid( <unfinished ...>
+1809  <... getuid resumed>)             = 0
+1810  <... getuid resumed>)             = 0
+1809  geteuid( <unfinished ...>
+1810  geteuid( <unfinished ...>
+1809  <... geteuid resumed>)            = 0
+1810  <... geteuid resumed>)            = 0
+1809  getgid( <unfinished ...>
+1810  getgid( <unfinished ...>
+1809  <... getgid resumed>)             = 0
+1810  <... getgid resumed>)             = 0
+1809  getegid( <unfinished ...>
+1810  getegid( <unfinished ...>
+1809  <... getegid resumed>)            = 0
+1810  <... getegid resumed>)            = 0
+1809  rt_sigaction(SIGCHLD, NULL,  <unfinished ...>
+1810  rt_sigaction(SIGCHLD, NULL,  <unfinished ...>
+1809  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  brk(0x563550718000 <unfinished ...>
+1810  brk(0x55b2b64e4000 <unfinished ...>
+1809  <... brk resumed>)                = 0x563550718000
+1810  <... brk resumed>)                = 0x55b2b64e4000
+1809  read(3,  <unfinished ...>
+1810  read(3,  <unfinished ...>
+1809  <... read resumed>"#! /usr/bin/perl -wnp\n##\n## Akin to dh_subst_env, this one will try to expand variables within\n## its input, but only certain on"..., 8192) = 444
+1810  <... read resumed>"#! /usr/bin/perl -wnp\n##\n## This does nothing else, but substitute ${...} with the\n## corresponding environment variable, or the"..., 8192) = 235
+1809  read(3,  <unfinished ...>
+1810  read(3,  <unfinished ...>
+1809  <... read resumed>"", 8192)       = 0
+1810  <... read resumed>"", 8192)       = 0
+1809  close(3 <unfinished ...>
+1810  close(3 <unfinished ...>
+1809  <... close resumed>)              = 0
+1810  <... close resumed>)              = 0
+1809  read(0,  <unfinished ...>
+1810  read(0,  <unfinished ...>
+1809  <... read resumed>"", 8192)       = 0
+1809  rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f59c4e9d520}, 8) = 0
+1809  rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1809  exit_group(0)                     = ?
+1809  +++ exited with 0 +++
+1810  <... read resumed>"", 8192)       = 0
+1804  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1809
+1810  rt_sigaction(SIGHUP, NULL,  <unfinished ...>
+1804  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1809, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1810  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1804  rt_sigreturn({mask=[]} <unfinished ...>
+1810  rt_sigaction(SIGINT, NULL,  <unfinished ...>
+1804  <... rt_sigreturn resumed>)       = 1809
+1810  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1804  wait4(-1,  <unfinished ...>
+1810  rt_sigaction(SIGQUIT, NULL,  <unfinished ...>
+1804  <... wait4 resumed>0x7ffe45968a54, WNOHANG, NULL) = 0
+1810  <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1804  wait4(-1,  <unfinished ...>
+1810  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f6e4aa57520}, 8) = 0
+1810  rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1810  exit_group(0)                     = ?
+1810  +++ exited with 0 +++
+1804  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1810
+1804  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1810, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1804  rt_sigreturn({mask=[]})           = 1810
+1804  wait4(-1, 0x7ffe45968a54, WNOHANG, NULL) = -1 ECHILD (No child processes)
+1804  exit_group(0)                     = ?
+1804  +++ exited with 0 +++

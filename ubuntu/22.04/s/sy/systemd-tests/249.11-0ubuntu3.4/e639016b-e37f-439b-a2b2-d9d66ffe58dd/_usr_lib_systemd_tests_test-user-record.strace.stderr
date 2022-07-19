@@ -1,0 +1,28 @@
+/* test_read_login_defs("/dev/null") */
+system_alloc_uid_min=1
+system_uid_max=999
+system_alloc_gid_min=1
+system_gid_max=999
+/* test_read_login_defs("/etc/login.defs") */
+system_alloc_uid_min=1
+system_uid_max=999
+system_alloc_gid_min=1
+system_gid_max=999
+/* test_read_login_defs("<custom>") */
+system_alloc_uid_min=1
+system_uid_max=999
+system_alloc_gid_min=1
+system_gid_max=999
+/* test_acquire_ugid_allocation_range */
+system_alloc_uid_min=1
+system_uid_max=999
+system_alloc_gid_min=1
+system_gid_max=999
+/* test_uid_is_system */
+uid_is_system(0) = yes
+uid_is_system(999) = yes
+uid_is_system(0) = yes
+/* test_gid_is_system */
+gid_is_system(0) = yes
+gid_is_system(999) = yes
+gid_is_system(0) = yes

@@ -1,0 +1,53 @@
+stub time| WARNING: BCP 177 violation. Detected non-functional IPv6 loopback.
+Version: 5.2
+Usage: /usr/bin/squidclient [Basic Options] [HTTP Options]
+
+    -s | --quiet    Silent.  Do not print response message to stdout.
+    -v | --verbose  Verbose debugging. Repeat (-vv) to increase output level.
+                    Levels:
+                      1 - Print outgoing request message to stderr.
+                      2 - Print action trace to stderr.
+    --help          Display this help text.
+
+Connection Settings
+  -h | --host host     Send message to server on 'host'.  Default is localhost.
+  -l | --local host    Specify a local IP address to bind to.  Default is none.
+  -p | --port port     Port number on server to contact. Default is 3128.
+  -T timeout           Timeout in seconds for read/write operations
+  --https              Use TLS/SSL on the HTTP connection
+
+  TLS options:
+    --anonymous-tls    Use Anonymous TLS. Sets default parameters:
+                         "PERFORMANCE:+ANON-ECDH:+ANON-DH"
+    --params="..."   Use the given parameters.
+    --cert=FILE        Path to a PEM file holding the client X.509 certificate chain.
+                       May be repeated if there are multiple certificates to use for the server.
+    --trusted-ca=PATH  Path to a PEM file holding trusted CA certificate(s).
+                       May be repeated.
+                       Example path: "/etc/ssl/certs/ca-certificates.crt"
+
+Ping Mode
+  --ping [options]  Enable ping mode.
+
+  options:
+    -g count        Ping iteration count (default, loop until interrupted).
+    -I interval     Ping interval in seconds (default 1 second).
+
+HTTP Options:
+    -a           Do NOT include Accept: header.
+    -A           User-Agent: header. Use "" to omit.
+    -H 'string'  Extra headers to send. Supports '\\', '\n', '\r' and '\t'.
+    -i IMS       If-Modified-Since time (in Epoch seconds).
+    -j hosthdr   Host header content
+    -k           Keep the connection active. Default is to do only one request then close.
+    -m method    Request method, default is GET.
+    -n           Proxy Negotiate(Kerberos) authentication
+    -N           WWW Negotiate(Kerberos) authentication
+    -P file      Send content from the named file as request payload
+    -r           Force cache to reload URL
+    -t count     Trace count cache-hops
+    -u user      Proxy authentication username
+    -U user      WWW authentication username
+    -V version   HTTP Version. Use '-' for HTTP/0.9 omitted case
+    -w password  Proxy authentication password
+    -W password  WWW authentication password

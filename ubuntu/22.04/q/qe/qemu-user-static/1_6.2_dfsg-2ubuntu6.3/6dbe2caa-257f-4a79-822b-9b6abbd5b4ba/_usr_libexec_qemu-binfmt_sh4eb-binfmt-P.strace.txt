@@ -1,0 +1,47 @@
+1092  execve("/usr/libexec/qemu-binfmt/sh4eb-binfmt-P", ["/usr/libexec/qemu-binfmt/sh4eb-binfmt-P"], 0x7ffc908ce160 /* 12 vars */) = 0
+1092  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd6b381ff0) = -1 EINVAL (Invalid argument)
+1092  brk(NULL)                         = 0x21e4000
+1092  brk(0x21e4e80)                    = 0x21e4e80
+1092  arch_prctl(ARCH_SET_FS, 0x21e4480) = 0
+1092  set_tid_address(0x21e4750)        = 1092
+1092  set_robust_list(0x21e4760, 24)    = 0
+1092  rseq(0x21e4e20, 0x20, 0, 0x53053053) = 0
+1092  uname({sysname="Linux", nodename="c2525e54e769", ...}) = 0
+1092  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1092  readlink("/proc/self/exe", "/usr/bin/qemu-sh4eb-static", 4096) = 26
+1092  getrandom("\x36\x85\xad\x95\x6e\x7a\xda\xfc", 8, GRND_NONBLOCK) = 8
+1092  brk(0x2205e80)                    = 0x2205e80
+1092  brk(0x2206000)                    = 0x2206000
+1092  mprotect(0x690000, 217088, PROT_READ) = 0
+1092  rt_sigprocmask(SIG_SETMASK, ~[ILL FPE SEGV RTMIN RT_1], [], 8) = 0
+1092  rt_sigaction(SIGRT_1, {sa_handler=0x59ed50, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x4f7040}, NULL, 8) = 0
+1092  rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+1092  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f6af20ea000
+1092  mprotect(0x7f6af20eb000, 8388608, PROT_READ|PROT_WRITE) = 0
+1092  rt_sigprocmask(SIG_BLOCK, ~[], ~[ILL FPE KILL SEGV STOP RTMIN RT_1], 8) = 0
+1092  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f6af28ea910, parent_tid=0x7f6af28ea910, exit_signal=0, stack=0x7f6af20ea000, stack_size=0x8001c0, tls=0x7f6af28ea640}, 88) = -1 ENOSYS (Function not implemented)
+1092  clone(child_stack=0x7f6af28ea1b0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+1097  rseq(0x7f6af28eafe0, 0x20, 0, 0x53053053 <unfinished ...>
+1092  <... clone resumed>, parent_tid=[1097], tls=0x7f6af28ea640, child_tidptr=0x7f6af28ea910) = 1097
+1097  <... rseq resumed>)               = 0
+1092  rt_sigprocmask(SIG_SETMASK, ~[ILL FPE KILL SEGV STOP RTMIN RT_1],  <unfinished ...>
+1097  set_robust_list(0x7f6af28ea920, 24 <unfinished ...>
+1092  <... rt_sigprocmask resumed>NULL, 8) = 0
+1097  <... set_robust_list resumed>)    = 0
+1092  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1097  rt_sigprocmask(SIG_SETMASK, ~[ILL FPE KILL SEGV STOP RTMIN RT_1],  <unfinished ...>
+1092  <... rt_sigprocmask resumed>NULL, 8) = 0
+1097  <... rt_sigprocmask resumed>NULL, 8) = 0
+1092  prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+1097  mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+1092  <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1097  <... mmap resumed>)               = 0x7f6aea0ea000
+1092  write(2, "qemu: /usr/libexec/qemu-binfmt/sh4eb-binfmt-P has to be run using kernel binfmt-misc subsystem\n", 95 <unfinished ...>
+1097  munmap(0x7f6aea0ea000, 32595968)  = 0
+1092  <... write resumed>)              = 95
+1097  munmap(0x7f6af0000000, 34512896 <unfinished ...>
+1092  exit_group(1 <unfinished ...>
+1097  <... munmap resumed>)             = 0
+1092  <... exit_group resumed>)         = ?
+1097  +++ exited with 1 +++
+1092  +++ exited with 1 +++
