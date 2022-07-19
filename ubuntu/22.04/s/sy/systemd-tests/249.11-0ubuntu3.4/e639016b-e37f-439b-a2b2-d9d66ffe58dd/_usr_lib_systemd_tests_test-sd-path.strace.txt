@@ -1,0 +1,797 @@
+2970  execve("/usr/lib/systemd/tests/test-sd-path", ["/usr/lib/systemd/tests/test-sd-path"], 0x7fff75dbf520 /* 12 vars */) = 0
+2970  brk(NULL)                         = 0x56340162d000
+2970  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc76733e80) = -1 EINVAL (Invalid argument)
+2970  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f53b7e2e000
+2970  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/tls/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/tls", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/haswell/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/haswell", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  newfstatat(AT_FDCWD, "/lib/systemd/x86_64", 0x7ffc767330a0, 0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/lib/systemd/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230N+\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0!\0 \0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\7\5\0\0\0\0\0`\7\5\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2840280, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 2850192, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7b76000
+2970  mmap(0x7f53b7bc7000, 1740800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x51000) = 0x7f53b7bc7000
+2970  mmap(0x7f53b7d70000, 688128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fa000) = 0x7f53b7d70000
+2970  mmap(0x7f53b7e18000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a1000) = 0x7f53b7e18000
+2970  mmap(0x7f53b7e2c000, 7568, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53b7e2c000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/systemd/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f53b7b74000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2970  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2970  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2970  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2970  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2970  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b794c000
+2970  mmap(0x7f53b7974000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f53b7974000
+2970  mmap(0x7f53b7b09000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f53b7b09000
+2970  mmap(0x7f53b7b61000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f53b7b61000
+2970  mmap(0x7f53b7b67000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53b7b67000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\201\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\24\0\0\0\0\0\0000\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34888, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 36896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7942000
+2970  mprotect(0x7f53b7944000, 24576, PROT_NONE) = 0
+2970  mmap(0x7f53b7944000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f53b7944000
+2970  mmap(0x7f53b7948000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f53b7948000
+2970  mmap(0x7f53b794a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f53b794a000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340T\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360i\0\0\0\0\0\0\360i\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=220192, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 222136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b790b000
+2970  mprotect(0x7f53b7912000, 172032, PROT_NONE) = 0
+2970  mmap(0x7f53b7912000, 131072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f53b7912000
+2970  mmap(0x7f53b7932000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f53b7932000
+2970  mmap(0x7f53b793c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7f53b793c000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10!\0\0\0\0\0\0\10!\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 41016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7900000
+2970  mmap(0x7f53b7903000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f53b7903000
+2970  mmap(0x7f53b7907000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f53b7907000
+2970  mmap(0x7f53b7909000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f53b7909000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f53b78fe000
+2970  mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b78c4000
+2970  mprotect(0x7f53b78c6000, 188416, PROT_NONE) = 0
+2970  mmap(0x7f53b78c6000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f53b78c6000
+2970  mmap(0x7f53b78da000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f53b78da000
+2970  mmap(0x7f53b78f4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7f53b78f4000
+2970  mmap(0x7f53b78f6000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53b78f6000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x\300\23\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1296312, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 1299576, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7786000
+2970  mprotect(0x7f53b7795000, 1200128, PROT_NONE) = 0
+2970  mmap(0x7f53b7795000, 942080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f53b7795000
+2970  mmap(0x7f53b787b000, 253952, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf5000) = 0x7f53b787b000
+2970  mmap(0x7f53b78ba000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x133000) = 0x7f53b78ba000
+2970  mmap(0x7f53b78c3000, 1144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53b78c3000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libip4tc.so.2", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\203\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\25\0\0\0\0\0\0\20\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=35440, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 37440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b777c000
+2970  mmap(0x7f53b777e000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f53b777e000
+2970  mmap(0x7f53b7782000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f53b7782000
+2970  mmap(0x7f53b7784000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f53b7784000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkmod.so.2", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230\241\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X2\0\0\0\0\0\0X2\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108760, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 110672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7760000
+2970  mmap(0x7f53b7764000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f53b7764000
+2970  mmap(0x7f53b7775000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f53b7775000
+2970  mmap(0x7f53b777a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f53b777a000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240\341\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\36\0\0\0\0\0\0\200\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125152, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 127072, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7740000
+2970  mprotect(0x7f53b7742000, 114688, PROT_NONE) = 0
+2970  mmap(0x7f53b7742000, 102400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f53b7742000
+2970  mmap(0x7f53b775b000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f53b775b000
+2970  mmap(0x7f53b775e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f53b775e000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`#\4\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\370~\0\0\0\0\0\0\370~\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=273056, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 275000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b76fc000
+2970  mprotect(0x7f53b7704000, 237568, PROT_NONE) = 0
+2970  mmap(0x7f53b7704000, 180224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f53b7704000
+2970  mmap(0x7f53b7730000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x34000) = 0x7f53b7730000
+2970  mmap(0x7f53b773e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x41000) = 0x7f53b773e000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\325C\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\34\v\0\0\0\0\0(\34\v\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f53b76fa000
+2970  mmap(NULL, 4461760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b72b8000
+2970  mmap(0x7f53b736a000, 2478080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7f53b736a000
+2970  mmap(0x7f53b75c7000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30f000) = 0x7f53b75c7000
+2970  mmap(0x7f53b7699000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e0000) = 0x7f53b7699000
+2970  mmap(0x7f53b76f7000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53b76f7000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\1\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x&\0\0\0\0\0\0x&\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=67736, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 69648, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b72a6000
+2970  mmap(0x7f53b72a9000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f53b72a9000
+2970  mmap(0x7f53b72b2000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f53b72b2000
+2970  mmap(0x7f53b72b6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f53b72b6000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\330\30\0\0\0\0\0\0\330\30\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125360, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 127296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7286000
+2970  mprotect(0x7f53b7288000, 114688, PROT_NONE) = 0
+2970  mmap(0x7f53b7288000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f53b7288000
+2970  mmap(0x7f53b7296000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f53b7296000
+2970  mmap(0x7f53b72a4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f53b72a4000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b725a000
+2970  mprotect(0x7f53b7260000, 139264, PROT_NONE) = 0
+2970  mmap(0x7f53b7260000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f53b7260000
+2970  mmap(0x7f53b727a000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f53b727a000
+2970  mmap(0x7f53b7282000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f53b7282000
+2970  mmap(0x7f53b7284000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53b7284000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\321\f\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X\220\0\0\0\0\0\0X\220\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 843832, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b718b000
+2970  mmap(0x7f53b7195000, 729088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f53b7195000
+2970  mmap(0x7f53b7247000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbc000) = 0x7f53b7247000
+2970  mmap(0x7f53b7258000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcc000) = 0x7f53b7258000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\222\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260'\0\0\0\0\0\0\260'\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=170456, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 172296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7160000
+2970  mmap(0x7f53b7163000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f53b7163000
+2970  mmap(0x7f53b717e000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f53b717e000
+2970  mmap(0x7f53b7189000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f53b7189000
+2970  close(3)                          = 0
+2970  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f53b715e000
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\300A\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08>\0\0\0\0\0\08>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=149760, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 151992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7138000
+2970  mmap(0x7f53b713c000, 90112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f53b713c000
+2970  mmap(0x7f53b7152000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f53b7152000
+2970  mmap(0x7f53b715c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7f53b715c000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\1\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250*\0\0\0\0\0\0\250*\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=133200, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 184496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b710a000
+2970  mmap(0x7f53b710d000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f53b710d000
+2970  mmap(0x7f53b7115000, 86016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f53b7115000
+2970  mmap(0x7f53b712a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f53b712a000
+2970  mmap(0x7f53b712c000, 45232, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f53b712c000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b7073000
+2970  mmap(0x7f53b7075000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f53b7075000
+2970  mmap(0x7f53b70e0000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f53b70e0000
+2970  mmap(0x7f53b7108000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f53b7108000
+2970  close(3)                          = 0
+2970  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3
+2970  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200b\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\22\0\0\0\0\0\0H\22\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2970  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_EMPTY_PATH) = 0
+2970  mmap(NULL, 28992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53b706b000
+2970  mmap(0x7f53b706d000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f53b706d000
+2970  mmap(0x7f53b7070000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f53b7070000
+2970  mmap(0x7f53b7071000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f53b7071000
+2970  close(3)                          = 0
+2970  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f53b7069000
+2970  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f53b7066000
+2970  arch_prctl(ARCH_SET_FS, 0x7f53b7066900) = 0
+2970  set_tid_address(0x7f53b7066bd0)   = 2970
+2970  set_robust_list(0x7f53b7066be0, 24) = 0
+2970  rseq(0x7f53b70672a0, 0x20, 0, 0x53053053) = 0
+2970  mprotect(0x7f53b7b61000, 16384, PROT_READ) = 0
+2970  mprotect(0x7f53b7071000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7108000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b712a000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b715c000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7189000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7258000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7282000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b72a4000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b72b6000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7699000, 372736, PROT_READ) = 0
+2970  mprotect(0x7f53b793c000, 20480, PROT_READ) = 0
+2970  mprotect(0x7f53b773e000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b775e000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b777a000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7784000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b78ba000, 12288, PROT_READ) = 0
+2970  mprotect(0x7f53b78f4000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7909000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b794a000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7e18000, 77824, PROT_READ) = 0
+2970  mprotect(0x563400832000, 4096, PROT_READ) = 0
+2970  mprotect(0x7f53b7e68000, 8192, PROT_READ) = 0
+2970  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2970  munmap(0x7f53b7b74000, 7889)      = 0
+2970  getrandom("\x54\x0b\x52\xb1\x0e\x8d\xf2\x8c", 8, GRND_NONBLOCK) = 8
+2970  brk(NULL)                         = 0x56340162d000
+2970  brk(0x56340164e000)               = 0x56340164e000
+2970  statfs("/sys/fs/selinux", 0x7ffc76733ec0) = -1 ENOENT (No such file or directory)
+2970  statfs("/selinux", 0x7ffc76733ec0) = -1 ENOENT (No such file or directory)
+2970  openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+2970  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2970  read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+2970  read(3, "", 1024)                 = 0
+2970  close(3)                          = 0
+2970  access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+2970  prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 0
+2970  prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2970  prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+2970  prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2970  prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2970  prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+2970  getpid()                          = 2970
+2970  writev(2, [{iov_base="/* test_sd_path_lookup */", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="00: \"/tmp\"", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="00: \"/tmp/suffix\"", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  newfstatat(AT_FDCWD, "/var/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="01: \"/var/tmp\"", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  newfstatat(AT_FDCWD, "/var/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="01: \"/var/tmp/suffix\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="02: \"/usr/bin\"", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="02: \"/usr/bin/suffix\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="03: \"/usr/include\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="03: \"/usr/include/suffix\"", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="04: \"/usr/lib\"", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="04: \"/usr/lib/suffix\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="05: \"/usr/lib/x86_64-linux-gnu\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="05: \"/usr/lib/x86_64-linux-gnu/suffix\"", iov_len=38}, {iov_base="\n", iov_len=1}], 2) = 39
+2970  writev(2, [{iov_base="06: \"/usr/share\"", iov_len=16}, {iov_base="\n", iov_len=1}], 2) = 17
+2970  writev(2, [{iov_base="06: \"/usr/share/suffix\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="07: \"/usr/share/factory/etc\"", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="07: \"/usr/share/factory/etc/suffix\"", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2970  writev(2, [{iov_base="08: \"/usr/share/factory/var\"", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="08: \"/usr/share/factory/var/suffix\"", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2970  writev(2, [{iov_base="09: \"/etc\"", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="09: \"/etc/suffix\"", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="10: \"/run\"", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="10: \"/run/suffix\"", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="11: \"/run/log\"", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="11: \"/run/log/suffix\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="12: \"/var/lib\"", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="12: \"/var/lib/suffix\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="13: \"/var/log\"", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="13: \"/var/log/suffix\"", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="14: \"/var/cache\"", iov_len=16}, {iov_base="\n", iov_len=1}], 2) = 17
+2970  writev(2, [{iov_base="14: \"/var/cache/suffix\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="15: \"/var/spool\"", iov_len=16}, {iov_base="\n", iov_len=1}], 2) = 17
+2970  writev(2, [{iov_base="15: \"/var/spool/suffix\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="16: \"/root/.local/bin\"", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="16: \"/root/.local/bin/suffix\"", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="17: \"/root/.local/lib\"", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="17: \"/root/.local/lib/suffix\"", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="18: \"/root/.local/lib/x86_64-linux-gnu\"", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2970  writev(2, [{iov_base="18: \"/root/.local/lib/x86_64-linux-gnu/suffix\"", iov_len=46}, {iov_base="\n", iov_len=1}], 2) = 47
+2970  writev(2, [{iov_base="19: \"/root/.local/share\"", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="19: \"/root/.local/share/suffix\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="20: \"/root/.config\"", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="20: \"/root/.config/suffix\"", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="22: \"/root/.cache\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="22: \"/root/.cache/suffix\"", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="23: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  writev(2, [{iov_base="23: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="24: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="24: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="25: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="25: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="26: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="26: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="27: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="27: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="28: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="28: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="29: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="29: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="30: \"/root\"", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="30: \"/root/suffix\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="31: \"/root/Desktop\"", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="31: \"/root/Desktop/suffix\"", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="32: \"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2970  writev(2, [{iov_base="32: \"/usr/local/sbin/suffix:/usr/local/bin/suffix:/usr/sbin/suffix:/usr/bin/suffix:/sbin/suffix:/bin/suffix\"", iov_len=108}, {iov_base="\n", iov_len=1}], 2) = 109
+2970  writev(2, [{iov_base="33: \"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"", iov_len=66}, {iov_base="\n", iov_len=1}], 2) = 67
+2970  writev(2, [{iov_base="33: \"/usr/local/sbin/suffix:/usr/local/bin/suffix:/usr/sbin/suffix:/usr/bin/suffix:/sbin/suffix:/bin/suffix\"", iov_len=108}, {iov_base="\n", iov_len=1}], 2) = 109
+2970  writev(2, [{iov_base="34: \"/root/.local/lib:/usr/local/lib:/usr/lib:/lib\"", iov_len=51}, {iov_base="\n", iov_len=1}], 2) = 52
+2970  writev(2, [{iov_base="34: \"/root/.local/lib/suffix:/usr/local/lib/suffix:/usr/lib/suffix:/lib/suffix\"", iov_len=79}, {iov_base="\n", iov_len=1}], 2) = 80
+2970  writev(2, [{iov_base="35: \"/root/.local/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu\"", iov_len=91}, {iov_base="\n", iov_len=1}], 2) = 92
+2970  writev(2, [{iov_base="35: \"/root/.local/lib/x86_64-linux-gnu/suffix:/usr/lib/x86_64-linux-gnu/suffix:/usr/lib/x86_64-linux-gnu/suffix\"", iov_len=112}, {iov_base="\n", iov_len=1}], 2) = 113
+2970  writev(2, [{iov_base="36: \"/root/.local/share:/usr/local/share:/usr/share\"", iov_len=52}, {iov_base="\n", iov_len=1}], 2) = 53
+2970  writev(2, [{iov_base="36: \"/root/.local/share/suffix:/usr/local/share/suffix:/usr/share/suffix\"", iov_len=73}, {iov_base="\n", iov_len=1}], 2) = 74
+2970  writev(2, [{iov_base="37: \"/usr/local/share/factory/etc:/usr/share/factory/etc\"", iov_len=57}, {iov_base="\n", iov_len=1}], 2) = 58
+2970  writev(2, [{iov_base="37: \"/usr/local/share/factory/etc/suffix:/usr/share/factory/etc/suffix\"", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2970  writev(2, [{iov_base="38: \"/usr/local/share/factory/var:/usr/share/factory/var\"", iov_len=57}, {iov_base="\n", iov_len=1}], 2) = 58
+2970  writev(2, [{iov_base="38: \"/usr/local/share/factory/var/suffix:/usr/share/factory/var/suffix\"", iov_len=71}, {iov_base="\n", iov_len=1}], 2) = 72
+2970  writev(2, [{iov_base="39: \"/root/.config:/etc\"", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="39: \"/root/.config/suffix:/etc/suffix\"", iov_len=38}, {iov_base="\n", iov_len=1}], 2) = 39
+2970  writev(2, [{iov_base="40: \"/lib/systemd\"", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="40: \"/lib/systemd/suffix\"", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="41: \"/lib/systemd/system\"", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="41: \"/lib/systemd/system/suffix\"", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="42: \"/lib/systemd/system-preset\"", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="42: \"/lib/systemd/system-preset/suffix\"", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2970  writev(2, [{iov_base="43: \"/etc/systemd/system\"", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="43: \"/etc/systemd/system/suffix\"", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="44: \"/usr/lib/systemd/user\"", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2970  writev(2, [{iov_base="44: \"/usr/lib/systemd/user/suffix\"", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="45: \"/lib/systemd/user-preset\"", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="45: \"/lib/systemd/user-preset/suffix\"", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="46: \"/etc/systemd/user\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="46: \"/etc/systemd/user/suffix\"", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="47: \"/etc/systemd/system.control:/run/systemd/system.control:/run/systemd/transient:/run/systemd/generator.early:/etc/systemd/sy"..., iov_len=336}, {iov_base="\n", iov_len=1}], 2) = 337
+2970  writev(2, [{iov_base="47: \"/etc/systemd/system.control/suffix:/run/systemd/system.control/suffix:/run/systemd/transient/suffix:/run/systemd/generator."..., iov_len=427}, {iov_base="\n", iov_len=1}], 2) = 428
+2970  writev(2, [{iov_base="48: \"/root/.config/systemd/user.control:/root/.config/systemd/user:/etc/xdg/systemd/user:/etc/systemd/user:/run/systemd/user:/ro"..., iov_len=261}, {iov_base="\n", iov_len=1}], 2) = 262
+2970  writev(2, [{iov_base="48: \"/root/.config/systemd/user.control/suffix:/root/.config/systemd/user/suffix:/etc/xdg/systemd/user/suffix:/etc/systemd/user/"..., iov_len=331}, {iov_base="\n", iov_len=1}], 2) = 332
+2970  writev(2, [{iov_base="49: \"/lib/systemd/system-generators\"", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2970  writev(2, [{iov_base="49: \"/lib/systemd/system-generators/suffix\"", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2970  writev(2, [{iov_base="50: \"/usr/lib/systemd/user-generators\"", iov_len=38}, {iov_base="\n", iov_len=1}], 2) = 39
+2970  writev(2, [{iov_base="50: \"/usr/lib/systemd/user-generators/suffix\"", iov_len=45}, {iov_base="\n", iov_len=1}], 2) = 46
+2970  writev(2, [{iov_base="51: \"/run/systemd/system-generators:/etc/systemd/system-generators:/usr/local/lib/systemd/system-generators:/lib/systemd/system-"..., iov_len=139}, {iov_base="\n", iov_len=1}], 2) = 140
+2970  writev(2, [{iov_base="51: \"/run/systemd/system-generators/suffix:/etc/systemd/system-generators/suffix:/usr/local/lib/systemd/system-generators/suffix"..., iov_len=167}, {iov_base="\n", iov_len=1}], 2) = 168
+2970  writev(2, [{iov_base="52: \"/run/systemd/user-generators:/etc/systemd/user-generators:/usr/local/lib/systemd/user-generators:/usr/lib/systemd/user-gene"..., iov_len=135}, {iov_base="\n", iov_len=1}], 2) = 136
+2970  writev(2, [{iov_base="52: \"/run/systemd/user-generators/suffix:/etc/systemd/user-generators/suffix:/usr/local/lib/systemd/user-generators/suffix:/usr/"..., iov_len=163}, {iov_base="\n", iov_len=1}], 2) = 164
+2970  writev(2, [{iov_base="53: \"/lib/systemd/system-sleep\"", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="53: \"/lib/systemd/system-sleep/suffix\"", iov_len=38}, {iov_base="\n", iov_len=1}], 2) = 39
+2970  writev(2, [{iov_base="54: \"/lib/systemd/system-shutdown\"", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="54: \"/lib/systemd/system-shutdown/suffix\"", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2970  writev(2, [{iov_base="55: \"/usr/lib/tmpfiles.d\"", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="55: \"/usr/lib/tmpfiles.d/suffix\"", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="56: \"/usr/lib/sysusers.d\"", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="56: \"/usr/lib/sysusers.d/suffix\"", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="57: \"/usr/lib/sysctl.d\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="57: \"/usr/lib/sysctl.d/suffix\"", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="58: \"/usr/lib/binfmt.d\"", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="58: \"/usr/lib/binfmt.d/suffix\"", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="59: \"/usr/lib/modules-load.d\"", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="59: \"/usr/lib/modules-load.d/suffix\"", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2970  writev(2, [{iov_base="60: \"/usr/lib/systemd/catalog\"", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="60: \"/usr/lib/systemd/catalog/suffix\"", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="61: \"/etc/systemd/network:/run/systemd/network:/usr/local/lib/systemd/network:/usr/lib/systemd/network:/lib/systemd/network\"", iov_len=124}, {iov_base="\n", iov_len=1}], 2) = 125
+2970  writev(2, [{iov_base="61: \"/etc/systemd/network/suffix:/run/systemd/network/suffix:/usr/local/lib/systemd/network/suffix:/usr/lib/systemd/network/suff"..., iov_len=159}, {iov_base="\n", iov_len=1}], 2) = 160
+2970  writev(2, [{iov_base="/* test_sd_path_lookup_strv */", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="00:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /tmp", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2970  newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="00:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /tmp/suffix", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2970  newfstatat(AT_FDCWD, "/var/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="01:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/tmp", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  newfstatat(AT_FDCWD, "/var/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+2970  writev(2, [{iov_base="01:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/tmp/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="02:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/bin", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="02:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/bin/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="03:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/include", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="03:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/include/suffix", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="04:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="04:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="05:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/x86_64-linux-gnu", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2970  writev(2, [{iov_base="05:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/x86_64-linux-gnu/suffix", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="06:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/share", iov_len=12}, {iov_base="\n", iov_len=1}], 2) = 13
+2970  writev(2, [{iov_base="06:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/share/suffix", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="07:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/share/factory/etc", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="07:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/share/factory/etc/suffix", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="08:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/share/factory/var", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="08:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/share/factory/var/suffix", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="09:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2970  writev(2, [{iov_base="09:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/suffix", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2970  writev(2, [{iov_base="10:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2970  writev(2, [{iov_base="10:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run/suffix", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2970  writev(2, [{iov_base="11:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run/log", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="11:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run/log/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="12:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/lib", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="12:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/lib/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="13:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/log", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="13:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/log/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="14:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/cache", iov_len=12}, {iov_base="\n", iov_len=1}], 2) = 13
+2970  writev(2, [{iov_base="14:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/cache/suffix", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="15:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/spool", iov_len=12}, {iov_base="\n", iov_len=1}], 2) = 13
+2970  writev(2, [{iov_base="15:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /var/spool/suffix", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="16:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/bin", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="16:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/bin/suffix", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="17:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="17:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib/suffix", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="18:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib/x86_64-linux-gnu", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2970  writev(2, [{iov_base="18:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib/x86_64-linux-gnu/suffix", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2970  writev(2, [{iov_base="19:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/share", iov_len=20}, {iov_base="\n", iov_len=1}], 2) = 21
+2970  writev(2, [{iov_base="19:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/share/suffix", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2970  writev(2, [{iov_base="20:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.config", iov_len=15}, {iov_base="\n", iov_len=1}], 2) = 16
+2970  writev(2, [{iov_base="20:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.config/suffix", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="22:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.cache", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="22:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.cache/suffix", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="23:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  writev(2, [{iov_base="23:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="24:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="24:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="25:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="25:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="26:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="26:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="27:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="27:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="28:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="28:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="29:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="29:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="30:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="30:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="31:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/Desktop", iov_len=15}, {iov_base="\n", iov_len=1}], 2) = 16
+2970  openat(AT_FDCWD, "/root/.config/user-dirs.dirs", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+2970  writev(2, [{iov_base="31:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/Desktop/suffix", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="32:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/sbin", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="  /usr/local/bin", iov_len=16}, {iov_base="\n", iov_len=1}], 2) = 17
+2970  writev(2, [{iov_base="  /usr/sbin", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  writev(2, [{iov_base="  /usr/bin", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="  /sbin", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  writev(2, [{iov_base="  /bin", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2970  writev(2, [{iov_base="32:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/sbin/suffix", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="  /usr/local/bin/suffix", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="  /usr/sbin/suffix", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="  /usr/bin/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="  /sbin/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="  /bin/suffix", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2970  writev(2, [{iov_base="33:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/sbin", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="  /usr/local/bin", iov_len=16}, {iov_base="\n", iov_len=1}], 2) = 17
+2970  writev(2, [{iov_base="  /usr/sbin", iov_len=11}, {iov_base="\n", iov_len=1}], 2) = 12
+2970  writev(2, [{iov_base="  /usr/bin", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="  /sbin", iov_len=7}, {iov_base="\n", iov_len=1}], 2) = 8
+2970  writev(2, [{iov_base="  /bin", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2970  writev(2, [{iov_base="33:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/sbin/suffix", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="  /usr/local/bin/suffix", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="  /usr/sbin/suffix", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="  /usr/bin/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="  /sbin/suffix", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="  /bin/suffix", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2970  writev(2, [{iov_base="34:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="  /usr/local/lib", iov_len=16}, {iov_base="\n", iov_len=1}], 2) = 17
+2970  writev(2, [{iov_base="  /usr/lib", iov_len=10}, {iov_base="\n", iov_len=1}], 2) = 11
+2970  writev(2, [{iov_base="  /lib", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2970  writev(2, [{iov_base="34:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib/suffix", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="  /usr/local/lib/suffix", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="  /usr/lib/suffix", iov_len=17}, {iov_base="\n", iov_len=1}], 2) = 18
+2970  writev(2, [{iov_base="  /lib/suffix", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2970  writev(2, [{iov_base="35:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib/x86_64-linux-gnu", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2970  writev(2, [{iov_base="  /usr/lib/x86_64-linux-gnu", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2970  writev(2, [{iov_base="  /usr/lib/x86_64-linux-gnu", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2970  writev(2, [{iov_base="35:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/lib/x86_64-linux-gnu/suffix", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2970  writev(2, [{iov_base="  /usr/lib/x86_64-linux-gnu/suffix", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="  /usr/lib/x86_64-linux-gnu/suffix", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="36:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/share", iov_len=20}, {iov_base="\n", iov_len=1}], 2) = 21
+2970  writev(2, [{iov_base="  /usr/local/share", iov_len=18}, {iov_base="\n", iov_len=1}], 2) = 19
+2970  writev(2, [{iov_base="  /usr/share", iov_len=12}, {iov_base="\n", iov_len=1}], 2) = 13
+2970  writev(2, [{iov_base="36:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.local/share/suffix", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2970  writev(2, [{iov_base="  /usr/local/share/suffix", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="  /usr/share/suffix", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="37:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/share/factory/etc", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /usr/share/factory/etc", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="37:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/share/factory/etc/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="  /usr/share/factory/etc/suffix", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="38:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/share/factory/var", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /usr/share/factory/var", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="38:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/local/share/factory/var/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="  /usr/share/factory/var/suffix", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="39:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.config", iov_len=15}, {iov_base="\n", iov_len=1}], 2) = 16
+2970  writev(2, [{iov_base="  /etc", iov_len=6}, {iov_base="\n", iov_len=1}], 2) = 7
+2970  writev(2, [{iov_base="39:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.config/suffix", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="  /etc/suffix", iov_len=13}, {iov_base="\n", iov_len=1}], 2) = 14
+2970  writev(2, [{iov_base="40:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd", iov_len=14}, {iov_base="\n", iov_len=1}], 2) = 15
+2970  writev(2, [{iov_base="40:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/suffix", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="41:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="41:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system/suffix", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="42:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-preset", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="42:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-preset/suffix", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2970  writev(2, [{iov_base="43:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/system", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="43:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/system/suffix", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="44:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="44:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user/suffix", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="45:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/user-preset", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="45:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/user-preset/suffix", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2970  writev(2, [{iov_base="46:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/user", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="46:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/user/suffix", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="47:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/system.control", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="  /run/systemd/system.control", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="  /run/systemd/transient", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="  /run/systemd/generator.early", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /etc/systemd/system", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="  /etc/systemd/system.attached", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /run/systemd/system", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="  /run/systemd/system.attached", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /run/systemd/generator", iov_len=24}, {iov_base="\n", iov_len=1}], 2) = 25
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/system", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="  /lib/systemd/system", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="  /usr/lib/systemd/system", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="  /run/systemd/generator.late", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="47:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/system.control/suffix", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2970  writev(2, [{iov_base="  /run/systemd/system.control/suffix", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2970  writev(2, [{iov_base="  /run/systemd/transient/suffix", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="  /run/systemd/generator.early/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="  /etc/systemd/system/suffix", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="  /etc/systemd/system.attached/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="  /run/systemd/system/suffix", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="  /run/systemd/system.attached/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="  /run/systemd/generator/suffix", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/system/suffix", iov_len=38}, {iov_base="\n", iov_len=1}], 2) = 39
+2970  writev(2, [{iov_base="  /lib/systemd/system/suffix", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="  /usr/lib/systemd/system/suffix", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="  /run/systemd/generator.late/suffix", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2970  writev(2, [{iov_base="48:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.config/systemd/user.control", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2970  writev(2, [{iov_base="  /root/.config/systemd/user", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="  /etc/xdg/systemd/user", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="  /etc/systemd/user", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="  /run/systemd/user", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="  /root/.local/share/systemd/user", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2970  writev(2, [{iov_base="  /usr/local/share/systemd/user", iov_len=31}, {iov_base="\n", iov_len=1}], 2) = 32
+2970  writev(2, [{iov_base="  /usr/share/systemd/user", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/user", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user", iov_len=23}, {iov_base="\n", iov_len=1}], 2) = 24
+2970  writev(2, [{iov_base="48:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /root/.config/systemd/user.control/suffix", iov_len=43}, {iov_base="\n", iov_len=1}], 2) = 44
+2970  writev(2, [{iov_base="  /root/.config/systemd/user/suffix", iov_len=35}, {iov_base="\n", iov_len=1}], 2) = 36
+2970  writev(2, [{iov_base="  /etc/xdg/systemd/user/suffix", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /etc/systemd/user/suffix", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="  /run/systemd/user/suffix", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="  /root/.local/share/systemd/user/suffix", iov_len=40}, {iov_base="\n", iov_len=1}], 2) = 41
+2970  writev(2, [{iov_base="  /usr/local/share/systemd/user/suffix", iov_len=38}, {iov_base="\n", iov_len=1}], 2) = 39
+2970  writev(2, [{iov_base="  /usr/share/systemd/user/suffix", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/user/suffix", iov_len=36}, {iov_base="\n", iov_len=1}], 2) = 37
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user/suffix", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="49:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-generators", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="49:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-generators/suffix", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2970  writev(2, [{iov_base="50:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user-generators", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="50:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user-generators/suffix", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2970  writev(2, [{iov_base="51:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run/systemd/system-generators", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="  /etc/systemd/system-generators", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/system-generators", iov_len=42}, {iov_base="\n", iov_len=1}], 2) = 43
+2970  writev(2, [{iov_base="  /lib/systemd/system-generators", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="51:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run/systemd/system-generators/suffix", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2970  writev(2, [{iov_base="  /etc/systemd/system-generators/suffix", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/system-generators/suffix", iov_len=49}, {iov_base="\n", iov_len=1}], 2) = 50
+2970  writev(2, [{iov_base="  /lib/systemd/system-generators/suffix", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2970  writev(2, [{iov_base="52:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run/systemd/user-generators", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /etc/systemd/user-generators", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/user-generators", iov_len=40}, {iov_base="\n", iov_len=1}], 2) = 41
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user-generators", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="52:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /run/systemd/user-generators/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="  /etc/systemd/user-generators/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/user-generators/suffix", iov_len=47}, {iov_base="\n", iov_len=1}], 2) = 48
+2970  writev(2, [{iov_base="  /usr/lib/systemd/user-generators/suffix", iov_len=41}, {iov_base="\n", iov_len=1}], 2) = 42
+2970  writev(2, [{iov_base="53:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-sleep", iov_len=27}, {iov_base="\n", iov_len=1}], 2) = 28
+2970  writev(2, [{iov_base="53:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-sleep/suffix", iov_len=34}, {iov_base="\n", iov_len=1}], 2) = 35
+2970  writev(2, [{iov_base="54:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-shutdown", iov_len=30}, {iov_base="\n", iov_len=1}], 2) = 31
+2970  writev(2, [{iov_base="54:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /lib/systemd/system-shutdown/suffix", iov_len=37}, {iov_base="\n", iov_len=1}], 2) = 38
+2970  writev(2, [{iov_base="55:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/tmpfiles.d", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="55:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/tmpfiles.d/suffix", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="56:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/sysusers.d", iov_len=21}, {iov_base="\n", iov_len=1}], 2) = 22
+2970  writev(2, [{iov_base="56:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/sysusers.d/suffix", iov_len=28}, {iov_base="\n", iov_len=1}], 2) = 29
+2970  writev(2, [{iov_base="57:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/sysctl.d", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="57:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/sysctl.d/suffix", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="58:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/binfmt.d", iov_len=19}, {iov_base="\n", iov_len=1}], 2) = 20
+2970  writev(2, [{iov_base="58:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/binfmt.d/suffix", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="59:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/modules-load.d", iov_len=25}, {iov_base="\n", iov_len=1}], 2) = 26
+2970  writev(2, [{iov_base="59:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/modules-load.d/suffix", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="60:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/systemd/catalog", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="60:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /usr/lib/systemd/catalog/suffix", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2970  writev(2, [{iov_base="61:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/network", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="  /run/systemd/network", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/network", iov_len=32}, {iov_base="\n", iov_len=1}], 2) = 33
+2970  writev(2, [{iov_base="  /usr/lib/systemd/network", iov_len=26}, {iov_base="\n", iov_len=1}], 2) = 27
+2970  writev(2, [{iov_base="  /lib/systemd/network", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+2970  writev(2, [{iov_base="61:", iov_len=3}, {iov_base="\n", iov_len=1}], 2) = 4
+2970  writev(2, [{iov_base="  /etc/systemd/network/suffix", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="  /run/systemd/network/suffix", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  writev(2, [{iov_base="  /usr/local/lib/systemd/network/suffix", iov_len=39}, {iov_base="\n", iov_len=1}], 2) = 40
+2970  writev(2, [{iov_base="  /usr/lib/systemd/network/suffix", iov_len=33}, {iov_base="\n", iov_len=1}], 2) = 34
+2970  writev(2, [{iov_base="  /lib/systemd/network/suffix", iov_len=29}, {iov_base="\n", iov_len=1}], 2) = 30
+2970  exit_group(0)                     = ?
+2970  +++ exited with 0 +++

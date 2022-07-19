@@ -1,0 +1,85 @@
+Usage: selfserv -n rsa_nickname -p port [-BDENRZbjlmrsuvx] [-w password]
+         [-t threads] [-i pid_file] [-c ciphers] [-Y] [-d dbdir] [-g numblocks]
+         [-f password_file] [-L [seconds]] [-M maxProcs] [-P dbprefix]
+         [-V [min-version]:[max-version]] [-a sni_name]
+         [ T <good|revoked|unknown|badsig|corrupted|none|ocsp>] [-A ca]
+         [-C SSLCacheEntries] [-S dsa_nickname] [-Q]
+         [-I groups] [-J signatureschemes] [-e ec_nickname]
+         -U [0|1] -H [0|1|2] -W [0|1] [-z externalPsk]
+
+-V [min]:[max] restricts the set of enabled SSL/TLS protocol versions.
+   All versions are enabled by default.
+   Possible values for min/max: ssl3 tls1.0 tls1.1 tls1.2 tls1.3
+   Example: "-V ssl3:" enables SSL 3 and newer.
+-D means disable Nagle delays in TCP
+-R means disable detection of rollback from TLS to SSL3
+-a configure server for SNI.
+-k expected name negotiated on server sockets
+-b means try binding to the port and exit
+-m means test the model-socket feature of SSL_ImportFD.
+-r flag is interepreted as follows:
+    1 -r  means request, not require, cert on initial handshake.
+    2 -r's mean request  and require, cert on initial handshake.
+    3 -r's mean request, not require, cert on second handshake.
+    4 -r's mean request  and require, cert on second handshake.
+-s means disable SSL socket locking for performance
+-u means enable Session Ticket extension for TLS.
+-v means verbose output
+-L seconds means log statistics every 'seconds' seconds (default=30).
+-M maxProcs tells how many processes to run in a multi-process server
+-N means do NOT use the server session cache.  Incompatible with -M.
+-t threads -- specify the number of threads to use for connections.
+-i pid_file file to write the process id of selfserve
+-l means use local threads instead of global threads
+-g numblocks means test throughput by sending total numblocks chunks
+    of size 16kb to the client, 0 means unlimited (default=0)
+-j means measure TCP throughput (for use with -g option)
+-C SSLCacheEntries sets the maximum number of entries in the SSL
+    session cache
+-T <mode> enable OCSP stapling. Possible modes:
+   none: don't send cert status (default)
+   good, revoked, unknown: Include locally signed response. Requires: -A
+   failure: return a failure response (try later, unsigned)
+   badsig: use a good status but with an invalid signature
+   corrupted: stapled cert status is an invalid block of data
+   random: each connection uses a random status from this list:
+           good, revoked, unknown, failure, badsig, corrupted
+   ocsp: fetch from external OCSP server using AIA, or none
+-A <ca> Nickname of a CA used to sign a stapled cert status
+-U override default ECDHE ephemeral key reuse, 0: refresh, 1: reuse
+-H override default DHE server support, 0: disable, 1: enable,    2: require DH named groups [RFC7919]
+-W override default DHE server weak parameters support, 0: disable, 1: enable
+-c Restrict ciphers
+-Y prints cipher values allowed for parameter -c and exits
+-G enables the extended master secret extension [RFC7627]
+-Q enables ALPN for HTTP/1.1 [RFC7301]
+-I comma separated list of enabled groups for TLS key exchange.
+   The following values are valid:
+   P256, P384, P521, x25519, FF2048, FF3072, FF4096, FF6144, FF8192
+-J comma separated list of enabled signature schemes in preference order.
+   The following values are valid:
+     rsa_pkcs1_sha1, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512,
+     ecdsa_sha1, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384,
+     ecdsa_secp521r1_sha512,
+     rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512,
+     rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512,
+-Z enable 0-RTT (for TLS 1.3; also use -u)
+-E enable post-handshake authentication
+   (for TLS 1.3; only has an effect with 3 or more -r options)
+-x Export and print keying material after successful handshake
+   The argument is a comma separated list of exporters in the form:
+     LABEL[:OUTPUT-LENGTH[:CONTEXT]]
+   where LABEL and CONTEXT can be either a free-form string or
+   a hex string if it is preceded by "0x"; OUTPUT-LENGTH
+   is a decimal integer.
+-z Configure a TLS 1.3 External PSK with the given hex string for a key.
+   To specify a label, use ':' as a delimiter. For example:
+   0xAAAABBBBCCCCDDDD:mylabel. Otherwise, the default label of
+  'Client_identity' will be used.
+-X Configure the server for ECH via the given <ECHParams>.  ECHParams
+   are expected in one of two formats:
+      1. A string containing the ECH public name prefixed by the substring
+         "publicname:". For example, "publicname:example.com". In this mode,
+         an ephemeral ECH keypair is generated and ECHConfigs are printed to stdout.
+      2. As a Base64 tuple of <ECHRawPrivateKey> || <ECHConfigs>. In this mode, the
+         raw private key is used to bootstrap the HPKE context.

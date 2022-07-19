@@ -1,0 +1,54 @@
+-- test_is_wanted_print --
+Found container virtualization wsl.
+cmdline: /bin/bash /usr/bin/trace.sh systemd-tests
+default-hierarchy=unified
+Unsupported cgroupsv1 setup detected: name=systemd hierarchy not found.
+Cgroup controller cpuset in use by legacy v1 hierarchy.
+is_unified_wanted() → no
+Unsupported cgroupsv1 setup detected: name=systemd hierarchy not found.
+is_hybrid_wanted() → yes
+Unsupported cgroupsv1 setup detected: name=systemd hierarchy not found.
+is_legacy_wanted() → yes
+ 
+-- test_is_wanted_print --
+cmdline: /bin/bash /usr/bin/trace.sh systemd-tests
+is_unified_wanted() → no
+is_hybrid_wanted() → yes
+is_legacy_wanted() → yes
+ 
+-- test_is_wanted_print --
+cmdline: systemd.unified_cgroup_hierarchy
+is_unified_wanted() → no
+is_hybrid_wanted() → yes
+is_legacy_wanted() → yes
+ 
+-- test_is_wanted_print --
+cmdline: systemd.unified_cgroup_hierarchy=0
+is_unified_wanted() → no
+is_hybrid_wanted() → yes
+is_legacy_wanted() → yes
+ 
+-- test_is_wanted_print --
+cmdline: systemd.unified_cgroup_hierarchy=0 systemd.legacy_systemd_cgroup_controller
+is_unified_wanted() → no
+is_hybrid_wanted() → yes
+is_legacy_wanted() → yes
+ 
+-- test_is_wanted_print --
+cmdline: systemd.unified_cgroup_hierarchy=0 systemd.legacy_systemd_cgroup_controller=0
+is_unified_wanted() → no
+is_hybrid_wanted() → yes
+is_legacy_wanted() → yes
+ 
+-- test_is_wanted_print --
+cmdline: cgroup_no_v1=all
+is_unified_wanted() → no
+is_hybrid_wanted() → yes
+is_legacy_wanted() → yes
+ 
+-- test_is_wanted_print --
+cmdline: cgroup_no_v1=all systemd.unified_cgroup_hierarchy=0
+is_unified_wanted() → no
+is_hybrid_wanted() → yes
+is_legacy_wanted() → yes
+ 

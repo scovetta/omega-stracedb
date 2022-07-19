@@ -1,0 +1,43 @@
+792   execve("/usr/bin/gpgv-static", ["/usr/bin/gpgv-static"], 0x7ffef9fb9480 /* 12 vars */) = 0
+792   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdd82febd0) = -1 EINVAL (Invalid argument)
+792   brk(NULL)                         = 0x115b000
+792   brk(0x115be00)                    = 0x115be00
+792   arch_prctl(ARCH_SET_FS, 0x115b400) = 0
+792   set_tid_address(0x115b6d0)        = 792
+792   set_robust_list(0x115b6e0, 24)    = 0
+792   rseq(0x115bda0, 0x20, 0, 0x53053053) = 0
+792   uname({sysname="Linux", nodename="6fb6b1b64678", ...}) = 0
+792   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+792   readlink("/proc/self/exe", "/usr/bin/gpgv-static", 4096) = 20
+792   getrandom("\x58\x4c\x61\xc4\x6c\x57\xe9\xd5", 8, GRND_NONBLOCK) = 8
+792   brk(0x117ce00)                    = 0x117ce00
+792   brk(0x117d000)                    = 0x117d000
+792   mprotect(0x69c000, 28672, PROT_READ) = 0
+792   access("/etc/gcrypt/fips_enabled", F_OK) = -1 ENOENT (No such file or directory)
+792   openat(AT_FDCWD, "/etc/gcrypt/hwf.deny", O_RDONLY) = -1 ENOENT (No such file or directory)
+792   rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+792   rt_sigaction(SIGINT, {sa_handler=0x41c900, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x546e60}, NULL, 8) = 0
+792   rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+792   rt_sigaction(SIGHUP, {sa_handler=0x41c900, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x546e60}, NULL, 8) = 0
+792   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+792   rt_sigaction(SIGTERM, {sa_handler=0x41c900, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x546e60}, NULL, 8) = 0
+792   rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+792   rt_sigaction(SIGQUIT, {sa_handler=0x41c900, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x546e60}, NULL, 8) = 0
+792   rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+792   rt_sigaction(SIGSEGV, {sa_handler=0x41c900, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x546e60}, NULL, 8) = 0
+792   rt_sigaction(SIGUSR1, {sa_handler=0x418060, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x546e60}, NULL, 8) = 0
+792   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x546e60}, NULL, 8) = 0
+792   openat(AT_FDCWD, "/root/.gnupg/trustedkeys.kbx", O_RDONLY) = -1 ENOENT (No such file or directory)
+792   openat(AT_FDCWD, "/root/.gnupg/trustedkeys.gpg", O_RDONLY) = -1 ENOENT (No such file or directory)
+792   write(2, "gpgv: unknown type of key resource 'trustedkeys.kbx", 51) = 51
+792   write(2, "'\n", 2)                = 2
+792   write(2, "gpgv: keyblock resource '/root/.gnupg/trustedkeys.kbx': General error", 69) = 69
+792   write(2, "\n", 1)                 = 1
+792   read(0, "/usr/bin/gpgv-static\n", 8192) = 21
+792   read(0, "", 8192)                 = 0
+792   write(2, "gpgv: ", 6)             = 6
+792   write(2, "no valid OpenPGP data found.\n", 29) = 29
+792   write(2, "gpgv: ", 6)             = 6
+792   write(2, "the signature could not be verified.\nPlease remember that the signature file (.sig or .asc)\nshould be the first file given on th"..., 144) = 144
+792   exit_group(2)                     = ?
+792   +++ exited with 2 +++

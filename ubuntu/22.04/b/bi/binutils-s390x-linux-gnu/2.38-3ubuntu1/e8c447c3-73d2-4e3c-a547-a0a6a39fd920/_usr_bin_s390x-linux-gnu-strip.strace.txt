@@ -1,0 +1,77 @@
+623   execve("/usr/bin/s390x-linux-gnu-strip", ["/usr/bin/s390x-linux-gnu-strip"], 0x7ffc0dbb4e00 /* 12 vars */) = 0
+623   brk(NULL)                         = 0x55f4cef91000
+623   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe5bf8d3e0) = -1 EINVAL (Invalid argument)
+623   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa706cee000
+623   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+623   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+623   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6533, ...}, AT_EMPTY_PATH) = 0
+623   mmap(NULL, 6533, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa706cec000
+623   close(3)                          = 0
+623   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbfd-2.38-s390x.so", O_RDONLY|O_CLOEXEC) = 3
+623   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230\252\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\241\2\0\0\0\0\0\200\241\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+623   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=963032, ...}, AT_EMPTY_PATH) = 0
+623   mmap(NULL, 965528, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa706c00000
+623   mmap(0x7fa706c2b000, 540672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7fa706c2b000
+623   mmap(0x7fa706caf000, 188416, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xaf000) = 0x7fa706caf000
+623   mmap(0x7fa706cdd000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xdc000) = 0x7fa706cdd000
+623   close(3)                          = 0
+623   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+623   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+623   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+623   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+623   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+623   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+623   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+623   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa7069d8000
+623   mmap(0x7fa706a00000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fa706a00000
+623   mmap(0x7fa706b95000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fa706b95000
+623   mmap(0x7fa706bed000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fa706bed000
+623   mmap(0x7fa706bf3000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa706bf3000
+623   close(3)                          = 0
+623   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+623   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+623   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+623   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa7069bc000
+623   mprotect(0x7fa7069be000, 98304, PROT_NONE) = 0
+623   mmap(0x7fa7069be000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fa7069be000
+623   mmap(0x7fa7069cf000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fa7069cf000
+623   mmap(0x7fa7069d6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fa7069d6000
+623   close(3)                          = 0
+623   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7069ba000
+623   arch_prctl(ARCH_SET_FS, 0x7fa7069bab80) = 0
+623   set_tid_address(0x7fa7069bae50)   = 623
+623   set_robust_list(0x7fa7069bae60, 24) = 0
+623   rseq(0x7fa7069bb520, 0x20, 0, 0x53053053) = 0
+623   mprotect(0x7fa706bed000, 16384, PROT_READ) = 0
+623   mprotect(0x7fa7069d6000, 4096, PROT_READ) = 0
+623   mprotect(0x7fa706cdd000, 53248, PROT_READ) = 0
+623   mprotect(0x55f4cdbe7000, 4096, PROT_READ) = 0
+623   mprotect(0x7fa706d28000, 8192, PROT_READ) = 0
+623   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+623   munmap(0x7fa706cec000, 6533)      = 0
+623   getrandom("\x51\x4e\xd3\xcf\x56\x4e\x07\xa3", 8, GRND_NONBLOCK) = 8
+623   brk(NULL)                         = 0x55f4cef91000
+623   brk(0x55f4cefb2000)               = 0x55f4cefb2000
+623   write(2, "Usage: /usr/bin/s390x-linux-gnu-strip <option(s)> in-file(s)\n", 61) = 61
+623   write(2, " Removes symbols and sections from files\n", 41) = 41
+623   write(2, " The options are:\n", 18) = 18
+623   write(2, "  -I --input-target=<bfdname>      Assume input file is in format <bfdname>\n  -O --output-target=<bfdname>     Create an output "..., 315) = 315
+623   write(2, "  -D --enable-deterministic-archives\n                                   Produce deterministic output when stripping archives (de"..., 228) = 228
+623   write(2, "  -R --remove-section=<name>       Also remove section <name> from the output\n     --remove-relocations <name>   Remove relocati"..., 1554) = 1554
+623   write(2, "/usr/bin/s390x-linux-gnu-strip: supported targets:", 50) = 50
+623   write(2, " elf64-s390", 11)       = 11
+623   write(2, " elf32-s390", 11)       = 11
+623   write(2, " elf64-little", 13)     = 13
+623   write(2, " elf64-big", 10)        = 10
+623   write(2, " elf32-little", 13)     = 13
+623   write(2, " elf32-big", 10)        = 10
+623   write(2, " srec", 5)              = 5
+623   write(2, " symbolsrec", 11)       = 11
+623   write(2, " verilog", 8)           = 8
+623   write(2, " tekhex", 7)            = 7
+623   write(2, " binary", 7)            = 7
+623   write(2, " ihex", 5)              = 5
+623   write(2, " plugin", 7)            = 7
+623   write(2, "\n", 1)                 = 1
+623   exit_group(1)                     = ?
+623   +++ exited with 1 +++

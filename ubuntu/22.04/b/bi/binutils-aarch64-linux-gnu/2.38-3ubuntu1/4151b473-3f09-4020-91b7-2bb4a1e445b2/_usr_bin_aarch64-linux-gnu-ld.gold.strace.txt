@@ -1,0 +1,62 @@
+551   execve("/usr/bin/aarch64-linux-gnu-ld.gold", ["/usr/bin/aarch64-linux-gnu-ld.gold"], 0x7ffef6efa2f0 /* 12 vars */) = 0
+551   brk(NULL)                         = 0x56554d7ee000
+551   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe722f4900) = -1 EINVAL (Invalid argument)
+551   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f943d4e7000
+551   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+551   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+551   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6533, ...}, AT_EMPTY_PATH) = 0
+551   mmap(NULL, 6533, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f943d4e5000
+551   close(3)                          = 0
+551   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+551   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+551   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+551   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f943d4c9000
+551   mprotect(0x7f943d4cb000, 98304, PROT_NONE) = 0
+551   mmap(0x7f943d4cb000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f943d4cb000
+551   mmap(0x7f943d4dc000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f943d4dc000
+551   mmap(0x7f943d4e3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f943d4e3000
+551   close(3)                          = 0
+551   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+551   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10-\0\0\0\0\0\0\10-\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+551   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+551   mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f943d4a9000
+551   mmap(0x7f943d4ac000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f943d4ac000
+551   mmap(0x7f943d4c3000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f943d4c3000
+551   mmap(0x7f943d4c7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f943d4c7000
+551   close(3)                          = 0
+551   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+551   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+551   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+551   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+551   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+551   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+551   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+551   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f943d281000
+551   mmap(0x7f943d2a9000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f943d2a9000
+551   mmap(0x7f943d43e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f943d43e000
+551   mmap(0x7f943d496000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f943d496000
+551   mmap(0x7f943d49c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f943d49c000
+551   close(3)                          = 0
+551   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f943d27f000
+551   arch_prctl(ARCH_SET_FS, 0x7f943d27fb80) = 0
+551   set_tid_address(0x7f943d27fe50)   = 551
+551   set_robust_list(0x7f943d27fe60, 24) = 0
+551   rseq(0x7f943d280520, 0x20, 0, 0x53053053) = 0
+551   mprotect(0x7f943d496000, 16384, PROT_READ) = 0
+551   mprotect(0x7f943d4c7000, 4096, PROT_READ) = 0
+551   mprotect(0x7f943d4e3000, 4096, PROT_READ) = 0
+551   mprotect(0x56554b9d8000, 184320, PROT_READ) = 0
+551   mprotect(0x7f943d521000, 8192, PROT_READ) = 0
+551   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+551   munmap(0x7f943d4e5000, 6533)      = 0
+551   getrandom("\xfc\x97\xa0\x6f\xc8\x0b\xdc\x0c", 8, GRND_NONBLOCK) = 8
+551   brk(NULL)                         = 0x56554d7ee000
+551   brk(0x56554d80f000)               = 0x56554d80f000
+551   futex(0x56554ba117b0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+551   futex(0x56554ba117c0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+551   write(2, "/usr/bin/aarch64-linux-gnu-ld.gold: fatal error: ", 49) = 49
+551   write(2, "no input files", 14)    = 14
+551   write(2, "\n", 1)                 = 1
+551   newfstatat(AT_FDCWD, "a.out", 0x7ffe722ea2c0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+551   exit_group(1)                     = ?
+551   +++ exited with 1 +++

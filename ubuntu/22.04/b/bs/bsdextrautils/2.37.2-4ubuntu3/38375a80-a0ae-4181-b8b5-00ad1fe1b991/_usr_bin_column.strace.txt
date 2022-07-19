@@ -1,0 +1,54 @@
+497   execve("/usr/bin/column", ["/usr/bin/column"], 0x7ffd3380e350 /* 12 vars */) = 0
+497   brk(NULL)                         = 0x55d5fae57000
+497   arch_prctl(0x3001 /* ARCH_??? */, 0x7fffb730dd80) = -1 EINVAL (Invalid argument)
+497   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9257752000
+497   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+497   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9257750000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsmartcols.so.1", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\201\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000>\0\0\0\0\0\0000>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=100488, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 102432, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9257736000
+497   mprotect(0x7f925773a000, 81920, PROT_NONE) = 0
+497   mmap(0x7f925773a000, 61440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f925773a000
+497   mmap(0x7f9257749000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f9257749000
+497   mmap(0x7f925774e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f925774e000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+497   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f925750e000
+497   mmap(0x7f9257536000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f9257536000
+497   mmap(0x7f92576cb000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f92576cb000
+497   mmap(0x7f9257723000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f9257723000
+497   mmap(0x7f9257729000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9257729000
+497   close(3)                          = 0
+497   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f925750b000
+497   arch_prctl(ARCH_SET_FS, 0x7f925750b740) = 0
+497   set_tid_address(0x7f925750ba10)   = 497
+497   set_robust_list(0x7f925750ba20, 24) = 0
+497   rseq(0x7f925750c0e0, 0x20, 0, 0x53053053) = 0
+497   mprotect(0x7f9257723000, 16384, PROT_READ) = 0
+497   mprotect(0x7f925774e000, 4096, PROT_READ) = 0
+497   mprotect(0x55d5faa45000, 4096, PROT_READ) = 0
+497   mprotect(0x7f925778c000, 8192, PROT_READ) = 0
+497   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+497   munmap(0x7f9257750000, 6133)      = 0
+497   getrandom("\x41\x26\xe5\xd8\x7c\xcd\x5d\xd0", 8, GRND_NONBLOCK) = 8
+497   brk(NULL)                         = 0x55d5fae57000
+497   brk(0x55d5fae78000)               = 0x55d5fae78000
+497   ioctl(1, TIOCGWINSZ, 0x7fffb730dd38) = -1 ENOTTY (Inappropriate ioctl for device)
+497   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=133, ...}, AT_EMPTY_PATH) = 0
+497   read(0, "", 4096)                 = 0
+497   dup(1)                            = 3
+497   close(3)                          = 0
+497   dup(2)                            = 3
+497   close(3)                          = 0
+497   exit_group(0)                     = ?
+497   +++ exited with 0 +++

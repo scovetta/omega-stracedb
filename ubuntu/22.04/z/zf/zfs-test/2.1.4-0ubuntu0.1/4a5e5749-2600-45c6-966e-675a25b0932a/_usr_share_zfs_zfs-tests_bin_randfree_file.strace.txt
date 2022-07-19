@@ -1,0 +1,35 @@
+3438  execve("/usr/share/zfs/zfs-tests/bin/randfree_file", ["/usr/share/zfs/zfs-tests/bin/randfree_file"], 0x7fff50242d60 /* 12 vars */) = 0
+3438  brk(NULL)                         = 0x562f63262000
+3438  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc2dd85200) = -1 EINVAL (Invalid argument)
+3438  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8f422fd000
+3438  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3438  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3438  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10109, ...}, AT_EMPTY_PATH) = 0
+3438  mmap(NULL, 10109, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8f422fa000
+3438  close(3)                          = 0
+3438  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3438  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+3438  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+3438  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+3438  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+3438  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+3438  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+3438  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8f420d2000
+3438  mmap(0x7f8f420fa000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f8f420fa000
+3438  mmap(0x7f8f4228f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f8f4228f000
+3438  mmap(0x7f8f422e7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f8f422e7000
+3438  mmap(0x7f8f422ed000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8f422ed000
+3438  close(3)                          = 0
+3438  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8f420cf000
+3438  arch_prctl(ARCH_SET_FS, 0x7f8f420cf740) = 0
+3438  set_tid_address(0x7f8f420cfa10)   = 3438
+3438  set_robust_list(0x7f8f420cfa20, 24) = 0
+3438  rseq(0x7f8f420d00e0, 0x20, 0, 0x53053053) = 0
+3438  mprotect(0x7f8f422e7000, 16384, PROT_READ) = 0
+3438  mprotect(0x562f628b9000, 4096, PROT_READ) = 0
+3438  mprotect(0x7f8f42337000, 8192, PROT_READ) = 0
+3438  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3438  munmap(0x7f8f422fa000, 10109)     = 0
+3438  write(2, "usage: /usr/share/zfs/zfs-tests/bin/randfree_file [-l filesize] [-s start-offset][-n section-len] filename\n", 107) = 107
+3438  exit_group(1)                     = ?
+3438  +++ exited with 1 +++

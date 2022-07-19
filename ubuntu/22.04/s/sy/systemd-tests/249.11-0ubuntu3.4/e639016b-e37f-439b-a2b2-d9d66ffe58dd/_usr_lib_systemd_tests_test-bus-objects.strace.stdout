@@ -1,0 +1,733 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+ <interface name="org.freedesktop.DBus.Peer">
+  <method name="Ping"/>
+  <method name="GetMachineId">
+   <arg type="s" name="machine_uuid" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Introspectable">
+  <method name="Introspect">
+   <arg name="xml_data" type="s" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Properties">
+  <method name="Get">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="out" type="v"/>
+  </method>
+  <method name="GetAll">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="props" direction="out" type="a{sv}"/>
+  </method>
+  <method name="Set">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="in" type="v"/>
+  </method>
+  <signal name="PropertiesChanged">
+   <arg type="s" name="interface_name"/>
+   <arg type="a{sv}" name="changed_properties"/>
+   <arg type="as" name="invalidated_properties"/>
+  </signal>
+ </interface>
+ <interface name="org.freedesktop.systemd.test2">
+  <method name="AlterSomething">
+   <arg type="s" direction="in"/>
+   <arg type="s" direction="out"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="Exit">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <property name="Something" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticStringProperty" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticIntegerProperty" type="u" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <method name="NoOperation">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.systemd.test">
+  <method name="AlterSomething">
+   <arg type="s" direction="in"/>
+   <arg type="s" direction="out"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="Exit">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <property name="Something" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticStringProperty" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticIntegerProperty" type="u" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <method name="NoOperation">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+ </interface>
+</node>
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+ <interface name="org.freedesktop.DBus.Peer">
+  <method name="Ping"/>
+  <method name="GetMachineId">
+   <arg type="s" name="machine_uuid" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Introspectable">
+  <method name="Introspect">
+   <arg name="xml_data" type="s" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Properties">
+  <method name="Get">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="out" type="v"/>
+  </method>
+  <method name="GetAll">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="props" direction="out" type="a{sv}"/>
+  </method>
+  <method name="Set">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="in" type="v"/>
+  </method>
+  <signal name="PropertiesChanged">
+   <arg type="s" name="interface_name"/>
+   <arg type="a{sv}" name="changed_properties"/>
+   <arg type="as" name="invalidated_properties"/>
+  </signal>
+ </interface>
+ <interface name="org.freedesktop.systemd.test2">
+  <method name="AlterSomething">
+   <arg type="s" direction="in"/>
+   <arg type="s" direction="out"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="Exit">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <property name="Something" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticStringProperty" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticIntegerProperty" type="u" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <method name="NoOperation">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.systemd.test">
+  <method name="AlterSomething">
+   <arg type="s" direction="in"/>
+   <arg type="s" direction="out"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="Exit">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <property name="Something" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticStringProperty" type="s" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="AutomaticIntegerProperty" type="u" access="readwrite">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <method name="NoOperation">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitInterfacesRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectAdded">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="EmitObjectRemoved">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+ </interface>
+</node>
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+ <interface name="org.freedesktop.DBus.Peer">
+  <method name="Ping"/>
+  <method name="GetMachineId">
+   <arg type="s" name="machine_uuid" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Introspectable">
+  <method name="Introspect">
+   <arg name="xml_data" type="s" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Properties">
+  <method name="Get">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="out" type="v"/>
+  </method>
+  <method name="GetAll">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="props" direction="out" type="a{sv}"/>
+  </method>
+  <method name="Set">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="in" type="v"/>
+  </method>
+  <signal name="PropertiesChanged">
+   <arg type="s" name="interface_name"/>
+   <arg type="a{sv}" name="changed_properties"/>
+   <arg type="as" name="invalidated_properties"/>
+  </signal>
+ </interface>
+ <node name="value"/>
+ <node name="foo"/>
+</node>
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+ <interface name="org.freedesktop.DBus.Peer">
+  <method name="Ping"/>
+  <method name="GetMachineId">
+   <arg type="s" name="machine_uuid" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Introspectable">
+  <method name="Introspect">
+   <arg name="xml_data" type="s" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Properties">
+  <method name="Get">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="out" type="v"/>
+  </method>
+  <method name="GetAll">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="props" direction="out" type="a{sv}"/>
+  </method>
+  <method name="Set">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="in" type="v"/>
+  </method>
+  <signal name="PropertiesChanged">
+   <arg type="s" name="interface_name"/>
+   <arg type="a{sv}" name="changed_properties"/>
+   <arg type="as" name="invalidated_properties"/>
+  </signal>
+ </interface>
+ <interface name="org.freedesktop.DBus.ObjectManager">
+  <method name="GetManagedObjects">
+   <arg type="a{oa{sa{sv}}}" name="object_paths_interfaces_and_properties" direction="out"/>
+  </method>
+  <signal name="InterfacesAdded">
+   <arg type="o" name="object_path"/>
+   <arg type="a{sa{sv}}" name="interfaces_and_properties"/>
+  </signal>
+  <signal name="InterfacesRemoved">
+   <arg type="o" name="object_path"/>
+   <arg type="as" name="interfaces"/>
+  </signal>
+ </interface>
+ <interface name="org.freedesktop.systemd.ValueTest">
+  <method name="NotifyTest">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="NotifyTest2">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <property name="Value" type="s" access="read">
+  </property>
+  <property name="Value2" type="s" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="invalidates"/>
+  </property>
+  <property name="Value3" type="s" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="const"/>
+  </property>
+  <property name="Value4" type="s" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="false"/>
+  </property>
+  <property name="AnExplicitProperty" type="s" access="read">
+   <annotation name="org.freedesktop.systemd1.Explicit" value="true"/>
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="invalidates"/>
+  </property>
+ </interface>
+ <node name="c"/>
+ <node name="a"/>
+ <node name="b"/>
+</node>
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+ <interface name="org.freedesktop.DBus.Peer">
+  <method name="Ping"/>
+  <method name="GetMachineId">
+   <arg type="s" name="machine_uuid" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Introspectable">
+  <method name="Introspect">
+   <arg name="xml_data" type="s" direction="out"/>
+  </method>
+ </interface>
+ <interface name="org.freedesktop.DBus.Properties">
+  <method name="Get">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="out" type="v"/>
+  </method>
+  <method name="GetAll">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="props" direction="out" type="a{sv}"/>
+  </method>
+  <method name="Set">
+   <arg name="interface_name" direction="in" type="s"/>
+   <arg name="property_name" direction="in" type="s"/>
+   <arg name="value" direction="in" type="v"/>
+  </method>
+  <signal name="PropertiesChanged">
+   <arg type="s" name="interface_name"/>
+   <arg type="a{sv}" name="changed_properties"/>
+   <arg type="as" name="invalidated_properties"/>
+  </signal>
+ </interface>
+ <interface name="org.freedesktop.DBus.ObjectManager">
+  <method name="GetManagedObjects">
+   <arg type="a{oa{sa{sv}}}" name="object_paths_interfaces_and_properties" direction="out"/>
+  </method>
+  <signal name="InterfacesAdded">
+   <arg type="o" name="object_path"/>
+   <arg type="a{sa{sv}}" name="interfaces_and_properties"/>
+  </signal>
+  <signal name="InterfacesRemoved">
+   <arg type="o" name="object_path"/>
+   <arg type="as" name="interfaces"/>
+  </signal>
+ </interface>
+ <node name="y"/>
+ <node name="x"/>
+ <node name="z"/>
+</node>
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=18  ReplyCookie=17  Timestamp="Tue 2022-07-19 04:01:08.007340 UTC"
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "Something";
+                          VARIANT "s" {
+                                  STRING "test";
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "AutomaticStringProperty";
+                          VARIANT "s" {
+                                  STRING "Du Dödel, Du!";
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "AutomaticIntegerProperty";
+                          VARIANT "u" {
+                                  UINT32 815;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "Something";
+                          VARIANT "s" {
+                                  STRING "test";
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "AutomaticStringProperty";
+                          VARIANT "s" {
+                                  STRING "Du Dödel, Du!";
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "AutomaticIntegerProperty";
+                          VARIANT "u" {
+                                  UINT32 815;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=21  ReplyCookie=20  Timestamp="Tue 2022-07-19 04:01:08.023811 UTC"
+  MESSAGE "a{oa{sa{sv}}}" {
+          ARRAY "{oa{sa{sv}}}" {
+                  DICT_ENTRY "oa{sa{sv}}" {
+                          OBJECT_PATH "/value/c";
+                          ARRAY "{sa{sv}}" {
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Peer";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Introspectable";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Properties";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.ObjectManager";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.systemd.ValueTest";
+                                          ARRAY "{sv}" {
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/c";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value2";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/c";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value3";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/c";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value4";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/c";
+                                                          };
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "oa{sa{sv}}" {
+                          OBJECT_PATH "/value/a";
+                          ARRAY "{sa{sv}}" {
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Peer";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Introspectable";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Properties";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.ObjectManager";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.systemd.ValueTest";
+                                          ARRAY "{sv}" {
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/a";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value2";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/a";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value3";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/a";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value4";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/a";
+                                                          };
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "oa{sa{sv}}" {
+                          OBJECT_PATH "/value/b";
+                          ARRAY "{sa{sv}}" {
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Peer";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Introspectable";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.Properties";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.DBus.ObjectManager";
+                                          ARRAY "{sv}" {
+                                          };
+                                  };
+                                  DICT_ENTRY "sa{sv}" {
+                                          STRING "org.freedesktop.systemd.ValueTest";
+                                          ARRAY "{sv}" {
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/b";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value2";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/b";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value3";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/b";
+                                                          };
+                                                  };
+                                                  DICT_ENTRY "sv" {
+                                                          STRING "Value4";
+                                                          VARIANT "s" {
+                                                                  STRING "object 0x1e, path /value/b";
+                                                          };
+                                                  };
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=22  Timestamp="Tue 2022-07-19 04:01:08.031045 UTC"
+  Path=/value/a  Interface=org.freedesktop.DBus.Properties  Member=PropertiesChanged
+  MESSAGE "sa{sv}as" {
+          STRING "org.freedesktop.systemd.ValueTest";
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "Value";
+                          VARIANT "s" {
+                                  STRING "object 0x1e, path /value/a";
+                          };
+                  };
+          };
+          ARRAY "s" {
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=24  Timestamp="Tue 2022-07-19 04:01:08.037559 UTC"
+  Path=/value/a  Interface=org.freedesktop.DBus.Properties  Member=PropertiesChanged
+  MESSAGE "sa{sv}as" {
+          STRING "org.freedesktop.systemd.ValueTest";
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "Value";
+                          VARIANT "s" {
+                                  STRING "object 0x1e, path /value/a";
+                          };
+                  };
+          };
+          ARRAY "s" {
+                  STRING "Value2";
+                  STRING "AnExplicitProperty";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=26  Timestamp="Tue 2022-07-19 04:01:08.043592 UTC"
+  Path=/value/a  Interface=org.freedesktop.DBus.ObjectManager  Member=InterfacesAdded
+  MESSAGE "oa{sa{sv}}" {
+          OBJECT_PATH "/value/a/x";
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.systemd.ValueTest";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "Value";
+                                          VARIANT "s" {
+                                                  STRING "object 0x1e, path /value/a/x";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "Value3";
+                                          VARIANT "s" {
+                                                  STRING "object 0x1e, path /value/a/x";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "Value4";
+                                          VARIANT "s" {
+                                                  STRING "object 0x1e, path /value/a/x";
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=28  Timestamp="Tue 2022-07-19 04:01:08.050461 UTC"
+  Path=/value/a  Interface=org.freedesktop.DBus.ObjectManager  Member=InterfacesRemoved
+  MESSAGE "oas" {
+          OBJECT_PATH "/value/a/x";
+          ARRAY "s" {
+                  STRING "org.freedesktop.systemd.ValueTest";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=30  Timestamp="Tue 2022-07-19 04:01:08.057048 UTC"
+  Path=/value/a  Interface=org.freedesktop.DBus.ObjectManager  Member=InterfacesAdded
+  MESSAGE "oa{sa{sv}}" {
+          OBJECT_PATH "/value/a/x";
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.DBus.Peer";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.DBus.Introspectable";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.DBus.Properties";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.DBus.ObjectManager";
+                          ARRAY "{sv}" {
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.systemd.ValueTest";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "Value";
+                                          VARIANT "s" {
+                                                  STRING "object 0x1e, path /value/a/x";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "Value3";
+                                          VARIANT "s" {
+                                                  STRING "object 0x1e, path /value/a/x";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "Value4";
+                                          VARIANT "s" {
+                                                  STRING "object 0x1e, path /value/a/x";
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=32  Timestamp="Tue 2022-07-19 04:01:08.063328 UTC"
+  Path=/value/a  Interface=org.freedesktop.DBus.ObjectManager  Member=InterfacesRemoved
+  MESSAGE "oas" {
+          OBJECT_PATH "/value/a/x";
+          ARRAY "s" {
+                  STRING "org.freedesktop.DBus.Peer";
+                  STRING "org.freedesktop.DBus.Introspectable";
+                  STRING "org.freedesktop.DBus.Properties";
+                  STRING "org.freedesktop.DBus.ObjectManager";
+                  STRING "org.freedesktop.systemd.ValueTest";
+          };
+  };
+

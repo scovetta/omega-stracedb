@@ -1,0 +1,752 @@
+1572  execve("/usr/lib/systemd/tests/test-capability", ["/usr/lib/systemd/tests/test-capability"], 0x7ffc5329dbe0 /* 12 vars */) = 0
+1572  brk(NULL)                         = 0x5590d1b4b000
+1572  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd349a94e0) = -1 EINVAL (Invalid argument)
+1572  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f39cbb53000
+1572  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v4", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v3", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/glibc-hwcaps/x86-64-v2", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/avx512_1", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls/haswell", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls/avx512_1", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/tls/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/tls", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/haswell/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/haswell/avx512_1", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/haswell/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/haswell/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/haswell/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/haswell", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/avx512_1/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/avx512_1", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/x86_64/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  newfstatat(AT_FDCWD, "/lib/systemd/x86_64", 0x7ffd349a8700, 0) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/systemd/libsystemd-shared-249.so", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230N+\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0!\0 \0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\7\5\0\0\0\0\0`\7\5\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2840280, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 2850192, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb89b000
+1572  mmap(0x7f39cb8ec000, 1740800, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x51000) = 0x7f39cb8ec000
+1572  mmap(0x7f39cba95000, 688128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fa000) = 0x7f39cba95000
+1572  mmap(0x7f39cbb3d000, 81920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a1000) = 0x7f39cbb3d000
+1572  mmap(0x7f39cbb51000, 7568, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f39cbb51000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/systemd/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7889, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 7889, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f39cb899000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10!\0\0\0\0\0\0\10!\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 41016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb88e000
+1572  mmap(0x7f39cb891000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f39cb891000
+1572  mmap(0x7f39cb895000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f39cb895000
+1572  mmap(0x7f39cb897000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f39cb897000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/systemd/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1572  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1572  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1572  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1572  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1572  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb666000
+1572  mmap(0x7f39cb68e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f39cb68e000
+1572  mmap(0x7f39cb823000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f39cb823000
+1572  mmap(0x7f39cb87b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f39cb87b000
+1572  mmap(0x7f39cb881000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f39cb881000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\201\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\24\0\0\0\0\0\0000\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34888, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 36896, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb65c000
+1572  mprotect(0x7f39cb65e000, 24576, PROT_NONE) = 0
+1572  mmap(0x7f39cb65e000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f39cb65e000
+1572  mmap(0x7f39cb662000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f39cb662000
+1572  mmap(0x7f39cb664000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f39cb664000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340T\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360i\0\0\0\0\0\0\360i\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=220192, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 222136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb625000
+1572  mprotect(0x7f39cb62c000, 172032, PROT_NONE) = 0
+1572  mmap(0x7f39cb62c000, 131072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f39cb62c000
+1572  mmap(0x7f39cb64c000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f39cb64c000
+1572  mmap(0x7f39cb656000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7f39cb656000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f39cb623000
+1572  mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb5e9000
+1572  mprotect(0x7f39cb5eb000, 188416, PROT_NONE) = 0
+1572  mmap(0x7f39cb5eb000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f39cb5eb000
+1572  mmap(0x7f39cb5ff000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f39cb5ff000
+1572  mmap(0x7f39cb619000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7f39cb619000
+1572  mmap(0x7f39cb61b000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f39cb61b000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0x\300\23\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\342\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1296312, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 1299576, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb4ab000
+1572  mprotect(0x7f39cb4ba000, 1200128, PROT_NONE) = 0
+1572  mmap(0x7f39cb4ba000, 942080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f39cb4ba000
+1572  mmap(0x7f39cb5a0000, 253952, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf5000) = 0x7f39cb5a0000
+1572  mmap(0x7f39cb5df000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x133000) = 0x7f39cb5df000
+1572  mmap(0x7f39cb5e8000, 1144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f39cb5e8000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libip4tc.so.2", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\203\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\25\0\0\0\0\0\0\20\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=35440, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 37440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb4a1000
+1572  mmap(0x7f39cb4a3000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f39cb4a3000
+1572  mmap(0x7f39cb4a7000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f39cb4a7000
+1572  mmap(0x7f39cb4a9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f39cb4a9000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkmod.so.2", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\230\241\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X2\0\0\0\0\0\0X2\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108760, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 110672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb485000
+1572  mmap(0x7f39cb489000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f39cb489000
+1572  mmap(0x7f39cb49a000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f39cb49a000
+1572  mmap(0x7f39cb49f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f39cb49f000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240\341\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\36\0\0\0\0\0\0\200\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125152, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 127072, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb465000
+1572  mprotect(0x7f39cb467000, 114688, PROT_NONE) = 0
+1572  mmap(0x7f39cb467000, 102400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f39cb467000
+1572  mmap(0x7f39cb480000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7f39cb480000
+1572  mmap(0x7f39cb483000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f39cb483000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`#\4\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\370~\0\0\0\0\0\0\370~\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=273056, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 275000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cb421000
+1572  mprotect(0x7f39cb429000, 237568, PROT_NONE) = 0
+1572  mmap(0x7f39cb429000, 180224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f39cb429000
+1572  mmap(0x7f39cb455000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x34000) = 0x7f39cb455000
+1572  mmap(0x7f39cb463000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x41000) = 0x7f39cb463000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\325C\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\34\v\0\0\0\0\0(\34\v\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f39cb41f000
+1572  mmap(NULL, 4461760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cafdd000
+1572  mmap(0x7f39cb08f000, 2478080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7f39cb08f000
+1572  mmap(0x7f39cb2ec000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30f000) = 0x7f39cb2ec000
+1572  mmap(0x7f39cb3be000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e0000) = 0x7f39cb3be000
+1572  mmap(0x7f39cb41c000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f39cb41c000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\1\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x&\0\0\0\0\0\0x&\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=67736, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 69648, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cafcb000
+1572  mmap(0x7f39cafce000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f39cafce000
+1572  mmap(0x7f39cafd7000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f39cafd7000
+1572  mmap(0x7f39cafdb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f39cafdb000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\330\30\0\0\0\0\0\0\330\30\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125360, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 127296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cafab000
+1572  mprotect(0x7f39cafad000, 114688, PROT_NONE) = 0
+1572  mmap(0x7f39cafad000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f39cafad000
+1572  mmap(0x7f39cafbb000, 53248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f39cafbb000
+1572  mmap(0x7f39cafc9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f39cafc9000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39caf7f000
+1572  mprotect(0x7f39caf85000, 139264, PROT_NONE) = 0
+1572  mmap(0x7f39caf85000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f39caf85000
+1572  mmap(0x7f39caf9f000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f39caf9f000
+1572  mmap(0x7f39cafa7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f39cafa7000
+1572  mmap(0x7f39cafa9000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f39cafa9000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\321\f\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0X\220\0\0\0\0\0\0X\220\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 843832, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39caeb0000
+1572  mmap(0x7f39caeba000, 729088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f39caeba000
+1572  mmap(0x7f39caf6c000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbc000) = 0x7f39caf6c000
+1572  mmap(0x7f39caf7d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcc000) = 0x7f39caf7d000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\222\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260'\0\0\0\0\0\0\260'\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=170456, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 172296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cae85000
+1572  mmap(0x7f39cae88000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f39cae88000
+1572  mmap(0x7f39caea3000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f39caea3000
+1572  mmap(0x7f39caeae000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f39caeae000
+1572  close(3)                          = 0
+1572  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f39cae83000
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\300A\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08>\0\0\0\0\0\08>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=149760, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 151992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cae5d000
+1572  mmap(0x7f39cae61000, 90112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f39cae61000
+1572  mmap(0x7f39cae77000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f39cae77000
+1572  mmap(0x7f39cae81000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7f39cae81000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0P\1\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250*\0\0\0\0\0\0\250*\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=133200, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 184496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cae2f000
+1572  mmap(0x7f39cae32000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f39cae32000
+1572  mmap(0x7f39cae3a000, 86016, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f39cae3a000
+1572  mmap(0x7f39cae4f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f39cae4f000
+1572  mmap(0x7f39cae51000, 45232, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f39cae51000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cad98000
+1572  mmap(0x7f39cad9a000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f39cad9a000
+1572  mmap(0x7f39cae05000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f39cae05000
+1572  mmap(0x7f39cae2d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f39cae2d000
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3
+1572  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\200b\0\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\22\0\0\0\0\0\0H\22\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_EMPTY_PATH) = 0
+1572  mmap(NULL, 28992, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f39cad90000
+1572  mmap(0x7f39cad92000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f39cad92000
+1572  mmap(0x7f39cad95000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f39cad95000
+1572  mmap(0x7f39cad96000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f39cad96000
+1572  close(3)                          = 0
+1572  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f39cad8e000
+1572  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f39cad8b000
+1572  arch_prctl(ARCH_SET_FS, 0x7f39cad8b900) = 0
+1572  set_tid_address(0x7f39cad8bbd0)   = 1572
+1572  set_robust_list(0x7f39cad8bbe0, 24) = 0
+1572  rseq(0x7f39cad8c2a0, 0x20, 0, 0x53053053) = 0
+1572  mprotect(0x7f39cb87b000, 16384, PROT_READ) = 0
+1572  mprotect(0x7f39cad96000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cae2d000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cae4f000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cae81000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39caeae000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39caf7d000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cafa7000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cafc9000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cafdb000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cb3be000, 372736, PROT_READ) = 0
+1572  mprotect(0x7f39cb656000, 20480, PROT_READ) = 0
+1572  mprotect(0x7f39cb463000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cb483000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cb49f000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cb4a9000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cb5df000, 12288, PROT_READ) = 0
+1572  mprotect(0x7f39cb619000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cb664000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cb897000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cbb3d000, 77824, PROT_READ) = 0
+1572  mprotect(0x5590d14bf000, 4096, PROT_READ) = 0
+1572  mprotect(0x7f39cbb8d000, 8192, PROT_READ) = 0
+1572  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1572  munmap(0x7f39cb899000, 7889)      = 0
+1572  getrandom("\xbf\xf9\xb9\x8a\xaf\xf2\x03\x16", 8, GRND_NONBLOCK) = 8
+1572  brk(NULL)                         = 0x5590d1b4b000
+1572  brk(0x5590d1b6c000)               = 0x5590d1b6c000
+1572  statfs("/sys/fs/selinux", 0x7ffd349a9520) = -1 ENOENT (No such file or directory)
+1572  statfs("/selinux", 0x7ffd349a9520) = -1 ENOENT (No such file or directory)
+1572  openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+1572  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1572  read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+1572  read(3, "", 1024)                 = 0
+1572  close(3)                          = 0
+1572  access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+1572  prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 0
+1572  prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+1572  prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+1572  prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+1572  prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+1572  prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+1572  getpid()                          = 1572
+1572  openat(AT_FDCWD, "/proc/sys/kernel/cap_last_cap", O_RDONLY|O_CLOEXEC) = 3
+1572  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1572  read(3, "40\n", 1024)             = 3
+1572  ioctl(3, TCGETS, 0x7ffd349a9410)  = -1 ENOTTY (Inappropriate ioctl for device)
+1572  read(3, "", 1024)                 = 0
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/proc/sys/kernel/cap_last_cap", O_RDONLY|O_CLOEXEC) = 3
+1572  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1572  read(3, "40\n", 1024)             = 3
+1572  ioctl(3, TCGETS, 0x7ffd349a9410)  = -1 ENOTTY (Inappropriate ioctl for device)
+1572  read(3, "", 1024)                 = 0
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/proc/sys/kernel/cap_last_cap", O_RDONLY|O_CLOEXEC) = 3
+1572  newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1572  read(3, "40\n", 1024)             = 3
+1572  ioctl(3, TCGETS, 0x7ffd349a93c0)  = -1 ENOTTY (Inappropriate ioctl for device)
+1572  read(3, "", 1024)                 = 0
+1572  close(3)                          = 0
+1572  prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+1572  prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+1572  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_KILL, 0, 0) = 0
+1572  writev(2, [{iov_base="have ambient caps: yes", iov_len=22}, {iov_base="\n", iov_len=1}], 2) = 23
+1572  getuid()                          = 0
+1572  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+1572  connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+1572  close(3)                          = 0
+1572  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+1572  connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+1572  close(3)                          = 0
+1572  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+1572  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1572  openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+1572  read(3, "# /etc/nsswitch.conf\n#\n# Example configuration of GNU Name Service Switch functionality.\n# If you have the `glibc-doc-reference'"..., 4096) = 494
+1572  read(3, "", 4096)                 = 0
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+1572  close(3)                          = 0
+1572  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+1572  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1281, ...}, AT_EMPTY_PATH) = 0
+1572  lseek(3, 0, SEEK_SET)             = 0
+1572  read(3, "root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:s"..., 4096) = 1281
+1572  close(3)                          = 0
+1572  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_CLEAR_ALL, 0, 0, 0) = 0
+1572  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1572  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1572  writev(2, [{iov_base="Capabilities:cap_chown,cap_dac_override,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_net_bind_service,ca"..., iov_len=193}, {iov_base="\n", iov_len=1}], 2) = 194
+1572  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1577  set_robust_list(0x7f39cad8bbe0, 24 <unfinished ...>
+1572  <... clone resumed>, child_tidptr=0x7f39cad8bbd0) = 1577
+1577  <... set_robust_list resumed>)    = 0
+1572  wait4(1577,  <unfinished ...>
+1577  setresgid(65534, 65534, 65534)    = 0
+1577  openat(AT_FDCWD, 0x7f39cbaceacb, O_RDONLY|O_CLOEXEC) = 3
+1577  newfstatat(3, 0x7f39cb83e46f, 0x7ffd349a9240, AT_EMPTY_PATH) = 0
+1577  read(3, 0x5590d1b4bc60, 1024)     = 6
+1577  ioctl(3, TCGETS, 0x7ffd349a9340)  = -1 ENOTTY (Inappropriate ioctl for device)
+1577  read(3, "", 1024)                 = 0
+1577  close(3)                          = 0
+1577  setgroups(0, NULL)                = 0
+1577  prctl(PR_SET_KEEPCAPS, 1)         = 0
+1577  setresuid(65534, 65534, 65534)    = 0
+1577  prctl(PR_SET_KEEPCAPS, 0)         = 0
+1577  capget(0x5590d1b4c074, NULL)      = 0
+1577  capget(0x5590d1b4c074, 0x5590d1b4c07c) = 0
+1577  capget(0x5590d1b4c0a4, NULL)      = 0
+1577  capset(0x5590d1b4c0a4, 0x5590d1b4c0ac) = 0
+1577  capget(0x5590d1b4c0d4, NULL)      = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_CHOWN) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_DAC_READ_SEARCH) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_FOWNER) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_FSETID) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_KILL)  = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SETGID) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SETUID) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SETPCAP) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_LINUX_IMMUTABLE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_NET_BIND_SERVICE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_NET_BROADCAST) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_NET_ADMIN) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_NET_RAW) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_IPC_LOCK) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_IPC_OWNER) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_MODULE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_RAWIO) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_CHROOT) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_PTRACE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_PACCT) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_ADMIN) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_BOOT) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_NICE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_RESOURCE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_TIME) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYS_TTY_CONFIG) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_MKNOD) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_LEASE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_AUDIT_WRITE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_AUDIT_CONTROL) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SETFCAP) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_MAC_OVERRIDE) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_MAC_ADMIN) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_SYSLOG) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_WAKE_ALARM) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_BLOCK_SUSPEND) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_AUDIT_READ) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_PERFMON) = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_BPF)   = 0
+1577  prctl(PR_CAPBSET_DROP, CAP_CHECKPOINT_RESTORE) = 0
+1577  capset(0x5590d1b4c0d4, 0x5590d1b4c0dc) = 0
+1577  capget(0x5590d1b4c104, NULL)      = 0
+1577  capset(0x5590d1b4c104, 0x5590d1b4c10c) = 0
+1577  getuid()                          = 65534
+1577  getgid()                          = 65534
+1577  setresgid(65534, 65534, 65534)    = 0
+1577  openat(AT_FDCWD, 0x7f39cbaceacb, O_RDONLY|O_CLOEXEC) = 3
+1577  newfstatat(3, 0x7f39cb83e46f, 0x7ffd349a9240, AT_EMPTY_PATH) = 0
+1577  read(3, 0x5590d1b4bc60, 1024)     = 6
+1577  ioctl(3, TCGETS, 0x7ffd349a9340)  = -1 ENOTTY (Inappropriate ioctl for device)
+1577  read(3, "", 1024)                 = 0
+1577  close(3)                          = 0
+1577  setgroups(0, NULL)                = -1 EPERM (Operation not permitted)
+1577  writev(2, 0x7ffd349a8860, 2)      = 62
+1577  setresgid(0, 0, 0)                = -1 EPERM (Operation not permitted)
+1577  writev(2, 0x7ffd349a8860, 2)      = 51
+1577  exit_group(0)                     = ?
+1577  +++ exited with 0 +++
+1572  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1577
+1572  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1577, si_uid=65534, si_status=0, si_utime=0, si_stime=1} ---
+1572  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1572  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1572  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1578  set_robust_list(0x7f39cad8bbe0, 24 <unfinished ...>
+1572  <... clone resumed>, child_tidptr=0x7f39cad8bbd0) = 1578
+1578  <... set_robust_list resumed>)    = 0
+1572  wait4(1578,  <unfinished ...>
+1578  socket(AF_INET, SOCK_RAW, IPPROTO_UDP) = 3
+1578  close(3)                          = 0
+1578  setresgid(65534, 65534, 65534)    = 0
+1578  openat(AT_FDCWD, 0x7f39cbaceacb, O_RDONLY|O_CLOEXEC) = 3
+1578  newfstatat(3, 0x7f39cb83e46f, 0x7ffd349a9240, AT_EMPTY_PATH) = 0
+1578  read(3, 0x5590d1b4bc90, 1024)     = 6
+1578  ioctl(3, TCGETS, 0x7ffd349a9340)  = -1 ENOTTY (Inappropriate ioctl for device)
+1578  read(3, "", 1024)                 = 0
+1578  close(3)                          = 0
+1578  setgroups(0, NULL)                = 0
+1578  prctl(PR_SET_KEEPCAPS, 1)         = 0
+1578  setresuid(65534, 65534, 65534)    = 0
+1578  prctl(PR_SET_KEEPCAPS, 0)         = 0
+1578  capget(0x5590d1b4c0a4, NULL)      = 0
+1578  capget(0x5590d1b4c0a4, 0x5590d1b4c0ac) = 0
+1578  capget(0x5590d1b4c0d4, NULL)      = 0
+1578  capset(0x5590d1b4c0d4, 0x5590d1b4c0dc) = 0
+1578  capget(0x5590d1b4c104, NULL)      = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_CHOWN) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_DAC_READ_SEARCH) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_FOWNER) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_FSETID) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_KILL)  = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SETGID) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SETUID) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SETPCAP) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_LINUX_IMMUTABLE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_NET_BIND_SERVICE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_NET_BROADCAST) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_NET_ADMIN) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_IPC_LOCK) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_IPC_OWNER) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_MODULE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_RAWIO) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_CHROOT) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_PTRACE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_PACCT) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_ADMIN) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_BOOT) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_NICE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_RESOURCE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_TIME) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYS_TTY_CONFIG) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_MKNOD) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_LEASE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_AUDIT_WRITE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_AUDIT_CONTROL) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SETFCAP) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_MAC_OVERRIDE) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_MAC_ADMIN) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_SYSLOG) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_WAKE_ALARM) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_BLOCK_SUSPEND) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_AUDIT_READ) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_PERFMON) = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_BPF)   = 0
+1578  prctl(PR_CAPBSET_DROP, CAP_CHECKPOINT_RESTORE) = 0
+1578  capset(0x5590d1b4c104, 0x5590d1b4c10c) = 0
+1578  capget(0x5590d1b4c134, NULL)      = 0
+1578  capset(0x5590d1b4c134, 0x5590d1b4c13c) = 0
+1578  getuid()                          = 65534
+1578  getgid()                          = 65534
+1578  capget(0x5590d1b4c164, NULL)      = 0
+1578  capget(0x5590d1b4c164, 0x5590d1b4c16c) = 0
+1578  writev(2, 0x7ffd349a8890, 2)      = 45
+1578  socket(AF_INET, SOCK_RAW, IPPROTO_UDP) = 3
+1578  close(3)                          = 0
+1578  exit_group(0)                     = ?
+1578  +++ exited with 0 +++
+1572  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1578
+1572  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1578, si_uid=65534, si_status=0, si_utime=0, si_stime=1} ---
+1572  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1579  set_robust_list(0x7f39cad8bbe0, 24 <unfinished ...>
+1572  <... clone resumed>, child_tidptr=0x7f39cad8bbd0) = 1579
+1579  <... set_robust_list resumed>)    = 0
+1572  wait4(1579,  <unfinished ...>
+1579  socket(AF_INET, SOCK_RAW, IPPROTO_UDP) = 3
+1579  close(3)                          = 0
+1579  setresgid(65534, 65534, 65534)    = 0
+1579  openat(AT_FDCWD, 0x7f39cbaceacb, O_RDONLY|O_CLOEXEC) = 3
+1579  newfstatat(3, 0x7f39cb83e46f, 0x7ffd349a9240, AT_EMPTY_PATH) = 0
+1579  read(3, 0x5590d1b4bc90, 1024)     = 6
+1579  ioctl(3, TCGETS, 0x7ffd349a9340)  = -1 ENOTTY (Inappropriate ioctl for device)
+1579  read(3, "", 1024)                 = 0
+1579  close(3)                          = 0
+1579  setgroups(0, NULL)                = 0
+1579  prctl(PR_SET_KEEPCAPS, 1)         = 0
+1579  setresuid(65534, 65534, 65534)    = 0
+1579  prctl(PR_SET_KEEPCAPS, 0)         = 0
+1579  capget(0x5590d1b4c0a4, NULL)      = 0
+1579  capget(0x5590d1b4c0a4, 0x5590d1b4c0ac) = 0
+1579  capget(0x5590d1b4c0d4, NULL)      = 0
+1579  capset(0x5590d1b4c0d4, 0x5590d1b4c0dc) = 0
+1579  capget(0x5590d1b4c104, NULL)      = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_CHOWN) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_DAC_READ_SEARCH) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_FOWNER) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_FSETID) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_KILL)  = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SETGID) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SETUID) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SETPCAP) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_LINUX_IMMUTABLE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_NET_BIND_SERVICE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_NET_BROADCAST) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_NET_ADMIN) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_NET_RAW) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_IPC_LOCK) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_IPC_OWNER) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_MODULE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_RAWIO) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_CHROOT) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_PTRACE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_PACCT) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_ADMIN) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_BOOT) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_NICE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_RESOURCE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_TIME) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYS_TTY_CONFIG) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_MKNOD) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_LEASE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_AUDIT_WRITE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_AUDIT_CONTROL) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SETFCAP) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_MAC_OVERRIDE) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_MAC_ADMIN) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_SYSLOG) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_WAKE_ALARM) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_BLOCK_SUSPEND) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_AUDIT_READ) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_PERFMON) = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_BPF)   = 0
+1579  prctl(PR_CAPBSET_DROP, CAP_CHECKPOINT_RESTORE) = 0
+1579  capset(0x5590d1b4c104, 0x5590d1b4c10c) = 0
+1579  capget(0x5590d1b4c134, NULL)      = 0
+1579  capset(0x5590d1b4c134, 0x5590d1b4c13c) = 0
+1579  getuid()                          = 65534
+1579  getgid()                          = 65534
+1579  capget(0x5590d1b4c164, NULL)      = 0
+1579  capget(0x5590d1b4c164, 0x5590d1b4c16c) = 0
+1579  writev(2, 0x7ffd349a8890, 2)      = 33
+1579  socket(AF_INET, SOCK_RAW, IPPROTO_UDP) = -1 EPERM (Operation not permitted)
+1579  exit_group(0)                     = ?
+1579  +++ exited with 0 +++
+1572  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1579
+1572  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1579, si_uid=65534, si_status=0, si_utime=0, si_stime=1} ---
+1572  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1572  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1572  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1580  set_robust_list(0x7f39cad8bbe0, 24 <unfinished ...>
+1572  <... clone resumed>, child_tidptr=0x7f39cad8bbd0) = 1580
+1580  <... set_robust_list resumed>)    = 0
+1572  wait4(1580,  <unfinished ...>
+1580  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1580  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1580  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1580  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1580  setresgid(65534, 65534, 65534)    = 0
+1580  openat(AT_FDCWD, 0x7f39cbaceacb, O_RDONLY|O_CLOEXEC) = 3
+1580  newfstatat(3, 0x7f39cb83e46f, 0x7ffd349a9240, AT_EMPTY_PATH) = 0
+1580  read(3, 0x5590d1b4bd20, 1024)     = 6
+1580  ioctl(3, TCGETS, 0x7ffd349a9340)  = -1 ENOTTY (Inappropriate ioctl for device)
+1580  read(3, "", 1024)                 = 0
+1580  close(3)                          = 0
+1580  setgroups(0, NULL)                = 0
+1580  prctl(PR_SET_KEEPCAPS, 1)         = 0
+1580  setresuid(65534, 65534, 65534)    = 0
+1580  prctl(PR_SET_KEEPCAPS, 0)         = 0
+1580  capget(0x5590d1b4c134, NULL)      = 0
+1580  capget(0x5590d1b4c134, 0x5590d1b4c13c) = 0
+1580  capget(0x5590d1b4c164, NULL)      = 0
+1580  capset(0x5590d1b4c164, 0x5590d1b4c16c) = 0
+1580  capget(0x5590d1b4c194, NULL)      = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_CHOWN) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_DAC_READ_SEARCH) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_FOWNER) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_FSETID) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SETGID) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SETUID) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SETPCAP) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_LINUX_IMMUTABLE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_NET_BIND_SERVICE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_NET_BROADCAST) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_NET_ADMIN) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_NET_RAW) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_IPC_LOCK) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_IPC_OWNER) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_MODULE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_RAWIO) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_CHROOT) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_PTRACE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_PACCT) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_ADMIN) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_BOOT) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_NICE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_RESOURCE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_TIME) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYS_TTY_CONFIG) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_MKNOD) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_LEASE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_AUDIT_WRITE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_AUDIT_CONTROL) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SETFCAP) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_MAC_OVERRIDE) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_MAC_ADMIN) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_SYSLOG) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_WAKE_ALARM) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_BLOCK_SUSPEND) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_AUDIT_READ) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_PERFMON) = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_BPF)   = 0
+1580  prctl(PR_CAPBSET_DROP, CAP_CHECKPOINT_RESTORE) = 0
+1580  capset(0x5590d1b4c194, 0x5590d1b4c19c) = 0
+1580  capget(0x5590d1b4c134, NULL)      = 0
+1580  capset(0x5590d1b4c134, 0x5590d1b4c13c) = 0
+1580  getuid()                          = 65534
+1580  getgid()                          = 65534
+1580  capget(0x5590d1b4c134, NULL)      = 0
+1580  capget(0x5590d1b4c134, 0x5590d1b4c13c) = 0
+1580  capget(0x5590d1b4c134, NULL)      = 0
+1580  capget(0x5590d1b4c134, 0x5590d1b4c13c) = 0
+1580  exit_group(0)                     = ?
+1580  +++ exited with 0 +++
+1572  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1580
+1572  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1580, si_uid=65534, si_status=0, si_utime=0, si_stime=0} ---
+1572  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f39cad8bbd0) = 1581
+1581  set_robust_list(0x7f39cad8bbe0, 24 <unfinished ...>
+1572  wait4(1581,  <unfinished ...>
+1581  <... set_robust_list resumed>)    = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_CHOWN, 0, 0) = 0
+1581  prctl(PR_CAPBSET_READ, CAP_CHOWN) = 1
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1581  capset({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=1<<CAP_CHOWN}) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_RAISE, CAP_CHOWN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_DAC_OVERRIDE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_DAC_READ_SEARCH, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_FOWNER, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_FSETID, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_KILL, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETGID, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETUID, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETPCAP, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_LINUX_IMMUTABLE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_BIND_SERVICE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_BROADCAST, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_ADMIN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_RAW, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_IPC_LOCK, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_IPC_OWNER, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_MODULE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_RAWIO, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_CHROOT, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_PTRACE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_PACCT, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_ADMIN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_BOOT, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_NICE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_RESOURCE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_TIME, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_TTY_CONFIG, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_MKNOD, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_LEASE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_AUDIT_WRITE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_AUDIT_CONTROL, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETFCAP, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_MAC_OVERRIDE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_MAC_ADMIN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYSLOG, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_WAKE_ALARM, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_BLOCK_SUSPEND, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_AUDIT_READ, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_PERFMON, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_BPF, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_CHECKPOINT_RESTORE, 0, 0) = 0
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=1<<CAP_CHOWN}) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_CHOWN, 0, 0) = 1
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=1<<CAP_CHOWN}) = 0
+1581  capset({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_CHOWN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_DAC_OVERRIDE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_DAC_READ_SEARCH, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_FOWNER, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_FSETID, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_KILL, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETGID, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETUID, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETPCAP, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_LINUX_IMMUTABLE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_BIND_SERVICE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_BROADCAST, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_ADMIN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_NET_RAW, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_IPC_LOCK, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_IPC_OWNER, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_MODULE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_RAWIO, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_CHROOT, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_PTRACE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_PACCT, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_ADMIN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_BOOT, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_NICE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_RESOURCE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_TIME, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYS_TTY_CONFIG, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_MKNOD, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_LEASE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_AUDIT_WRITE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_AUDIT_CONTROL, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SETFCAP, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_MAC_OVERRIDE, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_MAC_ADMIN, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_SYSLOG, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_WAKE_ALARM, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_BLOCK_SUSPEND, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_AUDIT_READ, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_PERFMON, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_BPF, 0, 0) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_CHECKPOINT_RESTORE, 0, 0) = 0
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+1581  capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+1581  prctl(PR_CAP_AMBIENT, PR_CAP_AMBIENT_IS_SET, CAP_CHOWN, 0, 0) = 0
+1581  exit_group(0)                     = ?
+1581  +++ exited with 0 +++
+1572  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1581
+1572  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1581, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1572  exit_group(0)                     = ?
+1572  +++ exited with 0 +++

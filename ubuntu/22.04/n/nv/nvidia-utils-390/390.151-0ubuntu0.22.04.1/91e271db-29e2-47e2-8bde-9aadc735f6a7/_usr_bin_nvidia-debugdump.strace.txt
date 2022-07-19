@@ -1,0 +1,67 @@
+479   execve("/usr/bin/nvidia-debugdump", ["/usr/bin/nvidia-debugdump"], 0x7ffdb95200e0 /* 12 vars */) = 0
+479   brk(NULL)                         = 0x2590000
+479   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff6a8ccb00) = -1 EINVAL (Invalid argument)
+479   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5344371000
+479   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+479   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+479   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6753, ...}, AT_EMPTY_PATH) = 0
+479   mmap(NULL, 6753, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f534436f000
+479   close(3)                          = 0
+479   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnvidia-ml.so.1", O_RDONLY|O_CLOEXEC) = 3
+479   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\345\0\0\0\0\0\0@\0\0\0\0\0\0\0\300\10\24\0\0\0\0\0\0\0\0\0@\08\0\5\0@\0\31\0\30\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\320\273\22\0\0\0\0\0\320\273\22\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0"..., 832) = 832
+479   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1314560, ...}, AT_EMPTY_PATH) = 0
+479   mmap(NULL, 8228488, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5343b96000
+479   mmap(0x7f5343c00000, 6131336, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7f5343c00000
+479   munmap(0x7f5343b96000, 434176)    = 0
+479   munmap(0x7f53441d9000, 1662600)   = 0
+479   mprotect(0x7f5343d2c000, 2097152, PROT_NONE) = 0
+479   mmap(0x7f5343f2c000, 86016, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12c000) = 0x7f5343f2c000
+479   mmap(0x7f5343f41000, 2719368, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5343f41000
+479   close(3)                          = 0
+479   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+479   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+479   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+479   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+479   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+479   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+479   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+479   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f53439d8000
+479   mmap(0x7f5343a00000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f5343a00000
+479   mmap(0x7f5343b95000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f5343b95000
+479   mmap(0x7f5343bed000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f5343bed000
+479   mmap(0x7f5343bf3000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5343bf3000
+479   close(3)                          = 0
+479   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+479   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210J\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0%\0$\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250\n\0\0\0\0\0\0\250\n\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+479   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21448, ...}, AT_EMPTY_PATH) = 0
+479   mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f534436a000
+479   mmap(0x7f534436b000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f534436b000
+479   mmap(0x7f534436c000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f534436c000
+479   mmap(0x7f534436d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f534436d000
+479   close(3)                          = 0
+479   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+479   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`1\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x\6\0\0\0\0\0\0x\6\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+479   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+479   mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5344365000
+479   mmap(0x7f5344366000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f5344366000
+479   mmap(0x7f5344367000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5344367000
+479   mmap(0x7f5344368000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5344368000
+479   close(3)                          = 0
+479   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5344363000
+479   arch_prctl(ARCH_SET_FS, 0x7f5344363e40) = 0
+479   set_tid_address(0x7f5344364110)   = 479
+479   set_robust_list(0x7f5344364120, 24) = 0
+479   rseq(0x7f53443647e0, 0x20, 0, 0x53053053) = 0
+479   mprotect(0x7f5343bed000, 16384, PROT_READ) = 0
+479   mprotect(0x7f5344368000, 4096, PROT_READ) = 0
+479   mprotect(0x7f534436d000, 4096, PROT_READ) = 0
+479   mprotect(0x7f53443ab000, 8192, PROT_READ) = 0
+479   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+479   munmap(0x7f534436f000, 6753)      = 0
+479   getrandom("\xaa\xc2\xfc\x1d\xd6\x8e\xe3\x50", 8, GRND_NONBLOCK) = 8
+479   brk(NULL)                         = 0x2590000
+479   brk(0x25b1000)                    = 0x25b1000
+479   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+479   write(1, "Usage: /usr/bin/nvidia-debugdump [options]\n\nOptions include:\n    [-l | --list]: List all devices\n    [-d | --device]: Device ID "..., 768) = 768
+479   exit_group(1)                     = ?
+479   +++ exited with 1 +++

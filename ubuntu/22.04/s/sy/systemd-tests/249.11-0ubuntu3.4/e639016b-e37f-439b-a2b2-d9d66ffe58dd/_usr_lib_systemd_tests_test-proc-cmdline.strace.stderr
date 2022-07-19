@@ -1,0 +1,30 @@
+/* test_proc_cmdline_parse */
+kernel cmdline option </bin/bash> = <n/a>
+kernel cmdline option </usr/bin/trace.sh> = <n/a>
+kernel cmdline option <systemd-tests> = <n/a>
+/* test_proc_cmdline_override */
+/* test_proc_cmdline_given (flip: no) */
+parse_item_given: option <foo_bar> = <quux>
+parse_item_given: option <wuff-piep> = <tuet >
+parse_item_given: option <space> = <x y z>
+parse_item_given: option <miepf> = <uuu>
+parse_item_given: option <foo_bar> = <quux>
+parse_item_given: option <wuff-piep> = <tuet >
+parse_item_given: option <space> = <x y z>
+parse_item_given: option <miepf> = <uuu>
+/* test_proc_cmdline_given (flip: yes) */
+parse_item_given: option <foo_bar> = <quux>
+parse_item_given: option <wuff-piep> = <tuet >
+parse_item_given: option <zumm> = <n/a>
+parse_item_given: option <space> = <x y z>
+parse_item_given: option <miepf> = <uuu>
+parse_item_given: option <foo_bar> = <quux>
+parse_item_given: option <wuff-piep> = <tuet >
+parse_item_given: option <rd.zumm> = <n/a>
+parse_item_given: option <space> = <x y z>
+parse_item_given: option <miepf> = <uuu>
+/* test_proc_cmdline_key_streq */
+/* test_proc_cmdline_key_startswith */
+/* test_proc_cmdline_get_key */
+/* test_proc_cmdline_get_bool */
+/* test_proc_cmdline_get_key_many */

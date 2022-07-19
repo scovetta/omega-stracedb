@@ -1,0 +1,64 @@
+/usr/bin/aria_s3_copy  Ver 1.0 for debian-linux-gnu on x86_64
+
+This software comes with NO WARRANTY:  see the PUBLIC for details.
+
+Copy an Aria table to and from s3
+Usage: aria_s3_copy --aws-access-key=# --aws-secret-access-key=# --aws-region=# --op=(from_s3 | to_s3 | delete_from_s3) [OPTIONS] tables[.MAI]
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf 
+The following groups are read: aria_s3_copy
+The following options may be given as the first argument:
+--print-defaults          Print the program argument list and exit.
+--no-defaults             Don't read default options from any option file.
+The following specify which files/extra groups are read (specified before remaining options):
+--defaults-file=#         Only read default options from the given file #.
+--defaults-extra-file=#   Read this file after the global files are read.
+--defaults-group-suffix=# Additionally read default groups with # appended as a suffix.
+
+  -?, --help          Display this help and exit.
+  -k, --s3-access-key=name 
+                      AWS access key ID
+  -r, --s3-region=name 
+                      AWS region
+  -K, --s3-secret-key=name 
+                      AWS secret access key ID
+  -b, --s3-bucket=name 
+                      AWS prefix for tables
+  -h, --s3-host-name=name 
+                      Host name to S3 provider
+  -p, --s3-port=#     Port number to connect to (0 means use default)
+  -P, --s3-use-http   If true, force use of HTTP protocol
+  -c, --compress      Use compression
+  -o, --op=name       Operation to execute. One of 'from_s3', 'to_s3' or
+                      'delete_from_s3'
+  -d, --database=name Database for copied table (second prefix). If not given,
+                      the directory of the table file is used
+  -B, --s3-block-size=# 
+                      Block size for data/index blocks in s3
+  -L, --s3-protocol-version=name 
+                      Protocol used to communication with S3. One of "Auto",
+                      "Amazon" or "Original".
+  -f, --force         Force copy even if target exists
+  -v, --verbose       Write more information
+  -V, --version       Print version and exit.
+  --s3-debug          Output debug log from marias3 to stdout
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}  Value (after reading options)
+--------------------------------- ----------------------------------------
+s3-access-key                     (No default value)
+s3-region                         eu-north-1
+s3-secret-key                     (No default value)
+s3-bucket                         MariaDB
+s3-host-name                      s3.amazonaws.com
+s3-port                           0
+s3-use-http                       FALSE
+compress                          FALSE
+op                                ?
+database                          (No default value)
+s3-block-size                     4194304
+s3-protocol-version               Auto
+force                             FALSE
+verbose                           FALSE
+s3-debug                          FALSE

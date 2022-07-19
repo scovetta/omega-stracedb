@@ -1,0 +1,34 @@
+Usage: /sbin/mkfs.fat [OPTIONS] TARGET [BLOCKS]
+Create FAT filesystem in TARGET, which can be a block device or file. Use only
+up to BLOCKS 1024 byte blocks if specified. With the -C option, file TARGET will be
+created with a size of 1024 bytes times BLOCKS, which must be specified.
+
+Options:
+  -a              Disable alignment of data structures
+  -A              Toggle Atari variant of the filesystem
+  -b SECTOR       Select SECTOR as location of the FAT32 backup boot sector
+  -c              Check device for bad blocks before creating the filesystem
+  -C              Create file TARGET then create filesystem in it
+  -D NUMBER       Write BIOS drive number NUMBER to boot sector
+  -f COUNT        Create COUNT file allocation tables
+  -F SIZE         Select FAT size SIZE (12, 16 or 32)
+  -g GEOM         Select disk geometry: heads/sectors_per_track
+  -h NUMBER       Write hidden sectors NUMBER to boot sector
+  -i VOLID        Set volume ID to VOLID (a 32 bit hexadecimal number)
+  -I              Ignore and disable safety checks
+  -l FILENAME     Read bad blocks list from FILENAME
+  -m FILENAME     Replace default error message in boot block with contents of FILENAME
+  -M TYPE         Set media type in boot sector to TYPE
+  --mbr[=y|n|a]   Fill (fake) MBR table with one partition which spans whole disk
+  -n LABEL        Set volume name to LABEL (up to 11 characters long)
+  --codepage=N    use DOS codepage N to encode label (default: 850)
+  -r COUNT        Make room for at least COUNT entries in the root directory
+  -R COUNT        Set minimal number of reserved sectors to COUNT
+  -s COUNT        Set number of sectors per cluster to COUNT
+  -S SIZE         Select a sector size of SIZE (a power of two, at least 512)
+  -v              Verbose execution
+  --variant=TYPE  Select variant TYPE of filesystem (standard or Atari)
+
+  --invariant     Use constants for randomly generated or time based values
+  --offset=SECTOR Write the filesystem at a specific sector into the device file.
+  --help          Show this help message and exit

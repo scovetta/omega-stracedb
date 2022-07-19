@@ -1,0 +1,17 @@
+Utility to generate LibreOffice gallery files
+
+using: gengal --name <name> --path <dir> [ --destdir <path> ]
+              [ files ... ]
+
+options:
+ --name <theme>		defines the user visible name of the created or updated theme.
+ --path <dir>		defines directory where the gallery files are created
+			or updated.
+ --destdir <dir>	defines a path prefix to be removed from the paths
+			stored in the gallery files. It is useful to create
+			RPM packages using the BuildRoot feature.
+ --relative-urls		flags that after removing the destdir, the URL should be a path relative to the gallery folder in the install
+			primarily used for internal gallery generation at compile time.
+			theme files.
+ files			lists files to be added to the gallery. Absolute paths
+			are required.

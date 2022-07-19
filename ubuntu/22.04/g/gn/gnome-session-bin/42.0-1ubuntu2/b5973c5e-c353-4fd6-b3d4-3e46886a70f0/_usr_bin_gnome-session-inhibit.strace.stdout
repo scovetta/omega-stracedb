@@ -1,0 +1,15 @@
+gnome-session-inhibit [OPTION?] COMMAND
+
+Execute COMMAND while inhibiting some session functionality.
+
+  -h, --help        Show this help
+  --version         Show program version
+  --app-id ID       The application id to use
+                    when inhibiting (optional)
+  --reason REASON   The reason for inhibiting (optional)
+  --inhibit ARG     Things to inhibit, colon-separated list of:
+                    logout, switch-user, suspend, idle, automount
+  --inhibit-only    Do not launch COMMAND and wait forever instead
+  -l, --list        List the existing inhibitions, and exit
+
+If no --inhibit option is specified, idle is assumed.

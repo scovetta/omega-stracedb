@@ -1,0 +1,35 @@
+
+ext_ldap_group_acl version 2.18
+
+Usage: ext_ldap_group_acl -b basedn -f filter [options] ldap_server_name
+
+	-b basedn (REQUIRED)	base dn under where to search for groups
+	-f filter (REQUIRED)	group search filter pattern. %u = user,
+				%v = group
+	-B basedn (REQUIRED)	base dn under where to search for users
+	-F filter (REQUIRED)	user search filter pattern. %s = login
+	-s base|one|sub		search scope
+	-D binddn		DN to bind as to perform searches
+	-w bindpasswd		password for binddn
+	-W secretfile		read password for binddn from file secretfile
+	-H URI			LDAPURI (defaults to ldap://localhost)
+	-h server		LDAP server (defaults to localhost)
+	-p port			LDAP server port (defaults to 389)
+	-P			persistent LDAP connection
+	-c timeout		connect timeout
+	-t timelimit		search time limit
+	-R			do not follow referrals
+	-a never|always|search|find
+				when to dereference aliases
+	-v 2|3			LDAP version
+	-Z			TLS encrypt the LDAP connection, requires
+				LDAP version 3
+	-g			first query parameter is base DN extension
+				for this query
+	-S			Strip NT domain from usernames
+	-K			Strip Kerberos realm from usernames
+	-d			enable debug mode
+
+	If you need to bind as a user to perform searches then use the
+	-D binddn -w bindpasswd or -D binddn -W secretfile options
+

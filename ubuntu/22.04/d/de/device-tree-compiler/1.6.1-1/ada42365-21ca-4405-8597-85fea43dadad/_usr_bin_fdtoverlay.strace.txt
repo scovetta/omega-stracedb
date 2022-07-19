@@ -1,0 +1,60 @@
+524   execve("/usr/bin/fdtoverlay", ["/usr/bin/fdtoverlay"], 0x7fff6ccb3710 /* 12 vars */) = 0
+524   brk(NULL)                         = 0x56125586f000
+524   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc4a8af760) = -1 EINVAL (Invalid argument)
+524   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc566efd000
+524   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+524   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+524   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6253, ...}, AT_EMPTY_PATH) = 0
+524   mmap(NULL, 6253, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc566efb000
+524   close(3)                          = 0
+524   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libfdt.so.1", O_RDONLY|O_CLOEXEC) = 3
+524   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240!\0\0\0\0\0\0@\0\0\0\0\0\0\0X\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\31\0\0\0\0\0\08\31\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+524   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39064, ...}, AT_EMPTY_PATH) = 0
+524   mmap(NULL, 40976, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc566ef0000
+524   mmap(0x7fc566ef2000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fc566ef2000
+524   mmap(0x7fc566ef7000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7fc566ef7000
+524   mmap(0x7fc566ef9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7fc566ef9000
+524   close(3)                          = 0
+524   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+524   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+524   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+524   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+524   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+524   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+524   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+524   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc566cc8000
+524   mmap(0x7fc566cf0000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fc566cf0000
+524   mmap(0x7fc566e85000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fc566e85000
+524   mmap(0x7fc566edd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fc566edd000
+524   mmap(0x7fc566ee3000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc566ee3000
+524   close(3)                          = 0
+524   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc566cc5000
+524   arch_prctl(ARCH_SET_FS, 0x7fc566cc5740) = 0
+524   set_tid_address(0x7fc566cc5a10)   = 524
+524   set_robust_list(0x7fc566cc5a20, 24) = 0
+524   rseq(0x7fc566cc60e0, 0x20, 0, 0x53053053) = 0
+524   mprotect(0x7fc566edd000, 16384, PROT_READ) = 0
+524   mprotect(0x7fc566ef9000, 4096, PROT_READ) = 0
+524   mprotect(0x561255337000, 4096, PROT_READ) = 0
+524   mprotect(0x7fc566f37000, 8192, PROT_READ) = 0
+524   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+524   munmap(0x7fc566efb000, 6253)      = 0
+524   write(2, "Usage: apply a number of overlays to a base blob\n\tfdtoverlay <options> [<overlay.dtbo> [<overlay.dtbo>]]\n\n<type>\ts=string, i=int"..., 241) = 241
+524   write(2, "  -i, ", 6)             = 6
+524   write(2, "--input <arg>  ", 15)   = 15
+524   write(2, "Input base DT blob\n", 19) = 19
+524   write(2, "  -o, ", 6)             = 6
+524   write(2, "--output <arg> ", 15)   = 15
+524   write(2, "Output DT blob\n", 15)  = 15
+524   write(2, "  -v, ", 6)             = 6
+524   write(2, "--verbose      ", 15)   = 15
+524   write(2, "Verbose messages\n", 17) = 17
+524   write(2, "  -h, ", 6)             = 6
+524   write(2, "--help         ", 15)   = 15
+524   write(2, "Print this help and exit\n", 25) = 25
+524   write(2, "  -V, ", 6)             = 6
+524   write(2, "--version      ", 15)   = 15
+524   write(2, "Print version and exit\n", 23) = 23
+524   write(2, "\nError: missing input file\n", 27) = 27
+524   exit_group(1)                     = ?
+524   +++ exited with 1 +++

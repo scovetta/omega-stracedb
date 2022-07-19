@@ -1,0 +1,50 @@
+772   execve("/usr/lib/gcc-cross/powerpc64le-linux-gnu/11/lto-wrapper", ["/usr/lib/gcc-cross/powerpc64le-linux-gnu/11/lto-wrapper"], 0x7fffd4ec5210 /* 12 vars */) = 0
+772   brk(NULL)                         = 0xc8e000
+772   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdf49f3240) = -1 EINVAL (Invalid argument)
+772   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8ee4b6000
+772   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+772   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+772   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6781, ...}, AT_EMPTY_PATH) = 0
+772   mmap(NULL, 6781, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb8ee4b4000
+772   close(3)                          = 0
+772   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+772   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+772   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+772   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+772   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+772   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+772   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+772   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb8ee28c000
+772   mmap(0x7fb8ee2b4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb8ee2b4000
+772   mmap(0x7fb8ee449000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb8ee449000
+772   mmap(0x7fb8ee4a1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fb8ee4a1000
+772   mmap(0x7fb8ee4a7000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb8ee4a7000
+772   close(3)                          = 0
+772   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb8ee289000
+772   arch_prctl(ARCH_SET_FS, 0x7fb8ee289740) = 0
+772   set_tid_address(0x7fb8ee289a10)   = 772
+772   set_robust_list(0x7fb8ee289a20, 24) = 0
+772   rseq(0x7fb8ee28a0e0, 0x20, 0, 0x53053053) = 0
+772   mprotect(0x7fb8ee4a1000, 16384, PROT_READ) = 0
+772   mprotect(0x510000, 12288, PROT_READ) = 0
+772   mprotect(0x7fb8ee4f0000, 8192, PROT_READ) = 0
+772   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+772   munmap(0x7fb8ee4b4000, 6781)      = 0
+772   getrandom("\xe1\x5c\x76\x5a\x79\xb0\xe9\x30", 8, GRND_NONBLOCK) = 8
+772   brk(NULL)                         = 0xc8e000
+772   brk(0xcaf000)                     = 0xcaf000
+772   brk(0xcd1000)                     = 0xcd1000
+772   ioctl(2, TCGETS, 0x7ffdf49f3210)  = -1 ENOTTY (Inappropriate ioctl for device)
+772   rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+772   rt_sigaction(SIGINT, {sa_handler=0x409f70, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, 8) = 0
+772   rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+772   rt_sigaction(SIGHUP, {sa_handler=0x409f70, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, 8) = 0
+772   rt_sigaction(SIGTERM, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+772   rt_sigaction(SIGTERM, {sa_handler=0x409f70, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, 8) = 0
+772   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+772   rt_sigaction(SIGPIPE, {sa_handler=0x409f70, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, 8) = 0
+772   rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fb8ee2ce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+772   write(2, "lto-wrapper: fatal error: environment variable 'COLLECT_GCC' must be set\n", 73) = 73
+772   write(2, "compilation terminated.\n", 24) = 24
+772   exit_group(1)                     = ?
+772   +++ exited with 1 +++

@@ -1,0 +1,36 @@
+Usage: strsclnt [-n nickname] [-p port] [-d dbdir] [-c connections]
+          [-BDNovqs] [-f filename] [-N | -P percentage]
+          [-w dbpasswd] [-C cipher(s)] [-t threads] [-W pwfile]
+          [-V [min-version]:[max-version]] [-a sniHostName]
+          [-J signatureschemes] hostname
+ where -v means verbose
+       -o flag is interpreted as follows:
+          1 -o   means override the result of server certificate validation.
+          2 -o's mean skip server certificate validation altogether.
+       -D means no TCP delays
+       -q means quit when server gone (timeout rather than retry forever)
+       -s means disable SSL socket locking
+       -N means no session reuse
+       -P means do a specified percentage of full handshakes (0-100)
+       -V [min]:[max] restricts the set of enabled SSL/TLS protocols versions.
+          All versions are enabled by default.
+          Possible values for min/max: ssl3 tls1.0 tls1.1 tls1.2
+          Example: "-V ssl3:" enables SSL 3 and newer.
+       -U means enable throttling up threads
+       -T enable the cert_status extension (OCSP stapling)
+       -u enable TLS Session Ticket extension
+       -z enable compression
+       -g enable false start
+       -4  Enforce using an IPv4 destination address
+       -6  Enforce using an IPv6 destination address
+           Note: Default behavior is both IPv4 and IPv6 enabled
+       -J enable signature schemes
+          This takes a comma separated list of signature schemes in preference
+          order.
+          Possible values are:
+          rsa_pkcs1_sha1, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512,
+          ecdsa_sha1, ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384,
+          ecdsa_secp521r1_sha512,
+          rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512,
+          rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512,
+          dsa_sha1, dsa_sha256, dsa_sha384, dsa_sha512

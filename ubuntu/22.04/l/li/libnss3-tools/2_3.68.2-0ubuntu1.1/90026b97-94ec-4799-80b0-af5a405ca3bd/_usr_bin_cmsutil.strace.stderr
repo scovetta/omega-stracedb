@@ -1,0 +1,44 @@
+Usage:  cmsutil [-C|-D|-E|-O|-S] [<options>] [-d dbdir] [-u certusage]
+ -C            create a CMS encrypted data message
+ -D            decode a CMS message
+  -b           decode a batch of files named in infile
+  -c content   use this detached content
+  -n           suppress output of content
+  -h num       display num levels of CMS message info as email headers
+  -k           keep decoded encryption certs in perm cert db
+ -E            create a CMS enveloped data message
+  -r id,...    create envelope for these recipients,
+               where id can be a certificate nickname or email address
+ -S            create a CMS signed data message
+  -G           include a signing time attribute
+  -H hash      use hash (default:SHA256)
+  -N nick      use certificate named "nick" for signing
+  -P           include a SMIMECapabilities attribute
+  -T           do not include content in CMS message
+  -Y nick      include a EncryptionKeyPreference attribute with cert
+                 (use "NONE" to omit)
+ -O            create a CMS signed message containing only certificates
+ General Options:
+ -d dbdir      key/cert database directory (default: ~/.netscape)
+ -e envelope   enveloped data message in this file is used for bulk key
+ -i infile     use infile as source of data (default: stdin)
+ -o outfile    use outfile as destination of data (default: stdout)
+ -p password   use password as key db password (default: prompt)
+ -f pwfile     use password file to set password on all PKCS#11 tokens)
+ -u certusage  set type of certificate usage (default: certUsageEmailSigner)
+ -v            print debugging information
+
+Cert usage codes:
+                           0 - certUsageSSLClient
+                           1 - certUsageSSLServer
+                           2 - certUsageSSLServerWithStepUp
+                           3 - certUsageSSLCA
+                           4 - certUsageEmailSigner
+                           5 - certUsageEmailRecipient
+                           6 - certUsageObjectSigner
+                           7 - certUsageUserCertImport
+                           8 - certUsageVerifyCA
+                           9 - certUsageProtectedObjectSigner
+                          10 - certUsageStatusResponder
+                          11 - certUsageAnyCA
+                          12 - certUsageIPsec

@@ -1,0 +1,1581 @@
+559   execve("/usr/bin/ctr", ["/usr/bin/ctr"], 0x7ffe5a651690 /* 12 vars */) = 0
+559   brk(NULL)                         = 0x55c990b34000
+559   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe8210d9f0) = -1 EINVAL (Invalid argument)
+559   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0084a26000
+559   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+559   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+559   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+559   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0084a24000
+559   close(3)                          = 0
+559   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+559   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+559   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+559   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+559   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+559   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+559   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+559   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f00847fc000
+559   mmap(0x7f0084824000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f0084824000
+559   mmap(0x7f00849b9000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f00849b9000
+559   mmap(0x7f0084a11000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f0084a11000
+559   mmap(0x7f0084a17000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0084a17000
+559   close(3)                          = 0
+559   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f00847f9000
+559   arch_prctl(ARCH_SET_FS, 0x7f00847f9740) = 0
+559   set_tid_address(0x7f00847f9a10)   = 559
+559   set_robust_list(0x7f00847f9a20, 24) = 0
+559   rseq(0x7f00847fa0e0, 0x20, 0, 0x53053053) = 0
+559   mprotect(0x7f0084a11000, 16384, PROT_READ) = 0
+559   mprotect(0x55c98fbc0000, 7090176, PROT_READ) = 0
+559   mprotect(0x7f0084a60000, 8192, PROT_READ) = 0
+559   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+559   munmap(0x7f0084a24000, 6133)      = 0
+559   getrandom("\x60\xd6\x08\x84\xd9\x0f\x86\xd0", 8, GRND_NONBLOCK) = 8
+559   brk(NULL)                         = 0x55c990b34000
+559   brk(0x55c990b55000)               = 0x55c990b55000
+559   sched_getaffinity(0, 8192, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+559   openat(AT_FDCWD, "/sys/kernel/mm/transparent_hugepage/hpage_pmd_size", O_RDONLY) = 3
+559   read(3, "2097152\n", 20)          = 8
+559   close(3)                          = 0
+559   mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f00847b9000
+559   mmap(NULL, 131072, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0084799000
+559   mmap(NULL, 1048576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0084699000
+559   mmap(NULL, 8388608, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0083e99000
+559   mmap(NULL, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f007fe99000
+559   mmap(NULL, 536870912, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f005fe99000
+559   mmap(0xc000000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+559   mmap(NULL, 33554432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f005de99000
+559   mmap(NULL, 2165776, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f005dc88000
+559   mmap(0xc000000000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+559   mmap(0x7f0084799000, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0084799000
+559   mmap(0x7f0084719000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0084719000
+559   mmap(0x7f008429f000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f008429f000
+559   mmap(0x7f0081ec9000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0081ec9000
+559   mmap(0x7f0070019000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0070019000
+559   mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f005db88000
+559   mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f005db78000
+559   mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f005db68000
+559   rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+559   sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+559   sigaltstack({ss_sp=0xc000004000, ss_flags=0, ss_size=32768}, NULL) = 0
+559   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+559   gettid()                          = 559
+559   rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGHUP, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGINT, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGQUIT, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGILL, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGTRAP, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGABRT, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGBUS, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGFPE, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGUSR1, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGSEGV, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGUSR2, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGPIPE, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGALRM, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGTERM, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGSTKFLT, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGCHLD, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGURG, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGXCPU, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGXFSZ, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGVTALRM, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGPROF, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGWINCH, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGIO, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGPWR, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGSYS, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRTMIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_3, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_4, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_5, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_6, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_7, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_8, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_9, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_10, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_11, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_12, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_13, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_14, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_15, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_16, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_17, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_18, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_19, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_20, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_21, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_22, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_23, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_24, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_25, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_26, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_27, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_28, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_29, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_30, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_31, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+559   rt_sigaction(SIGRT_32, {sa_handler=0x55c98f24a4a0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+559   rt_sigaction(SIGRT_1, {sa_handler=0x7f008488d8f0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f008483e520}, NULL, 8) = 0
+559   rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+559   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f005d367000
+559   mprotect(0x7f005d368000, 8388608, PROT_READ|PROT_WRITE) = 0
+559   rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP RTMIN RT_1], 8) = 0
+559   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f005db67910, parent_tid=0x7f005db67910, exit_signal=0, stack=0x7f005d367000, stack_size=0x7fff00, tls=0x7f005db67640}, 88) = -1 ENOSYS (Function not implemented)
+559   clone(child_stack=0x7f005db66ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+564   rseq(0x7f005db67fe0, 0x20, 0, 0x53053053 <unfinished ...>
+559   <... clone resumed>, parent_tid=[564], tls=0x7f005db67640, child_tidptr=0x7f005db67910) = 564
+564   <... rseq resumed>)               = 0
+559   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+564   set_robust_list(0x7f005db67920, 24 <unfinished ...>
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+564   <... set_robust_list resumed>)    = 0
+559   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+564   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+564   <... rt_sigprocmask resumed>NULL, 8) = 0
+559   mmap(NULL, 1439992, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+564   mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+559   <... mmap resumed>)               = 0x7f005d207000
+564   <... mmap resumed>)               = 0x7f0055207000
+559   mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+564   munmap(0x7f0055207000, 48205824 <unfinished ...>
+559   <... mmap resumed>)               = 0x7f00551c7000
+564   <... munmap resumed>)             = 0
+559   rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+564   munmap(0x7f005c000000, 18903040 <unfinished ...>
+559   <... rt_sigprocmask resumed>[], 8) = 0
+564   <... munmap resumed>)             = 0
+559   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+564   mprotect(0x7f0058000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+559   <... mmap resumed>)               = 0x7f005ca06000
+564   <... mprotect resumed>)           = 0
+559   mprotect(0x7f005ca07000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+564   sigaltstack(NULL,  <unfinished ...>
+559   <... mprotect resumed>)           = 0
+564   <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+559   rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+564   sigaltstack({ss_sp=0xc000076000, ss_flags=0, ss_size=32768},  <unfinished ...>
+559   <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+564   <... sigaltstack resumed>NULL)    = 0
+559   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f005d206910, parent_tid=0x7f005d206910, exit_signal=0, stack=0x7f005ca06000, stack_size=0x7fff00, tls=0x7f005d206640} <unfinished ...>
+564   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+559   <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+564   <... rt_sigprocmask resumed>NULL, 8) = 0
+559   clone(child_stack=0x7f005d205ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+564   gettid( <unfinished ...>
+565   rseq(0x7f005d206fe0, 0x20, 0, 0x53053053 <unfinished ...>
+564   <... gettid resumed>)             = 564
+565   <... rseq resumed>)               = 0
+559   <... clone resumed>, parent_tid=[565], tls=0x7f005d206640, child_tidptr=0x7f005d206910) = 565
+565   set_robust_list(0x7f005d206920, 24 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   <... set_robust_list resumed>)    = 0
+559   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+565   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+565   <... rt_sigprocmask resumed>NULL, 8) = 0
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+565   mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+564   getpid( <unfinished ...>
+565   <... mmap resumed>)               = 0x7f004d1c7000
+559   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+565   munmap(0x7f004d1c7000, 48467968 <unfinished ...>
+564   <... getpid resumed>)             = 559
+565   <... munmap resumed>)             = 0
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+565   munmap(0x7f0054000000, 18640896 <unfinished ...>
+564   tgkill(559, 559, SIGURG <unfinished ...>
+565   <... munmap resumed>)             = 0
+559   rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+565   mprotect(0x7f0050000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+564   <... tgkill resumed>)             = 0
+565   <... mprotect resumed>)           = 0
+559   <... rt_sigprocmask resumed>[], 8) = 0
+565   sigaltstack(NULL,  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+559   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+565   sigaltstack({ss_sp=0xc000080000, ss_flags=0, ss_size=32768},  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+565   <... sigaltstack resumed>NULL)    = 0
+559   <... mmap resumed>)               = 0x7f005c205000
+565   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   <... rt_sigprocmask resumed>NULL, 8) = 0
+559   mprotect(0x7f005c206000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+565   gettid( <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+565   <... gettid resumed>)             = 565
+559   <... mprotect resumed>)           = 0
+565   mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   <... mmap resumed>)               = 0x7f005c1c5000
+559   rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+565   rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+565   <... rt_sigprocmask resumed>[], 8) = 0
+559   <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+565   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   <... mmap resumed>)               = 0x7f00577ff000
+559   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f005ca05910, parent_tid=0x7f005ca05910, exit_signal=0, stack=0x7f005c205000, stack_size=0x7fff00, tls=0x7f005ca05640} <unfinished ...>
+565   mprotect(0x7f0057800000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+565   <... mprotect resumed>)           = 0
+559   <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+565   rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+559   clone(child_stack=0x7f005ca04ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+565   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f0057fff910, parent_tid=0x7f0057fff910, exit_signal=0, stack=0x7f00577ff000, stack_size=0x7fff00, tls=0x7f0057fff640} <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+565   <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+566   rseq(0x7f005ca05fe0, 0x20, 0, 0x53053053 <unfinished ...>
+565   clone(child_stack=0x7f0057ffeef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+566   <... rseq resumed>)               = 0
+559   <... clone resumed>, parent_tid=[566], tls=0x7f005ca05640, child_tidptr=0x7f005ca05910) = 566
+567   rseq(0x7f0057ffffe0, 0x20, 0, 0x53053053 <unfinished ...>
+566   set_robust_list(0x7f005ca05920, 24 <unfinished ...>
+565   <... clone resumed>, parent_tid=[567], tls=0x7f0057fff640, child_tidptr=0x7f0057fff910) = 567
+564   <... nanosleep resumed>NULL)      = 0
+567   <... rseq resumed>)               = 0
+566   <... set_robust_list resumed>)    = 0
+565   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+559   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+567   set_robust_list(0x7f0057fff920, 24 <unfinished ...>
+566   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+565   <... rt_sigprocmask resumed>NULL, 8) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+567   <... set_robust_list resumed>)    = 0
+566   <... rt_sigprocmask resumed>NULL, 8) = 0
+565   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+567   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+566   mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+565   <... rt_sigprocmask resumed>NULL, 8) = 0
+564   <... nanosleep resumed>NULL)      = 0
+567   <... rt_sigprocmask resumed>NULL, 8) = 0
+566   <... mmap resumed>)               = 0x7f0048000000
+565   futex(0x55c9902fdfe8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+567   mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+566   munmap(0x7f004c000000, 67108864 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+567   <... mmap resumed>)               = 0x7f0040000000
+566   <... munmap resumed>)             = 0
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+567   munmap(0x7f0044000000, 67108864 <unfinished ...>
+566   mprotect(0x7f0048000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+567   <... munmap resumed>)             = 0
+566   <... mprotect resumed>)           = 0
+559   --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=559, si_uid=0} ---
+567   mprotect(0x7f0040000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+566   sigaltstack(NULL,  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+567   <... mprotect resumed>)           = 0
+566   <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+559   rt_sigreturn({mask=[]} <unfinished ...>
+567   sigaltstack(NULL,  <unfinished ...>
+566   sigaltstack({ss_sp=0xc000088000, ss_flags=0, ss_size=32768},  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+567   <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+566   <... sigaltstack resumed>NULL)    = 0
+559   <... rt_sigreturn resumed>)       = 0
+567   sigaltstack({ss_sp=0xc000104000, ss_flags=0, ss_size=32768},  <unfinished ...>
+566   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+567   <... sigaltstack resumed>NULL)    = 0
+566   <... rt_sigprocmask resumed>NULL, 8) = 0
+559   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+567   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+566   gettid( <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+567   <... rt_sigprocmask resumed>NULL, 8) = 0
+566   <... gettid resumed>)             = 566
+565   <... futex resumed>)              = 0
+559   <... futex resumed>)              = 1
+567   gettid( <unfinished ...>
+566   futex(0x55c9902fdfe8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+567   <... gettid resumed>)             = 567
+566   <... futex resumed>)              = 0
+559   rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+567   futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+566   futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... rt_sigprocmask resumed>[], 8) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... mmap resumed>)               = 0x7f0056ffe000
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   mprotect(0x7f0056fff000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... mprotect resumed>)           = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f00577fe910, parent_tid=0x7f00577fe910, exit_signal=0, stack=0x7f0056ffe000, stack_size=0x7fff00, tls=0x7f00577fe640} <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... clone3 resumed>, 88)         = -1 ENOSYS (Function not implemented)
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   clone(child_stack=0x7f00577fdef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+568   rseq(0x7f00577fefe0, 0x20, 0, 0x53053053 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+568   <... rseq resumed>)               = 0
+559   <... clone resumed>, parent_tid=[568], tls=0x7f00577fe640, child_tidptr=0x7f00577fe910) = 568
+568   set_robust_list(0x7f00577fe920, 24 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+568   <... set_robust_list resumed>)    = 0
+559   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+568   rt_sigprocmask(SIG_SETMASK, ~[KILL STOP RTMIN RT_1],  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+568   <... rt_sigprocmask resumed>NULL, 8) = 0
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+568   mmap(0x7f0044000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+568   <... mmap resumed>)               = 0x7f0044000000
+559   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+568   mprotect(0x7f0044000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+568   <... mprotect resumed>)           = 0
+559   <... rt_sigprocmask resumed>NULL, 8) = 0
+568   sigaltstack(NULL,  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+568   <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+559   fcntl(0, F_GETFL <unfinished ...>
+568   sigaltstack({ss_sp=0xc000092000, ss_flags=0, ss_size=32768},  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+568   <... sigaltstack resumed>NULL)    = 0
+559   <... fcntl resumed>)              = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+568   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+568   <... rt_sigprocmask resumed>NULL, 8) = 0
+559   futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+568   gettid( <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+568   <... gettid resumed>)             = 568
+566   <... futex resumed>)              = 0
+559   <... futex resumed>)              = 1
+568   futex(0x55c99032f298, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+566   nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+566   <... nanosleep resumed>NULL)      = 0
+559   fcntl(1, F_GETFL <unfinished ...>
+566   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+564   futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+566   <... futex resumed>)              = 1
+565   <... futex resumed>)              = 0
+559   <... fcntl resumed>)              = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+567   <... futex resumed>)              = 0
+566   futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   <... futex resumed>)              = 1
+567   futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   fcntl(2, F_GETFL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... fcntl resumed>)              = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+564   <... nanosleep resumed>NULL)      = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   openat(AT_FDCWD, "/etc/selinux/config", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   openat(AT_FDCWD, "/usr/share/containers/selinux/contexts", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   openat(AT_FDCWD, "/etc/selinux/contexts/lxc_contexts", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+559   getrandom( <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... getrandom resumed>"\x33\x45\xd7\x30", 4, GRND_NONBLOCK) = 4
+564   <... nanosleep resumed>NULL)      = 0
+559   newfstatat(AT_FDCWD, "/usr/bin/ctr",  <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... newfstatat resumed>{st_mode=S_IFREG|0755, st_size=23182816, ...}, 0) = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+567   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+567   futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... nanosleep resumed>NULL)      = 0
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+564   futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+567   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+567   futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   openat(AT_FDCWD, "", O_RDONLY|O_CLOEXEC <unfinished ...>
+567   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+567   futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... openat resumed>)             = -1 ENOENT (No such file or directory)
+564   <... futex resumed>)              = 0
+559   futex(0xc000100148, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+567   <... futex resumed>)              = 0
+559   <... futex resumed>)              = 1
+567   nanosleep({tv_sec=0, tv_nsec=3000},  <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+567   <... nanosleep resumed>NULL)      = 0
+559   write(1, "NAME:", 5 <unfinished ...>
+567   futex(0xc000064d48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+567   <... futex resumed>)              = 1
+566   <... futex resumed>)              = 0
+559   <... write resumed>)              = 5
+567   futex(0xc000100148, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+566   futex(0xc000064d48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   mmap(0xc000400000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... mmap resumed>)               = 0xc000400000
+564   <... nanosleep resumed>NULL)      = 0
+559   mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... mmap resumed>)               = 0x7f005c185000
+564   <... nanosleep resumed>NULL)      = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "   ctr - ", 9 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 9
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        __", 10 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 10
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "  _____/ /______", 16 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 16
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, " / ___/ __/ ___/", 16 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 16
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "/ /__/ /_/ /", 12 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 12
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\\___/\\__/_/", 11 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 11
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "containerd CLI", 14 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 14
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+559   <... write resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+564   <... futex resumed>)              = 0
+559   <... write resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "USAGE:", 6 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 6
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... futex resumed>)              = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+564   getpid( <unfinished ...>
+559   write(1, "   ctr [global options] command [command options] [arguments...]", 64 <unfinished ...>
+564   <... getpid resumed>)             = 559
+564   tgkill(559, 559, SIGURG <unfinished ...>
+559   <... write resumed>)              = 64
+564   <... tgkill resumed>)             = 0
+559   --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=559, si_uid=0} ---
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   rt_sigreturn({mask=[]} <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... rt_sigreturn resumed>)       = 64
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 1
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "VERSION:", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   1.5.9-0ubuntu3", 17 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 17
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "DESCRIPTION:", 12 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 12
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   ", 3 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 3
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "ctr is an unsupported debug and administrative client for interacting", 69 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 69
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "with the containerd daemon. Because it is unsupported, the commands,", 68 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 68
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "options, and operations are not guaranteed to be backward compatible or", 71 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1) = 1
+559   <... write resumed>)              = 71
+565   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... futex resumed>)              = 0
+559   write(1, "stable from release to release of the containerd project.", 57 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 57
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+559   <... write resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "COMMANDS:", 9 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 9
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "", 0 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 0
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   plugins, plugin", 18 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 18
+564   <... futex resumed>)              = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "    ", 4 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 4
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "provides information about containerd plugins", 45 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+559   <... write resumed>)              = 45
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   <... futex resumed>)              = 0
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   version", 10 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 10
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... futex resumed>)              = 0
+559   write(1, "    ", 4 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 4
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "print the client and server versions", 36 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 36
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   containers, c, container", 27 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 27
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   ", 3 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 3
+564   <... futex resumed>)              = 0
+559   write(1, "manage containers", 17 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 17
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   content", 10 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 10
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "    ", 4 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 4
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "manage content", 14 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 14
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 1
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "   events, event", 16 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 16
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   <... futex resumed>)              = 0
+559   <... write resumed>)              = 8
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "      ", 6 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 6
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "display containerd events", 25 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 25
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... futex resumed>)              = 0
+559   <... write resumed>)              = 1
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "   images, image, i", 19 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 19
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   ", 3 <unfinished ...>
+564   <... futex resumed>)              = 0
+559   <... write resumed>)              = 3
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "manage images", 13 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 13
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   leases", 9 <unfinished ...>
+564   <... futex resumed>)              = 0
+559   <... write resumed>)              = 9
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 8
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "     ", 5 <unfinished ...>
+564   <... futex resumed>)              = 0
+559   <... write resumed>)              = 5
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "manage leases", 13 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 13
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   namespaces, namespace, ns", 28 <unfinished ...>
+564   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 28
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "  ", 2 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 2
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "manage namespaces", 17 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 17
+564   <... futex resumed>)              = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   pprof", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1) = 1
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... futex resumed>)              = 0
+559   write(1, "      ", 6 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+559   <... write resumed>)              = 6
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "provide golang pprof outputs for containerd", 43 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 43
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   run", 6 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 6
+564   <... futex resumed>)              = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "run a container", 15 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1) = 1
+559   <... write resumed>)              = 15
+565   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 1
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "   snapshots, snapshot", 22 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 22
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "manage snapshots", 16 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 16
+564   <... futex resumed>)              = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   tasks, t, task", 17 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 17
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "     ", 5 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 5
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "manage tasks", 12 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 12
+564   <... futex resumed>)              = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   install", 10 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 10
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "    ", 4 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 4
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "install a new package", 21 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 21
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... futex resumed>)              = 0
+559   <... write resumed>)              = 1
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "   oci", 6 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 6
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "OCI tools", 9 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 9
+564   <... futex resumed>)              = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   shim", 7 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 7
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "       ", 7 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 7
+564   <... futex resumed>)              = 0
+559   write(1, "interact with a shim directly", 29 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 29
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1) = 1
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   help, h", 10 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 10
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "    ", 4 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 4
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "Shows a list of commands or help for one command", 48 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 48
+564   <... futex resumed>)              = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "GLOBAL OPTIONS:", 15 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 15
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... futex resumed>)              = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   --debug", 10 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 10
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1) = 1
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "      ", 6 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 6
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "enable debug output in logs", 27 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 27
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   --address value, -a value", 28 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 28
+564   <... futex resumed>)              = 0
+559   write(1, "    ", 4 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 4
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "address for containerd's GRPC server (default: \"/run/containerd/containerd.sock\") [$CONTAINERD_ADDRESS]", 103 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+559   <... write resumed>)              = 103
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   --timeout value", 18 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 18
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+559   <... write resumed>)              = 8
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "      ", 6 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 6
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "total timeout for ctr commands (default: 0s)", 44 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 44
+564   <... futex resumed>)              = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "   --connect-timeout value", 26 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 26
+564   <... futex resumed>)              = 1
+565   <... futex resumed>)              = 0
+559   write(1, "      ", 6 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 6
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "timeout for connecting to containerd (default: 0s)", 50 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 50
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... futex resumed>)              = 0
+559   write(1, "   --namespace value, -n value", 30 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 30
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "  ", 2 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1) = 1
+559   <... write resumed>)              = 2
+565   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "namespace to use with commands (default: \"default\") [$CONTAINERD_NAMESPACE]", 75 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+559   <... write resumed>)              = 75
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   --help, -h", 13 <unfinished ...>
+564   <... futex resumed>)              = 0
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 13
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+559   <... write resumed>)              = 8
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 8
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "   ", 3 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 3
+564   <... futex resumed>)              = 0
+559   write(1, "show help", 9 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 9
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "\n", 1 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+559   <... write resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "   --version, -v", 16 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 16
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "        ", 8 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 8
+564   <... nanosleep resumed>NULL)      = 0
+559   write(1, "        ", 8 <unfinished ...>
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1) = 1
+565   <... futex resumed>)              = 0
+559   <... write resumed>)              = 8
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   write(1, "print the version", 17 <unfinished ...>
+564   <... nanosleep resumed>NULL)      = 0
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+559   <... write resumed>)              = 17
+565   <... futex resumed>)              = 0
+564   <... futex resumed>)              = 1
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   write(1, "\n", 1 <unfinished ...>
+565   <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+564   futex(0xc000064948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+565   futex(0xc000064948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+559   <... write resumed>)              = 1
+564   <... futex resumed>)              = 0
+559   write(1, "", 0 <unfinished ...>
+564   nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+559   <... write resumed>)              = 0
+564   <... nanosleep resumed>NULL)      = 0
+559   exit_group(0 <unfinished ...>
+564   getpid( <unfinished ...>
+568   <... futex resumed>)              = ?
+567   <... futex resumed>)              = ?
+566   <... futex resumed>)              = ?
+565   <... futex resumed>)              = ?
+559   <... exit_group resumed>)         = ?
+568   +++ exited with 0 +++
+567   +++ exited with 0 +++
+566   +++ exited with 0 +++
+565   +++ exited with 0 +++
+564   +++ exited with 0 +++
+559   +++ exited with 0 +++

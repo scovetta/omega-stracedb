@@ -1,0 +1,132 @@
+457   execve("/usr/bin/xargs", ["/usr/bin/xargs"], 0x7ffe79e022c0 /* 12 vars */) = 0
+457   brk(NULL)                         = 0x55a8eb1be000
+457   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd5c421000) = -1 EINVAL (Invalid argument)
+457   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd63fae8000
+457   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+457   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+457   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd63fae6000
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+457   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+457   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd63f8be000
+457   mmap(0x7fd63f8e6000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fd63f8e6000
+457   mmap(0x7fd63fa7b000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fd63fa7b000
+457   mmap(0x7fd63fad3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fd63fad3000
+457   mmap(0x7fd63fad9000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd63fad9000
+457   close(3)                          = 0
+457   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd63f8bb000
+457   arch_prctl(ARCH_SET_FS, 0x7fd63f8bb740) = 0
+457   set_tid_address(0x7fd63f8bba10)   = 457
+457   set_robust_list(0x7fd63f8bba20, 24) = 0
+457   rseq(0x7fd63f8bc0e0, 0x20, 0, 0x53053053) = 0
+457   mprotect(0x7fd63fad3000, 16384, PROT_READ) = 0
+457   mprotect(0x55a8e99c8000, 4096, PROT_READ) = 0
+457   mprotect(0x7fd63fb22000, 8192, PROT_READ) = 0
+457   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+457   munmap(0x7fd63fae6000, 6133)      = 0
+457   openat(AT_FDCWD, "/proc/self/fd", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+457   newfstatat(3, "", {st_mode=S_IFDIR|0500, st_size=0, ...}, AT_EMPTY_PATH) = 0
+457   getrandom("\x09\xb5\xcc\xbd\xb2\xb5\xf3\x34", 8, GRND_NONBLOCK) = 8
+457   brk(NULL)                         = 0x55a8eb1be000
+457   brk(0x55a8eb1df000)               = 0x55a8eb1df000
+457   getdents64(3, 0x55a8eb1be2d0 /* 6 entries */, 32768) = 144
+457   getdents64(3, 0x55a8eb1be2d0 /* 0 entries */, 32768) = 0
+457   close(3)                          = 0
+457   poll([{fd=0, events=POLLIN|POLLOUT}, {fd=1, events=POLLIN|POLLOUT}, {fd=2, events=POLLIN|POLLOUT}, {fd=3, events=POLLIN|POLLOUT}], 4, 0) = 4 ([{fd=0, revents=POLLIN|POLLOUT}, {fd=1, revents=POLLIN|POLLOUT}, {fd=2, revents=POLLIN|POLLOUT}, {fd=3, revents=POLLNVAL}])
+457   fcntl(0, F_GETFD)                 = 0
+457   fcntl(1, F_GETFD)                 = 0
+457   fcntl(2, F_GETFD)                 = 0
+457   getpid()                          = 457
+457   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+457   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+457   rt_sigaction(SIGUSR1, {sa_handler=0x55a8e99bd640, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd63f900520}, NULL, 8) = 0
+457   rt_sigaction(SIGUSR2, {sa_handler=0x55a8e99bd680, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd63f900520}, NULL, 8) = 0
+457   mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd63f89a000
+457   rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd63f900520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+457   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=29, ...}, AT_EMPTY_PATH) = 0
+457   brk(0x55a8eb200000)               = 0x55a8eb200000
+457   read(0, "/usr/bin/find\n/usr/bin/xargs\n", 4096) = 29
+457   read(0, "", 4096)                 = 0
+457   pipe2([3, 4], 0)                  = 0
+457   fcntl(4, F_SETFD, FD_CLOEXEC)     = 0
+457   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+462   set_robust_list(0x7fd63f8bba20, 24 <unfinished ...>
+457   <... clone resumed>, child_tidptr=0x7fd63f8bba10) = 462
+462   <... set_robust_list resumed>)    = 0
+457   close(4 <unfinished ...>
+462   close(3 <unfinished ...>
+457   <... close resumed>)              = 0
+462   <... close resumed>)              = 0
+457   read(3,  <unfinished ...>
+462   close(0)                          = 0
+462   openat(AT_FDCWD, "/dev/null", O_RDONLY) = 0
+462   fcntl(0, F_DUPFD, 3)              = 3
+462   close(0)                          = 0
+462   dup2(3, 0)                        = 0
+462   close(3)                          = 0
+462   execve("/usr/local/sbin/echo", ["echo", "/usr/bin/find", "/usr/bin/xargs"], 0x7ffd5c4211d8 /* 12 vars */) = -1 ENOENT (No such file or directory)
+462   execve("/usr/local/bin/echo", ["echo", "/usr/bin/find", "/usr/bin/xargs"], 0x7ffd5c4211d8 /* 12 vars */) = -1 ENOENT (No such file or directory)
+462   execve("/usr/sbin/echo", ["echo", "/usr/bin/find", "/usr/bin/xargs"], 0x7ffd5c4211d8 /* 12 vars */) = -1 ENOENT (No such file or directory)
+462   execve("/usr/bin/echo", ["echo", "/usr/bin/find", "/usr/bin/xargs"], 0x7ffd5c4211d8 /* 12 vars */ <unfinished ...>
+457   <... read resumed>"", 4)          = 0
+462   <... execve resumed>)             = 0
+457   close(3 <unfinished ...>
+462   brk(NULL <unfinished ...>
+457   <... close resumed>)              = 0
+462   <... brk resumed>)                = 0x55df90eb0000
+457   getpid( <unfinished ...>
+462   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe17732600 <unfinished ...>
+457   <... getpid resumed>)             = 457
+462   <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+457   wait4(-1,  <unfinished ...>
+462   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa85a7be000
+462   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+462   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+462   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+462   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa85a7bc000
+462   close(3)                          = 0
+462   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+462   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+462   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+462   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+462   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+462   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+462   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+462   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa85a594000
+462   mmap(0x7fa85a5bc000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fa85a5bc000
+462   mmap(0x7fa85a751000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fa85a751000
+462   mmap(0x7fa85a7a9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fa85a7a9000
+462   mmap(0x7fa85a7af000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa85a7af000
+462   close(3)                          = 0
+462   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa85a591000
+462   arch_prctl(ARCH_SET_FS, 0x7fa85a591740) = 0
+462   set_tid_address(0x7fa85a591a10)   = 462
+462   set_robust_list(0x7fa85a591a20, 24) = 0
+462   rseq(0x7fa85a5920e0, 0x20, 0, 0x53053053) = 0
+462   mprotect(0x7fa85a7a9000, 16384, PROT_READ) = 0
+462   mprotect(0x55df8f14b000, 4096, PROT_READ) = 0
+462   mprotect(0x7fa85a7f8000, 8192, PROT_READ) = 0
+462   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+462   munmap(0x7fa85a7bc000, 6133)      = 0
+462   getrandom("\x5f\x27\x20\xa3\x31\x0d\xd7\x90", 8, GRND_NONBLOCK) = 8
+462   brk(NULL)                         = 0x55df90eb0000
+462   brk(0x55df90ed1000)               = 0x55df90ed1000
+462   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+462   write(1, "/usr/bin/find /usr/bin/xargs\n", 29) = 29
+462   close(1)                          = 0
+462   close(2)                          = 0
+462   exit_group(0)                     = ?
+462   +++ exited with 0 +++
+457   <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 462
+457   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=462, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+457   close(0)                          = 0
+457   close(1)                          = 0
+457   close(2)                          = 0
+457   exit_group(0)                     = ?
+457   +++ exited with 0 +++

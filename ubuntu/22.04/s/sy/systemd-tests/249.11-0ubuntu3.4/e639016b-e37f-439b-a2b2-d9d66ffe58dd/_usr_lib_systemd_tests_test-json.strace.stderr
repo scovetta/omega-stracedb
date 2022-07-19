@@ -1,0 +1,102 @@
+/* test_tokenizer data="x" */
+/* test_tokenizer data="" */
+/* test_tokenizer data=" " */
+/* test_tokenizer data="0" */
+/* test_tokenizer data="-0" */
+/* test_tokenizer data="1234" */
+/* test_tokenizer data="-1234" */
+/* test_tokenizer data="18446744073709551615" */
+/* test_tokenizer data="-9223372036854775808" */
+/* test_tokenizer data="18446744073709551616" */
+/* test_tokenizer data="-9223372036854775809" */
+/* test_tokenizer data="-1234" */
+/* test_tokenizer data="3.141" */
+/* test_tokenizer data="0.0" */
+/* test_tokenizer data="7e3" */
+/* test_tokenizer data="-7e-3" */
+/* test_tokenizer data="true" */
+/* test_tokenizer data="false" */
+/* test_tokenizer data="null" */
+/* test_tokenizer data="{}" */
+/* test_tokenizer data="\t {\n} \n" */
+/* test_tokenizer data="[]" */
+/* test_tokenizer data="\t [] \n\n" */
+/* test_tokenizer data="\"\"" */
+/* test_tokenizer data="\"foo\"" */
+/* test_tokenizer data="\"foo\\nfoo\"" */
+/* test_tokenizer data="{\"foo\" : \"bar\"}" */
+/* test_tokenizer data="{\"foo\" : [true, false]}" */
+/* test_tokenizer data="\"\357\277\275\"" */
+/* test_tokenizer data="\"\\ufffd\"" */
+/* test_tokenizer data="\"\\uf\"" */
+/* test_tokenizer data="\"\\ud800a\"" */
+/* test_tokenizer data="\"\\udc00\\udc00\"" */
+/* test_tokenizer data="\"\\ud801\\udc37\"" */
+/* test_tokenizer data="[1, 2, -3]" */
+/* test_variant data="{\"k\": \"v\", \"foo\": [1, 2, 3], \"bar\": {\"zap\": null}}" */
+formatted normally: {"k":"v","foo":[1,2,3],"bar":{"zap":null}}
+formatted prettily:
+{
+	"k" : "v",
+	"foo" : [
+		1,
+		2,
+		3
+	],
+	"bar" : {
+		"zap" : null
+	}
+}
+/* test_1 */
+/* test_variant data="{\"mutant\": [1, null, \"1\", {\"1\": [1, \"1\"]}], \"thisisaverylongproperty\": 1.27}" */
+formatted normally: {"mutant":[1,null,"1",{"1":[1,"1"]}],"thisisaverylongproperty":1.269999999999999999983e+00}
+formatted prettily:
+{
+	"mutant" : [
+		1,
+		null,
+		"1",
+		{
+			"1" : [
+				1,
+				"1"
+			]
+		}
+	],
+	"thisisaverylongproperty" : 1.269999999999999999983e+00
+}
+/* test_2 */
+/* test_variant data="{\"foo\" : \"\\u0935\\u093f\\u0935\\u0947\\u0915\\u0916\\u094d\\u092f\\u093e\\u0924\\u093f\\u0930\\u0935\\u093f\\u092a\\u094d\\u0932\\u0935\\u093e\\u0020\\u0939\\u093e\\u0928\\u094b\\u092a\\u093e\\u092f\\u0903\\u0964\"}" */
+formatted normally: {"foo":"विवेकख्यातिरविप्लवा हानोपायः।"}
+formatted prettily:
+{
+	"foo" : "विवेकख्यातिरविप्लवा हानोपायः।"
+}
+/* test_variant data="[ 0, -0, 0.0, -0.0, 0.000, -0.000, 0e0, -0e0, 0e+0, -0e-0, 0e-0, -0e000, 0e+000 ]" */
+formatted normally: [0,0,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00,0.000000000000000000000e+00]
+formatted prettily:
+[
+	0,
+	0,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00,
+	0.000000000000000000000e+00
+]
+/* test_zeroes */
+/* test_build */
+GOT: [{"x":true,"y":{"this":null}},null,null,null,null,77,["foobar","zzz"],["one","two","three","four"]]
+GOT: 3.141592653589793238513e+00
+GOT: 3.141592653589793238513e+00
+/* test_source */
+/* test_depth */
+max depth at 2048
+/* test_normalize */
+/* test_bisect */

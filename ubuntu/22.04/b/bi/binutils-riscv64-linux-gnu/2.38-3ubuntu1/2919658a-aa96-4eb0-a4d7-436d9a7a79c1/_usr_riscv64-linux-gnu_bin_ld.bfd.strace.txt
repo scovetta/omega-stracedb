@@ -1,0 +1,68 @@
+650   execve("/usr/riscv64-linux-gnu/bin/ld.bfd", ["/usr/riscv64-linux-gnu/bin/ld.bfd"], 0x7ffde5bf1880 /* 12 vars */) = 0
+650   brk(NULL)                         = 0x55a4cbbff000
+650   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd7cab6e40) = -1 EINVAL (Invalid argument)
+650   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb02f41d000
+650   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+650   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+650   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6545, ...}, AT_EMPTY_PATH) = 0
+650   mmap(NULL, 6545, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb02f41b000
+650   close(3)                          = 0
+650   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbfd-2.38-riscv64.so", O_RDONLY|O_CLOEXEC) = 3
+650   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\270j\17\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\312\2\0\0\0\0\0H\312\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+650   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1012216, ...}, AT_EMPTY_PATH) = 0
+650   mmap(NULL, 1015064, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb02f323000
+650   mmap(0x7fb02f350000, 569344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7fb02f350000
+650   mmap(0x7fb02f3db000, 196608, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb8000) = 0x7fb02f3db000
+650   mmap(0x7fb02f40b000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x7fb02f40b000
+650   close(3)                          = 0
+650   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libctf-riscv64.so.0", O_RDONLY|O_CLOEXEC) = 3
+650   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\346\2\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230A\0\0\0\0\0\0\230A\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+650   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=191880, ...}, AT_EMPTY_PATH) = 0
+650   mmap(NULL, 194880, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb02f2f3000
+650   mmap(0x7fb02f2f8000, 126976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fb02f2f8000
+650   mmap(0x7fb02f317000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7fb02f317000
+650   mmap(0x7fb02f321000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7fb02f321000
+650   close(3)                          = 0
+650   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+650   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+650   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+650   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+650   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+650   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+650   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+650   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb02f0cb000
+650   mmap(0x7fb02f0f3000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb02f0f3000
+650   mmap(0x7fb02f288000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb02f288000
+650   mmap(0x7fb02f2e0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fb02f2e0000
+650   mmap(0x7fb02f2e6000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb02f2e6000
+650   close(3)                          = 0
+650   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+650   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+650   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+650   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb02f0af000
+650   mprotect(0x7fb02f0b1000, 98304, PROT_NONE) = 0
+650   mmap(0x7fb02f0b1000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fb02f0b1000
+650   mmap(0x7fb02f0c2000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fb02f0c2000
+650   mmap(0x7fb02f0c9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fb02f0c9000
+650   close(3)                          = 0
+650   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb02f0ad000
+650   arch_prctl(ARCH_SET_FS, 0x7fb02f0ae1c0) = 0
+650   set_tid_address(0x7fb02f0ae490)   = 650
+650   set_robust_list(0x7fb02f0ae4a0, 24) = 0
+650   rseq(0x7fb02f0aeb60, 0x20, 0, 0x53053053) = 0
+650   mprotect(0x7fb02f2e0000, 16384, PROT_READ) = 0
+650   mprotect(0x7fb02f0c9000, 4096, PROT_READ) = 0
+650   mprotect(0x7fb02f40b000, 53248, PROT_READ) = 0
+650   mprotect(0x7fb02f321000, 4096, PROT_READ) = 0
+650   mprotect(0x55a4ca11d000, 24576, PROT_READ) = 0
+650   mprotect(0x7fb02f457000, 8192, PROT_READ) = 0
+650   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+650   munmap(0x7fb02f41b000, 6545)      = 0
+650   getrusage(RUSAGE_SELF, {ru_utime={tv_sec=0, tv_usec=0}, ru_stime={tv_sec=0, tv_usec=9978}, ...}) = 0
+650   getrandom("\xe1\x2d\x9e\xb8\x7b\x33\xac\x6e", 8, GRND_NONBLOCK) = 8
+650   brk(NULL)                         = 0x55a4cbbff000
+650   brk(0x55a4cbc20000)               = 0x55a4cbc20000
+650   write(2, "/usr/riscv64-linux-gnu/bin/ld.bfd", 33) = 33
+650   write(2, ": no input files\n", 17) = 17
+650   exit_group(1)                     = ?
+650   +++ exited with 1 +++

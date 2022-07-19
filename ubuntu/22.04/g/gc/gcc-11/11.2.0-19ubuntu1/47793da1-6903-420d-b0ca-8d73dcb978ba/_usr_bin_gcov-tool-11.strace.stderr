@@ -1,0 +1,25 @@
+Usage: gcov-tool-11 [OPTION]... SUB_COMMAND [OPTION]...
+
+Offline tool to handle gcda counts
+
+  -h, --help                            Print this help, then exit
+  -v, --version                         Print version number, then exit
+  merge [options] <dir1> <dir2>         Merge coverage file contents
+    -o, --output <dir>                  Output directory
+    -v, --verbose                       Verbose mode
+    -w, --weight <w1,w2>                Set weights (float point values)
+  rewrite [options] <dir>               Rewrite coverage file contents
+    -n, --normalize <int64_t>           Normalize the profile
+    -o, --output <dir>                  Output directory
+    -s, --scale <float or simple-frac>  Scale the profile counters
+    -v, --verbose                       Verbose mode
+  overlap [options] <dir1> <dir2>       Compute the overlap of two profiles
+    -f, --function                      Print function level info
+    -F, --fullname                      Print full filename
+    -h, --hotonly                       Only print info for hot objects/functions
+    -o, --object                        Print object level info
+    -t <float>, --hot_threshold <float> Set the threshold for hotness
+    -v, --verbose                       Verbose mode
+
+For bug reporting instructions, please see:
+<file:///usr/share/doc/gcc-11/README.Bugs>.

@@ -1,0 +1,179 @@
+OEM ID: Dell
+    Command: get-system-info <KEY>
+    Command: get-nic-selection
+    Command: set-nic-selection <dedicated|shared|shared_failover_nic2|shared_failover_all>
+    Command: get-nic-selection-failover
+    Command: set-nic-selection-failover <dedicated|lom1|lom2|lom3|lom4> <none|lom1|lom2|lom3|lom4|all>
+    Command: get-active-lom-status [v1|v2]
+    Command: get-ssh-config
+    Command: set-ssh-config KEY=VALUE ...
+    Command: get-telnet-config
+    Command: set-telnet-config KEY=VALUE ...
+    Command: get-web-server-config
+    Command: set-web-server-config KEY=VALUE ...
+    Command: get-active-directory-config
+    Command: set-active-directory-config KEY=VALUE ...
+    Command: reset-to-defaults
+    Command: get-power-consumption-data
+    Command: reset-power-consumption-data <cumulative|peak>
+    Command: power-supply-info
+    Command: get-instantaneous-power-consumption-data [power_supply_instance]
+    Command: get-power-head-room
+    Command: get-power-consumption-statistics <average|max|min>
+    Command: get-power-capacity
+    Command: set-power-capacity <power-capacity>
+    Command: get-power-capacity-status
+    Command: set-power-capacity-status <enable|disable>
+    Command: get-chassis-identify-status
+    Command: power-monitoring-over-interval <interval> <systempower|cpu1|cpu2|cpu3|cpu4|memory1|memory2|memory3|memory4|drives|fans|pciecards|gpucables>
+    Command: power-monitoring-interval-range <systempower|cpu1|cpu2|cpu3|cpu4|memory1|memory2|memory3|memory4|drives|fans|pciecards|gpucables>
+    Command: get-last-post-code
+    Command: slot-power-toggle <slot-number>
+    Command: slot-power-control <platform-model> <on|off|status> <slot-number>
+    Command: get-port-map
+    Command: set-port-map <jumper|bmc> <ipass-mapping> <1:2|1:4|1:8>
+
+OEM ID: Fujitsu
+    Command: get-power-on-source
+    Command: get-power-off-source
+    Command: get-remote-storage-status <connection_number>
+    Command: get-system-status
+    Command: get-eeprom-version-info <eeprom_number>
+    Command: get-identify-led
+    Command: set-identify-led <on|off>
+    Command: get-error-led
+    Command: get-sel-entry-long-text <sel_record_id>
+
+OEM ID: IBM
+    Command: get-led
+
+OEM ID: GIGABYTE
+    Command: get-nic-mode
+    Command: set-nic-mode <dedicated|shared|failover>
+    Command: get-bmc-services
+    Command: set-bmc-services <enable|disable> <ssh|http|rpcbind|svrloc|https|avocenkvm|wbem-http|wbem-https>
+
+OEM ID: Intel
+    Command: get-smtp-config [channel-number]
+    Command: set-smtp-config [channel-number] KEY=VALUE ...
+    Command: get-power-restore-delay
+    Command: set-power-restore-delay <seconds>
+    Command: get-bmc-services
+    Command: set-bmc-services <enable|disable> <ssh|http|rmcp|kvm>
+    Command: restore-configuration
+
+OEM ID: Intelnm
+    Command: get-node-manager-statistics mode=globalpower|globaltemp|globalthrottling|globalvolumetricairflow|globaltempairflow|globalchassispower|policypower|policytrigger|policythrottling|hostunhandledrequests|hostresponsetime|cputhrottling|memorythrottling|hostcommfailure [domainid=platform|cpu|memory|highpowerio] [policyid=num]
+    Command: reset-node-manager-statistics [mode=global|policy|hostunhandledrequests|hostresponsetime|cputhrottling|memorythrottling|hostcommfailure] [domainid=platform|cpu|memory|highpowerio] [policyid=num]
+    Command: get-node-manager-capabilities [domainid=platform|cpu|memory|highpowerio] [policytrigger=none|inlettemperaturelimitpolicytrigger|missingpowerreadingtimeout|timeafterplatformresettrigger|boottimepolicy] [policytype=powercontrol] [policypowerdomain=primary|secondary]
+    Command: node-manager-policy-control <enable|disable> [domainid=platform|cpu|memory|highpowerio] [policyid=num]
+    Command: get-node-manager-policy [domainid=platform|cpu|memory|highpowerio] [policyid=num]
+    Command: set-node-manager-policy domainid=platform|cpu|memory|highpowerio policyid=num policytrigger=none|inlettemperaturelimitpolicytrigger|missingpowerreadingtimeout|timeafterplatformresettrigger|boottimepolicy policytargetlimit=num [platformbootingmode=performance|power] correctiontimelimit=ms statisticsreportingperiod=seconds policystorage=persistent|volatile [policytriggerlimit=num] [policystate=enable|disable] [policyexceptionaction=alert|shutdown] [aggressivepowercorrection=automatic|notaggressive|aggressive] [policypowerdomain=primary|secondary]
+    Command: remove-node-manager-policy domainid=platform|cpu|memory|highpowerio policyid=num
+    Command: get-node-manager-policy-alert-thresholds [domainid=platform|cpu|memory|highpowerio] [policyid=num]
+    Command: set-node-manager-policy-alert-thresholds domainid=platform|cpu|memory|highpowerio policyid=num [threshold1=num] [threshold2=num] [threshold3=num]
+    Command: get-node-manager-policy-suspend-periods [domainid=platform|cpu|memory|highpowerio] [policyid=num]
+    Command: set-node-manager-policy-suspend-periods domainid=platform|cpu|memory|highpowerio policyid=num suspendperiodstartX=time suspendperiodstopX=time suspendperiodrepeatX=monday|tuesday|wednesday|thursday|friday|saturday|sunday
+    Command: set-node-manager-power-draw-range domainid=platform|cpu|memory|highpowerio minpowerdrawrange=watts maxpowerdrawrange=watts
+    Command: get-node-manager-alert-destination
+    Command: set-node-manager-alert-destination [channelnumber=num] [slaveaddress=address] [destinationselector=num] [alertstringselector=num] [sendalertstring=yes|no] [register=yes|no]
+    Command: get-turbo-synchronization-ratio activecoresconfig=num|all [cpusocket=num|all]
+    Command: set-turbo-synchronization-ratio turboratiolimit=num|default [cpusocket=num|all] [activecoresconfig=num|all]
+    Command: get-node-manager-version
+
+OEM ID: Inventec
+    Command: get-nic-mode
+    Command: set-nic-mode <dedicated|shared>
+    Command: get-mac-address
+    Command: set-mac-address <dedicated|shared> <MACADDRESS>
+    Command: get-bmc-services
+    Command: set-bmc-services <enable|disable> <all|kvm|http|ssh>
+    Command: get-authentication-config
+    Command: set-authentication-config KEY=VALUE ...
+    Command: get-account-status
+    Command: get-dns-config
+    Command: set-dns-config KEY=VALUE ...
+    Command: get-web-server-config
+    Command: set-web-server-config KEY=VALUE ...
+    Command: get-power-management-config
+    Command: set-power-management-config KEY=VALUE ...
+    Command: get-sol-idle-timeout
+    Command: set-sol-idle-timeout <idle-timeout>
+    Command: get-telnet-ssh-redirect-status
+    Command: set-telnet-ssh-redirect-status <enable|disable>
+    Command: get-board-id
+    Command: set-board-id <boardid>
+    Command: get-fcb-version
+    Command: set-fcb-version <majorversion> <minorversion>
+    Command: get-sol-inactivity-timeout
+    Command: set-sol-inactivity-timeout <inactivity-timeout>
+    Command: restore-to-defaults <all|user|lan|sol|serial|pef>
+    Command: read-eeprom <at24c256n>
+    Command: clear-eeprom <at24c256n>
+
+OEM ID: Quanta
+    Command: get-nic-mode
+    Command: set-nic-mode <dedicated|shared>
+    Command: get-bmc-services
+    Command: set-bmc-services <enable|disable> <all|kvm|http|ssh>
+    Command: get-account-status
+    Command: get-dns-config
+    Command: set-dns-config KEY=VALUE ...
+    Command: get-web-server-config
+    Command: set-web-server-config KEY=VALUE ...
+    Command: get-power-management-config
+    Command: set-power-management-config KEY=VALUE ...
+    Command: get-sol-idle-timeout
+    Command: set-sol-idle-timeout <idle-timeout>
+    Command: get-telnet-ssh-redirect-status
+    Command: set-telnet-ssh-redirect-status <enable|disable>
+    Command: reset-to-defaults <all|user|lan|sol|serial|pef>
+    Command: get-processor-information [processor-index]
+    Command: read-mac-address <s99q> <dedicated|shared>
+    Command: write-mac-address <s99q> <dedicated|shared> <MACADDRESS>
+
+OEM ID: Sun
+    Command: get-led
+    Command: set-led <record_id> <off|on|standby|slow|fast>
+
+OEM ID: Supermicro
+    Command: extra-firmware-info
+    Command: reset-intrusion
+    Command: get-bmc-services-status
+    Command: set-bmc-services-status <enable|disable>
+    Command: get-power-supply-status <ps_num>
+    Command: get-power-supply-status2 <ps_num>
+    Command: get-pmbus-power-supply-status <ps_num>
+
+OEM ID: Wistron
+    Command: get-system-info <KEY>
+    Command: get-nic-mode
+    Command: set-nic-mode <dedicated|shared>
+    Command: get-shared-nic-selection
+    Command: set-shared-nic-selection <nic1|nic2|nic3|nic4|clear>
+    Command: get-bmc-services
+    Command: set-bmc-services <enable|disable> <all|kvm|http|ssh|snmp|telnet>
+    Command: get-account-status
+    Command: get-dns-config
+    Command: set-dns-config KEY=VALUE ...
+    Command: get-web-server-config
+    Command: set-web-server-config KEY=VALUE ...
+    Command: get-power-management-config
+    Command: set-power-management-config KEY=VALUE ...
+    Command: get-ipv6-settings
+    Command: set-ipv6-settings KEY=VALUE ...
+    Command: get-ipv6-trap-settings
+    Command: set-ipv6-trap-settings index KEY=VALUE ...
+    Command: get-sol-idle-timeout
+    Command: set-sol-idle-timeout <idle-timeout>
+    Command: get-telnet-redirect-function
+    Command: set-telnet-redirect-function <disable|solenable|smashenable>
+    Command: get-dhcp-retry
+    Command: set-dhcp-retry <retry-count> <retry-interval> <retry-timeout>
+    Command: get-link-status-change-control
+    Command: set-link-status-change-control <link_resilience|dhcp_rediscovery>
+    Command: set-password-policy <enable|disable>
+    Command: read-proprietary-string
+    Command: write-proprietary-string <string>
+    Command: clear-proprietary-string
+

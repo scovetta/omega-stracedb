@@ -1,0 +1,50 @@
+583   execve("/bin/mktemp", ["/bin/mktemp"], 0x7ffd473cabc0 /* 12 vars */) = 0
+583   brk(NULL)                         = 0x55e1b6ecb000
+583   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc35313450) = -1 EINVAL (Invalid argument)
+583   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe99028b000
+583   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+583   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+583   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+583   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe990289000
+583   close(3)                          = 0
+583   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+583   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+583   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+583   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+583   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+583   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+583   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+583   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe990061000
+583   mmap(0x7fe990089000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fe990089000
+583   mmap(0x7fe99021e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fe99021e000
+583   mmap(0x7fe990276000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fe990276000
+583   mmap(0x7fe99027c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe99027c000
+583   close(3)                          = 0
+583   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe99005e000
+583   arch_prctl(ARCH_SET_FS, 0x7fe99005e740) = 0
+583   set_tid_address(0x7fe99005ea10)   = 583
+583   set_robust_list(0x7fe99005ea20, 24) = 0
+583   rseq(0x7fe99005f0e0, 0x20, 0, 0x53053053) = 0
+583   mprotect(0x7fe990276000, 16384, PROT_READ) = 0
+583   mprotect(0x55e1b57d8000, 4096, PROT_READ) = 0
+583   mprotect(0x7fe9902c5000, 8192, PROT_READ) = 0
+583   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+583   munmap(0x7fe990289000, 6133)      = 0
+583   getrandom("\xc5\xc9\xc3\x0d\x08\xa1\x0a\x73", 8, GRND_NONBLOCK) = 8
+583   brk(NULL)                         = 0x55e1b6ecb000
+583   brk(0x55e1b6eec000)               = 0x55e1b6eec000
+583   openat(AT_FDCWD, "/dev/urandom", O_RDONLY) = 3
+583   read(3, "}\260\206\10\237\376\274\317\334\206", 10) = 10
+583   close(3)                          = 0
+583   getpid()                          = 583
+583   getppid()                         = 582
+583   getuid()                          = 0
+583   getgid()                          = 0
+583   openat(AT_FDCWD, "/tmp/tmp.wktANvM3P6", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+583   close(3)                          = 0
+583   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+583   write(1, "/tmp/tmp.wktANvM3P6\n", 20) = 20
+583   close(1)                          = 0
+583   close(2)                          = 0
+583   exit_group(0)                     = ?
+583   +++ exited with 0 +++

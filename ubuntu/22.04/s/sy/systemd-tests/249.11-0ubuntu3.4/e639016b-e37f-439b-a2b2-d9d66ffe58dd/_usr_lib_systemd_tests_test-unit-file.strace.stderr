@@ -1,0 +1,582 @@
+/* test_unit_validate_alias_symlink_and_warn */
+/path/a.service: symlink target "b.socket" has incompatible suffix, rejecting.
+/path/a.service points to "b.foobar" which is not a valid unit name: Invalid cross-device link
+/path/a@.service: symlink target "b@.socket" has incompatible suffix, rejecting.
+/path/a@XXX.service: unit symlink target "b@YYY.service" instance name doesn't match, rejecting.
+/path/a@XXX.service: unit symlink target "b@YYY.socket" instance name doesn't match, rejecting.
+/path/a@.service: symlink target name type "b@YYY.service" does not match source, rejecting.
+/path/a@.service: symlink target name type "b.service" does not match source, rejecting.
+/path/a.service: symlink target name type "b@.service" does not match source, rejecting.
+/path/a@.slice: symlinks are not allowed for units of this type, rejecting.
+/path/a.slice: symlinks are not allowed for units of this type, rejecting.
+Modification times have changed, need to update cache.
+unit_file_build_name_map: alias: /etc/systemd/system/dbus-org.freedesktop.timesync1.service → systemd-timesyncd.service
+unit_file_build_name_map: alias: /etc/systemd/system/dbus-org.freedesktop.resolve1.service → systemd-resolved.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/e2scrub_reap.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/e2scrub@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/apt-daily.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/apt-daily-upgrade.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/motd-news.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/fstrim.timer
+unit_file_build_name_map: normal unit file: /lib/systemd/system/e2scrub_all.timer
+unit_file_build_name_map: normal unit file: /lib/systemd/system/dpkg-db-backup.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/apt-daily.timer
+unit_file_build_name_map: normal unit file: /lib/systemd/system/e2scrub_all.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/motd-news.timer
+unit_file_build_name_map: normal unit file: /lib/systemd/system/e2scrub_fail@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/dpkg-db-backup.timer
+unit_file_build_name_map: normal unit file: /lib/systemd/system/fstrim.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/apt-daily-upgrade.timer
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-exit.service
+unit_file_build_name_map: alias: /lib/systemd/system/runlevel5.target → graphical.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-pstore.service
+unit_file_build_name_map: alias: /lib/systemd/system/dbus-org.freedesktop.timedate1.service → systemd-timedated.service
+unit_file_build_name_map: alias: /lib/systemd/system/kmod.service → systemd-modules-load.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-fsckd.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-logind.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/network.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/boot-complete.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/veritysetup-pre.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/halt.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/nss-user-lookup.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/dbus.service
+unit_file_build_name_map: alias: /lib/systemd/system/autovt@.service → getty@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/local-fs-pre.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-usr-fs.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/nss-lookup.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/getty-static.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/cryptsetup-pre.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/network-online.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/basic.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/network-pre.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-hostnamed.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sysinit.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-ask-password-console.path
+unit_file_build_name_map: normal unit file: /lib/systemd/system/time-sync.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/hibernate.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/serial-getty@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-networkd.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-halt.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/suspend-then-hibernate.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/quotaon.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/cryptsetup.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/user@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/final.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/poweroff.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sleep.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-hibernate.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sys-kernel-debug.mount
+unit_file_build_name_map: linked unit file: /lib/systemd/system/x11-common.service → /dev/null
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-modules-load.service
+unit_file_build_name_map: linked unit file: /lib/systemd/system/rc.service → /dev/null
+unit_file_build_name_map: alias: /lib/systemd/system/ctrl-alt-del.target → reboot.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/shutdown.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/blockdev@.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-kexec.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-tmpfiles-clean.timer
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journald.service
+unit_file_build_name_map: alias: /lib/systemd/system/dbus-org.freedesktop.locale1.service → systemd-localed.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/remote-fs-pre.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-resolved.service
+unit_file_build_name_map: alias: /lib/systemd/system/runlevel4.target → multi-user.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/printer.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/system-systemd\x2dcryptsetup.slice
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-timedated.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-switch-root.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journal-flush.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sys-kernel-config.mount
+unit_file_build_name_map: normal unit file: /lib/systemd/system/debug-shell.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-rfkill.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-update-utmp.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/system-update-cleanup.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-networkd-wait-online.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-timesyncd.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/rpcbind.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/rescue.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/hybrid-sleep.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/getty.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/rescue.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/usb-gadget.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/kexec.target
+unit_file_build_name_map: linked unit file: /lib/systemd/system/cryptdisks.service → /dev/null
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-tmpfiles-clean.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/time-set.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-fsckd.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journald-varlink@.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/reboot.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/container-getty@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sys-kernel-tracing.mount
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-machine-id-commit.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-hibernate-resume@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-ask-password-console.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-root-device.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-remount-fs.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-initctl.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/dbus.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sound.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journald.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-switch-root.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/remote-veritysetup.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-tmpfiles-setup-dev.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/timers.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/getty-pre.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-suspend-then-hibernate.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/remote-fs.target
+unit_file_build_name_map: alias: /lib/systemd/system/runlevel3.target → multi-user.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-rfkill.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/emergency.service
+unit_file_build_name_map: alias: /lib/systemd/system/runlevel2.target → multi-user.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/veritysetup.target
+unit_file_build_name_map: alias: /lib/systemd/system/dbus-org.freedesktop.login1.service → systemd-logind.service
+unit_file_build_name_map: alias: /lib/systemd/system/default.target → graphical.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/system-update-pre.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-sysusers.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-binfmt.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-parse-etc.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/proc-sys-fs-binfmt_misc.automount
+unit_file_build_name_map: normal unit file: /lib/systemd/system/swap.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd.target
+unit_file_build_name_map: linked unit file: /lib/systemd/system/cryptdisks-early.service → /dev/null
+unit_file_build_name_map: normal unit file: /lib/systemd/system/kmod-static-nodes.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-fsck-root.service
+unit_file_build_name_map: alias: /lib/systemd/system/dbus-org.freedesktop.hostname1.service → systemd-hostnamed.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-cleanup.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-fsck@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/slices.target
+unit_file_build_name_map: alias: /lib/systemd/system/procps.service → systemd-sysctl.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/suspend.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-localed.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/umount.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journald-audit.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/rc-local.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/exit.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-network-generator.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/paths.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journald@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-ask-password-wall.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-initctl.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-update-utmp-runlevel.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/user.slice
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-boot-system-token.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sockets.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/dev-hugepages.mount
+unit_file_build_name_map: alias: /lib/systemd/system/runlevel0.target → poweroff.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journald@.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-quotacheck.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/remote-cryptsetup.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/first-boot-complete.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-networkd.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/user-runtime-dir@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-sysext.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/console-getty.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/modprobe@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/proc-sys-fs-binfmt_misc.mount
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-time-wait-sync.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-poweroff.service
+unit_file_build_name_map: alias: /lib/systemd/system/runlevel1.target → rescue.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/networkd-dispatcher.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/getty@.service
+unit_file_build_name_map: linked unit file: /lib/systemd/system/hwclock.service → /dev/null
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-reboot.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/smartcard.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-udevadm-cleanup-db.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-hybrid-sleep.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-random-seed.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/machine.slice
+unit_file_build_name_map: normal unit file: /lib/systemd/system/graphical.target
+unit_file_build_name_map: linked unit file: /lib/systemd/system/rcS.service → /dev/null
+unit_file_build_name_map: normal unit file: /lib/systemd/system/local-fs.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-ask-password-wall.path
+unit_file_build_name_map: normal unit file: /lib/systemd/system/bluetooth.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-sysctl.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/system-update.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/emergency.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-boot-check-no-failures.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-user-sessions.service
+unit_file_build_name_map: alias: /lib/systemd/system/runlevel6.target → reboot.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-suspend.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-volatile-root.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-journald-dev-log.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/syslog.socket
+unit_file_build_name_map: normal unit file: /lib/systemd/system/multi-user.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/dev-mqueue.mount
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-bless-boot.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-backlight@.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/systemd-tmpfiles-setup.service
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-fs.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sigpwr.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/initrd-root-fs.target
+unit_file_build_name_map: normal unit file: /lib/systemd/system/sys-fs-fuse-connections.mount
+ids: debug-shell.service → /lib/systemd/system/debug-shell.service
+ids: printer.target → /lib/systemd/system/printer.target
+ids: sigpwr.target → /lib/systemd/system/sigpwr.target
+ids: timers.target → /lib/systemd/system/timers.target
+ids: getty@.service → /lib/systemd/system/getty@.service
+ids: systemd-binfmt.service → /lib/systemd/system/systemd-binfmt.service
+ids: sys-kernel-tracing.mount → /lib/systemd/system/sys-kernel-tracing.mount
+ids: systemd-reboot.service → /lib/systemd/system/systemd-reboot.service
+ids: user.slice → /lib/systemd/system/user.slice
+ids: swap.target → /lib/systemd/system/swap.target
+ids: motd-news.service → /lib/systemd/system/motd-news.service
+ids: systemd-rfkill.service → /lib/systemd/system/systemd-rfkill.service
+ids: systemd-networkd-wait-online.service → /lib/systemd/system/systemd-networkd-wait-online.service
+ids: systemd-journald.socket → /lib/systemd/system/systemd-journald.socket
+ids: apt-daily-upgrade.service → /lib/systemd/system/apt-daily-upgrade.service
+ids: nss-lookup.target → /lib/systemd/system/nss-lookup.target
+ids: time-set.target → /lib/systemd/system/time-set.target
+ids: quotaon.service → /lib/systemd/system/quotaon.service
+ids: rc.service → /lib/systemd/system/rc.service
+ids: systemd-ask-password-wall.service → /lib/systemd/system/systemd-ask-password-wall.service
+ids: rescue.service → /lib/systemd/system/rescue.service
+ids: initrd-udevadm-cleanup-db.service → /lib/systemd/system/initrd-udevadm-cleanup-db.service
+ids: getty.target → /lib/systemd/system/getty.target
+ids: systemd-journald-varlink@.socket → /lib/systemd/system/systemd-journald-varlink@.socket
+ids: systemd-exit.service → /lib/systemd/system/systemd-exit.service
+ids: cryptsetup.target → /lib/systemd/system/cryptsetup.target
+ids: initrd-root-fs.target → /lib/systemd/system/initrd-root-fs.target
+ids: kexec.target → /lib/systemd/system/kexec.target
+ids: network-pre.target → /lib/systemd/system/network-pre.target
+ids: sound.target → /lib/systemd/system/sound.target
+ids: dbus-org.freedesktop.login1.service → systemd-logind.service
+ids: systemd-suspend-then-hibernate.service → /lib/systemd/system/systemd-suspend-then-hibernate.service
+ids: systemd-tmpfiles-setup-dev.service → /lib/systemd/system/systemd-tmpfiles-setup-dev.service
+ids: dbus-org.freedesktop.hostname1.service → systemd-hostnamed.service
+ids: blockdev@.target → /lib/systemd/system/blockdev@.target
+ids: apt-daily.service → /lib/systemd/system/apt-daily.service
+ids: systemd-networkd.socket → /lib/systemd/system/systemd-networkd.socket
+ids: systemd-network-generator.service → /lib/systemd/system/systemd-network-generator.service
+ids: graphical.target → /lib/systemd/system/graphical.target
+ids: systemd-ask-password-console.service → /lib/systemd/system/systemd-ask-password-console.service
+ids: procps.service → systemd-sysctl.service
+ids: bluetooth.target → /lib/systemd/system/bluetooth.target
+ids: systemd-hybrid-sleep.service → /lib/systemd/system/systemd-hybrid-sleep.service
+ids: initrd-usr-fs.target → /lib/systemd/system/initrd-usr-fs.target
+ids: dbus.service → /lib/systemd/system/dbus.service
+ids: systemd-ask-password-wall.path → /lib/systemd/system/systemd-ask-password-wall.path
+ids: machine.slice → /lib/systemd/system/machine.slice
+ids: rescue.target → /lib/systemd/system/rescue.target
+ids: emergency.service → /lib/systemd/system/emergency.service
+ids: systemd-machine-id-commit.service → /lib/systemd/system/systemd-machine-id-commit.service
+ids: systemd-tmpfiles-clean.timer → /lib/systemd/system/systemd-tmpfiles-clean.timer
+ids: first-boot-complete.target → /lib/systemd/system/first-boot-complete.target
+ids: network.target → /lib/systemd/system/network.target
+ids: sleep.target → /lib/systemd/system/sleep.target
+ids: systemd-fsckd.service → /lib/systemd/system/systemd-fsckd.service
+ids: systemd-journald-dev-log.socket → /lib/systemd/system/systemd-journald-dev-log.socket
+ids: systemd-hostnamed.service → /lib/systemd/system/systemd-hostnamed.service
+ids: poweroff.target → /lib/systemd/system/poweroff.target
+ids: rpcbind.target → /lib/systemd/system/rpcbind.target
+ids: systemd-sysusers.service → /lib/systemd/system/systemd-sysusers.service
+ids: dbus-org.freedesktop.resolve1.service → systemd-resolved.service
+ids: motd-news.timer → /lib/systemd/system/motd-news.timer
+ids: system-update.target → /lib/systemd/system/system-update.target
+ids: systemd-journald.service → /lib/systemd/system/systemd-journald.service
+ids: rc-local.service → /lib/systemd/system/rc-local.service
+ids: cryptsetup-pre.target → /lib/systemd/system/cryptsetup-pre.target
+ids: systemd-backlight@.service → /lib/systemd/system/systemd-backlight@.service
+ids: remote-fs.target → /lib/systemd/system/remote-fs.target
+ids: initrd-cleanup.service → /lib/systemd/system/initrd-cleanup.service
+ids: dpkg-db-backup.timer → /lib/systemd/system/dpkg-db-backup.timer
+ids: autovt@.service → getty@.service
+ids: dbus.socket → /lib/systemd/system/dbus.socket
+ids: systemd-random-seed.service → /lib/systemd/system/systemd-random-seed.service
+ids: user-runtime-dir@.service → /lib/systemd/system/user-runtime-dir@.service
+ids: dbus-org.freedesktop.timesync1.service → systemd-timesyncd.service
+ids: final.target → /lib/systemd/system/final.target
+ids: systemd-boot-system-token.service → /lib/systemd/system/systemd-boot-system-token.service
+ids: systemd-sysext.service → /lib/systemd/system/systemd-sysext.service
+ids: exit.target → /lib/systemd/system/exit.target
+ids: sys-kernel-config.mount → /lib/systemd/system/sys-kernel-config.mount
+ids: hibernate.target → /lib/systemd/system/hibernate.target
+ids: systemd-sysctl.service → /lib/systemd/system/systemd-sysctl.service
+ids: halt.target → /lib/systemd/system/halt.target
+ids: nss-user-lookup.target → /lib/systemd/system/nss-user-lookup.target
+ids: systemd-tmpfiles-clean.service → /lib/systemd/system/systemd-tmpfiles-clean.service
+ids: systemd-time-wait-sync.service → /lib/systemd/system/systemd-time-wait-sync.service
+ids: systemd-halt.service → /lib/systemd/system/systemd-halt.service
+ids: dev-hugepages.mount → /lib/systemd/system/dev-hugepages.mount
+ids: systemd-initctl.service → /lib/systemd/system/systemd-initctl.service
+ids: dbus-org.freedesktop.timedate1.service → systemd-timedated.service
+ids: umount.target → /lib/systemd/system/umount.target
+ids: kmod.service → systemd-modules-load.service
+ids: remote-fs-pre.target → /lib/systemd/system/remote-fs-pre.target
+ids: systemd-boot-check-no-failures.service → /lib/systemd/system/systemd-boot-check-no-failures.service
+ids: shutdown.target → /lib/systemd/system/shutdown.target
+ids: systemd-localed.service → /lib/systemd/system/systemd-localed.service
+ids: system-update-pre.target → /lib/systemd/system/system-update-pre.target
+ids: systemd-journald-audit.socket → /lib/systemd/system/systemd-journald-audit.socket
+ids: systemd-poweroff.service → /lib/systemd/system/systemd-poweroff.service
+ids: systemd-fsck@.service → /lib/systemd/system/systemd-fsck@.service
+ids: suspend.target → /lib/systemd/system/suspend.target
+ids: dpkg-db-backup.service → /lib/systemd/system/dpkg-db-backup.service
+ids: systemd-kexec.service → /lib/systemd/system/systemd-kexec.service
+ids: getty-static.service → /lib/systemd/system/getty-static.service
+ids: container-getty@.service → /lib/systemd/system/container-getty@.service
+ids: e2scrub_reap.service → /lib/systemd/system/e2scrub_reap.service
+ids: systemd-timesyncd.service → /lib/systemd/system/systemd-timesyncd.service
+ids: console-getty.service → /lib/systemd/system/console-getty.service
+ids: systemd-fsckd.socket → /lib/systemd/system/systemd-fsckd.socket
+ids: apt-daily-upgrade.timer → /lib/systemd/system/apt-daily-upgrade.timer
+ids: kmod-static-nodes.service → /lib/systemd/system/kmod-static-nodes.service
+ids: runlevel1.target → rescue.target
+ids: e2scrub_all.timer → /lib/systemd/system/e2scrub_all.timer
+ids: systemd-volatile-root.service → /lib/systemd/system/systemd-volatile-root.service
+ids: proc-sys-fs-binfmt_misc.mount → /lib/systemd/system/proc-sys-fs-binfmt_misc.mount
+ids: cryptdisks-early.service → /lib/systemd/system/cryptdisks-early.service
+ids: initrd-root-device.target → /lib/systemd/system/initrd-root-device.target
+ids: systemd-rfkill.socket → /lib/systemd/system/systemd-rfkill.socket
+ids: remote-cryptsetup.target → /lib/systemd/system/remote-cryptsetup.target
+ids: initrd-switch-root.service → /lib/systemd/system/initrd-switch-root.service
+ids: serial-getty@.service → /lib/systemd/system/serial-getty@.service
+ids: user@.service → /lib/systemd/system/user@.service
+ids: default.target → graphical.target
+ids: runlevel0.target → poweroff.target
+ids: systemd-logind.service → /lib/systemd/system/systemd-logind.service
+ids: systemd-journald@.socket → /lib/systemd/system/systemd-journald@.socket
+ids: systemd-user-sessions.service → /lib/systemd/system/systemd-user-sessions.service
+ids: reboot.target → /lib/systemd/system/reboot.target
+ids: boot-complete.target → /lib/systemd/system/boot-complete.target
+ids: paths.target → /lib/systemd/system/paths.target
+ids: systemd-update-utmp.service → /lib/systemd/system/systemd-update-utmp.service
+ids: sys-kernel-debug.mount → /lib/systemd/system/sys-kernel-debug.mount
+ids: e2scrub_fail@.service → /lib/systemd/system/e2scrub_fail@.service
+ids: fstrim.timer → /lib/systemd/system/fstrim.timer
+ids: basic.target → /lib/systemd/system/basic.target
+ids: system-update-cleanup.service → /lib/systemd/system/system-update-cleanup.service
+ids: slices.target → /lib/systemd/system/slices.target
+ids: systemd-bless-boot.service → /lib/systemd/system/systemd-bless-boot.service
+ids: fstrim.service → /lib/systemd/system/fstrim.service
+ids: suspend-then-hibernate.target → /lib/systemd/system/suspend-then-hibernate.target
+ids: systemd-quotacheck.service → /lib/systemd/system/systemd-quotacheck.service
+ids: systemd-timedated.service → /lib/systemd/system/systemd-timedated.service
+ids: hybrid-sleep.target → /lib/systemd/system/hybrid-sleep.target
+ids: getty-pre.target → /lib/systemd/system/getty-pre.target
+ids: initrd.target → /lib/systemd/system/initrd.target
+ids: networkd-dispatcher.service → /lib/systemd/system/networkd-dispatcher.service
+ids: proc-sys-fs-binfmt_misc.automount → /lib/systemd/system/proc-sys-fs-binfmt_misc.automount
+ids: veritysetup.target → /lib/systemd/system/veritysetup.target
+ids: runlevel6.target → reboot.target
+ids: systemd-hibernate-resume@.service → /lib/systemd/system/systemd-hibernate-resume@.service
+ids: runlevel2.target → multi-user.target
+ids: systemd-ask-password-console.path → /lib/systemd/system/systemd-ask-password-console.path
+ids: systemd-resolved.service → /lib/systemd/system/systemd-resolved.service
+ids: dbus-org.freedesktop.locale1.service → systemd-localed.service
+ids: runlevel5.target → graphical.target
+ids: ctrl-alt-del.target → reboot.target
+ids: initrd-switch-root.target → /lib/systemd/system/initrd-switch-root.target
+ids: apt-daily.timer → /lib/systemd/system/apt-daily.timer
+ids: systemd-journal-flush.service → /lib/systemd/system/systemd-journal-flush.service
+ids: initrd-fs.target → /lib/systemd/system/initrd-fs.target
+ids: smartcard.target → /lib/systemd/system/smartcard.target
+ids: syslog.socket → /lib/systemd/system/syslog.socket
+ids: runlevel4.target → multi-user.target
+ids: time-sync.target → /lib/systemd/system/time-sync.target
+ids: multi-user.target → /lib/systemd/system/multi-user.target
+ids: rcS.service → /lib/systemd/system/rcS.service
+ids: systemd-tmpfiles-setup.service → /lib/systemd/system/systemd-tmpfiles-setup.service
+ids: emergency.target → /lib/systemd/system/emergency.target
+ids: systemd-pstore.service → /lib/systemd/system/systemd-pstore.service
+ids: local-fs-pre.target → /lib/systemd/system/local-fs-pre.target
+ids: systemd-remount-fs.service → /lib/systemd/system/systemd-remount-fs.service
+ids: usb-gadget.target → /lib/systemd/system/usb-gadget.target
+ids: runlevel3.target → multi-user.target
+ids: systemd-suspend.service → /lib/systemd/system/systemd-suspend.service
+ids: systemd-networkd.service → /lib/systemd/system/systemd-networkd.service
+ids: cryptdisks.service → /lib/systemd/system/cryptdisks.service
+ids: systemd-initctl.socket → /lib/systemd/system/systemd-initctl.socket
+ids: veritysetup-pre.target → /lib/systemd/system/veritysetup-pre.target
+ids: modprobe@.service → /lib/systemd/system/modprobe@.service
+ids: network-online.target → /lib/systemd/system/network-online.target
+ids: initrd-parse-etc.service → /lib/systemd/system/initrd-parse-etc.service
+ids: sys-fs-fuse-connections.mount → /lib/systemd/system/sys-fs-fuse-connections.mount
+ids: remote-veritysetup.target → /lib/systemd/system/remote-veritysetup.target
+ids: systemd-update-utmp-runlevel.service → /lib/systemd/system/systemd-update-utmp-runlevel.service
+ids: local-fs.target → /lib/systemd/system/local-fs.target
+ids: systemd-fsck-root.service → /lib/systemd/system/systemd-fsck-root.service
+ids: systemd-hibernate.service → /lib/systemd/system/systemd-hibernate.service
+ids: sockets.target → /lib/systemd/system/sockets.target
+ids: dev-mqueue.mount → /lib/systemd/system/dev-mqueue.mount
+ids: system-systemd\x2dcryptsetup.slice → /lib/systemd/system/system-systemd\x2dcryptsetup.slice
+ids: systemd-journald@.service → /lib/systemd/system/systemd-journald@.service
+ids: hwclock.service → /lib/systemd/system/hwclock.service
+ids: systemd-modules-load.service → /lib/systemd/system/systemd-modules-load.service
+ids: sysinit.target → /lib/systemd/system/sysinit.target
+ids: x11-common.service → /lib/systemd/system/x11-common.service
+ids: e2scrub@.service → /lib/systemd/system/e2scrub@.service
+ids: e2scrub_all.service → /lib/systemd/system/e2scrub_all.service
+aliases: sys-kernel-config.mount ← sys-kernel-config.mount
+aliases: systemd-sysctl.service ← procps.service, systemd-sysctl.service
+aliases: systemd-reboot.service ← systemd-reboot.service
+aliases: reboot.target ← reboot.target, runlevel6.target, ctrl-alt-del.target
+aliases: getty-pre.target ← getty-pre.target
+aliases: suspend.target ← suspend.target
+aliases: systemd-tmpfiles-clean.timer ← systemd-tmpfiles-clean.timer
+aliases: systemd-volatile-root.service ← systemd-volatile-root.service
+aliases: sleep.target ← sleep.target
+aliases: systemd-hostnamed.service ← dbus-org.freedesktop.hostname1.service, systemd-hostnamed.service
+aliases: systemd-ask-password-wall.service ← systemd-ask-password-wall.service
+aliases: systemd-rfkill.service ← systemd-rfkill.service
+aliases: systemd-exit.service ← systemd-exit.service
+aliases: sys-kernel-debug.mount ← sys-kernel-debug.mount
+aliases: network-pre.target ← network-pre.target
+aliases: systemd-networkd.service ← systemd-networkd.service
+aliases: veritysetup-pre.target ← veritysetup-pre.target
+aliases: console-getty.service ← console-getty.service
+aliases: initrd-udevadm-cleanup-db.service ← initrd-udevadm-cleanup-db.service
+aliases: fstrim.service ← fstrim.service
+aliases: quotaon.service ← quotaon.service
+aliases: boot-complete.target ← boot-complete.target
+aliases: systemd-quotacheck.service ← systemd-quotacheck.service
+aliases: nss-user-lookup.target ← nss-user-lookup.target
+aliases: dbus.service ← dbus.service
+aliases: systemd-journald@.socket ← systemd-journald@.socket
+aliases: systemd-fsck-root.service ← systemd-fsck-root.service
+aliases: first-boot-complete.target ← first-boot-complete.target
+aliases: systemd-hibernate-resume@.service ← systemd-hibernate-resume@.service
+aliases: systemd-tmpfiles-setup.service ← systemd-tmpfiles-setup.service
+aliases: proc-sys-fs-binfmt_misc.automount ← proc-sys-fs-binfmt_misc.automount
+aliases: dpkg-db-backup.timer ← dpkg-db-backup.timer
+aliases: systemd-sysusers.service ← systemd-sysusers.service
+aliases: systemd-poweroff.service ← systemd-poweroff.service
+aliases: syslog.socket ← syslog.socket
+aliases: initrd-root-device.target ← initrd-root-device.target
+aliases: system-update-pre.target ← system-update-pre.target
+aliases: debug-shell.service ← debug-shell.service
+aliases: proc-sys-fs-binfmt_misc.mount ← proc-sys-fs-binfmt_misc.mount
+aliases: systemd-rfkill.socket ← systemd-rfkill.socket
+aliases: user@.service ← user@.service
+aliases: systemd-timedated.service ← dbus-org.freedesktop.timedate1.service, systemd-timedated.service
+aliases: sysinit.target ← sysinit.target
+aliases: networkd-dispatcher.service ← networkd-dispatcher.service
+aliases: e2scrub_all.service ← e2scrub_all.service
+aliases: sound.target ← sound.target
+aliases: system-systemd\x2dcryptsetup.slice ← system-systemd\x2dcryptsetup.slice
+aliases: systemd-update-utmp-runlevel.service ← systemd-update-utmp-runlevel.service
+aliases: paths.target ← paths.target
+aliases: exit.target ← exit.target
+aliases: systemd-boot-check-no-failures.service ← systemd-boot-check-no-failures.service
+aliases: emergency.target ← emergency.target
+aliases: systemd-suspend-then-hibernate.service ← systemd-suspend-then-hibernate.service
+aliases: systemd-network-generator.service ← systemd-network-generator.service
+aliases: time-set.target ← time-set.target
+aliases: systemd-ask-password-wall.path ← systemd-ask-password-wall.path
+aliases: e2scrub_reap.service ← e2scrub_reap.service
+aliases: timers.target ← timers.target
+aliases: cryptsetup-pre.target ← cryptsetup-pre.target
+aliases: motd-news.timer ← motd-news.timer
+aliases: getty@.service ← getty@.service, autovt@.service
+aliases: umount.target ← umount.target
+aliases: dev-mqueue.mount ← dev-mqueue.mount
+aliases: final.target ← final.target
+aliases: systemd-journald@.service ← systemd-journald@.service
+aliases: getty.target ← getty.target
+aliases: systemd-boot-system-token.service ← systemd-boot-system-token.service
+aliases: initrd.target ← initrd.target
+aliases: rpcbind.target ← rpcbind.target
+aliases: time-sync.target ← time-sync.target
+aliases: systemd-fsckd.service ← systemd-fsckd.service
+aliases: emergency.service ← emergency.service
+aliases: apt-daily.service ← apt-daily.service
+aliases: initrd-root-fs.target ← initrd-root-fs.target
+aliases: system-update.target ← system-update.target
+aliases: user.slice ← user.slice
+aliases: systemd-logind.service ← dbus-org.freedesktop.login1.service, systemd-logind.service
+aliases: initrd-fs.target ← initrd-fs.target
+aliases: cryptsetup.target ← cryptsetup.target
+aliases: hibernate.target ← hibernate.target
+aliases: systemd-journald.service ← systemd-journald.service
+aliases: systemd-machine-id-commit.service ← systemd-machine-id-commit.service
+aliases: dpkg-db-backup.service ← dpkg-db-backup.service
+aliases: systemd-journald-audit.socket ← systemd-journald-audit.socket
+aliases: systemd-suspend.service ← systemd-suspend.service
+aliases: kmod-static-nodes.service ← kmod-static-nodes.service
+aliases: remote-veritysetup.target ← remote-veritysetup.target
+aliases: initrd-usr-fs.target ← initrd-usr-fs.target
+aliases: sys-fs-fuse-connections.mount ← sys-fs-fuse-connections.mount
+aliases: machine.slice ← machine.slice
+aliases: apt-daily-upgrade.timer ← apt-daily-upgrade.timer
+aliases: systemd-pstore.service ← systemd-pstore.service
+aliases: systemd-time-wait-sync.service ← systemd-time-wait-sync.service
+aliases: network.target ← network.target
+aliases: systemd-journald-varlink@.socket ← systemd-journald-varlink@.socket
+aliases: apt-daily.timer ← apt-daily.timer
+aliases: bluetooth.target ← bluetooth.target
+aliases: poweroff.target ← poweroff.target, runlevel0.target
+aliases: systemd-tmpfiles-clean.service ← systemd-tmpfiles-clean.service
+aliases: systemd-binfmt.service ← systemd-binfmt.service
+aliases: systemd-sysext.service ← systemd-sysext.service
+aliases: remote-cryptsetup.target ← remote-cryptsetup.target
+aliases: local-fs-pre.target ← local-fs-pre.target
+aliases: blockdev@.target ← blockdev@.target
+aliases: systemd-tmpfiles-setup-dev.service ← systemd-tmpfiles-setup-dev.service
+aliases: e2scrub_fail@.service ← e2scrub_fail@.service
+aliases: systemd-modules-load.service ← kmod.service, systemd-modules-load.service
+aliases: systemd-halt.service ← systemd-halt.service
+aliases: system-update-cleanup.service ← system-update-cleanup.service
+aliases: dev-hugepages.mount ← dev-hugepages.mount
+aliases: fstrim.timer ← fstrim.timer
+aliases: systemd-bless-boot.service ← systemd-bless-boot.service
+aliases: systemd-backlight@.service ← systemd-backlight@.service
+aliases: dbus.socket ← dbus.socket
+aliases: graphical.target ← graphical.target, default.target, runlevel5.target
+aliases: remote-fs.target ← remote-fs.target
+aliases: container-getty@.service ← container-getty@.service
+aliases: systemd-timesyncd.service ← dbus-org.freedesktop.timesync1.service, systemd-timesyncd.service
+aliases: sigpwr.target ← sigpwr.target
+aliases: apt-daily-upgrade.service ← apt-daily-upgrade.service
+aliases: initrd-cleanup.service ← initrd-cleanup.service
+aliases: network-online.target ← network-online.target
+aliases: systemd-journald.socket ← systemd-journald.socket
+aliases: systemd-journald-dev-log.socket ← systemd-journald-dev-log.socket
+aliases: systemd-networkd-wait-online.service ← systemd-networkd-wait-online.service
+aliases: rc-local.service ← rc-local.service
+aliases: modprobe@.service ← modprobe@.service
+aliases: user-runtime-dir@.service ← user-runtime-dir@.service
+aliases: halt.target ← halt.target
+aliases: initrd-parse-etc.service ← initrd-parse-etc.service
+aliases: sockets.target ← sockets.target
+aliases: initrd-switch-root.service ← initrd-switch-root.service
+aliases: systemd-update-utmp.service ← systemd-update-utmp.service
+aliases: systemd-user-sessions.service ← systemd-user-sessions.service
+aliases: slices.target ← slices.target
+aliases: systemd-initctl.service ← systemd-initctl.service
+aliases: rescue.service ← rescue.service
+aliases: systemd-localed.service ← systemd-localed.service, dbus-org.freedesktop.locale1.service
+aliases: rescue.target ← rescue.target, runlevel1.target
+aliases: nss-lookup.target ← nss-lookup.target
+aliases: basic.target ← basic.target
+aliases: kexec.target ← kexec.target
+aliases: systemd-hybrid-sleep.service ← systemd-hybrid-sleep.service
+aliases: systemd-resolved.service ← dbus-org.freedesktop.resolve1.service, systemd-resolved.service
+aliases: e2scrub_all.timer ← e2scrub_all.timer
+aliases: hybrid-sleep.target ← hybrid-sleep.target
+aliases: systemd-networkd.socket ← systemd-networkd.socket
+aliases: systemd-fsckd.socket ← systemd-fsckd.socket
+aliases: serial-getty@.service ← serial-getty@.service
+aliases: swap.target ← swap.target
+aliases: remote-fs-pre.target ← remote-fs-pre.target
+aliases: getty-static.service ← getty-static.service
+aliases: multi-user.target ← runlevel2.target, runlevel4.target, multi-user.target, runlevel3.target
+aliases: local-fs.target ← local-fs.target
+aliases: systemd-remount-fs.service ← systemd-remount-fs.service
+aliases: motd-news.service ← motd-news.service
+aliases: usb-gadget.target ← usb-gadget.target
+aliases: printer.target ← printer.target
+aliases: initrd-switch-root.target ← initrd-switch-root.target
+aliases: systemd-random-seed.service ← systemd-random-seed.service
+aliases: veritysetup.target ← veritysetup.target
+aliases: suspend-then-hibernate.target ← suspend-then-hibernate.target
+aliases: systemd-ask-password-console.service ← systemd-ask-password-console.service
+aliases: systemd-ask-password-console.path ← systemd-ask-password-console.path
+aliases: systemd-journal-flush.service ← systemd-journal-flush.service
+aliases: e2scrub@.service ← e2scrub@.service
+aliases: systemd-initctl.socket ← systemd-initctl.socket
+aliases: systemd-kexec.service ← systemd-kexec.service
+aliases: systemd-hibernate.service ← systemd-hibernate.service
+aliases: smartcard.target ← smartcard.target
+aliases: systemd-fsck@.service ← systemd-fsck@.service
+aliases: sys-kernel-tracing.mount ← sys-kernel-tracing.mount
+aliases: shutdown.target ← shutdown.target
+Last modification time: --- XXXX-XX-XX XX:XX:XX
+Cache rebuild skipped based on mtime.
+/* test_runlevel_to_target */

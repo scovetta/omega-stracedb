@@ -1,0 +1,47 @@
+532   execve("/usr/bin/qemu-aarch64-static", ["/usr/bin/qemu-aarch64-static"], 0x7ffe5e54b310 /* 12 vars */) = 0
+532   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff44734590) = -1 EINVAL (Invalid argument)
+532   brk(NULL)                         = 0xd0f000
+532   brk(0xd0fe80)                     = 0xd0fe80
+532   arch_prctl(ARCH_SET_FS, 0xd0f480) = 0
+532   set_tid_address(0xd0f750)         = 532
+532   set_robust_list(0xd0f760, 24)     = 0
+532   rseq(0xd0fe20, 0x20, 0, 0x53053053) = 0
+532   uname({sysname="Linux", nodename="c2525e54e769", ...}) = 0
+532   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+532   readlink("/proc/self/exe", "/usr/bin/qemu-aarch64-static", 4096) = 28
+532   getrandom("\xed\x37\x22\x19\x99\xee\x68\xce", 8, GRND_NONBLOCK) = 8
+532   brk(0xd30e80)                     = 0xd30e80
+532   brk(0xd31000)                     = 0xd31000
+532   mprotect(0x8e9000, 413696, PROT_READ) = 0
+532   rt_sigprocmask(SIG_SETMASK, ~[ILL FPE SEGV RTMIN RT_1], [], 8) = 0
+532   rt_sigaction(SIGRT_1, {sa_handler=0x7785a0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x6d0320}, NULL, 8) = 0
+532   rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+532   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f6920e7e000
+532   mprotect(0x7f6920e7f000, 8388608, PROT_READ|PROT_WRITE) = 0
+532   rt_sigprocmask(SIG_BLOCK, ~[], ~[ILL FPE KILL SEGV STOP RTMIN RT_1], 8) = 0
+532   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f692167e910, parent_tid=0x7f692167e910, exit_signal=0, stack=0x7f6920e7e000, stack_size=0x8001c0, tls=0x7f692167e640}, 88) = -1 ENOSYS (Function not implemented)
+532   clone(child_stack=0x7f692167e1b0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+537   rseq(0x7f692167efe0, 0x20, 0, 0x53053053 <unfinished ...>
+532   <... clone resumed>, parent_tid=[537], tls=0x7f692167e640, child_tidptr=0x7f692167e910) = 537
+537   <... rseq resumed>)               = 0
+532   rt_sigprocmask(SIG_SETMASK, ~[ILL FPE KILL SEGV STOP RTMIN RT_1],  <unfinished ...>
+537   set_robust_list(0x7f692167e920, 24 <unfinished ...>
+532   <... rt_sigprocmask resumed>NULL, 8) = 0
+537   <... set_robust_list resumed>)    = 0
+532   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+537   rt_sigprocmask(SIG_SETMASK, ~[ILL FPE KILL SEGV STOP RTMIN RT_1],  <unfinished ...>
+532   <... rt_sigprocmask resumed>NULL, 8) = 0
+537   <... rt_sigprocmask resumed>NULL, 8) = 0
+532   prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+537   mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+532   <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+537   <... mmap resumed>)               = 0x7f6918e7e000
+532   write(2, "qemu: no user program specified\n", 32 <unfinished ...>
+537   munmap(0x7f6918e7e000, 51912704)  = 0
+532   <... write resumed>)              = 32
+537   munmap(0x7f6920000000, 15196160 <unfinished ...>
+532   exit_group(1 <unfinished ...>
+537   <... munmap resumed>)             = 0
+532   <... exit_group resumed>)         = ?
+537   +++ exited with 1 +++
+532   +++ exited with 1 +++

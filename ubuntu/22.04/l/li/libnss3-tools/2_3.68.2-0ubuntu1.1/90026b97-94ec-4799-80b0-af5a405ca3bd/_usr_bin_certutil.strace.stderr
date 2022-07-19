@@ -1,0 +1,31 @@
+certutil - Utility to manipulate NSS certificate databases
+
+Usage:  certutil <command> -d <database-directory> <options>
+
+Valid commands:
+-A              Add a certificate to the database        (create if needed)
+-B              Run a series of certutil commands from a batch file
+-E              Add an Email certificate to the database (create if needed)
+-C              Create a new binary certificate from a BINARY cert request
+-G              Generate a new key pair
+-D              Delete a certificate from the database
+--rename        Change the database nickname of a certificate
+-F              Delete a key and associated certificate from the database
+-U              List all modules
+-K              List all private keys
+-L              List all certs, or print out a single named cert (or a subset)
+--build-flags   Print enabled build flags relevant for NSS test execution
+-M              Modify trust attributes of certificate
+-N              Create a new certificate database
+-T              Reset the Key database or token
+-O              Print the chain of a certificate
+-R              Generate a certificate request (stdout)
+-V              Validate a certificate
+-W              Change the key database password
+--upgrade-merge Upgrade an old database and merge it into a new one
+--merge         Merge source database into the target database
+-S              Make a certificate and add to database
+
+certutil -H <command> : Print available options for the given command
+certutil -H : Print complete help output of all commands and options
+certutil --syntax : Print a short summary of all commands and options

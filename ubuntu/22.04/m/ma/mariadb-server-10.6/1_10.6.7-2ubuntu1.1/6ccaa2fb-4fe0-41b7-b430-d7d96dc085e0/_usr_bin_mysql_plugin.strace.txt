@@ -1,0 +1,375 @@
+1346  execve("/usr/bin/mysql_plugin", ["/usr/bin/mysql_plugin"], 0x7ffc591a9150 /* 12 vars */) = 0
+1346  brk(NULL)                         = 0x56047b5fe000
+1346  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc30afd970) = -1 EINVAL (Invalid argument)
+1346  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f54a2f66000
+1346  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1346  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1346  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7681, ...}, AT_EMPTY_PATH) = 0
+1346  mmap(NULL, 7681, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f54a2f64000
+1346  close(3)                          = 0
+1346  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1346  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1346  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1346  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1346  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1346  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1346  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1346  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f54a2d3c000
+1346  mmap(0x7f54a2d64000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f54a2d64000
+1346  mmap(0x7f54a2ef9000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f54a2ef9000
+1346  mmap(0x7f54a2f51000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f54a2f51000
+1346  mmap(0x7f54a2f57000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f54a2f57000
+1346  close(3)                          = 0
+1346  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f54a2d39000
+1346  arch_prctl(ARCH_SET_FS, 0x7f54a2d39740) = 0
+1346  set_tid_address(0x7f54a2d39a10)   = 1346
+1346  set_robust_list(0x7f54a2d39a20, 24) = 0
+1346  rseq(0x7f54a2d3a0e0, 0x20, 0, 0x53053053) = 0
+1346  mprotect(0x7f54a2f51000, 16384, PROT_READ) = 0
+1346  mprotect(0x56047aff1000, 40960, PROT_READ) = 0
+1346  mprotect(0x7f54a2fa0000, 8192, PROT_READ) = 0
+1346  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1346  munmap(0x7f54a2f64000, 7681)      = 0
+1346  getrandom("\x10\x7a\x66\xb7\x92\x88\xa9\x9a", 8, GRND_NONBLOCK) = 8
+1346  brk(NULL)                         = 0x56047b5fe000
+1346  brk(0x56047b61f000)               = 0x56047b61f000
+1346  newfstatat(AT_FDCWD, "/usr/my_print_defaults", 0x7ffc30afc1f0, 0) = -1 ENOENT (No such file or directory)
+1346  newfstatat(AT_FDCWD, "/usr/share/my_print_defaults", 0x7ffc30afc1f0, 0) = -1 ENOENT (No such file or directory)
+1346  newfstatat(AT_FDCWD, "/usr/scripts/my_print_defaults", 0x7ffc30afc1f0, 0) = -1 ENOENT (No such file or directory)
+1346  newfstatat(AT_FDCWD, "/usr/bin/my_print_defaults", {st_mode=S_IFREG|0755, st_size=3641088, ...}, 0) = 0
+1346  openat(AT_FDCWD, "/tmp/txtt8fjuw", O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC, 0600) = 3
+1346  close(3)                          = 0
+1346  pipe2([3, 4], O_CLOEXEC)          = 0
+1346  prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+1346  prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+1346  mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f54a2d30000
+1346  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+1346  clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7f54a2d30000, stack_size=0x9000}, 88) = -1 ENOSYS (Function not implemented)
+1346  clone(child_stack=0x7f54a2d38ff0, flags=CLONE_VM|CLONE_VFORK|SIGCHLD <unfinished ...>
+1351  rt_sigprocmask(SIG_BLOCK, NULL, ~[KILL STOP], 8) = 0
+1351  rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGTRAP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGABRT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGUSR1, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGUSR2, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGSTKFLT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGURG, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGXCPU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGXFSZ, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGVTALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGPROF, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGIO, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGPWR, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGSYS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRTMIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_1, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_3, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_4, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_5, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_6, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_7, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_8, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_9, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_10, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_11, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_12, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_13, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_14, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_15, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_16, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_17, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_18, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_19, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_20, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_21, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_22, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_23, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_24, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_25, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_26, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_27, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_28, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_29, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_30, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_31, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGRT_32, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f54a2d7e520}, NULL, 8) = 0
+1351  dup2(4, 1)                        = 1
+1351  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+1351  execve("/bin/sh", ["sh", "-c", "/usr/bin/my_print_defaults --mysqld > /tmp/txtt8fjuw"], 0x7ffc30afdb48 /* 12 vars */ <unfinished ...>
+1346  <... clone resumed>)              = 1351
+1346  munmap(0x7f54a2d30000, 36864 <unfinished ...>
+1351  <... execve resumed>)             = 0
+1346  <... munmap resumed>)             = 0
+1351  brk(NULL <unfinished ...>
+1346  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1351  <... brk resumed>)                = 0x56444ee07000
+1346  <... rt_sigprocmask resumed>NULL, 8) = 0
+1351  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd26a59aa0 <unfinished ...>
+1346  close(4 <unfinished ...>
+1351  <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+1346  <... close resumed>)              = 0
+1351  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1346  fcntl(3, F_SETFD, 0 <unfinished ...>
+1351  <... mmap resumed>)               = 0x7f6216286000
+1346  <... fcntl resumed>)              = 0
+1351  access("/etc/ld.so.preload", R_OK <unfinished ...>
+1346  close(3 <unfinished ...>
+1351  <... access resumed>)             = -1 ENOENT (No such file or directory)
+1346  <... close resumed>)              = 0
+1351  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+1346  wait4(1351,  <unfinished ...>
+1351  <... openat resumed>)             = 3
+1351  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7681, ...}, AT_EMPTY_PATH) = 0
+1351  mmap(NULL, 7681, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6216284000
+1351  close(3)                          = 0
+1351  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1351  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1351  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1351  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1351  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1351  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1351  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1351  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f621605c000
+1351  mmap(0x7f6216084000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6216084000
+1351  mmap(0x7f6216219000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f6216219000
+1351  mmap(0x7f6216271000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f6216271000
+1351  mmap(0x7f6216277000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6216277000
+1351  close(3)                          = 0
+1351  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6216059000
+1351  arch_prctl(ARCH_SET_FS, 0x7f6216059740) = 0
+1351  set_tid_address(0x7f6216059a10)   = 1351
+1351  set_robust_list(0x7f6216059a20, 24) = 0
+1351  rseq(0x7f621605a0e0, 0x20, 0, 0x53053053) = 0
+1351  mprotect(0x7f6216271000, 16384, PROT_READ) = 0
+1351  mprotect(0x56444dd73000, 8192, PROT_READ) = 0
+1351  mprotect(0x7f62162c0000, 8192, PROT_READ) = 0
+1351  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1351  munmap(0x7f6216284000, 7681)      = 0
+1351  getuid()                          = 0
+1351  getgid()                          = 0
+1351  getpid()                          = 1351
+1351  rt_sigaction(SIGCHLD, {sa_handler=0x56444dd69aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f621609e520}, NULL, 8) = 0
+1351  geteuid()                         = 0
+1351  getrandom("\x83\xa3\xa0\xa1\x58\xc4\xb9\xd8", 8, GRND_NONBLOCK) = 8
+1351  brk(NULL)                         = 0x56444ee07000
+1351  brk(0x56444ee28000)               = 0x56444ee28000
+1351  getppid()                         = 1346
+1351  newfstatat(AT_FDCWD, "/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+1351  newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+1351  geteuid()                         = 0
+1351  getegid()                         = 0
+1351  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGINT, {sa_handler=0x56444dd69aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f621609e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f621609e520}, NULL, 8) = 0
+1351  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+1351  rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f621609e520}, NULL, 8) = 0
+1351  openat(AT_FDCWD, "/tmp/txtt8fjuw", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+1351  fcntl(1, F_DUPFD, 10)             = 10
+1351  close(1)                          = 0
+1351  fcntl(10, F_SETFD, FD_CLOEXEC)    = 0
+1351  dup2(3, 1)                        = 1
+1351  close(3)                          = 0
+1351  rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
+1351  vfork( <unfinished ...>
+1352  rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+1352  execve("/usr/bin/my_print_defaults", ["/usr/bin/my_print_defaults", "--mysqld"], 0x56444ee076c8 /* 12 vars */ <unfinished ...>
+1351  <... vfork resumed>)              = 1352
+1351  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+1352  <... execve resumed>)             = 0
+1351  <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1], 8) = 0
+1352  brk(NULL <unfinished ...>
+1351  wait4(-1,  <unfinished ...>
+1352  <... brk resumed>)                = 0x5569715d5000
+1352  arch_prctl(0x3001 /* ARCH_??? */, 0x7fff820dce60) = -1 EINVAL (Invalid argument)
+1352  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff57eabb000
+1352  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1352  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1352  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7681, ...}, AT_EMPTY_PATH) = 0
+1352  mmap(NULL, 7681, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff57eab9000
+1352  close(3)                          = 0
+1352  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1352  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1352  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1352  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1352  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1352  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1352  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1352  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff57e891000
+1352  mmap(0x7ff57e8b9000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ff57e8b9000
+1352  mmap(0x7ff57ea4e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7ff57ea4e000
+1352  mmap(0x7ff57eaa6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7ff57eaa6000
+1352  mmap(0x7ff57eaac000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff57eaac000
+1352  close(3)                          = 0
+1352  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff57e88e000
+1352  arch_prctl(ARCH_SET_FS, 0x7ff57e88e740) = 0
+1352  set_tid_address(0x7ff57e88ea10)   = 1352
+1352  set_robust_list(0x7ff57e88ea20, 24) = 0
+1352  rseq(0x7ff57e88f0e0, 0x20, 0, 0x53053053) = 0
+1352  mprotect(0x7ff57eaa6000, 16384, PROT_READ) = 0
+1352  mprotect(0x556970515000, 40960, PROT_READ) = 0
+1352  mprotect(0x7ff57eaf5000, 8192, PROT_READ) = 0
+1352  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1352  munmap(0x7ff57eab9000, 7681)      = 0
+1352  getrandom("\x13\x1b\x16\x0b\x5a\x61\x1c\x27", 8, GRND_NONBLOCK) = 8
+1352  brk(NULL)                         = 0x5569715d5000
+1352  brk(0x5569715f6000)               = 0x5569715f6000
+1352  newfstatat(AT_FDCWD, "/etc/my.cnf", 0x7fff820d9810, 0) = -1 ENOENT (No such file or directory)
+1352  newfstatat(AT_FDCWD, "/etc/mysql/my.cnf", {st_mode=S_IFREG|0644, st_size=1126, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/my.cnf", O_RDONLY|O_CLOEXEC) = 3
+1352  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1126, ...}, AT_EMPTY_PATH) = 0
+1352  read(3, "# The MariaDB configuration file\n#\n# The MariaDB/MySQL tools read configuration files in the following order:\n# 0. \"/etc/mysql/m"..., 4096) = 1126
+1352  openat(AT_FDCWD, "/etc/mysql/conf.d/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+1352  newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+1352  getdents64(4, 0x5569715d6cb0 /* 4 entries */, 32768) = 120
+1352  getdents64(4, 0x5569715d6cb0 /* 0 entries */, 32768) = 0
+1352  close(4)                          = 0
+1352  newfstatat(AT_FDCWD, "/etc/mysql/conf.d/mysql.cnf", {st_mode=S_IFREG|0644, st_size=8, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/conf.d/mysql.cnf", O_RDONLY|O_CLOEXEC) = 4
+1352  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=8, ...}, AT_EMPTY_PATH) = 0
+1352  read(4, "[mysql]\n", 4096)        = 8
+1352  read(4, "", 4096)                 = 0
+1352  close(4)                          = 0
+1352  newfstatat(AT_FDCWD, "/etc/mysql/conf.d/mysqldump.cnf", {st_mode=S_IFREG|0644, st_size=55, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/conf.d/mysqldump.cnf", O_RDONLY|O_CLOEXEC) = 4
+1352  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=55, ...}, AT_EMPTY_PATH) = 0
+1352  read(4, "[mysqldump]\nquick\nquote-names\nmax_allowed_packet\t= 16M\n", 4096) = 55
+1352  read(4, "", 4096)                 = 0
+1352  close(4)                          = 0
+1352  openat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+1352  newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+1352  getdents64(4, 0x5569715ded90 /* 7 entries */, 32768) = 248
+1352  getdents64(4, 0x5569715ded90 /* 0 entries */, 32768) = 0
+1352  close(4)                          = 0
+1352  newfstatat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-client.cnf", {st_mode=S_IFREG|0644, st_size=575, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-client.cnf", O_RDONLY|O_CLOEXEC) = 4
+1352  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=575, ...}, AT_EMPTY_PATH) = 0
+1352  read(4, "#\n# This group is read by the client library\n# Use it for options that affect all clients, but not the server\n#\n\n[client]\n# Exam"..., 4096) = 575
+1352  read(4, "", 4096)                 = 0
+1352  close(4)                          = 0
+1352  newfstatat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-mysql-clients.cnf", {st_mode=S_IFREG|0644, st_size=231, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-mysql-clients.cnf", O_RDONLY|O_CLOEXEC) = 4
+1352  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=231, ...}, AT_EMPTY_PATH) = 0
+1352  read(4, "#\n# These groups are read by MariaDB command-line tools\n# Use it for options that affect only one utility\n#\n\n[mysql]\n\n[mysql_upg"..., 4096) = 231
+1352  read(4, "", 4096)                 = 0
+1352  close(4)                          = 0
+1352  newfstatat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf", {st_mode=S_IFREG|0644, st_size=927, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf", O_RDONLY|O_CLOEXEC) = 4
+1352  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=927, ...}, AT_EMPTY_PATH) = 0
+1352  read(4, "# NOTE: THIS FILE IS READ ONLY BY THE TRADITIONAL SYSV INIT SCRIPT, NOT SYSTEMD.\n# MARIADB SYSTEMD DOES _NOT_ UTILIZE MYSQLD_SAF"..., 4096) = 927
+1352  read(4, "", 4096)                 = 0
+1352  close(4)                          = 0
+1352  newfstatat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-server.cnf", {st_mode=S_IFREG|0644, st_size=3572, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/50-server.cnf", O_RDONLY|O_CLOEXEC) = 4
+1352  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=3572, ...}, AT_EMPTY_PATH) = 0
+1352  read(4, "#\n# These groups are read by MariaDB server.\n# Use it for options that only the server (but not clients) should see\n\n# this is r"..., 4096) = 3572
+1352  read(4, "", 4096)                 = 0
+1352  close(4)                          = 0
+1352  newfstatat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/60-galera.cnf", {st_mode=S_IFREG|0644, st_size=570, ...}, 0) = 0
+1352  openat(AT_FDCWD, "/etc/mysql/mariadb.conf.d/60-galera.cnf", O_RDONLY|O_CLOEXEC) = 4
+1352  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=570, ...}, AT_EMPTY_PATH) = 0
+1352  read(4, "#\n# * Galera-related settings\n#\n# See the examples of server wsrep.cnf files in /usr/share/mysql\n# and read more at https://mari"..., 4096) = 570
+1352  read(4, "", 4096)                 = 0
+1352  close(4)                          = 0
+1352  read(3, "", 4096)                 = 0
+1352  close(3)                          = 0
+1352  newfstatat(AT_FDCWD, "/root/.my.cnf", 0x7fff820d9810, 0) = -1 ENOENT (No such file or directory)
+1352  newfstatat(1, "", {st_mode=S_IFREG|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1352  write(1, "--socket=/run/mysqld/mysqld.sock\n--pid-file=/run/mysqld/mysqld.pid\n--basedir=/usr\n--bind-address=127.0.0.1\n--expire_logs_days=10"..., 198) = 198
+1352  exit_group(0)                     = ?
+1352  +++ exited with 0 +++
+1351  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1352
+1351  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1352, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+1351  rt_sigreturn({mask=[]})           = 1352
+1351  wait4(-1, 0x7ffd26a597cc, WNOHANG, NULL) = -1 ECHILD (No child processes)
+1351  dup2(10, 1)                       = 1
+1351  close(10)                         = 0
+1351  exit_group(0)                     = ?
+1351  +++ exited with 0 +++
+1346  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1351
+1346  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1351, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+1346  openat(AT_FDCWD, "/tmp/txtt8fjuw", O_RDONLY) = 3
+1346  newfstatat(3, "", {st_mode=S_IFREG|0600, st_size=198, ...}, AT_EMPTY_PATH) = 0
+1346  read(3, "--socket=/run/mysqld/mysqld.sock\n--pid-file=/run/mysqld/mysqld.pid\n--basedir=/usr\n--bind-address=127.0.0.1\n--expire_logs_days=10"..., 4096) = 198
+1346  read(3, "", 4096)                 = 0
+1346  close(3)                          = 0
+1346  unlink("/tmp/txtt8fjuw")          = 0
+1346  write(2, "ERROR: Missing --datadir option.\n", 33) = 33
+1346  unlink("")                        = -1 ENOENT (No such file or directory)
+1346  exit_group(1)                     = ?
+1346  +++ exited with 1 +++

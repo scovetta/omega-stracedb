@@ -1,0 +1,56 @@
+/*** test_find_language_fallback ***/
+/*** test_find_converted_keymap ***/
+Skipping rest of test_find_converted_keymap: keymaps are not installed
+/*** test_find_legacy_keymap ***/
+Found legacy keymap pl2 with score 11
+Found legacy keymap pl2 with score 6
+/*** test_vconsole_convert_to_x11 ***/
+/* test emptying first (:) */
+Changing X11 keyboard layout to '' model '' variant '' options ''
+/* test emptying second (:) */
+X11 keyboard layout did not need to be modified.
+/* test without variant, new mapping (es:) */
+Changing X11 keyboard layout to 'es' model 'pc105' variant '' options 'terminate:ctrl_alt_bksp'
+/* test with known variant, new mapping (es:dvorak) */
+Changing X11 keyboard layout to 'es' model 'microsoftpro' variant 'dvorak' options 'terminate:ctrl_alt_bksp'
+/* test with old mapping (fr:latin9) */
+Changing X11 keyboard layout to 'fr' model 'pc105' variant 'latin9' options 'terminate:ctrl_alt_bksp'
+/* test with a compound mapping (ru,us) */
+Changing X11 keyboard layout to 'ru,us' model 'pc105' variant '' options 'terminate:ctrl_alt_bksp,grp:shifts_toggle,grp_led:scroll'
+/* test with a simple mapping (us) */
+Changing X11 keyboard layout to 'us' model 'pc105+inet' variant '' options 'terminate:ctrl_alt_bksp'
+/*** test_x11_convert_to_vconsole ***/
+/* test emptying first (:) */
+Changing virtual console keymap to '' toggle ''
+/* test emptying second (:) */
+Virtual console keymap was not modified.
+/* test without variant, new mapping (es:) */
+Found legacy keymap es with score 11
+Found legacy keymap es-dvorak with score 11
+Changing virtual console keymap to 'es' toggle ''
+/* test with unknown variant, new mapping (es:foobar) */
+Found legacy keymap es with score 11
+Found legacy keymap es-dvorak with score 11
+Virtual console keymap was not modified.
+/* test with known variant, new mapping (es:dvorak) */
+Found legacy keymap es with score 11
+Found legacy keymap es-dvorak with score 12
+Changing virtual console keymap to 'es-dvorak' toggle ''
+/* test with old mapping (fr:latin9) */
+Found legacy keymap fr with score 11
+Found legacy keymap fr-latin1 with score 11
+Found legacy keymap fr-pc with score 11
+Found legacy keymap fr-latin9 with score 12
+Changing virtual console keymap to 'fr-latin9' toggle ''
+/* test with a compound mapping (us,ru:) */
+Found legacy keymap us with score 6
+Found legacy keymap us-acentos with score 6
+Found legacy keymap dvorak with score 6
+Found legacy keymap dvorak with score 6
+Changing virtual console keymap to 'us' toggle ''
+/* test with a compound mapping (ru,us:) */
+Found legacy keymap ru with score 11
+Changing virtual console keymap to 'ru' toggle ''
+/* test with a simple new mapping (ru:) */
+Found legacy keymap ru with score 2
+Virtual console keymap was not modified.

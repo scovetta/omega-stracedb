@@ -1,1 +1,19 @@
 This file contains interesting strace patterns.
+
+# OpenSSL Configuration Files
+grep -R --include='*.strace.txt' openat | cut -d\" -f2 | grep openssl.cnf | sort | uniq
+
+# DNS Queries
+grep -R --include='*.strace.txt' connect | grep 'htons(53)' | egrep -o 'inet_addr\([^\)]+\)' | sort | uniq
+
+Other ideas:
+
+- docker config.json
+- .gitrc
+- .XXrc
+- bashrc, profile, etc.
+- http/tcp raw
+- traffic to/from remote hosts
+- execve to a non-existent file
+- reading env vars
+

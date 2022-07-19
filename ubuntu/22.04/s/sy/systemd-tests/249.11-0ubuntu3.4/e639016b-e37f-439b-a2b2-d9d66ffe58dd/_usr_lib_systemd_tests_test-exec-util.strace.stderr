@@ -1,0 +1,145 @@
+/* test_execute_directory (gathering stdout) */
+Serializing test-exec-util.hi.XQaY97G to memfd.
+Successfully forked off '(sd-executor)' as PID 1956.
+PR_SET_MM_ARG_START failed: Operation not permitted
+File '/tmp/test-exec-util.hi.XQaY97G/masked2' is a mask.
+File '/tmp/test-exec-util.hi.XQaY97G/masked2e' is a mask.
+File '/tmp/test-exec-util.hi.XQaY97G/masked' is a mask.
+File '/tmp/test-exec-util.lo.X5pxTCS/masked2' is masked by previous entry.
+Skipping overridden file '/tmp/test-exec-util.lo.X5pxTCS/overridden'.
+File '/tmp/test-exec-util.lo.X5pxTCS/useless' is a mask.
+File '/tmp/test-exec-util.lo.X5pxTCS/masked2e' is masked by previous entry.
+File '/tmp/test-exec-util.lo.X5pxTCS/masked' is masked by previous entry.
+Serializing overridden to memfd.
+Successfully forked off '(direxec)' as PID 1957.
+/tmp/test-exec-util.hi.XQaY97G/overridden succeeded.
+Serializing script to memfd.
+Successfully forked off '(direxec)' as PID 1958.
+/tmp/test-exec-util.lo.X5pxTCS/script succeeded.
+Serializing script2 to memfd.
+Successfully forked off '(direxec)' as PID 1961.
+/tmp/test-exec-util.hi.XQaY97G/script2 succeeded.
+(sd-executor) succeeded.
+/* test_execute_directory (asynchronous) */
+Successfully forked off '(sd-executor)' as PID 1964.
+PR_SET_MM_ARG_START failed: Operation not permitted
+File '/tmp/test-exec-util.hi.XPT1cB8/masked2' is a mask.
+File '/tmp/test-exec-util.hi.XPT1cB8/masked2e' is a mask.
+File '/tmp/test-exec-util.hi.XPT1cB8/masked' is a mask.
+File '/tmp/test-exec-util.lo.XZkRL1i/masked2' is masked by previous entry.
+Skipping overridden file '/tmp/test-exec-util.lo.XZkRL1i/overridden'.
+File '/tmp/test-exec-util.lo.XZkRL1i/useless' is a mask.
+File '/tmp/test-exec-util.lo.XZkRL1i/masked2e' is masked by previous entry.
+File '/tmp/test-exec-util.lo.XZkRL1i/masked' is masked by previous entry.
+Successfully forked off '(direxec)' as PID 1965.
+Successfully forked off '(direxec)' as PID 1966.
+Successfully forked off '(direxec)' as PID 1967.
+sh: 0: getcwd() failed: No such file or directory
+sh: 0: getcwd() failed: No such file or directorysh: 0: 
+getcwd() failed: No such file or directory
+/tmp/test-exec-util.hi.XPT1cB8/script2 succeeded.
+/tmp/test-exec-util.hi.XPT1cB8/overridden succeeded.
+/tmp/test-exec-util.lo.XZkRL1i/script succeeded.
+(sd-executor) succeeded.
+/* test_execution_order >>/tmp/test-exec-util-hi.XVLeDts/output */
+Serializing test-exec-util-hi.XVLeDts to memfd.
+Successfully forked off '(sd-executor)' as PID 1972.
+PR_SET_MM_ARG_START failed: Operation not permitted
+File '/tmp/test-exec-util-hi.XVLeDts/10-masked' is a mask.
+Skipping overridden file '/tmp/test-exec-util-lo.Xjt3j8W/30-override'.
+File '/tmp/test-exec-util-lo.Xjt3j8W/10-masked' is masked by previous entry.
+Serializing 30-override to memfd.
+Successfully forked off '(direxec)' as PID 1973.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util-hi.XVLeDts/30-override succeeded.
+Serializing 80-foo to memfd.
+Successfully forked off '(direxec)' as PID 1975.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util-hi.XVLeDts/80-foo succeeded.
+Serializing 90-bar to memfd.
+Successfully forked off '(direxec)' as PID 1977.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util-lo.Xjt3j8W/90-bar succeeded.
+Serializing last to memfd.
+Successfully forked off '(direxec)' as PID 1979.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util-lo.Xjt3j8W/last succeeded.
+(sd-executor) succeeded.
+/* test_stdout_gathering */
+Serializing test-exec-util.XrNmRRR to memfd.
+Successfully forked off '(sd-executor)' as PID 1981.
+PR_SET_MM_ARG_START failed: Operation not permitted
+Serializing 10-foo to memfd.
+Successfully forked off '(direxec)' as PID 1982.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XrNmRRR/10-foo succeeded.
+Serializing 20-bar to memfd.
+Successfully forked off '(direxec)' as PID 1983.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XrNmRRR/20-bar succeeded.
+Serializing 30-last to memfd.
+Successfully forked off '(direxec)' as PID 1984.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XrNmRRR/30-last succeeded.
+(sd-executor) succeeded.
+got: a
+b
+c
+d
+/* test_environment_gathering */
+Serializing test-exec-util.XGR6AWQ to memfd.
+Successfully forked off '(sd-executor)' as PID 1986.
+PR_SET_MM_ARG_START failed: Operation not permitted
+Serializing 10-foo to memfd.
+Successfully forked off '(direxec)' as PID 1987.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XGR6AWQ/10-foo succeeded.
+Serializing 20-bar to memfd.
+Successfully forked off '(direxec)' as PID 1988.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XGR6AWQ/20-bar succeeded.
+Serializing 30-last to memfd.
+Successfully forked off '(direxec)' as PID 1989.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XGR6AWQ/30-last succeeded.
+Invalid variable assignment "unset A=...", ignoring.
+Invalid variable assignment "unset A=...", ignoring.
+Invalid variable assignment "A B=...", ignoring.
+(sd-executor) succeeded.
+got env: "A=22:23:24"
+got env: "B=12"
+got env: "C=001"
+got env: "PATH=no-sh-built-in-path:/no/such/file"
+Serializing test-exec-util.XGR6AWQ to memfd.
+Successfully forked off '(sd-executor)' as PID 1990.
+PR_SET_MM_ARG_START failed: Operation not permitted
+Serializing 10-foo to memfd.
+Successfully forked off '(direxec)' as PID 1991.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XGR6AWQ/10-foo succeeded.
+Serializing 20-bar to memfd.
+Successfully forked off '(direxec)' as PID 1992.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XGR6AWQ/20-bar succeeded.
+Serializing 30-last to memfd.
+Successfully forked off '(direxec)' as PID 1993.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XGR6AWQ/30-last succeeded.
+Invalid variable assignment "unset A=...", ignoring.
+Invalid variable assignment "unset A=...", ignoring.
+Invalid variable assignment "A B=...", ignoring.
+(sd-executor) succeeded.
+got env: "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/no/such/file"
+got env: "A=22:23:24"
+got env: "B=12"
+got env: "C=001"
+/* test_error_catching */
+Successfully forked off '(sd-executor)' as PID 1994.
+PR_SET_MM_ARG_START failed: Operation not permitted
+Successfully forked off '(direxec)' as PID 1995.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XmcGeql/10-foo succeeded.
+Successfully forked off '(direxec)' as PID 1996.
+sh: 0: getcwd() failed: No such file or directory
+/tmp/test-exec-util.XmcGeql/20-bar failed with exit status 42.
+(sd-executor) failed with exit status 42.

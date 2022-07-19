@@ -1,0 +1,263 @@
+725   execve("/sbin/dmraid", ["/sbin/dmraid"], 0x7ffe1c566600 /* 12 vars */) = 0
+725   brk(NULL)                         = 0x55fc7caf5000
+725   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffce4360700) = -1 EINVAL (Invalid argument)
+725   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97fa6ed000
+725   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6329, ...}, AT_EMPTY_PATH) = 0
+725   mmap(NULL, 6329, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f97fa6eb000
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdmraid.so.1.0.0.rc16", O_RDONLY|O_CLOEXEC) = 3
+725   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\250R\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`9\0\0\0\0\0\0`9\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=219688, ...}, AT_EMPTY_PATH) = 0
+725   mmap(NULL, 223904, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97fa6b4000
+725   mmap(0x7f97fa6b8000, 139264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f97fa6b8000
+725   mmap(0x7f97fa6da000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f97fa6da000
+725   mmap(0x7f97fa6e8000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x33000) = 0x7f97fa6e8000
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+725   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+725   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+725   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+725   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+725   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+725   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97fa48c000
+725   mmap(0x7f97fa4b4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f97fa4b4000
+725   mmap(0x7f97fa649000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f97fa649000
+725   mmap(0x7f97fa6a1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f97fa6a1000
+725   mmap(0x7f97fa6a7000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f97fa6a7000
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1", O_RDONLY|O_CLOEXEC) = 3
+725   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\220\252\6\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\210\227\0\0\0\0\0\0\210\227\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=438864, ...}, AT_EMPTY_PATH) = 0
+725   mmap(NULL, 444976, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97fa41f000
+725   mmap(0x7f97fa429000, 303104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f97fa429000
+725   mmap(0x7f97fa473000, 81920, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x54000) = 0x7f97fa473000
+725   mmap(0x7f97fa487000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x67000) = 0x7f97fa487000
+725   mmap(0x7f97fa48b000, 2608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f97fa48b000
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+725   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230Z\0\0\0\0\0\0\230Z\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+725   mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97fa3f3000
+725   mprotect(0x7f97fa3f9000, 139264, PROT_NONE) = 0
+725   mmap(0x7f97fa3f9000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f97fa3f9000
+725   mmap(0x7f97fa413000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f97fa413000
+725   mmap(0x7f97fa41b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f97fa41b000
+725   mmap(0x7f97fa41d000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f97fa41d000
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+725   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0p>\0\0\0\0\0\0p>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+725   mmap(NULL, 170272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97fa3c9000
+725   mprotect(0x7f97fa3cd000, 147456, PROT_NONE) = 0
+725   mmap(0x7f97fa3cd000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f97fa3cd000
+725   mmap(0x7f97fa3e7000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f97fa3e7000
+725   mmap(0x7f97fa3f1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f97fa3f1000
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+725   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+725   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97fa3c7000
+725   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97fa2e0000
+725   mmap(0x7f97fa2ee000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f97fa2ee000
+725   mmap(0x7f97fa36a000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f97fa36a000
+725   mmap(0x7f97fa3c5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f97fa3c5000
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+725   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210S\t\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0000\36\0\0\0\0\0\0000\36\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+725   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+725   mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f97fa249000
+725   mmap(0x7f97fa24b000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f97fa24b000
+725   mmap(0x7f97fa2b6000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f97fa2b6000
+725   mmap(0x7f97fa2de000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f97fa2de000
+725   close(3)                          = 0
+725   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f97fa247000
+725   arch_prctl(ARCH_SET_FS, 0x7f97fa247c80) = 0
+725   set_tid_address(0x7f97fa247f50)   = 725
+725   set_robust_list(0x7f97fa247f60, 24) = 0
+725   rseq(0x7f97fa248620, 0x20, 0, 0x53053053) = 0
+725   mprotect(0x7f97fa6a1000, 16384, PROT_READ) = 0
+725   mprotect(0x7f97fa2de000, 4096, PROT_READ) = 0
+725   mprotect(0x7f97fa3c5000, 4096, PROT_READ) = 0
+725   mprotect(0x7f97fa3f1000, 4096, PROT_READ) = 0
+725   mprotect(0x7f97fa41b000, 4096, PROT_READ) = 0
+725   mprotect(0x7f97fa487000, 4096, PROT_READ) = 0
+725   mprotect(0x7f97fa6e8000, 4096, PROT_READ) = 0
+725   mprotect(0x55fc7b263000, 4096, PROT_READ) = 0
+725   mprotect(0x7f97fa727000, 8192, PROT_READ) = 0
+725   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+725   munmap(0x7f97fa6eb000, 6329)      = 0
+725   statfs("/sys/fs/selinux", 0x7ffce4360740) = -1 ENOENT (No such file or directory)
+725   statfs("/selinux", 0x7ffce4360740) = -1 ENOENT (No such file or directory)
+725   getrandom("\x46\x8c\xff\xa3\x8b\xce\x8d\x59", 8, GRND_NONBLOCK) = 8
+725   brk(NULL)                         = 0x55fc7caf5000
+725   brk(0x55fc7cb16000)               = 0x55fc7cb16000
+725   openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbdev\nnodev\tproc\nnodev\tcgroup\nnodev\tcgroup2\nnodev\tcpuset\nnodev\tdevtmpfs\nnodev\tbinfmt_misc\nnodev\tdeb"..., 1024) = 471
+725   read(3, "", 1024)                 = 0
+725   close(3)                          = 0
+725   access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hda/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hda", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdb/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdb", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdc/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdc", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdd/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdd", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hde/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hde", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdf/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdf", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdg/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdg", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdh/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdh", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdi/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdi", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdj/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdj", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdk/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdk", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdl/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdl", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdm/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdm", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdn/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdn", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdo/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdo", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdp/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdp", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdq/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdq", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdr/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdr", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hds/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hds", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdt/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdt", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdu/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdu", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdv/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdv", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdw/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdw", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdx/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdx", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdy/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdy", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+725   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+725   read(3, "overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/X5KFWEXX3BAD33Y2MOLTC7MRY7:/var/lib/docker/overlay2/l/4BCNFS7O"..., 1024) = 1024
+725   close(3)                          = 0
+725   openat(AT_FDCWD, "/sys/block/hdz/removable", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   openat(AT_FDCWD, "/dev/hdz", O_RDONLY) = -1 ENOENT (No such file or directory)
+725   write(2, "ERROR: ", 7)            = 7
+725   write(2, "no arguments/options given (-h for help)\n", 41) = 41
+725   write(2, "\n", 1)                 = 1
+725   exit_group(1)                     = ?
+725   +++ exited with 1 +++

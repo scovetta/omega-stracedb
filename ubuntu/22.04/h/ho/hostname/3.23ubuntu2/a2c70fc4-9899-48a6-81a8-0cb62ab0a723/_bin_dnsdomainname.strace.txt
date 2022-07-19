@@ -1,0 +1,72 @@
+457   execve("/bin/dnsdomainname", ["/bin/dnsdomainname"], 0x7ffc93a182f0 /* 12 vars */) = 0
+457   brk(NULL)                         = 0x56156431e000
+457   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd6744b660) = -1 EINVAL (Invalid argument)
+457   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba5a2d6000
+457   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+457   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+457   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fba5a2d4000
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+457   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+457   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fba5a0ac000
+457   mmap(0x7fba5a0d4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fba5a0d4000
+457   mmap(0x7fba5a269000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fba5a269000
+457   mmap(0x7fba5a2c1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fba5a2c1000
+457   mmap(0x7fba5a2c7000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fba5a2c7000
+457   close(3)                          = 0
+457   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba5a0a9000
+457   arch_prctl(ARCH_SET_FS, 0x7fba5a0a9740) = 0
+457   set_tid_address(0x7fba5a0a9a10)   = 457
+457   set_robust_list(0x7fba5a0a9a20, 24) = 0
+457   rseq(0x7fba5a0aa0e0, 0x20, 0, 0x53053053) = 0
+457   mprotect(0x7fba5a2c1000, 16384, PROT_READ) = 0
+457   mprotect(0x561562bae000, 4096, PROT_READ) = 0
+457   mprotect(0x7fba5a310000, 8192, PROT_READ) = 0
+457   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+457   munmap(0x7fba5a2d4000, 6133)      = 0
+457   getrandom("\xef\x29\x18\x03\x50\xf8\xde\xdd", 8, GRND_NONBLOCK) = 8
+457   brk(NULL)                         = 0x56156431e000
+457   brk(0x56156433f000)               = 0x56156433f000
+457   uname({sysname="Linux", nodename="b6edace0ebe4", ...}) = 0
+457   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+457   connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+457   close(3)                          = 0
+457   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+457   connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+457   close(3)                          = 0
+457   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+457   newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+457   openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+457   read(3, "# /etc/nsswitch.conf\n#\n# Example configuration of GNU Name Service Switch functionality.\n# If you have the `glibc-doc-reference'"..., 4096) = 494
+457   read(3, "", 4096)                 = 0
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+457   close(3)                          = 0
+457   newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=19, ...}, 0) = 0
+457   openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_EMPTY_PATH) = 0
+457   read(3, "# The \"order\" line is only used by old versions of the C library.\norder hosts,bind\nmulti on\n", 4096) = 92
+457   read(3, "", 4096)                 = 0
+457   close(3)                          = 0
+457   futex(0x7fba5a2ce32c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+457   openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=19, ...}, AT_EMPTY_PATH) = 0
+457   read(3, "nameserver 8.8.8.8\n", 4096) = 19
+457   read(3, "", 4096)                 = 0
+457   uname({sysname="Linux", nodename="b6edace0ebe4", ...}) = 0
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=19, ...}, AT_EMPTY_PATH) = 0
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=174, ...}, AT_EMPTY_PATH) = 0
+457   lseek(3, 0, SEEK_SET)             = 0
+457   read(3, "127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nff00::0\tip6-mcastprefix\nff02::1\tip6-allnodes\nf"..., 4096) = 174
+457   read(3, "", 4096)                 = 0
+457   close(3)                          = 0
+457   exit_group(0)                     = ?
+457   +++ exited with 0 +++

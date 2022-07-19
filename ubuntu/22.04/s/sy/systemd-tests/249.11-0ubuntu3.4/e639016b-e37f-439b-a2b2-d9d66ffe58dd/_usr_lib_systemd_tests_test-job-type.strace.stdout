@@ -1,0 +1,186 @@
+
+With collapsing for service state dead
+=========================================
+start + start = start
+start + start + start = start
+start + start + verify-active = start
+start + start + reload = start
+start + start + restart = restart
+start + verify-active = start
+start + verify-active + start = start
+start + verify-active + verify-active = start
+start + verify-active + reload = start
+start + verify-active + restart = restart
+Not mergeable: start + stop
+start + reload = start
+start + reload + start = start
+start + reload + verify-active = start
+start + reload + reload = start
+start + reload + restart = restart
+start + restart = restart
+start + restart + start = restart
+start + restart + verify-active = restart
+start + restart + reload = restart
+start + restart + restart = restart
+verify-active + start = start
+verify-active + start + start = start
+verify-active + start + verify-active = start
+verify-active + start + reload = start
+verify-active + start + restart = restart
+verify-active + verify-active = verify-active
+verify-active + verify-active + start = start
+verify-active + verify-active + verify-active = verify-active
+verify-active + verify-active + reload = reload
+verify-active + verify-active + restart = restart
+Not mergeable: verify-active + stop
+verify-active + reload = reload
+verify-active + reload + start = start
+verify-active + reload + verify-active = reload
+verify-active + reload + reload = reload
+verify-active + reload + restart = restart
+verify-active + restart = restart
+verify-active + restart + start = restart
+verify-active + restart + verify-active = restart
+verify-active + restart + reload = restart
+verify-active + restart + restart = restart
+Not mergeable: stop + start
+Not mergeable: stop + verify-active
+stop + stop = stop
+stop + stop + stop = stop
+Not mergeable: stop + reload
+Not mergeable: stop + restart
+reload + start = start
+reload + start + start = start
+reload + start + verify-active = start
+reload + start + reload = start
+reload + start + restart = restart
+reload + verify-active = reload
+reload + verify-active + start = start
+reload + verify-active + verify-active = reload
+reload + verify-active + reload = reload
+reload + verify-active + restart = restart
+Not mergeable: reload + stop
+reload + reload = reload
+reload + reload + start = start
+reload + reload + verify-active = reload
+reload + reload + reload = reload
+reload + reload + restart = restart
+reload + restart = restart
+reload + restart + start = restart
+reload + restart + verify-active = restart
+reload + restart + reload = restart
+reload + restart + restart = restart
+restart + start = restart
+restart + start + start = restart
+restart + start + verify-active = restart
+restart + start + reload = restart
+restart + start + restart = restart
+restart + verify-active = restart
+restart + verify-active + start = restart
+restart + verify-active + verify-active = restart
+restart + verify-active + reload = restart
+restart + verify-active + restart = restart
+Not mergeable: restart + stop
+restart + reload = restart
+restart + reload + start = restart
+restart + reload + verify-active = restart
+restart + reload + reload = restart
+restart + reload + restart = restart
+restart + restart = restart
+restart + restart + start = restart
+restart + restart + verify-active = restart
+restart + restart + reload = restart
+restart + restart + restart = restart
+
+With collapsing for service state running
+=========================================
+start + start = start
+start + start + start = start
+start + start + verify-active = start
+start + start + reload = reload
+start + start + restart = restart
+start + verify-active = start
+start + verify-active + start = start
+start + verify-active + verify-active = start
+start + verify-active + reload = reload
+start + verify-active + restart = restart
+Not mergeable: start + stop
+start + reload = reload
+start + reload + start = reload
+start + reload + verify-active = reload
+start + reload + reload = reload
+start + reload + restart = restart
+start + restart = restart
+start + restart + start = restart
+start + restart + verify-active = restart
+start + restart + reload = restart
+start + restart + restart = restart
+verify-active + start = start
+verify-active + start + start = start
+verify-active + start + verify-active = start
+verify-active + start + reload = reload
+verify-active + start + restart = restart
+verify-active + verify-active = verify-active
+verify-active + verify-active + start = start
+verify-active + verify-active + verify-active = verify-active
+verify-active + verify-active + reload = reload
+verify-active + verify-active + restart = restart
+Not mergeable: verify-active + stop
+verify-active + reload = reload
+verify-active + reload + start = reload
+verify-active + reload + verify-active = reload
+verify-active + reload + reload = reload
+verify-active + reload + restart = restart
+verify-active + restart = restart
+verify-active + restart + start = restart
+verify-active + restart + verify-active = restart
+verify-active + restart + reload = restart
+verify-active + restart + restart = restart
+Not mergeable: stop + start
+Not mergeable: stop + verify-active
+stop + stop = stop
+stop + stop + stop = stop
+Not mergeable: stop + reload
+Not mergeable: stop + restart
+reload + start = reload
+reload + start + start = reload
+reload + start + verify-active = reload
+reload + start + reload = reload
+reload + start + restart = restart
+reload + verify-active = reload
+reload + verify-active + start = reload
+reload + verify-active + verify-active = reload
+reload + verify-active + reload = reload
+reload + verify-active + restart = restart
+Not mergeable: reload + stop
+reload + reload = reload
+reload + reload + start = reload
+reload + reload + verify-active = reload
+reload + reload + reload = reload
+reload + reload + restart = restart
+reload + restart = restart
+reload + restart + start = restart
+reload + restart + verify-active = restart
+reload + restart + reload = restart
+reload + restart + restart = restart
+restart + start = restart
+restart + start + start = restart
+restart + start + verify-active = restart
+restart + start + reload = restart
+restart + start + restart = restart
+restart + verify-active = restart
+restart + verify-active + start = restart
+restart + verify-active + verify-active = restart
+restart + verify-active + reload = restart
+restart + verify-active + restart = restart
+Not mergeable: restart + stop
+restart + reload = restart
+restart + reload + start = restart
+restart + reload + verify-active = restart
+restart + reload + reload = restart
+restart + reload + restart = restart
+restart + restart = restart
+restart + restart + start = restart
+restart + restart + verify-active = restart
+restart + restart + reload = restart
+restart + restart + restart = restart

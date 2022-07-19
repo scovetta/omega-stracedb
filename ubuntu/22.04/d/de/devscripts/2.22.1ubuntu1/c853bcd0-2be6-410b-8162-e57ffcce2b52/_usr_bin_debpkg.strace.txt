@@ -1,0 +1,284 @@
+4167  execve("/usr/bin/debpkg", ["/usr/bin/debpkg"], 0x7fffcbf48940 /* 12 vars */) = 0
+4167  brk(NULL)                         = 0x55e8606e8000
+4167  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdd6753500) = -1 EINVAL (Invalid argument)
+4167  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2d0435b000
+4167  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+4167  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+4167  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11329, ...}, AT_EMPTY_PATH) = 0
+4167  mmap(NULL, 11329, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2d04358000
+4167  close(3)                          = 0
+4167  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+4167  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+4167  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+4167  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+4167  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+4167  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+4167  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+4167  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2d04130000
+4167  mmap(0x7f2d04158000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f2d04158000
+4167  mmap(0x7f2d042ed000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f2d042ed000
+4167  mmap(0x7f2d04345000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f2d04345000
+4167  mmap(0x7f2d0434b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2d0434b000
+4167  close(3)                          = 0
+4167  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2d0412d000
+4167  arch_prctl(ARCH_SET_FS, 0x7f2d0412d740) = 0
+4167  set_tid_address(0x7f2d0412da10)   = 4167
+4167  set_robust_list(0x7f2d0412da20, 24) = 0
+4167  rseq(0x7f2d0412e0e0, 0x20, 0, 0x53053053) = 0
+4167  mprotect(0x7f2d04345000, 16384, PROT_READ) = 0
+4167  mprotect(0x55e85fac0000, 4096, PROT_READ) = 0
+4167  mprotect(0x7f2d04395000, 8192, PROT_READ) = 0
+4167  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+4167  munmap(0x7f2d04358000, 11329)     = 0
+4167  execve("/usr/share/devscripts/debpkg", ["/usr/bin/debpkg"], 0x7ffdd67536d8 /* 12 vars */) = 0
+4167  brk(NULL)                         = 0x558fb8b40000
+4167  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd21686380) = -1 EINVAL (Invalid argument)
+4167  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faaacc75000
+4167  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+4167  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+4167  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11329, ...}, AT_EMPTY_PATH) = 0
+4167  mmap(NULL, 11329, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7faaacc72000
+4167  close(3)                          = 0
+4167  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+4167  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+4167  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+4167  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7faaacb8b000
+4167  mmap(0x7faaacb99000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7faaacb99000
+4167  mmap(0x7faaacc15000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7faaacc15000
+4167  mmap(0x7faaacc70000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7faaacc70000
+4167  close(3)                          = 0
+4167  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+4167  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+4167  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+4167  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+4167  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+4167  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+4167  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+4167  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7faaac963000
+4167  mmap(0x7faaac98b000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7faaac98b000
+4167  mmap(0x7faaacb20000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7faaacb20000
+4167  mmap(0x7faaacb78000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7faaacb78000
+4167  mmap(0x7faaacb7e000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7faaacb7e000
+4167  close(3)                          = 0
+4167  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+4167  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@ \0\0\0\0\0\0@\0\0\0\0\0\0\0H\1\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\24\0\0\0\0\0\0\360\24\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+4167  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+4167  mmap(NULL, 233888, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7faaac929000
+4167  mprotect(0x7faaac92b000, 188416, PROT_NONE) = 0
+4167  mmap(0x7faaac92b000, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7faaac92b000
+4167  mmap(0x7faaac93f000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7faaac93f000
+4167  mmap(0x7faaac959000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7faaac959000
+4167  mmap(0x7faaac95b000, 29088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7faaac95b000
+4167  close(3)                          = 0
+4167  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faaac927000
+4167  arch_prctl(ARCH_SET_FS, 0x7faaac927b80) = 0
+4167  set_tid_address(0x7faaac927e50)   = 4167
+4167  set_robust_list(0x7faaac927e60, 24) = 0
+4167  rseq(0x7faaac928520, 0x20, 0, 0x53053053) = 0
+4167  mprotect(0x7faaacb78000, 16384, PROT_READ) = 0
+4167  mprotect(0x7faaac959000, 4096, PROT_READ) = 0
+4167  mprotect(0x7faaacc70000, 4096, PROT_READ) = 0
+4167  mprotect(0x558fb6d43000, 65536, PROT_READ) = 0
+4167  mprotect(0x7faaaccaf000, 8192, PROT_READ) = 0
+4167  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+4167  munmap(0x7faaacc72000, 11329)     = 0
+4167  rt_sigaction(SIGFPE, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7faaac9a5520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  getrandom("\xef\xf9\xbb\xad\xf5\x1d\xec\xc1", 8, GRND_NONBLOCK) = 8
+4167  brk(NULL)                         = 0x558fb8b40000
+4167  brk(0x558fb8b61000)               = 0x558fb8b61000
+4167  getuid()                          = 0
+4167  geteuid()                         = 0
+4167  getgid()                          = 0
+4167  getegid()                         = 0
+4167  openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+4167  fcntl(3, F_GETFD)                 = 0x1 (flags FD_CLOEXEC)
+4167  read(3, "\327Z\200\316", 4)       = 4
+4167  close(3)                          = 0
+4167  getuid()                          = 0
+4167  geteuid()                         = 0
+4167  getgid()                          = 0
+4167  getegid()                         = 0
+4167  readlink("/proc/self/exe", "/usr/bin/perl", 4095) = 13
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/5.34.0/x86_64-linux-gnu-thread-multi", 0x7ffd21685ed0, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/5.34.0", 0x7ffd21685ed0, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/x86_64-linux-gnu-thread-multi", 0x7ffd21685ed0, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0/x86_64-linux-gnu-thread-multi", 0x7ffd21685ed0, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0", 0x7ffd21685ed0, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/x86_64-linux-gnu-thread-multi", 0x7ffd21685ed0, 0) = -1 ENOENT (No such file or directory)
+4167  fcntl(0, F_SETFD, 0)              = 0
+4167  ioctl(0, TCGETS, 0x7ffd21685cc0)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(0, 0, SEEK_CUR)             = 0
+4167  fcntl(1, F_SETFD, 0)              = 0
+4167  ioctl(1, TCGETS, 0x7ffd21685cc0)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(1, 0, SEEK_CUR)             = 0
+4167  fcntl(2, F_SETFD, 0)              = 0
+4167  ioctl(2, TCGETS, 0x7ffd21685cc0)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(2, 0, SEEK_CUR)             = 0
+4167  openat(AT_FDCWD, "/usr/share/devscripts/debpkg", O_RDONLY|O_CLOEXEC) = 3
+4167  fcntl(3, F_GETFD)                 = 0x1 (flags FD_CLOEXEC)
+4167  ioctl(3, TCGETS, 0x7ffd21685dc0)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(3, 0, SEEK_CUR)             = 0
+4167  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=3443, ...}, AT_EMPTY_PATH) = 0
+4167  getuid()                          = 0
+4167  geteuid()                         = 0
+4167  getgid()                          = 0
+4167  getegid()                         = 0
+4167  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  brk(0x558fb8b82000)               = 0x558fb8b82000
+4167  read(3, "#!/usr/bin/perl\n\n# Perl version of Christoph Lameter's debpkg program.\n# Written by Julian Gilbey, December 1998.\n\n# Copyright 1"..., 8192) = 3443
+4167  newfstatat(AT_FDCWD, "/etc/perl/strict.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/etc/perl/strict.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/strict.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/strict.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/strict.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/strict.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/strict.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/strict.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/strict.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/strict.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/strict.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/strict.pm", {st_mode=S_IFREG|0644, st_size=1606, ...}, 0) = 0
+4167  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/strict.pm", O_RDONLY|O_CLOEXEC) = 4
+4167  ioctl(4, TCGETS, 0x7ffd21685610)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(4, 0, SEEK_CUR)             = 0
+4167  read(4, "package strict;\n\n$strict::VERSION = \"1.12\";\n\nmy ( %bitmask, %explicit_bitmask );\n\nBEGIN {\n    # Verify that we're called correct"..., 8192) = 1606
+4167  brk(0x558fb8ba3000)               = 0x558fb8ba3000
+4167  lseek(4, 1605, SEEK_SET)          = 1605
+4167  lseek(4, 0, SEEK_CUR)             = 1605
+4167  close(4)                          = 0
+4167  newfstatat(AT_FDCWD, "/etc/perl/warnings.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/etc/perl/warnings.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/warnings.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/warnings.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/warnings.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/warnings.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/warnings.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/warnings.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/warnings.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/warnings.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/warnings.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/warnings.pm", {st_mode=S_IFREG|0644, st_size=27559, ...}, 0) = 0
+4167  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/warnings.pm", O_RDONLY|O_CLOEXEC) = 4
+4167  ioctl(4, TCGETS, 0x7ffd21685610)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(4, 0, SEEK_CUR)             = 0
+4167  read(4, "# -*- buffer-read-only: t -*-\n# !!!!!!!   DO NOT EDIT THIS FILE   !!!!!!!\n# This file is built by regen/warnings.pl.\n# Any chang"..., 8192) = 8192
+4167  read(4, "0\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\", # [13]\n    'once'\t\t\t\t=> \"\\x00\\x00\\x00\\x10\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0"..., 8192) = 8192
+4167  read(4, "8]\n    'nonchar'\t\t\t\t=> \"\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x00\\x00\\x00\", # [49]\n    'numeric'\t\t\t\t="..., 8192) = 8192
+4167  brk(0x558fb8bc4000)               = 0x558fb8bc4000
+4167  read(4, " && $DB::args[0] =~ /^$category=/ ;\n        }\n        $i -= 2 ;\n    }\n    elsif ($has_level) {\n        $i = 2 + shift;\n    }\n   "..., 8192) = 2983
+4167  brk(0x558fb8be6000)               = 0x558fb8be6000
+4167  lseek(4, 27544, SEEK_SET)         = 27544
+4167  lseek(4, 0, SEEK_CUR)             = 27544
+4167  close(4)                          = 0
+4167  newfstatat(AT_FDCWD, "/etc/perl/File/Basename.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/etc/perl/File/Basename.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/File/Basename.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/File/Basename.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Basename.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Basename.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/File/Basename.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/File/Basename.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/File/Basename.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/File/Basename.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/File/Basename.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/File/Basename.pm", {st_mode=S_IFREG|0644, st_size=5429, ...}, 0) = 0
+4167  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/File/Basename.pm", O_RDONLY|O_CLOEXEC) = 4
+4167  ioctl(4, TCGETS, 0x7ffd21685610)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(4, 0, SEEK_CUR)             = 0
+4167  read(4, "package File::Basename;\n\n# File::Basename is used during the Perl build, when the re extension may\n# not be available, but we on"..., 8192) = 5429
+4167  brk(0x558fb8c07000)               = 0x558fb8c07000
+4167  read(4, "", 8192)                 = 0
+4167  close(4)                          = 0
+4167  newfstatat(AT_FDCWD, "/etc/perl/Exporter.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/etc/perl/Exporter.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/Exporter.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu/perl/5.34.0/Exporter.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Exporter.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Exporter.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/Exporter.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl5/5.34/Exporter.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/Exporter.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/share/perl5/Exporter.pm", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/Exporter.pmc", 0x7ffd21685850, 0) = -1 ENOENT (No such file or directory)
+4167  newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/Exporter.pm", {st_mode=S_IFREG|0644, st_size=2336, ...}, 0) = 0
+4167  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/perl-base/Exporter.pm", O_RDONLY|O_CLOEXEC) = 4
+4167  ioctl(4, TCGETS, 0x7ffd21685610)  = -1 ENOTTY (Inappropriate ioctl for device)
+4167  lseek(4, 0, SEEK_CUR)             = 0
+4167  read(4, "package Exporter;\n\nuse strict;\nno strict 'refs';\n\nour $Debug = 0;\nour $ExportLevel = 0;\nour $Verbose ||= 0;\nour $VERSION = '5.76"..., 8192) = 2336
+4167  lseek(4, 2335, SEEK_SET)          = 2335
+4167  lseek(4, 0, SEEK_CUR)             = 2335
+4167  close(4)                          = 0
+4167  getuid()                          = 0
+4167  geteuid()                         = 0
+4167  getgid()                          = 0
+4167  getegid()                         = 0
+4167  read(3, "", 8192)                 = 0
+4167  close(3)                          = 0
+4167  write(2, "Usage: debpkg --help|--version|dpkg-options\n", 44) = 44
+4167  rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7faaac9a5520}, 8) = 0
+4167  rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4167  exit_group(1)                     = ?
+4167  +++ exited with 1 +++

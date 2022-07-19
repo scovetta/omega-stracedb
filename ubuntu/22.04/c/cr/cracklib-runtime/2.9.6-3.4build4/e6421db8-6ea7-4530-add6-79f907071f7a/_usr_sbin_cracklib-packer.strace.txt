@@ -1,0 +1,67 @@
+523   execve("/usr/sbin/cracklib-packer", ["/usr/sbin/cracklib-packer"], 0x7ffd08f87950 /* 12 vars */) = 0
+523   brk(NULL)                         = 0x55ab5645b000
+523   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdee57cde0) = -1 EINVAL (Invalid argument)
+523   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7444ba6000
+523   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+523   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+523   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6193, ...}, AT_EMPTY_PATH) = 0
+523   mmap(NULL, 6193, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7444ba4000
+523   close(3)                          = 0
+523   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrack.so.2", O_RDONLY|O_CLOEXEC) = 3
+523   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\241\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3104\0\0\0\0\0\0\3104\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+523   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=43080, ...}, AT_EMPTY_PATH) = 0
+523   mmap(NULL, 61616, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7444b94000
+523   mprotect(0x7f7444b98000, 24576, PROT_NONE) = 0
+523   mmap(0x7f7444b98000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f7444b98000
+523   mmap(0x7f7444b9b000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f7444b9b000
+523   mmap(0x7f7444b9e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f7444b9e000
+523   mmap(0x7f7444ba0000, 12464, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7444ba0000
+523   close(3)                          = 0
+523   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+523   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+523   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+523   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+523   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+523   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+523   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+523   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f744496c000
+523   mmap(0x7f7444994000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7444994000
+523   mmap(0x7f7444b29000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f7444b29000
+523   mmap(0x7f7444b81000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f7444b81000
+523   mmap(0x7f7444b87000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7444b87000
+523   close(3)                          = 0
+523   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7444969000
+523   arch_prctl(ARCH_SET_FS, 0x7f7444969740) = 0
+523   set_tid_address(0x7f7444969a10)   = 523
+523   set_robust_list(0x7f7444969a20, 24) = 0
+523   rseq(0x7f744496a0e0, 0x20, 0, 0x53053053) = 0
+523   mprotect(0x7f7444b81000, 16384, PROT_READ) = 0
+523   mprotect(0x7f7444b9e000, 4096, PROT_READ) = 0
+523   mprotect(0x55ab54ab2000, 4096, PROT_READ) = 0
+523   mprotect(0x7f7444be0000, 8192, PROT_READ) = 0
+523   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+523   munmap(0x7f7444ba4000, 6193)      = 0
+523   getrandom("\x5d\x19\xf9\xd9\xdd\x31\x5c\x65", 8, GRND_NONBLOCK) = 8
+523   brk(NULL)                         = 0x55ab5645b000
+523   brk(0x55ab5647c000)               = 0x55ab5647c000
+523   openat(AT_FDCWD, "/var/cache/cracklib/cracklib_dict.pwd", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+523   openat(AT_FDCWD, "/var/cache/cracklib/cracklib_dict.pwi", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4
+523   openat(AT_FDCWD, "/var/cache/cracklib/cracklib_dict.hwm", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 5
+523   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+523   newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=79, ...}, AT_EMPTY_PATH) = 0
+523   read(0, "", 4096)                 = 0
+523   lseek(3, 0, SEEK_CUR)             = 0
+523   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+523   write(4, "1Vwp\0\0\0\0\20\0\0\0\0\0\0\0", 16) = 16
+523   lseek(4, 0, SEEK_SET)             = 0
+523   newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+523   write(4, "1Vwp\0\0\0\0\20\0\0\0", 12) = 12
+523   close(4)                          = 0
+523   write(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 16
+523   close(3)                          = 0
+523   write(5, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1024) = 1024
+523   close(5)                          = 0
+523   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+523   write(1, "0 0\n", 4)              = 4
+523   exit_group(0)                     = ?
+523   +++ exited with 0 +++

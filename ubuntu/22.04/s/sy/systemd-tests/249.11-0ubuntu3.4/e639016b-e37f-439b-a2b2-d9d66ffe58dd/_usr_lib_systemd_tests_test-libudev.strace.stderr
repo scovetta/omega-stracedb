@@ -1,0 +1,274 @@
+/* test_device, device /sys//devices/virtual/mem/null */
+*** device: 0x556c262adc20 ***
+syspath:   '/sys/devices/virtual/mem/null'
+sysname:   'null'
+devpath:   '/devices/virtual/mem/null'
+subsystem: 'mem'
+devname:   '/dev/null'
+devnum:    1:3
+property:  'DEVMODE=0666'
+property:  'DEVNAME=/dev/null'
+property:  'DEVPATH=/devices/virtual/mem/null'
+property:  'MAJOR=1'
+property:  'MINOR=3'
+property:  'SUBSYSTEM=mem'
+found 6 properties
+MAJOR: '1'
+attr{dev}: '1:3'
+/* test_device_devnum, device 1:3 */
+*** device: 0x556c262adc20 ***
+syspath:   '/sys/devices/virtual/mem/null'
+sysname:   'null'
+devpath:   '/devices/virtual/mem/null'
+subsystem: 'mem'
+devname:   '/dev/null'
+devnum:    1:3
+property:  'DEVMODE=0666'
+property:  'DEVNAME=/dev/null'
+property:  'DEVPATH=/devices/virtual/mem/null'
+property:  'MAJOR=1'
+property:  'MINOR=3'
+property:  'SUBSYSTEM=mem'
+found 6 properties
+MAJOR: '1'
+attr{dev}: '1:3'
+looking up device: 'block:sda'
+*** device: 0x556c262ae310 ***
+syspath:   '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/block/sda'
+sysname:   'sda'
+devpath:   '/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/block/sda'
+subsystem: 'block'
+devtype:   'disk'
+devname:   '/dev/sda'
+devnum:    8:0
+property:  'DEVNAME=/dev/sda'
+property:  'DEVPATH=/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/block/sda'
+property:  'DEVTYPE=disk'
+property:  'MAJOR=8'
+property:  'MINOR=0'
+property:  'SUBSYSTEM=block'
+found 6 properties
+MAJOR: '8'
+attr{dev}: '8:0'
+looking up device: 'subsystem:pci'
+*** device: 0x556c262ae310 ***
+syspath:   '/sys/bus/pci'
+sysname:   'pci'
+devpath:   '/bus/pci'
+subsystem: 'subsystem'
+property:  'DEVPATH=/bus/pci'
+property:  'SUBSYSTEM=subsystem'
+found 2 properties
+looking up device: 'drivers:scsi:sd'
+*** device: 0x556c262ae310 ***
+syspath:   '/sys/bus/scsi/drivers/sd'
+sysname:   'sd'
+devpath:   '/bus/scsi/drivers/sd'
+subsystem: 'drivers'
+property:  'DEVPATH=/bus/scsi/drivers/sd'
+property:  'SUBSYSTEM=drivers'
+found 2 properties
+looking up device: 'module:printk'
+*** device: 0x556c262ae310 ***
+syspath:   '/sys/module/printk'
+sysname:   'printk'
+devpath:   '/module/printk'
+subsystem: 'module'
+property:  'DEVPATH=/module/printk'
+property:  'SUBSYSTEM=module'
+found 2 properties
+/* test_device_parents, device /sys//devices/virtual/mem/null */
+looking at parents
+*** device: 0x556c262ae310 ***
+syspath:   '/sys/devices/virtual/mem/null'
+sysname:   'null'
+devpath:   '/devices/virtual/mem/null'
+subsystem: 'mem'
+devname:   '/dev/null'
+devnum:    1:3
+property:  'DEVMODE=0666'
+property:  'DEVNAME=/dev/null'
+property:  'DEVPATH=/devices/virtual/mem/null'
+property:  'MAJOR=1'
+property:  'MINOR=3'
+property:  'SUBSYSTEM=mem'
+found 6 properties
+MAJOR: '1'
+attr{dev}: '1:3'
+looking at parents again
+*** device: 0x556c262ae310 ***
+syspath:   '/sys/devices/virtual/mem/null'
+sysname:   'null'
+devpath:   '/devices/virtual/mem/null'
+subsystem: 'mem'
+devname:   '/dev/null'
+devnum:    1:3
+property:  'DEVMODE=0666'
+property:  'DEVNAME=/dev/null'
+property:  'DEVPATH=/devices/virtual/mem/null'
+property:  'MAJOR=1'
+property:  'MINOR=3'
+property:  'SUBSYSTEM=mem'
+found 6 properties
+MAJOR: '1'
+attr{dev}: '1:3'
+/* test_enumerate */
+enumerate '<all>'
+device: '/sys/devices/LNXSYSTM:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:01' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:02' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:03' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:04' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:05' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:06' (acpi)
+device: '/sys/devices/LNXSYSTM:00/ACPI0007:07' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/ACPI0003:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/ACPI0003:00/power_supply/AC1' (power_supply)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/PNP0003:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/PNP0C0A:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/PNP0C0A:00/power_supply/BAT1' (power_supply)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/00f91536-0000-0000-0000-000000000000' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/03e133d9-070b-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/03e133da-070b-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/03e133db-070b-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/03e133dc-070b-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/03e133dd-070b-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/190667c7-ba9f-4ec6-aa7d-d4ba62442ae7' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/190667c7-ba9f-4ec6-aa7d-d4ba62442ae7/pciba9f:00/ba9f:00:00.0' (pci)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/190667c7-ba9f-4ec6-aa7d-d4ba62442ae7/pciba9f:00/ba9f:00:00.0/virtio1' (virtio)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/190667c7-ba9f-4ec6-aa7d-d4ba62442ae7/pciba9f:00/pci_bus/ba9f:00' (pci_bus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/1eccfd72-4b41-45ef-b73a-4a6e44c12924' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/204bcdb0-c214-4eab-9acb-38b8c4a7f5ef' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/2dd1ce17-079e-403c-b352-a1921ee207ee' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/711dad3a-73ce-468b-90a9-ede6906841b2' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/7a09ca63-9bcf-4012-bfd5-beac4a223987' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/7a09ca63-9bcf-4012-bfd5-beac4a223987/pci9bcf:00/9bcf:00:00.0' (pci)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/7a09ca63-9bcf-4012-bfd5-beac4a223987/pci9bcf:00/pci_bus/9bcf:00' (pci_bus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/8a8ee148-06e1-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/8a8ee149-06e1-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/8a8ee14a-06e1-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/8a8ee14b-06e1-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/8a8ee14c-06e1-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7b4-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7b5-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7b6-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7b7-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7b8-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7ba-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7bb-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7bc-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7bd-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7bf-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/a121d7c0-facb-11e6-bd58-64006a7986d3' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/c1c450f6-1c7d-4c89-959b-995efa50bd43' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/c1c450f6-1c7d-4c89-959b-995efa50bd43/pci1c7d:00/1c7d:00:00.0' (pci)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/c1c450f6-1c7d-4c89-959b-995efa50bd43/pci1c7d:00/1c7d:00:00.0/virtio0' (virtio)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/c1c450f6-1c7d-4c89-959b-995efa50bd43/pci1c7d:00/pci_bus/1c7d:00' (pci_bus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/c63c9bdf-5fa5-4208-b03f-6b458b365592' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c7b-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c7f-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c80-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c81-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c82-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c84-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c85-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c86-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c87-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c88-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/cfe42c8a-06a7-11ed-94ed-c8348e4b99da' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/f33daa6a-80dd-4a7c-8e8a-47ca3dbf6864' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/f33daa6a-80dd-4a7c-8e8a-47ca3dbf6864/pci80dd:00/80dd:00:00.0' (pci)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/f33daa6a-80dd-4a7c-8e8a-47ca3dbf6864/pci80dd:00/80dd:00:00.0/virtio3' (virtio)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/f33daa6a-80dd-4a7c-8e8a-47ca3dbf6864/pci80dd:00/pci_bus/80dd:00' (pci_bus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0' (scsi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/scsi_host/host0' (scsi_host)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0' (scsi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0' (scsi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/block/sda' (block)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/bsg/0:0:0:0' (bsg)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/scsi_device/0:0:0:0' (scsi_device)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/scsi_disk/0:0:0:0' (scsi_disk)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:0/scsi_generic/sg0' (scsi_generic)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:1' (scsi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:1/block/sdb' (block)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:1/bsg/0:0:0:1' (bsg)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:1/scsi_device/0:0:0:1' (scsi_device)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:1/scsi_disk/0:0:0:1' (scsi_disk)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:1/scsi_generic/sg1' (scsi_generic)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:2' (scsi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:2/block/sdc' (block)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:2/bsg/0:0:0:2' (bsg)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:2/scsi_device/0:0:0:2' (scsi_device)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:2/scsi_disk/0:0:0:2' (scsi_disk)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fd1d2cbd-ce7c-535c-966b-eb5f811c95f0/host0/target0:0:0/0:0:0:2/scsi_generic/sg2' (scsi_generic)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fdc1bbc7-7bef-4041-8931-29d0fb855206' (vmbus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fdc1bbc7-7bef-4041-8931-29d0fb855206/pci7bef:00/7bef:00:00.0' (pci)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fdc1bbc7-7bef-4041-8931-29d0fb855206/pci7bef:00/7bef:00:00.0/virtio2' (virtio)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/VMBUS:00/fdc1bbc7-7bef-4041-8931-29d0fb855206/pci7bef:00/pci_bus/7bef:00' (pci_bus)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/HYPER_V_GEN_COUNTER_V1:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0B00:00' (acpi)
+device: '/sys/devices/LNXSYSTM:00/LNXSYBUS:01' (acpi)
+device: '/sys/devices/breakpoint' (event_source)
+device: '/sys/devices/kprobe' (event_source)
+device: '/sys/devices/msr' (event_source)
+device: '/sys/devices/platform/HYPER_V_GEN_COUNTER_V1:00' (platform)
+device: '/sys/devices/platform/pcspkr' (platform)
+device: '/sys/devices/platform/platform-framebuffer.0' (platform)
+device: '/sys/devices/platform/serial8250' (platform)
+device: '/sys/devices/platform/serial8250/tty/ttyS0' (tty)
+device: '/sys/devices/platform/serial8250/tty/ttyS1' (tty)
+device: '/sys/devices/platform/serial8250/tty/ttyS2' (tty)
+device: '/sys/devices/platform/serial8250/tty/ttyS3' (tty)
+device: '/sys/devices/platform/vhci_hcd.0' (platform)
+device: '/sys/devices/platform/vhci_hcd.0/usb1' (usb)
+device: '/sys/devices/platform/vhci_hcd.0/usb1/1-0:1.0' (usb)
+device: '/sys/devices/platform/vhci_hcd.0/usb2' (usb)
+device: '/sys/devices/platform/vhci_hcd.0/usb2/2-0:1.0' (usb)
+device: '/sys/devices/pnp0/00:00' (pnp)
+device: '/sys/devices/pnp0/00:00/cmos_nvram0' (nvmem)
+device: '/sys/devices/pnp0/00:00/rtc/rtc0' (rtc)
+device: '/sys/devices/pnp0/00:00/rtc/rtc0/alarmtimer.0.auto' (platform)
+device: '/sys/devices/software' (event_source)
+device: '/sys/devices/system/clockevents/broadcast' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent0' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent1' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent2' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent3' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent4' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent5' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent6' (clockevents)
+device: '/sys/devices/system/clockevents/clockevent7' (clockevents)
+device: '/sys/devices/system/clocksource/clocksource0' (clocksource)
+device: '/sys/devices/system/container/ACPI0004:00' (container)
+device: '/sys/devices/system/container/ACPI0004:00/ACPI0003:00' (platform)
+device: '/sys/devices/system/container/ACPI0004:00/PNP0003:00' (platform)
+device: '/sys/devices/system/container/ACPI0004:00/PNP0C0A:00' (platform)
+device: '/sys/devices/system/container/ACPI0004:00/VMBUS:00' (platform)
+device: '/sys/devices/system/cpu/cpu0' (cpu)
+device: '/sys/devices/system/cpu/cpu1' (cpu)
+device: '/sys/devices/system/cpu/cpu2' (cpu)
+device: '/sys/devices/system/cpu/cpu3' (cpu)
+device: '/sys/devices/system/cpu/cpu4' (cpu)
+device: '/sys/devices/system/cpu/cpu5' (cpu)
+device: '/sys/devices/system/cpu/cpu6' (cpu)
+device: '/sys/devices/system/cpu/cpu7' (cpu)
+device: '/sys/devices/system/memory/memory0' (memory)
+device: '/sys/devices/system/memory/memory1' (memory)
+device: '/sys/devices/system/memory/memory10' (memory)
+device: '/sys/devices/system/memory/memory100' (memory)
+device: '/sys/devices/system/memory/memory101' (memory)
+device: '/sys/devices/system/memory/memory102' (memory)
+device: '/sys/devices/system/memory/memory103' (memory)
+device: '/sys/devices/system/memory/memory104' (memory)
+device: '/sys/devices/system/memory/memory105' (memory)
+device: '/sys/devices/system/memory/memory106' (memory)
+device: '/sys/devices/system/memory/memory107' (memory)
+device: '/sys/devices/system/memory/memory108' (memory)
+device: '/sys/devices/system/memory/memory109' (memory)
+device: '/sys/devices/system/memory/memory11' (memory)
+device: '/sys/devices/system/memory/memory110' (memory)

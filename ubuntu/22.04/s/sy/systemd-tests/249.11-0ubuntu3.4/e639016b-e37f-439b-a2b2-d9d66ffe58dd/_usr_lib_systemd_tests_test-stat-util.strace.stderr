@@ -1,0 +1,30 @@
+/* test_files_same */
+/* test_is_symlink */
+/* test_path_is_fs_type */
+/* test_path_is_temporary_fs */
+path_is_temporary_fs("/"): 0, no
+path_is_temporary_fs("/run"): 0, no
+path_is_temporary_fs("/sys"): 0, no
+path_is_temporary_fs("/sys/"): 0, no
+path_is_temporary_fs("/proc"): 0, no
+path_is_temporary_fs("/i-dont-exist"): -2, ENOENT
+path_is_temporary_fs("/var"): 0, no
+path_is_temporary_fs("/var/lib"): 0, no
+/* test_path_is_read_only_fs */
+path_is_read_only_fs("/"): 0, no
+path_is_read_only_fs("/run"): 0, no
+path_is_read_only_fs("/sys"): 1, yes
+path_is_read_only_fs("/sys/"): 1, yes
+path_is_read_only_fs("/proc"): 0, no
+path_is_read_only_fs("/i-dont-exist"): -2, ENOENT
+path_is_read_only_fs("/var"): 0, no
+path_is_read_only_fs("/var/lib"): 0, no
+/* test_fd_is_ns */
+/* test_device_major_minor_valid */
+/* test_device_path_make_canonical */
+Device /dev/null cannot be resolved, skipping test
+Device /dev/zero cannot be resolved, skipping test
+Device /dev/full cannot be resolved, skipping test
+Device /dev/random cannot be resolved, skipping test
+Device /dev/urandom cannot be resolved, skipping test
+Device /dev/tty cannot be resolved, skipping test

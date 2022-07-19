@@ -1,0 +1,22 @@
+Usage: write a property value to a device tree
+	fdtput <options> <dt file> <node> <property> [<value>...]
+	fdtput -c <options> <dt file> [<node>...]
+	fdtput -r <options> <dt file> [<node>...]
+	fdtput -d <options> <dt file> <node> [<property>...]
+
+The command line arguments are joined together into a single value.
+<type>	s=string, i=int, u=unsigned, x=hex
+	Optional modifier prefix:
+		hh or b=byte, h=2 byte, l=4 byte (default)
+
+Options: -[crdpt:vhV]
+  -c, --create     Create nodes if they don't already exist
+  -r, --remove     Delete nodes (and any subnodes) if they already exist
+  -d, --delete     Delete properties if they already exist
+  -p, --auto-path  Automatically create nodes as needed for the node path
+  -t, --type <arg> Type of data
+  -v, --verbose    Display each value decoded from command line
+  -h, --help       Print this help and exit
+  -V, --version    Print version and exit
+
+Error: missing filename

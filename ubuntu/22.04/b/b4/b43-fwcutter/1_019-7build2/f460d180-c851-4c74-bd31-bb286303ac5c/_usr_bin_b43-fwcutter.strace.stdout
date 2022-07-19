@@ -1,0 +1,17 @@
+b43-fwcutter version 019
+
+A tool to extract firmware for a Broadcom 43xx device
+from a proprietary Broadcom 43xx device driver file.
+
+Usage: /usr/bin/b43-fwcutter [OPTION] [proprietary-driver-file]
+  --unsupported         Allow working on extractable but unsupported drivers
+  -l|--list             List supported driver versions
+  -b|--brcmsmac         create firmware for brcmsmac
+  -i|--identify         Only identify the driver file (don't extract)
+  -w|--target-dir DIR   Extract and write firmware to DIR
+  -v|--version          Print b43-fwcutter version
+  -h|--help             Print this help
+
+Example: /usr/bin/b43-fwcutter -w /lib/firmware wl_apsta.o
+         to extract the firmware blobs from wl_apsta.o and store
+         the resulting firmware in /lib/firmware

@@ -1,0 +1,32 @@
+usage: asm [options] file.s ...
+Flags:
+  -D value
+    	predefined symbol with optional simple value -D=identifier=value; can be set multiple times
+  -I value
+    	include directory; can be set multiple times
+  -S	print assembly and machine code
+  -V	print version and exit
+  -compiling-runtime
+    	source to be compiled is part of the Go runtime
+  -d value
+    	enable debugging settings; try -d help
+  -debug
+    	dump instructions as they are parsed
+  -dynlink
+    	support references to Go symbols defined in other shared libraries
+  -e	no limit on number of errors reported
+  -gensymabis
+    	write symbol ABI information to output file, don't assemble
+  -linkshared
+    	generate code that will be linked against Go shared libraries
+  -o string
+    	output file; default foo.o for /a/b/c/foo.s as first argument
+  -p string
+    	set expected package import to path
+  -shared
+    	generate code that can be linked into a shared library
+  -spectre list
+    	enable spectre mitigations in list (all, ret)
+  -trimpath string
+    	remove prefix from recorded source file paths
+  -v	print debug output

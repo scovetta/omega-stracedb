@@ -1,0 +1,63 @@
+515   execve("/usr/bin/fdtget", ["/usr/bin/fdtget"], 0x7ffec6891ac0 /* 12 vars */) = 0
+515   brk(NULL)                         = 0x55be51887000
+515   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc423f5820) = -1 EINVAL (Invalid argument)
+515   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6b8d629000
+515   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+515   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+515   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6253, ...}, AT_EMPTY_PATH) = 0
+515   mmap(NULL, 6253, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6b8d627000
+515   close(3)                          = 0
+515   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libfdt.so.1", O_RDONLY|O_CLOEXEC) = 3
+515   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240!\0\0\0\0\0\0@\0\0\0\0\0\0\0X\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\31\0\0\0\0\0\08\31\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+515   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39064, ...}, AT_EMPTY_PATH) = 0
+515   mmap(NULL, 40976, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6b8d61c000
+515   mmap(0x7f6b8d61e000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6b8d61e000
+515   mmap(0x7f6b8d623000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f6b8d623000
+515   mmap(0x7f6b8d625000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f6b8d625000
+515   close(3)                          = 0
+515   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+515   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+515   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+515   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+515   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+515   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+515   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+515   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6b8d3f4000
+515   mmap(0x7f6b8d41c000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6b8d41c000
+515   mmap(0x7f6b8d5b1000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f6b8d5b1000
+515   mmap(0x7f6b8d609000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f6b8d609000
+515   mmap(0x7f6b8d60f000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6b8d60f000
+515   close(3)                          = 0
+515   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6b8d3f1000
+515   arch_prctl(ARCH_SET_FS, 0x7f6b8d3f1740) = 0
+515   set_tid_address(0x7f6b8d3f1a10)   = 515
+515   set_robust_list(0x7f6b8d3f1a20, 24) = 0
+515   rseq(0x7f6b8d3f20e0, 0x20, 0, 0x53053053) = 0
+515   mprotect(0x7f6b8d609000, 16384, PROT_READ) = 0
+515   mprotect(0x7f6b8d625000, 4096, PROT_READ) = 0
+515   mprotect(0x55be50e97000, 4096, PROT_READ) = 0
+515   mprotect(0x7f6b8d663000, 8192, PROT_READ) = 0
+515   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+515   munmap(0x7f6b8d627000, 6253)      = 0
+515   write(2, "Usage: read values from device tree\n\tfdtget <options> <dt file> [<node> <property>]...\n\tfdtget -p <options> <dt file> [<node> ]."..., 305) = 305
+515   write(2, "  -t, ", 6)             = 6
+515   write(2, "--type <arg>    ", 16)  = 16
+515   write(2, "Type of data\n", 13)    = 13
+515   write(2, "  -p, ", 6)             = 6
+515   write(2, "--properties    ", 16)  = 16
+515   write(2, "List properties for each node\n", 30) = 30
+515   write(2, "  -l, ", 6)             = 6
+515   write(2, "--list          ", 16)  = 16
+515   write(2, "List subnodes for each node\n", 28) = 28
+515   write(2, "  -d, ", 6)             = 6
+515   write(2, "--default <arg> ", 16)  = 16
+515   write(2, "Default value to display when the property is missing\n", 54) = 54
+515   write(2, "  -h, ", 6)             = 6
+515   write(2, "--help          ", 16)  = 16
+515   write(2, "Print this help and exit\n", 25) = 25
+515   write(2, "  -V, ", 6)             = 6
+515   write(2, "--version       ", 16)  = 16
+515   write(2, "Print version and exit\n", 23) = 23
+515   write(2, "\nError: missing filename\n", 25) = 25
+515   exit_group(1)                     = ?
+515   +++ exited with 1 +++

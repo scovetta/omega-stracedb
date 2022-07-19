@@ -1,0 +1,17 @@
+ Help:				/usr/sbin/pkcscca -h
+ -h				Show this help
+
+ Migrate Object Version:	/usr/sbin/pkcscca -m v2objectsv3 [OPTIONS] 
+ -m v2objectsv3			Migrates CCA private token objects from CCA
+				encryption (used in v2) to software encryption 
+				(used in v3). 
+ Migrate Wrapped Keys:		/usr/sbin/pkcscca -m keys -s SLOTID -k KEYTYPE [OPTIONS] 
+ -m keys			Unwraps private keys with the old CCA master
+				key and wraps them with the new CCA master key
+ -s, --slotid SLOTID		PKCS slot number
+ -k aes|apka|asym|sym		Migrate selected keytype
+
+ Options:
+ -d, --datastore DATASTORE	CCA token datastore location
+ -v, --verbose LEVEL		set verbose level (optional):
+				none (default), error, warn, info, devel, debug

@@ -1,0 +1,24 @@
+Checks a package to catch common mistakes and improve your Rust code.
+
+Usage:
+    cargo clippy [options] [--] [<opts>...]
+
+Common options:
+    -h, --help               Print this message
+        --rustc              Pass all args to rustc
+    -V, --version            Print version info and exit
+
+Other options are the same as `cargo check`.
+
+To allow or deny a lint from the command line you can use `cargo clippy --`
+with:
+
+    -W --warn OPT       Set lint warnings
+    -A --allow OPT      Set lint allowed
+    -D --deny OPT       Set lint denied
+    -F --forbid OPT     Set lint forbidden
+
+You can use tool lints to allow or deny lints from your code, eg.:
+
+    #[allow(clippy::needless_lifetimes)]
+

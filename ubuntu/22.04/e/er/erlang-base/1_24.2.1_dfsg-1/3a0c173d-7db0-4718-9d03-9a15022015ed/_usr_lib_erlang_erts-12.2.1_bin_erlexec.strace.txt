@@ -1,0 +1,915 @@
+764   execve("/usr/lib/erlang/erts-12.2.1/bin/erlexec", ["/usr/lib/erlang/erts-12.2.1/bin/erlexec"], 0x7ffff70ab430 /* 12 vars */) = 0
+764   brk(NULL)                         = 0x557b0f36d000
+764   arch_prctl(0x3001 /* ARCH_??? */, 0x7fffc3623b80) = -1 EINVAL (Invalid argument)
+764   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5c28b33000
+764   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+764   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6193, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 6193, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5c28b31000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5c28a4a000
+764   mmap(0x7f5c28a58000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f5c28a58000
+764   mmap(0x7f5c28ad4000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f5c28ad4000
+764   mmap(0x7f5c28b2f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f5c28b2f000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+764   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+764   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+764   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+764   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+764   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5c28822000
+764   mmap(0x7f5c2884a000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f5c2884a000
+764   mmap(0x7f5c289df000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f5c289df000
+764   mmap(0x7f5c28a37000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f5c28a37000
+764   mmap(0x7f5c28a3d000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5c28a3d000
+764   close(3)                          = 0
+764   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5c2881f000
+764   arch_prctl(ARCH_SET_FS, 0x7f5c2881f740) = 0
+764   set_tid_address(0x7f5c2881fa10)   = 764
+764   set_robust_list(0x7f5c2881fa20, 24) = 0
+764   rseq(0x7f5c288200e0, 0x20, 0, 0x53053053) = 0
+764   mprotect(0x7f5c28a37000, 16384, PROT_READ) = 0
+764   mprotect(0x7f5c28b2f000, 4096, PROT_READ) = 0
+764   mprotect(0x557b0ddfb000, 4096, PROT_READ) = 0
+764   mprotect(0x7f5c28b6d000, 8192, PROT_READ) = 0
+764   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+764   munmap(0x7f5c28b31000, 6193)      = 0
+764   getrandom("\x1e\x0b\xf2\x45\x2d\x4d\x25\xc8", 8, GRND_NONBLOCK) = 8
+764   brk(NULL)                         = 0x557b0f36d000
+764   brk(0x557b0f38e000)               = 0x557b0f38e000
+764   execve("/usr/lib/erlang/erts-12.2.1/bin/beam.smp", ["/usr/lib/erlang/erts-12.2.1/bin/beam.smp", "--", "-root", "/usr/lib/erlang", "-progname", "erl", "--", "-home", "/root", "--"], 0x7fffc3623d58 /* 12 vars */) = 0
+764   brk(NULL)                         = 0x563eb5e5a000
+764   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe32283530) = -1 EINVAL (Invalid argument)
+764   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f257aa40000
+764   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+764   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6193, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 6193, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f257aa3e000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\6\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\30\325\0\0\0\0\0\0\30\325\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 203040, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f257aa0c000
+764   mmap(0x7f257aa1a000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f257aa1a000
+764   mmap(0x7f257aa2b000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f257aa2b000
+764   mmap(0x7f257aa39000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7f257aa39000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f257a9f0000
+764   mprotect(0x7f257a9f2000, 98304, PROT_NONE) = 0
+764   mmap(0x7f257a9f2000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f257a9f2000
+764   mmap(0x7f257aa03000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f257aa03000
+764   mmap(0x7f257aa0a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f257aa0a000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340t\"\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\"\0!\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\350\220\t\0\0\0\0\0\350\220\t\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2260320, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 2275520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f257a7c4000
+764   mmap(0x7f257a85e000, 1118208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000) = 0x7f257a85e000
+764   mmap(0x7f257a96f000, 458752, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ab000) = 0x7f257a96f000
+764   mmap(0x7f257a9df000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21a000) = 0x7f257a9df000
+764   mmap(0x7f257a9ed000, 10432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f257a9ed000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f257a6dd000
+764   mmap(0x7f257a6eb000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f257a6eb000
+764   mmap(0x7f257a767000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f257a767000
+764   mmap(0x7f257a7c2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f257a7c2000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\342\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10-\0\0\0\0\0\0\10-\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f257a6bd000
+764   mmap(0x7f257a6c0000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f257a6c0000
+764   mmap(0x7f257a6d7000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f257a6d7000
+764   mmap(0x7f257a6db000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f257a6db000
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+764   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+764   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+764   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+764   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f257a6bb000
+764   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+764   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f257a493000
+764   mmap(0x7f257a4bb000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f257a4bb000
+764   mmap(0x7f257a650000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f257a650000
+764   mmap(0x7f257a6a8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f257a6a8000
+764   mmap(0x7f257a6ae000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f257a6ae000
+764   close(3)                          = 0
+764   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f257a491000
+764   arch_prctl(ARCH_SET_FS, 0x7f257a491b80) = 0
+764   set_tid_address(0x7f257a491e50)   = 764
+764   set_robust_list(0x7f257a491e60, 24) = 0
+764   rseq(0x7f257a492520, 0x20, 0, 0x53053053) = 0
+764   mprotect(0x7f257a6a8000, 16384, PROT_READ) = 0
+764   mprotect(0x7f257a6db000, 4096, PROT_READ) = 0
+764   mprotect(0x7f257a7c2000, 4096, PROT_READ) = 0
+764   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f257a48f000
+764   mprotect(0x7f257a9df000, 45056, PROT_READ) = 0
+764   mprotect(0x7f257aa0a000, 4096, PROT_READ) = 0
+764   mprotect(0x7f257aa39000, 16384, PROT_READ) = 0
+764   mprotect(0x563eb44b0000, 24576, PROT_READ) = 0
+764   mprotect(0x7f257aa7a000, 8192, PROT_READ) = 0
+764   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+764   munmap(0x7f257aa3e000, 6193)      = 0
+764   getrandom("\x1a\x08\x87\xc6\xb6\xda\x5a\xbd", 8, GRND_NONBLOCK) = 8
+764   brk(NULL)                         = 0x563eb5e5a000
+764   brk(0x563eb5e7b000)               = 0x563eb5e7b000
+764   getpid()                          = 764
+764   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+764   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+764   getdents64(3, 0x563eb5e6f510 /* 23 entries */, 32768) = 656
+764   getdents64(3, 0x563eb5e6f510 /* 0 entries */, 32768) = 0
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "0-7\n", 1024)            = 4
+764   close(3)                          = 0
+764   sched_getaffinity(764, 128, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+764   openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY) = 3
+764   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+764   read(3, "274 227 0:65 / / rw,relatime master:6 - overlay overlay rw,lowerdir=/var/lib/docker/overlay2/l/Q7Q7EM7TX7DKX5BNJ3MNGZTYNK:/var/l"..., 1024) = 1024
+764   read(3, "nodev,noexec,relatime - sysfs sysfs ro\n279 278 0:72 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,mode=755\n2"..., 1024) = 1024
+764   read(3, "b4f641b3c3e1 /sys/fs/cgroup/devices ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,devices\n286 279 0:51 /docker/da10ffc1941a"..., 1024) = 1024
+764   read(3, "c3e1 /sys/fs/cgroup/pids ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,pids\n292 279 0:57 /docker/da10ffc1941a5930dce8e8d00f"..., 1024) = 1024
+764   read(3, "8:32 /var/lib/docker/containers/da10ffc1941a5930dce8e8d00fcda5ab648dfc369f8589549373b4f641b3c3e1/hostname /etc/hostname rw,relat"..., 1024) = 1024
+764   read(3, "_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n247 275 0:69 /null /proc/sched_debug rw,nosuid - tmpfs tmpfs rw,size=65536"..., 1024) = 197
+764   read(3, "", 1024)                 = 0
+764   close(3)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/node", 0x7ffe3227e570, 1023) = -1 ENOENT (No such file or directory)
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+764   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+764   getdents64(3, 0x563eb5e6f920 /* 23 entries */, 32768) = 656
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/core_id", O_RDONLY) = 4
+764   read(4, "3\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/core_id", O_RDONLY) = 4
+764   read(4, "2\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/core_id", O_RDONLY) = 4
+764   read(4, "1\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/core_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/core_id", O_RDONLY) = 4
+764   read(4, "3\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/core_id", O_RDONLY) = 4
+764   read(4, "2\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/core_id", O_RDONLY) = 4
+764   read(4, "1\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology/physical_package_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology/core_id", 0x7ffe3227e570, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/core_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   getdents64(3, 0x563eb5e6f920 /* 0 entries */, 32768) = 0
+764   close(3)                          = 0
+764   sigaltstack({ss_sp=0x563eb5e6f8f0, ss_flags=0, ss_size=12816}, NULL) = 0
+764   rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   uname({sysname="Linux", nodename="da10ffc1941a", ...}) = 0
+764   getpid()                          = 764
+764   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+764   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+764   getdents64(3, 0x563eb5e72d00 /* 23 entries */, 32768) = 656
+764   getdents64(3, 0x563eb5e72d00 /* 0 entries */, 32768) = 0
+764   close(3)                          = 0
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+764   read(3, "0-7\n", 1024)            = 4
+764   close(3)                          = 0
+764   sched_getaffinity(764, 128, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+764   openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY) = 3
+764   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+764   read(3, "274 227 0:65 / / rw,relatime master:6 - overlay overlay rw,lowerdir=/var/lib/docker/overlay2/l/Q7Q7EM7TX7DKX5BNJ3MNGZTYNK:/var/l"..., 1024) = 1024
+764   read(3, "nodev,noexec,relatime - sysfs sysfs ro\n279 278 0:72 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,mode=755\n2"..., 1024) = 1024
+764   read(3, "b4f641b3c3e1 /sys/fs/cgroup/devices ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,devices\n286 279 0:51 /docker/da10ffc1941a"..., 1024) = 1024
+764   read(3, "c3e1 /sys/fs/cgroup/pids ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,pids\n292 279 0:57 /docker/da10ffc1941a5930dce8e8d00f"..., 1024) = 1024
+764   read(3, "8:32 /var/lib/docker/containers/da10ffc1941a5930dce8e8d00fcda5ab648dfc369f8589549373b4f641b3c3e1/hostname /etc/hostname rw,relat"..., 1024) = 1024
+764   read(3, "_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n247 275 0:69 /null /proc/sched_debug rw,nosuid - tmpfs tmpfs rw,size=65536"..., 1024) = 197
+764   read(3, "", 1024)                 = 0
+764   close(3)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/node", 0x7ffe3227e500, 1023) = -1 ENOENT (No such file or directory)
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+764   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+764   getdents64(3, 0x563eb5e72d00 /* 23 entries */, 32768) = 656
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu7/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu7/topology/core_id", O_RDONLY) = 4
+764   read(4, "3\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu5/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu5/topology/core_id", O_RDONLY) = 4
+764   read(4, "2\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu3/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu3/topology/core_id", O_RDONLY) = 4
+764   read(4, "1\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu1/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu1/topology/core_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu6/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu6/topology/core_id", O_RDONLY) = 4
+764   read(4, "3\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu4/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu4/topology/core_id", O_RDONLY) = 4
+764   read(4, "2\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu2/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu2/topology/core_id", O_RDONLY) = 4
+764   read(4, "1\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology/physical_package_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/physical_package_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   readlink("/sys", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   readlink("/sys/devices/system/cpu/cpu0/topology/core_id", 0x7ffe3227e500, 1023) = -1 EINVAL (Invalid argument)
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/cpu0/topology/core_id", O_RDONLY) = 4
+764   read(4, "0\n", 50)                = 2
+764   read(4, "", 48)                   = 0
+764   close(4)                          = 0
+764   getdents64(3, 0x563eb5e72d00 /* 0 entries */, 32768) = 0
+764   close(3)                          = 0
+764   uname({sysname="Linux", nodename="da10ffc1941a", ...}) = 0
+764   openat(AT_FDCWD, "/dev/null", O_RDONLY) = 3
+764   close(3)                          = 0
+764   close(3)                          = -1 EBADF (Bad file descriptor)
+764   openat(AT_FDCWD, "/dev/null", O_RDONLY) = 3
+764   mmap(NULL, 1073741824, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f253a48f000
+764   mmap(0x7f253a48f000, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f253a48f000
+764   brk(0x563eb5e81000)               = 0x563eb5e81000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a46a000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a445000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a420000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a3fb000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a3d6000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a3b1000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a38c000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a367000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a342000
+764   brk(0x563eb5e8c000)               = 0x563eb5e8c000
+764   brk(0x563eb5e98000)               = 0x563eb5e98000
+764   brk(0x563eb5ea1000)               = 0x563eb5ea1000
+764   brk(0x563eb5ead000)               = 0x563eb5ead000
+764   brk(0x563eb5eb9000)               = 0x563eb5eb9000
+764   brk(0x563eb5ec5000)               = 0x563eb5ec5000
+764   brk(0x563eb5ed1000)               = 0x563eb5ed1000
+764   brk(0x563eb5edd000)               = 0x563eb5edd000
+764   brk(0x563eb5ee9000)               = 0x563eb5ee9000
+764   brk(0x563eb5ef5000)               = 0x563eb5ef5000
+764   brk(0x563eb5eff000)               = 0x563eb5eff000
+764   brk(0x563eb5f0b000)               = 0x563eb5f0b000
+764   brk(0x563eb5f15000)               = 0x563eb5f15000
+764   brk(0x563eb5f21000)               = 0x563eb5f21000
+764   brk(0x563eb5f2d000)               = 0x563eb5f2d000
+764   brk(0x563eb5f39000)               = 0x563eb5f39000
+764   brk(0x563eb5f45000)               = 0x563eb5f45000
+764   brk(0x563eb5f51000)               = 0x563eb5f51000
+764   brk(0x563eb5f5d000)               = 0x563eb5f5d000
+764   brk(0x563eb5f69000)               = 0x563eb5f69000
+764   brk(0x563eb5f73000)               = 0x563eb5f73000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a2bd000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a238000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a1b3000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a12e000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a0a9000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f253a024000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539f9f000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539f1a000
+764   mmap(NULL, 544768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539e95000
+764   brk(0x563eb5f7d000)               = 0x563eb5f7d000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539e70000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539e4b000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539e26000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539e01000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539ddc000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539db7000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539d92000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539d6d000
+764   mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539d48000
+764   brk(0x563eb5f87000)               = 0x563eb5f87000
+764   brk(0x563eb5f93000)               = 0x563eb5f93000
+764   brk(0x563eb5f9d000)               = 0x563eb5f9d000
+764   brk(0x563eb5fa9000)               = 0x563eb5fa9000
+764   brk(0x563eb5fb5000)               = 0x563eb5fb5000
+764   brk(0x563eb5fc1000)               = 0x563eb5fc1000
+764   brk(0x563eb5fcd000)               = 0x563eb5fcd000
+764   brk(0x563eb5fd9000)               = 0x563eb5fd9000
+764   brk(0x563eb5fe5000)               = 0x563eb5fe5000
+764   brk(0x563eb5ff1000)               = 0x563eb5ff1000
+764   brk(0x563eb5ffb000)               = 0x563eb5ffb000
+764   brk(0x563eb6007000)               = 0x563eb6007000
+764   brk(0x563eb6011000)               = 0x563eb6011000
+764   brk(0x563eb601d000)               = 0x563eb601d000
+764   brk(0x563eb6029000)               = 0x563eb6029000
+764   brk(0x563eb6035000)               = 0x563eb6035000
+764   brk(0x563eb6041000)               = 0x563eb6041000
+764   brk(0x563eb604d000)               = 0x563eb604d000
+764   brk(0x563eb6059000)               = 0x563eb6059000
+764   brk(0x563eb6063000)               = 0x563eb6063000
+764   brk(0x563eb606f000)               = 0x563eb606f000
+764   brk(0x563eb6079000)               = 0x563eb6079000
+764   brk(0x563eb6085000)               = 0x563eb6085000
+764   brk(0x563eb6091000)               = 0x563eb6091000
+764   brk(0x563eb609d000)               = 0x563eb609d000
+764   brk(0x563eb60a9000)               = 0x563eb60a9000
+764   brk(0x563eb60b5000)               = 0x563eb60b5000
+764   brk(0x563eb60c1000)               = 0x563eb60c1000
+764   brk(0x563eb60cd000)               = 0x563eb60cd000
+764   brk(0x563eb60d7000)               = 0x563eb60d7000
+764   brk(0x563eb60e3000)               = 0x563eb60e3000
+764   brk(0x563eb60ed000)               = 0x563eb60ed000
+764   brk(0x563eb60f9000)               = 0x563eb60f9000
+764   brk(0x563eb6105000)               = 0x563eb6105000
+764   brk(0x563eb6111000)               = 0x563eb6111000
+764   brk(0x563eb611d000)               = 0x563eb611d000
+764   brk(0x563eb6129000)               = 0x563eb6129000
+764   brk(0x563eb6135000)               = 0x563eb6135000
+764   brk(0x563eb6141000)               = 0x563eb6141000
+764   mmap(0x7f253a4a0000, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f253a4a0000
+764   prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+764   prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+764   epoll_create(256)                 = 4
+764   timerfd_create(CLOCK_MONOTONIC, 0) = 5
+764   epoll_ctl(4, EPOLL_CTL_ADD, 5, {events=EPOLLIN|EPOLLONESHOT, data={u32=5, u64=5}}) = 0
+764   epoll_create(256)                 = 6
+764   pipe2([7, 8], 0)                  = 0
+764   fcntl(7, F_GETFL)                 = 0 (flags O_RDONLY)
+764   fcntl(7, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+764   fcntl(8, F_GETFL)                 = 0x1 (flags O_WRONLY)
+764   fcntl(8, F_SETFL, O_WRONLY|O_NONBLOCK) = 0
+764   epoll_ctl(6, EPOLL_CTL_ADD, 7, {events=EPOLLIN, data={u32=7, u64=140728898420743}}) = 0
+764   timerfd_create(CLOCK_MONOTONIC, 0) = 9
+764   epoll_ctl(6, EPOLL_CTL_ADD, 9, {events=EPOLLIN, data={u32=9, u64=140728898420745}}) = 0
+764   pipe2([10, 11], 0)                = 0
+764   fcntl(10, F_GETFL)                = 0 (flags O_RDONLY)
+764   fcntl(10, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+764   fcntl(11, F_GETFL)                = 0x1 (flags O_WRONLY)
+764   fcntl(11, F_SETFL, O_WRONLY|O_NONBLOCK) = 0
+764   read(10, 0x7ffe32282f50, 32)      = -1 EAGAIN (Resource temporarily unavailable)
+764   mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539d08000
+764   pipe2([12, 13], 0)                = 0
+764   rt_sigprocmask(SIG_BLOCK, [], [], 8) = 0
+764   rt_sigaction(SIGRT_1, {sa_handler=0x7f257a5248f0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f257a4d5520}, NULL, 8) = 0
+764   rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+764   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f2539507000
+764   mprotect(0x7f2539508000, 8388608, PROT_READ|PROT_WRITE) = 0
+764   rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+764   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f2539d07910, parent_tid=0x7f2539d07910, exit_signal=0, stack=0x7f2539507000, stack_size=0x7fff00, tls=0x7f2539d07640}, 88) = -1 ENOSYS (Function not implemented)
+764   clone(child_stack=0x7f2539d06ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+769   rseq(0x7f2539d07fe0, 0x20, 0, 0x53053053 <unfinished ...>
+764   <... clone resumed>, parent_tid=[769], tls=0x7f2539d07640, child_tidptr=0x7f2539d07910) = 769
+769   <... rseq resumed>)               = 0
+764   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+769   set_robust_list(0x7f2539d07920, 24 <unfinished ...>
+764   <... rt_sigprocmask resumed>NULL, 8) = 0
+769   <... set_robust_list resumed>)    = 0
+764   sched_yield( <unfinished ...>
+769   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+769   <... rt_sigprocmask resumed>NULL, 8) = 0
+764   sched_yield( <unfinished ...>
+769   prctl(PR_SET_NAME, "sys_sig_dispatc"... <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+769   <... prctl resumed>)              = 0
+764   sched_yield( <unfinished ...>
+769   read(12,  <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+764   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+764   pipe2([14, 15], 0)                = 0
+764   rt_sigaction(SIGFPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f257a4d5520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   ioctl(0, TCGETS, 0x7ffe32282f70)  = -1 ENOTTY (Inappropriate ioctl for device)
+764   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+764   rt_sigaction(SIGINT, {sa_handler=0x563eb4343e00, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f257a4d5520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   rt_sigaction(SIGQUIT, {sa_handler=0x563eb4343e70, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7f257a4d5520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   mmap(NULL, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539107000
+764   munmap(0x7f2539107000, 4194304)   = 0
+764   mmap(NULL, 4210688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539103000
+764   munmap(0x7f2539103000, 4096)      = 0
+764   munmap(0x7f2539504000, 12288)     = 0
+764   mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2539004000
+764   mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2538fc4000
+764   rt_sigprocmask(SIG_BLOCK, [], [], 8) = 0
+764   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f25387c3000
+764   mprotect(0x7f25387c4000, 8388608, PROT_READ|PROT_WRITE) = 0
+764   rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+764   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f2538fc3910, parent_tid=0x7f2538fc3910, exit_signal=0, stack=0x7f25387c3000, stack_size=0x7fff00, tls=0x7f2538fc3640}, 88) = -1 ENOSYS (Function not implemented)
+764   clone(child_stack=0x7f2538fc2ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+770   rseq(0x7f2538fc3fe0, 0x20, 0, 0x53053053 <unfinished ...>
+764   <... clone resumed>, parent_tid=[770], tls=0x7f2538fc3640, child_tidptr=0x7f2538fc3910) = 770
+770   <... rseq resumed>)               = 0
+764   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+770   set_robust_list(0x7f2538fc3920, 24 <unfinished ...>
+764   <... rt_sigprocmask resumed>NULL, 8) = 0
+770   <... set_robust_list resumed>)    = 0
+764   sched_yield( <unfinished ...>
+770   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+770   <... rt_sigprocmask resumed>NULL, 8) = 0
+764   sched_yield( <unfinished ...>
+770   prctl(PR_SET_NAME, "sys_msg_dispatc"... <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+770   <... prctl resumed>)              = 0
+764   sched_yield( <unfinished ...>
+770   futex(0x563eb44ebf48, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+764   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+764   openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 16
+764   read(16, "0-7\n", 1024)           = 4
+764   close(16)                         = 0
+764   brk(0x563eb6149000)               = 0x563eb6149000
+764   memfd_create("vmem", 0)           = 16
+764   ftruncate(16, 4096)               = 0
+764   mmap(NULL, 4096, PROT_READ|PROT_EXEC, MAP_SHARED, 16, 0) = 0x7f257aa79000
+764   munmap(0x7f257aa79000, 4096)      = 0
+764   close(16)                         = 0
+764   memfd_create("vmem", 0)           = 16
+764   ftruncate(16, 8388608)            = 0
+764   mmap(NULL, 8388608, PROT_READ|PROT_EXEC, MAP_SHARED, 16, 0) = 0x7f2537fc3000
+764   mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_SHARED, 16, 0) = 0x7f25377c3000
+764   close(16)                         = 0
+764   brk(0x563eb614d000)               = 0x563eb614d000
+764   brk(0x563eb6151000)               = 0x563eb6151000
+764   brk(0x563eb6155000)               = 0x563eb6155000
+764   uname({sysname="Linux", nodename="da10ffc1941a", ...}) = 0
+764   uname({sysname="Linux", nodename="da10ffc1941a", ...}) = 0
+764   sysinfo({uptime=55270, loads=[53280, 53184, 58048], totalram=16562298880, freeram=13882888192, sharedram=458752, bufferram=1389293568, totalswap=4294967296, freeswap=4294967296, procs=249, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+764   rt_sigprocmask(SIG_BLOCK, [], [], 8) = 0
+764   mmap(NULL, 143360, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f25377a0000
+764   mprotect(0x7f25377a1000, 139264, PROT_READ|PROT_WRITE) = 0
+764   rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+764   clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f25377c2910, parent_tid=0x7f25377c2910, exit_signal=0, stack=0x7f25377a0000, stack_size=0x21f00, tls=0x7f25377c2640}, 88) = -1 ENOSYS (Function not implemented)
+764   clone(child_stack=0x7f25377c1ef0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+771   rseq(0x7f25377c2fe0, 0x20, 0, 0x53053053 <unfinished ...>
+764   <... clone resumed>, parent_tid=[771], tls=0x7f25377c2640, child_tidptr=0x7f25377c2910) = 771
+771   <... rseq resumed>)               = 0
+764   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+771   set_robust_list(0x7f25377c2920, 24 <unfinished ...>
+764   <... rt_sigprocmask resumed>NULL, 8) = 0
+771   <... set_robust_list resumed>)    = 0
+764   sched_yield( <unfinished ...>
+771   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+771   <... rt_sigprocmask resumed>NULL, 8) = 0
+764   sched_yield( <unfinished ...>
+771   prctl(PR_SET_NAME, "async_1" <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+771   <... prctl resumed>)              = 0
+764   sched_yield( <unfinished ...>
+771   mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+764   <... sched_yield resumed>)        = 0
+771   <... mmap resumed>)               = 0x7f252f7a0000
+764   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+771   munmap(0x7f252f7a0000, 8781824 <unfinished ...>
+764   <... rt_sigprocmask resumed>NULL, 8) = 0
+771   <... munmap resumed>)             = 0
+764   mmap(NULL, 16777216, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+771   munmap(0x7f2534000000, 58327040 <unfinished ...>
+764   <... mmap resumed>)               = 0x7f252f000000
+771   <... munmap resumed>)             = 0
+771   mprotect(0x7f2530000000, 32768, PROT_READ|PROT_WRITE) = 0
+771   futex(0x7f2539d08290, FUTEX_WAIT_PRIVATE, 4294967295, NULL <unfinished ...>
+764   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 16
+764   newfstatat(16, "", {st_mode=S_IFREG|0644, st_size=6193, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 6193, PROT_READ, MAP_PRIVATE, 16, 0) = 0x7f257aa3e000
+764   close(16)                         = 0
+764   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsctp.so.1", O_RDONLY|O_CLOEXEC) = 16
+764   read(16, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\270A\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\v\0\0\0\0\0\0`\v\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+764   newfstatat(16, "", {st_mode=S_IFREG|0644, st_size=18616, ...}, AT_EMPTY_PATH) = 0
+764   mmap(NULL, 20608, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 16, 0) = 0x7f253779a000
+764   mmap(0x7f253779b000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 16, 0x1000) = 0x7f253779b000
+764   mmap(0x7f253779d000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 16, 0x3000) = 0x7f253779d000
+764   mmap(0x7f253779e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 16, 0x3000) = 0x7f253779e000
+764   close(16)                         = 0
+764   mprotect(0x7f253779e000, 4096, PROT_READ) = 0
+764   munmap(0x7f257aa3e000, 6193)      = 0
+764   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f257a4d5520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+764   write(2, "E", 1)                  = 1
+764   write(2, "n", 1)                  = 1
+764   write(2, "v", 1)                  = 1
+764   write(2, "i", 1)                  = 1
+764   write(2, "r", 1)                  = 1
+764   write(2, "o", 1)                  = 1
+764   write(2, "n", 1)                  = 1
+764   write(2, "m", 1)                  = 1
+764   write(2, "e", 1)                  = 1
+764   write(2, "n", 1)                  = 1
+764   write(2, "t", 1)                  = 1
+764   write(2, " ", 1)                  = 1
+764   write(2, "v", 1)                  = 1
+764   write(2, "a", 1)                  = 1
+764   write(2, "r", 1)                  = 1
+764   write(2, "i", 1)                  = 1
+764   write(2, "a", 1)                  = 1
+764   write(2, "b", 1)                  = 1
+764   write(2, "l", 1)                  = 1
+764   write(2, "e", 1)                  = 1
+764   write(2, " ", 1)                  = 1
+764   write(2, "B", 1)                  = 1
+764   write(2, "I", 1)                  = 1
+764   write(2, "N", 1)                  = 1
+764   write(2, "D", 1)                  = 1
+764   write(2, "I", 1)                  = 1
+764   write(2, "R", 1)                  = 1
+764   write(2, " ", 1)                  = 1
+764   write(2, "i", 1)                  = 1
+764   write(2, "s", 1)                  = 1
+764   write(2, " ", 1)                  = 1
+764   write(2, "n", 1)                  = 1
+764   write(2, "o", 1)                  = 1
+764   write(2, "t", 1)                  = 1
+764   write(2, " ", 1)                  = 1
+764   write(2, "s", 1)                  = 1
+764   write(2, "e", 1)                  = 1
+764   write(2, "t", 1)                  = 1
+764   write(2, "\r", 1)                 = 1
+764   write(2, "\n", 1)                 = 1
+764   fcntl(0, F_GETFL)                 = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+764   fcntl(0, F_SETFL, O_RDONLY|O_LARGEFILE) = 0
+764   exit_group(1 <unfinished ...>
+771   <... futex resumed>)              = ?
+770   <... futex resumed>)              = ?
+769   <... read resumed> <unfinished ...>) = ?
+764   <... exit_group resumed>)         = ?
+771   +++ exited with 1 +++
+770   +++ exited with 1 +++
+769   +++ exited with 1 +++
+764   +++ exited with 1 +++

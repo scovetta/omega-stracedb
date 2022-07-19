@@ -1,0 +1,55 @@
+usage: ausearch [options]
+	-a,--event <Audit event id>	search based on audit event id
+	--arch <CPU>			search based on the CPU architecture
+	-c,--comm  <Comm name>		search based on command line name
+	--checkpoint <checkpoint file>	search from last complete event
+	--debug			Write malformed events that are skipped to stderr
+	-e,--exit  <Exit code or errno>	search based on syscall exit code
+	-escape <option>		escape output
+	--eoe-timeout secs		End of Event timeout
+	--extra-keys			add a final column with key information
+	--extra-labels			add columns of information about subject and object labels
+	--extra-obj2			add columns of information about a second object
+	--extra-time			add columns of information about broken down time
+	-f,--file  <File name>		search based on file name
+	--format [raw|default|interpret|csv|text] results format options
+	-ga,--gid-all <all Group id>	search based on All group ids
+	-ge,--gid-effective <effective Group id>  search based on Effective
+					group id
+	-gi,--gid <Group Id>		search based on group id
+	-h,--help			help
+	-hn,--host <Host Name>		search based on remote host name
+	-i,--interpret			Interpret results to be human readable
+	-if,--input <Input File name>	use this file instead of current logs
+	--input-logs			Use the logs even if stdin is a pipe
+	--just-one			Emit just one event
+	-k,--key  <key string>		search based on key field
+	-l, --line-buffered		Flush output on every line
+	-m,--message  <Message type>	search based on message type
+	-n,--node  <Node name>		search based on machine's name
+	-o,--object  <SE Linux Object context> search based on context of object
+	-p,--pid  <Process id>		search based on process id
+	-pp,--ppid <Parent Process id>	search based on parent process id
+	-r,--raw			output is completely unformatted
+	-sc,--syscall <SysCall name>	search based on syscall name or number
+	-se,--context <SE Linux context> search based on either subject or
+					 object
+	--session <login session id>	search based on login session id
+	-su,--subject <SE Linux context> search based on context of the Subject
+	-sv,--success <Success Value>	search based on syscall or event
+					success value
+	-te,--end [end date] [end time]	ending date & time for search
+	-ts,--start [start date] [start time]	starting date & time for search
+	-tm,--terminal <TerMinal>	search based on terminal
+	-ua,--uid-all <all User id>	search based on All user id's
+	-ue,--uid-effective <effective User id>  search based on Effective
+					user id
+	-ui,--uid <User Id>		search based on user id
+	-ul,--loginuid <login id>	search based on the User's Login id
+	-uu,--uuid <guest UUID>		search for events related to the virtual
+					machine with the given UUID.
+	-v,--version			version
+	-vm,--vm-name <guest name>	search for events related to the virtual
+					machine with the name.
+	-w,--word			string matches are whole word
+	-x,--executable <executable name>  search based on executable name

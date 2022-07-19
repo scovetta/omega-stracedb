@@ -1,0 +1,80 @@
+513   execve("/sbin/syslogd", ["/sbin/syslogd"], 0x7ffcd4a15680 /* 12 vars */) = 0
+513   brk(NULL)                         = 0x5595f506d000
+513   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe062eb8b0) = -1 EINVAL (Invalid argument)
+513   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f24e9d89000
+513   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+513   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+513   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+513   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f24e9d87000
+513   close(3)                          = 0
+513   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+513   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\3\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0 \0\37\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\350/\0\0\0\0\0\0\350/\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+513   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
+513   mmap(NULL, 80456, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f24e9d73000
+513   mmap(0x7f24e9d76000, 40960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f24e9d76000
+513   mmap(0x7f24e9d80000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f24e9d80000
+513   mmap(0x7f24e9d83000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f24e9d83000
+513   mmap(0x7f24e9d85000, 6728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f24e9d85000
+513   close(3)                          = 0
+513   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+513   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+513   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+513   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+513   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+513   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+513   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+513   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f24e9b4b000
+513   mmap(0x7f24e9b73000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f24e9b73000
+513   mmap(0x7f24e9d08000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f24e9d08000
+513   mmap(0x7f24e9d60000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f24e9d60000
+513   mmap(0x7f24e9d66000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f24e9d66000
+513   close(3)                          = 0
+513   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f24e9b48000
+513   arch_prctl(ARCH_SET_FS, 0x7f24e9b48740) = 0
+513   set_tid_address(0x7f24e9b48a10)   = 513
+513   set_robust_list(0x7f24e9b48a20, 24) = 0
+513   rseq(0x7f24e9b490e0, 0x20, 0, 0x53053053) = 0
+513   mprotect(0x7f24e9d60000, 16384, PROT_READ) = 0
+513   mprotect(0x7f24e9d83000, 4096, PROT_READ) = 0
+513   mprotect(0x5595f47df000, 16384, PROT_READ) = 0
+513   mprotect(0x7f24e9dc3000, 8192, PROT_READ) = 0
+513   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+513   munmap(0x7f24e9d87000, 6133)      = 0
+513   getrandom("\x9b\xc0\x01\x4c\x22\x70\x53\x38", 8, GRND_NONBLOCK) = 8
+513   getuid()                          = 0
+513   brk(NULL)                         = 0x5595f506d000
+513   brk(0x5595f508e000)               = 0x5595f508e000
+513   uname({sysname="Linux", nodename="383b9913267e", ...}) = 0
+513   chdir("/")                        = 0
+513   openat(AT_FDCWD, "/dev/null", O_RDWR) = 3
+513   clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f24e9b48a10) = 518
+518   set_robust_list(0x7f24e9b48a20, 24 <unfinished ...>
+513   exit_group(0 <unfinished ...>
+518   <... set_robust_list resumed>)    = 0
+513   <... exit_group resumed>)         = ?
+518   setsid( <unfinished ...>
+513   +++ exited with 0 +++
+518   <... setsid resumed>)             = 518
+518   dup2(3, 0)                        = 0
+518   dup2(3, 1)                        = 1
+518   dup2(3, 2)                        = 2
+518   close(3)                          = 0
+518   openat(AT_FDCWD, "/var/run/syslogd.pid", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+518   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+518   getpid()                          = 518
+518   write(3, "518\n", 4)              = 4
+518   close(3)                          = 0
+518   rt_sigaction(SIGTERM, {sa_handler=0x5595f4740cc1, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f24e9b8d520}, NULL, 8) = 0
+518   rt_sigaction(SIGINT, {sa_handler=0x5595f4740cc1, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f24e9b8d520}, NULL, 8) = 0
+518   rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f24e9b8d520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+518   readlink("/dev/log", 0x5595f506e7c0, 80) = -1 ENOENT (No such file or directory)
+518   unlink("/dev/log")                = -1 ENOENT (No such file or directory)
+518   socket(AF_UNIX, SOCK_DGRAM, 0)    = 3
+518   bind(3, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = 0
+518   chmod("/dev/log", 0666)           = 0
+518   dup2(3, 0)                        = 0
+518   close(3)                          = 0
+518   openat(AT_FDCWD, "/usr/share/zoneinfo/America/Los_Angeles", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+518   openat(AT_FDCWD, "/var/log/messages", O_WRONLY|O_CREAT|O_NOCTTY|O_APPEND|O_NONBLOCK, 0666) = 3
+518   write(3, "Jul 19 05:27:57 383b9913267e syslog.info syslogd started: BusyBox v1.30.1\n", 74) = 74
+518   read(0, 

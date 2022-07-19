@@ -1,0 +1,21 @@
+btrfs-convert from btrfs-progs v5.16.2
+
+usage: btrfs-convert [options] device
+options:
+	-d|--no-datasum        disable data checksum, sets NODATASUM
+	-i|--no-xattr          ignore xattrs and ACLs
+	-n|--no-inline         disable inlining of small files to metadata
+	--csum TYPE
+	--checksum TYPE        checksum algorithm to use (default: crc32c)
+	-N|--nodesize SIZE     set filesystem metadata nodesize
+	-r|--rollback          roll back to the original filesystem
+	-l|--label LABEL       set filesystem label
+	-L|--copy-label        use label from converted filesystem
+	--uuid SPEC            new, copy or user-defined conforming UUID
+	-p|--progress          show converting progress (default)
+	-O|--features LIST     comma separated list of filesystem features
+	--no-progress          show only overview, not the detailed progress
+
+Supported filesystems:
+	ext2/3/4: yes
+	reiserfs: no

@@ -1,0 +1,11 @@
+/* test_sysctl_normalize */
+"a.b.c" → "a/b/c", expected "a/b/c"
+"a/b/c" → "a/b/c", expected "a/b/c"
+"a/b.c/d" → "a/b.c/d", expected "a/b.c/d"
+"a.b/c.d" → "a/b.c/d", expected "a/b.c/d"
+"net.ipv4.conf.enp3s0/200.forwarding" → "net/ipv4/conf/enp3s0.200/forwarding", expected "net/ipv4/conf/enp3s0.200/forwarding"
+"net/ipv4/conf/enp3s0.200/forwarding" → "net/ipv4/conf/enp3s0.200/forwarding", expected "net/ipv4/conf/enp3s0.200/forwarding"
+"a...b...c" → "a/b/c", expected "a/b/c"
+"a///b///c" → "a/b/c", expected "a/b/c"
+".a...b...c" → "a/b/c", expected "a/b/c"
+"/a///b///c" → "a/b/c", expected "a/b/c"

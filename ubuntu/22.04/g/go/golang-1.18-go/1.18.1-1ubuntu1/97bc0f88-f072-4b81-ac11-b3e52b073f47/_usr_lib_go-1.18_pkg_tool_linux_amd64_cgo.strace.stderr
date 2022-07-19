@@ -1,0 +1,36 @@
+usage: cgo -- [compiler options] file.go ...
+  -V	print version and exit
+  -debug-define
+    	print relevant #defines
+  -debug-gcc
+    	print gcc invocations
+  -dynimport string
+    	if non-empty, print dynamic import data for that file
+  -dynlinker
+    	record dynamic linker information in -dynimport mode
+  -dynout string
+    	write -dynimport output to this file
+  -dynpackage string
+    	set Go package for -dynimport output (default "main")
+  -exportheader string
+    	where to write export header if any exported functions
+  -gccgo
+    	generate files for use with gccgo
+  -gccgopkgpath string
+    	-fgo-pkgpath option used with gccgo
+  -gccgoprefix string
+    	-fgo-prefix option used with gccgo
+  -godefs
+    	for bootstrap: write Go definitions for C file to standard output
+  -import_runtime_cgo
+    	import runtime/cgo in generated code (default true)
+  -import_syscall
+    	import syscall in generated code (default true)
+  -importpath string
+    	import path of package being built (for comments in generated files)
+  -objdir string
+    	object directory
+  -srcdir string
+    	source directory
+  -trimpath string
+    	applies supplied rewrites or trims prefixes to recorded source file paths

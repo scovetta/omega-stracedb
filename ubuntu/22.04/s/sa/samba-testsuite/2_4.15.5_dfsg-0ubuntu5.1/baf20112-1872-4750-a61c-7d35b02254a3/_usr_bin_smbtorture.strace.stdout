@@ -1,0 +1,227 @@
+smbtorture 4.15.5-Ubuntu
+Using seed 1658202803
+You must specify a test to run, or 'ALL'
+Usage: [-?XaNPV] [-?|--help] [--usage] [--fullname] [--format=STRING]
+        [-p|--smb-ports=STRING] [--basedir=BASEDIR] [--seed=INT]
+        [--num-progs=INT] [--num-ops=INT] [--entries=INT]
+        [--loadfile=STRING] [--list-suites] [--list] [--unclist=STRING]
+        [-t|--timelimit=INT] [-f|--failures=INT] [-D|--parse-dns=STRING]
+        [-X|--dangerous] [--load-module=SOFILE] [--shell]
+        [-T|--target=STRING] [-a|--async] [--num-async=INT]
+        [--maximum-runtime=seconds] [--extra-user=STRING]
+        [--load-list=STRING] [-d|--debuglevel=DEBUGLEVEL] [--debug-stdout]
+        [-s|--configfile=CONFIGFILE] [--option=name=value]
+        [-l|--log-basename=LOGFILEBASE] [--leak-report] [--leak-report-full]
+        [-R|--name-resolve=NAME-RESOLVE-ORDER]
+        [-O|--socket-options=SOCKETOPTIONS] [-m|--max-protocol=MAXPROTOCOL]
+        [-n|--netbiosname=NETBIOSNAME] [--netbios-scope=SCOPE]
+        [-W|--workgroup=WORKGROUP] [--realm=REALM]
+        [-U|--user=[DOMAIN/]USERNAME[%PASSWORD]] [-N|--no-pass]
+        [--password=STRING] [--pw-nt-hash] [-A|--authentication-file=FILE]
+        [-P|--machine-pass] [--simple-bind-dn=DN]
+        [--use-kerberos=desired|required|off] [--use-krb5-ccache=CCACHE]
+        [--use-winbind-ccache] [--client-protection=sign|encrypt|off]
+        [-V|--version] [-k|--kerberos=STRING] <binding>|<unc> TEST1 TEST2 ...
+
+The binding format is:
+
+  TRANSPORT:host[flags]
+
+  where TRANSPORT is either ncacn_np for SMB, ncacn_ip_tcp for RPC/TCP
+  or ncalrpc for local connections.
+
+  'host' is an IP or hostname or netbios name. If the binding string
+  identifies the server side of an endpoint, 'host' may be an empty
+  string.
+
+  'flags' can include a SMB pipe name if using the ncacn_np transport or
+  a TCP port number if using the ncacn_ip_tcp transport, otherwise they
+  will be auto-determined.
+
+  other recognised flags are:
+
+    sign : enable ntlmssp signing
+    seal : enable ntlmssp sealing
+    connect : enable rpc connect level auth (auth, but no sign or seal)
+    validate: enable the NDR validator
+    print: enable debugging of the packets
+    bigendian: use bigendian RPC
+    padcheck: check reply data for non-zero pad bytes
+
+  For example, these all connect to the samr pipe:
+
+    ncacn_np:myserver
+    ncacn_np:myserver[samr]
+    ncacn_np:myserver[\pipe\samr]
+    ncacn_np:myserver[/pipe/samr]
+    ncacn_np:myserver[samr,sign,print]
+    ncacn_np:myserver[\pipe\samr,sign,seal,bigendian]
+    ncacn_np:myserver[/pipe/samr,seal,validate]
+    ncacn_np:
+    ncacn_np:[/pipe/samr]
+
+    ncacn_ip_tcp:myserver
+    ncacn_ip_tcp:myserver[1024]
+    ncacn_ip_tcp:myserver[1024,sign,seal]
+
+    ncalrpc:
+
+The UNC format is:
+
+  //server/share
+
+Tests are:
+Basic SMB tests (imported from the original smbtorture) (base):
+  base.lock base.delete base.charset base.delaywrite base.aliases base.fdpass 
+  base.unlink base.attr base.trans2 base.birthtime base.negnowait base.dir1 
+  base.dir2 base.deny1 base.deny2 base.deny3 base.denydos base.ntdeny1 
+  base.ntdeny2 base.tcon base.tcondev base.vuid base.rw1 base.open 
+  base.defer_open base.xcopy base.iometer base.rename base.properties 
+  base.mangle base.openattr base.winattr base.chkpath base.secleak 
+  base.disconnect base.samba3error base.casetable base.utable base.smb 
+  base.trans2-scan base.nttrans base.createx_access 
+  base.createx_sharemodes_file base.createx_sharemodes_dir base.maximum_allowed 
+  base.bench-holdcon base.bench-holdopen base.bench-readwrite 
+  base.bench-torture base.scan-pipe_number base.scan-ioctl base.scan-maxfid 
+  base.smb1-twrp-openroot 
+
+Tests for the raw SMB interface (raw):
+  raw.sfileinfo raw.search raw.open raw.oplock raw.notify raw.unlink raw.read 
+  raw.write raw.lock raw.context raw.session raw.rename raw.streams raw.acls 
+  raw.composite raw.bench-oplock raw.ping-pong raw.bench-lock raw.bench-open 
+  raw.bench-lookup raw.bench-tcon raw.offline raw.qfsinfo raw.qfileinfo 
+  raw.qfileinfo.ipc raw.close raw.mkdir raw.hold-oplock raw.mux raw.ioctl 
+  raw.chkpath raw.seek raw.eas raw.samba3hide raw.samba3closeerr 
+  raw.samba3rootdirfid raw.samba3rootdirfid2 raw.samba3checkfsp 
+  raw.samba3oplocklogoff raw.samba3badnameblob raw.samba3badpath 
+  raw.samba3caseinsensitive raw.samba3posixtimedlock raw.scan-eamax 
+
+SMB2-specific tests (smb2):
+  smb2.scan smb2.getinfo smb2.lock smb2.read smb2.aio_delay smb2.create 
+  smb2.twrp smb2.fileid smb2.acls smb2.acls_non_canonical smb2.notify 
+  smb2.notify-inotify smb2.change_notify_disabled smb2.durable-open 
+  smb2.durable-open-disconnect smb2.durable-v2-open smb2.durable-v2-delay 
+  smb2.dir smb2.lease smb2.compound smb2.compound_find smb2.oplock 
+  smb2.kernel-oplocks smb2.streams smb2.ioctl smb2.rename smb2.sharemode 
+  smb2.session smb2.replay smb2.credits smb2.delete-on-close-perms 
+  smb2.multichannel smb2.samba3misc smb2.timestamps smb2.timestamp_resolution 
+  smb2.rw smb2.charset smb2.deny smb2.fileid_unique smb2.connect smb2.setinfo 
+  smb2.set-sparse-ioctl smb2.zero-data-ioctl smb2.bench-oplock smb2.hold-oplock 
+  smb2.dosmode smb2.maxfid smb2.hold-sharemode smb2.check-sharemode 
+  smb2.openattr smb2.winattr smb2.sdread smb2.maximum_allowed smb2.mangle 
+  smb2.tcon smb2.mkdir smb2.secleak smb2.session-id 
+
+WINBIND tests (winbind):
+  winbind.struct winbind.wbclient winbind.pac 
+
+libnetapi convenience interface tests (netapi):
+  netapi.server netapi.group netapi.user netapi.initialize 
+
+libsmbclient interface tests (libsmbclient):
+  libsmbclient.version libsmbclient.initialize libsmbclient.configuration 
+  libsmbclient.setConfiguration libsmbclient.options libsmbclient.opendir 
+  libsmbclient.list_shares libsmbclient.readdirplus 
+  libsmbclient.readdirplus_seek libsmbclient.readdirplus2 libsmbclient.utimes 
+  libsmbclient.noanon_list 
+
+Group Policy tests (gpo):
+  gpo.apply 
+
+DCE/RPC protocol and interface tests (rpc):
+  rpc.lsa.lookupsids rpc.lsa.lookupnames rpc.lsa.secrets 
+  rpc.lsa.trusted.domains rpc.lsa.forest.trust rpc.lsa.privileges rpc.echo 
+  rpc.dfs rpc.frsapi rpc.unixinfo rpc.eventlog rpc.atsvc rpc.wkssvc rpc.handles 
+  rpc.objectuuid rpc.winreg rpc.spoolss rpc.spoolss.win rpc.spoolss.driver 
+  rpc.spoolss.access rpc.iremotewinspool rpc.iremotewinspool_driver 
+  rpc.netlogon rpc.netlogon-s3 rpc.netlogon.admin rpc.netlogon.zerologon 
+  rpc.pac rpc.srvsvc rpc.svcctl rpc.samr.accessmask rpc.samr.handletype 
+  rpc.samr.machine.auth rpc.samr.passwords.pwdlastset 
+  rpc.samr.passwords.badpwdcount rpc.samr.passwords.lockout 
+  rpc.samr.passwords.validate rpc.samr.users.privileges rpc.samr.large-dc 
+  rpc.samr.priv rpc.epmapper rpc.initshutdown rpc.oxidresolve rpc.remact 
+  rpc.samba3 rpc.dssetup rpc.browser rpc.ntsvcs rpc.bind rpc.backupkey 
+  rpc.fsrvp rpc.clusapi rpc.witness rpc.mdssvc rpc.lsa rpc.lsalookup 
+  rpc.lsa-getuser rpc.samr rpc.samr.users rpc.samr.passwords rpc.samlogon 
+  rpc.samsync rpc.schannel rpc.schannel2 rpc.bench-schannel1 
+  rpc.schannel_anon_setpw rpc.mgmt rpc.scanner rpc.countcalls rpc.authcontext 
+  rpc.drsuapi rpc.drsuapi_w2k8 rpc.cracknames rpc.altercontext rpc.join 
+  rpc.dsgetinfo rpc.bench-rpc rpc.asyncbind 
+
+DRSUAPI RPC Tests Suite (drs.rpc):
+  drs.rpc.dssync drs.rpc.msDSIntId 
+
+DRSUAPI Unit Tests Suite (drs.unit):
+  drs.unit.prefixMap drs.unit.schemaInfo 
+
+Tests for the BIND 9 DLZ module (dlz_bind9):
+  dlz_bind9.version dlz_bind9.create dlz_bind9.configure 
+  dlz_bind9.destroyoldestfirst dlz_bind9.destroynewestfirst 
+  dlz_bind9.multipleconfigure dlz_bind9.gssapi dlz_bind9.spnego 
+  dlz_bind9.lookup dlz_bind9.zonedump dlz_bind9.update01 dlz_bind9.allowzonexfr 
+
+Tests for the internal DNS server (dns_internal):
+  dns_internal.queryself dns_internal.updateself 
+
+Remote Administration Protocol tests (rap):
+  rap.basic rap.rpc rap.printing rap.sam rap.scan 
+
+DFS referrals calls (dfs):
+  dfs.domain 
+
+Local, Samba-specific tests (local):
+  local.binding local.ntlmssp local.smbencrypt local.messaging local.irpc 
+  local.strlist local.file local.str local.time local.datablob local.binsearch 
+  local.asn1 local.anonymous_shared local.strv local.strv_util local.util 
+  local.idtree local.dlinklist local.genrand local.iconv local.socket local.pac 
+  local.resolve local.ndr local.tdr local.share local.loadparm local.charset 
+  local.convert_string_handle local.convert_string local.string_case_handle 
+  local.string_case_handle local.compression local.event local.tevent_req 
+  local.torture local.dbspeed local.ldb local.dsdb.dn local.dsdb.syntax 
+  local.registry local.verif_trailer local.nss local.fsrvp_state 
+  local.util_str_escape local.tfork local.mdspkt local.smbtorture local.talloc 
+  local.replace local.crypto.md4 
+
+Kerberos tests (krb5):
+  krb5.kdc 
+
+Benchmarks (bench):
+  bench.nbench 
+
+CIFS UNIX extensions tests (unix):
+  unix.whoami unix.info2 
+
+LDAP and CLDAP tests (ldap):
+  ldap.bench-cldap ldap.basic ldap.sort ldap.cldap ldap.netlogon-udp 
+  ldap.netlogon-tcp ldap.schema ldap.uptodatevector ldap.nested-search 
+  ldap.session-expiry 
+
+NetBIOS over TCP/IP and WINS tests (nbt):
+  nbt.register nbt.wins nbt.dgram nbt.winsreplication nbt.bench nbt.bench-wins 
+
+libnet convenience interface tests (net):
+  net.userinfo net.useradd net.userdel net.usermod net.domopen net.groupinfo 
+  net.groupadd net.api.lookup net.api.lookuphost net.api.lookuppdc 
+  net.api.lookupname net.api.createuser net.api.deleteuser net.api.modifyuser 
+  net.api.userinfo net.api.userlist net.api.groupinfo net.api.grouplist 
+  net.api.creategroup net.api.rpcconn.bind net.api.rpcconn.srv 
+  net.api.rpcconn.pdc net.api.rpcconn.dc net.api.rpcconn.dcinfo 
+  net.api.listshares net.api.delshare net.api.domopenlsa net.api.domcloselsa 
+  net.api.domopensamr net.api.domclosesamr net.api.become.dc net.api.domlist 
+
+NTP tests (ntp):
+  ntp.signd 
+
+VFS modules tests (vfs):
+  vfs.fruit vfs.fruit_netatalk vfs.acl_xattr vfs.fruit_file_id 
+  vfs.fruit_timemachine vfs.fruit_conversion vfs.unfruit 
+
+DSDB tests (dsdb):
+  dsdb.no_attrs 
+
+libcli/echo interface tests (echo):
+  echo.udp 
+
+notifyd unit tests (notifyd):
+  notifyd.trigger1 notifyd.dbtest1 
+
+The default test is ALL.

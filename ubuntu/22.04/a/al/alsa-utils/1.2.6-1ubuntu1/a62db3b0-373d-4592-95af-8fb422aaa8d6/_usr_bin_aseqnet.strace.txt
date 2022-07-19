@@ -1,0 +1,81 @@
+682   execve("/usr/bin/aseqnet", ["/usr/bin/aseqnet"], 0x7ffef53ba020 /* 12 vars */) = 0
+682   brk(NULL)                         = 0x55926ff80000
+682   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc155f8a70) = -1 EINVAL (Invalid argument)
+682   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f460e6bb000
+682   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+682   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+682   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6637, ...}, AT_EMPTY_PATH) = 0
+682   mmap(NULL, 6637, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f460e6b9000
+682   close(3)                          = 0
+682   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libasound.so.2", O_RDONLY|O_CLOEXEC) = 3
+682   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\23\20\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\210\227\2\0\0\0\0\0\210\227\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+682   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1055472, ...}, AT_EMPTY_PATH) = 0
+682   mmap(NULL, 1058064, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f460e5b6000
+682   mmap(0x7f460e5e0000, 618496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a000) = 0x7f460e5e0000
+682   mmap(0x7f460e677000, 237568, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc1000) = 0x7f460e677000
+682   mmap(0x7f460e6b1000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xfa000) = 0x7f460e6b1000
+682   close(3)                          = 0
+682   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+682   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+682   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+682   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+682   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+682   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+682   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+682   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f460e38e000
+682   mmap(0x7f460e3b6000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f460e3b6000
+682   mmap(0x7f460e54b000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f460e54b000
+682   mmap(0x7f460e5a3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f460e5a3000
+682   mmap(0x7f460e5a9000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f460e5a9000
+682   close(3)                          = 0
+682   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+682   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+682   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+682   mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f460e2a7000
+682   mmap(0x7f460e2b5000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f460e2b5000
+682   mmap(0x7f460e331000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f460e331000
+682   mmap(0x7f460e38c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f460e38c000
+682   close(3)                          = 0
+682   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f460e2a5000
+682   arch_prctl(ARCH_SET_FS, 0x7f460e2a5b80) = 0
+682   set_tid_address(0x7f460e2a5e50)   = 682
+682   set_robust_list(0x7f460e2a5e60, 24) = 0
+682   rseq(0x7f460e2a6520, 0x20, 0, 0x53053053) = 0
+682   mprotect(0x7f460e5a3000, 16384, PROT_READ) = 0
+682   mprotect(0x7f460e38c000, 4096, PROT_READ) = 0
+682   mprotect(0x7f460e6b1000, 28672, PROT_READ) = 0
+682   mprotect(0x55926f9a1000, 4096, PROT_READ) = 0
+682   mprotect(0x7f460e6f5000, 8192, PROT_READ) = 0
+682   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+682   munmap(0x7f460e6b9000, 6637)      = 0
+682   getrandom("\xcb\x8e\x7d\x16\x69\xda\x79\xee", 8, GRND_NONBLOCK) = 8
+682   brk(NULL)                         = 0x55926ff80000
+682   brk(0x55926ffa1000)               = 0x55926ffa1000
+682   rt_sigaction(SIGINT, {sa_handler=0x55926f99f8f0, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f460e3d0520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+682   rt_sigaction(SIGTERM, {sa_handler=0x55926f99f8f0, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f460e3d0520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+682   futex(0x7f460e6b8508, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+682   newfstatat(AT_FDCWD, "/usr/share/alsa/alsa.conf", {st_mode=S_IFREG|0644, st_size=10117, ...}, 0) = 0
+682   openat(AT_FDCWD, "/usr/share/alsa/alsa.conf", O_RDONLY) = 3
+682   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10117, ...}, AT_EMPTY_PATH) = 0
+682   read(3, "#\n#  ALSA library configuration file\n#\n\n# pre-load the configuration files\n\n@hooks [\n\t{\n\t\tfunc load\n\t\tfiles [\n\t\t\t\"/var/lib/alsa/"..., 4096) = 4096
+682   read(3, "hint.extended\n\t\t}\n\t\tdescription \"Direct hardware device without any conversions\"\n\t}\n}\n\npcm.plughw {\n\t@args [ CARD DEV SUBDEV ]\n\t"..., 4096) = 4096
+682   read(3, "e\n#\n\nhwdep.default {\n\ttype hw\n\tcard {\n\t\t@func getenv\n\t\tvars [\n\t\t\tALSA_HWDEP_CARD\n\t\t\tALSA_CARD\n\t\t]\n\t\tdefault {\n\t\t\t@func refer\n\t\t\t"..., 4096) = 1925
+682   read(3, "", 4096)                 = 0
+682   close(3)                          = 0
+682   access("/var/lib/alsa/conf.d", R_OK) = -1 ENOENT (No such file or directory)
+682   access("/usr/etc/alsa/conf.d", R_OK) = -1 ENOENT (No such file or directory)
+682   access("/etc/alsa/conf.d", R_OK)  = -1 ENOENT (No such file or directory)
+682   access("/etc/asound.conf", R_OK)  = -1 ENOENT (No such file or directory)
+682   access("/usr/etc/asound.conf", R_OK) = -1 ENOENT (No such file or directory)
+682   access("/root/.asoundrc", R_OK)   = -1 ENOENT (No such file or directory)
+682   access("/root/.config/alsa/asoundrc", R_OK) = -1 ENOENT (No such file or directory)
+682   openat(AT_FDCWD, "/dev/snd/seq", O_RDWR|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+682   openat(AT_FDCWD, "/dev/aloadSEQ", O_RDWR|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+682   openat(AT_FDCWD, "/dev/snd/seq", O_RDWR|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+682   write(2, "ALSA lib seq_hw.c:466:(snd_seq_hw_open) ", 40) = 40
+682   write(2, "open /dev/snd/seq failed", 24) = 24
+682   write(2, ": No such file or directory", 27) = 27
+682   write(2, "\n", 1)                 = 1
+682   write(2, "snd_seq_open: No such file or directory\n", 40) = 40
+682   exit_group(1)                     = ?
+682   +++ exited with 1 +++

@@ -1,0 +1,79 @@
+704   execve("/usr/riscv64-linux-gnu/bin/strip", ["/usr/riscv64-linux-gnu/bin/strip"], 0x7ffedf231280 /* 12 vars */) = 0
+704   brk(NULL)                         = 0x564bd4d4e000
+704   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc19eb52c0) = -1 EINVAL (Invalid argument)
+704   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2646329000
+704   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+704   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+704   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6545, ...}, AT_EMPTY_PATH) = 0
+704   mmap(NULL, 6545, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2646327000
+704   close(3)                          = 0
+704   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbfd-2.38-riscv64.so", O_RDONLY|O_CLOEXEC) = 3
+704   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\270j\17\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\312\2\0\0\0\0\0H\312\2\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+704   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1012216, ...}, AT_EMPTY_PATH) = 0
+704   mmap(NULL, 1015064, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f264622f000
+704   mmap(0x7f264625c000, 569344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7f264625c000
+704   mmap(0x7f26462e7000, 196608, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb8000) = 0x7f26462e7000
+704   mmap(0x7f2646317000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x7f2646317000
+704   close(3)                          = 0
+704   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+704   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+704   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+704   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+704   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+704   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+704   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+704   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2646007000
+704   mmap(0x7f264602f000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f264602f000
+704   mmap(0x7f26461c4000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f26461c4000
+704   mmap(0x7f264621c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f264621c000
+704   mmap(0x7f2646222000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2646222000
+704   close(3)                          = 0
+704   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+704   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\242\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\37\0\0\0\0\0\08\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+704   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+704   mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2645feb000
+704   mprotect(0x7f2645fed000, 98304, PROT_NONE) = 0
+704   mmap(0x7f2645fed000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f2645fed000
+704   mmap(0x7f2645ffe000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7f2645ffe000
+704   mmap(0x7f2646005000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f2646005000
+704   close(3)                          = 0
+704   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2645fe9000
+704   arch_prctl(ARCH_SET_FS, 0x7f2645fe9b80) = 0
+704   set_tid_address(0x7f2645fe9e50)   = 704
+704   set_robust_list(0x7f2645fe9e60, 24) = 0
+704   rseq(0x7f2645fea520, 0x20, 0, 0x53053053) = 0
+704   mprotect(0x7f264621c000, 16384, PROT_READ) = 0
+704   mprotect(0x7f2646005000, 4096, PROT_READ) = 0
+704   mprotect(0x7f2646317000, 53248, PROT_READ) = 0
+704   mprotect(0x564bd3f67000, 4096, PROT_READ) = 0
+704   mprotect(0x7f2646363000, 8192, PROT_READ) = 0
+704   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+704   munmap(0x7f2646327000, 6545)      = 0
+704   getrandom("\x29\xf7\xf7\x38\x14\x06\xf9\x69", 8, GRND_NONBLOCK) = 8
+704   brk(NULL)                         = 0x564bd4d4e000
+704   brk(0x564bd4d6f000)               = 0x564bd4d6f000
+704   write(2, "Usage: /usr/riscv64-linux-gnu/bin/strip <option(s)> in-file(s)\n", 63) = 63
+704   write(2, " Removes symbols and sections from files\n", 41) = 41
+704   write(2, " The options are:\n", 18) = 18
+704   write(2, "  -I --input-target=<bfdname>      Assume input file is in format <bfdname>\n  -O --output-target=<bfdname>     Create an output "..., 315) = 315
+704   write(2, "  -D --enable-deterministic-archives\n                                   Produce deterministic output when stripping archives (de"..., 228) = 228
+704   write(2, "  -R --remove-section=<name>       Also remove section <name> from the output\n     --remove-relocations <name>   Remove relocati"..., 1554) = 1554
+704   write(2, "/usr/riscv64-linux-gnu/bin/strip: supported targets:", 52) = 52
+704   write(2, " elf64-littleriscv", 18) = 18
+704   write(2, " elf32-littleriscv", 18) = 18
+704   write(2, " elf32-bigriscv", 15)   = 15
+704   write(2, " elf64-bigriscv", 15)   = 15
+704   write(2, " elf64-little", 13)     = 13
+704   write(2, " elf64-big", 10)        = 10
+704   write(2, " elf32-little", 13)     = 13
+704   write(2, " elf32-big", 10)        = 10
+704   write(2, " srec", 5)              = 5
+704   write(2, " symbolsrec", 11)       = 11
+704   write(2, " verilog", 8)           = 8
+704   write(2, " tekhex", 7)            = 7
+704   write(2, " binary", 7)            = 7
+704   write(2, " ihex", 5)              = 5
+704   write(2, " plugin", 7)            = 7
+704   write(2, "\n", 1)                 = 1
+704   exit_group(1)                     = ?
+704   +++ exited with 1 +++

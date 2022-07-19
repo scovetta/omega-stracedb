@@ -1,0 +1,121 @@
+488   execve("/usr/bin/nvidia-smi", ["/usr/bin/nvidia-smi"], 0x7ffccd51b670 /* 12 vars */) = 0
+488   brk(NULL)                         = 0xde6000
+488   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd3684b2a0) = -1 EINVAL (Invalid argument)
+488   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8702125000
+488   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+488   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6673, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 6673, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8702123000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\210J\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0%\0$\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250\n\0\0\0\0\0\0\250\n\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21448, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f870211e000
+488   mmap(0x7f870211f000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f870211f000
+488   mmap(0x7f8702120000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f8702120000
+488   mmap(0x7f8702121000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f8702121000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0`1\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0x\6\0\0\0\0\0\0x\6\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8702119000
+488   mmap(0x7f870211a000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f870211a000
+488   mmap(0x7f870211b000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f870211b000
+488   mmap(0x7f870211c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f870211c000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+488   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+488   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+488   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8701ef1000
+488   mmap(0x7f8701f19000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f8701f19000
+488   mmap(0x7f87020ae000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f87020ae000
+488   mmap(0x7f8702106000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f8702106000
+488   mmap(0x7f870210c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f870210c000
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\2101\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\10\0\0\0\0\0\0\10\10\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14664, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 16440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8701eec000
+488   mmap(0x7f8701eed000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f8701eed000
+488   mmap(0x7f8701eee000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f8701eee000
+488   mmap(0x7f8701eef000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f8701eef000
+488   close(3)                          = 0
+488   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8701eea000
+488   arch_prctl(ARCH_SET_FS, 0x7f8701eeb100) = 0
+488   set_tid_address(0x7f8701eeb3d0)   = 488
+488   set_robust_list(0x7f8701eeb3e0, 24) = 0
+488   rseq(0x7f8701eebaa0, 0x20, 0, 0x53053053) = 0
+488   mprotect(0x7f8702106000, 16384, PROT_READ) = 0
+488   mprotect(0x7f8701eef000, 4096, PROT_READ) = 0
+488   mprotect(0x7f870211c000, 4096, PROT_READ) = 0
+488   mprotect(0x7f8702121000, 4096, PROT_READ) = 0
+488   mprotect(0x67c000, 102400, PROT_READ) = 0
+488   mprotect(0x7f870215f000, 8192, PROT_READ) = 0
+488   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+488   munmap(0x7f8702123000, 6673)      = 0
+488   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6673, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 6673, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8702123000
+488   close(3)                          = 0
+488   getrandom("\x11\xb2\xbb\xd6\xeb\x54\xc7\x9f", 8, GRND_NONBLOCK) = 8
+488   brk(NULL)                         = 0xde6000
+488   brk(0xe07000)                     = 0xe07000
+488   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnvidia-ml.so.1", O_RDONLY|O_CLOEXEC) = 3
+488   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200C\1\0\0\0\0\0@\0\0\0\0\0\0\0x.\35\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\31\0\30\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\370\23\30\0\0\0\0\0\370\23\30\0\0\0\0\0\0\0 \0\0\0\0\0\1\0\0\0\6\0\0\0"..., 832) = 832
+488   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1914040, ...}, AT_EMPTY_PATH) = 0
+488   mmap(NULL, 9009928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8701652000
+488   mmap(0x7f8701800000, 6912776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7f8701800000
+488   munmap(0x7f8701652000, 1761280)   = 0
+488   munmap(0x7f8701e98000, 334600)    = 0
+488   mprotect(0x7f8701982000, 2093056, PROT_NONE) = 0
+488   mmap(0x7f8701b81000, 335872, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x181000) = 0x7f8701b81000
+488   mmap(0x7f8701bd3000, 2902792, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8701bd3000
+488   close(3)                          = 0
+488   mprotect(0x7f8701b81000, 331776, PROT_READ) = 0
+488   munmap(0x7f8702123000, 6673)      = 0
+488   getpid()                          = 488
+488   openat(AT_FDCWD, "/proc/modules", O_RDONLY) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+488   read(3, "", 1024)                 = 0
+488   close(3)                          = 0
+488   stat("/sys/bus/pci/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+488   openat(AT_FDCWD, "/sys/bus/pci/devices", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+488   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+488   getdents64(3, 0xde78b0 /* 7 entries */, 32768) = 208
+488   openat(AT_FDCWD, "/sys/bus/pci/devices/7bef:00:00.0/config", O_RDONLY) = 4
+488   read(4, "\364\32I\20\6\4\20\0\1\0\0\1\0@\0\0\4@\340\377\v\0\0\0\4P\340\377\v\0\0\0\4`\340\377\v\0\0\0\0\0\0\0\364\32@\0", 48) = 48
+488   close(4)                          = 0
+488   openat(AT_FDCWD, "/sys/bus/pci/devices/1c7d:00:00.0/config", O_RDONLY) = 4
+488   read(4, "\364\32Z\20\6\4\20\0\1\0\200\10\0@\0\0\4\0\0\0\16\0\0\0\4\20\0\0\16\0\0\0\4\0\0\0\f\0\0\0\0\0\0\0\364\32@\0", 48) = 48
+488   close(4)                          = 0
+488   openat(AT_FDCWD, "/sys/bus/pci/devices/9bcf:00:00.0/config", O_RDONLY) = 4
+488   read(4, "\24\24\216\0\7\0\20\0\0\0\2\3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 48) = 48
+488   close(4)                          = 0
+488   openat(AT_FDCWD, "/sys/bus/pci/devices/ba9f:00:00.0/config", O_RDONLY) = 4
+488   read(4, "\364\32I\20\6\4\20\0\1\0\0\1\0@\0\0\4\0\340\377\v\0\0\0\4\20\340\377\v\0\0\0\4 \340\377\v\0\0\0\0\0\0\0\364\32@\0", 48) = 48
+488   close(4)                          = 0
+488   openat(AT_FDCWD, "/sys/bus/pci/devices/80dd:00:00.0/config", O_RDONLY) = 4
+488   read(4, "\364\32I\20\6\4\20\0\1\0\0\1\0@\0\0\4\200\340\377\v\0\0\0\4\220\340\377\v\0\0\0\4\240\340\377\v\0\0\0\0\0\0\0\364\32@\0", 48) = 48
+488   close(4)                          = 0
+488   getdents64(3, 0xde78b0 /* 0 entries */, 32768) = 0
+488   close(3)                          = 0
+488   stat("/usr/bin/nvidia-modprobe", 0x7ffd3684ab60) = -1 ENOENT (No such file or directory)
+488   openat(AT_FDCWD, "/proc/devices", O_RDONLY) = 3
+488   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+488   read(3, "Character devices:\n  1 mem\n  4 /dev/vc/0\n  4 tty\n  4 ttyS\n  5 /dev/tty\n  5 /dev/console\n  5 /dev/ptmx\n  7 vcs\n 10 misc\n 13 input"..., 1024) = 511
+488   close(3)                          = 0
+488   openat(AT_FDCWD, "/proc/driver/nvidia/params", O_RDONLY) = -1 ENOENT (No such file or directory)
+488   stat("/dev/nvidiactl", 0x7ffd3684aa30) = -1 ENOENT (No such file or directory)
+488   mknodat(AT_FDCWD, "/dev/nvidiactl", S_IFCHR|0666, makedev(0xc3, 0xff)) = 0
+488   chmod("/dev/nvidiactl", 0666)     = 0
+488   chown("/dev/nvidiactl", 0, 0)     = 0
+488   openat(AT_FDCWD, "/dev/nvidiactl", O_RDWR) = -1 EPERM (Operation not permitted)
+488   openat(AT_FDCWD, "/dev/nvidiactl", O_RDONLY) = -1 EPERM (Operation not permitted)
+488   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+488   write(1, "Failed to initialize NVML: Unknown Error\n", 41) = 41
+488   exit_group(255)                   = ?
+488   +++ exited with 255 +++

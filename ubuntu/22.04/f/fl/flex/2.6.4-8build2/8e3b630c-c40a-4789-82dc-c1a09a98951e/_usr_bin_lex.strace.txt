@@ -1,0 +1,323 @@
+1062  execve("/usr/bin/lex", ["/usr/bin/lex"], 0x7ffc58a74550 /* 12 vars */) = 0
+1062  brk(NULL)                         = 0x560cf1ec8000
+1062  arch_prctl(0x3001 /* ARCH_??? */, 0x7fff707b80f0) = -1 EINVAL (Invalid argument)
+1062  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3405cc0000
+1062  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1062  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1062  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=9213, ...}, AT_EMPTY_PATH) = 0
+1062  mmap(NULL, 9213, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3405cbd000
+1062  close(3)                          = 0
+1062  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+1062  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1062  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+1062  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3405bd6000
+1062  mmap(0x7f3405be4000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f3405be4000
+1062  mmap(0x7f3405c60000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f3405c60000
+1062  mmap(0x7f3405cbb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f3405cbb000
+1062  close(3)                          = 0
+1062  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1062  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1062  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1062  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1062  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1062  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1062  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1062  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f34059ae000
+1062  mmap(0x7f34059d6000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f34059d6000
+1062  mmap(0x7f3405b6b000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f3405b6b000
+1062  mmap(0x7f3405bc3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f3405bc3000
+1062  mmap(0x7f3405bc9000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3405bc9000
+1062  close(3)                          = 0
+1062  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f34059ab000
+1062  arch_prctl(ARCH_SET_FS, 0x7f34059ab740) = 0
+1062  set_tid_address(0x7f34059aba10)   = 1062
+1062  set_robust_list(0x7f34059aba20, 24) = 0
+1062  rseq(0x7f34059ac0e0, 0x20, 0, 0x53053053) = 0
+1062  mprotect(0x7f3405bc3000, 16384, PROT_READ) = 0
+1062  mprotect(0x7f3405cbb000, 4096, PROT_READ) = 0
+1062  mprotect(0x560ceffd0000, 36864, PROT_READ) = 0
+1062  mprotect(0x7f3405cfa000, 8192, PROT_READ) = 0
+1062  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1062  munmap(0x7f3405cbd000, 9213)      = 0
+1062  getrandom("\x61\xb5\xe8\x5b\x5f\x0d\x45\xec", 8, GRND_NONBLOCK) = 8
+1062  brk(NULL)                         = 0x560cf1ec8000
+1062  brk(0x560cf1ee9000)               = 0x560cf1ee9000
+1062  brk(0x560cf1f0b000)               = 0x560cf1f0b000
+1062  ioctl(0, TCGETS, 0x7fff707b61a0)  = -1 ENOTTY (Inappropriate ioctl for device)
+1062  newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=43, ...}, AT_EMPTY_PATH) = 0
+1062  read(0, "", 8192)                 = 0
+1062  ioctl(0, TCGETS, 0x7fff707b61a0)  = -1 ENOTTY (Inappropriate ioctl for device)
+1062  write(2, "<stdin>:1: premature EOF\n", 25) = 25
+1062  openat(AT_FDCWD, "lex.yy.c", O_RDWR|O_CREAT|O_TRUNC, 0666) = 3
+1062  dup3(3, 1, 0)                     = 1
+1062  close(3)                          = 0
+1062  newfstatat(AT_FDCWD, "/usr/local/sbin/m4", 0x7fff707b7880, 0) = -1 ENOENT (No such file or directory)
+1062  newfstatat(AT_FDCWD, "/usr/local/bin/m4", 0x7fff707b7880, 0) = -1 ENOENT (No such file or directory)
+1062  newfstatat(AT_FDCWD, "/usr/sbin/m4", 0x7fff707b7880, 0) = -1 ENOENT (No such file or directory)
+1062  newfstatat(AT_FDCWD, "/usr/bin/m4", {st_mode=S_IFREG|0755, st_size=158072, ...}, 0) = 0
+1062  pipe2([3, 4], 0)                  = 0
+1062  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1067  set_robust_list(0x7f34059aba20, 24 <unfinished ...>
+1062  <... clone resumed>, child_tidptr=0x7f34059aba10) = 1067
+1067  <... set_robust_list resumed>)    = 0
+1062  close(3 <unfinished ...>
+1067  close(4 <unfinished ...>
+1062  <... close resumed>)              = 0
+1067  <... close resumed>)              = 0
+1062  dup2(4, 1 <unfinished ...>
+1067  dup2(3, 0 <unfinished ...>
+1062  <... dup2 resumed>)               = 1
+1067  <... dup2 resumed>)               = 0
+1062  close(4 <unfinished ...>
+1067  close(3 <unfinished ...>
+1062  <... close resumed>)              = 0
+1067  <... close resumed>)              = 0
+1062  newfstatat(1, "",  <unfinished ...>
+1067  lseek(0, 0, SEEK_CUR <unfinished ...>
+1062  <... newfstatat resumed>{st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1067  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1062  lseek(1, 0, SEEK_CUR <unfinished ...>
+1067  read(0,  <unfinished ...>
+1062  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1062  pipe2([3, 4], 0)                  = 0
+1062  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1068  set_robust_list(0x7f34059aba20, 24 <unfinished ...>
+1062  <... clone resumed>, child_tidptr=0x7f34059aba10) = 1068
+1068  <... set_robust_list resumed>)    = 0
+1062  close(3 <unfinished ...>
+1068  close(4 <unfinished ...>
+1062  <... close resumed>)              = 0
+1068  <... close resumed>)              = 0
+1062  dup2(4, 1 <unfinished ...>
+1068  dup2(3, 0 <unfinished ...>
+1062  <... dup2 resumed>)               = 1
+1068  <... dup2 resumed>)               = 0
+1062  close(4 <unfinished ...>
+1068  close(3 <unfinished ...>
+1062  <... close resumed>)              = 0
+1068  <... close resumed>)              = 0
+1062  lseek(1, 0, SEEK_CUR <unfinished ...>
+1068  lseek(0, 0, SEEK_CUR <unfinished ...>
+1062  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1068  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1062  pipe2( <unfinished ...>
+1068  execve("/usr/bin/m4", ["/usr/bin/m4", "-P"], 0x7fff707b82c8 /* 12 vars */ <unfinished ...>
+1062  <... pipe2 resumed>[3, 4], 0)     = 0
+1062  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+1068  <... execve resumed>)             = 0
+1069  set_robust_list(0x7f34059aba20, 24 <unfinished ...>
+1068  brk(NULL <unfinished ...>
+1069  <... set_robust_list resumed>)    = 0
+1062  <... clone resumed>, child_tidptr=0x7f34059aba10) = 1069
+1069  close(4 <unfinished ...>
+1068  <... brk resumed>)                = 0x55d415ac5000
+1069  <... close resumed>)              = 0
+1062  close(3 <unfinished ...>
+1069  dup2(3, 0 <unfinished ...>
+1068  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffef4881fd0 <unfinished ...>
+1069  <... dup2 resumed>)               = 0
+1062  <... close resumed>)              = 0
+1069  close(3 <unfinished ...>
+1068  <... arch_prctl resumed>)         = -1 EINVAL (Invalid argument)
+1069  <... close resumed>)              = 0
+1062  dup2(4, 1 <unfinished ...>
+1069  lseek(0, 0, SEEK_CUR <unfinished ...>
+1068  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1069  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1062  <... dup2 resumed>)               = 1
+1069  dup(1 <unfinished ...>
+1068  <... mmap resumed>)               = 0x7fee7ad39000
+1069  <... dup resumed>)                = 3
+1062  close(4 <unfinished ...>
+1069  fcntl(3, F_GETFL <unfinished ...>
+1068  access("/etc/ld.so.preload", R_OK <unfinished ...>
+1069  <... fcntl resumed>)              = 0x1 (flags O_WRONLY)
+1062  <... close resumed>)              = 0
+1069  newfstatat(3, "",  <unfinished ...>
+1068  <... access resumed>)             = -1 ENOENT (No such file or directory)
+1069  <... newfstatat resumed>{st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1062  lseek(1, 0, SEEK_CUR <unfinished ...>
+1069  read(0,  <unfinished ...>
+1068  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+1062  <... lseek resumed>)              = -1 ESPIPE (Illegal seek)
+1068  <... openat resumed>)             = 3
+1062  write(1, "m4_changequote\nm4_changequote([[, ]])\nm4_define( [[M4_YY_TABLES_VERIFY]], [[[[0]]]])m4_dnl\nm4_define( [[M4_YY_PREFIX]], [[[[yy]]"..., 4096 <unfinished ...>
+1068  newfstatat(3, "",  <unfinished ...>
+1069  <... read resumed>"m4_changequote\nm4_changequote([[, ]])\nm4_define( [[M4_YY_TABLES_VERIFY]], [[[[0]]]])m4_dnl\nm4_define( [[M4_YY_PREFIX]], [[[[yy]]"..., 4096) = 4096
+1062  <... write resumed>)              = 4096
+1069  write(3, "m4_dnl ifdef(`__gnu__', ,`errprint(Flex requires GNU M4. Set the PATH or set the M4 environment variable to its path name.) m4ex"..., 4096 <unfinished ...>
+1068  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=9213, ...}, AT_EMPTY_PATH) = 0
+1069  <... write resumed>)              = 4096
+1062  write(1, "\n#endif]]\n\n    \n[[#ifdef yylex\n#define ]]M4_YY_PREFIX[[lex_ALREADY_DEFINED\n#else\n#define yylex ]]M4_YY_PREFIX[[lex\n#endif]]\n\n   "..., 4096 <unfinished ...>
+1069  read(0,  <unfinished ...>
+1068  mmap(NULL, 9213, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+1069  <... read resumed>"\n#endif]]\n\n    \n[[#ifdef yylex\n#define ]]M4_YY_PREFIX[[lex_ALREADY_DEFINED\n#else\n#define yylex ]]M4_YY_PREFIX[[lex\n#endif]]\n\n   "..., 4096) = 4096
+1062  <... write resumed>)              = 4096
+1069  write(3, "e\n#define ]]M4_YY_PREFIX[[pop_buffer_state_ALREADY_DEFINED\n#else\n#define yypop_buffer_state ]]M4_YY_PREFIX[[pop_buffer_state\n#en"..., 4096 <unfinished ...>
+1068  <... mmap resumed>)               = 0x7fee7ad36000
+1069  <... write resumed>)              = 4096
+1062  write(1, "  \n[[#ifdef yyin\n#define ]]M4_YY_PREFIX[[in_ALREADY_DEFINED\n#else\n#define yyin ]]M4_YY_PREFIX[[in\n#endif]]\n\n    \n[[#ifdef yyout\n"..., 4096 <unfinished ...>
+1069  read(0,  <unfinished ...>
+1068  close(3 <unfinished ...>
+1069  <... read resumed>"  \n[[#ifdef yyin\n#define ]]M4_YY_PREFIX[[in_ALREADY_DEFINED\n#else\n#define yyin ]]M4_YY_PREFIX[[in\n#endif]]\n\n    \n[[#ifdef yyout\n"..., 4096) = 4096
+1062  <... write resumed>)              = 4096
+1069  write(3, "_ifelse(M4_YY_PREFIX,yy,,\nm4_ifdef( [[M4_YY_NOT_REENTRANT]],\n[[\n    \n[[#ifdef yytext\n#define ]]M4_YY_PREFIX[[text_ALREADY_DEFINE"..., 4096 <unfinished ...>
+1068  <... close resumed>)              = 0
+1069  <... write resumed>)              = 4096
+1062  write(1, " to take a parameter,\n * but we do it the disgusting crufty way forced on us by the ()-less\n * definition of BEGIN.\n */\n#define "..., 4096 <unfinished ...>
+1069  read(0,  <unfinished ...>
+1068  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsigsegv.so.2", O_RDONLY|O_CLOEXEC <unfinished ...>
+1069  <... read resumed>" to take a parameter,\n * but we do it the disgusting crufty way forced on us by the ()-less\n * definition of BEGIN.\n */\n#define "..., 4096) = 4096
+1062  <... write resumed>)              = 4096
+1069  write(3, "_DOC_PARAM]], )\n\n\n\nm4_define( [[YYFARGS1]], [[($1 $2 M4_YY_DEF_LAST_ARG)]])\nm4_define( [[YYFARGS2]], [[($1 $2, $3 $4 M4_YY_DEF_L"..., 4096 <unfinished ...>
+1068  <... openat resumed>)             = 3
+1069  <... write resumed>)              = 4096
+1062  write(1, "g of a line.\n\t * If so, '^' rules will be active on the next match, otherwise\n\t * not.\n\t */\n\tint yy_at_bol;\n\n    int yy_bs_linen"..., 4096 <unfinished ...>
+1069  read(0,  <unfinished ...>
+1068  read(3,  <unfinished ...>
+1069  <... read resumed>"g of a line.\n\t * If so, '^' rules will be active on the next match, otherwise\n\t * not.\n\t */\n\tint yy_at_bol;\n\n    int yy_bs_linen"..., 4096) = 4096
+1062  <... write resumed>)              = 4096
+1069  write(3, "our_buffer;\n\n\t/* Whether this is an \"interactive\" input source; if so, and\n\t * if we're using stdio for input, then we want to u"..., 4096 <unfinished ...>
+1068  <... read resumed>"\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370A\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\310\v\0\0\0\0\0\0\310\v\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+1069  <... write resumed>)              = 4096
+1062  write(1, "if ( ! YY_CURRENT_BUFFER ){\\\n        yyensure_buffer_stack (M4_YY_CALL_ONLY_ARG); \\\n\t\tYY_CURRENT_BUFFER_LVALUE =    \\\n          "..., 310 <unfinished ...>
+1069  read(0,  <unfinished ...>
+1068  newfstatat(3, "",  <unfinished ...>
+1069  <... read resumed>"if ( ! YY_CURRENT_BUFFER ){\\\n        yyensure_buffer_stack (M4_YY_CALL_ONLY_ARG); \\\n\t\tYY_CURRENT_BUFFER_LVALUE =    \\\n          "..., 4096) = 310
+1062  <... write resumed>)              = 310
+1069  read(0,  <unfinished ...>
+1068  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=18680, ...}, AT_EMPTY_PATH) = 0
+1062  close(1 <unfinished ...>
+1068  mmap(NULL, 20728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0 <unfinished ...>
+1069  <... read resumed>"", 4096)       = 0
+1062  <... close resumed>)              = 0
+1069  write(3, "\\\n\tif ( ! YY_CURRENT_BUFFER ){ \\\n        yyensure_buffer_stack (M4_YY_CALL_ONLY_ARG); \\\n\t\tYY_CURRENT_BUFFER_LVALUE =    \\\n      "..., 612 <unfinished ...>
+1068  <... mmap resumed>)               = 0x7fee7ad30000
+1069  <... write resumed>)              = 612
+1062  unlink("lex.yy.c" <unfinished ...>
+1069  close(3 <unfinished ...>
+1068  mmap(0x7fee7ad31000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000 <unfinished ...>
+1069  <... close resumed>)              = 0
+1062  <... unlink resumed>)             = 0
+1069  wait4(-1,  <unfinished ...>
+1068  <... mmap resumed>)               = 0x7fee7ad31000
+1069  <... wait4 resumed>NULL, 0, NULL) = -1 ECHILD (No child processes)
+1062  wait4(-1,  <unfinished ...>
+1069  close(1 <unfinished ...>
+1068  mmap(0x7fee7ad33000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000 <unfinished ...>
+1069  <... close resumed>)              = 0
+1068  <... mmap resumed>)               = 0x7fee7ad33000
+1069  wait4(-1,  <unfinished ...>
+1068  mmap(0x7fee7ad34000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000 <unfinished ...>
+1069  <... wait4 resumed>0x7fff707b814c, 0, NULL) = -1 ECHILD (No child processes)
+1068  <... mmap resumed>)               = 0x7fee7ad34000
+1069  exit_group(0 <unfinished ...>
+1068  close(3 <unfinished ...>
+1069  <... exit_group resumed>)         = ?
+1068  <... close resumed>)              = 0
+1069  +++ exited with 0 +++
+1068  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+1062  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1069
+1068  <... openat resumed>)             = 3
+1062  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1069, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1068  read(3,  <unfinished ...>
+1062  wait4(-1,  <unfinished ...>
+1068  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1068  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1068  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1068  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1068  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1068  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1068  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fee7ab08000
+1068  mmap(0x7fee7ab30000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fee7ab30000
+1068  mmap(0x7fee7acc5000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fee7acc5000
+1068  mmap(0x7fee7ad1d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fee7ad1d000
+1068  mmap(0x7fee7ad23000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fee7ad23000
+1068  close(3)                          = 0
+1068  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fee7ab05000
+1068  arch_prctl(ARCH_SET_FS, 0x7fee7ab05740) = 0
+1068  set_tid_address(0x7fee7ab05a10)   = 1068
+1068  set_robust_list(0x7fee7ab05a20, 24) = 0
+1068  rseq(0x7fee7ab060e0, 0x20, 0, 0x53053053) = 0
+1068  mprotect(0x7fee7ad1d000, 16384, PROT_READ) = 0
+1068  mprotect(0x7fee7ad34000, 4096, PROT_READ) = 0
+1068  mprotect(0x55d414b99000, 4096, PROT_READ) = 0
+1068  mprotect(0x7fee7ad73000, 8192, PROT_READ) = 0
+1068  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1068  munmap(0x7fee7ad36000, 9213)      = 0
+1068  newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1068  newfstatat(2, "", {st_mode=S_IFREG|0777, st_size=25, ...}, AT_EMPTY_PATH) = 0
+1068  getrandom("\xe9\x41\xe2\xf3\xee\x3d\x3f\xaf", 8, GRND_NONBLOCK) = 8
+1068  brk(NULL)                         = 0x55d415ac5000
+1068  brk(0x55d415ae6000)               = 0x55d415ae6000
+1068  rt_sigaction(SIGSEGV, {sa_handler=0x55d414b79b10, sa_mask=[], sa_flags=SA_RESTORER|SA_NODEFER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x7fee7ab4a520}, NULL, 8) = 0
+1068  rt_sigaction(SIGABRT, {sa_handler=0x55d414b79b10, sa_mask=[], sa_flags=SA_RESTORER|SA_NODEFER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x7fee7ab4a520}, NULL, 8) = 0
+1068  rt_sigaction(SIGILL, {sa_handler=0x55d414b79b10, sa_mask=[], sa_flags=SA_RESTORER|SA_NODEFER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x7fee7ab4a520}, NULL, 8) = 0
+1068  rt_sigaction(SIGFPE, {sa_handler=0x55d414b79b10, sa_mask=[], sa_flags=SA_RESTORER|SA_NODEFER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x7fee7ab4a520}, NULL, 8) = 0
+1068  rt_sigaction(SIGBUS, {sa_handler=0x55d414b79b10, sa_mask=[], sa_flags=SA_RESTORER|SA_NODEFER|SA_RESETHAND|0xffffffff00000000, sa_restorer=0x7fee7ab4a520}, NULL, 8) = 0
+1068  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+1068  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fee7ad37000
+1068  lseek(3, 0, SEEK_SET)             = 0
+1068  read(3, "55d414b73000-55d414b77000 r--p 00000000 08:20 50798                      /usr/bin/m4\n55d414b77000-55d414b90000 r-xp 00004000 08:"..., 8192) = 2682
+1068  read(3, "", 5510)                 = 0
+1068  close(3)                          = 0
+1068  munmap(0x7fee7ad37000, 8192)      = 0
+1068  sigaltstack({ss_sp=0x55d414b9a440, ss_flags=0, ss_size=65536}, NULL) = 0
+1068  rt_sigaction(SIGSEGV, {sa_handler=0x7fee7ad32190, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fee7ab4a520}, NULL, 8) = 0
+1068  rt_sigaction(SIGSEGV, {sa_handler=0x7fee7ad32190, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fee7ab4a520}, NULL, 8) = 0
+1068  newfstatat(0, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1068  read(0, "m4_dnl ifdef(`__gnu__', ,`errprint(Flex requires GNU M4. Set the PATH or set the M4 environment variable to its path name.) m4ex"..., 4096) = 4096
+1068  newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1068  read(0, "e\n#define ]]M4_YY_PREFIX[[pop_buffer_state_ALREADY_DEFINED\n#else\n#define yypop_buffer_state ]]M4_YY_PREFIX[[pop_buffer_state\n#en"..., 4096) = 4096
+1068  read(0, "_ifelse(M4_YY_PREFIX,yy,,\nm4_ifdef( [[M4_YY_NOT_REENTRANT]],\n[[\n    \n[[#ifdef yytext\n#define ]]M4_YY_PREFIX[[text_ALREADY_DEFINE"..., 4096) = 4096
+1068  read(0, "_DOC_PARAM]], )\n\n\n\nm4_define( [[YYFARGS1]], [[($1 $2 M4_YY_DEF_LAST_ARG)]])\nm4_define( [[YYFARGS2]], [[($1 $2, $3 $4 M4_YY_DEF_L"..., 4096) = 4096
+1068  write(1, "\n\n#line 0 \"lex.yy.c\"\n\n#define  YY_INT_ALIGNED short int\n\n/* A lexical scanner generated by flex */\n\n\n\n\n\n\n\n\n\n\n\n#define FLEX_SCANN"..., 4096) = 4096
+1067  <... read resumed>"\n\n#line 0 \"lex.yy.c\"\n\n#define  YY_INT_ALIGNED short int\n\n/* A lexical scanner generated by flex */\n\n\n\n\n\n\n\n\n\n\n\n#define FLEX_SCANN"..., 4096) = 4096
+1068  read(0,  <unfinished ...>
+1067  newfstatat(1, "",  <unfinished ...>
+1068  <... read resumed>"our_buffer;\n\n\t/* Whether this is an \"interactive\" input source; if so, and\n\t * if we're using stdio for input, then we want to u"..., 4096) = 4096
+1067  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1068  write(1, "MATCH 2\n    \n    #define YY_LESS_LINENO(n)\n    #define YY_LINENO_REWIND_TO(ptr)\n    \n/* Return all but the first \"n\" matched cha"..., 4096 <unfinished ...>
+1067  read(0,  <unfinished ...>
+1068  <... write resumed>)              = 4096
+1067  <... read resumed>"MATCH 2\n    \n    #define YY_LESS_LINENO(n)\n    #define YY_LINENO_REWIND_TO(ptr)\n    \n/* Return all but the first \"n\" matched cha"..., 4096) = 4096
+1068  read(0,  <unfinished ...>
+1067  write(1, "\n#line 3 \"lex.yy.c\"\n\n#define  YY_INT_ALIGNED short int\n\n/* A lexical scanner generated by flex */\n\n#define FLEX_SCANNER\n#define "..., 4096 <unfinished ...>
+1068  <... read resumed>"\\\n\tif ( ! YY_CURRENT_BUFFER ){ \\\n        yyensure_buffer_stack (M4_YY_CALL_ONLY_ARG); \\\n\t\tYY_CURRENT_BUFFER_LVALUE =    \\\n      "..., 4096) = 612
+1067  <... write resumed>)              = 4096
+1068  read(0,  <unfinished ...>
+1067  read(0,  <unfinished ...>
+1068  <... read resumed>"", 4096)       = 0
+1068  newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+1068  newfstatat(2, "", {st_mode=S_IFREG|0777, st_size=25, ...}, AT_EMPTY_PATH) = 0
+1068  lseek(0, 0, SEEK_CUR)             = -1 ESPIPE (Illegal seek)
+1068  close(0)                          = 0
+1068  write(1, "tack ( void );\nstatic void yy_load_buffer_state ( void );\nstatic void yy_init_buffer ( YY_BUFFER_STATE b, FILE *file  );\n#define"..., 1086) = 1086
+1067  <... read resumed>"tack ( void );\nstatic void yy_load_buffer_state ( void );\nstatic void yy_init_buffer ( YY_BUFFER_STATE b, FILE *file  );\n#define"..., 4096) = 1086
+1068  close(1 <unfinished ...>
+1067  write(1, "(ptr)\n    \n/* Return all but the first \"n\" matched characters back to the input stream. */\n#define yyless(n) \\\n\tdo \\\n\t\t{ \\\n\t\t/* "..., 4096 <unfinished ...>
+1068  <... close resumed>)              = 0
+1067  <... write resumed>)              = 4096
+1068  close(2 <unfinished ...>
+1067  read(0,  <unfinished ...>
+1068  <... close resumed>)              = 0
+1067  <... read resumed>"", 4096)       = 0
+1068  exit_group(0 <unfinished ...>
+1067  write(1, "( YY_BUFFER_STATE b, FILE *file  );\n#define YY_FLUSH_BUFFER yy_flush_buffer( YY_CURRENT_BUFFER )\n\nYY_BUFFER_STATE yy_scan_buffer"..., 997 <unfinished ...>
+1068  <... exit_group resumed>)         = ?
+1067  <... write resumed>)              = 997
+1068  +++ exited with 0 +++
+1067  close(1 <unfinished ...>
+1062  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1068
+1067  <... close resumed>)              = 0
+1062  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1068, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1067  wait4(-1,  <unfinished ...>
+1062  wait4(-1,  <unfinished ...>
+1067  <... wait4 resumed>0x7fff707b814c, 0, NULL) = -1 ECHILD (No child processes)
+1067  exit_group(0)                     = ?
+1067  +++ exited with 0 +++
+1062  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1067
+1062  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1067, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1062  wait4(-1, 0x7fff707b814c, 0, NULL) = -1 ECHILD (No child processes)
+1062  exit_group(1)                     = ?
+1062  +++ exited with 1 +++

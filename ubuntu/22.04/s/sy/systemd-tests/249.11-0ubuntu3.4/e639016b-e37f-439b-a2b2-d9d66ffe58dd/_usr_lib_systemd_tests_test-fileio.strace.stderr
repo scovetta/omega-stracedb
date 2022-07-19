@@ -1,0 +1,109 @@
+Got: <one=BAR>
+Got: <two=bar>
+Got: <three=333
+xxxx>
+Got: <four=44\"44>
+Got: <five=55"55FIVEcinco>
+Got: <six=seis sechs sis>
+Got: <seven=sevenval#nocomment>
+Got: <eight=eightval #nocomment>
+Got: <export nine=nineval>
+Got: <ten=>
+Got: <eleven=value>
+Got: <twelve=\value>
+Got: <thirteen=\value>
+one=[BAR]
+two=[bar]
+three=[333
+xxxx]
+four=[44\"44]
+five=[55"55FIVEcinco]
+six=[seis sechs sis]
+seven=[sevenval#nocomment]
+eight=[eightval #nocomment]
+export nine=[nineval]
+ten=[nineval]
+eleven=[value]
+twelve=[\value]
+thirteen=[\value]
+Got: <one=BAR    VAR	GAR>
+Got: <two=bar    var	gar>
+Got: <tri=bar     var 	gar >
+/* test_merge_env_file (/tmp/test-fileio-YBv6uV) */
+/tmp/test-fileio-YBv6uV:2: setting one=1
+/tmp/test-fileio-YBv6uV:3: setting twelve=12
+/tmp/test-fileio-YBv6uV:4: setting twentyone=21
+/tmp/test-fileio-YBv6uV:5: setting one=2
+/tmp/test-fileio-YBv6uV:6: setting twentytwo=22
+/tmp/test-fileio-YBv6uV:7: setting xxx_minus_three= - 3
+/tmp/test-fileio-YBv6uV:8: setting xxx=0x222
+/tmp/test-fileio-YBv6uV:9: setting yyy=2
+/tmp/test-fileio-YBv6uV:10: setting zzz=replacement
+/tmp/test-fileio-YBv6uV:11: setting zzzz=
+/tmp/test-fileio-YBv6uV:12: setting zzzzz=
+Got: <one=2>
+Got: <twelve=12>
+Got: <twentyone=21>
+Got: <twentytwo=22>
+Got: <xxx=0x222>
+Got: <xxx_minus_three= - 3>
+Got: <yyy=2>
+Got: <zzz=replacement>
+Got: <zzzz=>
+Got: <zzzzz=>
+/tmp/test-fileio-YBv6uV:2: setting one=1
+/tmp/test-fileio-YBv6uV:3: setting twelve=12
+/tmp/test-fileio-YBv6uV:4: setting twentyone=21
+/tmp/test-fileio-YBv6uV:5: setting one=2
+/tmp/test-fileio-YBv6uV:6: setting twentytwo=22
+/tmp/test-fileio-YBv6uV:7: setting xxx_minus_three=0x222 - 3
+/tmp/test-fileio-YBv6uV:8: setting xxx=0x222
+/tmp/test-fileio-YBv6uV:9: setting yyy=2
+/tmp/test-fileio-YBv6uV:10: setting zzz=replacement
+/tmp/test-fileio-YBv6uV:11: setting zzzz=
+/tmp/test-fileio-YBv6uV:12: setting zzzzz=
+Got2: <one=2>
+Got2: <twelve=12>
+Got2: <twentyone=21>
+Got2: <twentytwo=22>
+Got2: <xxx=0x222>
+Got2: <xxx_minus_three=0x222 - 3>
+Got2: <yyy=2>
+Got2: <zzz=replacement>
+Got2: <zzzz=>
+Got2: <zzzzz=>
+/* test_merge_env_file_invalid (/tmp/test-fileio-GcAfGh) */
+/tmp/test-fileio-GcAfGh:3: invalid syntax (around "unset one"), ignoring.
+/tmp/test-fileio-GcAfGh:4: invalid variable name "unset one", ignoring.
+/tmp/test-fileio-GcAfGh:6: invalid syntax (around "one"), ignoring.
+/tmp/test-fileio-GcAfGh:7: invalid syntax (around "one two"), ignoring.
+/tmp/test-fileio-GcAfGh:8: invalid syntax (around "two"), ignoring.
+/* test_executable_is_script */
+/* test_status_field */
+/* test_capeff */
+capeff: 'a80425fb' (r=0)
+capeff: 'a80425fb' (r=0)
+/* test_write_string_stream */
+/* test_write_string_file */
+/* test_write_string_file_no_create */
+/* test_write_string_file_verify */
+/* test_load_env_file_pairs */
+/* test_search_and_fopen */
+/* test_search_and_fopen_nulstr */
+/* test_writing_tmpfile */
+/* test_tempfn */
+/* test_read_line */
+/* test_read_line2 */
+/* test_read_line3 */
+/* test_read_nul_string */
+/* test_read_full_file_socket */
+Successfully forked off '(server)' as PID 2068.
+PR_SET_MM_ARG_START failed: Operation not permitted
+(server) succeeded.
+/* test_read_full_file_offset_size */
+/* test_read_virtual_file (max_size=0) */
+read_virtual_file("/proc/1/cmdline", 0): truncated (0 bytes)
+read_virtual_file("/etc/nsswitch.conf", 0): truncated (0 bytes)
+read_virtual_file("/sys/kernel/uevent_seqnum", 0): truncated (0 bytes)
+read_virtual_file("/proc/kcore", 0): Bad file descriptor
+Assertion 'ERRNO_IS_PRIVILEGE(r) || IN_SET(r, -ENOENT, -EINVAL, -EFBIG)' failed at src/test/test-fileio.c:1043, function test_read_virtual_file(). Aborting.

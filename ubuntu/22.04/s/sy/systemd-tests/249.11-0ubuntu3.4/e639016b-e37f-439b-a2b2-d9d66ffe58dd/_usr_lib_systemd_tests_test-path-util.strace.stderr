@@ -1,0 +1,266 @@
+PATH_MAX=4096
+FILENAME_MAX=4096
+NAME_MAX=255
+DEFAULT_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+DEFAULT_USER_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+/* test_path */
+/* test_path_simplify */
+/* test_path_simplify() →  (expected: ) */
+/* test_path_simplify(aaa/bbb////ccc) → aaa/bbb/ccc (expected: aaa/bbb/ccc) */
+/* test_path_simplify(//aaa/.////ccc) → /aaa/ccc (expected: /aaa/ccc) */
+/* test_path_simplify(///) → / (expected: /) */
+/* test_path_simplify(///.//) → / (expected: /) */
+/* test_path_simplify(///.//.///) → / (expected: /) */
+/* test_path_simplify(////.././///../.) → /../.. (expected: /../..) */
+/* test_path_simplify(.) → . (expected: .) */
+/* test_path_simplify(./) → . (expected: .) */
+/* test_path_simplify(.///.//./.) → . (expected: .) */
+/* test_path_simplify(.///.//././/) → . (expected: .) */
+/* test_path_simplify(//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.) → /aaa/.bbb/../c./d.dd/..eeee (expected: /aaa/.bbb/../c./d.dd/..eeee) */
+/* test_path_simplify(//./aaa///.//./.bbb/..///c.//d.dd///..eeee/..) → /aaa/.bbb/../c./d.dd/..eeee/.. (expected: /aaa/.bbb/../c./d.dd/..eeee/..) */
+/* test_path_simplify(.//./aaa///.//./.bbb/..///c.//d.dd///..eeee/..) → aaa/.bbb/../c./d.dd/..eeee/.. (expected: aaa/.bbb/../c./d.dd/..eeee/..) */
+/* test_path_simplify(..//./aaa///.//./.bbb/..///c.//d.dd///..eeee/..) → ../aaa/.bbb/../c./d.dd/..eeee/.. (expected: ../aaa/.bbb/../c./d.dd/..eeee/..) */
+/* test_path_simplify(aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) → aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa (expected: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) */
+/* test_path_simplify(/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) → /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa (expected: /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa) */
+/* test_path_simplify(a////.//././//./b///././/./c/////././//./aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa//.//////d/e/.//f/) → a/b/c/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa//.//////d/e/.//f/ (expected: a/b/c/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa//.//////d/e/.//f/) */
+/* test_path_compare */
+/* test_path_equal_root */
+/* test_find_executable_full */
+/* test_find_executable */
+/* test_find_executable_exec */
+test_find_executable_exec_one: touch → /usr/bin/touch: 3/Success
+/usr/bin/touch succeeded.
+test_find_executable_exec_one: /bin/touch → /bin/touch: 3/Success
+/bin/touch succeeded.
+test_find_executable_exec_one: /usr/lib/systemd/tests/testdata/test-path-util/script.sh → /usr/lib/systemd/tests/testdata/test-path-util/script.sh: 3/Success
+/usr/lib/systemd/tests/testdata/test-path-util/script.sh succeeded.
+/* test_prefixes */
+---/a/b/c/d---
+---/a/b/c---
+---/a/b---
+---/a---
+------
+---/a/b/c---
+---/a/b---
+---/a---
+------
+/* test_path_join */
+got "/root/a/b/c", expected "/root/a/b/c"
+got "/root/a/b/c", expected "/root/a/b/c"
+got "/root/a/b/c", expected "/root/a/b/c"
+got "/root/c", expected "/root/c"
+got "/root/", expected "/root/"
+got "/a/b/c", expected "/a/b/c"
+got "a/b/c", expected "a/b/c"
+got "/a/b/c", expected "/a/b/c"
+got "/c", expected "/c"
+got "/", expected "/"
+got "/a/b/c", expected "/a/b/c"
+got "a/b/c", expected "a/b/c"
+got "/a/b/c", expected "/a/b/c"
+got "/c", expected "/c"
+got "/", expected "/"
+got "", expected ""
+got "", expected ""
+got "", expected ""
+got "foo/bar", expected "foo/bar"
+got "foo/bar", expected "foo/bar"
+got "foo/bar", expected "foo/bar"
+got "foo/bar", expected "foo/bar"
+got "foo/bar", expected "foo/bar"
+got "//foo///bar//", expected "//foo///bar//"
+got "/foo/bar/", expected "/foo/bar/"
+got "foo/bar/baz", expected "foo/bar/baz"
+got "foo/bar/baz", expected "foo/bar/baz"
+got "foo//bar//baz", expected "foo//bar//baz"
+got "//foo////bar////baz//", expected "//foo////bar////baz//"
+/* test_path_extend */
+/* test_fsck_exists */
+/* test_make_relative */
+/* test_path_make_relative_one(some/relative/path, /some/path) */
+/* test_path_make_relative_one(/some/path, some/relative/path) */
+/* test_path_make_relative_one(/some/dotdot/../path, /some/path) */
+/* test_path_make_relative_one(/, /) */
+/* test_path_make_relative_one(/, /some/path) */
+/* test_path_make_relative_one(/some/path, /some/path) */
+/* test_path_make_relative_one(/some/path, /some/path/in/subdir) */
+/* test_path_make_relative_one(/some/path, /) */
+/* test_path_make_relative_one(/some/path, /some/other/path) */
+/* test_path_make_relative_one(/some/path/./dot, /some/further/path) */
+/* test_path_make_relative_one(//extra.//.//./.slashes//./won't////fo.ol///anybody//, /././/extra././/.slashes////ar.e/.just/././.fine///) */
+/* test_path_startswith */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /) */
+/* test_path_startswith_one(/foo/bar/barfoo/, ////) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo//bar/////barfoo///) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfoo////) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar///barfoo/) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo////bar/barfoo/) */
+/* test_path_startswith_one(/foo/bar/barfoo/, ////foo/bar/barfoo/) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfoo) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfooa/) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfooa) */
+/* test_path_startswith_one(/foo/bar/barfoo/, ) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /bar/foo) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /f/b/b/) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/barfo) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /foo/bar/bar) */
+/* test_path_startswith_one(/foo/bar/barfoo/, /fo) */
+/* test_prefix_root */
+/* test_file_in_same_dir */
+/* test_path_find_first_component */
+/* test_path_find_first_component_one("(null)", accept_dot_dot=no) */
+/* test_path_find_first_component_one("", accept_dot_dot=no) */
+/* test_path_find_first_component_one("/", accept_dot_dot=no) */
+/* test_path_find_first_component_one(".", accept_dot_dot=no) */
+/* test_path_find_first_component_one("./", accept_dot_dot=no) */
+/* test_path_find_first_component_one("./.", accept_dot_dot=no) */
+/* test_path_find_first_component_one("..", accept_dot_dot=no) */
+/* test_path_find_first_component_one("/..", accept_dot_dot=no) */
+/* test_path_find_first_component_one("./..", accept_dot_dot=no) */
+/* test_path_find_first_component_one("////./././//.", accept_dot_dot=no) */
+/* test_path_find_first_component_one("a/b/c", accept_dot_dot=no) */
+/* test_path_find_first_component_one("././//.///aa/bbb//./ccc", accept_dot_dot=no) */
+/* test_path_find_first_component_one("././//.///aa/.../../bbb//./ccc/.", accept_dot_dot=no) */
+/* test_path_find_first_component_one("//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.", accept_dot_dot=no) */
+/* test_path_find_first_component_one("a/foo./b", accept_dot_dot=no) */
+/* test_path_find_first_component_one("(null)", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("/", accept_dot_dot=yes) */
+/* test_path_find_first_component_one(".", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("./", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("./.", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("..", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("/..", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("./..", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("////./././//.", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("a/b/c", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("././//.///aa/bbb//./ccc", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("././//.///aa/.../../bbb//./ccc/.", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("a/foo./b", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", accept_dot_dot=no) */
+/* test_path_find_first_component_one("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", accept_dot_dot=yes) */
+/* test_path_find_first_component_one("a/b/c/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa//d/e/.//f/", accept_dot_dot=no) */
+/* test_path_find_first_component_one("a/b/c/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa//d/e/.//f/", accept_dot_dot=yes) */
+/* test_path_find_last_component */
+/* test_path_find_last_component_one("(null)", accept_dot_dot=no) */
+/* test_path_find_last_component_one("", accept_dot_dot=no) */
+/* test_path_find_last_component_one("/", accept_dot_dot=no) */
+/* test_path_find_last_component_one(".", accept_dot_dot=no) */
+/* test_path_find_last_component_one("./", accept_dot_dot=no) */
+/* test_path_find_last_component_one("./.", accept_dot_dot=no) */
+/* test_path_find_last_component_one("..", accept_dot_dot=no) */
+/* test_path_find_last_component_one("/..", accept_dot_dot=no) */
+/* test_path_find_last_component_one("./..", accept_dot_dot=no) */
+/* test_path_find_last_component_one("////./././//.", accept_dot_dot=no) */
+/* test_path_find_last_component_one("a/b/c", accept_dot_dot=no) */
+/* test_path_find_last_component_one("././//.///aa./.bbb//./ccc/././/", accept_dot_dot=no) */
+/* test_path_find_last_component_one("././//.///aa/../.../bbb//./ccc/.", accept_dot_dot=no) */
+/* test_path_find_last_component_one("//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.", accept_dot_dot=no) */
+/* test_path_find_last_component_one("(null)", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("/", accept_dot_dot=yes) */
+/* test_path_find_last_component_one(".", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("./", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("./.", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("..", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("/..", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("./..", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("////./././//.", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("a/b/c", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("././//.///aa./.bbb//./ccc/././/", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("././//.///aa/../.../bbb//./ccc/.", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("//./aaa///.//./.bbb/..///c.//d.dd///..eeee/.", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", accept_dot_dot=no) */
+/* test_path_find_last_component_one("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", accept_dot_dot=yes) */
+/* test_path_find_last_component_one("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/a/b/c/", accept_dot_dot=no) */
+/* test_path_find_last_component_one("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/a/b/c/", accept_dot_dot=yes) */
+/* test_path_extract_filename */
+(null) → (null)/Invalid argument [expected: (null)/Invalid argument]
+a/b/c → c/Success [expected: c/-]
+a/b/c/ → c/Unknown error 65536 [expected: c/-]
+/ → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+// → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+/// → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+/. → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+. → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+./ → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+./. → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+././ → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+./.// → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+/foo/a → a/Success [expected: a/-]
+/foo/a/ → a/Unknown error 65536 [expected: a/-]
+ → (null)/Invalid argument [expected: (null)/Invalid argument]
+a → a/Success [expected: a/-]
+a/ → a/Unknown error 65536 [expected: a/-]
+a/././//. → a/Unknown error 65536 [expected: a/-]
+/a → a/Success [expected: a/-]
+/a/ → a/Unknown error 65536 [expected: a/-]
+/a//./. → a/Unknown error 65536 [expected: a/-]
+/////////////a///////////// → a/Unknown error 65536 [expected: a/-]
+//./a/.///b./././.c//./d//. → d/Unknown error 65536 [expected: d/-]
+xx/. → xx/Unknown error 65536 [expected: xx/-]
+xx/.. → (null)/Invalid argument [expected: (null)/Invalid argument]
+.. → (null)/Invalid argument [expected: (null)/Invalid argument]
+/.. → (null)/Invalid argument [expected: (null)/Invalid argument]
+../ → (null)/Invalid argument [expected: (null)/Invalid argument]
+/* test_path_extract_directory */
+(null) → (null)/Invalid argument [expected: (null)/Invalid argument]
+a/b/c → a/b/Success [expected: a/b/Success]
+a/b/c/ → a/b/Success [expected: a/b/Success]
+/ → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+// → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+/// → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+/. → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+. → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+./ → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+./. → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+././ → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+./.// → (null)/Cannot assign requested address [expected: (null)/Cannot assign requested address]
+/foo/a → /foo/Success [expected: /foo/Success]
+/foo/a/ → /foo/Success [expected: /foo/Success]
+ → (null)/Invalid argument [expected: (null)/Invalid argument]
+a → (null)/Destination address required [expected: (null)/Destination address required]
+a/ → (null)/Destination address required [expected: (null)/Destination address required]
+a/././//. → (null)/Destination address required [expected: (null)/Destination address required]
+/a → //Success [expected: //Success]
+/a/ → //Success [expected: //Success]
+/a//./. → //Success [expected: //Success]
+/////////////a///////////// → //Success [expected: //Success]
+//./a/.///b./././.c//./d//. → /a/b./.c/Success [expected: /a/b./.c/Success]
+xx/. → (null)/Destination address required [expected: (null)/Destination address required]
+xx/.. → (null)/Invalid argument [expected: (null)/Invalid argument]
+.. → (null)/Invalid argument [expected: (null)/Invalid argument]
+/.. → (null)/Invalid argument [expected: (null)/Invalid argument]
+../ → (null)/Invalid argument [expected: (null)/Invalid argument]
+/* test_filename_is_valid */
+/* test_path_is_valid_and_safe */
+/* test_path_is_valid_and_safe_one("") */
+/* test_path_is_valid_and_safe_one("/bar/foo") */
+/* test_path_is_valid_and_safe_one("/bar/foo/") */
+/* test_path_is_valid_and_safe_one("/bar/foo/") */
+/* test_path_is_valid_and_safe_one("//bar//foo//") */
+/* test_path_is_valid_and_safe_one("/") */
+/* test_path_is_valid_and_safe_one("/////") */
+/* test_path_is_valid_and_safe_one("/////.///.////...///..//.") */
+/* test_path_is_valid_and_safe_one(".") */
+/* test_path_is_valid_and_safe_one("..") */
+/* test_path_is_valid_and_safe_one("bar/foo") */
+/* test_path_is_valid_and_safe_one("bar/foo/") */
+/* test_path_is_valid_and_safe_one("bar//") */
+/* test_path_is_valid_and_safe_one("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+/* test_path_is_valid_and_safe_one("/xxx/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+/* test_path_is_valid_and_safe_one("foo_bar-333") */
+/* test_path_is_valid_and_safe_one("o.o") */
+/* test_hidden_or_backup_file */
+/* test_skip_dev_prefix */
+/* test_empty_or_root */
+/* test_path_startswith_set */
+/* test_path_startswith_strv */
+/* test_systemd_installation_has_version */
+Current installation has systemd >= 0: no
+Current installation has systemd >= 231: no
+Current installation has systemd >= 249: no
+Current installation has systemd >= 999: no

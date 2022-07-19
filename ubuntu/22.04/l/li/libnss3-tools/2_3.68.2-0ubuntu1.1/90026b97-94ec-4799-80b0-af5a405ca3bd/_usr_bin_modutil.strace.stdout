@@ -1,0 +1,65 @@
+
+Netscape Cryptographic Module Utility
+Usage: modutil [command] [options]
+
+                            COMMANDS
+---------------------------------------------------------------------------
+-add MODULE_NAME                 Add the named module to the module database
+   -libfile LIBRARY_FILE         The name of the file (.so or .dll)
+                                 containing the implementation of PKCS #11
+   [-ciphers CIPHER_LIST]        Enable the given ciphers on this module
+   [-mechanisms MECHANISM_LIST]  Make the module a default provider of the
+                                 given mechanisms
+   [-string CONFIG_STRING]       Pass a configuration string to this module
+-changepw TOKEN                  Change the password on the named token
+   [-pwfile FILE]                The old password is in this file
+   [-newpwfile FILE]             The new password is in this file
+-chkfips [ true | false ]        If true, verify  FIPS mode.  If false,
+                                 verify not FIPS mode
+-create                          Create a new set of security databases
+-default MODULE                  Make the given module a default provider
+   -mechanisms MECHANISM_LIST    of the given mechanisms
+   [-slot SLOT]                  limit change to only the given slot
+-delete MODULE                   Remove the named module from the module
+                                 database
+-disable MODULE                  Disable the named module
+   [-slot SLOT]                  Disable only the named slot on the module
+-enable MODULE                   Enable the named module
+   [-slot SLOT]                  Enable only the named slot on the module
+-fips [ true | false ]           If true, enable FIPS mode.  If false,
+                                 disable FIPS mode
+-force                           Do not run interactively
+-jar JARFILE                     Install a PKCS #11 module from the given
+                                 JAR file in the PKCS #11 JAR format
+   -installdir DIR               Use DIR as the root directory of the
+                                 installation
+   [-tempdir DIR]                Use DIR as the temporary installation
+                                 directory. If not specified, the current
+                                 directory is used
+-list [MODULE]                   Lists information about the specified module
+                                 or about all modules if none is specified
+-rawadd MODULESPEC               Add module spec string to secmod DB
+-rawlist [MODULE]                Display module spec(s) for one or all
+                                 loadable modules
+-undefault MODULE                The given module is NOT a default provider
+   -mechanisms MECHANISM_LIST    of the listed mechanisms
+   [-slot SLOT]                  limit change to only the given slot
+---------------------------------------------------------------------------
+
+                             OPTIONS
+---------------------------------------------------------------------------
+-dbdir DIR                       Directory DIR contains the security databases
+-dbprefix prefix                 Prefix for the security databases
+-nocertdb                        Do not load certificate or key databases. No
+                                 verification will be performed on JAR files.
+-secmod secmodName               Name of the security modules file
+---------------------------------------------------------------------------
+
+Mechanism lists are colon-separated.  The following mechanisms are recognized:
+RSA, DSA, DH, RC2, RC4, RC5, AES, CAMELLIA, DES, MD2, MD5, SHA1, SHA256, SHA512,
+SSL, TLS, RANDOM, and FRIENDLY
+
+Cipher lists are colon-separated.  The following ciphers are recognized:
+
+
+Questions or bug reports should be sent to modutil-support@netscape.com.

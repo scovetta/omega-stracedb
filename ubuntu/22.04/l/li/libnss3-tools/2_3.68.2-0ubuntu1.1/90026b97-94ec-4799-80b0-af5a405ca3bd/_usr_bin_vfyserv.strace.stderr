@@ -1,0 +1,17 @@
+Usage:
+   /usr/bin/vfyserv  [-c ] [-o] [-p port] [-d dbdir] [-w password] [-f pwfile]
+   		[-C cipher(s)]  [-l <url> -t <nickname> ] hostname
+Where:
+  -c            dump server cert chain into files
+  -o            perform server cert OCSP check
+  -p            server port to be used
+  -d dbdir      use security databases in "dbdir"
+  -w password   key database password
+  -f pwfile     token password file
+  -C cipher(s)  communication cipher list
+  -l url        OCSP responder location. This location is used to
+                check  status  of a server  certificate.  If  not 
+                specified, location  will  be taken  from the AIA
+                server certificate extension.
+  -t nickname   OCSP Trusted Responder Cert nickname
+

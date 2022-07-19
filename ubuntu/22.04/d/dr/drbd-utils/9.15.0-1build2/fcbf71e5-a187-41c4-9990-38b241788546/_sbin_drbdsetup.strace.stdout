@@ -1,0 +1,62 @@
+drbdsetup - Configure the DRBD kernel module.
+
+USAGE: drbdsetup command {arguments} [options]
+
+Commands:
+    primary - Change the role of a node in a resource to primary.
+    secondary - Change the role of a node in a resource to secondary.
+    attach - Attach a lower-level device to an existing replicated device.
+    disk-options - Change the disk options of an attached lower-level device.
+    detach - Detach the lower-level device of a replicated device.
+    connect - Attempt to (re)establish a replication link to a peer host.
+    new-peer - Make a peer host known to a resource.
+    del-peer - Remove a connection to a peer host.
+    new-path - Add a path (endpoint address pair) where a peer host should be
+        reachable.
+    del-path - Remove a path (endpoint address pair) from a connection to a peer
+        host.
+    net-options - Change the network options of a connection.
+    disconnect - Unconnect from a peer host.
+    resize - Reexamine the lower-level device sizes to resize a replicated
+        device.
+    resource-options - Change the resource options of an existing resource.
+    peer-device-options - Change peer-device options.
+    new-current-uuid - Generate a new current UUID.
+    invalidate - Replace the local data of a volume with that of a peer.
+    invalidate-remote - Replace a peer's data of a volume with the local data.
+    pause-sync - Stop resynchronizing between a local and a peer device.
+    resume-sync - Allow resynchronization to resume on a replicated device.
+    suspend-io - Suspend I/O on a replicated device.
+    resume-io - Resume I/O on a replicated device.
+    outdate - Mark the data on a lower-level device as outdated.
+    verify - Verify the data on a lower-level device against a peer device.
+    down - Take a resource down.
+    role - Show the current role of a resource.
+    cstate - Show the current state of a connection.
+    dstate - Show the current disk state of a lower-level device.
+    show-gi - Show the data generation identifiers for a device on a particular
+        connection, with explanations.
+    get-gi - Show the data generation identifiers for a device on a particular
+        connection.
+    show - Show the current configuration of a resource, or of all resources.
+    status - Show the state of a resource, or of all resources.
+    check-resize - Remember the current size of a lower-level device.
+    events2 - Show the current state and all state changes of a resource, or of
+        all resources.
+    wait-sync-volume - Wait until resync finished on a volume.
+    wait-sync-connection - Wait until resync finished on all volumes of a
+        connection.
+    wait-sync-resource - Wait until resync finished on all volumes.
+    wait-connect-volume - Wait until a device on a peer is visible.
+    wait-connect-connection - Wait until all peer volumes of connection are
+        visible.
+    wait-connect-resource - Wait until all connections are establised.
+    new-resource - Create a new resource.
+    new-minor - Create a new replicated device within a resource.
+    del-minor - Remove a replicated device.
+    del-resource - Remove a resource.
+    forget-peer - Completely remove any reference to a unconnected peer from
+        meta-data.
+
+Use 'drbdsetup help command' for command-specific help.
+

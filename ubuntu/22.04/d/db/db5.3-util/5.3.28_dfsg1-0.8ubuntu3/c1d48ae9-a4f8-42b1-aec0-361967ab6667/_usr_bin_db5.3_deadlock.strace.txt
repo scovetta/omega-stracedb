@@ -1,0 +1,61 @@
+486   execve("/usr/bin/db5.3_deadlock", ["/usr/bin/db5.3_deadlock"], 0x7ffc9848d250 /* 12 vars */) = 0
+486   brk(NULL)                         = 0x5605b597c000
+486   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd8e32f800) = -1 EINVAL (Invalid argument)
+486   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f88d5518000
+486   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+486   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+486   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+486   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f88d5516000
+486   close(3)                          = 0
+486   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdb-5.3.so", O_RDONLY|O_CLOEXEC) = 3
+486   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\360\326\32\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0h\373\1\0\0\0\0\0h\373\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+486   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1760880, ...}, AT_EMPTY_PATH) = 0
+486   mmap(NULL, 1762768, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f88d5367000
+486   mmap(0x7f88d5387000, 1314816, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f88d5387000
+486   mmap(0x7f88d54c8000, 286720, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x161000) = 0x7f88d54c8000
+486   mmap(0x7f88d550e000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a6000) = 0x7f88d550e000
+486   close(3)                          = 0
+486   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+486   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+486   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+486   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+486   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+486   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+486   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+486   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f88d513f000
+486   mmap(0x7f88d5167000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f88d5167000
+486   mmap(0x7f88d52fc000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f88d52fc000
+486   mmap(0x7f88d5354000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f88d5354000
+486   mmap(0x7f88d535a000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f88d535a000
+486   close(3)                          = 0
+486   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f88d513c000
+486   arch_prctl(ARCH_SET_FS, 0x7f88d513c740) = 0
+486   set_tid_address(0x7f88d513ca10)   = 486
+486   set_robust_list(0x7f88d513ca20, 24) = 0
+486   rseq(0x7f88d513d0e0, 0x20, 0, 0x53053053) = 0
+486   mprotect(0x7f88d5354000, 16384, PROT_READ) = 0
+486   mprotect(0x7f88d550e000, 28672, PROT_READ) = 0
+486   mprotect(0x5605b51f4000, 4096, PROT_READ) = 0
+486   mprotect(0x7f88d5552000, 8192, PROT_READ) = 0
+486   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+486   munmap(0x7f88d5516000, 6133)      = 0
+486   rt_sigaction(SIGHUP, {sa_handler=0x5605b51f2c50, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f88d5181520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+486   rt_sigaction(SIGINT, {sa_handler=0x5605b51f2c50, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f88d5181520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+486   rt_sigaction(SIGPIPE, {sa_handler=0x5605b51f2c50, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f88d5181520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+486   rt_sigaction(SIGTERM, {sa_handler=0x5605b51f2c50, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f88d5181520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+486   getrandom("\x3d\xc4\x2b\xfe\x65\x94\x0a\xfe", 8, GRND_NONBLOCK) = 8
+486   brk(NULL)                         = 0x5605b597c000
+486   brk(0x5605b599d000)               = 0x5605b599d000
+486   getpid()                          = 486
+486   openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+486   read(3, "0-7\n", 1024)            = 4
+486   close(3)                          = 0
+486   newfstatat(AT_FDCWD, "/var/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}, 0) = 0
+486   openat(AT_FDCWD, "__db.001", O_RDWR) = -1 ENOENT (No such file or directory)
+486   write(2, "db5.3_deadlock", 14)    = 14
+486   write(2, ": ", 2)                 = 2
+486   write(2, "BDB5101 open", 12)      = 12
+486   write(2, ": No such file or directory", 27) = 27
+486   write(2, "\n", 1)                 = 1
+486   exit_group(1)                     = ?
+486   +++ exited with 1 +++

@@ -1,0 +1,23 @@
+apt 2.4.5 (amd64)
+Usage: apt-helper [options] command
+       apt-helper [options] cat-file file ...
+       apt-helper [options] download-file uri target-path
+
+apt-helper bundles a variety of commands for shell scripts to use
+e.g. the same proxy configuration or acquire system as APT would.
+
+Most used commands:
+  download-file - download the given uri to the target-path
+  srv-lookup - lookup a SRV record (e.g. _http._tcp.ftp.debian.org)
+  cat-file - concatenate files, with automatic decompression
+  auto-detect-proxy - detect proxy using apt.conf
+  wait-online - wait for system to be online
+  drop-privs - drop privileges before running given command
+  analyze-pattern - analyse a pattern
+
+
+Configuration options and syntax is detailed in apt.conf(5).
+Information about how to configure sources can be found in sources.list(5).
+Package and version choices can be expressed via apt_preferences(5).
+Security details are available in apt-secure(8).
+                                This APT helper has Super Meep Powers.

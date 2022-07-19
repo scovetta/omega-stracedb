@@ -1,0 +1,56 @@
+457   execve("/usr/bin/diff", ["/usr/bin/diff"], 0x7ffdb0735b90 /* 12 vars */) = 0
+457   brk(NULL)                         = 0x55f2830e1000
+457   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc8ef663e0) = -1 EINVAL (Invalid argument)
+457   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9075bd6000
+457   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+457   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+457   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9075bd4000
+457   close(3)                          = 0
+457   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+457   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+457   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+457   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+457   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+457   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f90759ac000
+457   mmap(0x7f90759d4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f90759d4000
+457   mmap(0x7f9075b69000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f9075b69000
+457   mmap(0x7f9075bc1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f9075bc1000
+457   mmap(0x7f9075bc7000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9075bc7000
+457   close(3)                          = 0
+457   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f90759a9000
+457   arch_prctl(ARCH_SET_FS, 0x7f90759a9740) = 0
+457   set_tid_address(0x7f90759a9a10)   = 457
+457   set_robust_list(0x7f90759a9a20, 24) = 0
+457   rseq(0x7f90759aa0e0, 0x20, 0, 0x53053053) = 0
+457   mprotect(0x7f9075bc1000, 16384, PROT_READ) = 0
+457   mprotect(0x55f282b2a000, 8192, PROT_READ) = 0
+457   mprotect(0x7f9075c10000, 8192, PROT_READ) = 0
+457   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+457   munmap(0x7f9075bd4000, 6133)      = 0
+457   getrandom("\x36\x9f\x6d\x1a\xb8\x60\x75\xc7", 8, GRND_NONBLOCK) = 8
+457   brk(NULL)                         = 0x55f2830e1000
+457   brk(0x55f283102000)               = 0x55f283102000
+457   openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+457   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9075bd4000
+457   lseek(3, 0, SEEK_SET)             = 0
+457   read(3, "55f282b0b000-55f282b0e000 r--p 00000000 08:20 45535                      /usr/bin/diff\n55f282b0e000-55f282b24000 r-xp 00003000 0"..., 8192) = 2097
+457   read(3, "", 6095)                 = 0
+457   close(3)                          = 0
+457   munmap(0x7f9075bd4000, 8192)      = 0
+457   sigaltstack({ss_sp=0x55f282b2c580, ss_flags=0, ss_size=65536}, NULL) = 0
+457   rt_sigaction(SIGSEGV, {sa_handler=0x55f282b1d0c0, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f90759ee520}, NULL, 8) = 0
+457   rt_sigaction(SIGSEGV, {sa_handler=0x55f282b1d0c0, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7f90759ee520}, NULL, 8) = 0
+457   fcntl(0, F_GETFD)                 = 0
+457   fcntl(1, F_GETFD)                 = 0
+457   fcntl(2, F_GETFD)                 = 0
+457   write(2, "/usr/bin/diff: ", 15)   = 15
+457   write(2, "missing operand after '/usr/bin/diff'", 37) = 37
+457   write(2, "\n", 1)                 = 1
+457   write(2, "/usr/bin/diff: ", 15)   = 15
+457   write(2, "Try '/usr/bin/diff --help' for more information.", 48) = 48
+457   write(2, "\n", 1)                 = 1
+457   exit_group(2)                     = ?
+457   +++ exited with 2 +++

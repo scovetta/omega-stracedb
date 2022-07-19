@@ -1,0 +1,470 @@
+/* test_sd_path_lookup */
+00: "/tmp"
+00: "/tmp/suffix"
+01: "/var/tmp"
+01: "/var/tmp/suffix"
+02: "/usr/bin"
+02: "/usr/bin/suffix"
+03: "/usr/include"
+03: "/usr/include/suffix"
+04: "/usr/lib"
+04: "/usr/lib/suffix"
+05: "/usr/lib/x86_64-linux-gnu"
+05: "/usr/lib/x86_64-linux-gnu/suffix"
+06: "/usr/share"
+06: "/usr/share/suffix"
+07: "/usr/share/factory/etc"
+07: "/usr/share/factory/etc/suffix"
+08: "/usr/share/factory/var"
+08: "/usr/share/factory/var/suffix"
+09: "/etc"
+09: "/etc/suffix"
+10: "/run"
+10: "/run/suffix"
+11: "/run/log"
+11: "/run/log/suffix"
+12: "/var/lib"
+12: "/var/lib/suffix"
+13: "/var/log"
+13: "/var/log/suffix"
+14: "/var/cache"
+14: "/var/cache/suffix"
+15: "/var/spool"
+15: "/var/spool/suffix"
+16: "/root/.local/bin"
+16: "/root/.local/bin/suffix"
+17: "/root/.local/lib"
+17: "/root/.local/lib/suffix"
+18: "/root/.local/lib/x86_64-linux-gnu"
+18: "/root/.local/lib/x86_64-linux-gnu/suffix"
+19: "/root/.local/share"
+19: "/root/.local/share/suffix"
+20: "/root/.config"
+20: "/root/.config/suffix"
+22: "/root/.cache"
+22: "/root/.cache/suffix"
+23: "/root"
+23: "/root/suffix"
+24: "/root"
+24: "/root/suffix"
+25: "/root"
+25: "/root/suffix"
+26: "/root"
+26: "/root/suffix"
+27: "/root"
+27: "/root/suffix"
+28: "/root"
+28: "/root/suffix"
+29: "/root"
+29: "/root/suffix"
+30: "/root"
+30: "/root/suffix"
+31: "/root/Desktop"
+31: "/root/Desktop/suffix"
+32: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+32: "/usr/local/sbin/suffix:/usr/local/bin/suffix:/usr/sbin/suffix:/usr/bin/suffix:/sbin/suffix:/bin/suffix"
+33: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+33: "/usr/local/sbin/suffix:/usr/local/bin/suffix:/usr/sbin/suffix:/usr/bin/suffix:/sbin/suffix:/bin/suffix"
+34: "/root/.local/lib:/usr/local/lib:/usr/lib:/lib"
+34: "/root/.local/lib/suffix:/usr/local/lib/suffix:/usr/lib/suffix:/lib/suffix"
+35: "/root/.local/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu"
+35: "/root/.local/lib/x86_64-linux-gnu/suffix:/usr/lib/x86_64-linux-gnu/suffix:/usr/lib/x86_64-linux-gnu/suffix"
+36: "/root/.local/share:/usr/local/share:/usr/share"
+36: "/root/.local/share/suffix:/usr/local/share/suffix:/usr/share/suffix"
+37: "/usr/local/share/factory/etc:/usr/share/factory/etc"
+37: "/usr/local/share/factory/etc/suffix:/usr/share/factory/etc/suffix"
+38: "/usr/local/share/factory/var:/usr/share/factory/var"
+38: "/usr/local/share/factory/var/suffix:/usr/share/factory/var/suffix"
+39: "/root/.config:/etc"
+39: "/root/.config/suffix:/etc/suffix"
+40: "/lib/systemd"
+40: "/lib/systemd/suffix"
+41: "/lib/systemd/system"
+41: "/lib/systemd/system/suffix"
+42: "/lib/systemd/system-preset"
+42: "/lib/systemd/system-preset/suffix"
+43: "/etc/systemd/system"
+43: "/etc/systemd/system/suffix"
+44: "/usr/lib/systemd/user"
+44: "/usr/lib/systemd/user/suffix"
+45: "/lib/systemd/user-preset"
+45: "/lib/systemd/user-preset/suffix"
+46: "/etc/systemd/user"
+46: "/etc/systemd/user/suffix"
+47: "/etc/systemd/system.control:/run/systemd/system.control:/run/systemd/transient:/run/systemd/generator.early:/etc/systemd/system:/etc/systemd/system.attached:/run/systemd/system:/run/systemd/system.attached:/run/systemd/generator:/usr/local/lib/systemd/system:/lib/systemd/system:/usr/lib/systemd/system:/run/systemd/generator.late"
+47: "/etc/systemd/system.control/suffix:/run/systemd/system.control/suffix:/run/systemd/transient/suffix:/run/systemd/generator.early/suffix:/etc/systemd/system/suffix:/etc/systemd/system.attached/suffix:/run/systemd/system/suffix:/run/systemd/system.attached/suffix:/run/systemd/generator/suffix:/usr/local/lib/systemd/system/suffix:/lib/systemd/system/suffix:/usr/lib/systemd/system/suffix:/run/systemd/generator.late/suffix"
+48: "/root/.config/systemd/user.control:/root/.config/systemd/user:/etc/xdg/systemd/user:/etc/systemd/user:/run/systemd/user:/root/.local/share/systemd/user:/usr/local/share/systemd/user:/usr/share/systemd/user:/usr/local/lib/systemd/user:/usr/lib/systemd/user"
+48: "/root/.config/systemd/user.control/suffix:/root/.config/systemd/user/suffix:/etc/xdg/systemd/user/suffix:/etc/systemd/user/suffix:/run/systemd/user/suffix:/root/.local/share/systemd/user/suffix:/usr/local/share/systemd/user/suffix:/usr/share/systemd/user/suffix:/usr/local/lib/systemd/user/suffix:/usr/lib/systemd/user/suffix"
+49: "/lib/systemd/system-generators"
+49: "/lib/systemd/system-generators/suffix"
+50: "/usr/lib/systemd/user-generators"
+50: "/usr/lib/systemd/user-generators/suffix"
+51: "/run/systemd/system-generators:/etc/systemd/system-generators:/usr/local/lib/systemd/system-generators:/lib/systemd/system-generators"
+51: "/run/systemd/system-generators/suffix:/etc/systemd/system-generators/suffix:/usr/local/lib/systemd/system-generators/suffix:/lib/systemd/system-generators/suffix"
+52: "/run/systemd/user-generators:/etc/systemd/user-generators:/usr/local/lib/systemd/user-generators:/usr/lib/systemd/user-generators"
+52: "/run/systemd/user-generators/suffix:/etc/systemd/user-generators/suffix:/usr/local/lib/systemd/user-generators/suffix:/usr/lib/systemd/user-generators/suffix"
+53: "/lib/systemd/system-sleep"
+53: "/lib/systemd/system-sleep/suffix"
+54: "/lib/systemd/system-shutdown"
+54: "/lib/systemd/system-shutdown/suffix"
+55: "/usr/lib/tmpfiles.d"
+55: "/usr/lib/tmpfiles.d/suffix"
+56: "/usr/lib/sysusers.d"
+56: "/usr/lib/sysusers.d/suffix"
+57: "/usr/lib/sysctl.d"
+57: "/usr/lib/sysctl.d/suffix"
+58: "/usr/lib/binfmt.d"
+58: "/usr/lib/binfmt.d/suffix"
+59: "/usr/lib/modules-load.d"
+59: "/usr/lib/modules-load.d/suffix"
+60: "/usr/lib/systemd/catalog"
+60: "/usr/lib/systemd/catalog/suffix"
+61: "/etc/systemd/network:/run/systemd/network:/usr/local/lib/systemd/network:/usr/lib/systemd/network:/lib/systemd/network"
+61: "/etc/systemd/network/suffix:/run/systemd/network/suffix:/usr/local/lib/systemd/network/suffix:/usr/lib/systemd/network/suffix:/lib/systemd/network/suffix"
+/* test_sd_path_lookup_strv */
+00:
+  /tmp
+00:
+  /tmp/suffix
+01:
+  /var/tmp
+01:
+  /var/tmp/suffix
+02:
+  /usr/bin
+02:
+  /usr/bin/suffix
+03:
+  /usr/include
+03:
+  /usr/include/suffix
+04:
+  /usr/lib
+04:
+  /usr/lib/suffix
+05:
+  /usr/lib/x86_64-linux-gnu
+05:
+  /usr/lib/x86_64-linux-gnu/suffix
+06:
+  /usr/share
+06:
+  /usr/share/suffix
+07:
+  /usr/share/factory/etc
+07:
+  /usr/share/factory/etc/suffix
+08:
+  /usr/share/factory/var
+08:
+  /usr/share/factory/var/suffix
+09:
+  /etc
+09:
+  /etc/suffix
+10:
+  /run
+10:
+  /run/suffix
+11:
+  /run/log
+11:
+  /run/log/suffix
+12:
+  /var/lib
+12:
+  /var/lib/suffix
+13:
+  /var/log
+13:
+  /var/log/suffix
+14:
+  /var/cache
+14:
+  /var/cache/suffix
+15:
+  /var/spool
+15:
+  /var/spool/suffix
+16:
+  /root/.local/bin
+16:
+  /root/.local/bin/suffix
+17:
+  /root/.local/lib
+17:
+  /root/.local/lib/suffix
+18:
+  /root/.local/lib/x86_64-linux-gnu
+18:
+  /root/.local/lib/x86_64-linux-gnu/suffix
+19:
+  /root/.local/share
+19:
+  /root/.local/share/suffix
+20:
+  /root/.config
+20:
+  /root/.config/suffix
+22:
+  /root/.cache
+22:
+  /root/.cache/suffix
+23:
+  /root
+23:
+  /root/suffix
+24:
+  /root
+24:
+  /root/suffix
+25:
+  /root
+25:
+  /root/suffix
+26:
+  /root
+26:
+  /root/suffix
+27:
+  /root
+27:
+  /root/suffix
+28:
+  /root
+28:
+  /root/suffix
+29:
+  /root
+29:
+  /root/suffix
+30:
+  /root
+30:
+  /root/suffix
+31:
+  /root/Desktop
+31:
+  /root/Desktop/suffix
+32:
+  /usr/local/sbin
+  /usr/local/bin
+  /usr/sbin
+  /usr/bin
+  /sbin
+  /bin
+32:
+  /usr/local/sbin/suffix
+  /usr/local/bin/suffix
+  /usr/sbin/suffix
+  /usr/bin/suffix
+  /sbin/suffix
+  /bin/suffix
+33:
+  /usr/local/sbin
+  /usr/local/bin
+  /usr/sbin
+  /usr/bin
+  /sbin
+  /bin
+33:
+  /usr/local/sbin/suffix
+  /usr/local/bin/suffix
+  /usr/sbin/suffix
+  /usr/bin/suffix
+  /sbin/suffix
+  /bin/suffix
+34:
+  /root/.local/lib
+  /usr/local/lib
+  /usr/lib
+  /lib
+34:
+  /root/.local/lib/suffix
+  /usr/local/lib/suffix
+  /usr/lib/suffix
+  /lib/suffix
+35:
+  /root/.local/lib/x86_64-linux-gnu
+  /usr/lib/x86_64-linux-gnu
+  /usr/lib/x86_64-linux-gnu
+35:
+  /root/.local/lib/x86_64-linux-gnu/suffix
+  /usr/lib/x86_64-linux-gnu/suffix
+  /usr/lib/x86_64-linux-gnu/suffix
+36:
+  /root/.local/share
+  /usr/local/share
+  /usr/share
+36:
+  /root/.local/share/suffix
+  /usr/local/share/suffix
+  /usr/share/suffix
+37:
+  /usr/local/share/factory/etc
+  /usr/share/factory/etc
+37:
+  /usr/local/share/factory/etc/suffix
+  /usr/share/factory/etc/suffix
+38:
+  /usr/local/share/factory/var
+  /usr/share/factory/var
+38:
+  /usr/local/share/factory/var/suffix
+  /usr/share/factory/var/suffix
+39:
+  /root/.config
+  /etc
+39:
+  /root/.config/suffix
+  /etc/suffix
+40:
+  /lib/systemd
+40:
+  /lib/systemd/suffix
+41:
+  /lib/systemd/system
+41:
+  /lib/systemd/system/suffix
+42:
+  /lib/systemd/system-preset
+42:
+  /lib/systemd/system-preset/suffix
+43:
+  /etc/systemd/system
+43:
+  /etc/systemd/system/suffix
+44:
+  /usr/lib/systemd/user
+44:
+  /usr/lib/systemd/user/suffix
+45:
+  /lib/systemd/user-preset
+45:
+  /lib/systemd/user-preset/suffix
+46:
+  /etc/systemd/user
+46:
+  /etc/systemd/user/suffix
+47:
+  /etc/systemd/system.control
+  /run/systemd/system.control
+  /run/systemd/transient
+  /run/systemd/generator.early
+  /etc/systemd/system
+  /etc/systemd/system.attached
+  /run/systemd/system
+  /run/systemd/system.attached
+  /run/systemd/generator
+  /usr/local/lib/systemd/system
+  /lib/systemd/system
+  /usr/lib/systemd/system
+  /run/systemd/generator.late
+47:
+  /etc/systemd/system.control/suffix
+  /run/systemd/system.control/suffix
+  /run/systemd/transient/suffix
+  /run/systemd/generator.early/suffix
+  /etc/systemd/system/suffix
+  /etc/systemd/system.attached/suffix
+  /run/systemd/system/suffix
+  /run/systemd/system.attached/suffix
+  /run/systemd/generator/suffix
+  /usr/local/lib/systemd/system/suffix
+  /lib/systemd/system/suffix
+  /usr/lib/systemd/system/suffix
+  /run/systemd/generator.late/suffix
+48:
+  /root/.config/systemd/user.control
+  /root/.config/systemd/user
+  /etc/xdg/systemd/user
+  /etc/systemd/user
+  /run/systemd/user
+  /root/.local/share/systemd/user
+  /usr/local/share/systemd/user
+  /usr/share/systemd/user
+  /usr/local/lib/systemd/user
+  /usr/lib/systemd/user
+48:
+  /root/.config/systemd/user.control/suffix
+  /root/.config/systemd/user/suffix
+  /etc/xdg/systemd/user/suffix
+  /etc/systemd/user/suffix
+  /run/systemd/user/suffix
+  /root/.local/share/systemd/user/suffix
+  /usr/local/share/systemd/user/suffix
+  /usr/share/systemd/user/suffix
+  /usr/local/lib/systemd/user/suffix
+  /usr/lib/systemd/user/suffix
+49:
+  /lib/systemd/system-generators
+49:
+  /lib/systemd/system-generators/suffix
+50:
+  /usr/lib/systemd/user-generators
+50:
+  /usr/lib/systemd/user-generators/suffix
+51:
+  /run/systemd/system-generators
+  /etc/systemd/system-generators
+  /usr/local/lib/systemd/system-generators
+  /lib/systemd/system-generators
+51:
+  /run/systemd/system-generators/suffix
+  /etc/systemd/system-generators/suffix
+  /usr/local/lib/systemd/system-generators/suffix
+  /lib/systemd/system-generators/suffix
+52:
+  /run/systemd/user-generators
+  /etc/systemd/user-generators
+  /usr/local/lib/systemd/user-generators
+  /usr/lib/systemd/user-generators
+52:
+  /run/systemd/user-generators/suffix
+  /etc/systemd/user-generators/suffix
+  /usr/local/lib/systemd/user-generators/suffix
+  /usr/lib/systemd/user-generators/suffix
+53:
+  /lib/systemd/system-sleep
+53:
+  /lib/systemd/system-sleep/suffix
+54:
+  /lib/systemd/system-shutdown
+54:
+  /lib/systemd/system-shutdown/suffix
+55:
+  /usr/lib/tmpfiles.d
+55:
+  /usr/lib/tmpfiles.d/suffix
+56:
+  /usr/lib/sysusers.d
+56:
+  /usr/lib/sysusers.d/suffix
+57:
+  /usr/lib/sysctl.d
+57:
+  /usr/lib/sysctl.d/suffix
+58:
+  /usr/lib/binfmt.d
+58:
+  /usr/lib/binfmt.d/suffix
+59:
+  /usr/lib/modules-load.d
+59:
+  /usr/lib/modules-load.d/suffix
+60:
+  /usr/lib/systemd/catalog
+60:
+  /usr/lib/systemd/catalog/suffix
+61:
+  /etc/systemd/network
+  /run/systemd/network
+  /usr/local/lib/systemd/network
+  /usr/lib/systemd/network
+  /lib/systemd/network
+61:
+  /etc/systemd/network/suffix
+  /run/systemd/network/suffix
+  /usr/local/lib/systemd/network/suffix
+  /usr/lib/systemd/network/suffix
+  /lib/systemd/network/suffix

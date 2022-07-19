@@ -1,0 +1,99 @@
+filename:1: Failed to extract DUID type from '', ignoring.
+"" → 0 (Success)
+"link-layer-time" → 1 (Success)
+"link-layer-time:2000-01-01 00:00:00 UTC" → 1 (Success)
+"vendor" → 2 (Success)
+filename:1: Invalid syntax, ignoring: vendor:2000-01-01 00:00:00 UTC
+"vendor:2000-01-01 00:00:00 UTC" → 0 (Success)
+"link-layer" → 3 (Success)
+filename:1: Invalid syntax, ignoring: link-layer:2000-01-01 00:00:00 UTC
+"link-layer:2000-01-01 00:00:00 UTC" → 0 (Success)
+"uuid" → 4 (Success)
+filename:1: Invalid syntax, ignoring: uuid:2000-01-01 00:00:00 UTC
+"uuid:2000-01-01 00:00:00 UTC" → 0 (Success)
+filename:1: Failed to parse DUID type 'foo', ignoring.
+"foo" → 0 (Success)
+filename:1: Failed to parse DUID type 'foo', ignoring.
+"foo:2000-01-01 00:00:00 UTC" → 0 (Success)
+"" → "" (Success)
+"00:11:22:33:44:55:66:77" → "0011223344556677" (Success)
+"00:11:22:" → "001122" (Success)
+filename:1: Invalid length - DUID byte: 000, ignoring assignment: 000:11:22.
+"000:11:22" → "" (Success)
+filename:1: Invalid length - DUID byte: 111, ignoring assignment: 00:111:22.
+"00:111:22" → "" (Success)
+"0:1:2:3:4:5:6:7" → "0001020304050607" (Success)
+"11::" → "11" (Success)
+filename:1: Invalid length - DUID byte: abcdef, ignoring assignment: abcdef.
+"abcdef" → "" (Success)
+filename:1: Max DUID length exceeded, ignoring assignment: 0:1:2:3:4:5:6:7:8:9:a:b:c:d:e:f:10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37:38:39:3a:3b:3c:3d:3e:3f:40:41:42:43:44:45:46:47:48:49:4a:4b:4c:4d:4e:4f:50:51:52:53:54:55:56:57:58:59:5a:5b:5c:5d:5e:5f:60:61:62:63:64:65:66:67:68:69:6a:6b:6c:6d:6e:6f:70:71:72:73:74:75:76:77:78:79:7a:7b:7c:7d:7e:7f:80.
+"0:1:2:3:4:5:6:7:8:9:a:b:c:d:e:f:10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37:38:39:3a:3b:3c:3d:3e:3f:40:41:42:43:44:45:46:47:48:49:4a:4b:4c:4d:4e:4f:50:51:52:53:54:55:56:57:58:59:5a:5b:5c:5d:5e:5f:60:61:62:63:64:65:66:67:68:69:6a:6b:6c:6d:6e:6f:70:71:72:73:74:75:76:77:78:79:7a:7b:7c:7d:7e:7f:80" → "" (Success)
+"1:2:3:4:5:6:7:8:9:a:b:c:d:e:f:10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37:38:39:3a:3b:3c:3d:3e:3f:40:41:42:43:44:45:46:47:48:49:4a:4b:4c:4d:4e:4f:50:51:52:53:54:55:56:57:58:59:5a:5b:5c:5d:5e:5f:60:61:62:63:64:65:66:67:68:69:6a:6b:6c:6d:6e:6f:70:71:72:73:74:75:76:77:78:79:7a:7b:7c:7d:7e:7f:80" → "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f80" (Success)
+filename:1: Not a valid MAC address, ignoring assignment: no:ta:ma:ca:dd:re
+filename:1: Not a valid MAC address, ignoring assignment: aa:bb:cc:dd:ee:fx
+filename:1: Not a valid MAC address, ignoring assignment: aa:bb:cc:dd:ee:ff 	
+filename:1: Not a valid MAC address, ignoring assignment: aa:bb:cc:dd:ee:ff 	
+xxx
+filename:1: Not a valid MAC address, ignoring assignment: aa:bb:cc: dd:ee:ff
+filename:1: Not a valid MAC address, ignoring assignment: aa:bb:cc:d d:ee:ff
+filename:1: Not a valid MAC address, ignoring assignment: aa:bb:cc:dd:ee
+filename:1: Not a valid MAC address, ignoring assignment: 9:aa:bb:cc:dd:ee:ff
+filename:1: Not a valid MAC address, ignoring assignment: aa:bb:cc:dd:ee:ff:gg
+filename:1: Not a valid MAC address, ignoring assignment: 123.4567.89ab.
+filename:1: Not a valid MAC address, ignoring assignment: aabbcc.ddeeff
+filename:1: Not a valid MAC address, ignoring assignment: aabbccddeeff
+filename:1: Not a valid MAC address, ignoring assignment: aabbccddee:ff
+filename:1: Not a valid MAC address, ignoring assignment: 012345.6789ab
+filename:1: Not a valid MAC address, ignoring: no:ta:ma:ca:dd:re
+filename:1: Not a valid MAC address, ignoring: aa:bb:cc:dd:ee:fx
+filename:1: Not a valid MAC address, ignoring: xxx
+filename:1: Not a valid MAC address, ignoring: aa:bb:cc:
+filename:1: Not a valid MAC address, ignoring: dd:ee:ff
+filename:1: Not a valid MAC address, ignoring: aa:bb:cc:d
+filename:1: Not a valid MAC address, ignoring: d:ee:ff
+filename:1: Not a valid MAC address, ignoring: aa:bb:cc:dd:ee
+filename:1: Not a valid MAC address, ignoring: 9:aa:bb:cc:dd:ee:ff
+filename:1: Not a valid MAC address, ignoring: aa:bb:cc:dd:ee:ff:gg
+filename:1: Not a valid MAC address, ignoring: 123.4567.89ab.
+filename:1: Not a valid MAC address, ignoring: aabbcc.ddeeff
+filename:1: Not a valid MAC address, ignoring: aabbccddeeff
+filename:1: Not a valid MAC address, ignoring: aabbccddee:ff
+filename:1: Not a valid MAC address, ignoring: 012345.6789ab
+filename:1: Not a valid MAC address, ignoring: aa:bb:cc:dd:ee:fx
+filename:1: Not a valid MAC address, ignoring: hogehoge
+filename:1: Not a valid MAC address, ignoring: aaaa
+filename:1: Invalid address '', ignoring assignment: Invalid argument
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '/', ignoring assignment: Invalid argument
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '/8', ignoring assignment: Invalid argument
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: An address '1.2.3.4' is specified without prefix length. The behavior of parsing addresses without prefix length will be changed in the future release. Please specify prefix length explicitly.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '1.2.3.4/33', ignoring assignment: Numerical result out of range
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '1.2.3.4/-1', ignoring assignment: Numerical result out of range
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '', ignoring assignment: Invalid argument
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '/', ignoring assignment: Invalid argument
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '/8', ignoring assignment: Invalid argument
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: An address '::1' is specified without prefix length. The behavior of parsing addresses without prefix length will be changed in the future release. Please specify prefix length explicitly.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '::1/129', ignoring assignment: Numerical result out of range
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.
+filename:1: Invalid address '::1/-1', ignoring assignment: Numerical result out of range
+hogehoge.network: Both KeepConfiguration= and deprecated CriticalConnection= are set. Ignoring CriticalConnection=.

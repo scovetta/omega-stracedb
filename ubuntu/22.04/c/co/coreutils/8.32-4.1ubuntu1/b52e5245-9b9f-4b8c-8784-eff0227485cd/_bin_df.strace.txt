@@ -1,0 +1,103 @@
+511   execve("/bin/df", ["/bin/df"], 0x7ffdaa643df0 /* 12 vars */) = 0
+511   brk(NULL)                         = 0x557f189a4000
+511   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe11405310) = -1 EINVAL (Invalid argument)
+511   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fde9bf37000
+511   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+511   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+511   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+511   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fde9bf35000
+511   close(3)                          = 0
+511   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+511   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+511   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+511   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+511   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+511   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+511   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+511   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fde9bd0d000
+511   mmap(0x7fde9bd35000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fde9bd35000
+511   mmap(0x7fde9beca000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fde9beca000
+511   mmap(0x7fde9bf22000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fde9bf22000
+511   mmap(0x7fde9bf28000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fde9bf28000
+511   close(3)                          = 0
+511   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fde9bd0a000
+511   arch_prctl(ARCH_SET_FS, 0x7fde9bd0a740) = 0
+511   set_tid_address(0x7fde9bd0aa10)   = 511
+511   set_robust_list(0x7fde9bd0aa20, 24) = 0
+511   rseq(0x7fde9bd0b0e0, 0x20, 0, 0x53053053) = 0
+511   mprotect(0x7fde9bf22000, 16384, PROT_READ) = 0
+511   mprotect(0x557f184cc000, 4096, PROT_READ) = 0
+511   mprotect(0x7fde9bf71000, 8192, PROT_READ) = 0
+511   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+511   munmap(0x7fde9bf35000, 6133)      = 0
+511   getrandom("\x16\xe7\x97\xe0\x48\xd0\x6d\x49", 8, GRND_NONBLOCK) = 8
+511   brk(NULL)                         = 0x557f189a4000
+511   brk(0x557f189c5000)               = 0x557f189c5000
+511   openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY) = 3
+511   newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+511   read(3, "274 227 0:65 / / rw,relatime master:6 - overlay overlay rw,lowerdir=/var/lib/docker/overlay2/l/IXEDTXBKZRPLV5YPLVFQKWPMOE:/var/l"..., 1024) = 1024
+511   read(3, "nodev,noexec,relatime - sysfs sysfs ro\n279 278 0:72 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,mode=755\n2"..., 1024) = 1024
+511   read(3, "e46be0436d46 /sys/fs/cgroup/devices ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,devices\n286 279 0:51 /docker/2844c2ae5dc3"..., 1024) = 1024
+511   read(3, "6d46 /sys/fs/cgroup/pids ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,pids\n292 279 0:57 /docker/2844c2ae5dc3543b052263acc2"..., 1024) = 1024
+511   read(3, "8:32 /var/lib/docker/containers/2844c2ae5dc3543b052263acc26101006b2b4d47bfb4c33b10e6e46be0436d46/hostname /etc/hostname rw,relat"..., 1024) = 1024
+511   read(3, "_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n247 275 0:69 /null /proc/sched_debug rw,nosuid - tmpfs tmpfs rw,size=65536"..., 1024) = 197
+511   read(3, "", 1024)                 = 0
+511   lseek(3, 0, SEEK_CUR)             = 5317
+511   close(3)                          = 0
+511   ioctl(1, TCGETS, 0x7ffe11404e50)  = -1 ENOTTY (Inappropriate ioctl for device)
+511   newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/dev", {st_mode=S_IFDIR|0755, st_size=360, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup", {st_mode=S_IFDIR|0555, st_size=300, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/cpuset", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/cpu", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/cpuacct", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/blkio", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/memory", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/devices", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/freezer", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/net_cls", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/perf_event", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/net_prio", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/hugetlb", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/pids", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/fs/cgroup/rdma", {st_mode=S_IFDIR|0755, st_size=0, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/dev/shm", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/opt/apt-mirror", {st_mode=S_IFDIR|0777, st_size=4096, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/opt/export", {st_mode=S_IFDIR|0777, st_size=4096, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=19, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/etc/hostname", {st_mode=S_IFREG|0644, st_size=13, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/etc/hosts", {st_mode=S_IFREG|0644, st_size=174, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/proc/acpi", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/proc/kcore", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/proc/keys", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/proc/timer_list", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/proc/sched_debug", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, 0) = 0
+511   newfstatat(AT_FDCWD, "/sys/firmware", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}, 0) = 0
+511   uname({sysname="Linux", nodename="2844c2ae5dc3", ...}) = 0
+511   statfs("/", {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63410534, f_bavail=60050995, f_files=16777216, f_ffree=16535285, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+511   statfs("/dev", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=16384, f_bfree=16384, f_bavail=16384, f_files=2021765, f_ffree=2021748, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID}) = 0
+511   statfs("/sys/fs/cgroup", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2021765, f_bfree=2021765, f_bavail=2021765, f_files=2021765, f_ffree=2021751, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/cpuset", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/cpu", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/cpuacct", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/blkio", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/memory", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/devices", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/freezer", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/net_cls", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/perf_event", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/net_prio", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/hugetlb", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/pids", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/sys/fs/cgroup/rdma", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/dev/shm", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=16384, f_bfree=16384, f_bavail=16384, f_files=2021765, f_ffree=2021764, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+511   statfs("/opt/apt-mirror", {f_type=V9FS_MAGIC, f_bsize=4096, f_blocks=249866239, f_bfree=180508164, f_bavail=180508164, f_files=999, f_ffree=1000000, f_fsid={val=[0x1, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOATIME}) = 0
+511   statfs("/etc/hosts", {f_type=EXT2_SUPER_MAGIC, f_bsize=4096, f_blocks=65793553, f_bfree=63410534, f_bavail=60050995, f_files=16777216, f_ffree=16535285, f_fsid={val=[0xfedc9aa3, 0xbd65bc57]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+511   statfs("/proc/acpi", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2021765, f_bfree=2021765, f_bavail=2021765, f_files=2021765, f_ffree=2021764, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0
+511   statfs("/sys/firmware", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=2021765, f_bfree=2021765, f_bavail=2021765, f_files=2021765, f_ffree=2021764, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_RELATIME}) = 0
+511   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+511   write(1, "Filesystem     1K-blocks      Used Available Use% Mounted on\noverlay        263174212   9532076 240203980   4% /\ntmpfs          "..., 544) = 544
+511   close(1)                          = 0
+511   close(2)                          = 0
+511   exit_group(0)                     = ?
+511   +++ exited with 0 +++

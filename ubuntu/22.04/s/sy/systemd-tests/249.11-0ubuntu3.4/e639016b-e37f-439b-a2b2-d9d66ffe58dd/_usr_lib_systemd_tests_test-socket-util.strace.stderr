@@ -1,0 +1,40 @@
+/* test_ifname_valid */
+/* test_socket_print_unix */
+"" → "@\000\000\000" (expect "@\000\000\000")
+"@abs" → "@abs" (expect "@abs")
+"
+" → "\n" (expect "\n")
+"" → "<unnamed>" (expect "<unnamed>")
+"" → "<unnamed>" (expect "<unnamed>")
+"" → "@_________________________there\'s 108 characters in this string_____________________________________________" (expect "@_________________________there\'s 108 characters in this string_____________________________________________")
+"////////////////////////////////////////////////////////////////////////////////////////////////////////////" → "////////////////////////////////////////////////////////////////////////////////////////////////////////////" (expect "////////////////////////////////////////////////////////////////////////////////////////////////////////////")
+"" → "@\a\b\n\255\000" (expect "@\a\b\n\255\000")
+/* test_sockaddr_equal */
+/* test_sockaddr_un_len */
+/* test_in_addr_is_multicast */
+/* test_getpeercred_getpeergroups */
+Successfully forked off '(getpeercred)' as PID 3086.
+PR_SET_MM_ARG_START failed: Operation not permitted
+(getpeercred) succeeded.
+/* test_passfd_read */
+Successfully forked off '(passfd_read)' as PID 3087.
+PR_SET_MM_ARG_START failed: Operation not permitted
+(passfd_read) succeeded.
+/* test_passfd_contents_read */
+Successfully forked off '(passfd_contents_read)' as PID 3088.
+PR_SET_MM_ARG_START failed: Operation not permitted
+(passfd_contents_read) succeeded.
+/* test_receive_nopassfd */
+Successfully forked off '(receive_nopassfd)' as PID 3089.
+PR_SET_MM_ARG_START failed: Operation not permitted
+(receive_nopassfd) succeeded.
+/* test_send_nodata_nofd */
+Successfully forked off '(send_nodata_nofd)' as PID 3090.
+PR_SET_MM_ARG_START failed: Operation not permitted
+(send_nodata_nofd) succeeded.
+/* test_send_emptydata */
+Successfully forked off '(send_emptydata)' as PID 3091.
+PR_SET_MM_ARG_START failed: Operation not permitted
+(send_emptydata) succeeded.
+IPv6 supported: yes
+IPv6 enabled: no

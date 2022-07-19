@@ -1,0 +1,445 @@
+2097  execve("/usr/libexec/libinput/libinput-debug-tablet", ["/usr/libexec/libinput/libinput-debug-tablet"], 0x7fff1ebebf90 /* 12 vars */) = 0
+2097  brk(NULL)                         = 0x555c3f9ea000
+2097  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffffc9a1080) = -1 EINVAL (Invalid argument)
+2097  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7de9e8c000
+2097  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2097  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11937, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 11937, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7de9e89000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libinput.so.10", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\10\33\5\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\214\0\0\0\0\0\0\20\214\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=336520, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 338360, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9e36000
+2097  mprotect(0x7f7de9e3f000, 294912, PROT_NONE) = 0
+2097  mmap(0x7f7de9e3f000, 212992, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f7de9e3f000
+2097  mmap(0x7f7de9e73000, 77824, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3d000) = 0x7f7de9e73000
+2097  mmap(0x7f7de9e87000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x50000) = 0x7f7de9e87000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\340\201\2\0\0\0\0\0\0\0\0\0@\08\0\f\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0p>\0\0\0\0\0\0p>\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 170272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9e0c000
+2097  mprotect(0x7f7de9e10000, 147456, PROT_NONE) = 0
+2097  mmap(0x7f7de9e10000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f7de9e10000
+2097  mmap(0x7f7de9e2a000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f7de9e2a000
+2097  mmap(0x7f7de9e34000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f7de9e34000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libevdev.so.2", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\220\261\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250\256\0\0\0\0\0\0\250\256\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=112848, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 114760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9def000
+2097  mmap(0x7f7de9dfa000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f7de9dfa000
+2097  mmap(0x7f7de9e00000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7f7de9e00000
+2097  mmap(0x7f7de9e05000, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f7de9e05000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+2097  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2097  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+2097  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+2097  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+2097  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9bc7000
+2097  mmap(0x7f7de9bef000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f7de9bef000
+2097  mmap(0x7f7de9d84000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f7de9d84000
+2097  mmap(0x7f7de9ddc000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f7de9ddc000
+2097  mmap(0x7f7de9de2000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7de9de2000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmtdev.so.1", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\240Q\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\30\f\0\0\0\0\0\0\30\f\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22688, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 24688, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9bc0000
+2097  mmap(0x7f7de9bc1000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f7de9bc1000
+2097  mmap(0x7f7de9bc4000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f7de9bc4000
+2097  mmap(0x7f7de9bc5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f7de9bc5000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0PR\16\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\37\0\36\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\340\322\0\0\0\0\0\0\340\322\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7de9bbe000
+2097  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9ad7000
+2097  mmap(0x7f7de9ae5000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f7de9ae5000
+2097  mmap(0x7f7de9b61000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f7de9b61000
+2097  mmap(0x7f7de9bbc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f7de9bbc000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libwacom.so.9", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\370\303\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230+\0\0\0\0\0\0\230+\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=52088, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 53928, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9ac9000
+2097  mprotect(0x7f7de9acc000, 36864, PROT_NONE) = 0
+2097  mmap(0x7f7de9acc000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f7de9acc000
+2097  mmap(0x7f7de9ad2000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f7de9ad2000
+2097  mmap(0x7f7de9ad5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f7de9ad5000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgudev-1.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\301\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3005\0\0\0\0\0\0\3005\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=51272, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 53344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9abb000
+2097  mmap(0x7f7de9abf000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f7de9abf000
+2097  mmap(0x7f7de9ac4000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f7de9ac4000
+2097  mmap(0x7f7de9ac7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f7de9ac7000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgobject-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\342\5\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\270\345\0\0\0\0\0\0\270\345\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=387464, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 392240, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9a5b000
+2097  mmap(0x7f7de9a6a000, 208896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f7de9a6a000
+2097  mmap(0x7f7de9a9d000, 106496, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x42000) = 0x7f7de9a9d000
+2097  mmap(0x7f7de9ab7000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5b000) = 0x7f7de9ab7000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\320w\23\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\320\305\1\0\0\0\0\0\320\305\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1277712, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 1282776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9921000
+2097  mprotect(0x7f7de993e000, 1155072, PROT_NONE) = 0
+2097  mmap(0x7f7de993e000, 585728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f7de993e000
+2097  mmap(0x7f7de99cd000, 565248, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xac000) = 0x7f7de99cd000
+2097  mmap(0x7f7de9a58000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x136000) = 0x7f7de9a58000
+2097  mmap(0x7f7de9a5a000, 728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7de9a5a000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libffi.so.8", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\310\262\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\36\0\35\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\30\0\0\0\0\0\0\200\30\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47688, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7de991f000
+2097  mmap(NULL, 50736, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de9912000
+2097  mprotect(0x7f7de9914000, 36864, PROT_NONE) = 0
+2097  mmap(0x7f7de9914000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7de9914000
+2097  mmap(0x7f7de991b000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f7de991b000
+2097  mmap(0x7f7de991d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f7de991d000
+2097  close(3)                          = 0
+2097  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+2097  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0pA\7\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P\23\0\0\0\0\0\0P\23\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+2097  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=477296, ...}, AT_EMPTY_PATH) = 0
+2097  mmap(NULL, 479504, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7de989c000
+2097  mmap(0x7f7de989e000, 348160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7de989e000
+2097  mmap(0x7f7de98f3000, 118784, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x57000) = 0x7f7de98f3000
+2097  mmap(0x7f7de9910000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x73000) = 0x7f7de9910000
+2097  close(3)                          = 0
+2097  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7de989a000
+2097  arch_prctl(ARCH_SET_FS, 0x7f7de989ad40) = 0
+2097  set_tid_address(0x7f7de989b010)   = 2097
+2097  set_robust_list(0x7f7de989b020, 24) = 0
+2097  rseq(0x7f7de989b6e0, 0x20, 0, 0x53053053) = 0
+2097  mprotect(0x7f7de9ddc000, 16384, PROT_READ) = 0
+2097  mprotect(0x7f7de9910000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de991d000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9bbc000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9a58000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9ab7000, 12288, PROT_READ) = 0
+2097  mprotect(0x7f7de9e34000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9ac7000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9ad5000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9bc5000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9e05000, 24576, PROT_READ) = 0
+2097  mprotect(0x7f7de9e87000, 4096, PROT_READ) = 0
+2097  mprotect(0x555c3e37e000, 4096, PROT_READ) = 0
+2097  mprotect(0x7f7de9ec6000, 8192, PROT_READ) = 0
+2097  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2097  munmap(0x7f7de9e89000, 11937)     = 0
+2097  getrandom("\x9e\xdc\x33\x77\xa9\x87\x0e\x7e", 8, GRND_NONBLOCK) = 8
+2097  brk(NULL)                         = 0x555c3f9ea000
+2097  brk(0x555c3fa0b000)               = 0x555c3fa0b000
+2097  futex(0x7f7de9a5a0a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+2097  futex(0x7f7de9a5a0a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+2097  rt_sigaction(SIGINT, {sa_handler=0x555c3e37be70, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f7de9c09520}, NULL, 8) = 0
+2097  epoll_create1(EPOLL_CLOEXEC)      = 3
+2097  timerfd_create(CLOCK_MONOTONIC, TFD_CLOEXEC|TFD_NONBLOCK) = 4
+2097  epoll_ctl(3, EPOLL_CTL_ADD, 4, {events=EPOLLIN, data={u32=1067410880, u64=93854692763072}}) = 0
+2097  openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 5
+2097  openat(5, "sys", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 6
+2097  newfstatat(6, "", {st_mode=S_IFDIR|0555, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  close(5)                          = 0
+2097  openat(6, "devices", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 5
+2097  newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  close(6)                          = 0
+2097  openat(5, "virtual", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 6
+2097  newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  close(5)                          = 0
+2097  openat(6, "dmi", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+2097  close(6)                          = 0
+2097  openat(AT_FDCWD, "/sys/firmware/devicetree/base/compatible", O_RDONLY) = -1 ENOENT (No such file or directory)
+2097  openat(AT_FDCWD, "/usr/share/libinput", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+2097  getdents64(5, 0x555c3f9f6ab0 /* 41 entries */, 32768) = 1888
+2097  getdents64(5, 0x555c3f9f6ab0 /* 0 entries */, 32768) = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/10-generic-keyboard.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=245, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Serial Keyboards]\nMatchUdevType=keyboard\nMatchBus=ps2\nAttrKeyboardIn"..., 4096) = 245
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/10-generic-lid.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=268, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Lid Switch Ct9]\nMatchName=*Lid Switch*\nMatchDMIModalias=dmi:*:ct9:*\n"..., 4096) = 268
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/10-generic-mouse.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=197, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n# https://gitlab.freedesktop.org/libinput/libinput/-/issues/656\n[Emul"..., 4096) = 197
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/10-generic-trackball.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=110, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Trackball]\nMatchName=*Trackball*\nModelTrackball=1\n", 4096) = 110
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-a4tech.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=100, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[A4TECH USB X-710BK]\nMatchVendor=0x09DA\nMatchProduct=0x9090\nMatchUdevType=mouse\nModelBouncingKeys=1\n", 4096) = 100
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-aiptek.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=312, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Aiptek No Tilt Tablet]\nMatchUdevType=tablet\nMatchBus=usb\nMatchVendor"..., 4096) = 312
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-alps.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=894, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n# ALPS firmware versions:\n# V1            = 0x100\n# V2            = 0"..., 4096) = 894
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-contour.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=461, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[Contour Design RollerMouse Free 2]\nMatchVendor=0x0B33\nMatchProduct=0x0401\nMatchUdevType=mouse\nModelBouncingKeys=1\n\n[Contour Des"..., 4096) = 461
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-cypress.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=272, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Cyapa Touchpads]\nMatchName=*Cypress APA Trackpad ?cyapa?\nAttrPressur"..., 4096) = 272
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-elantech.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=250, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Elantech Touchpads]\nMatchName=*Elantech Touchpad*\nAttrResolutionHint"..., 4096) = 250
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-ibm.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=1099, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n# IBM/Lenovo Scrollpoint mouse. Instead of a scroll wheel these mice\n"..., 4096) = 1099
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-kensington.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=193, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Kensington Orbit claims to have a middle button, same for\n[Kensington Orbit Scroll Wheel]\nMatchBus=usb\nMatchVendor=0x047D\nMatc"..., 4096) = 193
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-logitech.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=1940, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Logitech M570]\nMatchName=*Logitech M570*\nModelTrackball=1\n\n# Logitec"..., 4096) = 1940
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-madcatz.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=1960, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n# The Madcatz RAT3 has a mode button that cycles through event codes."..., 4096) = 1960
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-microsoft.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=865, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Microsoft Surface 3 Lid Switch]\nMatchName=*Lid Switch*\nMatchDMIModal"..., 4096) = 865
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-razer.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=3592, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Razer Blade Lid Switch]\nMatchName=*Lid Switch*\nMatchDMIModalias=dmi:"..., 4096) = 3592
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-starlabs.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=856, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[StarBook Mk V]\nMatchName=STAR0001:00 093A:0255 Touchpad\nMatchUdevType=touchpad\nMatchDMIModalias=dmi:*svnStarLabs:pnStarBook*\nAt"..., 4096) = 856
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-synaptics.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=516, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Synaptics Serial Touchpads]\nMatchUdevType=touchpad\nMatchBus=ps2\nMatc"..., 4096) = 516
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-trust.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=120, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[Trust GXT 25 Gaming Mouse]\nMatchUdevType=mouse\nMatchBus=usb\nMatchVendor=0x1D57\nMatchProduct=0xAD03\nModelBouncingKeys=1\n", 4096) = 120
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-vmware.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=246, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[VMWare Virtual PS/2 Mouse]\nMatchName=*VirtualPS/2 VMware VMMouse*\nMo"..., 4096) = 246
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/30-vendor-wacom.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=560, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Wacom Touchpads]\nMatchUdevType=touchpad\nMatchBus=usb\nMatchVendor=0x0"..., 4096) = 560
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-framework.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=169, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[Framework Laptop Touchpad]\nMatchName=PIXA3854:00 093A:0274 Touchpad\nMatchUdevType=touchpad\nMatchDMIModalias=dmi:*svnFramework:p"..., 4096) = 169
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-acer.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=265, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[Acer Switch Alpha 12]\nMatchName=AT Translated Set 2 keyboard\nMatchDMIModalias=dmi:*svnAcer:pnSwitchSA5-271:*\nModelTabletModeNoS"..., 4096) = 265
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-apple.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2833, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Apple Touchpads USB]\nMatchVendor=0x05AC\nMatchBus=usb\nMatchUdevType=t"..., 4096) = 2833
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-asus.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=1542, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Asus X555LAB]\nMatchName=*ETPS/2 Elantech Touchpad*\nMatchDMIModalias="..., 4096) = 1542
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-chicony.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=424, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n# Acer Hawaii Keyboard, uses Chicony VID\n[Acer Hawaii Keyboard]\nMatch"..., 4096) = 424
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-chuwi.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=230, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[Chuwi Gemibook]\nMatchName=HTIX5288:00 093A:1336 Touchpad\nMatchUdevType=touchpad\nAttrEventCodeDisable=BTN_RIGHT\n\n[Chuwi AeroBook"..., 4096) = 230
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-cyborg.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=1526, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n# The Cyborg RAT has a mode button that cycles through event codes.\n#"..., 4096) = 1526
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-dell.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2892, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Dell Touchpads]\nMatchName=* Touchpad\nMatchDMIModalias=dmi:*svnDellIn"..., 4096) = 2892
+2097  brk(0x555c3fa2c000)               = 0x555c3fa2c000
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-gigabyte.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=159, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[Gigabyte Aero 15 touchpad]\nMatchUdevType=touchpad\nMatchName=ETPS/2 Elantech Touchpad\nMatchDMIModalias=dmi:*svnGIGABYTE:pnAERO15"..., 4096) = 159
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-google.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2292, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Google Chromebook R13 CB5-312T]\nMatchName=*Elan Touchpad*\nMatchDevic"..., 4096) = 2292
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-gpd.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=164, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[GPD Win Max - All versions]\nMatchName=HTIX5288:00 093A:0255 Touchpad\nMatchUdevType=touchpad\nMatchDMIModalias=dmi:*svnGPD:*pnG16"..., 4096) = 164
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-hp.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2926, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n#\n# Claims to have double/tripletap but doesn't actually send it\n# htt"..., 4096) = 2926
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-huawei.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=260, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Clickpad that announces BTN_RIGHT\n# https://bugzilla.redhat.com/show_bug.cgi?id=1972370\n[Huawei MateBook 2020 Touchpad]\nMatchN"..., 4096) = 260
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-lenovo.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=8694, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Lenovo Thinkpad Touchpad]\nMatchName=*Synaptics*\nMatchDMIModalias=dmi"..., 4096) = 4096
+2097  read(5, "xtended by #106799 comment 7\n[Lenovo Thinkpad Yoga]\nMatchName=AT Translated Set 2 keyboard\nMatchDMIModalias=dmi:*svnLENOVO:*pvrT"..., 4096) = 4096
+2097  read(5, "y folding keyboard cover, or removing it.\n# We must not disable volume rocker 'keyboard'.\n[Lenovo Duet 7i]\nMatchName=AT Raw Set "..., 4096) = 502
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-pine64.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=132, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[PineBook Pro Keyboard]\nMatchVendor=0x258A\nMatchProduct=0x001E\nMatchUdevType=keyboard\nMatchBus=usb\nAttrKeyboardIntegration=inter"..., 4096) = 132
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-sony.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=247, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[Sony Vaio VPCEG Series Touchpad Pressure Override]\nMatchUdevType=tou"..., 4096) = 247
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-system76.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=575, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "# Do not edit this file, it will be overwritten on update\n\n[System76  Bonobo Professional]\nMatchName=SynPS/2 Synaptics TouchPad\n"..., 4096) = 575
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/usr/share/libinput/50-system-toshiba.quirks", O_RDONLY) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=149, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "[Toshiba Satellite L855-14E Touchpad]\nMatchName=*SynPS/2 Synaptics TouchPad\nMatchDMIModalias=dmi:*svnTOSHIBA:pnSATELLITEL855*\nAt"..., 4096) = 149
+2097  read(5, "", 4096)                 = 0
+2097  close(5)                          = 0
+2097  openat(AT_FDCWD, "/etc/libinput/local-overrides.quirks", O_RDONLY) = -1 ENOENT (No such file or directory)
+2097  access("/run/udev/control", F_OK) = -1 ENOENT (No such file or directory)
+2097  statx(AT_FDCWD, "/dev", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW|AT_NO_AUTOMOUNT, STATX_MNT_ID, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|0755, stx_size=360, ...}) = 0
+2097  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2097  newfstatat(5, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  read(5, "274 227 0:65 / / rw,relatime master:6 - overlay overlay rw,lowerdir=/var/lib/docker/overlay2/l/TCXESCQWCFQUDMQKIE4NQSRSRR:/var/l"..., 1024) = 1024
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  read(5, "nodev,noexec,relatime - sysfs sysfs ro\n279 278 0:72 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,mode=755\n2"..., 1024) = 1024
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  read(5, "7c3a531301ae /sys/fs/cgroup/devices ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,devices\n286 279 0:51 /docker/940379c29928"..., 1024) = 1024
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  read(5, "01ae /sys/fs/cgroup/pids ro,nosuid,nodev,noexec,relatime - cgroup cgroup rw,pids\n292 279 0:57 /docker/940379c2992899758ae6d02315"..., 1024) = 1024
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  read(5, "8:32 /var/lib/docker/containers/940379c2992899758ae6d023158d92f7a74b838af64342d5b6e47c3a531301ae/hostname /etc/hostname rw,relat"..., 1024) = 1024
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  read(5, "_list rw,nosuid - tmpfs tmpfs rw,size=65536k,mode=755\n247 275 0:69 /null /proc/sched_debug rw,nosuid - tmpfs tmpfs rw,size=65536"..., 1024) = 197
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  ioctl(5, TCGETS, 0x7ffffc9a0af0)  = -1 ENOTTY (Inappropriate ioctl for device)
+2097  read(5, "", 1024)                 = 0
+2097  close(5)                          = 0
+2097  socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC|SOCK_NONBLOCK, NETLINK_KOBJECT_UEVENT) = 5
+2097  getpid()                          = 2097
+2097  gettid()                          = 2097
+2097  futex(0x7f7de9e35900, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+2097  setsockopt(5, SOL_SOCKET, SO_ATTACH_FILTER, {len=8, filter=0x7ffffc99fd60}, 16) = 0
+2097  setsockopt(5, SOL_SOCKET, SO_PASSCRED, [1], 4) = 0
+2097  bind(5, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+2097  getsockname(5, {sa_family=AF_NETLINK, nl_pid=2097, nl_groups=00000000}, [12]) = 0
+2097  epoll_ctl(3, EPOLL_CTL_ADD, 5, {events=EPOLLIN, data={u32=1067446464, u64=93854692798656}}) = 0
+2097  access("/sys/subsystem", F_OK)    = -1 ENOENT (No such file or directory)
+2097  openat(AT_FDCWD, "/sys/bus", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+2097  newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  getdents64(6, 0x555c3fa185b0 /* 26 entries */, 32768) = 728
+2097  getdents64(6, 0x555c3fa185b0 /* 0 entries */, 32768) = 0
+2097  close(6)                          = 0
+2097  openat(AT_FDCWD, "/sys/class", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+2097  newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  getdents64(6, 0x555c3fa185b0 /* 31 entries */, 32768) = 864
+2097  openat(AT_FDCWD, "/sys/class/input/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+2097  newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  getdents64(7, 0x555c3fa205f0 /* 2 entries */, 32768) = 48
+2097  getdents64(7, 0x555c3fa205f0 /* 0 entries */, 32768) = 0
+2097  close(7)                          = 0
+2097  getdents64(6, 0x555c3fa185b0 /* 0 entries */, 32768) = 0
+2097  close(6)                          = 0
+2097  ioctl(1, TIOCGWINSZ, 0x7ffffc9a0e78) = -1 ENOTTY (Inappropriate ioctl for device)
+2097  newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2097  epoll_wait(3, [], 32, 0)          = 0
+2097  poll([{fd=3, events=POLLIN}, {fd=-1}], 2, -1) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+2097  --- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=2096, si_uid=0} ---
+2097  +++ killed by SIGTERM +++

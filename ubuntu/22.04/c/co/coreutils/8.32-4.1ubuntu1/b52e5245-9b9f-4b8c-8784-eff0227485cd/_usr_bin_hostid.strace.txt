@@ -1,0 +1,77 @@
+907   execve("/usr/bin/hostid", ["/usr/bin/hostid"], 0x7ffc57974150 /* 12 vars */) = 0
+907   brk(NULL)                         = 0x5601573f2000
+907   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff74cc2240) = -1 EINVAL (Invalid argument)
+907   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f274d40f000
+907   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+907   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+907   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f274d40d000
+907   close(3)                          = 0
+907   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+907   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+907   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+907   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+907   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+907   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+907   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f274d1e5000
+907   mmap(0x7f274d20d000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f274d20d000
+907   mmap(0x7f274d3a2000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f274d3a2000
+907   mmap(0x7f274d3fa000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f274d3fa000
+907   mmap(0x7f274d400000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f274d400000
+907   close(3)                          = 0
+907   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f274d1e2000
+907   arch_prctl(ARCH_SET_FS, 0x7f274d1e2740) = 0
+907   set_tid_address(0x7f274d1e2a10)   = 907
+907   set_robust_list(0x7f274d1e2a20, 24) = 0
+907   rseq(0x7f274d1e30e0, 0x20, 0, 0x53053053) = 0
+907   mprotect(0x7f274d3fa000, 16384, PROT_READ) = 0
+907   mprotect(0x560156bad000, 4096, PROT_READ) = 0
+907   mprotect(0x7f274d449000, 8192, PROT_READ) = 0
+907   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+907   munmap(0x7f274d40d000, 6133)      = 0
+907   getrandom("\xbe\xe9\xc5\xa6\x92\xfc\x9a\xa6", 8, GRND_NONBLOCK) = 8
+907   brk(NULL)                         = 0x5601573f2000
+907   brk(0x560157413000)               = 0x560157413000
+907   openat(AT_FDCWD, "/etc/hostid", O_RDONLY) = -1 ENOENT (No such file or directory)
+907   uname({sysname="Linux", nodename="2844c2ae5dc3", ...}) = 0
+907   newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=19, ...}, 0) = 0
+907   openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_EMPTY_PATH) = 0
+907   read(3, "# The \"order\" line is only used by old versions of the C library.\norder hosts,bind\nmulti on\n", 4096) = 92
+907   read(3, "", 4096)                 = 0
+907   close(3)                          = 0
+907   futex(0x7f274d40732c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+907   openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=19, ...}, AT_EMPTY_PATH) = 0
+907   read(3, "nameserver 8.8.8.8\n", 4096) = 19
+907   read(3, "", 4096)                 = 0
+907   uname({sysname="Linux", nodename="2844c2ae5dc3", ...}) = 0
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=19, ...}, AT_EMPTY_PATH) = 0
+907   close(3)                          = 0
+907   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+907   connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+907   close(3)                          = 0
+907   socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+907   connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+907   close(3)                          = 0
+907   newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+907   newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+907   openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+907   read(3, "# /etc/nsswitch.conf\n#\n# Example configuration of GNU Name Service Switch functionality.\n# If you have the `glibc-doc-reference'"..., 4096) = 494
+907   read(3, "", 4096)                 = 0
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+907   close(3)                          = 0
+907   openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+907   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=174, ...}, AT_EMPTY_PATH) = 0
+907   lseek(3, 0, SEEK_SET)             = 0
+907   read(3, "127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nff00::0\tip6-mcastprefix\nff02::1\tip6-allnodes\nf"..., 4096) = 174
+907   read(3, "", 4096)                 = 0
+907   close(3)                          = 0
+907   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+907   write(1, "11ac0200\n", 9)         = 9
+907   close(1)                          = 0
+907   close(2)                          = 0
+907   exit_group(0)                     = ?
+907   +++ exited with 0 +++
