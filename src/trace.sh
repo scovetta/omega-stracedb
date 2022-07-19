@@ -195,6 +195,13 @@ rm "${ENTRYPOINTS_TEMP_FILE}"
 echo "  ]" >> ${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}
 echo "}" >> ${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}
 
-find "${EXPORT_DETAIL_PATH}" -size 0 -print -delete >/dev/null 2>&1
+# Remove all zero-length files (uninteresting)
+find "${EXPORT_DETAIL_PATH}" -type f -size 0 -print -delete >/dev/null 2>&1
+
+# Compress all large files (GitHub doesn't support uploading large files)
+find "${EXPORT_DETAIL_PATH}" -type f -size +10M | xargs -n1 gzip -9 >/dev/null 2>&1
+
+# Delete any remaining large files
+find "${EXPORT_DETAIL_PATH}" -type f -size +50M -print -delete >/dev/null 2>&1
 
 printf "${DARKGRAY}Operation complete.${NC}\n"
