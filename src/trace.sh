@@ -150,8 +150,8 @@ function process_entrypoint()
     # Clean up the filename
     RESULT_PREFIX="${TARGET_EXECUTABLE//[^A-Za-z0-9._-]/_}"
 
-    timeout 10s strace -f -s 128 -D -o "${EXPORT_DETAIL_PATH}/${RESULT_PREFIX}.strace.txt" "${TARGET_EXECUTABLE}" 2>${EXPORT_DETAIL_PATH}/${RESULT_PREFIX}.strace.stderr 1>${EXPORT_DETAIL_PATH}/${RESULT_PREFIX}.strace.stdout
-    if [ $? -eq 124 ]; then
+    timeout --kill-after=15s 10s strace -f -s 128 -D -o "${EXPORT_DETAIL_PATH}/${RESULT_PREFIX}.strace.txt" "${TARGET_EXECUTABLE}" 2>${EXPORT_DETAIL_PATH}/${RESULT_PREFIX}.strace.stderr 1>${EXPORT_DETAIL_PATH}/${RESULT_PREFIX}.strace.stdout
+    if [ $? -eq 124 ] || [ $? -eq 137 ]; then
         printf "${RED}ERROR:${NC} Timeout during trace ${TARGET_EXECUTABLE}${NC}\n"
     fi
 }
