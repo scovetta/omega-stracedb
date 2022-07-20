@@ -1,0 +1,85 @@
+507   execve("/bin/ping4", ["/bin/ping4"], 0x7fffaea699f0 /* 12 vars */) = 0
+507   brk(NULL)                         = 0x55969a7b6000
+507   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffefa80c590) = -1 EINVAL (Invalid argument)
+507   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58ed685000
+507   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+507   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+507   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+507   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f58ed683000
+507   close(3)                          = 0
+507   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+507   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\221\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10!\0\0\0\0\0\0\10!\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+507   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_EMPTY_PATH) = 0
+507   mmap(NULL, 41016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f58ed678000
+507   mmap(0x7f58ed67b000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f58ed67b000
+507   mmap(0x7f58ed67f000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7f58ed67f000
+507   mmap(0x7f58ed681000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f58ed681000
+507   close(3)                          = 0
+507   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libidn2.so.0", O_RDONLY|O_CLOEXEC) = 3
+507   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\361\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\240\21\0\0\0\0\0\0\240\21\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+507   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=129096, ...}, AT_EMPTY_PATH) = 0
+507   mmap(NULL, 131088, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f58ed657000
+507   mmap(0x7f58ed659000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f58ed659000
+507   mmap(0x7f58ed65d000, 102400, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f58ed65d000
+507   mmap(0x7f58ed676000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7f58ed676000
+507   close(3)                          = 0
+507   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+507   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+507   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+507   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+507   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+507   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+507   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+507   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f58ed42f000
+507   mmap(0x7f58ed457000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f58ed457000
+507   mmap(0x7f58ed5ec000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f58ed5ec000
+507   mmap(0x7f58ed644000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f58ed644000
+507   mmap(0x7f58ed64a000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f58ed64a000
+507   close(3)                          = 0
+507   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunistring.so.2", O_RDONLY|O_CLOEXEC) = 3
+507   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\250\221\32\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\310\0\1\0\0\0\0\0\310\0\1\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+507   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1743016, ...}, AT_EMPTY_PATH) = 0
+507   mmap(NULL, 1743080, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f58ed285000
+507   mmap(0x7f58ed296000, 221184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7f58ed296000
+507   mmap(0x7f58ed2cc000, 1433600, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x47000) = 0x7f58ed2cc000
+507   mmap(0x7f58ed42a000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a5000) = 0x7f58ed42a000
+507   close(3)                          = 0
+507   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f58ed283000
+507   arch_prctl(ARCH_SET_FS, 0x7f58ed284100) = 0
+507   set_tid_address(0x7f58ed2843d0)   = 507
+507   set_robust_list(0x7f58ed2843e0, 24) = 0
+507   rseq(0x7f58ed284aa0, 0x20, 0, 0x53053053) = 0
+507   mprotect(0x7f58ed644000, 16384, PROT_READ) = 0
+507   mprotect(0x7f58ed42a000, 16384, PROT_READ) = 0
+507   mprotect(0x7f58ed676000, 4096, PROT_READ) = 0
+507   mprotect(0x7f58ed681000, 4096, PROT_READ) = 0
+507   mprotect(0x559699189000, 4096, PROT_READ) = 0
+507   mprotect(0x7f58ed6bf000, 8192, PROT_READ) = 0
+507   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+507   munmap(0x7f58ed683000, 6133)      = 0
+507   prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 0
+507   prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+507   prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 0
+507   prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+507   prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+507   prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+507   getrandom("\x13\x8d\x6d\xe0\x73\x3c\x04\xe2", 8, GRND_NONBLOCK) = 8
+507   brk(NULL)                         = 0x55969a7b6000
+507   brk(0x55969a7d7000)               = 0x55969a7d7000
+507   capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+507   capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_RAW|1<<CAP_SYS_CHROOT|1<<CAP_MKNOD|1<<CAP_AUDIT_WRITE|1<<CAP_SETFCAP, inheritable=0}) = 0
+507   capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+507   capset({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=0, permitted=1<<CAP_NET_RAW, inheritable=0}) = 0
+507   prctl(PR_SET_KEEPCAPS, 1)         = 0
+507   getuid()                          = 0
+507   setuid(0)                         = 0
+507   prctl(PR_SET_KEEPCAPS, 0)         = 0
+507   getuid()                          = 0
+507   write(2, "/bin/ping4: ", 12)      = 12
+507   write(2, "usage error", 11)       = 11
+507   write(2, ": Destination address required", 30) = 30
+507   write(2, "\n", 1)                 = 1
+507   close(1)                          = 0
+507   close(2)                          = 0
+507   exit_group(1)                     = ?
+507   +++ exited with 1 +++

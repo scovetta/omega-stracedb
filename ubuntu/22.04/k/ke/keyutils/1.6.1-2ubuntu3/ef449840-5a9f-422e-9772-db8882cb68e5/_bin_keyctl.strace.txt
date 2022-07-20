@@ -1,0 +1,109 @@
+468   execve("/bin/keyctl", ["/bin/keyctl"], 0x7ffe7a2e7f70 /* 12 vars */) = 0
+468   brk(NULL)                         = 0x55612c068000
+468   arch_prctl(0x3001 /* ARCH_??? */, 0x7fff88af7490) = -1 EINVAL (Invalid argument)
+468   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f45f3d85000
+468   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+468   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+468   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f45f3d83000
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0HQ\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230\25\0\0\0\0\0\0\230\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22600, ...}, AT_EMPTY_PATH) = 0
+468   mmap(NULL, 24592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f45f3d7c000
+468   mmap(0x7f45f3d7e000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f45f3d7e000
+468   mmap(0x7f45f3d80000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f45f3d80000
+468   mmap(0x7f45f3d81000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f45f3d81000
+468   close(3)                          = 0
+468   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+468   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+468   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+468   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+468   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+468   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f45f3b54000
+468   mmap(0x7f45f3b7c000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f45f3b7c000
+468   mmap(0x7f45f3d11000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f45f3d11000
+468   mmap(0x7f45f3d69000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f45f3d69000
+468   mmap(0x7f45f3d6f000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f45f3d6f000
+468   close(3)                          = 0
+468   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f45f3b51000
+468   arch_prctl(ARCH_SET_FS, 0x7f45f3b51740) = 0
+468   set_tid_address(0x7f45f3b51a10)   = 468
+468   set_robust_list(0x7f45f3b51a20, 24) = 0
+468   rseq(0x7f45f3b520e0, 0x20, 0, 0x53053053) = 0
+468   mprotect(0x7f45f3d69000, 16384, PROT_READ) = 0
+468   mprotect(0x7f45f3d81000, 4096, PROT_READ) = 0
+468   mprotect(0x55612be29000, 4096, PROT_READ) = 0
+468   mprotect(0x7f45f3dbf000, 8192, PROT_READ) = 0
+468   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+468   munmap(0x7f45f3d83000, 6133)      = 0
+468   write(2, "Format:\n", 8)          = 8
+468   write(2, "  keyctl --version \n", 20) = 20
+468   write(2, "  keyctl add <type> <desc> <data> <keyring>\n", 44) = 44
+468   write(2, "  keyctl chgrp <key> <gid>\n", 27) = 27
+468   write(2, "  keyctl chown <key> <uid>\n", 27) = 27
+468   write(2, "  keyctl clear <keyring>\n", 25) = 25
+468   write(2, "  keyctl describe <keyring>\n", 28) = 28
+468   write(2, "  keyctl dh_compute <private> <prime> <base>\n", 45) = 45
+468   write(2, "  keyctl dh_compute_kdf <private> <prime> <base> <len> <hash_name>\n", 67) = 67
+468   write(2, "  keyctl dh_compute_kdf_oi <private> <prime> <base> <len> <hash_name>\n", 70) = 70
+468   write(2, "  keyctl instantiate <key> <data> <keyring>\n", 44) = 44
+468   write(2, "  keyctl invalidate <key>\n", 26) = 26
+468   write(2, "  keyctl get_persistent <keyring> [<uid>]\n", 42) = 42
+468   write(2, "  keyctl link <key> <keyring>\n", 30) = 30
+468   write(2, "  keyctl list <keyring>\n", 24) = 24
+468   write(2, "  keyctl move [-f] <key> <from_keyring> <to_keyring>\n", 53) = 53
+468   write(2, "  keyctl negate <key> <timeout> <keyring>\n", 42) = 42
+468   write(2, "  keyctl new_session \n", 22) = 22
+468   write(2, "  keyctl newring <name> <keyring>\n", 34) = 34
+468   write(2, "  keyctl padd <type> <desc> <keyring>\n", 38) = 38
+468   write(2, "  keyctl pinstantiate <key> <keyring>\n", 38) = 38
+468   write(2, "  keyctl pipe <key>\n", 20) = 20
+468   write(2, "  keyctl pkey_query <key> <pass> [k=v]*\n", 40) = 40
+468   write(2, "  keyctl pkey_encrypt <key> <pass> <datafile> [k=v]*\n", 53) = 53
+468   write(2, "  keyctl pkey_decrypt <key> <pass> <datafile> [k=v]*\n", 53) = 53
+468   write(2, "  keyctl pkey_sign <key> <pass> <datafile> [k=v]*\n", 50) = 50
+468   write(2, "  keyctl pkey_verify <key> <pass> <datafile> <sigfile> [k=v]*\n", 62) = 62
+468   write(2, "  keyctl prequest2 <type> <desc> [<dest_keyring>]\n", 50) = 50
+468   write(2, "  keyctl print <key>\n", 21) = 21
+468   write(2, "  keyctl pupdate <key>\n", 23) = 23
+468   write(2, "  keyctl purge <type>\n", 22) = 22
+468   write(2, "  keyctl purge [-p] [-i] <type> <desc>\n", 39) = 39
+468   write(2, "  keyctl purge -s <type> <desc>\n", 32) = 32
+468   write(2, "  keyctl rdescribe <keyring> [sep]\n", 35) = 35
+468   write(2, "  keyctl read <key>\n", 20) = 20
+468   write(2, "  keyctl reap [-v]\n", 19) = 19
+468   write(2, "  keyctl reject <key> <timeout> <error> <keyring>\n", 50) = 50
+468   write(2, "  keyctl request <type> <desc> [<dest_keyring>]\n", 48) = 48
+468   write(2, "  keyctl request2 <type> <desc> <info> [<dest_keyring>]\n", 56) = 56
+468   write(2, "  keyctl restrict_keyring <keyring> [<type> [<restriction>]]\n", 61) = 61
+468   write(2, "  keyctl revoke <key>\n", 22) = 22
+468   write(2, "  keyctl rlist <keyring>\n", 25) = 25
+468   write(2, "  keyctl search <keyring> <type> <desc> [<dest_keyring>]\n", 57) = 57
+468   write(2, "  keyctl security <key>\n", 24) = 24
+468   write(2, "  keyctl session \n", 18) = 18
+468   write(2, "  keyctl session - [<prog> <arg1> <arg2> ...]\n", 46) = 46
+468   write(2, "  keyctl session <name> [<prog> <arg1> <arg2> ...]\n", 51) = 51
+468   write(2, "  keyctl setperm <key> <mask>\n", 30) = 30
+468   write(2, "  keyctl show [-x] [<keyring>]\n", 31) = 31
+468   write(2, "  keyctl supports [<cap>]\n", 26) = 26
+468   write(2, "  keyctl timeout <key> <timeout>\n", 33) = 33
+468   write(2, "  keyctl unlink <key> [<keyring>]\n", 34) = 34
+468   write(2, "  keyctl update <key> <data>\n", 29) = 29
+468   write(2, "\n", 1)                 = 1
+468   write(2, "Key/keyring ID:\n", 16) = 16
+468   write(2, "  <nnn>   numeric keyring ID\n", 29) = 29
+468   write(2, "  @t      thread keyring\n", 25) = 25
+468   write(2, "  @p      process keyring\n", 26) = 26
+468   write(2, "  @s      session keyring\n", 26) = 26
+468   write(2, "  @u      user keyring\n", 23) = 23
+468   write(2, "  @us     user default session keyring\n", 39) = 39
+468   write(2, "  @g      group keyring\n", 24) = 24
+468   write(2, "  @a      assumed request_key authorisation key\n", 48) = 48
+468   write(2, "\n", 1)                 = 1
+468   write(2, "<type> can be \"user\" for a user-defined keyring\n", 48) = 48
+468   write(2, "If you do this, prefix the description with \"<subtype>:\"\n", 57) = 57
+468   exit_group(2)                     = ?
+468   +++ exited with 2 +++

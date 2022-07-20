@@ -1,0 +1,19 @@
+Error: insufficient arguments, don't know what to do.
+Usage:
+   bcp --list [options] module-list
+   bcp --list-short [options] module-list
+   bcp --report [options] module-list html-file
+   bcp [options] module-list output-path
+
+Options:
+   --boost=path     sets the location of the boost tree to path
+   --scan           treat the module list as a list of (possibly non-boost)
+                    files to scan for boost dependencies
+   --svn            only copy files under cvs version control
+   --unix-lines     make sure that all copied files use Unix style line endings
+   --namespace=name rename the boost namespace to name (also changes library names).
+   --namespace-alias Makes namespace boost an alias of the namespace set with --namespace.
+
+module-list:         a list of boost files or library names to copy
+html-file:           the name of a html file to which the report will be written
+output-path:         the path to which files will be copied

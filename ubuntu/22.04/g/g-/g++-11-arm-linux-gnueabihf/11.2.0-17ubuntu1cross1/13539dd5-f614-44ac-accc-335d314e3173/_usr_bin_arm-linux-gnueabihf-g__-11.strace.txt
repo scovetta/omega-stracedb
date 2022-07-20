@@ -1,0 +1,68 @@
+671   execve("/usr/bin/arm-linux-gnueabihf-g++-11", ["/usr/bin/arm-linux-gnueabihf-g++-11"], 0x7ffe202cc960 /* 12 vars */) = 0
+671   brk(NULL)                         = 0x1d7f000
+671   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd0ed56b30) = -1 EINVAL (Invalid argument)
+671   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fab2764e000
+671   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+671   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+671   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6769, ...}, AT_EMPTY_PATH) = 0
+671   mmap(NULL, 6769, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fab2764c000
+671   close(3)                          = 0
+671   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+671   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+671   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+671   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+671   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+671   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+671   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+671   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fab27424000
+671   mmap(0x7fab2744c000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fab2744c000
+671   mmap(0x7fab275e1000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fab275e1000
+671   mmap(0x7fab27639000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fab27639000
+671   mmap(0x7fab2763f000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fab2763f000
+671   close(3)                          = 0
+671   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fab27421000
+671   arch_prctl(ARCH_SET_FS, 0x7fab27421740) = 0
+671   set_tid_address(0x7fab27421a10)   = 671
+671   set_robust_list(0x7fab27421a20, 24) = 0
+671   rseq(0x7fab274220e0, 0x20, 0, 0x53053053) = 0
+671   mprotect(0x7fab27639000, 16384, PROT_READ) = 0
+671   mprotect(0x55c000, 12288, PROT_READ) = 0
+671   mprotect(0x7fab27688000, 8192, PROT_READ) = 0
+671   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+671   munmap(0x7fab2764c000, 6769)      = 0
+671   getrandom("\xff\xe8\xeb\xab\x78\x75\x56\x72", 8, GRND_NONBLOCK) = 8
+671   brk(NULL)                         = 0x1d7f000
+671   brk(0x1da0000)                    = 0x1da0000
+671   brk(0x1dc2000)                    = 0x1dc2000
+671   ioctl(2, TCGETS, 0x7ffd0ed56a80)  = -1 ENOTTY (Inappropriate ioctl for device)
+671   ioctl(2, TCGETS, 0x7ffd0ed56a90)  = -1 ENOTTY (Inappropriate ioctl for device)
+671   ioctl(2, TCGETS, 0x7ffd0ed56a80)  = -1 ENOTTY (Inappropriate ioctl for device)
+671   rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+671   rt_sigaction(SIGINT, {sa_handler=0x4093d0, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, 8) = 0
+671   rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+671   rt_sigaction(SIGHUP, {sa_handler=0x4093d0, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, 8) = 0
+671   rt_sigaction(SIGTERM, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+671   rt_sigaction(SIGTERM, {sa_handler=0x4093d0, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, 8) = 0
+671   rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+671   rt_sigaction(SIGPIPE, {sa_handler=0x4093d0, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, 8) = 0
+671   rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab27466520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+671   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+671   prlimit64(0, RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+671   readlink("/usr", 0x7ffd0ed55050, 1023) = -1 EINVAL (Invalid argument)
+671   readlink("/usr/bin", 0x7ffd0ed55050, 1023) = -1 EINVAL (Invalid argument)
+671   readlink("/usr/bin/arm-linux-gnueabihf-g++-11", 0x7ffd0ed55050, 1023) = -1 EINVAL (Invalid argument)
+671   readlink("/usr", 0x7ffd0ed55050, 1023) = -1 EINVAL (Invalid argument)
+671   readlink("/usr/bin", 0x7ffd0ed55050, 1023) = -1 EINVAL (Invalid argument)
+671   readlink("/usr/bin/arm-linux-gnueabihf-g++-11", 0x7ffd0ed55050, 1023) = -1 EINVAL (Invalid argument)
+671   access("/usr/lib/gcc-cross/arm-linux-gnueabihf/11/", X_OK) = 0
+671   access("/usr/lib/gcc-cross/arm-linux-gnueabihf/11/", X_OK) = 0
+671   access("/usr/lib/gcc-cross/arm-linux-gnueabihf/11/specs", R_OK) = -1 ENOENT (No such file or directory)
+671   access("/usr/lib/gcc-cross/arm-linux-gnueabihf/11/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/11/specs", R_OK) = -1 ENOENT (No such file or directory)
+671   access("/usr/lib/gcc-cross/arm-linux-gnueabihf/11/../../../../arm-linux-gnueabihf/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+671   access("/usr/lib/gcc-cross/arm-linux-gnueabihf/specs", R_OK) = -1 ENOENT (No such file or directory)
+671   newfstatat(AT_FDCWD, "/usr/lib/gcc-cross/arm-linux-gnueabihf/11/lto-wrapper", {st_mode=S_IFREG|0755, st_size=1327696, ...}, 0) = 0
+671   access("/usr/lib/gcc-cross/arm-linux-gnueabihf/11/lto-wrapper", X_OK) = 0
+671   write(2, "arm-linux-gnueabihf-g++-11: fatal error: no input files\n", 56) = 56
+671   write(2, "compilation terminated.\n", 24) = 24
+671   exit_group(1)                     = ?
+671   +++ exited with 1 +++

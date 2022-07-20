@@ -1,0 +1,942 @@
+448   execve("/sbin/ldconfig.real", ["/sbin/ldconfig.real"], 0x7ffd321ef430 /* 12 vars */) = 0
+448   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd3379e610) = -1 EINVAL (Invalid argument)
+448   brk(NULL)                         = 0x555556b3b000
+448   brk(0x555556b3bdc0)               = 0x555556b3bdc0
+448   arch_prctl(ARCH_SET_FS, 0x555556b3b3c0) = 0
+448   set_tid_address(0x555556b3b690)   = 448
+448   set_robust_list(0x555556b3b6a0, 24) = 0
+448   rseq(0x555556b3bd60, 0x20, 0, 0x53053053) = 0
+448   uname({sysname="Linux", nodename="d7ba69c9e8cc", ...}) = 0
+448   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+448   readlink("/proc/self/exe", "/usr/sbin/ldconfig.real", 4096) = 23
+448   getrandom("\xfa\x0c\x58\x23\x50\x79\x0b\x5c", 8, GRND_NONBLOCK) = 8
+448   brk(0x555556b5cdc0)               = 0x555556b5cdc0
+448   brk(0x555556b5d000)               = 0x555556b5d000
+448   mprotect(0x7f703debb000, 16384, PROT_READ) = 0
+448   openat(AT_FDCWD, "/etc/ld.so.conf", O_RDONLY) = 3
+448   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34, ...}, AT_EMPTY_PATH) = 0
+448   read(3, "include /etc/ld.so.conf.d/*.conf\n\n", 4096) = 34
+448   openat(AT_FDCWD, "/etc/ld.so.conf.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+448   newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+448   getdents64(4, 0x555556b3ddd0 /* 4 entries */, 32768) = 128
+448   getdents64(4, 0x555556b3ddd0 /* 0 entries */, 32768) = 0
+448   close(4)                          = 0
+448   openat(AT_FDCWD, "/etc/ld.so.conf.d/libc.conf", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=44, ...}, AT_EMPTY_PATH) = 0
+448   read(4, "# libc default configuration\n/usr/local/lib\n", 4096) = 44
+448   newfstatat(AT_FDCWD, "/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+448   openat(AT_FDCWD, "/usr/local/lib/glibc-hwcaps", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+448   read(4, "", 4096)                 = 0
+448   close(4)                          = 0
+448   openat(AT_FDCWD, "/etc/ld.so.conf.d/x86_64-linux-gnu.conf", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=100, ...}, AT_EMPTY_PATH) = 0
+448   read(4, "# Multiarch support\n/usr/local/lib/x86_64-linux-gnu\n/lib/x86_64-linux-gnu\n/usr/lib/x86_64-linux-gnu\n", 4096) = 100
+448   newfstatat(AT_FDCWD, "/usr/local/lib/x86_64-linux-gnu", 0x7ffd3379e130, 0) = -1 ENOENT (No such file or directory)
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+448   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+448   read(4, "", 4096)                 = 0
+448   close(4)                          = 0
+448   read(3, "", 4096)                 = 0
+448   close(3)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/glibc-hwcaps", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+448   newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+448   openat(AT_FDCWD, "/var/cache/ldconfig/aux-cache", O_RDONLY) = 3
+448   newfstatat(3, "", {st_mode=S_IFREG|0600, st_size=6223, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 6223, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f703dd98000
+448   munmap(0x7f703dd98000, 6223)      = 0
+448   close(3)                          = 0
+448   openat(AT_FDCWD, "/usr/local/lib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+448   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+448   getdents64(3, 0x555556b45e70 /* 2 entries */, 32768) = 48
+448   getdents64(3, 0x555556b45e70 /* 0 entries */, 32768) = 0
+448   close(3)                          = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+448   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+448   getdents64(3, 0x555556b45e70 /* 181 entries */, 32768) = 6984
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre.so.3", {st_mode=S_IFREG|0644, st_size=477296, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=477296, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 477296, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd25000
+448   munmap(0x7f703dd25000, 477296)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", {st_mode=S_IFREG|0644, st_size=14664, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14664, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14664, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14664)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1.1.2301", {st_mode=S_IFREG|0644, st_size=34888, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1.1.2301", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=34888, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 34888, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd91000
+448   munmap(0x7f703dd91000, 34888)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 613064, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd04000
+448   munmap(0x7f703dd04000, 613064)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", {st_mode=S_IFREG|0644, st_size=166240, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 166240, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd71000
+448   munmap(0x7f703dd71000, 166240)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1.9.3", {st_mode=S_IFREG|0644, st_size=125152, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1.9.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=125152, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 125152, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd7b000
+448   munmap(0x7f703dd7b000, 125152)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.2", {st_mode=S_IFREG|0644, st_size=93280, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=93280, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 93280, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd83000
+448   munmap(0x7f703dd83000, 93280)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6.0.30", {st_mode=S_IFREG|0644, st_size=2260320, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6.0.30", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2260320, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 2260320, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703db72000
+448   munmap(0x7f703db72000, 2260320)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre.so.3.13.3", {st_mode=S_IFREG|0644, st_size=477296, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", {st_mode=S_IFREG|0644, st_size=39024, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 39024, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd90000
+448   munmap(0x7f703dd90000, 39024)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libss.so.2", {st_mode=S_IFREG|0644, st_size=30800, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libss.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=30800, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 30800, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd92000
+448   munmap(0x7f703dd92000, 30800)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", {st_mode=S_IFREG|0644, st_size=27072, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 27072, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd93000
+448   munmap(0x7f703dd93000, 27072)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcreposix.so.3.13.3", {st_mode=S_IFREG|0644, st_size=14408, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcreposix.so.3.13.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14408, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14408, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14408)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdebconfclient.so.0.0.0", {st_mode=S_IFREG|0644, st_size=18720, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdebconfclient.so.0.0.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18720, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18720)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgnutls.so.30", {st_mode=S_IFREG|0644, st_size=2000320, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgnutls.so.30", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2000320, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 2000320, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dbb1000
+448   munmap(0x7f703dbb1000, 2000320)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", {st_mode=S_IFREG|0644, st_size=22600, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=22600, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 22600, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd94000
+448   munmap(0x7f703dd94000, 22600)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libform.so.6.3", {st_mode=S_IFREG|0644, st_size=73168, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libform.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=73168, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 73168, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd88000
+448   munmap(0x7f703dd88000, 73168)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1", {st_mode=S_IFREG|0644, st_size=26696, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=26696, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 26696, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd93000
+448   munmap(0x7f703dd93000, 26696)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", {st_mode=S_IFREG|0644, st_size=125152, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0.85.1", {st_mode=S_IFREG|0644, st_size=67736, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0.85.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=67736, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 67736, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd89000
+448   munmap(0x7f703dd89000, 67736)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", {st_mode=S_IFREG|0644, st_size=133200, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=133200, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 133200, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd79000
+448   munmap(0x7f703dd79000, 133200)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsmartcols.so.1", {st_mode=S_IFREG|0644, st_size=100488, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsmartcols.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=100488, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 100488, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd81000
+448   munmap(0x7f703dd81000, 100488)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libss.so.2.0", {st_mode=S_IFREG|0644, st_size=30800, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam_misc.so.0.82.1", {st_mode=S_IFREG|0644, st_size=18528, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam_misc.so.0.82.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18528, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18528, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18528)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0", {st_mode=S_IFREG|0644, st_size=52080, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=52080, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 52080, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd8d000
+448   munmap(0x7f703dd8d000, 52080)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libe2p.so.2.3", {st_mode=S_IFREG|0644, st_size=45136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libe2p.so.2.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=45136, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 45136, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd8e000
+448   munmap(0x7f703dd8e000, 45136)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtic.so.6.3", {st_mode=S_IFREG|0644, st_size=71992, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtic.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=71992, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 71992, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd88000
+448   munmap(0x7f703dd88000, 71992)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1.7.2", {st_mode=S_IFREG|0644, st_size=166240, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6.3", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 200136, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd69000
+448   munmap(0x7f703dd69000, 200136)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libform.so.6", {st_mode=S_IFREG|0644, st_size=73168, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", {st_mode=S_IFREG|0644, st_size=198664, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 198664, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd69000
+448   munmap(0x7f703dd69000, 198664)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunistring.so.2", {st_mode=S_IFREG|0644, st_size=1743016, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunistring.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1743016, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 1743016, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dbf0000
+448   munmap(0x7f703dbf0000, 1743016)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtasn1.so.6.6.2", {st_mode=S_IFREG|0644, st_size=92312, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtasn1.so.6.6.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=92312, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 92312, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd83000
+448   munmap(0x7f703dd83000, 92312)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunistring.so.2.2.0", {st_mode=S_IFREG|0644, st_size=1743016, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam_misc.so.0", {st_mode=S_IFREG|0644, st_size=18528, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1", {st_mode=S_IFREG|0644, st_size=149760, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=149760, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 149760, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd75000
+448   munmap(0x7f703dd75000, 149760)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcreposix.so.3", {st_mode=S_IFREG|0644, st_size=14408, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1.4.8", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1.4.8", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 841808, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dccc000
+448   munmap(0x7f703dccc000, 841808)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2.44", {st_mode=S_IFREG|0644, st_size=39024, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libformw.so.6.3", {st_mode=S_IFREG|0644, st_size=77296, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libformw.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=77296, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 77296, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd87000
+448   munmap(0x7f703dd87000, 77296)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtirpc.so.3.0.0", {st_mode=S_IFREG|0644, st_size=178816, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtirpc.so.3.0.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=178816, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 178816, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd6e000
+448   munmap(0x7f703dd6e000, 178816)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 166280, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd71000
+448   munmap(0x7f703dd71000, 166280)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmvec.so.1", {st_mode=S_IFREG|0644, st_size=1031720, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmvec.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1031720, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 1031720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dc9e000
+448   munmap(0x7f703dc9e000, 1031720)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libe2p.so.2", {st_mode=S_IFREG|0644, st_size=45136, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenuw.so.6.3", {st_mode=S_IFREG|0644, st_size=43576, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenuw.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=43576, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 43576, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd8f000
+448   munmap(0x7f703dd8f000, 43576)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libprocps.so.8.0.3", {st_mode=S_IFREG|0644, st_size=80080, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libprocps.so.8.0.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=80080, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 80080, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd86000
+448   munmap(0x7f703dd86000, 80080)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", {st_mode=S_IFREG|0644, st_size=841808, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libformw.so.6", {st_mode=S_IFREG|0644, st_size=77296, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_dns.so.2", {st_mode=S_IFREG|0644, st_size=14352, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_dns.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14352, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14352, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14352)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenuw.so.6", {st_mode=S_IFREG|0644, st_size=43576, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2.5.3", {st_mode=S_IFREG|0644, st_size=125360, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2.5.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=125360, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 125360, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd7b000
+448   munmap(0x7f703dd7b000, 125360)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.2.0.1", {st_mode=S_IFREG|0644, st_size=93280, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsemanage.so.2", {st_mode=S_IFREG|0644, st_size=262288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsemanage.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=262288, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 262288, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd59000
+448   munmap(0x7f703dd59000, 262288)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0.4", {st_mode=S_IFREG|0644, st_size=74848, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0.4", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=74848, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 74848, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd87000
+448   munmap(0x7f703dd87000, 74848)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpamc.so.0.82.1", {st_mode=S_IFREG|0644, st_size=18504, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpamc.so.0.82.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18504, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18504, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18504)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libxxhash.so.0.8.1", {st_mode=S_IFREG|0644, st_size=80080, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libxxhash.so.0.8.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=80080, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 80080, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd86000
+448   munmap(0x7f703dd86000, 80080)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdb-5.3.so", {st_mode=S_IFREG|0644, st_size=1760880, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdb-5.3.so", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1760880, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 1760880, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dbec000
+448   munmap(0x7f703dbec000, 1760880)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc_malloc_debug.so.0", {st_mode=S_IFREG|0644, st_size=56704, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc_malloc_debug.so.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=56704, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 56704, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd8c000
+448   munmap(0x7f703dd8c000, 56704)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsystemd.so.0.32.0", {st_mode=S_IFREG|0644, st_size=807936, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsystemd.so.0.32.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=807936, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 807936, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dcd4000
+448   munmap(0x7f703dcd4000, 807936)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3", {st_mode=S_IFREG|0644, st_size=182928, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=182928, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 182928, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd6d000
+448   munmap(0x7f703dd6d000, 182928)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", {st_mode=S_IFREG|0755, st_size=240936, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0755, st_size=240936, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 240936, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd5f000
+448   munmap(0x7f703dd5f000, 240936)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", {st_mode=S_IFREG|0644, st_size=2260320, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", {st_mode=S_IFREG|0644, st_size=667864, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=667864, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 667864, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dcf6000
+448   munmap(0x7f703dcf6000, 667864)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmemusage.so", {st_mode=S_IFREG|0644, st_size=18904, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmemusage.so", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18904, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18904, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18904)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0.1", {st_mode=S_IFREG|0644, st_size=52080, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 125488, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd7b000
+448   munmap(0x7f703dd7b000, 125488)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1", {st_mode=S_IFREG|0644, st_size=273056, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=273056, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 273056, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd57000
+448   munmap(0x7f703dd57000, 273056)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 68552, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd89000
+448   munmap(0x7f703dd89000, 68552)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcprofile.so", {st_mode=S_IFREG|0644, st_size=14616, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcprofile.so", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14616, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14616, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14616)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenu.so.6.3", {st_mode=S_IFREG|0644, st_size=39480, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenu.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=39480, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 39480, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd90000
+448   munmap(0x7f703dd90000, 39480)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhogweed.so.6.4", {st_mode=S_IFREG|0644, st_size=289800, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhogweed.so.6.4", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=289800, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 289800, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd53000
+448   munmap(0x7f703dd53000, 289800)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libxxhash.so.0", {st_mode=S_IFREG|0644, st_size=80080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3", {st_mode=S_IFREG|0644, st_size=828000, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=828000, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 828000, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dccf000
+448   munmap(0x7f703dccf000, 828000)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", {st_mode=S_IFREG|0644, st_size=108936, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 108936, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd7f000
+448   munmap(0x7f703dd7f000, 108936)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-private.so.0.0.0", {st_mode=S_IFREG|0644, st_size=412048, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-private.so.0.0.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=412048, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 412048, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd35000
+448   munmap(0x7f703dd35000, 412048)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgnutls.so.30.31.0", {st_mode=S_IFREG|0644, st_size=2000320, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14432, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14432)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", {st_mode=S_IFREG|0644, st_size=149760, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2.1", {st_mode=S_IFREG|0644, st_size=18504, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18504, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18504, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18504)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1.1.0", {st_mode=S_IFREG|0644, st_size=198664, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libext2fs.so.2.4", {st_mode=S_IFREG|0644, st_size=430440, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libext2fs.so.2.4", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=430440, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 430440, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd30000
+448   munmap(0x7f703dd30000, 430440)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1", {st_mode=S_IFREG|0644, st_size=30920, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=30920, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 30920, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd92000
+448   munmap(0x7f703dd92000, 30920)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libffi.so.8.1.0", {st_mode=S_IFREG|0644, st_size=47688, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libffi.so.8.1.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=47688, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 47688, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd8e000
+448   munmap(0x7f703dd8e000, 47688)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanel.so.6", {st_mode=S_IFREG|0644, st_size=22688, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanel.so.6", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=22688, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 22688, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd94000
+448   munmap(0x7f703dd94000, 22688)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgmp.so.10", {st_mode=S_IFREG|0644, st_size=526896, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgmp.so.10", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=526896, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 526896, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd19000
+448   munmap(0x7f703dd19000, 526896)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanelw.so.6", {st_mode=S_IFREG|0644, st_size=22688, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanelw.so.6", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=22688, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 22688, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd94000
+448   munmap(0x7f703dd94000, 22688)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-pkg.so.6.0", {st_mode=S_IFREG|0644, st_size=1834432, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-pkg.so.6.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1834432, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 1834432, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dbda000
+448   munmap(0x7f703dbda000, 1834432)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsepol.so.2", {st_mode=S_IFREG|0644, st_size=715208, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsepol.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=715208, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 715208, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dceb000
+448   munmap(0x7f703dceb000, 715208)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenu.so.6", {st_mode=S_IFREG|0644, st_size=39480, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1.3.0", {st_mode=S_IFREG|0644, st_size=30920, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3.1", {st_mode=S_IFREG|0644, st_size=182928, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", {st_mode=S_IFREG|0644, st_size=200136, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnettle.so.8.4", {st_mode=S_IFREG|0644, st_size=281000, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnettle.so.8.4", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=281000, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 281000, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd55000
+448   munmap(0x7f703dd55000, 281000)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", {st_mode=S_IFREG|0644, st_size=34888, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4", {st_mode=S_IFREG|0644, st_size=1296312, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1296312, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 1296312, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dc5d000
+448   munmap(0x7f703dc5d000, 1296312)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2", {st_mode=S_IFREG|0644, st_size=18504, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", {st_mode=S_IFREG|0644, st_size=170456, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=170456, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 170456, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd70000
+448   munmap(0x7f703dd70000, 170456)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1", {st_mode=S_IFREG|0644, st_size=220192, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=220192, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 220192, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd64000
+448   munmap(0x7f703dd64000, 220192)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdebconfclient.so.0", {st_mode=S_IFREG|0644, st_size=18720, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libffi.so.8", {st_mode=S_IFREG|0644, st_size=47688, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", {st_mode=S_IFREG|0644, st_size=21448, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=21448, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 21448, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd94000
+448   munmap(0x7f703dd94000, 21448)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_compat.so.2", {st_mode=S_IFREG|0644, st_size=44024, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=44024, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 44024, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd8f000
+448   munmap(0x7f703dd8f000, 44024)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtirpc.so.3", {st_mode=S_IFREG|0644, st_size=178816, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=4447536, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 4447536, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703d95c000
+448   munmap(0x7f703d95c000, 4447536)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3.3", {st_mode=S_IFREG|0644, st_size=828000, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libprocps.so.8", {st_mode=S_IFREG|0644, st_size=80080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnettle.so.8", {st_mode=S_IFREG|0644, st_size=281000, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2", {st_mode=S_IFREG|0644, st_size=338712, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=338712, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 338712, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd47000
+448   munmap(0x7f703dd47000, 338712)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncurses.so.6.3", {st_mode=S_IFREG|0644, st_size=157776, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncurses.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=157776, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 157776, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd73000
+448   munmap(0x7f703dd73000, 157776)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_hesiod.so.2", {st_mode=S_IFREG|0644, st_size=27160, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_hesiod.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=27160, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 27160, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd93000
+448   munmap(0x7f703dd93000, 27160)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libidn2.so.0", {st_mode=S_IFREG|0644, st_size=129096, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libidn2.so.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=129096, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 129096, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd7a000
+448   munmap(0x7f703dd7a000, 129096)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncursesw.so.6.3", {st_mode=S_IFREG|0644, st_size=239696, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncursesw.so.6.3", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=239696, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 239696, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd5f000
+448   munmap(0x7f703dd5f000, 239696)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libp11-kit.so.0.3.0", {st_mode=S_IFREG|0644, st_size=1285888, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libp11-kit.so.0.3.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1285888, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 1285888, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dc60000
+448   munmap(0x7f703dc60000, 1285888)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-private.so.0.0", {st_mode=S_IFREG|0644, st_size=412048, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanelw.so.6.3", {st_mode=S_IFREG|0644, st_size=22688, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.1", {st_mode=S_IFREG|0644, st_size=101464, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=101464, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 101464, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd81000
+448   munmap(0x7f703dd81000, 101464)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncurses.so.6", {st_mode=S_IFREG|0644, st_size=157776, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1.1.0", {st_mode=S_IFREG|0644, st_size=220192, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtic.so.6", {st_mode=S_IFREG|0644, st_size=71992, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libanl.so.1", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libanl.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14432, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14432)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutil.so.1", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14432, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14432, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14432)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 940560, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dcb4000
+448   munmap(0x7f703dcb4000, 940560)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1.1.0", {st_mode=S_IFREG|0644, st_size=273056, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0", {st_mode=S_IFREG|0644, st_size=67736, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsmartcols.so.1.1.0", {st_mode=S_IFREG|0644, st_size=100488, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libext2fs.so.2", {st_mode=S_IFREG|0644, st_size=430440, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2", {st_mode=S_IFREG|0644, st_size=338712, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2", {st_mode=S_IFREG|0644, st_size=125360, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0", {st_mode=S_IFREG|0644, st_size=74848, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libthread_db.so.1", {st_mode=S_IFREG|0644, st_size=39952, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libthread_db.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=39952, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 39952, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd90000
+448   munmap(0x7f703dd90000, 39952)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsystemd.so.0", {st_mode=S_IFREG|0644, st_size=807936, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1", {st_mode=S_IFREG|0644, st_size=74848, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncursesw.so.6", {st_mode=S_IFREG|0644, st_size=239696, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1.2.11", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0", {st_mode=S_IFREG|0644, st_size=27072, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtasn1.so.6", {st_mode=S_IFREG|0644, st_size=92312, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", {st_mode=S_IFREG|0644, st_size=1296312, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 2216304, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703db7c000
+448   munmap(0x7f703db7c000, 2216304)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_files.so.2", {st_mode=S_IFREG|0644, st_size=14352, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14352, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14352, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14352)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgmp.so.10.4.1", {st_mode=S_IFREG|0644, st_size=526896, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5.2.5", {st_mode=S_IFREG|0644, st_size=170456, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libidn2.so.0.3.7", {st_mode=S_IFREG|0644, st_size=129096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpamc.so.0", {st_mode=S_IFREG|0644, st_size=18504, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libp11-kit.so.0", {st_mode=S_IFREG|0644, st_size=1285888, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", {st_mode=S_IFREG|0644, st_size=613064, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1.0.0", {st_mode=S_IFREG|0644, st_size=133200, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-pkg.so.6.0.0", {st_mode=S_IFREG|0644, st_size=1834432, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanel.so.6.3", {st_mode=S_IFREG|0644, st_size=22688, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libBrokenLocale.so.1", {st_mode=S_IFREG|0644, st_size=14664, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libBrokenLocale.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=14664, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 14664, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd96000
+448   munmap(0x7f703dd96000, 14664)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1.1.2501", {st_mode=S_IFREG|0644, st_size=26696, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1.9", {st_mode=S_IFREG|0644, st_size=22600, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhogweed.so.6", {st_mode=S_IFREG|0644, st_size=289800, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm_compat.so.4.0.0", {st_mode=S_IFREG|0644, st_size=18344, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm_compat.so.4.0.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18344, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18344, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18344)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm.so.6.0.0", {st_mode=S_IFREG|0644, st_size=71848, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm.so.6.0.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=71848, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 71848, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd88000
+448   munmap(0x7f703dd88000, 71848)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-x86_64.so.8.0.1", {st_mode=S_IFREG|0644, st_size=71920, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-x86_64.so.8.0.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=71920, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 71920, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd88000
+448   munmap(0x7f703dd88000, 71920)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-x86_64.so.8", {st_mode=S_IFREG|0644, st_size=71920, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpsl.so.5.3.2", {st_mode=S_IFREG|0644, st_size=75768, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpsl.so.5.3.2", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=75768, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 75768, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd87000
+448   munmap(0x7f703dd87000, 75768)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-coredump.so.0", {st_mode=S_IFREG|0644, st_size=18280, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-coredump.so.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18280, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18280, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18280)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpsl.so.5", {st_mode=S_IFREG|0644, st_size=75768, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind.so.8.0.1", {st_mode=S_IFREG|0644, st_size=63744, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind.so.8.0.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=63744, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 63744, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd8a000
+448   munmap(0x7f703dd8a000, 63744)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmagic.so.1", {st_mode=S_IFREG|0644, st_size=166264, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmagic.so.1", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=166264, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 166264, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd71000
+448   munmap(0x7f703dd71000, 166264)    = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-coredump.so.0.0.0", {st_mode=S_IFREG|0644, st_size=18280, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm_compat.so.4", {st_mode=S_IFREG|0644, st_size=18344, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmagic.so.1.0.0", {st_mode=S_IFREG|0644, st_size=166264, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm.so.6", {st_mode=S_IFREG|0644, st_size=71848, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libperl.so.5.34", {st_mode=S_IFREG|0644, st_size=3673128, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libperl.so.5.34", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=3673128, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 3673128, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703da19000
+448   munmap(0x7f703da19000, 3673128)   = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libperl.so.5.34.0", {st_mode=S_IFREG|0644, st_size=3673128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind.so.8", {st_mode=S_IFREG|0644, st_size=63744, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-ptrace.so.0.0.0", {st_mode=S_IFREG|0644, st_size=18840, ...}, AT_SYMLINK_NOFOLLOW) = 0
+448   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-ptrace.so.0.0.0", O_RDONLY) = 4
+448   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=18840, ...}, AT_EMPTY_PATH) = 0
+448   mmap(NULL, 18840, PROT_READ, MAP_SHARED, 4, 0) = 0x7f703dd95000
+448   munmap(0x7f703dd95000, 18840)     = 0
+448   close(4)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-ptrace.so.0", {st_mode=S_IFREG|0644, st_size=18840, ...}, 0) = 0
+448   getdents64(3, 0x555556b45e70 /* 0 entries */, 32768) = 0
+448   close(3)                          = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-ptrace.so.0", {st_mode=S_IFREG|0644, st_size=18840, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-ptrace.so.0.0.0", {st_mode=S_IFREG|0644, st_size=18840, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libperl.so.5.34", {st_mode=S_IFREG|0644, st_size=3673128, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libperl.so.5.34.0", {st_mode=S_IFREG|0644, st_size=3673128, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmagic.so.1", {st_mode=S_IFREG|0644, st_size=166264, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmagic.so.1.0.0", {st_mode=S_IFREG|0644, st_size=166264, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind.so.8", {st_mode=S_IFREG|0644, st_size=63744, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind.so.8.0.1", {st_mode=S_IFREG|0644, st_size=63744, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-coredump.so.0", {st_mode=S_IFREG|0644, st_size=18280, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-coredump.so.0.0.0", {st_mode=S_IFREG|0644, st_size=18280, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpsl.so.5", {st_mode=S_IFREG|0644, st_size=75768, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpsl.so.5.3.2", {st_mode=S_IFREG|0644, st_size=75768, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-x86_64.so.8", {st_mode=S_IFREG|0644, st_size=71920, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunwind-x86_64.so.8.0.1", {st_mode=S_IFREG|0644, st_size=71920, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm.so.6", {st_mode=S_IFREG|0644, st_size=71848, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm.so.6.0.0", {st_mode=S_IFREG|0644, st_size=71848, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm_compat.so.4", {st_mode=S_IFREG|0644, st_size=18344, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgdbm_compat.so.4.0.0", {st_mode=S_IFREG|0644, st_size=18344, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libBrokenLocale.so.1", {st_mode=S_IFREG|0644, st_size=14664, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libBrokenLocale.so.1", {st_mode=S_IFREG|0644, st_size=14664, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_files.so.2", {st_mode=S_IFREG|0644, st_size=14352, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_files.so.2", {st_mode=S_IFREG|0644, st_size=14352, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", {st_mode=S_IFREG|0644, st_size=2216304, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", {st_mode=S_IFREG|0644, st_size=2216304, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libthread_db.so.1", {st_mode=S_IFREG|0644, st_size=39952, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libthread_db.so.1", {st_mode=S_IFREG|0644, st_size=39952, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", {st_mode=S_IFREG|0644, st_size=940560, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", {st_mode=S_IFREG|0644, st_size=940560, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutil.so.1", {st_mode=S_IFREG|0644, st_size=14432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutil.so.1", {st_mode=S_IFREG|0644, st_size=14432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libanl.so.1", {st_mode=S_IFREG|0644, st_size=14432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libanl.so.1", {st_mode=S_IFREG|0644, st_size=14432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.1", {st_mode=S_IFREG|0644, st_size=101464, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.1", {st_mode=S_IFREG|0644, st_size=101464, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libp11-kit.so.0", {st_mode=S_IFREG|0644, st_size=1285888, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libp11-kit.so.0.3.0", {st_mode=S_IFREG|0644, st_size=1285888, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncursesw.so.6", {st_mode=S_IFREG|0644, st_size=239696, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncursesw.so.6.3", {st_mode=S_IFREG|0644, st_size=239696, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libidn2.so.0", {st_mode=S_IFREG|0644, st_size=129096, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libidn2.so.0.3.7", {st_mode=S_IFREG|0644, st_size=129096, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_hesiod.so.2", {st_mode=S_IFREG|0644, st_size=27160, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_hesiod.so.2", {st_mode=S_IFREG|0644, st_size=27160, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncurses.so.6", {st_mode=S_IFREG|0644, st_size=157776, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncurses.so.6.3", {st_mode=S_IFREG|0644, st_size=157776, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2", {st_mode=S_IFREG|0644, st_size=338712, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2", {st_mode=S_IFREG|0644, st_size=338712, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", {st_mode=S_IFREG|0644, st_size=4447536, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", {st_mode=S_IFREG|0644, st_size=4447536, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_compat.so.2", {st_mode=S_IFREG|0644, st_size=44024, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_compat.so.2", {st_mode=S_IFREG|0644, st_size=44024, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", {st_mode=S_IFREG|0644, st_size=21448, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", {st_mode=S_IFREG|0644, st_size=21448, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1", {st_mode=S_IFREG|0644, st_size=220192, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libblkid.so.1.1.0", {st_mode=S_IFREG|0644, st_size=220192, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", {st_mode=S_IFREG|0644, st_size=170456, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5.2.5", {st_mode=S_IFREG|0644, st_size=170456, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20", {st_mode=S_IFREG|0644, st_size=1296312, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4", {st_mode=S_IFREG|0644, st_size=1296312, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnettle.so.8", {st_mode=S_IFREG|0644, st_size=281000, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnettle.so.8.4", {st_mode=S_IFREG|0644, st_size=281000, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsepol.so.2", {st_mode=S_IFREG|0644, st_size=715208, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsepol.so.2", {st_mode=S_IFREG|0644, st_size=715208, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-pkg.so.6.0", {st_mode=S_IFREG|0644, st_size=1834432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-pkg.so.6.0.0", {st_mode=S_IFREG|0644, st_size=1834432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanelw.so.6", {st_mode=S_IFREG|0644, st_size=22688, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanelw.so.6.3", {st_mode=S_IFREG|0644, st_size=22688, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgmp.so.10", {st_mode=S_IFREG|0644, st_size=526896, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgmp.so.10.4.1", {st_mode=S_IFREG|0644, st_size=526896, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanel.so.6", {st_mode=S_IFREG|0644, st_size=22688, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpanel.so.6.3", {st_mode=S_IFREG|0644, st_size=22688, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libffi.so.8", {st_mode=S_IFREG|0644, st_size=47688, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libffi.so.8.1.0", {st_mode=S_IFREG|0644, st_size=47688, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1", {st_mode=S_IFREG|0644, st_size=30920, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1.3.0", {st_mode=S_IFREG|0644, st_size=30920, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libext2fs.so.2", {st_mode=S_IFREG|0644, st_size=430440, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libext2fs.so.2.4", {st_mode=S_IFREG|0644, st_size=430440, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2", {st_mode=S_IFREG|0644, st_size=18504, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2.1", {st_mode=S_IFREG|0644, st_size=18504, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", {st_mode=S_IFREG|0644, st_size=14432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", {st_mode=S_IFREG|0644, st_size=14432, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-private.so.0.0", {st_mode=S_IFREG|0644, st_size=412048, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libapt-private.so.0.0.0", {st_mode=S_IFREG|0644, st_size=412048, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", {st_mode=S_IFREG|0644, st_size=108936, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1.2.11", {st_mode=S_IFREG|0644, st_size=108936, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3", {st_mode=S_IFREG|0644, st_size=828000, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3.3", {st_mode=S_IFREG|0644, st_size=828000, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhogweed.so.6", {st_mode=S_IFREG|0644, st_size=289800, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhogweed.so.6.4", {st_mode=S_IFREG|0644, st_size=289800, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenu.so.6", {st_mode=S_IFREG|0644, st_size=39480, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenu.so.6.3", {st_mode=S_IFREG|0644, st_size=39480, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcprofile.so", {st_mode=S_IFREG|0644, st_size=14616, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcprofile.so", {st_mode=S_IFREG|0644, st_size=14616, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", {st_mode=S_IFREG|0644, st_size=68552, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", {st_mode=S_IFREG|0644, st_size=68552, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1", {st_mode=S_IFREG|0644, st_size=273056, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmount.so.1.1.0", {st_mode=S_IFREG|0644, st_size=273056, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", {st_mode=S_IFREG|0644, st_size=125488, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", {st_mode=S_IFREG|0644, st_size=125488, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmemusage.so", {st_mode=S_IFREG|0644, st_size=18904, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmemusage.so", {st_mode=S_IFREG|0644, st_size=18904, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", {st_mode=S_IFREG|0644, st_size=667864, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", {st_mode=S_IFREG|0644, st_size=667864, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", {st_mode=S_IFREG|0755, st_size=240936, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2", {st_mode=S_IFREG|0755, st_size=240936, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3", {st_mode=S_IFREG|0644, st_size=182928, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3.1", {st_mode=S_IFREG|0644, st_size=182928, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsystemd.so.0", {st_mode=S_IFREG|0644, st_size=807936, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsystemd.so.0.32.0", {st_mode=S_IFREG|0644, st_size=807936, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc_malloc_debug.so.0", {st_mode=S_IFREG|0644, st_size=56704, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc_malloc_debug.so.0", {st_mode=S_IFREG|0644, st_size=56704, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdb-5.3.so", {st_mode=S_IFREG|0644, st_size=1760880, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdb-5.3.so", {st_mode=S_IFREG|0644, st_size=1760880, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libxxhash.so.0", {st_mode=S_IFREG|0644, st_size=80080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libxxhash.so.0.8.1", {st_mode=S_IFREG|0644, st_size=80080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpamc.so.0", {st_mode=S_IFREG|0644, st_size=18504, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpamc.so.0.82.1", {st_mode=S_IFREG|0644, st_size=18504, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0", {st_mode=S_IFREG|0644, st_size=74848, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbz2.so.1.0.4", {st_mode=S_IFREG|0644, st_size=74848, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsemanage.so.2", {st_mode=S_IFREG|0644, st_size=262288, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsemanage.so.2", {st_mode=S_IFREG|0644, st_size=262288, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2", {st_mode=S_IFREG|0644, st_size=125360, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libseccomp.so.2.5.3", {st_mode=S_IFREG|0644, st_size=125360, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_dns.so.2", {st_mode=S_IFREG|0644, st_size=14352, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_dns.so.2", {st_mode=S_IFREG|0644, st_size=14352, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libprocps.so.8", {st_mode=S_IFREG|0644, st_size=80080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libprocps.so.8.0.3", {st_mode=S_IFREG|0644, st_size=80080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenuw.so.6", {st_mode=S_IFREG|0644, st_size=43576, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmenuw.so.6.3", {st_mode=S_IFREG|0644, st_size=43576, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmvec.so.1", {st_mode=S_IFREG|0644, st_size=1031720, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmvec.so.1", {st_mode=S_IFREG|0644, st_size=1031720, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", {st_mode=S_IFREG|0644, st_size=166280, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", {st_mode=S_IFREG|0644, st_size=166280, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtirpc.so.3", {st_mode=S_IFREG|0644, st_size=178816, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtirpc.so.3.0.0", {st_mode=S_IFREG|0644, st_size=178816, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libformw.so.6", {st_mode=S_IFREG|0644, st_size=77296, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libformw.so.6.3", {st_mode=S_IFREG|0644, st_size=77296, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", {st_mode=S_IFREG|0644, st_size=841808, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1.4.8", {st_mode=S_IFREG|0644, st_size=841808, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0", {st_mode=S_IFREG|0644, st_size=149760, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1", {st_mode=S_IFREG|0644, st_size=149760, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtasn1.so.6", {st_mode=S_IFREG|0644, st_size=92312, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtasn1.so.6.6.2", {st_mode=S_IFREG|0644, st_size=92312, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunistring.so.2", {st_mode=S_IFREG|0644, st_size=1743016, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libunistring.so.2.2.0", {st_mode=S_IFREG|0644, st_size=1743016, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", {st_mode=S_IFREG|0644, st_size=198664, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1.1.0", {st_mode=S_IFREG|0644, st_size=198664, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", {st_mode=S_IFREG|0644, st_size=200136, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6.3", {st_mode=S_IFREG|0644, st_size=200136, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtic.so.6", {st_mode=S_IFREG|0644, st_size=71992, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtic.so.6.3", {st_mode=S_IFREG|0644, st_size=71992, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libe2p.so.2", {st_mode=S_IFREG|0644, st_size=45136, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libe2p.so.2.3", {st_mode=S_IFREG|0644, st_size=45136, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0", {st_mode=S_IFREG|0644, st_size=52080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0.1", {st_mode=S_IFREG|0644, st_size=52080, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam_misc.so.0", {st_mode=S_IFREG|0644, st_size=18528, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam_misc.so.0.82.1", {st_mode=S_IFREG|0644, st_size=18528, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsmartcols.so.1", {st_mode=S_IFREG|0644, st_size=100488, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsmartcols.so.1.1.0", {st_mode=S_IFREG|0644, st_size=100488, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1", {st_mode=S_IFREG|0644, st_size=133200, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libaudit.so.1.0.0", {st_mode=S_IFREG|0644, st_size=133200, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0", {st_mode=S_IFREG|0644, st_size=67736, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpam.so.0.85.1", {st_mode=S_IFREG|0644, st_size=67736, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1", {st_mode=S_IFREG|0644, st_size=26696, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libattr.so.1.1.2501", {st_mode=S_IFREG|0644, st_size=26696, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libform.so.6", {st_mode=S_IFREG|0644, st_size=73168, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libform.so.6.3", {st_mode=S_IFREG|0644, st_size=73168, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", {st_mode=S_IFREG|0644, st_size=22600, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1.9", {st_mode=S_IFREG|0644, st_size=22600, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgnutls.so.30", {st_mode=S_IFREG|0644, st_size=2000320, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgnutls.so.30.31.0", {st_mode=S_IFREG|0644, st_size=2000320, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdebconfclient.so.0", {st_mode=S_IFREG|0644, st_size=18720, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdebconfclient.so.0.0.0", {st_mode=S_IFREG|0644, st_size=18720, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcreposix.so.3", {st_mode=S_IFREG|0644, st_size=14408, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcreposix.so.3.13.3", {st_mode=S_IFREG|0644, st_size=14408, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0", {st_mode=S_IFREG|0644, st_size=27072, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0", {st_mode=S_IFREG|0644, st_size=27072, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libss.so.2", {st_mode=S_IFREG|0644, st_size=30800, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libss.so.2.0", {st_mode=S_IFREG|0644, st_size=30800, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2", {st_mode=S_IFREG|0644, st_size=39024, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcap.so.2.44", {st_mode=S_IFREG|0644, st_size=39024, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", {st_mode=S_IFREG|0644, st_size=2260320, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6.0.30", {st_mode=S_IFREG|0644, st_size=2260320, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.2", {st_mode=S_IFREG|0644, st_size=93280, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.2.0.1", {st_mode=S_IFREG|0644, st_size=93280, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1", {st_mode=S_IFREG|0644, st_size=125152, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblz4.so.1.9.3", {st_mode=S_IFREG|0644, st_size=125152, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1", {st_mode=S_IFREG|0644, st_size=166240, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libudev.so.1.7.2", {st_mode=S_IFREG|0644, st_size=166240, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", {st_mode=S_IFREG|0644, st_size=613064, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4", {st_mode=S_IFREG|0644, st_size=613064, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1", {st_mode=S_IFREG|0644, st_size=34888, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libacl.so.1.1.2301", {st_mode=S_IFREG|0644, st_size=34888, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", {st_mode=S_IFREG|0644, st_size=14664, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", {st_mode=S_IFREG|0644, st_size=14664, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre.so.3", {st_mode=S_IFREG|0644, st_size=477296, ...}, 0) = 0
+448   newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre.so.3.13.3", {st_mode=S_IFREG|0644, st_size=477296, ...}, 0) = 0
+448   openat(AT_FDCWD, "/lib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+448   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+448   getdents64(3, 0x555556b4e870 /* 18 entries */, 32768) = 504
+448   getdents64(3, 0x555556b4e870 /* 0 entries */, 32768) = 0
+448   close(3)                          = 0
+448   sysinfo({uptime=159420, loads=[18944, 23840, 24096], totalram=16562298880, freeram=13255393280, sharedram=33009664, bufferram=1427210240, totalswap=4294967296, freeswap=4294967296, procs=337, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+448   openat(AT_FDCWD, "/etc/ld.so.cache~", O_WRONLY|O_CREAT|O_TRUNC|O_NOFOLLOW, 0600) = 3
+448   write(3, "glibc-ld.so.cache1.1b\0\0\0:\16\0\0\2\0\0\0\234\27\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3\3\0\0X\23\0\0B\23\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3\3\0\0\30\21\0\0\2\21\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3\3\0\0\266\25\0\0\240\25\0\0\0\0\0\0\0\0\0\0\0\0\0\0\3\3\0\0{\23\0\0"..., 2400) = 2400
+448   write(3, "/lib/x86_64-linux-gnu/libpcprofile.so\0/lib/x86_64-linux-gnu/libmemusage.so\0/lib/x86_64-linux-gnu/libdb-5.3.so\0/lib/x86_64-linux-"..., 3642) = 3642
+448   lseek(3, 6044, SEEK_SET)          = 6044
+448   write(3, "t!\244\352\1\0\0\0\0\0\0\0\0\0\0\0\264\27\0\0A\0\0\0", 24) = 24
+448   write(3, "", 0)                   = 0
+448   write(3, "ldconfig (Ubuntu GLIBC 2.35-0ubuntu3) stable release version 2.35", 65) = 65
+448   chmod("/etc/ld.so.cache~", 0644)  = 0
+448   fsync(3)                          = 0
+448   close(3)                          = 0
+448   rename("/etc/ld.so.cache~", "/etc/ld.so.cache") = 0
+448   newfstatat(AT_FDCWD, "/var/cache/ldconfig", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
+448   openat(AT_FDCWD, "/var/cache/ldconfig/aux-cache~", O_WRONLY|O_CREAT|O_TRUNC|O_NOFOLLOW, 0600) = 3
+448   write(3, "glibc-ld.so.auxcache-1.0b\0\0\0\317\5\0\0\224\264\0\0\0\0\0\0\322\341\277b\0\0\0\0\220I\6\0\0\0\0\0L\0\0\0\0\0\0\0\3\3\0\0\1\0\0\0\0\0\0\0\0\0\0\0\v\265\0\0\0\0\0\0\322\341\277b\0\0\0\0`}\"\0\0\0\0\0L\0\0\0\0\0\0\0\3\3\0\0\27\0\0\0\0\0\0\0\0\0\0\0"..., 6223) = 6223
+448   fdatasync(3)                      = 0
+448   close(3)                          = 0
+448   rename("/var/cache/ldconfig/aux-cache~", "/var/cache/ldconfig/aux-cache") = 0
+448   exit_group(0)                     = ?
+448   +++ exited with 0 +++

@@ -1,0 +1,48 @@
+497   execve("/usr/bin/hpfsck", ["/usr/bin/hpfsck"], 0x7fffecd52980 /* 12 vars */) = 0
+497   brk(NULL)                         = 0x5601a6d5c000
+497   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdc7482e40) = -1 EINVAL (Invalid argument)
+497   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1baac9c000
+497   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+497   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6193, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 6193, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1baac9a000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhfsp.so.0", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\7\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\37\0\0\0\0\0\0\200\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=69144, ...}, AT_EMPTY_PATH) = 0
+497   mmap(NULL, 71280, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1baac88000
+497   mmap(0x7f1baac8a000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f1baac8a000
+497   mmap(0x7f1baac93000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f1baac93000
+497   mmap(0x7f1baac97000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f1baac97000
+497   close(3)                          = 0
+497   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+497   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+497   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+497   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+497   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+497   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1baaa60000
+497   mmap(0x7f1baaa88000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f1baaa88000
+497   mmap(0x7f1baac1d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f1baac1d000
+497   mmap(0x7f1baac75000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f1baac75000
+497   mmap(0x7f1baac7b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1baac7b000
+497   close(3)                          = 0
+497   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1baaa5d000
+497   arch_prctl(ARCH_SET_FS, 0x7f1baaa5d740) = 0
+497   set_tid_address(0x7f1baaa5da10)   = 497
+497   set_robust_list(0x7f1baaa5da20, 24) = 0
+497   rseq(0x7f1baaa5e0e0, 0x20, 0, 0x53053053) = 0
+497   mprotect(0x7f1baac75000, 16384, PROT_READ) = 0
+497   mprotect(0x7f1baac97000, 4096, PROT_READ) = 0
+497   mprotect(0x5601a58ab000, 4096, PROT_READ) = 0
+497   mprotect(0x7f1baacd6000, 8192, PROT_READ) = 0
+497   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+497   munmap(0x7f1baac9a000, 6193)      = 0
+497   newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=0, ...}, AT_EMPTY_PATH) = 0
+497   getrandom("\x8a\x93\x9c\xeb\x06\x29\xa2\x47", 8, GRND_NONBLOCK) = 8
+497   brk(NULL)                         = 0x5601a6d5c000
+497   brk(0x5601a6d7d000)               = 0x5601a6d7d000
+497   write(1, "Usage: /usr/bin/hpfsck [-v] [-i] device\n\t-v Be more verbose\n\t-i Ignore errors (default stop after first error)\n", 111) = 111
+497   exit_group(1)                     = ?
+497   +++ exited with 1 +++

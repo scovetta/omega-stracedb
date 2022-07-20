@@ -1,0 +1,66 @@
+Format:
+  keyctl --version 
+  keyctl add <type> <desc> <data> <keyring>
+  keyctl chgrp <key> <gid>
+  keyctl chown <key> <uid>
+  keyctl clear <keyring>
+  keyctl describe <keyring>
+  keyctl dh_compute <private> <prime> <base>
+  keyctl dh_compute_kdf <private> <prime> <base> <len> <hash_name>
+  keyctl dh_compute_kdf_oi <private> <prime> <base> <len> <hash_name>
+  keyctl instantiate <key> <data> <keyring>
+  keyctl invalidate <key>
+  keyctl get_persistent <keyring> [<uid>]
+  keyctl link <key> <keyring>
+  keyctl list <keyring>
+  keyctl move [-f] <key> <from_keyring> <to_keyring>
+  keyctl negate <key> <timeout> <keyring>
+  keyctl new_session 
+  keyctl newring <name> <keyring>
+  keyctl padd <type> <desc> <keyring>
+  keyctl pinstantiate <key> <keyring>
+  keyctl pipe <key>
+  keyctl pkey_query <key> <pass> [k=v]*
+  keyctl pkey_encrypt <key> <pass> <datafile> [k=v]*
+  keyctl pkey_decrypt <key> <pass> <datafile> [k=v]*
+  keyctl pkey_sign <key> <pass> <datafile> [k=v]*
+  keyctl pkey_verify <key> <pass> <datafile> <sigfile> [k=v]*
+  keyctl prequest2 <type> <desc> [<dest_keyring>]
+  keyctl print <key>
+  keyctl pupdate <key>
+  keyctl purge <type>
+  keyctl purge [-p] [-i] <type> <desc>
+  keyctl purge -s <type> <desc>
+  keyctl rdescribe <keyring> [sep]
+  keyctl read <key>
+  keyctl reap [-v]
+  keyctl reject <key> <timeout> <error> <keyring>
+  keyctl request <type> <desc> [<dest_keyring>]
+  keyctl request2 <type> <desc> <info> [<dest_keyring>]
+  keyctl restrict_keyring <keyring> [<type> [<restriction>]]
+  keyctl revoke <key>
+  keyctl rlist <keyring>
+  keyctl search <keyring> <type> <desc> [<dest_keyring>]
+  keyctl security <key>
+  keyctl session 
+  keyctl session - [<prog> <arg1> <arg2> ...]
+  keyctl session <name> [<prog> <arg1> <arg2> ...]
+  keyctl setperm <key> <mask>
+  keyctl show [-x] [<keyring>]
+  keyctl supports [<cap>]
+  keyctl timeout <key> <timeout>
+  keyctl unlink <key> [<keyring>]
+  keyctl update <key> <data>
+
+Key/keyring ID:
+  <nnn>   numeric keyring ID
+  @t      thread keyring
+  @p      process keyring
+  @s      session keyring
+  @u      user keyring
+  @us     user default session keyring
+  @g      group keyring
+  @a      assumed request_key authorisation key
+
+<type> can be "user" for a user-defined keyring
+If you do this, prefix the description with "<subtype>:"

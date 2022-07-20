@@ -1,0 +1,67 @@
+702   execve("/usr/sbin/iptables-legacy", ["/usr/sbin/iptables-legacy"], 0x7ffecbfa98a0 /* 12 vars */) = 0
+702   brk(NULL)                         = 0x55c15a822000
+702   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd45e8bc90) = -1 EINVAL (Invalid argument)
+702   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbdf080a000
+702   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+702   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+702   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6573, ...}, AT_EMPTY_PATH) = 0
+702   mmap(NULL, 6573, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbdf0808000
+702   close(3)                          = 0
+702   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libip4tc.so.2", O_RDONLY|O_CLOEXEC) = 3
+702   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\203\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\25\0\0\0\0\0\0\20\25\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+702   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=35440, ...}, AT_EMPTY_PATH) = 0
+702   mmap(NULL, 37440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbdf07fe000
+702   mmap(0x7fbdf0800000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fbdf0800000
+702   mmap(0x7fbdf0804000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fbdf0804000
+702   mmap(0x7fbdf0806000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7fbdf0806000
+702   close(3)                          = 0
+702   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libip6tc.so.2", O_RDONLY|O_CLOEXEC) = 3
+702   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0p\203\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\26\0\0\0\0\0\0\20\26\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+702   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=35440, ...}, AT_EMPTY_PATH) = 0
+702   mmap(NULL, 37440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbdf07f4000
+702   mmap(0x7fbdf07f6000, 16384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fbdf07f6000
+702   mmap(0x7fbdf07fa000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fbdf07fa000
+702   mmap(0x7fbdf07fc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7fbdf07fc000
+702   close(3)                          = 0
+702   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3
+702   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0H\361\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\34\0\33\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\260.\0\0\0\0\0\0\260.\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+702   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=63560, ...}, AT_EMPTY_PATH) = 0
+702   mmap(NULL, 76952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbdf07e1000
+702   mprotect(0x7fbdf07e4000, 49152, PROT_NONE) = 0
+702   mmap(0x7fbdf07e4000, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fbdf07e4000
+702   mmap(0x7fbdf07ec000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fbdf07ec000
+702   mmap(0x7fbdf07f0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fbdf07f0000
+702   mmap(0x7fbdf07f2000, 7320, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbdf07f2000
+702   close(3)                          = 0
+702   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+702   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+702   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+702   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+702   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+702   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+702   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+702   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbdf05b9000
+702   mmap(0x7fbdf05e1000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fbdf05e1000
+702   mmap(0x7fbdf0776000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fbdf0776000
+702   mmap(0x7fbdf07ce000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fbdf07ce000
+702   mmap(0x7fbdf07d4000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbdf07d4000
+702   close(3)                          = 0
+702   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbdf05b7000
+702   arch_prctl(ARCH_SET_FS, 0x7fbdf05b8000) = 0
+702   set_tid_address(0x7fbdf05b82d0)   = 702
+702   set_robust_list(0x7fbdf05b82e0, 24) = 0
+702   rseq(0x7fbdf05b89a0, 0x20, 0, 0x53053053) = 0
+702   mprotect(0x7fbdf07ce000, 16384, PROT_READ) = 0
+702   mprotect(0x7fbdf07f0000, 4096, PROT_READ) = 0
+702   mprotect(0x7fbdf07fc000, 4096, PROT_READ) = 0
+702   mprotect(0x7fbdf0806000, 4096, PROT_READ) = 0
+702   mprotect(0x55c1595a2000, 4096, PROT_READ) = 0
+702   mprotect(0x7fbdf0844000, 8192, PROT_READ) = 0
+702   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+702   munmap(0x7fbdf0808000, 6573)      = 0
+702   write(2, "iptables v1.8.7 (legacy): ", 26) = 26
+702   write(2, "no command specified", 20) = 20
+702   write(2, "\n", 1)                 = 1
+702   write(2, "Try `iptables -h' or 'iptables --help' for more information.\n", 61) = 61
+702   exit_group(2)                     = ?
+702   +++ exited with 2 +++

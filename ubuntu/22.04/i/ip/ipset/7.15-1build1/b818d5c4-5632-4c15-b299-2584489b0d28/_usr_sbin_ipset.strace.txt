@@ -1,0 +1,61 @@
+558   execve("/usr/sbin/ipset", ["/usr/sbin/ipset"], 0x7ffdd79737b0 /* 12 vars */) = 0
+558   brk(NULL)                         = 0x563649678000
+558   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe1f69e890) = -1 EINVAL (Invalid argument)
+558   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2a7e3c7000
+558   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+558   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+558   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6633, ...}, AT_EMPTY_PATH) = 0
+558   mmap(NULL, 6633, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2a7e3c5000
+558   close(3)                          = 0
+558   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libipset.so.13", O_RDONLY|O_CLOEXEC) = 3
+558   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0xA\3\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220\271\0\0\0\0\0\0\220\271\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+558   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=215224, ...}, AT_EMPTY_PATH) = 0
+558   mmap(NULL, 217416, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2a7e38f000
+558   mmap(0x7f2a7e39b000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f2a7e39b000
+558   mmap(0x7f2a7e3ac000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f2a7e3ac000
+558   mmap(0x7f2a7e3b5000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7f2a7e3b5000
+558   close(3)                          = 0
+558   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+558   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+558   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+558   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+558   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+558   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+558   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+558   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2a7e167000
+558   mmap(0x7f2a7e18f000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f2a7e18f000
+558   mmap(0x7f2a7e324000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f2a7e324000
+558   mmap(0x7f2a7e37c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f2a7e37c000
+558   mmap(0x7f2a7e382000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2a7e382000
+558   close(3)                          = 0
+558   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmnl.so.0", O_RDONLY|O_CLOEXEC) = 3
+558   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0Xa\0\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\35\0\34\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\08\31\0\0\0\0\0\08\31\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+558   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=26776, ...}, AT_EMPTY_PATH) = 0
+558   mmap(NULL, 28688, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2a7e15f000
+558   mprotect(0x7f2a7e161000, 16384, PROT_NONE) = 0
+558   mmap(0x7f2a7e161000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f2a7e161000
+558   mmap(0x7f2a7e163000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f2a7e163000
+558   mmap(0x7f2a7e165000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f2a7e165000
+558   close(3)                          = 0
+558   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2a7e15d000
+558   arch_prctl(ARCH_SET_FS, 0x7f2a7e15db80) = 0
+558   set_tid_address(0x7f2a7e15de50)   = 558
+558   set_robust_list(0x7f2a7e15de60, 24) = 0
+558   rseq(0x7f2a7e15e520, 0x20, 0, 0x53053053) = 0
+558   mprotect(0x7f2a7e37c000, 16384, PROT_READ) = 0
+558   mprotect(0x7f2a7e165000, 4096, PROT_READ) = 0
+558   mprotect(0x7f2a7e3b5000, 8192, PROT_READ) = 0
+558   mprotect(0x56364921d000, 4096, PROT_READ) = 0
+558   mprotect(0x7f2a7e401000, 8192, PROT_READ) = 0
+558   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+558   munmap(0x7f2a7e3c5000, 6633)      = 0
+558   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/ipset", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+558   getrandom("\xc6\x23\x1c\xc0\xce\x2d\x85\x06", 8, GRND_NONBLOCK) = 8
+558   brk(NULL)                         = 0x563649678000
+558   brk(0x563649699000)               = 0x563649699000
+558   write(2, "ipset v7.15: ", 13)     = 13
+558   write(2, "No command specified.", 21) = 21
+558   write(2, "\n", 1)                 = 1
+558   write(2, "Try `ipset help' for more information.\n", 39) = 39
+558   exit_group(2)                     = ?
+558   +++ exited with 2 +++
