@@ -1,0 +1,50 @@
+1072  execve("/usr/bin/loadunimap", ["/usr/bin/loadunimap"], 0x7ffc3dd3b050 /* 12 vars */) = 0
+1072  brk(NULL)                         = 0x563b786da000
+1072  arch_prctl(0x3001 /* ARCH_??? */, 0x7fff3e2b8ff0) = -1 EINVAL (Invalid argument)
+1072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f778a5a4000
+1072  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1072  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1072  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+1072  mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f778a5a2000
+1072  close(3)                          = 0
+1072  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1072  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+1072  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1072  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+1072  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+1072  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1072  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+1072  mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f778a37a000
+1072  mmap(0x7f778a3a2000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f778a3a2000
+1072  mmap(0x7f778a537000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f778a537000
+1072  mmap(0x7f778a58f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f778a58f000
+1072  mmap(0x7f778a595000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f778a595000
+1072  close(3)                          = 0
+1072  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f778a377000
+1072  arch_prctl(ARCH_SET_FS, 0x7f778a377740) = 0
+1072  set_tid_address(0x7f778a377a10)   = 1072
+1072  set_robust_list(0x7f778a377a20, 24) = 0
+1072  rseq(0x7f778a3780e0, 0x20, 0, 0x53053053) = 0
+1072  mprotect(0x7f778a58f000, 16384, PROT_READ) = 0
+1072  mprotect(0x563b7820f000, 4096, PROT_READ) = 0
+1072  mprotect(0x7f778a5de000, 8192, PROT_READ) = 0
+1072  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1072  munmap(0x7f778a5a2000, 6133)      = 0
+1072  getrandom("\xc7\xa6\x61\xe1\xa5\x76\xae\x79", 8, GRND_NONBLOCK) = 8
+1072  brk(NULL)                         = 0x563b786da000
+1072  brk(0x563b786fb000)               = 0x563b786fb000
+1072  write(2, "Usage: loadunimap [option...]\n", 30) = 30
+1072  write(2, "\n", 1)                 = 1
+1072  write(2, "This utility reports or sets the keyboard mode.\n", 48) = 48
+1072  write(2, "\n", 1)                 = 1
+1072  write(2, "Options:", 8)           = 8
+1072  write(2, "\n", 1)                 = 1
+1072  write(2, "  -o, --output=FILE   save the old map to the FILE.\n", 52) = 52
+1072  write(2, "  -C, --console=DEV   the console device to be used.\n", 53) = 53
+1072  write(2, "  -V, --version       print version number.\n", 44) = 44
+1072  write(2, "  -h, --help          print this usage message.\n", 48) = 48
+1072  write(2, "\n", 1)                 = 1
+1072  write(2, "Report bugs to authors.\n", 24) = 24
+1072  write(2, "\n", 1)                 = 1
+1072  exit_group(64)                    = ?
+1072  +++ exited with 64 +++

@@ -1,0 +1,38 @@
+Usage: /usr/bin/genrb [OPTIONS] [FILES]
+	Reads the list of resource bundle source files and creates
+	binary version of resource bundles (.res files)
+Options:
+	-h or -? or --help       this usage text
+	-q or --quiet            do not display warnings
+	-v or --verbose          print extra information when processing files
+	-V or --version          prints out version number and exits
+	-c or --copyright        include copyright notice
+	-e or --encoding         encoding of source files
+	-d or --destdir          destination directory, followed by the path, defaults to ''
+	-s or --sourcedir        source directory for files followed by path, defaults to ''
+	-i or --icudatadir       directory for locating any needed intermediate data files,
+	                         followed by path, defaults to ''
+	-j or --write-java       write a Java ListResourceBundle for ICU4J, followed by optional encoding
+	                         defaults to ASCII and \uXXXX format.
+	      --java-package     For --write-java: package name for writing the ListResourceBundle,
+	                         defaults to com.ibm.icu.impl.data
+	-b or --bundle-name      For --write-java: root resource bundle name for writing the ListResourceBundle,
+	                         defaults to LocaleElements
+	-x or --write-xliff      write an XLIFF file for the resource bundle. Followed by
+	                         an optional output file name.
+	-k or --strict           use pedantic parsing of syntax
+	-l or --language         for XLIFF: language code compliant with BCP 47.
+	-C or --noBinaryCollation  do not generate binary collation image;
+	                           makes .res file smaller but collator instantiation much slower;
+	                           maintains ability to get tailoring rules
+	-R or --omitCollationRules do not include collation (tailoring) rules;
+	                           makes .res file smaller and maintains collator instantiation speed
+	                           but tailoring rules will not be available (they are rarely used)
+	      --formatVersion      write a .res file compatible with the requested formatVersion (single digit);
+	                           for example, --formatVersion 1
+	      --writePoolBundle [directory]  write a pool.res file with all of the keys of all input bundles
+	      --usePoolBundle [directory]  point to keys from the pool.res keys pool bundle if they are available there;
+	                           makes .res files smaller but dependent on the pool bundle
+	                           (--writePoolBundle and --usePoolBundle cannot be combined)
+	      --filterDir          Input directory where filter files are available.
+	                           For more on filter files, see ICU Data Build Tool.

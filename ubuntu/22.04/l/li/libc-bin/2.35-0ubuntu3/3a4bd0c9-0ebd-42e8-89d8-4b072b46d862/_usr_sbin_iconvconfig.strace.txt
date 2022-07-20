@@ -1,0 +1,73 @@
+520   execve("/usr/sbin/iconvconfig", ["/usr/sbin/iconvconfig"], 0x7ffe80d6a650 /* 12 vars */) = 0
+520   brk(NULL)                         = 0x55b34ed1c000
+520   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc6ba5d4b0) = -1 EINVAL (Invalid argument)
+520   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f536b64a000
+520   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+520   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+520   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6133, ...}, AT_EMPTY_PATH) = 0
+520   mmap(NULL, 6133, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f536b648000
+520   close(3)                          = 0
+520   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+520   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+520   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+520   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+520   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+520   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+520   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+520   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f536b420000
+520   mmap(0x7f536b448000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f536b448000
+520   mmap(0x7f536b5dd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f536b5dd000
+520   mmap(0x7f536b635000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f536b635000
+520   mmap(0x7f536b63b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f536b63b000
+520   close(3)                          = 0
+520   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f536b41d000
+520   arch_prctl(ARCH_SET_FS, 0x7f536b41d740) = 0
+520   set_tid_address(0x7f536b41da10)   = 520
+520   set_robust_list(0x7f536b41da20, 24) = 0
+520   rseq(0x7f536b41e0e0, 0x20, 0, 0x53053053) = 0
+520   mprotect(0x7f536b635000, 16384, PROT_READ) = 0
+520   mprotect(0x55b34d7aa000, 4096, PROT_READ) = 0
+520   mprotect(0x7f536b684000, 8192, PROT_READ) = 0
+520   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+520   munmap(0x7f536b648000, 6133)      = 0
+520   getrandom("\x22\xf5\x62\x94\x3d\xee\x11\x3c", 8, GRND_NONBLOCK) = 8
+520   brk(NULL)                         = 0x55b34ed1c000
+520   brk(0x55b34ed3d000)               = 0x55b34ed3d000
+520   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules", O_RDONLY|O_CLOEXEC) = 3
+520   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3808, ...}, AT_EMPTY_PATH) = 0
+520   read(3, "# GNU libc iconv configuration.\n# Copyright (C) 1997-2022 Free Software Foundation, Inc.\n# This file is part of the GNU C Librar"..., 4096) = 3808
+520   read(3, "", 4096)                 = 0
+520   close(3)                          = 0
+520   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+520   newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+520   getdents64(3, 0x55b34ed20930 /* 3 entries */, 32768) = 96
+520   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.d/gconv-modules-extra.conf", O_RDONLY|O_CLOEXEC) = 4
+520   newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=53974, ...}, AT_EMPTY_PATH) = 0
+520   read(4, "# GNU libc iconv configuration.\n# Copyright (C) 1997-2022 Free Software Foundation, Inc.\n# This file is part of the GNU C Librar"..., 4096) = 4096
+520   read(4, "B1002//\tJUS_I.B1.002//\nmodule\tJUS_I.B1.002//\t\tINTERNAL\t\tISO646\t\t2\nmodule\tINTERNAL\t\tJUS_I.B1.002//\t\tISO646\t\t2\n\nalias\tISO646-KR//\t"..., 4096) = 4096
+520   read(4, "59-5//\nalias\tISO_8859-5//\t\tISO-8859-5//\nalias\tISO8859-5//\t\tISO-8859-5//\nalias\tISO88595//\t\tISO-8859-5//\nalias\tCYRILLIC//\t\tISO-885"..., 4096) = 4096
+520   read(4, "59-16//\t\tINTERNAL\t\tISO8859-16\t1\nmodule\tINTERNAL\t\tISO-8859-16//\t\tISO8859-16\t1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcost\nalias\tT.61//\t\t\tT.61-8BI"..., 4096) = 4096
+520   read(4, "-SE-A\t1\nmodule\tINTERNAL\t\tEBCDIC-FI-SE-A//\tEBCDIC-FI-SE-A\t1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcost\nalias\tCSEBCDICFR//\t\tEBCDIC-FR//\nalias\tEBC"..., 4096) = 4096
+520   brk(0x55b34ed5e000)               = 0x55b34ed5e000
+520   read(4, "97\t\t1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcost\nalias\tCP420//\t\t\tIBM420//\nalias\tEBCDIC-CP-AR1//\t\tIBM420//\nalias\tCSIBM420//\t\tIBM420//\nalias\tOSF1"..., 4096) = 4096
+520   read(4, "1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcost\nalias\tCP868//\t\t\tIBM868//\nalias\tCP-AR//\t\t\tIBM868//\nalias\tCSIBM868//\t\tIBM868//\nalias\tOSF10020364//\t\t"..., 4096) = 4096
+520   read(4, "6//\t\tIBM1046//\nalias\tCP1046//\t\tIBM1046//\nalias\t1046//\t\t\tIBM1046//\nmodule\tIBM1046//\t\tINTERNAL\t\tIBM1046\t\t1\nmodule\tINTERNAL\t\tIBM104"..., 4096) = 4096
+520   read(4, "\tto\t\t\tmodule\t\tcost\nalias\tRUSCII//\t\tCP1125//\nalias\tIBM848//\t\tCP1125//\nmodule\tCP1125//\t\tINTERNAL\t\tCP1125\t\t1\nmodule\tINTERNAL\t\tCP112"..., 4096) = 4096
+520   read(4, "03//\nmodule\tCSN_369103//\t\tINTERNAL\t\tCSN_369103\t1\nmodule\tINTERNAL\t\tCSN_369103//\t\tCSN_369103\t1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcost\nalias\tC"..., 4096) = 4096
+520   read(4, "\tmodule\t\tcost\nalias\tISO-IR-8-1//\t\tNATS-SEFI//\nalias\tCSNATSSEFI//\t\tNATS-SEFI//\nalias\tNATSSEFI//\t\tNATS-SEFI//\nmodule\tNATS-SEFI//\t\t"..., 4096) = 4096
+520   brk(0x55b34ed7f000)               = 0x55b34ed7f000
+520   read(4, "IBM1156\t\t1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcost\nalias\tIBM-1157//\t\tIBM1157//\nalias\tCP1157//\t\tIBM1157//\nalias\tCSIBM1157//\t\tIBM1157//\nmodule"..., 4096) = 4096
+520   read(4, "\t\tIBM1166//\nalias\tCP1166//\t\tIBM1166//\nalias\tCSIBM1166//\t\tIBM1166//\nmodule\tIBM1166//\t\tINTERNAL\t\tIBM1166\t\t1\nmodule\tINTERNAL\t\tIBM11"..., 4096) = 4096
+520   read(4, "alias\tROMAN9//\t\tHP-ROMAN9//\nalias\tR9//\t\t\tHP-ROMAN9//\nalias\tHPROMAN9//\t\tHP-ROMAN9//\nmodule\tHP-ROMAN9//\t\tINTERNAL\t\tHP-ROMAN9\t1\nmod"..., 4096) = 726
+520   read(4, "", 4096)                 = 0
+520   close(4)                          = 0
+520   getdents64(3, 0x55b34ed20930 /* 0 entries */, 32768) = 0
+520   close(3)                          = 0
+520   openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache.0vCCS9", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+520   brk(0x55b34eda3000)               = 0x55b34eda3000
+520   writev(3, [{iov_base="$\3\1 \20\0\3149\233\108\\@i\0\0", iov_len=16}, {iov_base="\0NF_Z_62-010_(1973)//\0TIS620-0//\0TIS620.2533-0//\0GB13000//\0ISO-IR-100//\0OSF00010100//\0CSIBM500//\0CP500//\0CSA_T500//\0NC_NC00-10//"..., iov_len=14780}, {iov_base="\0\0\0\0\25\35\7\1\315\16\22\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\267\t\303\0\0\0\0\0\214\26\314\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0n\22\255\0\0\0\0\0\314#\242\0E\24\211\0\231$-\0\305\21\203\0\22\1\5\1\0\0\0\0/*+\0\312$:\0\336\0\332\0e\36\345\0\33\21u\0\26\6v\0/\33\375\0\0\0\0\0\20\17\3\1"..., iov_len=8812}, {iov_base="\30.\0\0\0\0\0\0\0\0\0\0\370\0\260-\275.\260-\275.\0\08\34\0\0\224.\0\0Z.\0\0\241\32\260-O5\260-O5\0\0\27\37\260-s6\260-s6\0\0d\24\260-\2513\260-\2513\1\0\323'\260-\v8\260-\v8\v\0\372)\260-\2458\260-\2458\0\0\22%\260-\1777\260-\1777\0\0\261\1\260-\3673\260-\3673\0\0p\27\260-`4\260-"..., iov_len=3336}, {iov_base="\1\0\6\0\260-\2473\0\0\1\0\5\0\260-\2473\1\0007\0\260-\3067\0\0\1\0\6\0\260-\3067\0\0\1\0N\0\260-\326.\0\0\1\0M\0\260-\326.\0\0", iov_len=58}], 5) = 27002
+520   fchmod(3, 0644)                   = 0
+520   rename("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache.0vCCS9", "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache") = 0
+520   close(3)                          = 0
+520   exit_group(0)                     = ?
+520   +++ exited with 0 +++

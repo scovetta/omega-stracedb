@@ -1,0 +1,17 @@
+Usage: setvtrgb [option...] [vga|FILE|-]
+
+If you use the FILE parameter, FILE should be exactly 3 lines of
+comma-separated decimal values for RED, GREEN, and BLUE.
+
+To seed a valid FILE:
+   cat /sys/module/vt/parameters/default_{red,grn,blu} > FILE
+
+and then edit the values in FILE.
+
+Options:
+  -C, --console=DEV   the console device to be used.
+  -V, --version       print version number.
+  -h, --help          print this usage message.
+
+Report bugs to authors.
+

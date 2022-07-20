@@ -1,0 +1,105 @@
+kexec-tools 2.0.22
+Usage: kexec [OPTION]... [kernel]
+Directly reboot into a new kernel
+
+ -h, --help           Print this help.
+ -v, --version        Print the version of kexec.
+ -f, --force          Force an immediate kexec,
+                      don't call shutdown.
+ -i, --no-checks      Fast reboot, no memory integrity checks.
+ -x, --no-ifdown      Don't bring down network interfaces.
+ -y, --no-sync        Don't sync filesystems before kexec.
+ -l, --load           Load the new kernel into the
+                      current kernel.
+ -p, --load-panic     Load the new kernel for use on panic.
+ -u, --unload         Unload the current kexec target kernel.
+                      If capture kernel is being unloaded
+                      specify -p with -u.
+ -e, --exec           Execute a currently loaded kernel.
+     --exec-live-update Execute a currently loaded xen image after
+storing the state required to live update.
+ -t, --type=TYPE      Specify the new kernel is of this type.
+     --mem-min=<addr> Specify the lowest memory address to
+                      load code into.
+     --mem-max=<addr> Specify the highest memory address to
+                      load code into.
+     --reuseinitrd    Reuse initrd from first boot.
+     --print-ckr-size Print crash kernel region size.
+     --load-preserve-context Load the new kernel and preserve
+                      context of current kernel during kexec.
+     --load-jump-back-helper Load a helper image to jump back
+                      to original kernel.
+     --load-live-update Load the new kernel to overwrite the
+                      running kernel.
+     --entry=<addr>   Specify jump back address.
+                      (0 means it's not jump back or
+                      preserve context)
+                      to original kernel.
+ -s, --kexec-file-syscall Use file based syscall for kexec operation
+ -c, --kexec-syscall  Use the kexec_load syscall for for compatibility
+                      with systems that don't support -s (default)
+ -a, --kexec-syscall-auto  Use file based syscall for kexec and fall
+                      back to the compatibility syscall when file based
+                      syscall is not supported or the kernel did not
+                      understand the image
+ -d, --debug          Enable debugging to help spot a failure.
+ -S, --status         Return 1 if the type (by default crash) is loaded,
+                      0 if not.
+
+Supported kernel file types and options: 
+elf-x86_64
+    --command-line=STRING Set the kernel command line to STRING
+    --append=STRING       Set the kernel command line to STRING
+    --reuse-cmdline       Use kernel command line from running system.
+    --initrd=FILE         Use FILE as the kernel's initial ramdisk.
+    --ramdisk=FILE        Use FILE as the kernel's initial ramdisk.
+    --args-linux          Pass linux kernel style options
+    --args-elf            Pass elf boot notes
+    --args-none           Jump directly from the kernel
+multiboot-x86
+    --command-line=STRING        Set the kernel command line to STRING.
+    --reuse-cmdline       	 Use kernel command line from running system.
+    --module="MOD arg1 arg2..."  Load module MOD with command-line "arg1..."
+                                 (can be used multiple times).
+multiboot2-x86
+    --command-line=STRING        Set the kernel command line to STRING.
+    --reuse-cmdline       	 Use kernel command line from running system.
+    --module="MOD arg1 arg2..."  Load module MOD with command-line "arg1..."
+                                 (can be used multiple times).
+elf-x86
+    --command-line=STRING Set the kernel command line to STRING
+    --append=STRING       Set the kernel command line to STRING
+    --reuse-cmdline       Use kernel command line from running system.
+    --initrd=FILE         Use FILE as the kernel's initial ramdisk.
+    --ramdisk=FILE        Use FILE as the kernel's initial ramdisk.
+    --args-linux          Pass linux kernel style options
+    --args-elf            Pass elf boot notes
+bzImage64
+    --entry-32bit         Use the kernels 32bit entry point.
+    --real-mode           Use the kernels real mode entry point.
+    --command-line=STRING Set the kernel command line to STRING.
+    --append=STRING       Set the kernel command line to STRING.
+    --reuse-cmdline       Use kernel command line from running system.
+    --initrd=FILE         Use FILE as the kernel's initial ramdisk.
+    --ramdisk=FILE        Use FILE as the kernel's initial ramdisk.
+bzImage
+    --real-mode           Use the kernels real mode entry point.
+    --command-line=STRING Set the kernel command line to STRING.
+    --append=STRING       Set the kernel command line to STRING.
+    --reuse-cmdline       Use kernel command line from running system.
+    --initrd=FILE         Use FILE as the kernel's initial ramdisk.
+    --ramdisk=FILE        Use FILE as the kernel's initial ramdisk.
+beoboot-x86
+    --real-mode           Use the kernels real mode entry point.
+nbi-x86
+
+Architecture options: 
+     --reset-vga               Attempt to reset a standard vga device
+     --serial=<port>           Specify the serial port for debug output
+     --serial-baud=<baud_rate> Specify the serial port baud rate
+     --console-vga             Enable the vga console
+     --console-serial          Enable the serial console
+     --pass-memmap-cmdline     Pass memory map via command line in kexec on panic case
+     --noefi                   Disable efi support
+     --reuse-video-type        Reuse old boot time video type blindly
+

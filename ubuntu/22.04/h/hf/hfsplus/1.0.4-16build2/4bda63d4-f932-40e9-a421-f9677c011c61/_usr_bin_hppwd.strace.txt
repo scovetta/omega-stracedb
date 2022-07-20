@@ -1,0 +1,48 @@
+533   execve("/usr/bin/hppwd", ["/usr/bin/hppwd"], 0x7ffd9fe5b000 /* 12 vars */) = 0
+533   brk(NULL)                         = 0x564acdb28000
+533   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd9eb40840) = -1 EINVAL (Invalid argument)
+533   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4d81a9000
+533   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+533   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+533   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6193, ...}, AT_EMPTY_PATH) = 0
+533   mmap(NULL, 6193, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe4d81a7000
+533   close(3)                          = 0
+533   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libhfsp.so.0", O_RDONLY|O_CLOEXEC) = 3
+533   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0X\7\1\0\0\0\0\0\0\0\0\0@\08\0\v\0@\0\33\0\32\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\37\0\0\0\0\0\0\200\37\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\5\0\0\0"..., 832) = 832
+533   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=69144, ...}, AT_EMPTY_PATH) = 0
+533   mmap(NULL, 71280, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe4d8195000
+533   mmap(0x7fe4d8197000, 36864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe4d8197000
+533   mmap(0x7fe4d81a0000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fe4d81a0000
+533   mmap(0x7fe4d81a4000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fe4d81a4000
+533   close(3)                          = 0
+533   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+533   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+533   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+533   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+533   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+533   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+533   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+533   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe4d7f6d000
+533   mmap(0x7fe4d7f95000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fe4d7f95000
+533   mmap(0x7fe4d812a000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fe4d812a000
+533   mmap(0x7fe4d8182000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7fe4d8182000
+533   mmap(0x7fe4d8188000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe4d8188000
+533   close(3)                          = 0
+533   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4d7f6a000
+533   arch_prctl(ARCH_SET_FS, 0x7fe4d7f6a740) = 0
+533   set_tid_address(0x7fe4d7f6aa10)   = 533
+533   set_robust_list(0x7fe4d7f6aa20, 24) = 0
+533   rseq(0x7fe4d7f6b0e0, 0x20, 0, 0x53053053) = 0
+533   mprotect(0x7fe4d8182000, 16384, PROT_READ) = 0
+533   mprotect(0x7fe4d81a4000, 4096, PROT_READ) = 0
+533   mprotect(0x564acbdd3000, 4096, PROT_READ) = 0
+533   mprotect(0x7fe4d81e3000, 8192, PROT_READ) = 0
+533   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+533   munmap(0x7fe4d81a7000, 6193)      = 0
+533   getrandom("\xd1\xdc\x54\x01\x95\xa7\x5b\x12", 8, GRND_NONBLOCK) = 8
+533   brk(NULL)                         = 0x564acdb28000
+533   brk(0x564acdb49000)               = 0x564acdb49000
+533   openat(AT_FDCWD, "/root/.hfsplusvolume", O_RDONLY) = -1 ENOENT (No such file or directory)
+533   write(2, "/usr/bin/hppwd: /usr/bin/hppwd: Unable to read file for cached Volume information. (No such file or directory)\n", 111) = 111
+533   exit_group(1)                     = ?
+533   +++ exited with 1 +++

@@ -1,0 +1,29 @@
+Usage: /usr/sbin/gennorm2 [-options] infiles+ -o outputfilename
+
+Reads the infiles with normalization data and
+creates a binary file, or a C source file (--csource), with the data,
+or writes a data file with the combined data (--combined).
+See https://unicode-org.github.io/icu/userguide/transforms/normalization#data-file-syntax
+
+Alternate usage: /usr/sbin/gennorm2 [-options] a.txt b.txt minus p.txt q.txt -o outputfilename
+
+Computes the difference of (a, b) minus (p, q) and writes the diff data
+in input-file syntax to the outputfilename.
+It is then possible to build (p, q, diff) to get the same data as (a, b).
+(Useful for computing minimal incremental mapping data files.)
+
+Options:
+	-h or -? or --help  this usage text
+	-v or --verbose     verbose output
+	-c or --copyright   include a copyright notice
+	-u or --unicode     Unicode version, followed by the version like 5.2.0
+	-s or --sourcedir   source directory, followed by the path
+	-o or --output      output filename
+	      --csource     writes a C source file with initializers
+	      --combined    writes a .txt file (input-file syntax) with the
+	                    combined data from all of the input files
+	      --fast        optimize the data for fast normalization,
+	                    which might increase its size  (Writes fully decomposed
+	                    regular mappings instead of delta mappings.
+	                    You should measure the runtime speed to make sure that
+	                    this is a good trade-off.)

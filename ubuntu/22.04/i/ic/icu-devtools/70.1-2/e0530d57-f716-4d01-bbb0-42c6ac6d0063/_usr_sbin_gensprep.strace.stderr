@@ -1,0 +1,23 @@
+Usage: /usr/sbin/gensprep [-options] [file_name]
+
+Read the files specified and
+create a binary file [package-name]_[bundle-name].spp with the StringPrep profile data
+
+Options:
+	-h or -? or --help       print this usage text
+	-v or --verbose          verbose output
+	-c or --copyright        include a copyright notice
+	-d or --destdir          destination directory, followed by the path
+	-s or --sourcedir        source directory of ICU data, followed by the path
+	-b or --bundle-name      generate the output data file with the name specified
+	-i or --icudatadir       directory for locating any needed intermediate data files,
+	                         followed by path, defaults to 
+	-n or --normalize        turn on the option for normalization and include mappings
+	                         from NormalizationCorrections.txt from the given path,
+	                         e.g: /test/icu/source/data/unidata
+	-m or --norm-correction  use NormalizationCorrections.txt from the given path
+	                         when the input file contains a normalization directive.
+	                         unlike -n/--normalize, this option does not force the
+	                         normalization.
+	-k or --check-bidi       turn on the option for checking for BiDi in the profile
+	-u or --unicode          version of Unicode to be used with this profile followed by the version

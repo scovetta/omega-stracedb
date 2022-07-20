@@ -1,0 +1,35 @@
+797   execve("/usr/bin/hmac256", ["/usr/bin/hmac256"], 0x7ffcaba38890 /* 12 vars */) = 0
+797   brk(NULL)                         = 0x55d67ef08000
+797   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe413d2b50) = -1 EINVAL (Invalid argument)
+797   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f30a57ad000
+797   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+797   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+797   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=8185, ...}, AT_EMPTY_PATH) = 0
+797   mmap(NULL, 8185, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f30a57ab000
+797   close(3)                          = 0
+797   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+797   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0@\0\0\0\0\0\0\0\360\300!\0\0\0\0\0\0\0\0\0@\08\0\16\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0"..., 832) = 832
+797   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+797   pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 48, 848) = 48
+797   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\211\303\313\205\371\345PFwdq\376\320^\304AX\35\31i\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0", 68, 896) = 68
+797   newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+797   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0000>\36\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0"..., 784, 64) = 784
+797   mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f30a5583000
+797   mmap(0x7f30a55ab000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f30a55ab000
+797   mmap(0x7f30a5740000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f30a5740000
+797   mmap(0x7f30a5798000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f30a5798000
+797   mmap(0x7f30a579e000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f30a579e000
+797   close(3)                          = 0
+797   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f30a5580000
+797   arch_prctl(ARCH_SET_FS, 0x7f30a5580740) = 0
+797   set_tid_address(0x7f30a5580a10)   = 797
+797   set_robust_list(0x7f30a5580a20, 24) = 0
+797   rseq(0x7f30a55810e0, 0x20, 0, 0x53053053) = 0
+797   mprotect(0x7f30a5798000, 16384, PROT_READ) = 0
+797   mprotect(0x55d67d338000, 4096, PROT_READ) = 0
+797   mprotect(0x7f30a57e7000, 8192, PROT_READ) = 0
+797   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+797   munmap(0x7f30a57ab000, 8185)      = 0
+797   write(2, "usage: hmac256 [--binary] [--stdkey] key [filename]\n", 52) = 52
+797   exit_group(1)                     = ?
+797   +++ exited with 1 +++
