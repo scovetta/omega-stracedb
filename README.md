@@ -32,6 +32,9 @@ cd src
 # Run a local analysis
 mkdir output
 .\Run.ps1 unzip -ResultsDirectory output
+
+# Run a custom package (arbitrary install)
+.\Run.ps1 -PackageName nodejs -PackageVersion 17.8.0 -InstallCommand "wget 'https://nodejs.org/download/release/v17.8.0/node-v17.8.0-linux-x64.tar.gz' && tar zxvf node-v17.8.0-linux-x64.tar.gz" -ResultsDirectory output
 ```
 
 # About Alpha-Omega
