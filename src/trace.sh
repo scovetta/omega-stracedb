@@ -72,6 +72,7 @@ if [ -z "$INSTALL_COMMAND" ]; then
     PACKAGE_VERSION=$(apt show "${PACKAGE}" 2>/dev/null | grep Version | cut -d: -f2- | sed 's/ //g')
     PACKAGE_VERSION_SAFE=$(echo "${PACKAGE_VERSION}" | sed 's/[^A-Za-z0-9._-]/_/g')
 else
+    CUSTOM_INSTALL_COMMAND=1
     PACKAGE_VERSION="$3"
     if [ -z "$PACKAGE_VERSION" ]; then
         PACKAGE_VERSION="Unknown"
@@ -111,7 +112,7 @@ echo "  \"entrypoints\": [" >> "${EXPORT_DETAIL_PATH}/${METADATA_FILENAME}"
 
 # Optimizing (don't check non-executable packages)
 printf "${DARKGRAY}Checking for likely executables...${NC}\n"
-if [ -z "$ALWAYS_INSTALL" ] && [ -d "/opt/apt-mirror" ]; then
+if [ -z "$CUSTOM_INSTALL_COMMAND" ] && [ -z "$ALWAYS_INSTALL" ] && [ -d "/opt/apt-mirror" ]; then
     HAS_EXECUTABLES=0
     PACKAGE_FILENAMES=$(apt-cache show $PACKAGE | grep Filename: | cut -d: -f2 | sed 's/ //g')
     while IFS= read -r PACKAGE_FILENAME; do
@@ -164,8 +165,15 @@ printf "${DARKGRAY}Execution complete.${NC}\n"
 printf "${DARKGRAY}Identifying entrypoints...${NC}\n"
 ENTRYPOINTS_TEMP_FILE=/tmp/entrypoints.txt
 
-# BUG xargs here
-dpkg -L "$PACKAGE" | xargs file -L | grep executable | grep ELF | cut -d: -f1 > "${ENTRYPOINTS_TEMP_FILE}"
+if [ -z "$CUSTOM_INSTALL_COMMAND" ]; then
+    # BUG xargs here
+    dpkg -L "$PACKAGE" | xargs file -L | grep executable | grep ELF | cut -d: -f1 > "${ENTRYPOINTS_TEMP_FILE}"
+else
+    # Find all new or modified files since initial install
+    find / -path /sys -prune -o -path /proc -prune -o -path /opt -prune -o -type f -perm /u=x,g=x,o=x | xargs file | grep executable | grep ELF | cut -d: -f1 | xargs shasum -a 256 | sort > /tmp/new_shasums.txt 2>/dev/null
+    comm -13 /opt/shasums.txt /tmp/new_shasums.txt | tr -s ' ' | cut -d" " -f2 > "${ENTRYPOINTS_TEMP_FILE}"
+    rm /tmp/new_shasums.txt
+fi
 
 ENTRYPOINTS_LEN=$(cat "${ENTRYPOINTS_TEMP_FILE}" | wc -w)
 ENTRYPOINTS_COUNT=0
@@ -204,4 +212,9 @@ find "${EXPORT_DETAIL_PATH}" -type f -size +10M | xargs -n1 gzip -9 >/dev/null 2
 # Delete any remaining large files
 find "${EXPORT_DETAIL_PATH}" -type f -size +50M -print -delete >/dev/null 2>&1
 
-printf "${DARKGRAY}Operation complete.${NC}\n"
+if [ "${ENTRYPOINTS_LEN}" -eq 0 ]; then
+    printf "${DARKGRAY}No entrypoints found.${NC}\n"
+    exit 2
+else
+    printf "${DARKGRAY}Operation complete.${NC}\n"
+fi

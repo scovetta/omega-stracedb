@@ -56,7 +56,6 @@ if (!$ForceAnalyze) {
         $ExportPrefix = "_"
     }
     $FinalDirectory = (Join-Path (Join-Path $ResultsDirectory $ExportPrefix) $PackageName)
-    Write-Output $FinalDirectory
 
     if (Test-Path -Type Container $FinalDirectory) {
         Write-Host "Package [$PackageName] already analyzed."

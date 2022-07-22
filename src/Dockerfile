@@ -6,8 +6,8 @@ LABEL schema-version="1.0"
 LABEL name="omega-tracer"
 LABEL maintainer="Open Source Security Foundation - Omega"
 LABEL vendor="OpenSSF"
-LABEL build-date="2022-07-17T00:00:00.00Z"
-LABEL version="0.1.0"
+LABEL build-date="2022-07-21T00:00:00.00Z"
+LABEL version="0.1.1"
 
 # Initialize some things
 ARG DEBIAN_FRONTEND=noninteractive
@@ -26,7 +26,7 @@ RUN echo 'Acquire::Check-Valid-Until false;' >> /etc/apt/apt.conf.d/10-nocheckva
 # Core utilities
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y strace dos2unix file apt-mirror
+    apt-get install -y strace dos2unix file apt-mirror curl wget
 
 # Set up local mirror
 RUN echo "deb [trusted=yes] file:/opt/apt-mirror/mirror/archive.ubuntu.com/ubuntu jammy main restricted" > /etc/apt/sources-local.list && \
@@ -52,5 +52,8 @@ RUN dos2unix /usr/bin/trace.sh \
              /usr/bin/get-package-list.sh && \
     chmod +x /usr/bin/trace.sh \
              /usr/bin/get-package-list.sh
+
+# Store all executables (to allow us to identify new binaries after custom builds)
+RUN find / -path /sys -prune -o -path /proc -prune -o -path /opt -prune -o -type f -perm /u=x,g=x,o=x | xargs file | grep executable | grep ELF | cut -d: -f1 | xargs shasum -a 256 | sort > /opt/shasums.txt 2>/dev/null
 
 ENTRYPOINT ["/usr/bin/trace.sh"]
